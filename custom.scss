@@ -1,0 +1,15 @@
+/*-- scss:uses --*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+/*-- scss:defaults --*/
+$font-family-sans-serif: 'Raleway', sans-serif;
+$sidebar-bg: #687b1a;           // Sidebar background color
+$sidebar-fg: #ffffff;           // Sidebar text color
+$sidebar-border-color: #ffffff; // Optional: border color for sidebar
+$body-bg: #f8f9fa;              // Optional: overall page background
+
+/*-- scss:rules --*/
+// Ensure sidebar text uses Raleway
+.sidebar nav {
+  font-family: 'Raleway', sans-serif;
+}

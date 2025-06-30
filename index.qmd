@@ -1,26 +1,21 @@
 ---
-title: "Introduction to Data Science Course Website"
+title: "Environmental Justice: A Community-Centric Approach"
 ---
 
-## Course overview
+## Course Information
+| **Course Number:** ES-202-01
+| **Time:**  Tues & Fri 9:55 - 11:10 AM
+| **Location:**
+| **Instructor:** Mariah D. Caballero
+| **Email:** [mc152@wellesley.edu](emailto:mc152@wellesley.edu)
 
-**Course overview from STA 199: Introduction to Data Science at Duke University**
+## Course Description
 
-Intro to data science and statistical thinking. Learn to explore, visualize,and analyze data to understand natural phenomena, investigate patterns, model outcomes,and make predictions, and do so in a reproducible and shareable manner. Gain experience in data wrangling and munging, exploratory data analysis, predictive modeling, data visualization, and effectively communicating results. Work on problems and case studies inspired by and based on real-world questions and data. The course will focus on the R statistical computing language.
+In this interdisciplinary course, students are asked to engage with environmental justice — a social movement and form of inquiry intended to rectify the inequitable distribution of environmental benefit and burden — both theoretically and methodologically. Students will examine five forms of justice: distributional, recognitional, procedural, restorative, and cosmopolitan, and be invited to apply them to weekly community-level case studies. Using a combination of theory and introductory data visualization skills, we will learn from past injustices, explore present interventions, and imagine more equitable realities.
 
-## Class meetings
+## Learning Objectives
+1. **Understand the nuances of an intersectional approach** (i.e., race, ethnicity,  gender, sexuality, class, and disability) and their applications to environmental injustice.
 
-| Meeting | Location | Time                   |
-|---------|----------|------------------------|
-| Lecture | Room A   | Mon & Wed 10 - 11:15am |
-| Lab 01  | Room B   | Thu 10 - 11:15am       |
-| Lab 02  | Room C   | Thu 1:45 - 3pm         |
-| Lab 03  | Room D   | Thu 3:30 - 4:45pm      |
+2. **Assess empirical patterns of environmental injustice in US communities** related to Food, Energy, and Water (FEW nexus). 
 
-## Teaching team 
-
-| Name                 | Office hours   | Location   |
-|----------------------|----------------|------------|
-| Instructor           | Tue 2 - 3pm    | Office 123 |
-| Teaching Assistant 1 | Mon 5 - 7pm    | Zoom       |
-| Teaching Assistant 2 | Fri 11am - 1pm | Zoom       |
+3. **Identify opportunities and challenges beyond distributional justice** (procedural, recognitional, and restorative justice) for environmental solutions spatially and temporally.
