@@ -1,7 +1,9 @@
-# Teach DS - Course Website
+# ES-202 - Course Website
 
-Template course website for the Designing a Data Science Classroom workshop at rstudio::conf(2022). 
+Course website for ES-202: Environmental Justice: A Community-Centric Approach. 
 
-Site published through gh-pages: https://rstudio-conf-2022.github.io/teach-ds-course-website/
+Access pdf here: 
 
-Site published through Quarto Pub: https://maria.quarto.pub/teach-data-science-course-website/
+Access Quarto Website Here: 
+
+Thanks to Maria Tackett & Mine Cetinkaya-Rundel for their original template and helpful resources!
