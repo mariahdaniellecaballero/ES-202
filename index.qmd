@@ -7,6 +7,7 @@ title: "Environmental Justice: A Community-Centric Approach"
 | **Time:**  Tues & Fri 9:55 - 11:10 AM
 | **Location:**
 | **Instructor:** Mariah D. Caballero
+| **Office Hours:** (E152)
 | **Email:** [mc152@wellesley.edu](emailto:mc152@wellesley.edu)
 
 ## Course Description
@@ -14,8 +15,15 @@ title: "Environmental Justice: A Community-Centric Approach"
 In this interdisciplinary course, students are asked to engage with environmental justice — a social movement and form of inquiry intended to rectify the inequitable distribution of environmental benefit and burden — both theoretically and methodologically. Students will examine five forms of justice: distributional, recognitional, procedural, restorative, and cosmopolitan, and be invited to apply them to weekly community-level case studies. Using a combination of theory and introductory data visualization skills, we will learn from past injustices, explore present interventions, and imagine more equitable realities.
 
 ## Learning Objectives
-1. **Understand the nuances of an intersectional approach** (i.e., race, ethnicity,  gender, sexuality, class, and disability) and their applications to environmental injustice.
-
+1. **Demonstrate an understanding of the nuances of an intersectional approach** (i.e., race, ethnicity,  gender, sexuality, class, and disability) and their applications to environmental injustice.
 2. **Assess empirical patterns of environmental injustice in US communities** related to Food, Energy, and Water (FEW nexus). 
+3. **Identify opportunities and challenges beyond distributional justice** (procedural, recognitional, restorative, and cosmopolitan justice) for environmental solutions spatially and temporally.
 
-3. **Identify opportunities and challenges beyond distributional justice** (procedural, recognitional, and restorative justice) for environmental solutions spatially and temporally.
+
+## Measurable Outcomes
+| Description                             | Measurable Outcome               |
+|-----------------------------------------|----------------------------------|
+| Apply an intersectional lens to your own identity and environment, as well as weekly case studies| self-reflection, weekly participation and assignments|
+| Define and apply five tenets of environmental justice (distributional, procedural, recognitional, restorative, and cosmopolitan)| weekly participation and assignments, final project|
+| Use publicly-available data and open-source software to demonstrate empirical patterns of injustice| weekly participation and assignments, final project| 
+|Combine theory and empirical patterns to community-level case studies and pose potential interventions for more environmentally just communities | weekly participation and assignments, final project

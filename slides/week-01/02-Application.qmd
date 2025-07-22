@@ -1,10 +1,11 @@
 ---
-title: "Meet the Toolkit"
-date: "August 31, 2022"
-footer: "[🔗 rstudio-conf-2022.github.io/teach-ds-course-website](https://rstudio-conf-2022.github.io/teach-ds-course-website)"
-logo: "../images/logo.png"
+title: "Application: Food & Procedural Justice"
+date: "September 05, 2025"
 format: 
   revealjs:
+    theme:
+      - default
+    css: custom.scss
     transition: fade
     slide-number: true
     incremental: false 
@@ -12,9 +13,7 @@ format:
     center: true
 execute:
   freeze: auto
-editor_options: 
-  markdown: 
-    wrap: 72
+  echo: true
 ---
 
 # Welcome!

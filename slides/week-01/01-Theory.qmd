@@ -1,12 +1,11 @@
 ---
-title: "Welcome to Intro Data Science"
-subtitle: "Example presentation"
-date: "August 29, 2022"
-footer: "[🔗 rstudio-conf-2022.github.io/teach-ds-course-website](https://rstudio-conf-2022.github.io/teach-ds-course-website)"
-logo: "images/logo.png"
+title: "Theory: Food & Procedural Justice"
+date: "September 02, 2025"
 format: 
   revealjs:
-    theme: solarized
+    theme:
+      - default
+    css: custom.scss
     transition: fade
     slide-number: true
     incremental: false 

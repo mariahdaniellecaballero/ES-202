@@ -2,38 +2,35 @@
 title: "Syllabus"
 ---
 
-**Excerpts of Fall 2021 syllabus from STA 199: Introduction to Data Science at Duke University**
+## Course Description
+In this interdisciplinary course, students are asked to engage with environmental justice — a social movement and form of inquiry intended to rectify the inequitable distribution of environmental benefit and burden — both theoretically and methodologically. Students will examine five forms of justice: distributional, recognitional, procedural, restorative, and cosmopolitan, and be invited to apply them to weekly community-level case studies. Using a combination of theory and introductory data visualization skills, we will learn from past injustices, explore present interventions, and imagine more equitable realities.
 
-<hr>
+## 
+1. **Demonstrate an understanding of the nuances of an intersectional approach** (i.e., race, ethnicity,  gender, sexuality, class, and disability) and their applications to environmental injustice.
+2. **Assess empirical patterns of environmental injustice in US communities** related to Food, Energy, and Water (FEW nexus). 
+3. **Identify opportunities and challenges beyond distributional justice** (procedural, recognitional, and restorative justice) for environmental solutions spatially and temporally.
 
-## Course Learning Objectives
 
-By the end of the semester, you will...
 
--   learn to explore, visualize, and analyze data in a reproducible and shareable manner
--   gain experience in data wrangling and munging, exploratory data analysis, predictive modeling, and data visualization work on problems and case studies inspired by and based on real-world questions and data
--   learn to effectively communicate results through written assignments and final project presentation
+## Course Texts
 
-## Textbooks
+All materials used in this class are open source, and are linked for each week in the course website. 
 
-All books are freely available online. Hardcopies are also available for purchase.
+## Course Community
 
-|                                                                         |                          |                                   |
-|------------------------------------|------------------|------------------|
-| [R for Data Science](http://r4ds.had.co.nz/)                            | Grolemund, Wickham       | O'Reilly, 1st edition, 2016       |
-| [Introduction to Modern Statistics](https://openintro-ims.netlify.app/) | Çetinkaya-Rundel, Hardin | OpenIntro Inc., 1st Edition, 2021 |
-
-## Course community
-
-### Inclusive community
+### Teaching, Learning, and Being in Community
 
 It is my intent that students from all diverse backgrounds and perspectives be well-served by this course, that students' learning needs be addressed both in and out of class, and that the diversity that the students bring to this class be viewed as a resource, strength, and benefit. It is my intent to present materials and activities that are respectful of diversity and in alignment with [Duke's Commitment to Diversity and Inclusion](https://provost.duke.edu/initiatives/commitment-to-diversity-and-inclusion). Your suggestions are encouraged and appreciated.
 
+#### On Loving Corrections
+
+
 ### Accessibility
 
-If there is any portion of the course that is not accessible to you due to challenges with technology or the course format, please let me know so we can make appropriate accommodations.
+I intend for all course material to be accessible to students. If you find any material difficulty to access due to course format, technology, or any other reason, please don't hesitate to let me know so that we can identify appropriate accommodations.  
 
-The Student Disability Access Office (SDAO) is available to ensure that students are able to engage with their courses and related assignments. Students should be in touch with the Student Disability Access Office to request or update accommodations under these circumstances.
+Additionally, the Wellesley Office of Accessibility and Disability Resources (ADR) ensures that students receive reasonable and appropriate accommodations including but not limited to: testing accommodations, classroom accommodations, notetaking services, on-campus transportation, communication resources, and assistive technology. In the case that you require accommodations, please be in touch with ADR to request or update an accommodation letter. 
+
 
 ### Communication
 
@@ -43,15 +40,15 @@ Announcements will be emailed through Sakai Announcements periodically. Please c
 
 ## Activities & Assessment
 
-### Labs
+### Weekly Theory Discussions
 
-In labs, you will apply the concepts discussed in lecture to various data analysis scenarios, with a focus on the computation.
+Each week offers the opportunity to discuss and apply different forms of environmental justice, through the lens of a community case study. Tuesdays will begin with small and large-group discussions on one theoretical piece and one community case study. Please come ready to discuss the case study and apply theoretical findings.
 
-### Homework
+### Weekly Data Application Assignments
 
-In homework, you will apply what you've learned during lecture and lab to complete data analysis tasks.
+Fridays will be spent primarily on an in-class data visualization exercise related to the weekly case study. Please review the exercise before class, and be ready to work in pairs on a 
 
-### Exams
+### Self-Reflection
 
 There will be two, take-home, open-note exams. Through these exams you have the opportunity to demonstrate what you've learned in the course thus far.
 
@@ -92,18 +89,18 @@ The due dates for assignments are there to help you keep up with the course mate
 
 ## Important dates
 
--   **Aug 23:** Classes begin
+-   **Sep 02:** Classes begin
 
--   **Sep 3**: Drop/add ends
+-   **Sep 26**: Credit/Noncredit grading option and Drop Deadline (4PM)
 
--   **Oct 4-5**: Fall break
+-   **Oct 13-14**: Indigenous Peoples' Day; Fall break
 
--   **Nov 5**: Last day to withdraw with W
+-   **Oct 28**: Tanner Conference
 
--   **Nov 24-26:** Thanksgiving recess
+-   **Nov 26-28:** Thanksgiving Break
 
--   **Dec 3**: Classes end
+-   **Dec 10**: Classes end
 
--   **Dec 4-7**: Reading period
+-   **Dec 11-14**: Reading period
 
--   **Dec 8-13**: Final exams
+-   **Dec 15-18**: Final exams

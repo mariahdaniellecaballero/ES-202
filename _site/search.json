@@ -32,7 +32,7 @@
     "href": "weeks/week-01.html",
     "title": "Week 01",
     "section": "",
-    "text": "Lectures\n\n\n\n\n\nTopic\n\n\nDate\n\n\n\n\n\n\nWelcome to Intro Data Science\n\n\nMon, Aug 29\n\n\n\n\nMeet the Toolkit\n\n\nWed, Aug 31\n\n\n\n\n\nNo matching items\n\n\n\n\nAssignments\nThere are no assignments scheduled this week.\n\n\nReadings\n\n\n\n\n\n\nCourse Syllabus\n\n\nR for Data Science: Chapter 2 - Introduction\n\n\nIntro to Modern Data Science: Chapter 1 - Hello data"
+    "text": "Lectures\n\n\n\n\n\nTopic\n\n\nDate\n\n\n\n\n\n\nTheory: Food & Procedural Justice\n\n\nTue, Sep 02\n\n\n\n\nApplication: Food & Procedural Justice\n\n\nFri, Sep 05\n\n\n\n\n\nNo matching items\n\n\n\n\nAssignments\nThere are no assignments scheduled this week.\n\n\nReadings\n\n\n\n\n\n\nCourse Syllabus\n\n\nR for Data Science: Chapter 2 - Introduction\n\n\nIntro to Modern Data Science: Chapter 1 - Hello data"
   },
   {
     "objectID": "hw/w3-hw02.html",
@@ -53,7 +53,7 @@
     "href": "index.html",
     "title": "Environmental Justice: A Community-Centric Approach",
     "section": "",
-    "text": "Course Number: ES-202-01\nTime: Tues & Fri 9:55 - 11:10 AM\nLocation:\nInstructor: Mariah D. Caballero\nEmail: mc152@wellesley.edu",
+    "text": "Course Number: ES-202-01\nTime: Tues & Fri 9:55 - 11:10 AM\nLocation:\nInstructor: Mariah D. Caballero\nOffice Hours: (E152)\nEmail: mc152@wellesley.edu",
     "crumbs": [
       "Home"
     ]
@@ -81,58 +81,58 @@
   {
     "objectID": "slides/week-01/01-example.html#bullet-point-list",
     "href": "slides/week-01/01-example.html#bullet-point-list",
-    "title": "Welcome to Intro Data Science",
-    "section": "",
-    "text": "Unordered\n\nItem A\nItem B\nItem C\n\nOrdered\n\nItem 1\nItem 2\nItem 3"
+    "title": "Food & Procedural Justice",
+    "section": "Bullet point list",
+    "text": "Bullet point list\nUnordered\n\nItem A\nItem B\nItem C\n\nOrdered\n\nItem 1\nItem 2\nItem 3"
   },
   {
     "objectID": "slides/week-01/01-example.html#incremental-list",
     "href": "slides/week-01/01-example.html#incremental-list",
-    "title": "Welcome to Intro Data Science",
-    "section": "",
-    "text": "Item 1\nItem 2\nItem 3"
+    "title": "Food & Procedural Justice",
+    "section": "Incremental list",
+    "text": "Incremental list\n\n\nItem 1\nItem 2\nItem 3"
   },
   {
     "objectID": "slides/week-01/01-example.html#equations",
     "href": "slides/week-01/01-example.html#equations",
-    "title": "Welcome to Intro Data Science",
-    "section": "",
-    "text": "Write mathematical symbols and equations using Latex.\nUse the formulas below to calculate \\(\\hat{\\beta}_1\\), the estimated slope, and \\(\\hat{\\beta}_0\\), the estimated intercept.\n\\[\n\\begin{aligned}\n&\\hat{\\beta}_1 = r \\frac{s_y}{s_x} \\\\\n&\\hat{\\beta}_0 = \\bar{y} - \\hat{\\beta}_1 \\bar{x}\n\\end{aligned}\n\\]"
+    "title": "Food & Procedural Justice",
+    "section": "Equations",
+    "text": "Equations\nWrite mathematical symbols and equations using Latex.\nUse the formulas below to calculate \\(\\hat{\\beta}_1\\), the estimated slope, and \\(\\hat{\\beta}_0\\), the estimated intercept.\n\\[\n\\begin{aligned}\n&\\hat{\\beta}_1 = r \\frac{s_y}{s_x} \\\\\n&\\hat{\\beta}_0 = \\bar{y} - \\hat{\\beta}_1 \\bar{x}\n\\end{aligned}\n\\]"
   },
   {
     "objectID": "slides/week-01/01-example.html#code",
     "href": "slides/week-01/01-example.html#code",
-    "title": "Welcome to Intro Data Science",
-    "section": "",
-    "text": "# Use code chunk option fig-align: center to center the plot. \nggplot(data = penguins, aes(x = flipper_length_mm, y = body_mass_g, \n                            color = species)) + \n         geom_point() + \n  labs(x = \"Flipper Length (in mm)\",y = \"Body Mass (in g)\",\n       title = \"Flipper length vs. body mass\",\n       subtitle = \"Penguins at Palmer Station, Antartica\") +\n  scale_color_viridis_d()"
+    "title": "Food & Procedural Justice",
+    "section": "Code",
+    "text": "Code\n\n# Use code chunk option fig-align: center to center the plot. \nggplot(data = penguins, aes(x = flipper_length_mm, y = body_mass_g, \n                            color = species)) + \n         geom_point() + \n  labs(x = \"Flipper Length (in mm)\",y = \"Body Mass (in g)\",\n       title = \"Flipper length vs. body mass\",\n       subtitle = \"Penguins at Palmer Station, Antartica\") +\n  scale_color_viridis_d()"
   },
   {
     "objectID": "slides/week-01/01-example.html#images",
     "href": "slides/week-01/01-example.html#images",
-    "title": "Welcome to Intro Data Science",
-    "section": "",
-    "text": "Artwork by @allison_horst"
+    "title": "Food & Procedural Justice",
+    "section": "Images",
+    "text": "Images\n\nArtwork by @allison_horst"
   },
   {
     "objectID": "slides/week-01/01-example.html#columns",
     "href": "slides/week-01/01-example.html#columns",
-    "title": "Welcome to Intro Data Science",
-    "section": "",
-    "text": "Calculate the proportion of penguins from each species.\n\n\npenguins |&gt;\n  count(species) |&gt;\n  mutate(prop  = n / sum(n))\n\n# A tibble: 3 × 3\n  species       n  prop\n  &lt;fct&gt;     &lt;int&gt; &lt;dbl&gt;\n1 Adelie      152 0.442\n2 Chinstrap    68 0.198\n3 Gentoo      124 0.360"
+    "title": "Food & Procedural Justice",
+    "section": "Columns",
+    "text": "Columns\n\n\nCalculate the proportion of penguins from each species.\n\n\npenguins |&gt;\n  count(species) |&gt;\n  mutate(prop  = n / sum(n))\n\n# A tibble: 3 × 3\n  species       n  prop\n  &lt;fct&gt;     &lt;int&gt; &lt;dbl&gt;\n1 Adelie      152 0.442\n2 Chinstrap    68 0.198\n3 Gentoo      124 0.360"
   },
   {
     "objectID": "slides/week-01/01-example.html#panels",
     "href": "slides/week-01/01-example.html#panels",
-    "title": "Welcome to Intro Data Science",
-    "section": "",
-    "text": "PlotCode\n\n\n\npenguins |&gt;\n  filter(species == \"Adelie\", !is.na(sex)) |&gt;\n  ggplot(aes(x = flipper_length_mm, y = body_mass_g, color = sex)) + \n  geom_point() +\n  labs(x = \"Flipper Length (in mm)\",y = \"Body Mass (in g)\",\n       title = \"Flipper length vs. body mass\",\n       subtitle = \"Adelie Penguins at Palmer Station, Antartica\") +\n  scale_color_viridis_d() + \n  facet_wrap(~island)\n\n\n\n\n\n\n\n\n\n\n\npenguins |&gt;\n  filter(species == \"Adelie\", !is.na(sex)) |&gt;\n  ggplot(aes(x = flipper_length_mm, y = body_mass_g, color = sex)) + \n  geom_point() +\n  labs(x = \"Flipper Length (in mm)\",y = \"Body Mass (in g)\",\n       title = \"Flipper length vs. body mass\",\n       subtitle = \"Adelie Penguins at Palmer Station, Antartica\") +\n  scale_color_viridis_d() + \n  facet_wrap(~island)"
+    "title": "Food & Procedural Justice",
+    "section": "Panels",
+    "text": "Panels\n\nPlotCode\n\n\n\npenguins |&gt;\n  filter(species == \"Adelie\", !is.na(sex)) |&gt;\n  ggplot(aes(x = flipper_length_mm, y = body_mass_g, color = sex)) + \n  geom_point() +\n  labs(x = \"Flipper Length (in mm)\",y = \"Body Mass (in g)\",\n       title = \"Flipper length vs. body mass\",\n       subtitle = \"Adelie Penguins at Palmer Station, Antartica\") +\n  scale_color_viridis_d() + \n  facet_wrap(~island)\n\n\n\n\n\n\n\n\n\n\n\npenguins |&gt;\n  filter(species == \"Adelie\", !is.na(sex)) |&gt;\n  ggplot(aes(x = flipper_length_mm, y = body_mass_g, color = sex)) + \n  geom_point() +\n  labs(x = \"Flipper Length (in mm)\",y = \"Body Mass (in g)\",\n       title = \"Flipper length vs. body mass\",\n       subtitle = \"Adelie Penguins at Palmer Station, Antartica\") +\n  scale_color_viridis_d() + \n  facet_wrap(~island)"
   },
   {
     "objectID": "slides/week-01/01-example.html#themes",
     "href": "slides/week-01/01-example.html#themes",
-    "title": "Welcome to Intro Data Science",
-    "section": "",
-    "text": "Customize the appearance of the slides using\n\nBuilt-in Reveal theme\nModify built-in theme using Sass\n\nVariant of CSS that supports variables and other features\n\nCreate custom thing using Sass\n\nSpecify the theme and/or Sass file (.scss) in the YAML"
+    "title": "Food & Procedural Justice",
+    "section": "Themes",
+    "text": "Themes\nCustomize the appearance of the slides using\n\nBuilt-in Reveal theme\nModify built-in theme using Sass\n\nVariant of CSS that supports variables and other features\n\nCreate custom thing using Sass\n\nSpecify the theme and/or Sass file (.scss) in the YAML"
   },
   {
     "objectID": "slides/week-01/02-demo.html#bullet-point-list",
@@ -195,7 +195,7 @@
     "href": "syllabus.html",
     "title": "Syllabus",
     "section": "",
-    "text": "Excerpts of Fall 2021 syllabus from STA 199: Introduction to Data Science at Duke University",
+    "text": "In this interdisciplinary course, students are asked to engage with environmental justice — a social movement and form of inquiry intended to rectify the inequitable distribution of environmental benefit and burden — both theoretically and methodologically. Students will examine five forms of justice: distributional, recognitional, procedural, restorative, and cosmopolitan, and be invited to apply them to weekly community-level case studies. Using a combination of theory and introductory data visualization skills, we will learn from past injustices, explore present interventions, and imagine more equitable realities.",
     "crumbs": [
       "Syllabus"
     ]
@@ -204,8 +204,8 @@
     "objectID": "syllabus.html#course-learning-objectives",
     "href": "syllabus.html#course-learning-objectives",
     "title": "Syllabus",
-    "section": "Course Learning Objectives",
-    "text": "Course Learning Objectives\nBy the end of the semester, you will…\n\nlearn to explore, visualize, and analyze data in a reproducible and shareable manner\ngain experience in data wrangling and munging, exploratory data analysis, predictive modeling, and data visualization work on problems and case studies inspired by and based on real-world questions and data\nlearn to effectively communicate results through written assignments and final project presentation",
+    "section": "",
+    "text": "By the end of the semester, you will…\n\nDemonstrate an understanding of the nuances of an intersectional approach (i.e., race, ethnicity, gender, sexuality, class, and disability) and their applications to environmental injustice.\nAssess empirical patterns of environmental injustice in US communities related to Food, Energy, and Water (FEW nexus).\nIdentify opportunities and challenges beyond distributional justice (procedural, recognitional, and restorative justice) for environmental solutions spatially and temporally.",
     "crumbs": [
       "Syllabus"
     ]
@@ -224,8 +224,8 @@
     "objectID": "syllabus.html#course-community",
     "href": "syllabus.html#course-community",
     "title": "Syllabus",
-    "section": "Course community",
-    "text": "Course community\n\nInclusive community\nIt is my intent that students from all diverse backgrounds and perspectives be well-served by this course, that students’ learning needs be addressed both in and out of class, and that the diversity that the students bring to this class be viewed as a resource, strength, and benefit. It is my intent to present materials and activities that are respectful of diversity and in alignment with Duke’s Commitment to Diversity and Inclusion. Your suggestions are encouraged and appreciated.\n\n\nAccessibility\nIf there is any portion of the course that is not accessible to you due to challenges with technology or the course format, please let me know so we can make appropriate accommodations.\nThe Student Disability Access Office (SDAO) is available to ensure that students are able to engage with their courses and related assignments. Students should be in touch with the Student Disability Access Office to request or update accommodations under these circumstances.\n\n\nCommunication\nAll lecture notes, assignment instructions, an up-to-date schedule, and other course materials may be found on the course website.\nAnnouncements will be emailed through Sakai Announcements periodically. Please check your email regularly to ensure you have the latest announcements for the course.",
+    "section": "Course Community",
+    "text": "Course Community\n\nInclusive community\nIt is my intent that students from all diverse backgrounds and perspectives be well-served by this course, that students’ learning needs be addressed both in and out of class, and that the diversity that the students bring to this class be viewed as a resource, strength, and benefit. It is my intent to present materials and activities that are respectful of diversity and in alignment with Duke’s Commitment to Diversity and Inclusion. Your suggestions are encouraged and appreciated.\n\n\nAccessibility\nIf there is any portion of the course that is not accessible to you due to challenges with technology or the course format, please let me know so we can make appropriate accommodations.\nThe Student Disability Access Office (SDAO) is available to ensure that students are able to engage with their courses and related assignments. Students should be in touch with the Student Disability Access Office to request or update accommodations under these circumstances.\n\n\nCommunication\nAll lecture notes, assignment instructions, an up-to-date schedule, and other course materials may be found on the course website.\nAnnouncements will be emailed through Sakai Announcements periodically. Please check your email regularly to ensure you have the latest announcements for the course.",
     "crumbs": [
       "Syllabus"
     ]
@@ -275,7 +275,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "Week\n\n\nDates\n\n\nTopic\n\n\n\n\n\n\nWeek 01\n\n\nAug 29 - Sep 02\n\n\nWelcome to Intro Data Science\n\n\n\n\nWeek 02\n\n\nSep 05 - 09\n\n\nVisualizing Data\n\n\n\n\nWeek 03\n\n\nSep 12 - 16\n\n\nWrangling Data\n\n\n\n\n\nNo matching items",
+    "text": "Week\n\n\nDates\n\n\nTopic\n\n\n\n\n\n\nWeek 01\n\n\nSep 01 - Sep 05\n\n\nFood and Procedural Justice\n\n\n\n\nWeek 02\n\n\nSep 05 - 09\n\n\nVisualizing Data\n\n\n\n\nWeek 03\n\n\nSep 12 - 16\n\n\nWrangling Data\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "Schedule"
     ]
@@ -305,7 +305,7 @@
     "href": "schedule.html#weekly-schedule",
     "title": "Schedule",
     "section": "",
-    "text": "Week\n\n\nDates\n\n\nTopic\n\n\n\n\n\n\nWeek 01\n\n\nAug 29 - Sep 02\n\n\nWelcome to Intro Data Science\n\n\n\n\nWeek 02\n\n\nSep 05 - 09\n\n\nVisualizing Data\n\n\n\n\nWeek 03\n\n\nSep 12 - 16\n\n\nWrangling Data\n\n\n\n\n\nNo matching items",
+    "text": "Week\n\n\nDates\n\n\nTopic\n\n\n\n\n\n\nWeek 01\n\n\nSep 01 - Sep 05\n\n\nFood and Procedural Justice\n\n\n\n\nWeek 02\n\n\nSep 05 - 09\n\n\nVisualizing Data\n\n\n\n\nWeek 03\n\n\nSep 12 - 16\n\n\nWrangling Data\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "Schedule"
     ]
@@ -371,7 +371,7 @@
     "href": "index.html#course-information",
     "title": "Environmental Justice: A Community-Centric Approach",
     "section": "",
-    "text": "Course Number: ES-202-01\nTime: Tues & Fri 9:55 - 11:10 AM\nLocation:\nInstructor: Mariah D. Caballero\nEmail: mc152@wellesley.edu",
+    "text": "Course Number: ES-202-01\nTime: Tues & Fri 9:55 - 11:10 AM\nLocation:\nInstructor: Mariah D. Caballero\nOffice Hours: (E152)\nEmail: mc152@wellesley.edu",
     "crumbs": [
       "Home"
     ]
@@ -391,9 +391,126 @@
     "href": "index.html#learning-objectives",
     "title": "Environmental Justice: A Community-Centric Approach",
     "section": "Learning Objectives",
-    "text": "Learning Objectives\n\nUnderstand the nuances of an intersectional approach (i.e., race, ethnicity, gender, sexuality, class, and disability) and their applications to environmental injustice.\nAssess empirical patterns of environmental injustice in US communities related to Food, Energy, and Water (FEW nexus).\nIdentify opportunities and challenges beyond distributional justice (procedural, recognitional, and restorative justice) for environmental solutions spatially and temporally.",
+    "text": "Learning Objectives\n\nDemonstrate an understanding of the nuances of an intersectional approach (i.e., race, ethnicity, gender, sexuality, class, and disability) and their applications to environmental injustice.\nAssess empirical patterns of environmental injustice in US communities related to Food, Energy, and Water (FEW nexus).\nIdentify opportunities and challenges beyond distributional justice (procedural, recognitional, restorative, and cosmopolitan justice) for environmental solutions spatially and temporally.",
     "crumbs": [
       "Home"
+    ]
+  },
+  {
+    "objectID": "slides/week-01/01-Theory.html#bullet-point-list",
+    "href": "slides/week-01/01-Theory.html#bullet-point-list",
+    "title": "Theory: Food & Procedural Justice",
+    "section": "",
+    "text": "Unordered\n\nItem A\nItem B\nItem C\n\nOrdered\n\nItem 1\nItem 2\nItem 3"
+  },
+  {
+    "objectID": "slides/week-01/01-Theory.html#incremental-list",
+    "href": "slides/week-01/01-Theory.html#incremental-list",
+    "title": "Theory: Food & Procedural Justice",
+    "section": "",
+    "text": "Item 1\nItem 2\nItem 3"
+  },
+  {
+    "objectID": "slides/week-01/01-Theory.html#equations",
+    "href": "slides/week-01/01-Theory.html#equations",
+    "title": "Theory: Food & Procedural Justice",
+    "section": "",
+    "text": "Write mathematical symbols and equations using Latex.\nUse the formulas below to calculate \\(\\hat{\\beta}_1\\), the estimated slope, and \\(\\hat{\\beta}_0\\), the estimated intercept.\n\\[\n\\begin{aligned}\n&\\hat{\\beta}_1 = r \\frac{s_y}{s_x} \\\\\n&\\hat{\\beta}_0 = \\bar{y} - \\hat{\\beta}_1 \\bar{x}\n\\end{aligned}\n\\]"
+  },
+  {
+    "objectID": "slides/week-01/01-Theory.html#code",
+    "href": "slides/week-01/01-Theory.html#code",
+    "title": "Theory: Food & Procedural Justice",
+    "section": "",
+    "text": "# Use code chunk option fig-align: center to center the plot. \nggplot(data = penguins, aes(x = flipper_length_mm, y = body_mass_g, \n                            color = species)) + \n         geom_point() + \n  labs(x = \"Flipper Length (in mm)\",y = \"Body Mass (in g)\",\n       title = \"Flipper length vs. body mass\",\n       subtitle = \"Penguins at Palmer Station, Antartica\") +\n  scale_color_viridis_d()"
+  },
+  {
+    "objectID": "slides/week-01/01-Theory.html#images",
+    "href": "slides/week-01/01-Theory.html#images",
+    "title": "Theory: Food & Procedural Justice",
+    "section": "",
+    "text": "Artwork by @allison_horst"
+  },
+  {
+    "objectID": "slides/week-01/01-Theory.html#columns",
+    "href": "slides/week-01/01-Theory.html#columns",
+    "title": "Theory: Food & Procedural Justice",
+    "section": "",
+    "text": "Calculate the proportion of penguins from each species.\n\n\npenguins |&gt;\n  count(species) |&gt;\n  mutate(prop  = n / sum(n))\n\n# A tibble: 3 × 3\n  species       n  prop\n  &lt;fct&gt;     &lt;int&gt; &lt;dbl&gt;\n1 Adelie      152 0.442\n2 Chinstrap    68 0.198\n3 Gentoo      124 0.360"
+  },
+  {
+    "objectID": "slides/week-01/01-Theory.html#panels",
+    "href": "slides/week-01/01-Theory.html#panels",
+    "title": "Theory: Food & Procedural Justice",
+    "section": "",
+    "text": "PlotCode\n\n\n\npenguins |&gt;\n  filter(species == \"Adelie\", !is.na(sex)) |&gt;\n  ggplot(aes(x = flipper_length_mm, y = body_mass_g, color = sex)) + \n  geom_point() +\n  labs(x = \"Flipper Length (in mm)\",y = \"Body Mass (in g)\",\n       title = \"Flipper length vs. body mass\",\n       subtitle = \"Adelie Penguins at Palmer Station, Antartica\") +\n  scale_color_viridis_d() + \n  facet_wrap(~island)\n\n\n\n\n\n\n\n\n\n\n\npenguins |&gt;\n  filter(species == \"Adelie\", !is.na(sex)) |&gt;\n  ggplot(aes(x = flipper_length_mm, y = body_mass_g, color = sex)) + \n  geom_point() +\n  labs(x = \"Flipper Length (in mm)\",y = \"Body Mass (in g)\",\n       title = \"Flipper length vs. body mass\",\n       subtitle = \"Adelie Penguins at Palmer Station, Antartica\") +\n  scale_color_viridis_d() + \n  facet_wrap(~island)"
+  },
+  {
+    "objectID": "slides/week-01/01-Theory.html#themes",
+    "href": "slides/week-01/01-Theory.html#themes",
+    "title": "Theory: Food & Procedural Justice",
+    "section": "",
+    "text": "Customize the appearance of the slides using\n\nBuilt-in Reveal theme\nModify built-in theme using Sass\n\nVariant of CSS that supports variables and other features\n\nCreate custom thing using Sass\n\nSpecify the theme and/or Sass file (.scss) in the YAML"
+  },
+  {
+    "objectID": "slides/week-01/02-Application.html",
+    "href": "slides/week-01/02-Application.html",
+    "title": "Application: Food & Procedural Justice",
+    "section": "",
+    "text": "Customize the appearance of the slides using\n\nBuilt-in Reveal theme\nModify built-in theme using Sass\n\nVariant of CSS that supports variables and other features\n\n\nSpecify the theme and/or Sass file (.scss) in the YAML"
+  },
+  {
+    "objectID": "slides/week-01/02-Application.html#themes",
+    "href": "slides/week-01/02-Application.html#themes",
+    "title": "Application: Food & Procedural Justice",
+    "section": "",
+    "text": "Customize the appearance of the slides using\n\nBuilt-in Reveal theme\nModify built-in theme using Sass\n\nVariant of CSS that supports variables and other features\n\n\nSpecify the theme and/or Sass file (.scss) in the YAML"
+  },
+  {
+    "objectID": "index.html#measurable-outcomes",
+    "href": "index.html#measurable-outcomes",
+    "title": "Environmental Justice: A Community-Centric Approach",
+    "section": "Measurable Outcomes",
+    "text": "Measurable Outcomes\n\n\n\n\n\n\n\nDescription\nMeasurable Outcome\n\n\n\n\nApply an intersectional lens to your own identity and environment, as well as weekly case studies\nself-reflection, weekly participation and assignments\n\n\nDefine and apply five tenets of environmental justice (distributional, procedural, recognitional, restorative, and cosmopolitan)\nweekly participation and assignments, final project\n\n\nUse publicly-available data and open-source software to demonstrate empirical patterns of injustice\nweekly participation and assignments, final project\n\n\nCombine theory and empirical patterns to community-level case studies and pose potential interventions for more environmentally just communities\nweekly participation and assignments, final project",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "slides/week-01/01-Theory.html",
+    "href": "slides/week-01/01-Theory.html",
+    "title": "Theory: Food & Procedural Justice",
+    "section": "",
+    "text": "Unordered\n\nItem A\nItem B\nItem C\n\nOrdered\n\nItem 1\nItem 2\nItem 3\n\n\n\n\n\n\nItem 1\nItem 2\nItem 3\n\n\n\n\n\nWrite mathematical symbols and equations using Latex.\nUse the formulas below to calculate \\(\\hat{\\beta}_1\\), the estimated slope, and \\(\\hat{\\beta}_0\\), the estimated intercept.\n\\[\n\\begin{aligned}\n&\\hat{\\beta}_1 = r \\frac{s_y}{s_x} \\\\\n&\\hat{\\beta}_0 = \\bar{y} - \\hat{\\beta}_1 \\bar{x}\n\\end{aligned}\n\\]\n\n\n\n\n# Use code chunk option fig-align: center to center the plot. \nggplot(data = penguins, aes(x = flipper_length_mm, y = body_mass_g, \n                            color = species)) + \n         geom_point() + \n  labs(x = \"Flipper Length (in mm)\",y = \"Body Mass (in g)\",\n       title = \"Flipper length vs. body mass\",\n       subtitle = \"Penguins at Palmer Station, Antartica\") +\n  scale_color_viridis_d()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nArtwork by @allison_horst\n\n\n\n\n\n\n\nCalculate the proportion of penguins from each species.\n\n\npenguins |&gt;\n  count(species) |&gt;\n  mutate(prop  = n / sum(n))\n\n# A tibble: 3 × 3\n  species       n  prop\n  &lt;fct&gt;     &lt;int&gt; &lt;dbl&gt;\n1 Adelie      152 0.442\n2 Chinstrap    68 0.198\n3 Gentoo      124 0.360\n\n\n\n\n\n\n\n\nPlotCode\n\n\n\npenguins |&gt;\n  filter(species == \"Adelie\", !is.na(sex)) |&gt;\n  ggplot(aes(x = flipper_length_mm, y = body_mass_g, color = sex)) + \n  geom_point() +\n  labs(x = \"Flipper Length (in mm)\",y = \"Body Mass (in g)\",\n       title = \"Flipper length vs. body mass\",\n       subtitle = \"Adelie Penguins at Palmer Station, Antartica\") +\n  scale_color_viridis_d() + \n  facet_wrap(~island)\n\n\n\n\n\n\n\n\n\n\n\npenguins |&gt;\n  filter(species == \"Adelie\", !is.na(sex)) |&gt;\n  ggplot(aes(x = flipper_length_mm, y = body_mass_g, color = sex)) + \n  geom_point() +\n  labs(x = \"Flipper Length (in mm)\",y = \"Body Mass (in g)\",\n       title = \"Flipper length vs. body mass\",\n       subtitle = \"Adelie Penguins at Palmer Station, Antartica\") +\n  scale_color_viridis_d() + \n  facet_wrap(~island)\n\n\n\n\n\n\n\nCustomize the appearance of the slides using\n\nBuilt-in Reveal theme\nModify built-in theme using Sass\n\nVariant of CSS that supports variables and other features\n\nCreate custom thing using Sass\n\nSpecify the theme and/or Sass file (.scss) in the YAML"
+  },
+  {
+    "objectID": "syllabus.html#course-description",
+    "href": "syllabus.html#course-description",
+    "title": "Syllabus",
+    "section": "",
+    "text": "In this interdisciplinary course, students are asked to engage with environmental justice — a social movement and form of inquiry intended to rectify the inequitable distribution of environmental benefit and burden — both theoretically and methodologically. Students will examine five forms of justice: distributional, recognitional, procedural, restorative, and cosmopolitan, and be invited to apply them to weekly community-level case studies. Using a combination of theory and introductory data visualization skills, we will learn from past injustices, explore present interventions, and imagine more equitable realities.",
+    "crumbs": [
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "syllabus.html#section",
+    "href": "syllabus.html#section",
+    "title": "Syllabus",
+    "section": "",
+    "text": "Demonstrate an understanding of the nuances of an intersectional approach (i.e., race, ethnicity, gender, sexuality, class, and disability) and their applications to environmental injustice.\nAssess empirical patterns of environmental injustice in US communities related to Food, Energy, and Water (FEW nexus).\nIdentify opportunities and challenges beyond distributional justice (procedural, recognitional, and restorative justice) for environmental solutions spatially and temporally.",
+    "crumbs": [
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "syllabus.html#course-texts",
+    "href": "syllabus.html#course-texts",
+    "title": "Syllabus",
+    "section": "Course Texts",
+    "text": "Course Texts\nAll materials used in this class are open source, and are linked for each week in the course website.",
+    "crumbs": [
+      "Syllabus"
     ]
   }
 ]
