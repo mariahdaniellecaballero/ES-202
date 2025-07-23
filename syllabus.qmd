@@ -1,91 +1,76 @@
 ---
 title: "Syllabus"
 ---
-
-## Course Description
+## Goals and Expectations
+### Course Description
 In this interdisciplinary course, students are asked to engage with environmental justice — a social movement and form of inquiry intended to rectify the inequitable distribution of environmental benefit and burden — both theoretically and methodologically. Students will examine five forms of justice: distributional, recognitional, procedural, restorative, and cosmopolitan, and be invited to apply them to weekly community-level case studies. Using a combination of theory and introductory data visualization skills, we will learn from past injustices, explore present interventions, and imagine more equitable realities.
 
-## 
+### Measurable Outcomes
 1. **Demonstrate an understanding of the nuances of an intersectional approach** (i.e., race, ethnicity,  gender, sexuality, class, and disability) and their applications to environmental injustice.
 2. **Assess empirical patterns of environmental injustice in US communities** related to Food, Energy, and Water (FEW nexus). 
 3. **Identify opportunities and challenges beyond distributional justice** (procedural, recognitional, and restorative justice) for environmental solutions spatially and temporally.
 
 
-
-## Course Texts
-
-All materials used in this class are open source, and are linked for each week in the course website. 
-
 ## Course Community
+#### What I Want You to Know About Me
+1. **I Care about Meaningful Teaching and Learning Experiences**
+I also graduated from a Seven Sisters college, and found it to be the most transformative experience of my life. I loved the small class sizes, relationships that I built with professors, and the opportunity to learn in creative, different ways. Because of this, I hope that students not only take away the skills associated with the course's measurable outcomes, but also learn more about themselves, their peers, and the environment around them. This requires a certain level of vulnerability and trust, which I hope that we can establish together. 
+
+Ultimately, I designed this course around three pedogogical commitments:
+- *Democratic Education:* Promote a learning community that (cite Friere, Pedagogy of Heart).
+- *Pluralist Learning:* Engage with, relate to, and communicate with individuals and communities (Simmer-Brown, )
+- *Loving Corrections* (cite amb, 2024)
+
+#### I want you to stop by Office Hours (E152)
+
+#### I get Overwhelmed by the Climate Crisis, too
+
+
 
 ### Teaching, Learning, and Being in Community
 
-It is my intent that students from all diverse backgrounds and perspectives be well-served by this course, that students' learning needs be addressed both in and out of class, and that the diversity that the students bring to this class be viewed as a resource, strength, and benefit. It is my intent to present materials and activities that are respectful of diversity and in alignment with [Duke's Commitment to Diversity and Inclusion](https://provost.duke.edu/initiatives/commitment-to-diversity-and-inclusion). Your suggestions are encouraged and appreciated.
+#### Democratic Education
 
-#### On Loving Corrections
+#### Pluralist Learning
 
+#### Loving Corrections
 
-### Accessibility
+#### Shared Expectations
+*Note that this will be completed during our first class session, more to come, soon!*
 
-I intend for all course material to be accessible to students. If you find any material difficulty to access due to course format, technology, or any other reason, please don't hesitate to let me know so that we can identify appropriate accommodations.  
-
-Additionally, the Wellesley Office of Accessibility and Disability Resources (ADR) ensures that students receive reasonable and appropriate accommodations including but not limited to: testing accommodations, classroom accommodations, notetaking services, on-campus transportation, communication resources, and assistive technology. In the case that you require accommodations, please be in touch with ADR to request or update an accommodation letter. 
-
-
-### Communication
-
-All lecture notes, assignment instructions, an up-to-date schedule, and other course materials may be found on the course website.
-
-Announcements will be emailed through Sakai Announcements periodically. Please check your email regularly to ensure you have the latest announcements for the course.
-
-## Activities & Assessment
-
-### Weekly Theory Discussions
-
-Each week offers the opportunity to discuss and apply different forms of environmental justice, through the lens of a community case study. Tuesdays will begin with small and large-group discussions on one theoretical piece and one community case study. Please come ready to discuss the case study and apply theoretical findings.
-
-### Weekly Data Application Assignments
-
-Fridays will be spent primarily on an in-class data visualization exercise related to the weekly case study. Please review the exercise before class, and be ready to work in pairs on a 
-
-### Self-Reflection
-
-There will be two, take-home, open-note exams. Through these exams you have the opportunity to demonstrate what you've learned in the course thus far.
-
-### Final Project
-
-The purpose of the [final project](/project/) is to apply what you've learned throughout the semester to analyze an interesting data-driven research question.
-
-## Grading
+## Course Policies
+### Late Policy
+### Honor Code
+### Grading
+**Course Components:**
+- Attendance and Participation: 
+- Weekly assignments: Each week offers the opportunity to discuss and apply different forms of environmental justice, through the lens of a community case study. 
+    - Tuesdays will begin with small and large-group discussions on one theoretical piece and one community case study. Please come ready to discuss the case study and apply theoretical findings.
+    - Fridays will be spent primarily on an in-class data visualization exercise related to the weekly case study. Please review the exercise before class, and be ready to work in rotating pairs on the assignment. 
+- Community Case Study Final Project: End of semester individual project on a community case study of your choice. Note that final project score is cumulative, including a mid-semester check-in and proposed data visualization strategy (10%) and final submission (20%).
 
 The final course grade will be calculated as follows:
 
 <center>
 
-| Category           | Percentage |
-|--------------------|------------|
-| Homework           | 30%        |
-| Labs               | 15%        |
-| Final Project      | 15%        |
-| Exam 01            | 17.5%      |
-| Exam 02            | 17.5%      |
-| In-class exercises | 5%         |
+| Category                             | Percentage |
+|--------------------------------------|------------|
+| Attendance & Participation           | 10%        |
+| Weekly Assignments                   | 60%        |
+| Final Project                        | 30%        |
 
-## Course policies
+### Course Readings
+### Communication
+### Accessibility and Disability
+Every student has the right to access 
+I intend for all course material to be accessible to students. If you find any material difficulty to access due to course format, technology, or any other reason, please don't hesitate to let me know so that we can identify appropriate accommodations.  
 
-### Academic honesty
+Additionally, the Wellesley Office of Accessibility and Disability Resources (ADR) ensures that students receive reasonable and appropriate accommodations including but not limited to: testing accommodations, classroom accommodations, notetaking services, on-campus transportation, communication resources, and assistive technology. In the case that you require accommodations, please be in touch with ADR to request or update an accommodation letter. 
 
-**TL;DR: Don't cheat!**
+### Religious Observance
+### Discrimination, Harassment, and Sexual Misconduct
 
-Please abide by the following as you work on assignments in this course:
-
--   You may discuss individual homework and lab assignments with other students; however, you may not directly share (or copy) code or write up with other students. For team assignments, you may collaborate freely within your team. You may discuss the assignment with other teams; however, you may not directly share (or copy) code or write up with another team. Unauthorized sharing (or copying) of the code or write up will be considered a violation for all students involved.
--   You may not discuss or otherwise work with others on the exams.
--   **Reusing code**: Unless explicitly stated otherwise, you may make use of online resources (e.g. StackOverflow) for coding examples on assignments. If you directly use code from an outside source (or use it as inspiration), you must explicitly cite where you obtained the code. Any recycled code that is discovered and is not explicitly cited will be treated as plagiarism.
-
-### Late work & extensions
-
-The due dates for assignments are there to help you keep up with the course material and to ensure the teaching team can provide feedback within a timely manner. We understand that things come up periodically that could make it difficult to submit an assignment by the deadline. Note that the lowest homework and lab assignment will be dropped to accommodate such circumstances.
+### Feedback
 
 ## Important dates
 
@@ -104,3 +89,6 @@ The due dates for assignments are there to help you keep up with the course mate
 -   **Dec 11-14**: Reading period
 
 -   **Dec 15-18**: Final exams
+
+## Acknowledgments
+This course was created using [templates](https://github.com/rstudio-conf-2022/teach-ds-course-website) created by Maria Tackett & Mine Cetinkaya-Rundel. I was inspired by [Evan Peck's piece](https://medium.com/bucknell-hci/what-i-want-you-to-know-about-me-as-your-professor-58c9c2e91e33) to share more about me. I'm also very grateful for tips and resources from [Dr. Yaniv Yacoby](https://yanivyacoby.github.io/), [Accessible Syllabus](https://accessiblesyllabus.com/), and 
