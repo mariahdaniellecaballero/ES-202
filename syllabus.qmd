@@ -12,23 +12,14 @@ In this interdisciplinary course, students are asked to engage with environmenta
 
 
 ## Course Community
-#### What I Want You to Know About Me
-1. **I Care about Meaningful Teaching and Learning Experiences**
-I also graduated from a Seven Sisters college, and found it to be the most transformative experience of my life. I loved the small class sizes, relationships that I built with professors, and the opportunity to learn in creative, different ways. Because of this, I hope that students not only take away the skills associated with the course's measurable outcomes, but also learn more about themselves, their peers, and the environment around them. This requires a certain level of vulnerability and trust, which I hope that we can establish together. 
+### Teaching, Learning, and Being in Community
+I hope that students not only take away the skills associated with the course's measurable outcomes, but also learn more about themselves, their peers, and the environment around them. This requires a certain level of vulnerability and trust, which I hope that we can establish together. 
 
 Ultimately, I designed this course around three pedogogical commitments:
-- *Democratic Education:* Promote a learning community that (cite Friere, Pedagogy of Heart).
+
+-  *Democratic Education:* Promote a learning community that (cite Friere, Pedagogy of Heart).
 - *Pluralist Learning:* Engage with, relate to, and communicate with individuals and communities (Simmer-Brown, )
-- *Loving Corrections* (cite amb, 2024)
-
-#### I want you to stop by Office Hours (E152)
-
-#### I get Overwhelmed by the Climate Crisis, too
-
-
-
-### Teaching, Learning, and Being in Community
-
+-  *Loving Corrections* (cite amb, 2024)
 #### Democratic Education
 
 #### Pluralist Learning
@@ -40,39 +31,50 @@ Ultimately, I designed this course around three pedogogical commitments:
 
 ## Course Policies
 ### Late Policy
+
 ### Honor Code
+
 ### Grading
-**Course Components:**
-- Attendance and Participation: 
-- Weekly assignments: Each week offers the opportunity to discuss and apply different forms of environmental justice, through the lens of a community case study. 
+#### Course Components
+
+- **Attendance and Participation (10%)**: This primarily includes coming to class prepared (i.e., completed any preparatory readings/assignments before our scheduled course meeting), engaging with peers on course content (i.e., asking questions, sharing thoughts and ideas, participating in group activities).
+
+- **Weekly assignments (60%)**: Each week offers the opportunity to discuss and apply different forms of environmental justice, through the lens of a community case study. 
     - Tuesdays will begin with small and large-group discussions on one theoretical piece and one community case study. Please come ready to discuss the case study and apply theoretical findings.
     - Fridays will be spent primarily on an in-class data visualization exercise related to the weekly case study. Please review the exercise before class, and be ready to work in rotating pairs on the assignment. 
-- Community Case Study Final Project: End of semester individual project on a community case study of your choice. Note that final project score is cumulative, including a mid-semester check-in and proposed data visualization strategy (10%) and final submission (20%).
-
-The final course grade will be calculated as follows:
-
-<center>
-
-| Category                             | Percentage |
-|--------------------------------------|------------|
-| Attendance & Participation           | 10%        |
-| Weekly Assignments                   | 60%        |
-| Final Project                        | 30%        |
+- **Community Case Study Final Project (30%)**: End of semester individual project on a community case study of your choice. Note that final project score is cumulative, including a mid-semester check-in and proposed data visualization strategy (10%) and final submission (20%).
 
 ### Course Readings
+There are no textbooks for this course. All course readings will be made available on the website. Please see the [schedule](schedule.qmd) for each week's corresponding material. 
+
 ### Communication
+Class emails will be sent out via Brightspace. Please do feel free to [email me](mailto:mc152@wellesley.edu) with questions or concerns regarding the course, and I will do my best to respond within 24 hours (excluding weekends). 
+
 ### Accessibility and Disability
-Every student has the right to access 
-I intend for all course material to be accessible to students. If you find any material difficulty to access due to course format, technology, or any other reason, please don't hesitate to let me know so that we can identify appropriate accommodations.  
+Every student has the right to full access in this course. If you find any material difficulty to access due to course format, technology, or any other reason, please don't hesitate to let me know so that we can identify appropriate accommodations.  
 
-Additionally, the Wellesley Office of Accessibility and Disability Resources (ADR) ensures that students receive reasonable and appropriate accommodations including but not limited to: testing accommodations, classroom accommodations, notetaking services, on-campus transportation, communication resources, and assistive technology. In the case that you require accommodations, please be in touch with ADR to request or update an accommodation letter. 
+Additionally, the Wellesley [Office of Accessibility and Disability Resources (ADR)](https://intranet.wellesley.edu/administrative/accessibility-and-disability-resources) ensures that students receive reasonable and appropriate accommodations including but not limited to: testing accommodations, classroom accommodations, notetaking services, on-campus transportation, communication resources, and assistive technology. In the case that you require accommodations, please be in touch with ADR to request or update an accommodation letter. 
 
-### Religious Observance
+### Religious Observance 
+Students observing a religious holiday that conflicts with a scheduled course event are encouraged to speak with me in advance to identify alternative arrangements. Students are also welcome to read more about the College's [Policy on National Holidays and Religious Days of Observance](https://www.wellesley.edu/about-us/policies-procedures/days-of-observance), or submit a [Religious Observance Notification Form](https://webapps.wellesley.edu/religious_calendar/calendar.php). 
+
 ### Discrimination, Harassment, and Sexual Misconduct
+Wellesley College considers diversity essential to educational excellence, and we are committed to being a community in which each member thrives. The College does not allow discrimination or harassment based on race, color, sex, gender identity or expression, sexual orientation, ethnic or national origin or ancestry, physical or mental disability, pregnancy or any other protected status under applicable local, state or federal law. 
+
+If you or someone you know has experienced discrimination or harassment, support is available to you:
+
+**Confidential Reporting:** Students can report their experiences to Health Services (781-283-2810); Stone Center Counseling Service (781-283-2839); or Religious and Spiritual Life (781-283-2685). *These offices are not required to report allegations of sexual misconduct to the College*.
+
+**Non-Confidential Reporting:** You can let your instructor know. *As faculty, we are obligated to report allegations of sex-based discrimination to the Non-discrimination/Title IX Office*.
+
+You can report directly to the Non-discrimination/Title IX Office (781-283-2451) to receive support, and to learn more about your options for a response by the College or about reporting to a different institution.
+
+You can report to the Wellesley College Police Department (Emergency: 781-283-5555, Non-emergency: 781-283-2121) if you believe a crime has been committed, or if there is an immediate safety risk.
 
 ### Feedback
 
-## Important dates
+
+## Important Dates
 
 -   **Sep 02:** Classes begin
 
