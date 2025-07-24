@@ -1,0 +1,19 @@
+{
+  "hash": "f1b522be4e03a792155a2495c04cfa28",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Welcome!\"\ndate: \"September 02, 2025\"\nformat: \n  revealjs:\n    theme:\n      - default\n    css: custom.scss\n    transition: fade\n    slide-number: true\n    incremental: false \n    chalkboard: true\n    center: true\nexecute:\n  freeze: auto\n  echo: true\n---\n\n# Environmental Justice: A Community-Centric Approach {data-background-color=\"#687b1a\"}\n::: columns\n::: {.column width=\"70%\"}\n**Course Number:** ES-202-01\n\n**Time:**  Tues & Fri 9:55 - 11:10 AM\n\n**Location:** \n\n**Instructor:** Mariah D. Caballero\n:::\n\n::: {.column width=\"30%\"}\n![](images/logo.png){fig-alt=\"class logo\"}\n:::\n:::\n\n\n\n::: {.cell}\n\n:::\n\n\n## About Me\n\n-   Mariah Caballero\n  - Call me Dr./Professor Caballero, or Dr/Professor. Cab\n-   She/her pronouns\n-   New to Wellesley! \n- PhD in Community Research and Action from Vanderbilt University, concentration in Climate and Energy Policy\n\n## About This Course{.smaller}\n::: columns\n::: {.column width=\"60%\"}\n- Traditional take on Environmental Justice tends to focus on Distributional and Recognitional Justice\n- My take on Environmental Justice: \n  - Expansive movement that welcomes everyone into belonging\n  - Community-based\n  - Solutions-focused\n  - Expands ideas of justice to include both theory and methods\n:::\n\n::: {.column width=\"40%\"}\n![](images/Forms_of_Justice.png){.absolute top=0 right=0 height=\"100%\"}\n:::\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {
+      "include-after-body": [
+        "\n<script>\n  // htmlwidgets need to know to resize themselves when slides are shown/hidden.\n  // Fire the \"slideenter\" event (handled by htmlwidgets.js) when the current\n  // slide changes (different for each slide format).\n  (function () {\n    // dispatch for htmlwidgets\n    function fireSlideEnter() {\n      const event = window.document.createEvent(\"Event\");\n      event.initEvent(\"slideenter\", true, true);\n      window.document.dispatchEvent(event);\n    }\n\n    function fireSlideChanged(previousSlide, currentSlide) {\n      fireSlideEnter();\n\n      // dispatch for shiny\n      if (window.jQuery) {\n        if (previousSlide) {\n          window.jQuery(previousSlide).trigger(\"hidden\");\n        }\n        if (currentSlide) {\n          window.jQuery(currentSlide).trigger(\"shown\");\n        }\n      }\n    }\n\n    // hookup for slidy\n    if (window.w3c_slidy) {\n      window.w3c_slidy.add_observer(function (slide_num) {\n        // slide_num starts at position 1\n        fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);\n      });\n    }\n\n  })();\n</script>\n\n"
+      ]
+    },
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

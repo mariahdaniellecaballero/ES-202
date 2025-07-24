@@ -1,5 +1,5 @@
 ---
-title: "Application: Food & Procedural Justice"
+title: "Taking an Intersectional Approach"
 date: "September 05, 2025"
 format: 
   revealjs:
@@ -16,41 +16,4 @@ execute:
   echo: true
 ---
 
-# Welcome!
-
-```{r}
-#| echo: false
-#| message: false
-#| warning: false
-library(tidyverse)
-library(palmerpenguins)
-library(viridis)
-```
-
-## Bullet point list
-
-## Incremental list
-
-## Equations
-
-## Code
-
-## Images
-
-## Columns
-
-## Panels
-
-## Themes
-
-Customize the appearance of the slides using
-
--   Built-in [Reveal
-    theme](https://quarto.org/docs/presentations/revealjs/themes.html#using-themes)
-
--   Modify built-in theme using
-    [Sass](https://quarto.org/docs/presentations/revealjs/themes.html#creating-themes)
-
-    -   Variant of CSS that supports variables and other features
-
-Specify the theme and/or Sass file (.scss) in the YAML
+## 

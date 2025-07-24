@@ -1,5 +1,5 @@
 ---
-title: "Theory: Food & Procedural Justice"
+title: "Welcome!"
 date: "September 02, 2025"
 format: 
   revealjs:
@@ -80,7 +80,7 @@ ggplot(data = penguins, aes(x = flipper_length_mm, y = body_mass_g,
 
 ## Images
 
-![Artwork by [\@allison_horst](https://www.allisonhorst.com/)](images/penguins.png){fig-alt="Three penguins labeled Chinstrap, Gentoo, and Adelie." fig-align="center"}
+![Artwork by [\@allison_horst](https://www.allisonhorst.com/)](week-01/images/penguins.png){fig-alt="Three penguins labeled Chinstrap, Gentoo, and Adelie." fig-align="center"}
 
 ## Columns
 
