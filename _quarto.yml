@@ -23,6 +23,8 @@ website:
         text: Syllabus
       - href: schedule.qmd
         text: Schedule
+      - href: https://docs.google.com/document/d/1-NDZl_DhfwxHM4T2AhiVBVR7m3s6qMOtvYcFUz1r_ps/edit?usp=sharing
+        text: Find a Typo?
         
 format:
   html:

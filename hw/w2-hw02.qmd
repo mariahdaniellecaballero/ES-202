@@ -1,6 +1,6 @@
 ---
-title: "HW 01: Pet Names"
-date: "September 14, 2022"
+title: "HW 02: Solid Waste Sites"
+date: "September 15, 2025"
 categories: "Homework"
 ---
 

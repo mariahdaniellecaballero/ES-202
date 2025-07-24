@@ -18,7 +18,7 @@
     "href": "weeks/week-02.html",
     "title": "Week 02",
     "section": "",
-    "text": "Lectures\n\n\n\n\n\n\nTopic\n\n\n\nDate\n\n\n\n\n\n\n\n\nVisualizing data with ggplot2\n\n\nMon, Sep 05\n\n\n\n\n\n\nVisualizing numeric data\n\n\nWed, Sep 07\n\n\n\n\n\n\nVisualizing categorical data\n\n\nWed, Sep 07\n\n\n\n\n\n\nNo matching items\n\n\n\nAssignments\n\n\n\n\n\n\nAssignment\n\n\n\nTitle\n\n\n\nDue\n\n\n\n\n\n\n\n\nHomework\n\n\nHW 01: Pet Names\n\n\nWed, Sep 14\n\n\n\n\n\n\nLab\n\n\nLab 01: Hello R!\n\n\nFri, Sep 16\n\n\n\n\n\n\nNo matching items\n\n\n\nReadings\n\nR for Data Science: Chapter 3 - Data Visualization\nIntroduction for Modern Statistics: Chapter 4 - Exploring Categorical Data\nIntroduction to Modern Statistics: Chapter 5- Exploring Numerical Data"
+    "text": "Lectures\n\n\n\n\n\n\nTopic\n\n\n\nDate\n\n\n\n\n\n\n\n\nVisualizing data with ggplot2\n\n\nMon, Sep 05\n\n\n\n\n\n\nVisualizing numeric data\n\n\nWed, Sep 07\n\n\n\n\n\n\nVisualizing categorical data\n\n\nWed, Sep 07\n\n\n\n\n\n\nNo matching items\n\n\n\nAssignments\n\n\n\n\n\n\nAssignment\n\n\n\nTitle\n\n\n\nDue\n\n\n\n\n\n\n\n\nHomework\n\n\nHW 02: Solid Waste Sites\n\n\nMon, Sep 15\n\n\n\n\n\n\nNo matching items\n\n\n\nReadings"
   },
   {
     "objectID": "weeks/week-03.html",
@@ -275,7 +275,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "Week\n\n\n\nDates\n\n\n\nTopic\n\n\n\n\n\n\n\n\nWeek 01\n\n\nSep 02 - 07\n\n\nGetting Started\n\n\n\n\n\n\nWeek 02\n\n\nSep 05 - 09\n\n\nVisualizing Data\n\n\n\n\n\n\nWeek 03\n\n\nSep 12 - 16\n\n\nWrangling Data\n\n\n\n\n\n\nNo matching items",
+    "text": "Week\n\n\n\nDates\n\n\n\nTopic\n\n\n\n\n\n\n\n\nWeek 01\n\n\nSep 02 - 07\n\n\nGetting Started\n\n\n\n\n\n\nWeek 02\n\n\nSep 05 - 09\n\n\nDistributional Justice in Houston, TX\n\n\n\n\n\n\nWeek 03\n\n\nSep 12 - 16\n\n\nWrangling Data\n\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "Schedule"
     ]
@@ -305,7 +305,7 @@
     "href": "schedule.html#weekly-schedule",
     "title": "Schedule",
     "section": "",
-    "text": "Week\n\n\n\nDates\n\n\n\nTopic\n\n\n\n\n\n\n\n\nWeek 01\n\n\nSep 02 - 07\n\n\nGetting Started\n\n\n\n\n\n\nWeek 02\n\n\nSep 05 - 09\n\n\nVisualizing Data\n\n\n\n\n\n\nWeek 03\n\n\nSep 12 - 16\n\n\nWrangling Data\n\n\n\n\n\n\nNo matching items",
+    "text": "Week\n\n\n\nDates\n\n\n\nTopic\n\n\n\n\n\n\n\n\nWeek 01\n\n\nSep 02 - 07\n\n\nGetting Started\n\n\n\n\n\n\nWeek 02\n\n\nSep 05 - 09\n\n\nDistributional Justice in Houston, TX\n\n\n\n\n\n\nWeek 03\n\n\nSep 12 - 16\n\n\nWrangling Data\n\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "Schedule"
     ]
@@ -796,5 +796,12 @@
     "title": "Welcome!",
     "section": "My Pedogogical Goals for Creating and Being in Community",
     "text": "My Pedogogical Goals for Creating and Being in Community\n\nDemocratic Education\nPluralistic Learning\nLoving Corrections"
+  },
+  {
+    "objectID": "slides/week-02/03-theory_dist_just.html#what-we-read",
+    "href": "slides/week-02/03-theory_dist_just.html#what-we-read",
+    "title": "Theoretical Applications",
+    "section": "What we Read",
+    "text": "What we Read"
   }
 ]

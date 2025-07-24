@@ -1,0 +1,57 @@
+---
+title: "Theoretical Applications"
+subtitle: "Distributional Justice & Soil in Houston, TX"
+date: "September 09, 2025"
+format: 
+  revealjs:
+    theme:
+      - default
+    css: custom.scss
+    transition: fade
+    slide-number: true
+    incremental: false 
+    chalkboard: true
+    center: true
+execute:
+  freeze: auto
+---
+
+#  Class Overview 
+
+- Centering activity
+- Paired conversations on distributional justice
+- Group synthesis
+- Intro to community case study (Houston, TX, 1979)
+
+## What we Read
+
+- Reading One
+- Reading Two
+
+# Paired conversations on Distributional Justice
+
+- 
+
+# Group Synthesis
+
+# Intro to Community Case Study
+
+## Overview
+
+## Theoretical Applications 
+
+## Why I chose this case study
+
+## Assessment Approach
+
+## Outcomes of this case study
+
+# Logistics
+For Friday: 
+
+- Read community case study in schedule
+- Review in-class activity
+- Make sure posit login is working!
+
+
+

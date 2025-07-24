@@ -87,8 +87,8 @@ If you or someone you know has experienced discrimination or harassment, support
 I sincerely care about your experience in this course, and am always interested to hear your feedback. There are several ways to share your ideas and suggestions: 
 
 - Come talk to me! I know that students are likely to have different learning styles, which means I won't be offended if you share ideas on how to improve things. 
-- You can always provide feedback anonymously via this (form)[https://docs.google.com/forms/d/e/1FAIpQLSfnbphRazZ99wNWsAbozjeAMZtFMo5qbPRy2QagE74xZUB2Mw/viewform?usp=sharing&ouid=102576151535349337042]
-- I'll also colelct anonymous feedback from the course mid-semester, so please look out for that! 
+- You can always provide feedback anonymously via this [form](https://docs.google.com/forms/d/e/1FAIpQLSfnbphRazZ99wNWsAbozjeAMZtFMo5qbPRy2QagE74xZUB2Mw/viewform?usp=sharing&ouid=102576151535349337042)
+- I'll also collect anonymous feedback about the course at the mid-semester point.
 
 ## Important Dates
 
@@ -102,4 +102,4 @@ I sincerely care about your experience in this course, and am always interested 
 -   **Dec 15-18**: Final exams
 
 ## Acknowledgments
-This course was created using [templates](https://github.com/rstudio-conf-2022/teach-ds-course-website) created by Maria Tackett & Mine Cetinkaya-Rundel. I was inspired by [Evan Peck's piece](https://medium.com/bucknell-hci/what-i-want-you-to-know-about-me-as-your-professor-58c9c2e91e33) to share more about me. I'm also very grateful for tips and resources from [Dr. Yaniv Yacoby](https://yanivyacoby.github.io/), [Accessible Syllabus](https://accessiblesyllabus.com/), and 
+This course was created using [templates](https://github.com/rstudio-conf-2022/teach-ds-course-website) created by Maria Tackett & Mine Cetinkaya-Rundel. I'm also very grateful for tips and resources from [Dr. Yaniv Yacoby](https://yanivyacoby.github.io/), [Accessible Syllabus](https://accessiblesyllabus.com/), and 
