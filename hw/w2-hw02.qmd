@@ -1,5 +1,5 @@
 ---
-title: "HW 02: Solid Waste Sites"
+title: "HW 02: Solid Waste Sites Case Study"
 date: "September 15, 2025"
 categories: "Homework"
 ---

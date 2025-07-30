@@ -1,7 +1,7 @@
 ---
 title: "Week 03"
-subtitle: "Wrangling Data"
-description: "Sep 12 - 16"
+subtitle: "Procedural (in)Justice in Coachella Valley, CA"
+description: "Sep 16 - 19"
 author: ""
 date: ""
 listing:

@@ -1,7 +1,7 @@
 ---
 title: "Week 02"
-subtitle: "Distributional Justice in Houston, TX"
-description: "Sep 05 - 09"
+subtitle: "Distributional (in)Justice in Houston, TX"
+description: "Sep 09 - 12"
 author: ""
 date: ""
 listing:

@@ -18,14 +18,14 @@
     "href": "weeks/week-02.html",
     "title": "Week 02",
     "section": "",
-    "text": "Lectures\n\n\n\n\n\n\nTopic\n\n\n\nDate\n\n\n\n\n\n\n\n\nVisualizing data with ggplot2\n\n\nMon, Sep 05\n\n\n\n\n\n\nVisualizing numeric data\n\n\nWed, Sep 07\n\n\n\n\n\n\nVisualizing categorical data\n\n\nWed, Sep 07\n\n\n\n\n\n\nNo matching items\n\n\n\nAssignments\n\n\n\n\n\n\nAssignment\n\n\n\nTitle\n\n\n\nDue\n\n\n\n\n\n\n\n\nHomework\n\n\nHW 02: Solid Waste Sites\n\n\nMon, Sep 15\n\n\n\n\n\n\nNo matching items\n\n\n\nReadings"
+    "text": "Lectures\n\n\n\n\n\n\nTopic\n\n\n\nDate\n\n\n\n\n\n\n\n\n[Theory] Distributional (in)Justice & Soil\n\n\nTue, Sep 09\n\n\n\n\n\n\n[Assess] Solid Waste Landfill Siting\n\n\nTue, Sep 09\n\n\n\n\n\n\nNo matching items\n\n\n\nAssignments\n\n\n\n\n\n\nAssignment\n\n\n\nTitle\n\n\n\nDue\n\n\n\n\n\n\n\n\nHomework\n\n\nHW 02: Solid Waste Sites\n\n\nMon, Sep 15\n\n\n\n\n\n\nNo matching items\n\n\n\nReadings"
   },
   {
     "objectID": "weeks/week-03.html",
     "href": "weeks/week-03.html",
     "title": "Week 03",
     "section": "",
-    "text": "Lectures\n\n\n\n\n\nTopic\n\n\nDate\n\n\n\n\n\n\nGrammar of data wrangling\n\n\nMon, Sep 12\n\n\n\n\nWorking with a single data frame\n\n\nMon, Sep 12\n\n\n\n\nWorking with multiple data frames\n\n\nWed, Sep 14\n\n\n\n\n\nNo matching items\n\n\n\n\nAssignments\n\n\n\n\n\nAssignment\n\n\nTitle\n\n\nDue\n\n\n\n\n\n\nHomework\n\n\nHW 02: Data visualization\n\n\nWed, Sep 21\n\n\n\n\nLab\n\n\nLab 02: Data visualization with ggplot2!\n\n\nFri, Sep 23\n\n\n\n\n\nNo matching items\n\n\n\n\nReadings"
+    "text": "Lectures\n\n\n\n\n\n\nTopic\n\n\n\nDate\n\n\n\n\n\n\n\n\n[Theory] Distributional (in)Justice & Food\n\n\nTue, Sep 16\n\n\n\n\n\n\n[Assess] Bracero Farmworker Case Study\n\n\nFri, Sep 19\n\n\n\n\n\n\nNo matching items\n\n\n\nAssignments\n\n\n\n\n\n\nAssignment\n\n\n\nTitle\n\n\n\nDue\n\n\n\n\n\n\n\n\nHomework\n\n\nHW 03: Bracero Case Study\n\n\nMon, Sep 22\n\n\n\n\n\n\nNo matching items\n\n\n\nReadings"
   },
   {
     "objectID": "weeks/week-01.html",
@@ -255,7 +255,7 @@
     "href": "syllabus.html#course-policies",
     "title": "Syllabus",
     "section": "Course Policies",
-    "text": "Course Policies\n\nLate Policy\n\n\nHonor Code\n\n\nGrading\n\nCourse Components\n\nAttendance and Participation (10%): This primarily includes coming to class prepared (i.e., completed any preparatory readings/assignments before our scheduled course meeting), engaging with peers on course content (i.e., asking questions, sharing thoughts and ideas, participating in group activities).\nWeekly Assignments (60%): Each week offers the opportunity to discuss and apply different forms of environmental justice, through the lens of a community case study.\n\nTuesdays will begin with small and large-group discussions on one theoretical piece and one community case study. Please come ready to discuss the case study and apply theoretical findings.\nFridays will be spent primarily on an in-class data visualization exercise related to the weekly case study. Please review the exercise before class, and be ready to work in rotating pairs on the assignment.\n\nCommunity Case Study Final Project (30%): End of semester individual project on a community case study of your choice. Note that final project score is cumulative, including a mid-semester check-in and proposed data visualization strategy (10%) and final submission (20%).\n\n\n\n\nCourse Readings\nThere are no textbooks for this course. All course readings will be made available on the website. Please see the schedule for each week’s corresponding material.\n\n\nCommunication\nClass emails will be sent out via Brightspace. Please do feel free to email me with questions or concerns regarding the course, and I will do my best to respond within 24 hours (excluding weekends).\n\n\nAccessibility and Disability\nEvery student has the right to full access in this course. If you find any material difficulty to access due to course format, technology, or any other reason, please don’t hesitate to let me know so that we can identify appropriate accommodations.\nAdditionally, the Wellesley Office of Accessibility and Disability Resources (ADR) ensures that students receive reasonable and appropriate accommodations including but not limited to: testing accommodations, classroom accommodations, notetaking services, on-campus transportation, communication resources, and assistive technology. In the case that you require accommodations, please be in touch with ADR to request or update an accommodation letter.\n\n\nReligious Observance\nStudents observing a religious holiday that conflicts with a scheduled course event are encouraged to speak with me in advance to identify alternative arrangements. Students are also welcome to read more about the College’s Policy on National Holidays and Religious Days of Observance, or submit a Religious Observance Notification Form.\n\n\nDiscrimination, Harassment, and Sexual Misconduct\nWellesley College considers diversity essential to educational excellence, and we are committed to being a community in which each member thrives. The College does not allow discrimination or harassment based on race, color, sex, gender identity or expression, sexual orientation, ethnic or national origin or ancestry, physical or mental disability, pregnancy or any other protected status under applicable local, state or federal law.\nIf you or someone you know has experienced discrimination or harassment, support is available to you:\nConfidential Reporting: Students can report their experiences to Health Services (781-283-2810); Stone Center Counseling Service (781-283-2839); or Religious and Spiritual Life (781-283-2685). These offices are not required to report allegations of sexual misconduct to the College.\nNon-Confidential Reporting: You can let your instructor know. As faculty, we are obligated to report allegations of sex-based discrimination to the Non-discrimination/Title IX Office. You can report directly to the Non-discrimination/Title IX Office (781-283-2451) to receive support, and to learn more about your options for a response by the College or about reporting to a different institution. You can report to the Wellesley College Police Department (Emergency: 781-283-5555, Non-emergency: 781-283-2121) if you believe a crime has been committed, or if there is an immediate safety risk.\n\n\nFeedback\nI sincerely care about your experience in this course, and am always interested to hear your feedback. There are several ways to share your ideas and suggestions:\n\nCome talk to me! I know that students are likely to have different learning styles, which means I won’t be offended if you share ideas on how to improve things.\nYou can always provide feedback anonymously via this (form)[https://docs.google.com/forms/d/e/1FAIpQLSfnbphRazZ99wNWsAbozjeAMZtFMo5qbPRy2QagE74xZUB2Mw/viewform?usp=sharing&ouid=102576151535349337042]\nI’ll also colelct anonymous feedback from the course mid-semester, so please look out for that!",
+    "text": "Course Policies\n\nLate Policy\n\n\nHonor Code\n\n\nGrading\n\nCourse Components\n\nAttendance and Participation (10%): This primarily includes coming to class prepared (i.e., completed any preparatory readings/assignments before our scheduled course meeting), engaging with peers on course content (i.e., asking questions, sharing thoughts and ideas, participating in group activities).\nWeekly Assignments (60%): Each week offers the opportunity to discuss and apply different forms of environmental justice, through the lens of a community case study.\n\nTuesdays will begin with small and large-group discussions on one theoretical piece and one community case study. Please come ready to discuss the case study and apply theoretical findings.\nFridays will be spent primarily on an in-class data visualization exercise related to the weekly case study. Please review the exercise before class, and be ready to work in rotating pairs on the assignment, and submit it individually by the following Monday at 11:59 PM. Note that the assignment with the lowest grade will be dropped (i.e., 6 of 7 assignments, each counting for 10% of your grade).\n\n\nCommunity Case Study Final Project (30%): End of semester individual project on a community case study of your choice. Note that final project score is cumulative, including a mid-semester check-in and proposed data visualization strategy (10%) and final submission (20%).\n\n\n\n\nCourse Readings\nThere are no textbooks for this course. All course readings will be made available on the website. Please see the schedule for each week’s corresponding material.\n\n\nCommunication\nClass emails will be sent out via Brightspace. Please do feel free to email me with questions or concerns regarding the course, and I will do my best to respond within 24 hours (excluding weekends).\n\n\nAccessibility and Disability\nEvery student has the right to full access in this course. If you find any material difficulty to access due to course format, technology, or any other reason, please don’t hesitate to let me know so that we can identify appropriate accommodations.\nAdditionally, the Wellesley Office of Accessibility and Disability Resources (ADR) ensures that students receive reasonable and appropriate accommodations including but not limited to: testing accommodations, classroom accommodations, notetaking services, on-campus transportation, communication resources, and assistive technology. In the case that you require accommodations, please be in touch with ADR to request or update an accommodation letter.\n\n\nReligious Observance\nStudents observing a religious holiday that conflicts with a scheduled course event are encouraged to speak with me in advance to identify alternative arrangements. Students are also welcome to read more about the College’s Policy on National Holidays and Religious Days of Observance, or submit a Religious Observance Notification Form.\n\n\nDiscrimination, Harassment, and Sexual Misconduct\nWellesley College considers diversity essential to educational excellence, and we are committed to being a community in which each member thrives. The College does not allow discrimination or harassment based on race, color, sex, gender identity or expression, sexual orientation, ethnic or national origin or ancestry, physical or mental disability, pregnancy or any other protected status under applicable local, state or federal law.\nIf you or someone you know has experienced discrimination or harassment, support is available to you:\nConfidential Reporting: Students can report their experiences to Health Services (781-283-2810); Stone Center Counseling Service (781-283-2839); or Religious and Spiritual Life (781-283-2685). These offices are not required to report allegations of sexual misconduct to the College.\nNon-Confidential Reporting: You can let your instructor know. As faculty, we are obligated to report allegations of sex-based discrimination to the Non-discrimination/Title IX Office. You can report directly to the Non-discrimination/Title IX Office (781-283-2451) to receive support, and to learn more about your options for a response by the College or about reporting to a different institution. You can report to the Wellesley College Police Department (Emergency: 781-283-5555, Non-emergency: 781-283-2121) if you believe a crime has been committed, or if there is an immediate safety risk.\n\n\nFeedback\nI sincerely care about your experience in this course, and am always interested to hear your feedback. There are several ways to share your ideas and suggestions:\n\nCome talk to me! I know that students are likely to have different learning styles, which means I won’t be offended if you share ideas on how to improve things.\nYou can always provide feedback anonymously via this form\nI’ll also collect anonymous feedback about the course at the mid-semester point.",
     "crumbs": [
       "Syllabus"
     ]
@@ -275,7 +275,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "Week\n\n\n\nDates\n\n\n\nTopic\n\n\n\n\n\n\n\n\nWeek 01\n\n\nSep 02 - 07\n\n\nGetting Started\n\n\n\n\n\n\nWeek 02\n\n\nSep 05 - 09\n\n\nDistributional Justice in Houston, TX\n\n\n\n\n\n\nWeek 03\n\n\nSep 12 - 16\n\n\nWrangling Data\n\n\n\n\n\n\nNo matching items",
+    "text": "Week\n\n\n\nDates\n\n\n\nTopic\n\n\n\n\n\n\n\n\nWeek 01\n\n\nSep 02 - 07\n\n\nGetting Started\n\n\n\n\n\n\nWeek 02\n\n\nSep 09 - 12\n\n\nDistributional (in)Justice in Houston, TX\n\n\n\n\n\n\nWeek 03\n\n\nSep 16 - 19\n\n\nProcedural (in)Justice in Coachella Valley, CA\n\n\n\n\n\n\nWeek 04\n\n\nSep 23 - 26\n\n\nRestorative (in)Justice in Edgecombe County, NC\n\n\n\n\n\n\nWeek 05\n\n\nSep 30 - Oct 03\n\n\nRecognition (in)Justice in Flint, MI\n\n\n\n\n\n\nWeek 05\n\n\nOct 07 - Oct 10\n\n\nCosmopolitan (in)Justice in Duabi, UAE\n\n\n\n\n\n\nWeek 07\n\n\nOct 14 - Oct 17\n\n\nInterventions & Theories of Change\n\n\n\n\n\n\nWeek 08\n\n\nOct 21 - Oct 24\n\n\nDistributional Justice in Navajo Nation, U.S.\n\n\n\n\n\n\nWeek 09\n\n\nOct 28 - Oct 31\n\n\nBit of a Breather\n\n\n\n\n\n\nWeek 10\n\n\nNov 04 - Nov 07\n\n\nRecognition Justice in Wenatchee, WA\n\n\n\n\n\n\nWeek 11\n\n\nNov 11 - Nov 14\n\n\nProcedural Justice in xx, WA\n\n\n\n\n\n\nWeek 12\n\n\nNov 18 - Nov 21\n\n\nRestorative Justice in Philadelphia, PA\n\n\n\n\n\n\nWeek 13\n\n\nNov 25 - Nov 28\n\n\nRecognition Justice in Houston County, GA\n\n\n\n\n\n\nWeek 14\n\n\nDec 02 - Dec 05\n\n\nCosmopolitan Justice in San Joaquin Valley, CA\n\n\n\n\n\n\nWeek 15\n\n\nDec 09\n\n\nReflecting and Sharing\n\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "Schedule"
     ]
@@ -305,7 +305,7 @@
     "href": "schedule.html#weekly-schedule",
     "title": "Schedule",
     "section": "",
-    "text": "Week\n\n\n\nDates\n\n\n\nTopic\n\n\n\n\n\n\n\n\nWeek 01\n\n\nSep 02 - 07\n\n\nGetting Started\n\n\n\n\n\n\nWeek 02\n\n\nSep 05 - 09\n\n\nDistributional Justice in Houston, TX\n\n\n\n\n\n\nWeek 03\n\n\nSep 12 - 16\n\n\nWrangling Data\n\n\n\n\n\n\nNo matching items",
+    "text": "Week\n\n\n\nDates\n\n\n\nTopic\n\n\n\n\n\n\n\n\nWeek 01\n\n\nSep 02 - 07\n\n\nGetting Started\n\n\n\n\n\n\nWeek 02\n\n\nSep 09 - 12\n\n\nDistributional (in)Justice in Houston, TX\n\n\n\n\n\n\nWeek 03\n\n\nSep 16 - 19\n\n\nProcedural (in)Justice in Coachella Valley, CA\n\n\n\n\n\n\nWeek 04\n\n\nSep 23 - 26\n\n\nRestorative (in)Justice in Edgecombe County, NC\n\n\n\n\n\n\nWeek 05\n\n\nSep 30 - Oct 03\n\n\nRecognition (in)Justice in Flint, MI\n\n\n\n\n\n\nWeek 05\n\n\nOct 07 - Oct 10\n\n\nCosmopolitan (in)Justice in Duabi, UAE\n\n\n\n\n\n\nWeek 07\n\n\nOct 14 - Oct 17\n\n\nInterventions & Theories of Change\n\n\n\n\n\n\nWeek 08\n\n\nOct 21 - Oct 24\n\n\nDistributional Justice in Navajo Nation, U.S.\n\n\n\n\n\n\nWeek 09\n\n\nOct 28 - Oct 31\n\n\nBit of a Breather\n\n\n\n\n\n\nWeek 10\n\n\nNov 04 - Nov 07\n\n\nRecognition Justice in Wenatchee, WA\n\n\n\n\n\n\nWeek 11\n\n\nNov 11 - Nov 14\n\n\nProcedural Justice in xx, WA\n\n\n\n\n\n\nWeek 12\n\n\nNov 18 - Nov 21\n\n\nRestorative Justice in Philadelphia, PA\n\n\n\n\n\n\nWeek 13\n\n\nNov 25 - Nov 28\n\n\nRecognition Justice in Houston County, GA\n\n\n\n\n\n\nWeek 14\n\n\nDec 02 - Dec 05\n\n\nCosmopolitan Justice in San Joaquin Valley, CA\n\n\n\n\n\n\nWeek 15\n\n\nDec 09\n\n\nReflecting and Sharing\n\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "Schedule"
     ]
@@ -568,7 +568,7 @@
     "href": "syllabus.html#acknowledgments",
     "title": "Syllabus",
     "section": "Acknowledgments",
-    "text": "Acknowledgments\nThis course was created using templates created by Maria Tackett & Mine Cetinkaya-Rundel. I was inspired by Evan Peck’s piece to share more about me. I’m also very grateful for tips and resources from Dr. Yaniv Yacoby, Accessible Syllabus, and",
+    "text": "Acknowledgments\nThis course was created using templates created by Maria Tackett & Mine Cetinkaya-Rundel. I’m also very grateful for tips and resources from Dr. Yaniv Yacoby, Accessible Syllabus, and",
     "crumbs": [
       "Syllabus"
     ]
@@ -576,7 +576,7 @@
   {
     "objectID": "hw/w1-hw01.html",
     "href": "hw/w1-hw01.html",
-    "title": "HW 01: Self-Reflection",
+    "title": "HW 01: Positionality Statement",
     "section": "",
     "text": "Add instructions for assignment."
   },
@@ -689,8 +689,8 @@
     "objectID": "slides/week-01/01-Welcome.html#environmental-justice-a-community-centric-approach",
     "href": "slides/week-01/01-Welcome.html#environmental-justice-a-community-centric-approach",
     "title": "Welcome!",
-    "section": "Environmental Justice: A Community-Centric Approach",
-    "text": "Environmental Justice: A Community-Centric Approach\n\n\n\n\nCourse Number: ES-202-01\nTime: Tues & Fri 9:55 - 11:10 AM\nLocation:\nInstructor: Dr. Mariah D. Caballero"
+    "section": "",
+    "text": "Course Number: ES-202-01\nTime: Tues & Fri 9:55 - 11:10 AM\nLocation:\nInstructor: Dr. Mariah D. Caballero"
   },
   {
     "objectID": "slides/week-01/01-Welcome.html#im-so-glad-youre-here",
@@ -774,7 +774,7 @@
     "href": "slides/week-01/01-Welcome.html#setting-shared-expectations",
     "title": "Welcome!",
     "section": "Setting Shared Expectations",
-    "text": "Setting Shared Expectations\n\nHow do we want to be accountable to one another?\nThis could mean agreeing to…\n\nNot use phones within a course session\nAssuming best intentions from peers\nEngaging in class conversation\nListening to and respecting others’ perspectives\n\n\nTake 5 minutes with a partner, be ready to share at least one!"
+    "text": "Setting Shared Expectations\n\nHow do we want to be accountable to one another?\nThis could mean agreeing to…\n\nNot use phones within a course session\nAssuming best intentions from peers\nEngaging in class conversation\nListening to and respecting others’ perspectives\n\n\nTake 5 minutes with a partner to discuss, be ready to share at least one!"
   },
   {
     "objectID": "slides/week-01/01-Welcome.html#centering-activity-optional",
@@ -800,8 +800,365 @@
   {
     "objectID": "slides/week-02/03-theory_dist_just.html#what-we-read",
     "href": "slides/week-02/03-theory_dist_just.html#what-we-read",
-    "title": "Theoretical Applications",
-    "section": "What we Read",
-    "text": "What we Read"
+    "title": "[Theory] Distributional (in)Justice & Soil",
+    "section": "",
+    "text": "Reading One\nReading Two"
+  },
+  {
+    "objectID": "slides/week-02/03-theory_dist_just.html#overview",
+    "href": "slides/week-02/03-theory_dist_just.html#overview",
+    "title": "[Theory] Distributional (in)Justice & Soil",
+    "section": "Overview",
+    "text": "Overview"
+  },
+  {
+    "objectID": "slides/week-02/03-theory_dist_just.html#theoretical-applications",
+    "href": "slides/week-02/03-theory_dist_just.html#theoretical-applications",
+    "title": "[Theory] Distributional (in)Justice & Soil",
+    "section": "Theoretical Applications",
+    "text": "Theoretical Applications"
+  },
+  {
+    "objectID": "slides/week-02/03-theory_dist_just.html#why-i-chose-this-case-study",
+    "href": "slides/week-02/03-theory_dist_just.html#why-i-chose-this-case-study",
+    "title": "[Theory] Distributional (in)Justice & Soil",
+    "section": "Why I chose this case study",
+    "text": "Why I chose this case study"
+  },
+  {
+    "objectID": "slides/week-02/03-theory_dist_just.html#assessment-approach",
+    "href": "slides/week-02/03-theory_dist_just.html#assessment-approach",
+    "title": "[Theory] Distributional (in)Justice & Soil",
+    "section": "Assessment Approach",
+    "text": "Assessment Approach"
+  },
+  {
+    "objectID": "slides/week-02/03-theory_dist_just.html#outcomes-of-this-case-study",
+    "href": "slides/week-02/03-theory_dist_just.html#outcomes-of-this-case-study",
+    "title": "[Theory] Distributional (in)Justice & Soil",
+    "section": "Outcomes of this case study",
+    "text": "Outcomes of this case study"
+  },
+  {
+    "objectID": "slides/week-01/01-Welcome.html",
+    "href": "slides/week-01/01-Welcome.html",
+    "title": "Welcome!",
+    "section": "",
+    "text": "Course Number: ES-202-01\nTime: Tues & Fri 9:55 - 11:10 AM\nLocation:\nInstructor: Dr. Mariah D. Caballero"
+  },
+  {
+    "objectID": "labs/w-lab01.html",
+    "href": "labs/w-lab01.html",
+    "title": "Lab 01: Hello R!",
+    "section": "",
+    "text": "Add instructions for assignment."
+  },
+  {
+    "objectID": "labs/w-lab02.html",
+    "href": "labs/w-lab02.html",
+    "title": "Lab 02: Data visualization with ggplot2!",
+    "section": "",
+    "text": "Add instructions for assignment."
+  },
+  {
+    "objectID": "hw/w2-hw02.html",
+    "href": "hw/w2-hw02.html",
+    "title": "HW 02: Solid Waste Sites Case Study",
+    "section": "",
+    "text": "Add instructions for assignment."
+  },
+  {
+    "objectID": "slides/week-02/04-assess_landfills.html",
+    "href": "slides/week-02/04-assess_landfills.html",
+    "title": "[Assess] Solid Waste Landfill Siting",
+    "section": "",
+    "text": "Slide content"
+  },
+  {
+    "objectID": "slides/week-02/03-theory_dist_just.html",
+    "href": "slides/week-02/03-theory_dist_just.html",
+    "title": "[Theory] Distributional (in)Justice & Soil",
+    "section": "",
+    "text": "Centering activity\nPaired conversations on distributional justice\nGroup synthesis\nIntro to community case study (Houston, TX, 1979)\n\n\n\n\nReading One\nReading Two"
+  },
+  {
+    "objectID": "slides/week-11/19-assess_ind_proj.html",
+    "href": "slides/week-11/19-assess_ind_proj.html",
+    "title": "[Assess] Independent Projects",
+    "section": "",
+    "text": "Slide content"
+  },
+  {
+    "objectID": "slides/week-10/16-theory_rec_just.html",
+    "href": "slides/week-10/16-theory_rec_just.html",
+    "title": "[Theory] Recognitional Justice & Food",
+    "section": "",
+    "text": "Slide content"
+  },
+  {
+    "objectID": "slides/week-04/08-assess_electrification.html",
+    "href": "slides/week-04/08-assess_electrification.html",
+    "title": "[Assess] Rural Electrification Case Study",
+    "section": "",
+    "text": "Slide content"
+  },
+  {
+    "objectID": "slides/week-03/05-theory_proc_just.html",
+    "href": "slides/week-03/05-theory_proc_just.html",
+    "title": "[Theory] Distributional (in)Justice & Food",
+    "section": "",
+    "text": "Slide content"
+  },
+  {
+    "objectID": "slides/week-05/10-assess_water.html",
+    "href": "slides/week-05/10-assess_water.html",
+    "title": "[Assess] Drinking Water Case Study",
+    "section": "",
+    "text": "Slide content"
+  },
+  {
+    "objectID": "slides/week-12/20-theory_rest_just.html",
+    "href": "slides/week-12/20-theory_rest_just.html",
+    "title": "[Theory] Restorative Justice & Food",
+    "section": "",
+    "text": "Slide content"
+  },
+  {
+    "objectID": "slides/week-15/26-reflect_last_day.html",
+    "href": "slides/week-15/26-reflect_last_day.html",
+    "title": "[Reflect] Last Day",
+    "section": "",
+    "text": "Slide content"
+  },
+  {
+    "objectID": "slides/week-14/25-assess_ind_proj.html",
+    "href": "slides/week-14/25-assess_ind_proj.html",
+    "title": "[Assess] Independent Projects",
+    "section": "",
+    "text": "Slide content"
+  },
+  {
+    "objectID": "slides/week-13/23-assess_ind_proj.html",
+    "href": "slides/week-13/23-assess_ind_proj.html",
+    "title": "[Assess] Independent Projects",
+    "section": "",
+    "text": "Slide content"
+  },
+  {
+    "objectID": "slides/week-06/11-theory_cosmo_just.html",
+    "href": "slides/week-06/11-theory_cosmo_just.html",
+    "title": "[Theory] Cosmopolitan (in)Justice & Climate",
+    "section": "",
+    "text": "Slide content"
+  },
+  {
+    "objectID": "slides/week-08/14-theory_dist_just.html",
+    "href": "slides/week-08/14-theory_dist_just.html",
+    "title": "[Theory] Distributional Justice & Energy",
+    "section": "",
+    "text": "Slide content"
+  },
+  {
+    "objectID": "hw/w6-hw06.html",
+    "href": "hw/w6-hw06.html",
+    "title": "HW 06: Global Stocktake Case Study",
+    "section": "",
+    "text": "Add instructions for assignment."
+  },
+  {
+    "objectID": "hw/w4-hw04.html",
+    "href": "hw/w4-hw04.html",
+    "title": "HW 04: Rural Electrification Case Study",
+    "section": "",
+    "text": "Add instructions for assignment."
+  },
+  {
+    "objectID": "hw/w8-hw07.html",
+    "href": "hw/w8-hw07.html",
+    "title": "HW 07: Solar Energy Case Study",
+    "section": "",
+    "text": "Add instructions for assignment."
+  },
+  {
+    "objectID": "hw/w3-hw03.html",
+    "href": "hw/w3-hw03.html",
+    "title": "HW 03: Bracero Case Study",
+    "section": "",
+    "text": "Add instructions for assignment."
+  },
+  {
+    "objectID": "hw/w5-hw05.html",
+    "href": "hw/w5-hw05.html",
+    "title": "HW 05: Drinking Water Case Study",
+    "section": "",
+    "text": "Add instructions for assignment."
+  },
+  {
+    "objectID": "hw/w10-hw08.html",
+    "href": "hw/w10-hw08.html",
+    "title": "HW 08: Agricultural Labor Case Study",
+    "section": "",
+    "text": "Add instructions for assignment."
+  },
+  {
+    "objectID": "slides/week-08/15-assess_solar.html",
+    "href": "slides/week-08/15-assess_solar.html",
+    "title": "[Assess] Navajo Nation Solar Energy Case Study",
+    "section": "",
+    "text": "Slide content"
+  },
+  {
+    "objectID": "slides/week-06/12-assess_COP.html",
+    "href": "slides/week-06/12-assess_COP.html",
+    "title": "[Assess] Global Stocktake Case Study",
+    "section": "",
+    "text": "Slide content"
+  },
+  {
+    "objectID": "slides/week-07/13-theory_intrvntmn.html",
+    "href": "slides/week-07/13-theory_intrvntmn.html",
+    "title": "[Theory] Community-Based Interventions & Theories of Change",
+    "section": "",
+    "text": "Slide content"
+  },
+  {
+    "objectID": "slides/week-13/22-theory_rec_just.html",
+    "href": "slides/week-13/22-theory_rec_just.html",
+    "title": "[Theory] Recognitional Justice & Energy",
+    "section": "",
+    "text": "Slide content"
+  },
+  {
+    "objectID": "slides/week-14/24-theory_cosmo_just.html",
+    "href": "slides/week-14/24-theory_cosmo_just.html",
+    "title": "[Theory] Cosmopolitan Justice & Water",
+    "section": "",
+    "text": "Slide content"
+  },
+  {
+    "objectID": "slides/week-12/21-assess_ind_proj.html",
+    "href": "slides/week-12/21-assess_ind_proj.html",
+    "title": "[Assess] Independent Projects",
+    "section": "",
+    "text": "Slide content"
+  },
+  {
+    "objectID": "slides/week-05/09-theory_rec_just.html",
+    "href": "slides/week-05/09-theory_rec_just.html",
+    "title": "[Theory] Recognitional (in)Justice & Water",
+    "section": "",
+    "text": "Slide content"
+  },
+  {
+    "objectID": "slides/week-03/06-assess_braceros.html",
+    "href": "slides/week-03/06-assess_braceros.html",
+    "title": "[Assess] Bracero Farmworker Case Study",
+    "section": "",
+    "text": "Slide content"
+  },
+  {
+    "objectID": "slides/week-04/07-theory_rest_just.html",
+    "href": "slides/week-04/07-theory_rest_just.html",
+    "title": "[Theory] Restorative (in)Justice & Energy",
+    "section": "",
+    "text": "Slide content"
+  },
+  {
+    "objectID": "slides/week-10/17-assess_ag_labor.html",
+    "href": "slides/week-10/17-assess_ag_labor.html",
+    "title": "[Assess] Agricultural Labor Case Study",
+    "section": "",
+    "text": "Slide content"
+  },
+  {
+    "objectID": "slides/week-11/18-theory_proc_just.html",
+    "href": "slides/week-11/18-theory_proc_just.html",
+    "title": "[Theory] Procedural Justice & Water",
+    "section": "",
+    "text": "Slide content"
+  },
+  {
+    "objectID": "weeks/week-14.html",
+    "href": "weeks/week-14.html",
+    "title": "Week 14",
+    "section": "",
+    "text": "Lectures\n\n\n\n\n\n\nTopic\n\n\n\nDate\n\n\n\n\n\n\n\n\n[Theory] Cosmopolitan Justice & Water\n\n\nTue, Dec 02\n\n\n\n\n\n\n[Assess] Independent Projects\n\n\nFri, Dec 05\n\n\n\n\n\n\nNo matching items\n\n\n\nAssignments\n\n\n\n\nAssignment\nTitle\nDue\n\n\n\n\n\nNo matching items\n\n\n\nReadings"
+  },
+  {
+    "objectID": "weeks/week-12.html",
+    "href": "weeks/week-12.html",
+    "title": "Week 12",
+    "section": "",
+    "text": "Lectures\n\n\n\n\n\n\nTopic\n\n\n\nDate\n\n\n\n\n\n\n\n\n[Theory] Restorative Justice & Food\n\n\nTue, Nov 18\n\n\n\n\n\n\n[Assess] Independent Projects\n\n\nFri, Nov 21\n\n\n\n\n\n\nNo matching items\n\n\n\nAssignments\n\n\n\n\nAssignment\nTitle\nDue\n\n\n\n\n\nNo matching items\n\n\n\nReadings"
+  },
+  {
+    "objectID": "weeks/week-07.html",
+    "href": "weeks/week-07.html",
+    "title": "Week 07",
+    "section": "",
+    "text": "Lectures\n\n\n\n\n\n\nTopic\n\n\n\nDate\n\n\n\n\n\n\n\n\n[Theory] Community-Based Interventions & Theories of Change\n\n\nFri, Oct 17\n\n\n\n\n\n\nNo matching items\n\n\n\nAssignments\n\n\n\n\nAssignment\nTitle\nDue\n\n\n\n\n\nNo matching items\n\n\n\nReadings"
+  },
+  {
+    "objectID": "weeks/week-05.html",
+    "href": "weeks/week-05.html",
+    "title": "Week 05",
+    "section": "",
+    "text": "Lectures\n\n\n\n\n\n\nTopic\n\n\n\nDate\n\n\n\n\n\n\n\n\n[Theory] Recognitional (in)Justice & Water\n\n\nTue, Sep 30\n\n\n\n\n\n\n[Assess] Drinking Water Case Study\n\n\nFri, Oct 03\n\n\n\n\n\n\nNo matching items\n\n\n\nAssignments\n\n\n\n\n\n\nAssignment\n\n\n\nTitle\n\n\n\nDue\n\n\n\n\n\n\n\n\nHomework\n\n\nHW 05: Drinking Water Case Study\n\n\nMon, Oct 06\n\n\n\n\n\n\nNo matching items\n\n\n\nReadings"
+  },
+  {
+    "objectID": "weeks/week-10.html",
+    "href": "weeks/week-10.html",
+    "title": "Week 10",
+    "section": "",
+    "text": "Lectures\n\n\n\n\n\n\nTopic\n\n\n\nDate\n\n\n\n\n\n\n\n\n[Theory] Recognitional Justice & Food\n\n\nTue, Nov 04\n\n\n\n\n\n\n[Assess] Agricultural Labor Case Study\n\n\nFri, Nov 07\n\n\n\n\n\n\nNo matching items\n\n\n\nAssignments\n\n\n\n\n\n\nAssignment\n\n\n\nTitle\n\n\n\nDue\n\n\n\n\n\n\n\n\nHomework\n\n\nHW 08: Agricultural Labor Case Study\n\n\nMon, Nov 03\n\n\n\n\n\n\nNo matching items\n\n\n\nReadings"
+  },
+  {
+    "objectID": "weeks/week-09.html",
+    "href": "weeks/week-09.html",
+    "title": "Week 09",
+    "section": "",
+    "text": "Lectures\n\n\n\n\nTopic\nDate\n\n\n\n\n\nNo matching items\n\n\n\nAssignments\n\n\n\n\nAssignment\nTitle\nDue\n\n\n\n\n\nNo matching items\n\n\n\nReadings"
+  },
+  {
+    "objectID": "weeks/week-08.html",
+    "href": "weeks/week-08.html",
+    "title": "Week 08",
+    "section": "",
+    "text": "Lectures\n\n\n\n\n\n\nTopic\n\n\n\nDate\n\n\n\n\n\n\n\n\n[Theory] Distributional Justice & Energy\n\n\nTue, Oct 21\n\n\n\n\n\n\n[Assess] Navajo Nation Solar Energy Case Study\n\n\nFri, Oct 24\n\n\n\n\n\n\nNo matching items\n\n\n\nAssignments\n\n\n\n\n\n\nAssignment\n\n\n\nTitle\n\n\n\nDue\n\n\n\n\n\n\n\n\nHomework\n\n\nHW 07: Solar Energy Case Study\n\n\nMon, Oct 27\n\n\n\n\n\n\nNo matching items\n\n\n\nReadings"
+  },
+  {
+    "objectID": "weeks/week-04.html",
+    "href": "weeks/week-04.html",
+    "title": "Week 04",
+    "section": "",
+    "text": "Lectures\n\n\n\n\n\n\nTopic\n\n\n\nDate\n\n\n\n\n\n\n\n\n[Theory] Restorative (in)Justice & Energy\n\n\nTue, Sep 23\n\n\n\n\n\n\n[Assess] Rural Electrification Case Study\n\n\nFri, Sep 26\n\n\n\n\n\n\nNo matching items\n\n\n\nAssignments\n\n\n\n\n\n\nAssignment\n\n\n\nTitle\n\n\n\nDue\n\n\n\n\n\n\n\n\nHomework\n\n\nHW 04: Rural Electrification Case Study\n\n\nMon, Sep 29\n\n\n\n\n\n\nNo matching items\n\n\n\nReadings"
+  },
+  {
+    "objectID": "weeks/week-11.html",
+    "href": "weeks/week-11.html",
+    "title": "Week 11",
+    "section": "",
+    "text": "Lectures\n\n\n\n\n\n\nTopic\n\n\n\nDate\n\n\n\n\n\n\n\n\n[Theory] Procedural Justice & Water\n\n\nTue, Nov 11\n\n\n\n\n\n\n[Assess] Independent Projects\n\n\nFri, Nov 14\n\n\n\n\n\n\nNo matching items\n\n\n\nAssignments\n\n\n\n\nAssignment\nTitle\nDue\n\n\n\n\n\nNo matching items\n\n\n\nReadings"
+  },
+  {
+    "objectID": "weeks/week-13.html",
+    "href": "weeks/week-13.html",
+    "title": "Week 13",
+    "section": "",
+    "text": "Lectures\n\n\n\n\n\n\nTopic\n\n\n\nDate\n\n\n\n\n\n\n\n\n[Theory] Recognitional Justice & Energy\n\n\nTue, Nov 25\n\n\n\n\n\n\n[Assess] Independent Projects\n\n\nFri, Nov 28\n\n\n\n\n\n\nNo matching items\n\n\n\nAssignments\n\n\n\n\nAssignment\nTitle\nDue\n\n\n\n\n\nNo matching items\n\n\n\nReadings"
+  },
+  {
+    "objectID": "weeks/week-06.html",
+    "href": "weeks/week-06.html",
+    "title": "Week 05",
+    "section": "",
+    "text": "Lectures\n\n\n\n\n\n\nTopic\n\n\n\nDate\n\n\n\n\n\n\n\n\n[Theory] Cosmopolitan (in)Justice & Climate\n\n\nTue, Oct 07\n\n\n\n\n\n\n[Assess] Global Stocktake Case Study\n\n\nFri, Oct 10\n\n\n\n\n\n\nNo matching items\n\n\n\nAssignments\n\n\n\n\n\n\nAssignment\n\n\n\nTitle\n\n\n\nDue\n\n\n\n\n\n\n\n\nHomework\n\n\nHW 06: Global Stocktake Case Study\n\n\nMon, Oct 13\n\n\n\n\n\n\nNo matching items\n\n\n\nReadings"
+  },
+  {
+    "objectID": "weeks/week-15.html",
+    "href": "weeks/week-15.html",
+    "title": "Week 15",
+    "section": "",
+    "text": "Lectures\n\n\n\n\n\n\nTopic\n\n\n\nDate\n\n\n\n\n\n\n\n\n[Reflect] Last Day\n\n\nTue, Dec 09\n\n\n\n\n\n\nNo matching items\n\n\n\nAssignments\n\n\n\n\nAssignment\nTitle\nDue\n\n\n\n\n\nNo matching items\n\n\n\nReadings"
   }
 ]

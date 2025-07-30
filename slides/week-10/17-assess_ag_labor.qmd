@@ -1,0 +1,19 @@
+---
+title: "[Assess] Agricultural Labor Case Study"
+subtitle: "📍 Wenatchee, WA"
+date: "November 07, 2025"
+format: 
+  revealjs:
+    theme:
+      - default
+    css: custom.scss
+    transition: fade
+    slide-number: true
+    incremental: false 
+    chalkboard: true
+    center: true
+execute:
+  freeze: auto
+---
+
+# Slide content

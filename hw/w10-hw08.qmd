@@ -1,0 +1,7 @@
+---
+title: "HW 08: Agricultural Labor Case Study"
+date: "November 03, 2025"
+categories: "Homework"
+---
+
+Add instructions for assignment. 

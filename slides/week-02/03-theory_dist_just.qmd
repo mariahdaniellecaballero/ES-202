@@ -1,6 +1,6 @@
 ---
-title: "Theoretical Applications"
-subtitle: "Distributional Justice & Soil in Houston, TX"
+title: "[Theory] Distributional (in)Justice & Soil"
+subtitle: "📍Houston, TX"
 date: "September 09, 2025"
 format: 
   revealjs:
