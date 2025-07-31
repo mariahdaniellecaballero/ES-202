@@ -1,7 +1,18 @@
 ---
-title: "HW 07: Solar Energy Case Study"
+title: "HW 07: Farmworker Survey Case Study"
 date: "October 27, 2025"
 categories: "Homework"
 ---
 
-Add instructions for assignment. 
+Assess: Compare distributional unjustices among white non-Hispanic farmworkers and Hispanic farmworkers (documented and undocumented), compare odds ratios of likelihood to access Food Stamps (G04B), WIC (G04K)
+
+[National Agricultural Workers Survey Public Access Data](https://www.dol.gov/agencies/eta/national-agricultural-workers-survey/data)
+
+Read: 
+
+[Hunger amidst plenty: farmworker food insecurity and coping strategies in California](https://www.researchgate.net/publication/263719496_Hunger_amidst_plenty_Farmworker_food_insecurity_and_coping_strategies_in_California)
+
+[Grist Article](https://grist.org/food-and-agriculture/farmworker-hunger-crisis-climate-inflation-grocery-costs/)
+
+explore [Pioneer Valley Workers Center](https://pvworkerscenter.org/food-justice-copy/) website, discuss different forms of food justice interventions (i.e., SNAP, community gardens, vegetable subscriptions)
+

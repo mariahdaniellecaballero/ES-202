@@ -1,6 +1,6 @@
 ---
 title: "Week 11"
-subtitle: "Procedural Justice in xx, WA"
+subtitle: "Procedural Justice in xx, RI"
 description: "Nov 11 - Nov 14"
 author: ""
 date: ""

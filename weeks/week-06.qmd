@@ -1,6 +1,6 @@
 ---
-title: "Week 05"
-subtitle: "Cosmopolitan (in)Justice in Duabi, UAE"
+title: "Week 06"
+subtitle: "Cosmopolitan (in)Justice in Dubai, UAE"
 description: "Oct 07 - Oct 10"
 author: ""
 date: ""

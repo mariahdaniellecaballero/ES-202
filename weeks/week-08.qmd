@@ -1,6 +1,6 @@
 ---
 title: "Week 08"
-subtitle: "Distributional Justice in Navajo Nation, U.S."
+subtitle: "Distributional Justice Springfield, MA"
 description: "Oct 21 - Oct 24"
 author: ""
 date: ""
