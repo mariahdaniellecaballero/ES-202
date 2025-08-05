@@ -19,6 +19,7 @@ execute:
 #  Class Overview 
 
 - Centering activity
+- Positionality statement Debrief
 - Paired conversations on distributional justice
 - Group synthesis
 - Intro to community case study (Houston, TX, 1979)
@@ -27,6 +28,8 @@ execute:
 
 - Reading One
 - Reading Two
+
+# Positionality statement debrief
 
 # Paired conversations on Distributional Justice
 

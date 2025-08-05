@@ -16,4 +16,7 @@ execute:
   echo: true
 ---
 
-## 
+## read: 
+-[Researcher Positionality Paper](https://www.ulethbridge.ca/sites/default/files/2024/09/holmes_2020.pdf)
+
+- Due Monday at 11:59: Positionality Statement (5%); 250 - 300 words

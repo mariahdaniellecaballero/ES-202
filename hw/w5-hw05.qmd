@@ -5,3 +5,7 @@ categories: "Homework"
 ---
 
 Add instructions for assignment. 
+
+Read: 
+[Flint, Environmental Racism, and Racial Capitalism](https://www.tandfonline.com/doi/full/10.1080/10455752.2016.1213013#d1e80)
+

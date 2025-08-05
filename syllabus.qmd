@@ -53,12 +53,14 @@ Ultimately, I designed this course around three pedogogical commitments:
 
 #### Course Components
 
+- **Positionality Statement (5%)**: The first assignment of the course will be a short positionality statement, which 
+
 - **Attendance and Participation (10%)**: This primarily includes coming to class prepared (i.e., completed any preparatory readings/assignments before our scheduled course meeting), engaging with peers on course content (i.e., asking questions, sharing thoughts and ideas, participating in group activities).
 
 - **Weekly Assignments (60%)**: Each week offers the opportunity to discuss and apply different forms of environmental justice, through the lens of a community case study. 
     - Tuesdays will begin with small and large-group discussions on one theoretical piece and one community case study. Please come ready to discuss the case study and apply theoretical findings.
     - Fridays will be spent primarily on an in-class data visualization exercise related to the weekly case study. Please review the exercise before class, and be ready to work in rotating pairs on the assignment, and submit it individually by the following Monday at 11:59 PM. Note that the assignment with the lowest grade will be dropped (i.e., 6 of 7 assignments, each counting for 10% of your grade).  
-- **Community Case Study Final Project (30%)**: End of semester individual project on a community case study of your choice. Note that final project score is cumulative, including a mid-semester check-in and proposed data visualization strategy (10%) and final submission (20%).
+- **Community Case Study Final Project (25%)**: End of semester individual project on a community case study of your choice. Note that final project score is cumulative, including a mid-semester check-in and proposed data visualization strategy (5%) and final submission (20%).
 
 ### Course Readings
 There are no textbooks for this course. All course readings will be made available on the website. Please see the [schedule](schedule.qmd) for each week's corresponding material. 
