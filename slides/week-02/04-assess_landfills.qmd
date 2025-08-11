@@ -66,7 +66,6 @@ Footnote: approach is from [R for Data Science Book](https://r4ds.hadley.nz/intr
 - Open Posit
 
 # Part I: Importing Data
-- Focus on reading in and understanding your data. 
 - This assignment is comprised of one dataset: 
   - Robert Bullard's original data
 - Note on how I got this data

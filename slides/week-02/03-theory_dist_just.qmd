@@ -1,5 +1,5 @@
 ---
-title: "[Theory] Distributional (in)Justice & Soil"
+title: "[Theory] Distributional (in)Justice"
 subtitle: "📍Houston, TX"
 date: "September 09, 2025"
 format: 

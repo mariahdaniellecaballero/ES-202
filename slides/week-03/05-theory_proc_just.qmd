@@ -16,5 +16,30 @@ execute:
   freeze: auto
 ---
 
-# Slide content
+#  Class Overview 
+
+- Centering activity
+- Paired conversations on procedural justice
+- Group synthesis
+- Intro to community case study (Coachella Valley, CA)
+
+# Intro to Community Case Study
+
+## Overview
+
+## Theoretical Applications 
+
+## Why I chose this case study
+
+## Assessment Approach
+
+## Outcomes of this case study
+
+# Logistics
+For Friday: 
+
+- Read community case study in schedule
+- Review in-class activity
+- Make sure posit login is working!
+
 
