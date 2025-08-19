@@ -1,30 +1,27 @@
 ---
 title: "HW 02: Solid Waste Sites Case Study"
-date: "September 15, 2025"
+date: "September 18, 2025"
 categories: "Homework"
 ---
 
-# Loading data (2 pts)
-## Load packages
 
-## Set Working Directory
+## Overview 
+This case study focuses on recreating Dr. Robert Bullard's foundational study, "Solid Waste Sites and the Black Houston Community" in R, and connecting it back to foundational theoretical aspects of distributional justice. 
 
-## Load Data
+## Learning Outcomes
+- Understand what R can do
+- Recreate tables 1-3 in Bullard's Study 
+- Visualize distributional justice
+- Connect it to theoretical understandings of distributional justice
 
+## Instructions
+1. Navigate to Posit Cloud and select the HW 02 assignment. 
+2. Follow along in class, and complete the assignment (if needed) individually. 
+3. Render the quarto document as a pdf.
 
-# Creating tables 1 -3  (4 pts each)
-## Table one
-## Table two
-## Table three
+## Grading
 
-## Reflection Q: 
+Case studies are each 10% of your grade, and the lowest will be dropped. 
 
-# Creating table 4 (4 pts)
-## Reflection Q:
-
-# Visualizing Bullard's Data (4 pts)
-
-
-# Connecting to Theory
-
-
+## Submission
+Submit the pdf to Brightspace [here]().

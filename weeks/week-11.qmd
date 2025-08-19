@@ -45,8 +45,8 @@ tbl-colwidths: [10,50,40]
 :::
 
 # Readings
-[A State-By-State Comparison of Policies that Protect Private Well Users](https://pmc.ncbi.nlm.nih.gov/articles/PMC10985836/pdf/nihms-1978694.pdf)
+**Tuesday**:[A State-By-State Comparison of Policies that Protect Private Well Users](https://pmc.ncbi.nlm.nih.gov/articles/PMC10985836/pdf/nihms-1978694.pdf)
 
 [Examining Private Wells from a High School in Rural Maine](https://ehp.niehs.nih.gov/doi/pdf/10.1289/EHP14653)
 
-[A Mixed Methods Approach to Understanding the Public Health Impact of aSchool-Based Citizen Science Program to Reduce Arsenic in Private Well Water](https://ehp.niehs.nih.gov/doi/epdf/10.1289/EHP13421)
+[A Mixed Methods Approach to Understanding the Public Health Impact of a School-Based Citizen Science Program to Reduce Arsenic in Private Well Water](https://ehp.niehs.nih.gov/doi/epdf/10.1289/EHP13421)

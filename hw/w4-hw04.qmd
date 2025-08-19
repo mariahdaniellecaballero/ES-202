@@ -1,7 +1,26 @@
 ---
 title: "HW 04: Rural Electrification Case Study"
-date: "September 29, 2025"
+date: "October 02, 2025"
 categories: "Homework"
 ---
 
-Add instructions for assignment. 
+## Overview 
+This case study focuses on using rural electrification surveys collected in 1934 in R, and connecting it back to foundational theoretical aspects of restorative justice.
+
+## Learning Outcomes
+- Understand coding style best practices
+- Continued data tidying (lengthening and widening data)
+- Summarize patterns from census and survey data in the 1930s
+- Connect findings to theoretical understandings of restorative justice
+
+## Instructions
+1. Navigate to Posit Cloud and select the HW 04 assignment. 
+2. Follow along in class, and complete the assignment (if needed) individually. 
+3. Render the quarto document as a pdf.
+
+## Grading
+
+Case studies are each 10% of your grade, and the lowest will be dropped. 
+
+## Submission
+Submit the pdf to Brightspace [here]().

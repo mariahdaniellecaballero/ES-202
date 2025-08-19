@@ -1,7 +1,7 @@
 ---
 title: "[Assess] Solid Waste Landfill Siting"
 subtitle: "📍Houston, TX"
-date: "September 09, 2025"
+date: "September 12, 2025"
 format: 
   revealjs:
     theme:
@@ -45,27 +45,34 @@ execute:
 Footnote: approach is from [R for Data Science Book](https://r4ds.hadley.nz/intro.html)
 
 ## Course Organization
-- Bigger Picture Case Study (HW 02)
+- Bigger Picture Case Study (HW 02-- Ungraded)
 - Skills that build on one another (HW 03-08)
   - Data Tidying
   - Data Transforming 
   - Data Visualization
-  - Intro to Spatial Data
   - Exploring Exposure
+  - Intro to Spatial Data
 - Apply it! Use weeks 11 - 14 to show me your theoretical and methodological skills
 
 ## Homework Approach
-- Assignments will be started in class on Fridays in pairs and submitted the following Monday individually. 
+- Assignments will be started in class on Fridays in pairs and submitted the following Thursday individually. 
 - I'll lecture a bit throughout the class to introduce new skills or topics, then let pairs work through sections of the assignment. 
 - I'll choose pairs randomly using my fancy name generator. 
 
 # Group Coding
+## Learning Outcomes
+- Understand what R can do
+- Recreate tables 1-3 in Bullard's Study 
+- Visualize Distributional Justice
+- Connect it to theoretical understandings of distributional justice
 
 ## Let's Get Started
 - Find your pair
-- Open Posit
+- Download [Homework 02 folder](case_studies/week-02-Bullard) and open it in Posit Cloud.
 
-# Part I: Importing Data
+# Understanding What R Can Do 
+
+## Importing Data
 - This assignment is comprised of one dataset: 
   - Robert Bullard's original data
 - Note on how I got this data
@@ -83,7 +90,6 @@ Footnote: approach is from [R for Data Science Book](https://r4ds.hadley.nz/intr
 install.packages("tidyverse") # for tidying data
 install.packages("gt")
 install.packages("gtsummary") # creating tables
-install.packages("mapview")   # mapping
 ```
 
 - Following an install, you need to load your packages: 
@@ -94,33 +100,32 @@ install.packages("mapview")   # mapping
 library(tidyverse)
 library(gt)
 library(gtsummary)
-library(mapview)
 ```
 
 
 ## Loading Data
 - Now we load our data. In Posit Cloud, navigate to xx and select xx [include IDE screenshot]. 
-- Sometimes it can be helpful to set your working directory, using `setwd`. 
 - Load our first dataset, which includes the 13 landfill and incinerator sites in Bullard's first case study.
 
 ```{r}
 #| warning: false
 #| message: false
-#| echo: true
+#| echo: false
+#| eval: true
 
-setwd("~/Google Drive/My Drive/Teaching/ES-202")
-sites <- read_csv("data/week-02/bullard_1979_waste_sites.csv")
+sites <- read_csv("/Users/mc152/Documents/GitHub/ES-202/hw/case_studies/week-02-Bullard/data/bullard_1979_waste_sites.csv")
+```
+
+```{r}
+#| warning: false
+#| message: false
+#| echo: true
+#| eval: false
+sites <- read_csv("data/bullard_1979_waste_sites.csv")
 ```
 
 
-# Part II: Today's Goal
-- Understand data
-- Recreate tables 1-3 in Bullard's Study 
-- Visualize Distributional Justice
-- Connect it to theoretical understandings of distributional justice
-
-
-# Understanding data 
+## Understanding data 
 - the `sites` data that we've loaded is a `dataframe`, meaning it is a rectangular collection of variables (or columns) and observations (rows). In each cell, is a `value`. 
 - This dataset is `tabular`, meaning that the data is organized into a table with rows and columns. 
   - `tidy` data has five rules: 
@@ -172,8 +177,8 @@ table_one |>
     tab_source_note("The above Houston-owned garbage incinerators were in operation between the 1920s' and 1975")
 ```
 
-## Rinse, Wash, Repeat for Tables 2 and 3
-- Recreate tables 2 and three using the same approaches
+## Exercise One: Rinse, Wash, Repeat for Tables 2 and 3
+- Recreate tables 2 and 3 using the same approaches
 - Pay close attention to the information shared in each table
 
 # Visualizing Distributional Injustice
@@ -221,12 +226,12 @@ sites |>
   bold_labels()
 ```
 
-## One more summary table 
+## Exercise 2: One more summary table 
 - Suppose you lived in a Southwest neighborhood and were interested in the distribution of facility types by Southwest versus non-southwest neighborhoods.
 - Create a cross tabs summary table (make sure it's formatted nicely!) 
 
-# Visualizing Bullard's Data
-## Using ggplot2
+## Plot the data
+### Using ggplot2
 - `ggplot2` is a lovely package for visualizing data.
 - It works works using a layer approach. 
 - The first layer tells ggplot2 to create a graph base using the `sites` dataframe.
@@ -276,11 +281,17 @@ geom_bar()
 ggplot(sites, aes(x = type, fill = predom_eth_1979)) +
   geom_bar() +
   scale_fill_manual(
-    values = c("Red", "Yellow", "Blue"), 
+    values = c("Red", "Yellow", "Green"), 
     name = "Predominant Community Ethnicity") + 
   labs(x = " ", y = "Number of Facilities")
   
 ```
 
+## Exercise 3: Reading a Vignette
+- Often, we get a bit mixed up when we're first starting. 
+- One helpful way to troubleshoot, can be typing "?" followed by the function into your environment (i.e., `?scale_fill_manual()`)
+- Read the vignette for the `scale_fill_manual()` package. What package does it recommend for color blindness?
 
-## Connect to Theory
+## Connecting to Theory
+- Having recreated Bullard's landfill case study in R, answer the following questions using the readings: 
+  - 

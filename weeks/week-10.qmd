@@ -45,3 +45,4 @@ tbl-colwidths: [10,50,40]
 :::
 
 # Readings
+[chapter 6 in ggplot2 book](https://ggplot2-book.org/maps.html)

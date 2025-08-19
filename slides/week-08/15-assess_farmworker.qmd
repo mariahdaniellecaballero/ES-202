@@ -1,6 +1,6 @@
 ---
-title: "[Assess] Navajo Nation Solar Energy Case Study"
-subtitle: "📍 Navajo Nation, U.S."
+title: "[Assess] Farmworker Survey Case Study"
+subtitle: "📍 Springfield, MA"
 date: "October 24, 2025"
 format: 
   revealjs:

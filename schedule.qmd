@@ -25,20 +25,12 @@ editor: visual
 
 ## Assignments
 
-Below are assignment due dates for the semester. You can find details and assignment instructions in the relevant week on the schedule.
+You can find details and assignment instructions in the relevant week on the schedule.
 
 ### Homework
 
-Homework will be due on Wednesdays at 11:59pm. You will have one week to complete each homework assignment.
+Homework will be submitted to Brightspace. Please see the schedule for due dates and detailed instructions.
 
-### Labs
+### Final Project
 
-Labs will be due on Fridays at 11:59pm. You will start the lab during your scheduled lab section.
-
-### Exams
-
-There will be two exams on the dates:
-
--   October 12, 9am - October 14, 11:59pm
-
--   November 16, 9am - November 16: 11:59pm
+The final project is due on December 08, 2025. Please see the [description](/Users/mc152/Documents/GitHub/ES-202/final_project/desc.qmd) for detailed instructions and timelines.

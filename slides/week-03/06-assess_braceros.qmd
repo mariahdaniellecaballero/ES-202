@@ -52,7 +52,7 @@ bracero <- read_excel("~/Google Drive/My Drive/Teaching/ES-202/data/week_03/brac
 ```
 
 # Part II: Today's Goal
-- Understand data
+- Understand data structure
 - Transform  and tidy data for necessary questions
 - Explore and summarize patterns
 - Connect it to theoretical understandings of procedural justice
@@ -112,7 +112,7 @@ bracero |>
 ## mutate() function (cont.) {.smaller}
 - We can also use mutate for creating new columns, and we can pair it with additional functions, such as ifelse statements. 
 - Perhaps we were interested in creating a new column that defines whether an interview is from a bracero worker or not. 
-  - Note that if we wanted to further classify the subject, we might create a factor column and use the `fct_collapse` function, rather than an ifelse statement.
+  - Note that if we wanted to further classify the subject, we might create a factor column and use the `case_match()` function, rather than an ifelse statement.
 ```{r}
 #| warning: false
 #| message: false
@@ -276,7 +276,7 @@ bracero_clean |>
   - Hint: R is case-sensitive. 
 2. How many non-braceros were interviewed in this dataset? 
 3. Based on the non-bracero topics, can you create a new factor column that groups the topics into 3-5 factors?
-  - use `mutate()`, and `fct_collapse()` to classify the groups into a new column called `topic_group`
+  - use `mutate()`, and `case_match()` to classify the groups into a new column called `topic_group`
 4. Are there any interesting patterns in language spoken among your `topic_groups`? Use a `group_by` and `summarize` function to calculate.
 
 # Exercise Four 

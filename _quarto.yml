@@ -10,7 +10,7 @@ website:
     align: center
     tools:
       - icon: github
-        href: https://github.com/rstudio-conf-2022/teach-ds-course-website
+        href: https://github.com/mariahdaniellecaballero/ES-202
         text: GitHub
       - icon: cloud-fill
         href: https://rstudio.cloud/spaces/237799

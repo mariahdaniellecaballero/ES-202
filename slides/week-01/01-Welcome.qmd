@@ -81,9 +81,10 @@ execute:
 
 ## Learning Outcomes{.smaller}
 
-1. **Demonstrate an understanding of the nuances of an intersectional approach** (i.e., race, ethnicity,  gender, sexuality, class, and disability) and their applications to environmental injustice.
-2. **Assess empirical patterns of environmental injustice in US communities** related to Food, Energy, and Water (FEW nexus). 
-3. **Identify opportunities and challenges beyond distributional justice** (procedural, recognitional, restorative, and cosmopolitan justice) for environmental solutions spatially and temporally.
+1. **Demonstrate an understanding of the nuances of an intersectional approach** (i.e., how systems of power can reinforce oppression of land and people) and their applications to environmental injustice.
+2. **Reflect on how your positionality and lived experiences** shape your approach to environmental justice. 
+3. **Assess empirical patterns of environmental injustice in US communities** related to Food, Energy, and Water (FEW nexus). 
+4. **Identify opportunities and challenges beyond distributional justice** (procedural, recognitional, restorative, and cosmopolitan justice) for environmental solutions spatially and temporally.
 
 ## Course Design
 ::: columns
@@ -92,23 +93,23 @@ execute:
 - **Tuesdays:** Theory and community case study (discussion-based)
 - **Fridays:** Data visualization activity (in-class pairs, submitted individually)  
 
-- **First 9 weeks:** Community case studies centered on past and present; introduction to R
-- **Last 5 weeks:** Present and future-looking community case studies; final project prep
+  - **First 9 weeks:** Community case studies centered on past and present; introduction to R
+  - **Last 5 weeks:** Present and future-looking community case studies; final project prep
 :::
 
 :::{.column style="width: 40%; font-size: 60%;"}
 | Course Components                  | % of Grade  |
 |------------------------------------|-------------|
 | Participation + Attendance         | 10%         |
-| Weekly Assignments                 | 60%         |
-| Community Case Study Final Project | 30%         |
+| Weekly Assignments                 | 65%         |
+| Community Case Study Final Project | 25%         |
 
 :::
 
 :::
 
 ## Schedule
-link to [schedule]()
+[screenshot + link of schedule]
 
 ## My Pedogogical Goals for Creating and Being in Community{.smaller}
 - Democratic Education
@@ -124,6 +125,9 @@ link to [schedule]()
 ## Checking Posit Access
 
 ## Office Hours
+- I'll be on-campus T/W/F
+  - Rank timeslots on board
+
 
 ## Setting Shared Expectations{.smaller} 
 - How do we want to be accountable to one another? 
@@ -137,7 +141,8 @@ link to [schedule]()
 
 ## Centering Activity (optional){.smaller}
 - Life is busy, and we often have millions of things on our minds
-- Centering activities are brief activities (2-3 minutes) meant to bring everyone into the present 
+- Centering activities are brief activities (< 5 minutes) meant to bring everyone into the present
+- A student would be in charge of leading before each class 
 - This could be...
   - A breathing exercise
   - A silly doodle

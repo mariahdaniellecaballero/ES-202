@@ -1,5 +1,5 @@
 ---
-title: "Taking an Intersectional Approach"
+title: "EJ + Intersectionality"
 date: "September 05, 2025"
 format: 
   revealjs:
@@ -16,7 +16,74 @@ execute:
   echo: true
 ---
 
-## read: 
--[Researcher Positionality Paper](https://www.ulethbridge.ca/sites/default/files/2024/09/holmes_2020.pdf)
 
-- Due Monday at 11:59: Positionality Statement (5%); 250 - 300 words
+#  Class Overview 
+
+- Centering activity
+- What is EJ? 
+  - What we know 
+  - Origins of EJ
+  - 17 principles of EJ + Tenet-based approach
+- Reading Discussion
+
+# Centering Activity
+
+# What is EJ? 
+
+## What we know
+- <span style="color:red;"> In groups of 4: draft your definition of Environmental Justice, be ready to share! </span>
+
+## Similarities/Differences in definitions?
+
+## Origins of EJ {.smaller}
+- Term "environmental justice" was popularized in 1980s
+- **1982:** Began as a social movement
+  - Communities of color organizing and resisting unfair siting activities (toxic waste, landfills, and oil refineries)
+  - Protests in Warren County, NC are especially salient to EJ movement
+- **1987:** United Church of Christ (UCC) Commission for Racial Justice published report on Black and Latine exposure to toxic sites. 
+- **1991:** UCC hosted the First National People of Color Environmental Leadership Summit, where the 17 Principles of Environmental Justice were created
+
+## 17 Principles of EJ + Tenet-Based Approach
+- 17 Principles are still highly regarded
+-  A lot of academic conversations around what EJ means to whom, and how to classify it.
+  - lmk if you want more readings suggestions on this
+- I chose a five tenet approach (currently used a lot in Energy Justice scholarship), because I think it provides a nice framework for theorizing different aspects of justice.
+
+## Principles + Tenet Sorting
+- <span style="color:red;"> In groups of 4: Sort the 17 Principles of EJ into the five tenets, be ready to discuss! </span> 
+
+## Sorting Results
+- Defining Environmental Justice is tricky, and many definitions/approaches will overlap. 
+  - This can be both a strength and a challenge. 
+  - (If I could make this course 34 weeks long, I would!)
+
+## What we Read
+
+Holmes, A. G. D. (2020). [Researcher Positionality- A Consideration of Its Influence and Place in Qualitative Research - A New Researcher Guide](https://www.ulethbridge.ca/sites/default/files/2024/09/holmes_2020.pdf). 8(4) 1-10. 
+
+Di Chiro, G. (2020). [Mobilizing 'intersectionality' in environmental justice research and action in a time of crisis](https://ebookcentral.proquest.com/lib/well/reader.action?docID=6228917&ppg=463&c=RVBVQg). Environmental justice, 316-333     
+
+## What is Intersectionality? What is it not? 
+- <span style="color:red;"> In pairs: did this reading change your definition of intersectionality? </span> 
+- How do we want to define and think about intersectionality in this course? 
+- Group Venn Diagram 
+
+## Intersectionality + Environmental Justice
+- How might an intersectional approach influence how we think about environmental justice? 
+  - Expanding our definition of EJ to include: 
+    - Interconnected systems that oppress both land + people
+    - Collective care + undercommons as paths forward
+
+## Intersectionality + Positionality
+- <span style="color:red;"> In pairs: How can our definition of intersectionality influence how we think about positionality? </span> 
+- <span style= "color:red;"> why do positionality statements matter? </span>
+- As you write: think about your positionality as it relates to heritage, culture, land, and education: how might that influence how you engage in this course? 
+
+## Leaving you with a quote
+"Intersectionality, therefore, is not about inclusion, it is about **absence**; it helps to make the dangers of multiply interacting exclusions visible. The remedy is not about including and reasserting essentialized identities; it is about recognizing that identity categories are socially and historically situated and are not merely about individuals: they are *coalitional*, “constituted by internal differences as much as by commonalities (Carastathis, 2016, p. 184)”
+ -- De Chiro, 2020 (p. 468)
+
+# Logistics
+For Tuesday:
+- Reading about Distributional Justice
+- Positionality Statement due Thursday (September 11, 2025) at 11:59 PM on Brightspace. 

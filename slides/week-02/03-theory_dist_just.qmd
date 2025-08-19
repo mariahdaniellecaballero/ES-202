@@ -19,7 +19,7 @@ execute:
 #  Class Overview 
 
 - Centering activity
-- Positionality statement Debrief
+- Positionality statement debrief
 - Paired conversations on distributional justice
 - Group synthesis
 - Intro to community case study (Houston, TX, 1979)

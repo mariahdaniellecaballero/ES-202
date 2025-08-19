@@ -133,7 +133,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <img src="../../images/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
       <div class="sidebar-tools-main">
-    <a href="https://github.com/rstudio-conf-2022/teach-ds-course-website" title="GitHub" class="quarto-navigation-tool px-1" aria-label="GitHub"><i class="bi bi-github"></i></a>
+    <a href="https://github.com/mariahdaniellecaballero/ES-202" title="GitHub" class="quarto-navigation-tool px-1" aria-label="GitHub"><i class="bi bi-github"></i></a>
     <a href="https://rstudio.cloud/spaces/237799" title="RStudio Cloud" class="quarto-navigation-tool px-1" aria-label="RStudio Cloud"><i class="bi bi-cloud-fill"></i></a>
 </div>
       </div>
@@ -291,7 +291,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="part-ii-todays-goal" class="level1">
 <h1>Part II: Today’s Goal</h1>
 <ul>
-<li>Understand data</li>
+<li>Understand data structure</li>
 <li>Transform and tidy data for necessary questions</li>
 <li>Explore and summarize patterns</li>
 <li>Connect it to theoretical understandings of procedural justice</li>
@@ -391,7 +391,7 @@ $ language    &lt;chr&gt; "eng", "spa", "spa", "spa", "eng", "spa", "spa", "eng"
 <li>We can also use mutate for creating new columns, and we can pair it with additional functions, such as ifelse statements.</li>
 <li>Perhaps we were interested in creating a new column that defines whether an interview is from a bracero worker or not.
 <ul>
-<li>Note that if we wanted to further classify the subject, we might create a factor column and use the <code>fct_collapse</code> function, rather than an ifelse statement.</li>
+<li>Note that if we wanted to further classify the subject, we might create a factor column and use the <code>case_match()</code> function, rather than an ifelse statement.</li>
 </ul></li>
 </ul>
 <div class="cell">
@@ -691,7 +691,7 @@ $ language    &lt;chr&gt; "eng", "spa", "spa", "spa", "eng", "spa", "spa", "eng"
 <li>Based on the non-bracero topics, can you create a new factor column that groups the topics into 3-5 factors?</li>
 </ol>
 <ul>
-<li>use <code>mutate()</code>, and <code>fct_collapse()</code> to classify the groups into a new column called <code>topic_group</code></li>
+<li>use <code>mutate()</code>, and <code>case_match()</code> to classify the groups into a new column called <code>topic_group</code></li>
 </ul>
 <ol start="4" type="1">
 <li>Are there any interesting patterns in language spoken among your <code>topic_groups</code>? Use a <code>group_by</code> and <code>summarize</code> function to calculate.</li>
