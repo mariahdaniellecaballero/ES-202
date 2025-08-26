@@ -1,11 +1,5 @@
 ---
 title: "HW 05: Drinking Water Case Study"
-date: "October 06, 2025"
+date: "October 09, 2025"
 categories: "Homework"
 ---
-
-Add instructions for assignment. 
-
-Read: 
-[Flint, Environmental Racism, and Racial Capitalism](https://www.tandfonline.com/doi/full/10.1080/10455752.2016.1213013#d1e80)
-

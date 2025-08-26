@@ -1,6 +1,7 @@
 ---
-title: "[Assess] Independent Projects"
-date: "November 21, 2025"
+title: "[Assess] Solar Energy Case Study"
+subtitle: "📍 Navajo Nation, U.S."
+date: "October 24, 2025"
 format: 
   revealjs:
     theme:

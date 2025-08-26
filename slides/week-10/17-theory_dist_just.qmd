@@ -1,7 +1,7 @@
 ---
-title: "[Assess] Agricultural Labor Case Study"
-subtitle: "📍 Wenatchee, WA"
-date: "November 07, 2025"
+title: "[Theory] Distributional Justice & Food"
+subtitle: "📍 Springfield, MA"
+date: "November 4, 2025"
 format: 
   revealjs:
     theme:

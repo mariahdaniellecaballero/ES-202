@@ -10,64 +10,82 @@ In this interdisciplinary course, students are asked to engage with environmenta
 2. **Reflect on how your positionality and lived experiences** shape your approach to environmental justice. 
 3. **Assess empirical patterns of environmental injustice in US communities** related to Food, Energy, and Water (FEW nexus). 
 4. **Identify opportunities and challenges beyond distributional justice** (procedural, recognitional, restorative, and cosmopolitan justice) for environmental solutions spatially and temporally.
+5. **Suggest opportunities for intervention** by developing a theory-driven logic model.
 
 
 ## Course Community
 ### Teaching, Learning, and Being in Community
 I hope that students not only take away the skills associated with the course's measurable outcomes, but also learn more about themselves, their peers, and the environment around them. This requires a certain level of vulnerability and trust, which I hope that we can establish together. 
 
-Ultimately, I designed this course around three pedogogical commitments:
+I also designed this course to help students foster community beyond the classroom, so that they too can go on to build expansive, solution-oriented movements that welcome everyone into a collective vision of what the world could be. I share some of adrienne marie brown's [^1] points on social justice and community, that may be useful to ask of yourself and others throughout this course:
 
--  *Democratic Education:* Promote a learning community that (cite Friere, Pedagogy of Heart).
-- *Pluralist Learning:* Engage with, relate to, and communicate with individuals and communities (Simmer-Brown, )
--  *Loving Corrections* (cite amb, 2024)
-
-#### Democratic Education
-
-#### Pluralist Learning
-
-#### Loving Corrections
-*Loving Corrections* is a two-part concept intended to build community and acheive more just futures (link book). 
-
-- Primarily, the *Loving* aspect refers to  building movements and coalitions that are expansive enough to "invite the world into the future" (p. 7)
-- The Corrections piece argues that to build these expansive coalitions, "we cannot cancel other living beings from the world". Rather, we should search for "dignified ways of being in communities that face, address, and evolve beyond harmful patterns"
-    - In some ways this requires us to "accept that each of us has some responsibility for holding the massive changes needed for survival", and ask, "how do we hold each other close enough for our hardest lessons? (p5)"
-- *Loving Corrections* is for "those who want to be solution-oriented, but who can get sucked into deconstruction and judgment that destroys others, rather than destroying the toxic concepts that 'go viral' among us"
-
-- *ask* yourself, how can I invite my peers into belonging? 
-- how can we "create conditions that support dignity for each person, and stop confusing identity for community?"
-- how can we "[build] and [sustain] communities that can survive and create more possibilities together?"
-- how can [challenge] regressive policies and beliefs that separate us, reminding our species that we belong to this earth and to each other"?
-- how can we "honestly [engage] in community as students of belonging?"
+- How can we invite our peers into belonging? 
+- How can we create conditions that ensure dignity for each person? 
+- How can we challenge regressive beliefs meant to divide us, and remind one another that we belong to this planet, and each other? 
+- How can we forge communities that not only survive, but can imagine more equitable realities?
 
 
-#### Shared Expectations
-*Note that this will be completed during our first class session, more to come, soon!*
+### Shared Expectations
+::: {.callout-note}
+*This section will be completed during our first class session, more to come, soon!*
+:::
 
 ## Course Policies
-### Late Policy
 
-### Honor Code
+### Late Policy
+Because we start homework assignments in class, and material is cumulative, it's very important that readings and assignments are completed by the deadlines they are designed for. Because of this, work submitted after the deadline will be accepted; however there will be a 10% deduction per day that the assignment is late. Late work will not be accepted for the final group project, or any of its checkpoints. 
+
+If you anticipate an assignment will be late due to an emergency, please email me at least 24 hours before the due date to discuss a path forward. In collaboration with your [class dean](https://www.wellesley.edu/about-us/offices-departments/class-deans#team) and/or [health services](https://www.wellesley.edu/healthservice), we will figure out the best path forward, together.
+
+If you know you will need to miss class due to illness or family emergency, please let me know so we can make a plan for how to proceed.
+
+### Use of Generative AI
+In addition to the overwhelming energy and water use that data centers use to answer your queries (a distributional burden that communities like my hometown are now bearing [^2]), generative AI poses significant threats to the core of this class. I designed this course to 1) stretch students' abilities to comprehend and apply justice-based theories, and 2) learn the foundations of data visualization in R. Therefore, I ask that you **do not** use it for the following: 
+
+- Summarizing or annoting readings
+- Generating code of any kind 
+- Answering any questions on assignments
+
+If you feel that generative AI can be used to improve your knowledge on a topic, or for brainstorming ideas without sacrificing your ability to think critically, *please come speak with me about it, before you employ it in your workflow*. I'm still learning the pros and cons of Generative AI in higher education, and I always welcome the discussion. 
 
 ### Grading
 
 
-#### Course Components
-
-- **Positionality Statement (5%)**: The first assignment of the course will be a short positionality statement, which 
+### Course Components
 
 - **Attendance and Participation (10%)**: This primarily includes coming to class prepared (i.e., completed any preparatory readings/assignments before our scheduled course meeting), engaging with peers on course content (i.e., asking questions, sharing thoughts and ideas, participating in group activities).
 
-- **Weekly Assignments (60%)**: Each week offers the opportunity to discuss and apply different forms of environmental justice, through the lens of a community case study. 
-    - Tuesdays will begin with small and large-group discussions on one theoretical piece and one community case study. Please come ready to discuss the case study and apply theoretical findings.
-    - Fridays will be spent primarily on an in-class data visualization exercise related to the weekly case study. Please review the exercise before class, and be ready to work in rotating pairs on the assignment, and submit it individually by the following Monday at 11:59 PM. Note that the assignment with the lowest grade will be dropped (i.e., 6 of 7 assignments, each counting for 10% of your grade).  
-- **Community Case Study Final Project (25%)**: End of semester individual project on a community case study of your choice. Note that final project score is cumulative, including a mid-semester check-in and proposed data visualization strategy (5%) and final submission (20%).
+- **Positionality Statement (5%)**: The first assignment for the course will be a brief statement that explains your positionality and how it might influence your engagement with the course and its materials.
+
+- **Weekly Assignments (60%)**: Each week provides an opportunity to discuss and explore different forms of environmental justice through a community case study. 
+    - *Tuesdays* will focus on small and large-group discussions on key theoretical concepts related to that week’s community case study. Please come prepared to discuss the readings.
+    - *Fridays* will mainly focus on an in-class data visualization exercise (each worth 10%) related to the weekly case study. Please read the assigned case study and review the exercise before class. Be prepared to work in rotating pairs on the assignment, then submit it individually by the following Thursday at 11:59 PM. 
+
+- **Community Case Study Final Project (25%)**: End of semester group project on a community case study of your choice. Note that final project score is cumulative, including a project proposal (5%), project plan (10%), and final submission (10%). Please see the [Final Project Discription](final_project/-desc.qmd) for more information.
+
+### Letter Grades
+Course Grade percentages are calculated into letter grades using the following table
+
+| Percentage  | Letter Grade  |
+|-------------|---------------|
+|  >= 95    | A  |
+|  >= 90    | A-  |
+|  >= 87    | B+  |
+|  >= 85    | B  |
+|  >= 80    | B-  |
+|  >= 77    | C+  |
+|  >= 75    | C |
+|  >= 70    | C - |
+|  >= 60    | D |
+|  < 60    | F |
+
+Please note that the minimum grade to earn credit under credit/no credit grading is a C. The minimum grade to pass and earn credit under normal letter grading is a D. You're welcome to read more about Wellesley's grading policies [here](https://www.wellesley.edu/about-us/offices-departments/registrar/grading-policy).
 
 ### Course Readings
 There are no textbooks for this course. All course readings will be made available on the website. Please see the [schedule](schedule.qmd) for each week's corresponding material. 
 
 ### Communication
-Class emails will be sent out via Brightspace. Please do feel free to [email me](mailto:mc152@wellesley.edu) with questions or concerns regarding the course, and I will do my best to respond within 24 hours (excluding weekends). 
+Class emails will be sent out via Brightspace. Please do feel free to [email me](mailto:mc152@wellesley.edu) with questions or concerns regarding the course, and I will do my best to respond within 48 hours (excluding weekends). 
 
 ### Accessibility and Disability
 Every student has the right to full access in this course. If you find any material difficulty to access due to course format, technology, or any other reason, please don't hesitate to let me know so that we can identify appropriate accommodations.  
@@ -105,4 +123,9 @@ I sincerely care about your experience in this course, and am always interested 
 -   **Dec 15-18**: Final exams
 
 ## Acknowledgments
-This course was created using [templates](https://github.com/rstudio-conf-2022/teach-ds-course-website) created by Maria Tackett & Mine Cetinkaya-Rundel. I'm also very grateful for tips and resources from [Dr. Yaniv Yacoby](https://yanivyacoby.github.io/), [Accessible Syllabus](https://accessiblesyllabus.com/), and 
+This course was created using [templates](https://github.com/rstudio-conf-2022/teach-ds-course-website) created by Maria Tackett & Mine Cetinkaya-Rundel. I'm also very grateful for tips and resources from [Dr. Yaniv Yacoby](https://yanivyacoby.github.io/), [Accessible Syllabus](https://accessiblesyllabus.com/), and faculty feedback from the [Wellesley Environmental Studies Department](https://www.wellesley.edu/academics/department/environmental-studies).
+
+[^1]: brown, adrienne maree. (2024). Loving Corrections. AK Press.
+
+
+[^2]: Ramadan, L., & Brownstone, S. (2024, July 28). Washington Is Giving Tax Breaks to Data Centers That Threaten the State’s Green Energy Push. ProPublica. https://www.propublica.org/article/data-centers-clean-energy-washington-state

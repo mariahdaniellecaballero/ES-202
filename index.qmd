@@ -5,7 +5,7 @@ title: "Environmental Justice: A Community-Centric Approach"
 ## Course Information
 | **Course Number:** ES-202-01
 | **Time:**  Tues & Fri 9:55 - 11:10 AM
-| **Location:**
+| **Location:** Science Center Hub 103 Classroom
 | **Instructor:** Mariah D. Caballero
 | **Office Hours:** (E152)
 | **Email:** [mc152@wellesley.edu](emailto:mc152@wellesley.edu)
@@ -19,12 +19,7 @@ In this interdisciplinary course, students are asked to engage with environmenta
 2. **Reflect on how your positionality and lived experiences** shape your approach to environmental justice. 
 3. **Assess empirical patterns of environmental injustice in US communities** related to Food, Energy, and Water (FEW nexus). 
 4. **Identify opportunities and challenges beyond distributional justice** (procedural, recognitional, restorative, and cosmopolitan justice) for environmental solutions spatially and temporally.
+5. **Suggest opportunities for intervention** by developing a theory-driven logic model.
 
 
-## Measurable Outcomes
-| Description                             | Measurable Outcome               |
-|-----------------------------------------|----------------------------------|
-| Apply an intersectional lens to your own identity and environment, as well as weekly case studies| self-reflection, weekly participation and assignments|
-| Define and apply five tenets of environmental justice (distributional, procedural, recognitional, restorative, and cosmopolitan)| weekly participation and assignments, final project|
-| Use publicly-available data and open-source software to demonstrate empirical patterns of injustice| weekly participation and assignments, final project| 
-|Combine theory and empirical patterns to community-level case studies and pose potential interventions for more environmentally just communities | weekly participation and assignments, final project
+

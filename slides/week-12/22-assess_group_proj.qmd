@@ -1,6 +1,6 @@
 ---
-title: "[Assess] Independent Projects"
-date: "November 28, 2025"
+title: "[Assess] Group Projects"
+date: "November 21, 2025"
 format: 
   revealjs:
     theme:

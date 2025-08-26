@@ -20,7 +20,6 @@ listing:
   - id: assignments
     contents:
       - ../hw/w4-*.qmd
-      - ../labs/w4-*.qmd
     type: table
     fields: [categories, title, date]
     date-format: "ddd, MMM DD"
@@ -48,7 +47,6 @@ tbl-colwidths: [10,50,40]
 
 |                                                                                                           |
 |-----------------------------------------------------------------------------------------------------------|
-| |
 |**Tuesday:** Ibrahim, A. A. (2023). [Empowering Those in Harm’s Way: A Restorative Justice Approach](https://link.springer.com/content/pdf/10.1007/978-3-031-46282-5_32.pdf). In The Power of Energy Justice & the Social Contract (pp. 243-249). Cham: Springer Nature Switzerland.                        |
 |**Friday:** Harrison, C. (2016). [Race, space, and electric power: Jim Crow and the 1934 North Carolina rural electrification survey](https://www-jstor-org.ezproxy.wellesley.edu/stable/pdf/45387649.pdf). Annals of the American Association of Geographers, 106(4), 909-931.|
 *[Optional Friday:]* Wickham, H., Çetinkaya-Rundel, M., & Grolemund, G. (2023). [R for Data Science (2e): Chapters 4 and 5](https://r4ds.hadley.nz/workflow-style.html). Sebastopol: O'Reilly.   |              

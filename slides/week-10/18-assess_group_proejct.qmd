@@ -1,7 +1,6 @@
 ---
-title: "[Theory] Recognitional Justice & Food"
-subtitle: "📍 Wenatchee, WA"
-date: "November 04, 2025"
+title: "Group Project Peer Feedback"
+date: "November 07, 2025"
 format: 
   revealjs:
     theme:

@@ -31,6 +31,12 @@ You can find details and assignment instructions in the relevant week on the sch
 
 Homework will be submitted to Brightspace. Please see the schedule for due dates and detailed instructions.
 
-### Final Project
+### Group Final Project
 
-The final project is due on December 08, 2025. Please see the [description](/Users/mc152/Documents/GitHub/ES-202/final_project/desc.qmd) for detailed instructions and timelines.
+The final project is a cumulative reflection of your theoretical and methodological skills. Please see the [description](final_project/desc.qmd) for detailed instructions.
+
+**Important Dates**
+
+-   [**Project Proposal:**](final_project/w8-project_proposal.qmd) Thursday, October 30, 2025 at 11:59 PM
+-   [**Project Plan:**](final_project/w10-project_plan.qmd) Friday, November 07, 2025 at 11:59 PM
+-   [**Final Project:**](final_project/w15-final_project.qmd) Friday, December 09, 2025 before class

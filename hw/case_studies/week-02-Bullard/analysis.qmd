@@ -7,8 +7,8 @@ format: html
 
 # Introduction to Quarto
 ```{r}
-#| label = "setup",
-#| include = FALSE
+#| label: setup
+#| include: FALSE
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
@@ -19,13 +19,14 @@ This is a Quarto document. It is a structured plain-text format that allows you 
 When you click the **Render** button in RStudio, a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
 
 ```{r}
-#| label = "addition"
+#| label: addition
 
 2 + 2
 ```
 
 The chunk is delimited by those backticks and curly braces on line 28 (to open it) and the three backticks on line 30 (to close it). You can also use a Mac shortcut (command + option + i) to create an empty chunk. Here is what an empty chunk looks like:
 ```{r}
+#| label: code chunk
 
 ```
 

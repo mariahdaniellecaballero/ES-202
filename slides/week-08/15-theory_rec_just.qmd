@@ -1,6 +1,6 @@
 ---
-title: "[Theory] Distributional Justice & Food"
-subtitle: "📍 Springfield, MA"
+title: "[Theory] Recognitional Justice & Energy"
+subtitle: "📍 Navajo Nation, USA"
 date: "October 21, 2025"
 format: 
   revealjs:

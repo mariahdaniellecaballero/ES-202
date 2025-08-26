@@ -85,6 +85,7 @@ execute:
 2. **Reflect on how your positionality and lived experiences** shape your approach to environmental justice. 
 3. **Assess empirical patterns of environmental injustice in US communities** related to Food, Energy, and Water (FEW nexus). 
 4. **Identify opportunities and challenges beyond distributional justice** (procedural, recognitional, restorative, and cosmopolitan justice) for environmental solutions spatially and temporally.
+5. **Suggest opportunities for intervention** by developing a theory-driven logic model.
 
 ## Course Design
 ::: columns
@@ -112,9 +113,7 @@ execute:
 [screenshot + link of schedule]
 
 ## My Pedogogical Goals for Creating and Being in Community{.smaller}
-- Democratic Education
-- Pluralistic Learning
-- Loving Corrections
+xx
 
 ## Housekeeping
 - Checking posit access

@@ -108,9 +108,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-categories','listing-title','listing-date',{ data: ['index'] },{ data: ['categories'] }],
+      valueNames: ['listing-categories','listing-title','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
-      searchColumns: [],
+      searchColumns: ["listing-date","listing-title","listing-author"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -285,9 +285,9 @@ Date
 </thead>
 <tbody class="list">
 
-<tr data-index="0" data-listing-date-sort="1765256400000" data-listing-file-modified-sort="1753884932957" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="[Reflect] Last Day" data-listing-filename-sort="26-reflect_last_day.qmd">
+<tr data-index="0" data-listing-date-sort="1765256400000" data-listing-file-modified-sort="1753884932957" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="[Reflect] Last Day" data-listing-filename-sort="27-reflect_last_day.qmd">
 <td>
-<a href="../slides/week-15/26-reflect_last_day.html" class="title listing-title">[Reflect] Last Day</a>
+<a href="../slides/week-15/27-reflect_last_day.html" class="title listing-title">[Reflect] Last Day</a>
 </td>
 <td>
 <span class="listing-date">Tue, Dec 09</span>
@@ -303,15 +303,39 @@ Date
 <section id="assignments" class="level1">
 <h1>Assignments</h1>
 <div id="listing-assignments" class="quarto-listing quarto-listing-container-table">
-<table class="quarto-listing-table table caption-top" data-quarto-postprocess="true">
+<table class="quarto-listing-table table">
 <thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th">Assignment</th>
-<th data-quarto-table-cell-role="th">Title</th>
-<th data-quarto-table-cell-role="th">Due</th>
+<tr>
+
+<th>
+Assignment
+</th>
+
+<th>
+Title
+</th>
+
+<th>
+Due
+</th>
+
 </tr>
 </thead>
 <tbody class="list">
+
+<tr data-index="0" data-categories="RmluYWwlMjBQcm9qZWN0" data-listing-date-sort="1765256400000" data-listing-file-modified-sort="1756215179081" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="483" data-listing-title-sort="Final Project" data-listing-filename-sort="w15-final_project.qmd">
+<td>
+<span class="listing-categories">Final Project</span>
+</td>
+<td>
+<a href="../final_project/w15-final_project.html" class="title listing-title">Final Project</a>
+</td>
+<td>
+<span class="listing-date">Tue, Dec 09</span>
+</td>
+
+</tr>
+
 </tbody>
 </table>
 <div class="listing-no-matching d-none">No matching items</div>

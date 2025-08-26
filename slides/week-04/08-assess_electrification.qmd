@@ -19,6 +19,7 @@ execute:
 # Class Overview 
 - Centering activity
 - Setting the stage
+- Zoom with Dr. Harrison
 - Paired coding
 - Group Debrief
 
@@ -29,7 +30,7 @@ execute:
 - Using data from the 1930s Census and digitized Rural Electrification Surveys provided by Dr. Conor Harrison
 
 ## Zoom with Dr. Harrison
-
+- Feel free to ask questions!
 
 ## Learning Outcomes
 - Understand coding style best practices
@@ -60,28 +61,33 @@ county_vars_1930 <- read_csv("/Users/mc152/Documents/GitHub/ES-202/hw/case_studi
 state_vars_1930 <- read_csv("/Users/mc152/Documents/GitHub/ES-202/hw/case_studies/week-04-REA/data/state_vars_1930.csv")
 ```
 
-## Coding Style Best Practices
+# Coding Style Best Practices
 
 ## Names
+- Naming conventions are a matter of preference, but readability is key.
+  - R4ds suggests using lowercase letters, numbers, and underscores only. 
+  - longer, more informative names are usually beter than short, confusing names.
 ```{r}
 #| warning: false
 #| message: false
 #| echo: true
 #| eval: false
 
-
 # strive for
 county_vars_1930 <- read_csv("data/county_vars_1930.csv")
 state_vars_1930 <- read_csv("data/state_vars_1930.csv")
 
 # avoid
-#COUNTYVARS1930
+CNTYVRS30 <- read_csv("data/county_vars_1930.csv")
 
-#rm(COUNTYVARS1930)
+rm(CNTYVRS30)
 ```
 
 
 ## Spaces
+- Spaces should go on both sides of operators (-, +, >, etc.), except for ^.
+- parentheses do not need spaces around them. 
+- use a space after a comma, like English. :-) 
 
 ```{r}
 #| warning: false
@@ -94,13 +100,47 @@ state_vars_1930 <- read_csv("data/state_vars_1930.csv")
 mean(county_vars_1930$total_pop)
 
 # avoid
-(15-5)^ 2
+( 15-5 )^ 2
 mean (county_vars_1930$total_pop)
 ```
 
 ## Pipes
+- Pipes should have a space before them and should be the last part of a line. 
+- After a pipe, the next line should be indented two spaces (RStudio will automatically do this for you if you end your line with a pipe).  
+
+```{r}
+#| warning: false
+#| message: false
+#| echo: true
+#| eval: false
+
+# strive for
+county_vars_1930 |>
+  filter(state %in% c("Massachusetts", "Washington")) |>
+  count(county)
+
+# avoid
+county_vars_1930 |> filter(state %in%c("Massachusetts", "Washington")) |> count(county)
+```
 
 ## ggplot
+- ggplot functions just like pipes (i.e., each line should end with a +)
+```{r}
+#| warning: false
+#| message: false
+#| echo: true
+#| eval: false
+
+county_vars_1930 |>
+  group_by(state) |>
+  summarize(
+    sum_total_pop = sum(total_pop)
+  ) |>
+  ggplot(aes(state, sum_total_pop)) +
+  geom_col() +
+  theme(axis.text.x = element_text(angle = 90))
+```
+
 
 ## Exercise One
 Restyle the following code chunks and label what each line is doing, using "#". 
@@ -116,8 +156,13 @@ county_vars_1930|>filter(county %in%c("Washington","Jefferson","Franklin"),total
 ```
 
 
-## Data Tidying
+# Data Tidying
 
+## Three Rules for Tidy Data {.smaller}
+- Each column represents a variable (and vice versa)
+- Each row represents an observation (and vice versa)
+- Each value is a single cell (and vice versa)
+![]images/
 
 ## Exercise Two
 Describe what makes the `county_vars_1930` dataset tidy. Provide examples of the following using the dataset. 

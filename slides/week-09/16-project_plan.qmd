@@ -1,5 +1,5 @@
 ---
-title: "[Assess] Farmworker Survey Case Study"
+title: "[Strategize]: Final Project Plans"
 subtitle: "📍 Springfield, MA"
 date: "October 24, 2025"
 format: 
@@ -16,4 +16,3 @@ execute:
   freeze: auto
 ---
 
-# Slide content

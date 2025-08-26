@@ -55,6 +55,3 @@ For Friday:
 - Read community case study in schedule
 - Review in-class activity
 - Make sure posit login is working!
-
-
-

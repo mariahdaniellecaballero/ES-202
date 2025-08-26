@@ -153,8 +153,8 @@ Table One: City of Houston Garbage Incinerators
 #| message: false
 #| echo: true
 table_one <- sites |>
-              filter(type == "Incinerator") |>
-              select(facility, neighborhood, predom_eth_1979, location)
+  filter(type == "Incinerator") |>
+  select(facility, neighborhood, predom_eth_1979, location)
 ```
 
 ## Formatting Tables 
@@ -166,15 +166,17 @@ table_one <- sites |>
 
 table_one |>
   gt() |>
-   cols_label(
-    facility = "Site of Incinerator", 
-    neighborhood = "Neighborhood", 
-    predom_eth_1979 = "Ethnicity", 
-    location = "Location") |>
-   tab_header(
+  cols_label(
+    facility = "Site of Incinerator",
+    neighborhood = "Neighborhood",
+    predom_eth_1979 = "Ethnicity",
+    location = "Location"
+  ) |>
+  tab_header(
     title = ("Table 1"),
-    subtitle = "City of Houston Garbage Incinerators") |>
-    tab_source_note("The above Houston-owned garbage incinerators were in operation between the 1920s' and 1975")
+    subtitle = "City of Houston Garbage Incinerators"
+  ) |>
+  tab_source_note("The above Houston-owned garbage incinerators were in operation between the 1920s' and 1975")
 ```
 
 ## Exercise One: Rinse, Wash, Repeat for Tables 2 and 3
@@ -206,7 +208,8 @@ sites |>
   tbl_cross(
     row = type,
     col = predom_eth_1979,
-    percent = "row")
+    percent = "row"
+  )
 ```
 
 ## Formatting Table
@@ -221,8 +224,9 @@ sites |>
   tbl_cross(
     row = type,
     col = predom_eth_1979,
-    percent = "row", 
-    label = list(type ~ "Waste Disposal Sites", predom_eth_1979 ~ "Ethnicity")) |>
+    percent = "row",
+    label = list(type ~ "Waste Disposal Sites", predom_eth_1979 ~ "Ethnicity")
+  ) |>
   bold_labels()
 ```
 
@@ -253,7 +257,7 @@ ggplot(data = sites)
 #| warning: false
 #| message: false
 #| echo: true
-ggplot(data = sites, mapping = aes( x = type)) 
+ggplot(data = sites, mapping = aes(x = type))
 ```
 
 ## Adding a Visual
@@ -263,8 +267,8 @@ ggplot(data = sites, mapping = aes( x = type))
 #| warning: false
 #| message: false
 #| echo: true
-ggplot(data = sites, mapping = aes( x = type)) + 
-geom_bar()
+ggplot(data = sites, mapping = aes(x = type)) +
+  geom_bar()
 ```
 
 ## Formatting colors and labels
@@ -281,10 +285,10 @@ geom_bar()
 ggplot(sites, aes(x = type, fill = predom_eth_1979)) +
   geom_bar() +
   scale_fill_manual(
-    values = c("Red", "Yellow", "Green"), 
-    name = "Predominant Community Ethnicity") + 
+    values = c("Red", "Yellow", "Green"),
+    name = "Predominant Community Ethnicity"
+  ) +
   labs(x = " ", y = "Number of Facilities")
-  
 ```
 
 ## Exercise 3: Reading a Vignette

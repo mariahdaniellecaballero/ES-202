@@ -1,18 +1,13 @@
 ---
-title: "HW 07: Farmworker Survey Case Study"
-date: "October 27, 2025"
+title: "HW 07: Solar Energy Case Study"
+date: "October 30, 2025"
 categories: "Homework"
 ---
 
-Assess: Compare distributional unjustices among white non-Hispanic farmworkers and Hispanic farmworkers (documented and undocumented), compare odds ratios of likelihood to access Food Stamps (G04B), WIC (G04K)
+Assess solar energy potential for census tracts in Navajo Nation, energy burden/energy costs, MAP
 
-[National Agricultural Workers Survey Public Access Data](https://www.dol.gov/agencies/eta/national-agricultural-workers-survey/data)
+Read: [Paradox of Plenty](https://www.researchgate.net/profile/Martin-Pasqualetti/publication/292387152_A_Paradox_of_Plenty_Renewable_Energy_on_Navajo_Nation_Lands/links/59e270df0f7e9b97fbe7689b/A-Paradox-of-Plenty-Renewable-Energy-on-Navajo-Nation-Lands.pdf)
 
-Read: 
+Landscapes of Power: Off-Grid in the Chuskas
 
-[Hunger amidst plenty: farmworker food insecurity and coping strategies in California](https://www.researchgate.net/publication/263719496_Hunger_amidst_plenty_Farmworker_food_insecurity_and_coping_strategies_in_California)
-
-[Grist Article](https://grist.org/food-and-agriculture/farmworker-hunger-crisis-climate-inflation-grocery-costs/)
-
-explore [Pioneer Valley Workers Center](https://pvworkerscenter.org/food-justice-copy/) website, discuss different forms of food justice interventions (i.e., SNAP, community gardens, vegetable subscriptions)
-
+Revolutionary Power: Principles and Tools of Revolutionary Power in Conclusion
