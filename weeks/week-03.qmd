@@ -1,7 +1,7 @@
 ---
 title: "Week 03"
 subtitle: "Procedural (in)Justice in Yakima Valley, WA"
-description: "Sep 16 - 19"
+description: "Sep 16 - Sep 19"
 author: ""
 date: ""
 listing:

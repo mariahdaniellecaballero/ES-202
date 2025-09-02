@@ -1,7 +1,7 @@
 ---
 title: "Week 04"
 subtitle: "Restorative (in)Justice in Edgecombe County, NC"
-description: "Sep 23 - 26"
+description: "Sep 23 - Sep 26"
 author: ""
 date: ""
 listing:

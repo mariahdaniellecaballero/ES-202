@@ -1,7 +1,7 @@
 ---
 title: "Week 01"
 subtitle: "Getting Started"
-description: "Sep 02 - 07"
+description: "Sep 02 - Sep 07"
 author: ""
 date: ""
 listing:

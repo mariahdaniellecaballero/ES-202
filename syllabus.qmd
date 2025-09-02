@@ -66,7 +66,7 @@ If you feel that generative AI can be used to improve your knowledge on a topic,
     - *Tuesdays* will focus on small and large-group discussions on key theoretical concepts related to that week’s community case study. Please come prepared to discuss the readings.
     - *Fridays* will mainly focus on an in-class data visualization exercise (each worth 10%) related to the weekly case study. Please read the assigned case study and review the exercise before class. Be prepared to work in rotating pairs on the assignment, then submit it individually by the following Thursday at 11:59 PM. 
 
-- **Community Case Study Final Project (25%)**: End of semester group project on a community case study of your choice. Note that final project score is cumulative, including a project proposal (5%), project plan (10%), and final submission (10%). Please see the [Final Project Discription](final_project/-desc.qmd) for more information.
+- **Community Case Study Final Project (25%)**: End of semester group project on a community case study of your choice. Note that final project score is cumulative, including a project proposal (5%), project plan (10%), and final submission (10%). Please see the [Final Project Description](final_project/-desc.qmd) for more information.
 
 
 ### Assessment

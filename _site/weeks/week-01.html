@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="">
-<meta name="description" content="Sep 02 - 07">
+<meta name="description" content="Sep 02 - Sep 07">
 
 <title>Week 01 – ES-202 Course Website</title>
 <style>
@@ -218,6 +218,12 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../centering.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Centering Activity</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="https://docs.google.com/document/d/1-NDZl_DhfwxHM4T2AhiVBVR7m3s6qMOtvYcFUz1r_ps/edit?usp=sharing" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Find a Typo?</span></a>
   </div>
@@ -249,7 +255,7 @@ window.Quarto = {
 
 <div>
   <div class="description">
-    Sep 02 - 07
+    Sep 02 - Sep 07
   </div>
 </div>
 
@@ -333,7 +339,7 @@ Due
 </thead>
 <tbody class="list">
 
-<tr data-index="0" data-categories="SG9tZXdvcms=" data-listing-date-sort="1757304000000" data-listing-file-modified-sort="1756780013569" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="411" data-listing-title-sort="HW 01: Positionality Statement" data-listing-filename-sort="w1-hw01.qmd">
+<tr data-index="0" data-categories="SG9tZXdvcms=" data-listing-date-sort="1757304000000" data-listing-file-modified-sort="1756780175593" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="411" data-listing-title-sort="HW 01: Positionality Statement" data-listing-filename-sort="w1-hw01.qmd">
 <td>
 <span class="listing-categories">Homework</span>
 </td>
@@ -445,7 +451,7 @@ Due
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/mariahdaniellecaballero\.github\.io\/ES-202\/");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
