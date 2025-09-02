@@ -271,6 +271,7 @@ ggplot(aes(x = reorder(do_you_have_any_experience_using_r_studio, Count), y = Co
 - Are we into this?
 
 ## Course Website
+bookmark: https://mariahdaniellecaballero.github.io/ES-202/
 
 ## Schedule
 You can access the weekly schedule on the course website. 
