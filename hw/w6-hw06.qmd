@@ -1,8 +1,28 @@
 ---
 title: "HW 06: Global Stocktake Case Study"
-date: "October 13, 2025"
+date: "October 16, 2025"
 categories: "Homework"
 ---
 
-Add instructions for assignment. 
+## Overview 
+This case study uses global greenhouse gas (GHG) emission data from the European Commission's [Emissions Database for Global Atmospheric Research](https://edgar.jrc.ec.europa.eu/report_2024#data_download), and connecting it back to foundational theoretical aspects of cosmopolitan justice.
+
+## Learning Outcomes
+- Conduct Exploratory Data Analysis (EDA)
+- Identify potential patterns in data
+- Use the foundations of good graphics to communicate findings
+- Connect findings to theoretical understandings of cosmopolitan justice
+
+## Instructions
+1. Navigate to Posit Cloud and select the HW 06 assignment. 
+2. Follow along in class, and complete the assignment (if needed) outside of class.
+3. Render the quarto document as a pdf.
+
+## Grading
+
+Case studies are each 10% of your grade.
+
+
+## Submission
+Submit the pdf to Brightspace [here]().
 

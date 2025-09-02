@@ -16,12 +16,12 @@ This case study focuses on recreating Dr. Robert Bullard's foundational study, "
 
 ## Instructions
 1. Navigate to Posit Cloud and select the HW 02 assignment. 
-2. Follow along in class, and complete the assignment (if needed) individually. 
+2. Follow along in class, and complete the assignment (if needed) outside of class.
 3. Render the quarto document as a pdf.
 
 ## Grading
 
-Case studies are each 10% of your grade, and the lowest will be dropped. 
+Case studies are each 10% of your grade.
 
 ## Submission
 Submit the pdf to Brightspace [here]().

@@ -15,12 +15,13 @@ This case study focuses on using rural electrification surveys collected in 1934
 
 ## Instructions
 1. Navigate to Posit Cloud and select the HW 04 assignment. 
-2. Follow along in class, and complete the assignment (if needed) individually. 
+2. Follow along in class, and complete the assignment (if needed) outside of class.
 3. Render the quarto document as a pdf.
 
 ## Grading
 
-Case studies are each 10% of your grade, and the lowest will be dropped. 
+Case studies are each 10% of your grade.
+
 
 ## Submission
 Submit the pdf to Brightspace [here]().

@@ -46,8 +46,8 @@
   {
     "listing": "/weeks/week-14.html",
     "items": [
-      "/slides/week-14/25-theory_cosmo_just.html",
-      "/slides/week-14/26-assess_group_proj.html"
+      "/slides/week-14/24-theory_cosmo_just.html",
+      "/slides/week-14/25-assess_group_proj.html"
     ]
   },
   {
@@ -75,14 +75,15 @@
     "listing": "/weeks/week-10.html",
     "items": [
       "/slides/week-10/17-theory_dist_just.html",
-      "/slides/week-10/18-assess_group_proejct.html",
+      "/slides/week-10/18-assess_group_project.html",
       "/final_project/w10-project_plan.html"
     ]
   },
   {
     "listing": "/weeks/week-09.html",
     "items": [
-      "/slides/week-09/16-project_plan.html"
+      "/slides/week-09/16-project_plan.html",
+      "/final_project/w9-project_proposal.html"
     ]
   },
   {
@@ -90,8 +91,7 @@
     "items": [
       "/slides/week-08/15-theory_rec_just.html",
       "/slides/week-08/16-assess_solar.html",
-      "/hw/w8-hw07.html",
-      "/final_project/w8-project_proposal.html"
+      "/hw/w8-hw07.html"
     ]
   },
   {
@@ -112,8 +112,7 @@
   {
     "listing": "/weeks/week-13.html",
     "items": [
-      "/slides/week-13/23-theory_rec_just.html",
-      "/slides/week-13/24-assess_group_proj.html"
+      "/slides/week-13/23-theory_rec_just.html"
     ]
   },
   {

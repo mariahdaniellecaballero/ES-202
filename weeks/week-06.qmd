@@ -47,6 +47,5 @@ tbl-colwidths: [10,50,40]
 |                                                                                                           |
 |-----------------------------------------------------------------------------------------------------------|
 |**Tuesday:** Skillington, T. (2023). [Cosmopolitan Theories of Justice](https://www-jstor-org.ezproxy.wellesley.edu/stable/jj.7941370). In J. Ohlsson & S. Przybylinski (Eds.), Theorising Justice: A Primer for Social Scientists (1st ed., pp. 45–59). Bristol University Press. |
-|**Friday:** |
-|**Friday:** |
+|**Friday:** Resnik, D. B. (2022). [Environmental justice and climate change policies](https://onlinelibrary-wiley-com.ezproxy.wellesley.edu/doi/10.1111/bioe.13042). Bioethics, 36(7), 735-741.|
 *[Optional Friday:]* Wickham, H., Çetinkaya-Rundel, M., & Grolemund, G. (2023). [R for Data Science (2e): Chapters 10 and 11](https://r4ds.hadley.nz/EDA.html). Sebastopol: O'Reilly.   |   

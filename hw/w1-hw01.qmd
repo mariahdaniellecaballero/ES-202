@@ -24,10 +24,10 @@ For this assignment, you are invited to write your own positionality statement [
  1.  Details such as your heritage, culture, family, education, and any other aspects that shape how you view the world. 
  2.  Reflexive analysis of how your background and worldview might influence how you engage with course materials and the classroom community. Include at least one theme from this week's course readings in your analysis. 
 
-Statements should be 250 to 300 words long. Please use double-spaced formats, with 1 inch margins and a 12-point font. Include your name, date, course number, and the assignment title (i.e., HW 01: Positionality Statement).
+Statements should be 250 to 300 words long. Please use double-spaced formats, with 1 inch margins and a 12-point font. Include your name, date, course number, and the assignment title (i.e., HW 01: Positionality Statement). Please submit the assignment as a pdf.
 
 ::: {.callout-note}
-In the spirit of transparency, I will make everyone's statements (including [my own](cab_ps.qmd)) available for peers enrolled in the course to read on Brightspace. If you'd prefer to not share your statement, please email me before the submission date.
+If you're interested in reading my positionality statement, you can read it [here](cab_ps.qmd).
 :::
    
 
@@ -39,8 +39,6 @@ This assignment is worth 5% of your grade.
 ## Submission 
 Please submit this assignment to Brightspace by **Monday, September 08, 2025 at 11:59 PM** using [this link](). 
 
-### My Positionality Statement 
-If you're interested in knowing more about my positionality, and how it influences how I engage with this course, you're welcome to read my statement [here](cab_ps.qmd).
 
 [^1]: People of Color Environmental Justice Leadership Summit. [Principles of Environmental Justice](https://ejnet.org/ej/principles.pdf). Washington, D.C: People of Color Environmental Justice Leadership Summit, 1991.
 

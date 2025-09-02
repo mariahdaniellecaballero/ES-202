@@ -33,7 +33,7 @@ Homework will be submitted to Brightspace. Please see the schedule for due dates
 
 ### Group Final Project
 
-The final project is a cumulative reflection of your theoretical and methodological skills. Please see the [description](final_project/desc.qmd) for detailed instructions.
+The final project is a cumulative reflection of your theoretical and methodological skills. Please see the [description](final_project/-desc.qmd) for detailed instructions.
 
 **Important Dates**
 

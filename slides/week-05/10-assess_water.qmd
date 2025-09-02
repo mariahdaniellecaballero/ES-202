@@ -1,6 +1,6 @@
 ---
-title: "[Assess] Drinking Water Case Study"
-subtitle: "📍 Flint, MI"
+title: "[Assess] Culturally Important Species Case Study"
+subtitle: "📍 Isle de Jean Charles, LA"
 date: "October 03, 2025"
 format: 
   revealjs:
@@ -16,4 +16,4 @@ execute:
   freeze: auto
 ---
 
-# Slide content
+# Slides will be posted 24 hours in advance of class.

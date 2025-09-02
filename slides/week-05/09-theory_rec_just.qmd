@@ -1,6 +1,6 @@
 ---
 title: "[Theory] Recognitional (in)Justice & Water"
-subtitle: "📍 Flint, MI"
+subtitle: "📍 Isle de Jean Charles, LA"
 date: "September 30, 2025"
 format: 
   revealjs:
@@ -16,4 +16,4 @@ execute:
   freeze: auto
 ---
 
-# Slide content
+# Slides will be posted 24 hours in advance of class.

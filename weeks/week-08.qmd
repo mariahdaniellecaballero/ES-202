@@ -20,7 +20,6 @@ listing:
   - id: assignments
     contents:
       - ../hw/w8-*.qmd
-      - ../final_project/w8-*.qmd
     type: table
     fields: [categories, title, date]
     date-format: "ddd, MMM DD"
@@ -45,4 +44,10 @@ tbl-colwidths: [10,50,40]
 :::
 
 # Readings
-[chapter 6 in ggplot2 book](https://ggplot2-book.org/maps.html)
+
+|                                                                                                           |
+|-----------------------------------------------------------------------------------------------------------|
+|**Tuesday:** Baker, S. (2021). [The Principles and Tools of Revolutionary Power](https://ebookcentral.proquest.com/lib/well/reader.action?docID=6386268&ppg=173&c=UERG)(pp. 173–176) in *Revolutionary power: An activist's guide to the energy transition*. Island Press. |
+|**Tuesday:** Powell, D.E., (2018). [Interlude 3: Off-Grid in the Chuskas](https://www-jstor-org.ezproxy.wellesley.edu/stable/j.ctv1220jnq.11?searchText=&searchUri=&ab_segments=&searchKey=&refreqid=fastly-default%3A7b2b332f995cc8d4f9354aa8203929cb&initiator=recommender&seq=44) (pp.230-235). In Landscapes of Power: Politics of Energy in the Navajo Nation (pp. 187–235). Duke University Press. https://doi.org/10.2307/j.ctv1220jnq.11 |
+|**Friday:** Pasqualetti, M. J., Jones, T. E., Necefer, L., Scott, C. A., & Colombi, B. J. (2016). [A paradox of plenty: Renewable energy on Navajo Nation Lands](). Society & Natural Resources, 29(8), 885-899.|
+|*Optional Friday:* Wickham, H., Navarro, D., & Pedersen, T.L. (2025). [ggplot2: Elegant Graphics for Data Analysis (3e): Chapter 6](https://ggplot2-book.org/maps.html). Sebastopol: O'Reilly.  |

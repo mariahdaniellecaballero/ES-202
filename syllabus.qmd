@@ -27,29 +27,34 @@ I also designed this course to help students foster community beyond the classro
 
 ### Shared Expectations
 ::: {.callout-note}
-*This section will be completed during our first class session, more to come, soon!*
+*This section will be completed during our first week of classes, more to come, soon!*
 :::
 
 ## Course Policies
 
 ### Late Policy
-Because we start homework assignments in class, and material is cumulative, it's very important that readings and assignments are completed by the deadlines they are designed for. Because of this, work submitted after the deadline will be accepted; however there will be a 10% deduction per day that the assignment is late. Late work will not be accepted for the final group project, or any of its checkpoints. 
+Because we start homework assignments in class, and material is cumulative, it's very important that readings and assignments are completed by the deadlines they are designed for. At the same time, I understand that life happens! To ensure students have a bit of added flexibility, each student has *3 24-hour late passes*[^2]: 
+
+- Each late pass may be applied to delay one assignment deadline by 24 hours within the semester.
+- Any number of available passes may be applied to any assignment deadline. No work is accepted past the end of the final exam period, regardless of available late passes.
+- Late passes are not transferable, reusable, or divisible.
+- After your late pass budget is exhausted, each additional 24-hour delay in assignment submission is assessed a late penalty that subtracts 10% of the maximum assignment grade from your awarded grade on that assignment.
+- To use a late day, you must fill out [this form](https://docs.google.com/forms/d/e/1FAIpQLSfKVleGGJp2-vqECMAscBBZumU5MSD5K88tbeHAx-YXg6l44w/viewform?usp=header) before the assignment deadline.
+
+Importantly, because I designed the group project to be cumulative, and because a primary tenet of group collaboration is being accountable to one another, **late work will not be accepted for the final group project, or any of its checkpoints**. 
 
 If you anticipate an assignment will be late due to an emergency, please email me at least 24 hours before the due date to discuss a path forward. In collaboration with your [class dean](https://www.wellesley.edu/about-us/offices-departments/class-deans#team) and/or [health services](https://www.wellesley.edu/healthservice), we will figure out the best path forward, together.
 
 If you know you will need to miss class due to illness or family emergency, please let me know so we can make a plan for how to proceed.
 
 ### Use of Generative AI
-In addition to the overwhelming energy and water use that data centers use to answer your queries (a distributional burden that communities like my hometown are now bearing [^2]), generative AI poses significant threats to the core of this class. I designed this course to 1) stretch students' abilities to comprehend and apply justice-based theories, and 2) learn the foundations of data visualization in R. Therefore, I ask that you **do not** use it for the following: 
+In addition to the overwhelming energy and water use that data centers use to answer your queries (a distributional burden that communities like my hometown are now bearing [^3]), generative AI poses significant threats to the learning outcomes of this class. I designed this course to 1) strengthen students' abilities to comprehend and apply justice-based theories, and 2) learn the foundations of data visualization in R. Therefore, I ask that you **do not** use it for the following: 
 
 - Summarizing or annoting readings
 - Generating code of any kind 
 - Answering any questions on assignments
 
 If you feel that generative AI can be used to improve your knowledge on a topic, or for brainstorming ideas without sacrificing your ability to think critically, *please come speak with me about it, before you employ it in your workflow*. I'm still learning the pros and cons of Generative AI in higher education, and I always welcome the discussion. 
-
-### Grading
-
 
 ### Course Components
 
@@ -63,26 +68,31 @@ If you feel that generative AI can be used to improve your knowledge on a topic,
 
 - **Community Case Study Final Project (25%)**: End of semester group project on a community case study of your choice. Note that final project score is cumulative, including a project proposal (5%), project plan (10%), and final submission (10%). Please see the [Final Project Discription](final_project/-desc.qmd) for more information.
 
-### Letter Grades
-Course Grade percentages are calculated into letter grades using the following table
 
-| Percentage  | Letter Grade  |
-|-------------|---------------|
-|  >= 95    | A  |
-|  >= 90    | A-  |
-|  >= 87    | B+  |
-|  >= 85    | B  |
-|  >= 80    | B-  |
-|  >= 77    | C+  |
-|  >= 75    | C |
-|  >= 70    | C - |
-|  >= 60    | D |
-|  < 60    | F |
+### Assessment
+My approach to assessment is centered on 1) gauging students' learning as it corresponds to the course learning goals, and 2) providing feedback that facilitates growth. [Wellesley's grading policy](https://www.wellesley.edu/about-us/offices-departments/registrar/grading-policy) aligns with these goals, and uses a relatively qualitative approach: 
 
-Please note that the minimum grade to earn credit under credit/no credit grading is a C. The minimum grade to pass and earn credit under normal letter grading is a D. You're welcome to read more about Wellesley's grading policies [here](https://www.wellesley.edu/about-us/offices-departments/registrar/grading-policy).
+   - *Grade A* is given to students who meet with conspicuous excellence every demand that can fairly be made by the course. 
+   -  *Grade B* is given to those students who add to the minimum of satisfactory attainment excellence in not all, but some of the following: organization, accuracy, originality, understanding, insight. 
+   - *Grade C* is given to those students who have attained a satisfactory familiarity with the content of a course and who have demonstrated ability to use this knowledge in a satisfactory manner.
+
+For individual work (weekly assignments and participation), I will provide written feedback on each learning outcome, along with a score of 1 to 5. For example, feedback on one community case study might look like this: 
+
+| Learning Outcome | Score |
+|----------|----------|
+| Understand basic tidy data structure  | 4  |
+| Transform and tidy data for necessary questions  | 4  |
+| Explore and summarize patterns  | 3  |
+| Connect it to theoretical understandings of procedural justice  | 5  |
+
+
+For team work (final group project), I will provide a rubric and grade the product on a percentage scale. 
 
 ### Course Readings
 There are no textbooks for this course. All course readings will be made available on the website. Please see the [schedule](schedule.qmd) for each week's corresponding material. 
+
+### Living Syllabus
+Since this course is in its early development, I reserve the right to make minor adjustments, such as changes to assigned readings (well in advance of class), as needed or based on student feedback to improve the course. 
 
 ### Communication
 Class emails will be sent out via Brightspace. Please do feel free to [email me](mailto:mc152@wellesley.edu) with questions or concerns regarding the course, and I will do my best to respond within 48 hours (excluding weekends). 
@@ -127,5 +137,6 @@ This course was created using [templates](https://github.com/rstudio-conf-2022/t
 
 [^1]: brown, adrienne maree. (2024). Loving Corrections. AK Press.
 
+[^2]: Thanks to the Wellesley CS department for their late policy guidelines!
 
-[^2]: Ramadan, L., & Brownstone, S. (2024, July 28). Washington Is Giving Tax Breaks to Data Centers That Threaten the State’s Green Energy Push. ProPublica. https://www.propublica.org/article/data-centers-clean-energy-washington-state
+[^3]: Ramadan, L., & Brownstone, S. (2024, July 28). Washington Is Giving Tax Breaks to Data Centers That Threaten the State’s Green Energy Push. ProPublica. https://www.propublica.org/article/data-centers-clean-energy-washington-state

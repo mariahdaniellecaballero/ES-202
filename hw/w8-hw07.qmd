@@ -3,11 +3,25 @@ title: "HW 07: Solar Energy Case Study"
 date: "October 30, 2025"
 categories: "Homework"
 ---
+## Overview 
+This case study uses annual solar energy potential data from the National Renewable Energy Lab's [National Solar Radiation Data Base](https://www.nrel.gov/gis/solar-resource-maps) and energy burden data from the Department of Energy's [Low-Income Energy Affodability Data Tool](https://www.energy.gov/scep/slsc/lead-tool), and connecting it back to foundational theoretical aspects of recognition justice.
 
-Assess solar energy potential for census tracts in Navajo Nation, energy burden/energy costs, MAP
+## Learning Outcomes
+- Change a map's projection
+- Create a map using a shapefile
+- Work with raster data
+- Connect findings to theoretical understandings of recognition justice
 
-Read: [Paradox of Plenty](https://www.researchgate.net/profile/Martin-Pasqualetti/publication/292387152_A_Paradox_of_Plenty_Renewable_Energy_on_Navajo_Nation_Lands/links/59e270df0f7e9b97fbe7689b/A-Paradox-of-Plenty-Renewable-Energy-on-Navajo-Nation-Lands.pdf)
+## Instructions
+1. Navigate to Posit Cloud and select the HW 07 assignment. 
+2. Follow along in class, and complete the assignment (if needed) outside of class.
+3. Render the quarto document as a pdf.
 
-Landscapes of Power: Off-Grid in the Chuskas
+## Grading
 
-Revolutionary Power: Principles and Tools of Revolutionary Power in Conclusion
+Case studies are each 10% of your grade.
+
+
+## Submission
+Submit the pdf to Brightspace [here]().
+

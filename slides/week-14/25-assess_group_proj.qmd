@@ -15,4 +15,4 @@ execute:
   freeze: auto
 ---
 
-# Slide content
+# Slides will be posted 24 hours in advance of class.

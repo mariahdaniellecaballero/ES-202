@@ -4,26 +4,6 @@ date: "December 09, 2025"
 categories: "Final Project"
 ---
 
-## Final Project (10%)
-
-### Group Report
-The group report should be comprised of three main sections: 
-
-#### Community Case Study (~1000 words)
-
-
-#### Data Visualizations (~300 words)
-
-#### Logic Model Development (~500 words)
-
-
-### 10-minute Presentation
-
-
-### Personal Reflection
-
-## Rubric
-## Rubric
 ::: {.callout-important}
 This is currently under development-- please check back soon!
 :::

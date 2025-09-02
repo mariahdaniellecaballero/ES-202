@@ -1,6 +1,6 @@
 ---
 title: "Week 05"
-subtitle: "Recognition (in)Justice in Flint, MI"
+subtitle: "Recognition (in)Justice in Isle de Jean Charles, LA"
 description: "Sep 30 - Oct 03"
 author: ""
 date: ""
@@ -46,6 +46,7 @@ tbl-colwidths: [10,50,40]
 # Readings
 |                                                                                                           |
 |-----------------------------------------------------------------------------------------------------------|
-|**Tuesday:**  Whyte, K. (2017). [The recognition paradigm of environmental injustice](link). In The Routledge handbook of environmental justice (pp. xx- xx). Routledge.                        |
-|**Friday:** Pulido, L. (2016). [Flint, Environmental Racism, and Racial Capitalism](https://www.tandfonline.com/doi/full/10.1080/10455752.2016.1213013#d1e80). Capitalism Nature Socialism, 27(3), 1–16.|
-*[Optional Friday:]* Wickham, H., Çetinkaya-Rundel, M., & Grolemund, G. (2023). [R for Data Science (2e): Chapter 9](https://r4ds.hadley.nz/layers.html). Sebastopol: O'Reilly.   |   
+|**Tuesday:**  Whyte, K. (2017). [The recognition paradigm of environmental injustice](https://www-taylorfrancis-com.ezproxy.wellesley.edu/chapters/edit/10.4324/9781315678986-10/recognition-paradigm-environmental-injustice-kyle-whyte). In The Routledge handbook of environmental justice (pp. 113- 123). Routledge.                        |
+|**Friday:** Maldonado, J. K., Shearer, C., Bronen, R., Peterson, K., & Lazrus, H. (2013). [The impact of climate change on tribal communities in the US: displacement, relocation, and human rights](https://ebookcentral.proquest.com/lib/well/reader.action?docID=1782223&ppg=99&c=UERG). In *Climate change and indigenous peoples in the United States: Impacts, experiences and actions (pp. 93-106)*. Cham: Springer International Publishing.|
+|*[Optional Friday:]* Reyes-García, V., Cámara-Leret, R., Halpern, B. S., O’hara, C., Renard, D., Zafra-Calvo, N., & Díaz, S. (2023). [Biocultural vulnerability exposes threats of culturally important species](https://www.pnas.org/doi/pdf/10.1073/pnas.2217303120). Proceedings of the National Academy of Sciences, 120(2), e2217303120. |
+*[Optional Friday:]* Wickham, H., Çetinkaya-Rundel, M., & Grolemund, G. (2023). [R for Data Science (2e): Chapter 9](https://r4ds.hadley.nz/layers.html). Sebastopol: O'Reilly.   |  
