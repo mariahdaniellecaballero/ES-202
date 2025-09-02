@@ -1,0 +1,19 @@
+---
+title: "[Theory] Cosmopolitan Justice & Water"
+subtitle: "📍 San Joaquin Valley, CA"
+date: "December 02, 2025"
+format: 
+  revealjs:
+    theme:
+      - default
+    css: custom.scss
+    transition: fade
+    slide-number: true
+    incremental: false 
+    chalkboard: true
+    center: true
+execute:
+  freeze: auto
+---
+
+# Slide content

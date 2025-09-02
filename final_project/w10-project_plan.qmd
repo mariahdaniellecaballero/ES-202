@@ -1,0 +1,42 @@
+---
+title: "Group Project Plan"
+date: "November 07, 2025"
+categories: "Final Project"
+---
+## Overview
+Submit a group project plan that outlines the project deliverables, comprising three main sections: 
+
+### Section One: Background  
+Provide an overview of your group's case study (~300 words), including:
+
+- Environmental justice theme
+- Community case study-- which community have you chosen, and why might it be a good representation of this EJ theme? 
+- Which theoretical concepts are likely to apply to this case study?
+
+### Section Two: Analysis Plan
+Provide an overview of your group's anticipated analysis plan (~300 words), including: 
+
+- Data analysis plan: 
+    - What data source(s) will you use? 
+    - Will your data need to be manipulated at all in preparation for your data visualizations? 
+    - Three intended data visuals 
+- Logic model development: 
+    - What potential intervention might you propose?
+    - What potential partner organizations might you propose? 
+
+
+### Section Three: Group Expectations
+Provide an overview of how your group will realize your interdisciplinary research plan (~300 words): 
+
+- What are the individual responsibilities for each team member? 
+- How will you remain accountable to one another?
+- When will you meet outside of class? 
+- If someone cannot attend a meeting, who will be responsible for filling one another in? 
+- How will you pivot if your project plan changes?
+- How will you resolve conflict to ensure the project is completed? 
+- How can I support your group as you realize your plan?
+
+## Rubric
+::: {.callout-important}
+This is currently under development-- please check back soon!
+:::

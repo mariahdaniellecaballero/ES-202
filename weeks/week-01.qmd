@@ -1,0 +1,53 @@
+---
+title: "Week 01"
+subtitle: "Getting Started"
+description: "Sep 02 - 07"
+author: ""
+date: ""
+listing:
+  - id: slides
+    contents:
+      - ../slides/week-01/*.qmd
+    type: table
+    fields: [title, date]
+    date-format: "ddd, MMM DD"
+    field-display-names:
+      title: "Topic"
+      date: "Date"
+    sort: [filename]
+    sort-ui: false
+    filter-ui: false
+  - id: assignments
+    contents:
+      - ../hw/w1-*.qmd
+    type: table
+    fields: [categories, title, date]
+    date-format: "ddd, MMM DD"
+    field-display-names:
+      categories: "Assignment"
+      title: "Title"
+      date: "Due"
+    sort: [date]
+    sort-ui: false
+    filter-ui: false
+tbl-colwidths: [10,50,40]
+---
+
+# Lectures
+
+::: {#slides}
+:::
+
+# Assignments
+
+::: {#assignments}
+:::
+
+# Readings
+
+|                                                                                                           |
+|-----------------------------------------------------------------------------------------------------------|
+| **Tuesday:** Course Syllabus                                                                              |
+| **Friday:**  Holmes, A. G. D. (2020). [Researcher Positionality- A Consideration of Its Influence and Place in Qualitative Research - A New Researcher Guide](https://www.ulethbridge.ca/sites/default/files/2024/09/holmes_2020.pdf). 8(4) 1-10.                                                                     |
+
+| **Friday:** Di Chiro, G. (2020). [Mobilizing 'intersectionality' in environmental justice research and action in a time of crisis](https://ebookcentral.proquest.com/lib/well/reader.action?docID=6228917&ppg=463&c=RVBVQg). Environmental justice, 316-333                                             

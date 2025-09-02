@@ -1,0 +1,53 @@
+---
+title: "Week 02"
+subtitle: "Distributional (in)Justice in Houston, TX"
+description: "Sep 09 - 12"
+author: ""
+date: ""
+listing:
+  - id: slides
+    contents:
+      - ../slides/week-02/*.qmd
+    type: table
+    fields: [title, date]
+    date-format: "ddd, MMM DD"
+    field-display-names:
+      title: "Topic"
+      date: "Date"
+    sort: [filename]
+    sort-ui: false
+    filter-ui: false
+  - id: assignments
+    contents:
+      - ../hw/w2-*.qmd
+    type: table
+    fields: [categories, title, date]
+    date-format: "ddd, MMM DD"
+    field-display-names:
+      categories: "Assignment"
+      title: "Title"
+      date: "Due"
+    sort: [date]
+    sort-ui: false
+    filter-ui: false
+tbl-colwidths: [10,50,40]
+---
+
+# Lectures
+
+::: {#slides}
+:::
+
+# Assignments
+
+::: {#assignments}
+:::
+
+# Readings
+
+|                                                                                                           |
+|-----------------------------------------------------------------------------------------------------------|
+|**Tuesday:** Murdock, E. G. (2020). [A history of environmental justice: Foundations, narratives, and perspectives](https://ebookcentral.proquest.com/lib/well/reader.action?docID=6228917&ppg=40&c=RVBVQg). In *Environmental justice* (pp. 6-17). Routledge.|
+|**Tuesday:** Kaswan, A. (2020). [Distributive environmental justice](https://ebookcentral.proquest.com/lib/well/reader.action?docID=6228917&ppg=58&c=RVBVQg). In *Environmental justice* (pp. 21-36). Routledge.                          |
+|**Friday:** Bullard, R. D. (1983). [Solid Waste Sites and the Black Houston Community](https://drrobertbullard.com/wp-content/uploads/2014/07/Bullard-Solid-Waste-and-Houston-Black-Community_Sociological-Inquiry-Vol-53-Spring-1983_4-7-14.pdf), Sociological inquiry, 53(2‐3), 273-288. |
+*[Optional Friday:]* Wickham, H., Çetinkaya-Rundel, M., & Grolemund, G. (2023). [R for Data Science (2e): Introduction](https://r4ds.hadley.nz/data-visualize.html). Sebastopol: O'Reilly.   |              

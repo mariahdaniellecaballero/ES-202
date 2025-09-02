@@ -1,0 +1,42 @@
+---
+title: "HW 04"
+author: "<YOUR NAME HERE>"
+date: "`r Sys.Date()`"
+format: html
+---
+
+```{r}
+#| label: setup
+#| include: FALSE
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# HW 04: Rural Electrification Case Study
+## Learning Outcomes
+- Understand coding style best practices
+- Continued data tidying (lengthening and widening data)
+- Summarize patterns from census and survey data in the 1930s
+- Connect findings to theoretical understandings of restorative justice
+
+## Load data & packages
+```{r}
+#| label: load data + packages
+
+
+```
+
+## Exercise One: 
+Restyle the following code chunks and label what each line is doing, using "#". 
+```{r}
+#| label: code to restyle
+
+
+```
+
+```{r}
+#| label: your turn!
+
+  
+```
+
+

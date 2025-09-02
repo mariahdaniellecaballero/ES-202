@@ -1,0 +1,19 @@
+---
+title: "[Theory] Recognitional (in)Justice & Water"
+subtitle: "📍 Isle de Jean Charles, LA"
+date: "September 30, 2025"
+format: 
+  revealjs:
+    theme:
+      - default
+    css: custom.scss
+    transition: fade
+    slide-number: true
+    incremental: false 
+    chalkboard: true
+    center: true
+execute:
+  freeze: auto
+---
+
+# Slides will be posted 24 hours in advance of class.

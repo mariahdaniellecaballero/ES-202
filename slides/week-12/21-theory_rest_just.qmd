@@ -1,0 +1,19 @@
+---
+title: "[Theory] Restorative Justice & Food"
+subtitle: "📍 Philadelphia, PA"
+date: "November 18, 2025"
+format: 
+  revealjs:
+    theme:
+      - default
+    css: custom.scss
+    transition: fade
+    slide-number: true
+    incremental: false 
+    chalkboard: true
+    center: true
+execute:
+  freeze: auto
+---
+
+# Slides will be posted 24 hours in advance of class.
