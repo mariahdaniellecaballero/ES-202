@@ -15,75 +15,77 @@ execute:
   freeze: auto
   echo: true
 ---
-
-
 #  Class Overview 
-
 - Centering activity
-- What is EJ? 
-  - What we know 
-  - Origins of EJ
-  - 17 principles of EJ + Tenet-based approach
 - Reading Discussion
+  - Defining terms
+  - Mapping it out
+  - Intersectionality + positionality
+- Positionality Assignment
+- Setting Class Expectations
 
 # Centering Activity
+- Dr. Cab
 
-# What is EJ? 
+# Reading Discussion
 
-## What we know
-- <span style="color:red;"> In groups of 4: draft your definition of Environmental Justice, be ready to share! </span>
+## What we Read {.smaller}
+- Holmes, A. G. D. (2020). [Researcher Positionality- A Consideration of Its Influence and Place in Qualitative Research - A New Researcher Guide](https://www.ulethbridge.ca/sites/default/files/2024/09/holmes_2020.pdf). 8(4) 1-10. 
 
-## Similarities/Differences in definitions?
+- Di Chiro, G. (2020). [Mobilizing 'intersectionality' in environmental justice research and action in a time of crisis](https://ebookcentral.proquest.com/lib/well/reader.action?docID=6228917&ppg=463&c=RVBVQg). Environmental justice, 316-333    
 
-## Origins of EJ {.smaller}
-- Term "environmental justice" was popularized in 1980s
-- **1982:** Began as a social movement
-  - Communities of color organizing and resisting unfair siting activities (toxic waste, landfills, and oil refineries)
-  - Protests in Warren County, NC are especially salient to EJ movement
-- **1987:** United Church of Christ (UCC) Commission for Racial Justice published report on Black and Latine exposure to toxic sites. 
-- **1991:** UCC hosted the First National People of Color Environmental Leadership Summit, where the 17 Principles of Environmental Justice were created
+## Warm-up
+- In what contexts have your heard the term intersectional used?
 
-## 17 Principles of EJ + Tenet-Based Approach
-- 17 Principles are still highly regarded
--  A lot of academic conversations around what EJ means to whom, and how to classify it.
-  - lmk if you want more readings suggestions on this
-- I chose a five tenet approach (currently used a lot in Energy Justice scholarship), because I think it provides a nice framework for theorizing different aspects of justice.
+## Terms to Define {.smaller}
+- Using the Di Chiro (2020) article, each team will define one cluster of terms...
+  - Intersectionality 
+    - systems of oppression
+    - matrix of domination
+  - Multiplicity
+    - Additive categories
+  - Environmental Justice
+    - Decolonial
+    - Multi-species
+  - Commons
+    - Collective care
+    - multi-scalar
 
-## Principles + Tenet Sorting
-- <span style="color:red;"> In groups of 4: Sort the 17 Principles of EJ into the five tenets, be ready to discuss! </span> 
+## Mapping it out
+::: columns
+::: {.column width="60%"}
+- One teammate- tape your system to the board, draw connections/words/doodles as needed
+- Another teammate- explain your system to the class
+- As a class: Tell me how they connect to one another
+:::
+::: {.column width="40%"}
+![](./images/connected_meme.jpeg){width="450px"}
+:::
+:::
 
-## Sorting Results
-- Defining Environmental Justice is tricky, and many definitions/approaches will overlap. 
-  - This can be both a strength and a challenge. 
-  - (If I could make this course 34 weeks long, I would!)
 
-## What we Read
-
-Holmes, A. G. D. (2020). [Researcher Positionality- A Consideration of Its Influence and Place in Qualitative Research - A New Researcher Guide](https://www.ulethbridge.ca/sites/default/files/2024/09/holmes_2020.pdf). 8(4) 1-10. 
-
-Di Chiro, G. (2020). [Mobilizing 'intersectionality' in environmental justice research and action in a time of crisis](https://ebookcentral.proquest.com/lib/well/reader.action?docID=6228917&ppg=463&c=RVBVQg). Environmental justice, 316-333     
-
-## What is Intersectionality? What is it not? 
-- <span style="color:red;"> In pairs: did this reading change your definition of intersectionality? </span> 
-- How do we want to define and think about intersectionality in this course? 
-- Group Venn Diagram 
-
-## Intersectionality + Environmental Justice
-- How might an intersectional approach influence how we think about environmental justice? 
-  - Expanding our definition of EJ to include: 
-    - Interconnected systems that oppress both land + people
-    - Collective care + undercommons as paths forward
+## EJ + Intersectionality
+- Value of multiplicative over additive approach? 
+- Can we begin to see how an intersectional approach can help build more meaningful movements?
 
 ## Intersectionality + Positionality
-- <span style="color:red;"> In pairs: How can our definition of intersectionality influence how we think about positionality? </span> 
-- <span style= "color:red;"> why do positionality statements matter? </span>
-- As you write: think about your positionality as it relates to heritage, culture, land, and education: how might that influence how you engage in this course? 
+- Fixed versus fluid aspects of positionality? 
+- How will this impact how we approach this course? 
 
-## Leaving you with a quote
-"Intersectionality, therefore, is not about inclusion, it is about **absence**; it helps to make the dangers of multiply interacting exclusions visible. The remedy is not about including and reasserting essentialized identities; it is about recognizing that identity categories are socially and historically situated and are not merely about individuals: they are *coalitional*, “constituted by internal differences as much as by commonalities (Carastathis, 2016, p. 184)”
- -- De Chiro, 2020 (p. 468)
+## Positionality Assignment
+- Are we begining to see how positionality will influence how you engage with this course? 
+- Do we see oppotunities for an intersectional approach this semester? 
+- Questions on HW 01?
 
-# Logistics
-For Tuesday:
-- Reading about Distributional Justice
+## Creating Shared Expectations
+- How do we want to be accountable to one another? 
+- This could mean agreeing to...
+  - Not use devices on Tuesdays 
+  - Assuming best intentions from peers
+  - Engaging in class conversation
+  - Listening to and respecting others' perspectives  
+
+## For Next Class
+- Readings
+- Julia leading centering activity :-)
 - Positionality Statement due Thursday (September 11, 2025) at 11:59 PM on Brightspace. 
