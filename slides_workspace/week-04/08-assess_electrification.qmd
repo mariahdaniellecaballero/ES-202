@@ -1,6 +1,6 @@
 ---
 title: "[Assess] Rural Electrification Case Study"
-subtitle: "📍 Edgecombe County, CA"
+subtitle: "📍 Edgecombe County, NC"
 date: "September 26, 2025"
 format: 
   revealjs:
@@ -24,6 +24,7 @@ execute:
 - Group Debrief
 
 # Centering Activity
+Emily :-)
 
 # Setting the Stage
 - This week's focus is on coding style and data tidying
@@ -142,7 +143,7 @@ county_vars_1930 |>
 ```
 
 
-## Exercise One
+## Exercise One (collaborative)
 Restyle the following code chunks and label what each line is doing, using "#". 
 ```{r}
 #| warning: false
@@ -158,13 +159,14 @@ county_vars_1930|>filter(county %in%c("Washington","Jefferson","Franklin"),total
 
 # Data Tidying
 
-## Three Rules for Tidy Data {.smaller}
+## Tidy Data {.smaller}
 - Each column represents a variable (and vice versa)
 - Each row represents an observation (and vice versa)
 - Each value is a single cell (and vice versa)
-![]images/
 
-## Exercise Two
+![](./images/data_structure.png)
+
+## Exercise Two (collaborative)
 Describe what makes the `county_vars_1930` dataset tidy. Provide examples of the following using the dataset. 
 
 - variables: 
@@ -206,7 +208,7 @@ state_vars_1930 %>%
   select(name, count, perc_class)
 ```
 
-## Exercise Three
+## Exercise Three (collaborative)
 1. Make the table pretty using the `gt` package. 
 2. Create the second half of the table using the `county_vars_1930` dataframe for Edgecombe County, NC
 
@@ -256,11 +258,11 @@ state_vars_1930 %>%
               values_from = value)
 ```
 
-## Exercise four
+## Exercise four (collaborative)
 1. Make the table pretty using the `gt` package. 
 2. Create the second half of the table using the `county_vars_1930` dataframe for Edgecombe County, NC
 
-## Rural Electrification Surveys
+## Rural Electrification Surveys{.smaller}
 
 - Digitized data from 1934 Rural Electrification Surveys 
 - Dataset includes 412 entries, with 74 variables. Some highlights include:
@@ -276,36 +278,36 @@ state_vars_1930 %>%
   - `KWH_YEAR`
   - `BILL_ANNUAL`
 
-
-```{r}:
+```{r}
+#| echo: false
 #| warning: false
 #| message: false
-#| echo: false
 #| eval: true
 survey_edgecombe <- read_excel("~/Documents/GitHub/ES-202/hw/case_studies/week-04-REA/data/survey_edgecombe.xlsx")
 ```
 
+## Load Data
 ```{r}
 #| warning: false
 #| message: false
 #| echo: true
 #| eval: false
-survey_edgecombe <- read_excel("data/survey_edgecombe.xlsx")
+survey_edgecombe <- read_excel("survey_edgecombe.xlsx")
 ```
 
-## Exercise Four {.smaller}
+## Exercise Four (collaborative) {.smaller}
 1. Compare average ratings for condition of the premise and interview quality by race and tenure. Remove data inputs with "Unknown" listed for race or tenure, and format the table nicely. 
 
 2. Based on your findings, describe the role that rating the condition of the premise and interview quality played in determining the correction factor. 
 
 3. Calculate the following for race and tenure. Remove data inputs with "Unknown" listed for race or tenure, and format the table nicely. 
-  1. Average uncorrected annual energy usage
-  2. Average corrected annual energy usage
-  3. Average bill
-  4. Average cost per Kwh
+    - Average uncorrected annual energy usage
+    - Average corrected annual energy usage
+    - Average bill
+    - Average cost per Kwh
 
-4. Based on your findings, describe the role that rating the condition of the premise and interview quality played in determining the correction factor. How did this state-sanctioned process shape the energy landscape in Edgecombe County that may have lasting effects today? 
 
-5. Reflect on your findings and connect them to our readings on distributional justice AND restorative justice. 
+## Exercise Five (individual) {.smaller}
+1. Based on your findings, describe the role that rating the condition of the premise and interview quality played in determining the correction factor. How did this state-sanctioned process shape the energy landscape in Edgecombe County that may have lasting effects today? 
 
-*Bonus:* Using the dataframe and data dictionary, compare patterns in a variable of your choice (i.e., owns a waffle iron, owns x number of hogs), and compare disparities among tenure and race. Remember to remove data inputs with "Unknown" listed for race or tenure, and format the table nicely. 
+2. Reflect on your findings and connect them to our readings on distributional justice AND restorative justice. 

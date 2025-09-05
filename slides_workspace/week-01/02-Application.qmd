@@ -59,7 +59,7 @@ execute:
 - As a class: Tell me how they connect to one another
 :::
 ::: {.column width="40%"}
-![](./images/connected_meme.jpeg){width="450px"}
+![](./images/connected_meme.png){width="450px"}
 :::
 :::
 
@@ -74,7 +74,7 @@ execute:
 
 ## Positionality Assignment
 - Are we begining to see how positionality will influence how you engage with this course? 
-- Do we see oppotunities for an intersectional approach this semester? 
+- Do we see opportunities for an intersectional approach this semester? 
 - Questions on HW 01?
 
 ## Creating Shared Expectations
@@ -86,6 +86,11 @@ execute:
   - Listening to and respecting others' perspectives  
 
 ## For Next Class
-- Readings
+- Two readings on EJ + Distributional Justice
 - Julia leading centering activity :-)
 - Positionality Statement due Thursday (September 11, 2025) at 11:59 PM on Brightspace. 
+
+## Exit Ticket
+Tell me one last question you have about the readings, the assignment, or the course?
+
+ Add your name if you'd like a response from me!

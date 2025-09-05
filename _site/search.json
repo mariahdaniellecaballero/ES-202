@@ -249,35 +249,35 @@
     "href": "slides_workspace/week-02/04-assess_landfills.html#general-data-science-process",
     "title": "[Assess] Solid Waste Landfill Siting",
     "section": "General Data Science Process",
-    "text": "General Data Science Process\n\nImport Data\nTidy it\nUnderstand\n\nTransforming Data\nVisualize\nModel\n\nCommunicate\n\nFootnote: approach is from R for Data Science Book"
+    "text": "General Data Science Process"
   },
   {
     "objectID": "slides_workspace/week-02/04-assess_landfills.html#course-organization",
     "href": "slides_workspace/week-02/04-assess_landfills.html#course-organization",
     "title": "[Assess] Solid Waste Landfill Siting",
     "section": "Course Organization",
-    "text": "Course Organization\n\nBigger Picture Case Study (HW 02– Ungraded)\nSkills that build on one another (HW 03-08)\n\nData Tidying\nData Transforming\nData Visualization\nExploring Exposure\nIntro to Spatial Data\n\nApply it! Use weeks 11 - 14 to show me your theoretical and methodological skills"
+    "text": "Course Organization\n\nBigger Picture Case Study (HW 02– lots of wins)\nSkills that build on one another (HW 03-07)\n\nData Tidying\nData Transforming\nData Visualization\nIntro to Spatial Data\n\nApply it! Use weeks 9 - 14 to show me your theoretical and methodological skills"
   },
   {
     "objectID": "slides_workspace/week-02/04-assess_landfills.html#homework-approach",
     "href": "slides_workspace/week-02/04-assess_landfills.html#homework-approach",
     "title": "[Assess] Solid Waste Landfill Siting",
     "section": "Homework Approach",
-    "text": "Homework Approach\n\nAssignments will be started in class on Fridays in pairs and submitted the following Thursday individually.\nI’ll lecture a bit throughout the class to introduce new skills or topics, then let pairs work through sections of the assignment.\nI’ll choose pairs randomly using my fancy name generator."
+    "text": "Homework Approach\n\nAssignments will be started in class on Fridays in pairs and submitted the following Thursday individually.\nI’ll lecture a bit throughout the class to introduce new skills or topics, then let pairs work through sections of the assignment.\nI’ll choose pairs randomly using nametags"
   },
   {
     "objectID": "slides_workspace/week-02/04-assess_landfills.html#learning-outcomes",
     "href": "slides_workspace/week-02/04-assess_landfills.html#learning-outcomes",
     "title": "[Assess] Solid Waste Landfill Siting",
     "section": "Learning Outcomes",
-    "text": "Learning Outcomes\n\nUnderstand what R can do\nRecreate tables 1-3 in Bullard’s Study\nVisualize Distributional Justice\nConnect it to theoretical understandings of distributional justice"
+    "text": "Learning Outcomes\n\nBasic usage of R\nRecreate tables 1-3 in Bullard’s Study\nVisualize Distributional Justice\nConnect it to theoretical understandings of distributional justice"
   },
   {
     "objectID": "slides_workspace/week-02/04-assess_landfills.html#lets-get-started",
     "href": "slides_workspace/week-02/04-assess_landfills.html#lets-get-started",
     "title": "[Assess] Solid Waste Landfill Siting",
     "section": "Let’s Get Started",
-    "text": "Let’s Get Started\n\nFind your pair\nDownload Homework 02 folder and open it in Posit Cloud."
+    "text": "Let’s Get Started\n\nFind your pair\nOpen Homework 02 folder in Posit Cloud."
   },
   {
     "objectID": "slides_workspace/week-02/04-assess_landfills.html#importing-data",
@@ -291,7 +291,7 @@
     "href": "slides_workspace/week-02/04-assess_landfills.html#understanding-the-ide",
     "title": "[Assess] Solid Waste Landfill Siting",
     "section": "Understanding the IDE",
-    "text": "Understanding the IDE\n\nWhat you see in Posit [insert screenshot]"
+    "text": "Understanding the IDE\n\n\n\n\n![]"
   },
   {
     "objectID": "slides_workspace/week-02/04-assess_landfills.html#installing-packages",
@@ -305,14 +305,14 @@
     "href": "slides_workspace/week-02/04-assess_landfills.html#loading-data",
     "title": "[Assess] Solid Waste Landfill Siting",
     "section": "Loading Data",
-    "text": "Loading Data\n\nNow we load our data. In Posit Cloud, navigate to xx and select xx [include IDE screenshot].\nLoad our first dataset, which includes the 13 landfill and incinerator sites in Bullard’s first case study.\n\n\nsites &lt;- read_csv(\"data/bullard_1979_waste_sites.csv\")"
+    "text": "Loading Data\n\nNow we load our data. In Posit Cloud, navigate to lower left corner and note the dataset entitled “bullard_1979_waste_sites.csv”\nLoad our first dataset, which includes the 13 landfill and incinerator sites in Bullard’s first case study.\n\n\nsites &lt;- read_csv(\"bullard_1979_waste_sites.csv\")"
   },
   {
     "objectID": "slides_workspace/week-02/04-assess_landfills.html#understanding-data",
     "href": "slides_workspace/week-02/04-assess_landfills.html#understanding-data",
     "title": "[Assess] Solid Waste Landfill Siting",
     "section": "Understanding data",
-    "text": "Understanding data\n\nthe sites data that we’ve loaded is a dataframe, meaning it is a rectangular collection of variables (or columns) and observations (rows). In each cell, is a value.\nThis dataset is tabular, meaning that the data is organized into a table with rows and columns.\n\ntidy data has five rules:\n\nEvery variable has its own column.\nEvery observation is stored in its own row.\nEach value is stored in the cell of a corresponding variable.\nValues don’t contain units (this should be in a codebook).\nNo extraneous information (footnotes, extra titles, etc.)"
+    "text": "Understanding data\n\nthe sites data that we’ve loaded is a dataframe, meaning it is a rectangular collection of variables (or columns) and observations (rows). In each cell, is a value. \nExamples of each?"
   },
   {
     "objectID": "slides_workspace/week-02/04-assess_landfills.html#sites-data",
@@ -648,7 +648,7 @@
     "href": "hw/w1-hw01.html#submission",
     "title": "HW 01: Positionality Statement",
     "section": "Submission",
-    "text": "Submission\nPlease submit this assignment to Brightspace by Monday, September 08, 2025 at 11:59 PM using this link."
+    "text": "Submission\nPlease submit this assignment to Brightspace by Thursday, September 11, 2025 at 11:59 PM using this link."
   },
   {
     "objectID": "hw/w1-hw01.html#footnotes",
@@ -1187,7 +1187,7 @@
     "href": "slides_workspace/week-01/02-Application.html#positionality-assignment",
     "title": "EJ + Intersectionality",
     "section": "Positionality Assignment",
-    "text": "Positionality Assignment\n\nAre we begining to see how positionality will influence how you engage with this course?\nDo we see oppotunities for an intersectional approach this semester?\nQuestions on HW 01?"
+    "text": "Positionality Assignment\n\nAre we begining to see how positionality will influence how you engage with this course?\nDo we see opportunities for an intersectional approach this semester?\nQuestions on HW 01?"
   },
   {
     "objectID": "slides_workspace/week-01/02-Application.html#creating-shared-expectations",
@@ -1201,7 +1201,7 @@
     "href": "slides_workspace/week-01/02-Application.html#for-next-class",
     "title": "EJ + Intersectionality",
     "section": "For Next Class",
-    "text": "For Next Class\n\nReadings\nJulia leading centering activity :-)\nPositionality Statement due Thursday (September 11, 2025) at 11:59 PM on Brightspace."
+    "text": "For Next Class\n\nTwo readings on EJ + Distributional Justice\nJulia leading centering activity :-)\nPositionality Statement due Thursday (September 11, 2025) at 11:59 PM on Brightspace."
   },
   {
     "objectID": "slides_workspace/week-02/03-theory_dist_just.html#what-we-read",
@@ -1460,7 +1460,7 @@
     "href": "slides_workspace/week-04/08-assess_electrification.html#rural-electrification-surveys",
     "title": "[Assess] Rural Electrification Case Study",
     "section": "Rural Electrification Surveys",
-    "text": "Rural Electrification Surveys\n\nDigitized data from 1934 Rural Electrification Surveys\nDataset includes 412 entries, with 74 variables. Some highlights include:\n\nUSER_ID\nUSER_NUMBER\nLINE\nUSER_NAME\nCOND_PREMISES_RC\nRATE_INTER_RC\nTENURE\nRACE\nCORRECT_FACTOR\nKWH_YEAR\nBILL_ANNUAL\n\n\n#| warning: false\n#| message: false\n#| echo: false\n#| eval: true\nsurvey_edgecombe &lt;- read_excel(\"~/Documents/GitHub/ES-202/hw/case_studies/week-04-REA/data/survey_edgecombe.xlsx\")\n\nsurvey_edgecombe &lt;- read_excel(\"data/survey_edgecombe.xlsx\")"
+    "text": "Rural Electrification Surveys\n\nDigitized data from 1934 Rural Electrification Surveys\nDataset includes 412 entries, with 74 variables. Some highlights include:\n\nUSER_ID\nUSER_NUMBER\nLINE\nUSER_NAME\nCOND_PREMISES_RC\nRATE_INTER_RC\nTENURE\nRACE\nCORRECT_FACTOR\nKWH_YEAR\nBILL_ANNUAL"
   },
   {
     "objectID": "slides_workspace/week-04/08-assess_electrification.html#exercise-four-1",
@@ -1771,5 +1771,110 @@
     "crumbs": [
       "Syllabus"
     ]
+  },
+  {
+    "objectID": "slides_workspace/week-02/04-assess_landfills.html#rules-of-tidy-data",
+    "href": "slides_workspace/week-02/04-assess_landfills.html#rules-of-tidy-data",
+    "title": "[Assess] Solid Waste Landfill Siting",
+    "section": "Rules of Tidy Data",
+    "text": "Rules of Tidy Data\n\nThis dataset is tabular, meaning that the data is organized into a table with rows and columns.\n\ntidy data has five rules:\n\nEvery variable has its own column.\nEvery observation is stored in its own row.\nEach value is stored in the cell of a corresponding variable.\nValues don’t contain units (this should be in a codebook).\nNo extraneous information (footnotes, extra titles, etc.)"
+  },
+  {
+    "objectID": "slides_workspace/week-02/04-assess_landfills.html#exercise-3-reading-a-vignette-collaborative",
+    "href": "slides_workspace/week-02/04-assess_landfills.html#exercise-3-reading-a-vignette-collaborative",
+    "title": "[Assess] Solid Waste Landfill Siting",
+    "section": "Exercise 3: Reading a Vignette (collaborative)",
+    "text": "Exercise 3: Reading a Vignette (collaborative)\n\nOften, we get a bit mixed up when we’re first starting.\nOne helpful way to troubleshoot, can be typing “?” followed by the function into your environment (i.e., ?scale_fill_manual())\nRead the vignette for the scale_fill_manual() package. What package does it recommend for color blindness?"
+  },
+  {
+    "objectID": "slides_workspace/week-02/04-assess_landfills.html#exercise-04-individual",
+    "href": "slides_workspace/week-02/04-assess_landfills.html#exercise-04-individual",
+    "title": "[Assess] Solid Waste Landfill Siting",
+    "section": "Exercise 04 (individual)",
+    "text": "Exercise 04 (individual)\nConnect to theory"
+  },
+  {
+    "objectID": "slides_workspace/week-04/08-assess_electrification.html#tidy-data",
+    "href": "slides_workspace/week-04/08-assess_electrification.html#tidy-data",
+    "title": "[Assess] Rural Electrification Case Study",
+    "section": "Tidy Data",
+    "text": "Tidy Data\n\nEach column represents a variable (and vice versa)\nEach row represents an observation (and vice versa)\nEach value is a single cell (and vice versa)"
+  },
+  {
+    "objectID": "slides_workspace/week-04/08-assess_electrification.html#exercise-one-collaborative",
+    "href": "slides_workspace/week-04/08-assess_electrification.html#exercise-one-collaborative",
+    "title": "[Assess] Rural Electrification Case Study",
+    "section": "Exercise One (collaborative)",
+    "text": "Exercise One (collaborative)\nRestyle the following code chunks and label what each line is doing, using “#”.\n\ncounty_vars_1930|&gt;filter(state %in%c(\"Massachusetts\", \"Tennessee\", \"Washington\", \"New Mexico\"))|&gt;group_by(state)|&gt; summarize(n=n(), mean_pop =mean(total_pop,na.rm =TRUE), mean_rural_farm_pop=mean(rural_farm_pop,na.rm=TRUE))|&gt;filter(mean_rural_farm_pop&gt;=6000)\n\ncounty_vars_1930|&gt;filter(county %in%c(\"Washington\",\"Jefferson\",\"Franklin\"),total_pop &gt;=4000)|&gt;group_by(county)|&gt;summarise(n_states=n())"
+  },
+  {
+    "objectID": "slides_workspace/week-04/08-assess_electrification.html#exercise-two-collaborative",
+    "href": "slides_workspace/week-04/08-assess_electrification.html#exercise-two-collaborative",
+    "title": "[Assess] Rural Electrification Case Study",
+    "section": "Exercise Two (collaborative)",
+    "text": "Exercise Two (collaborative)\nDescribe what makes the county_vars_1930 dataset tidy. Provide examples of the following using the dataset.\n\nvariables:\nobservations:\nvalues:"
+  },
+  {
+    "objectID": "slides_workspace/week-04/08-assess_electrification.html#exercise-three-collaborative",
+    "href": "slides_workspace/week-04/08-assess_electrification.html#exercise-three-collaborative",
+    "title": "[Assess] Rural Electrification Case Study",
+    "section": "Exercise Three (collaborative)",
+    "text": "Exercise Three (collaborative)\n\nMake the table pretty using the gt package.\nCreate the second half of the table using the county_vars_1930 dataframe for Edgecombe County, NC"
+  },
+  {
+    "objectID": "slides_workspace/week-04/08-assess_electrification.html#exercise-four-collaborative",
+    "href": "slides_workspace/week-04/08-assess_electrification.html#exercise-four-collaborative",
+    "title": "[Assess] Rural Electrification Case Study",
+    "section": "Exercise four (collaborative)",
+    "text": "Exercise four (collaborative)\n\nMake the table pretty using the gt package.\nCreate the second half of the table using the county_vars_1930 dataframe for Edgecombe County, NC"
+  },
+  {
+    "objectID": "slides_workspace/week-04/08-assess_electrification.html#exercise-four-.smaller-collaborative",
+    "href": "slides_workspace/week-04/08-assess_electrification.html#exercise-four-.smaller-collaborative",
+    "title": "[Assess] Rural Electrification Case Study",
+    "section": "Exercise Four {.smaller} (collaborative)",
+    "text": "Exercise Four {.smaller} (collaborative)\n\nCompare average ratings for condition of the premise and interview quality by race and tenure. Remove data inputs with “Unknown” listed for race or tenure, and format the table nicely.\nBased on your findings, describe the role that rating the condition of the premise and interview quality played in determining the correction factor.\nCalculate the following for race and tenure. Remove data inputs with “Unknown” listed for race or tenure, and format the table nicely.\nAverage uncorrected annual energy usage\nAverage corrected annual energy usage\nAverage bill\nAverage cost per Kwh"
+  },
+  {
+    "objectID": "slides_workspace/week-04/08-assess_electrification.html#exercise-five-.smaller-individual",
+    "href": "slides_workspace/week-04/08-assess_electrification.html#exercise-five-.smaller-individual",
+    "title": "[Assess] Rural Electrification Case Study",
+    "section": "Exercise Five {.smaller} (individual)",
+    "text": "Exercise Five {.smaller} (individual)\n\nBased on your findings, describe the role that rating the condition of the premise and interview quality played in determining the correction factor. How did this state-sanctioned process shape the energy landscape in Edgecombe County that may have lasting effects today?\nReflect on your findings and connect them to our readings on distributional justice AND restorative justice."
+  },
+  {
+    "objectID": "slides_workspace/week-04/08-assess_electrification.html#exercise-five.smaller-individual",
+    "href": "slides_workspace/week-04/08-assess_electrification.html#exercise-five.smaller-individual",
+    "title": "[Assess] Rural Electrification Case Study",
+    "section": "Exercise Five{.smaller} (individual)",
+    "text": "Exercise Five{.smaller} (individual)\n\nBased on your findings, describe the role that rating the condition of the premise and interview quality played in determining the correction factor. How did this state-sanctioned process shape the energy landscape in Edgecombe County that may have lasting effects today?\nReflect on your findings and connect them to our readings on distributional justice AND restorative justice."
+  },
+  {
+    "objectID": "slides_workspace/week-04/08-assess_electrification.html#exercise-four-collaborative-1",
+    "href": "slides_workspace/week-04/08-assess_electrification.html#exercise-four-collaborative-1",
+    "title": "[Assess] Rural Electrification Case Study",
+    "section": "Exercise Four (collaborative)",
+    "text": "Exercise Four (collaborative)\n\nCompare average ratings for condition of the premise and interview quality by race and tenure. Remove data inputs with “Unknown” listed for race or tenure, and format the table nicely.\nBased on your findings, describe the role that rating the condition of the premise and interview quality played in determining the correction factor.\nCalculate the following for race and tenure. Remove data inputs with “Unknown” listed for race or tenure, and format the table nicely.\n\nAverage uncorrected annual energy usage\nAverage corrected annual energy usage\nAverage bill\nAverage cost per Kwh"
+  },
+  {
+    "objectID": "slides_workspace/week-04/08-assess_electrification.html#exercise-five-individual",
+    "href": "slides_workspace/week-04/08-assess_electrification.html#exercise-five-individual",
+    "title": "[Assess] Rural Electrification Case Study",
+    "section": "Exercise Five (individual)",
+    "text": "Exercise Five (individual)\n\nBased on your findings, describe the role that rating the condition of the premise and interview quality played in determining the correction factor. How did this state-sanctioned process shape the energy landscape in Edgecombe County that may have lasting effects today?\nReflect on your findings and connect them to our readings on distributional justice AND restorative justice."
+  },
+  {
+    "objectID": "slides_workspace/week-04/08-assess_electrification.html#load-data",
+    "href": "slides_workspace/week-04/08-assess_electrification.html#load-data",
+    "title": "[Assess] Rural Electrification Case Study",
+    "section": "Load Data",
+    "text": "Load Data\n\nsurvey_edgecombe &lt;- read_excel(\"survey_edgecombe.xlsx\")"
+  },
+  {
+    "objectID": "slides_workspace/week-01/02-Application.html#exit-ticket",
+    "href": "slides_workspace/week-01/02-Application.html#exit-ticket",
+    "title": "EJ + Intersectionality",
+    "section": "Exit Ticket",
+    "text": "Exit Ticket\nTell me one last question you have about the readings, the assignment, or the course?\nAdd your name if you’d like a response from me!"
   }
 ]
