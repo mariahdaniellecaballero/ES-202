@@ -197,7 +197,7 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">[Assess] Rural Electrification Case Study</h1>
-  <p class="subtitle">📍 Edgecombe County, CA</p>
+  <p class="subtitle">📍 Edgecombe County, NC</p>
 
 <div class="quarto-title-authors">
 </div>
@@ -217,7 +217,7 @@
 
 <section id="centering-activity" class="title-slide slide level1 center">
 <h1>Centering Activity</h1>
-
+<p>Emily :-)</p>
 </section>
 
 <section>
@@ -333,8 +333,8 @@
 <span id="cb5-8"><a></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">90</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="exercise-one" class="slide level2 center">
-<h2>Exercise One</h2>
+<section id="exercise-one-collaborative" class="slide level2 center">
+<h2>Exercise One (collaborative)</h2>
 <p>Restyle the following code chunks and label what each line is doing, using “#”.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a></a>county_vars_1930<span class="sc">|&gt;</span><span class="fu">filter</span>(state <span class="sc">%in%</span><span class="fu">c</span>(<span class="st">"Massachusetts"</span>, <span class="st">"Tennessee"</span>, <span class="st">"Washington"</span>, <span class="st">"New Mexico"</span>))<span class="sc">|&gt;</span><span class="fu">group_by</span>(state)<span class="sc">|&gt;</span> <span class="fu">summarize</span>(<span class="at">n=</span><span class="fu">n</span>(), <span class="at">mean_pop =</span><span class="fu">mean</span>(total_pop,<span class="at">na.rm =</span><span class="cn">TRUE</span>), <span class="at">mean_rural_farm_pop=</span><span class="fu">mean</span>(rural_farm_pop,<span class="at">na.rm=</span><span class="cn">TRUE</span>))<span class="sc">|&gt;</span><span class="fu">filter</span>(mean_rural_farm_pop<span class="sc">&gt;=</span><span class="dv">6000</span>)</span>
@@ -347,16 +347,17 @@
 <h1>Data Tidying</h1>
 
 </section>
-<section id="three-rules-for-tidy-data" class="slide level2 smaller center">
-<h2>Three Rules for Tidy Data</h2>
+<section id="tidy-data" class="slide level2 smaller center">
+<h2>Tidy Data</h2>
 <ul>
 <li>Each column represents a variable (and vice versa)</li>
 <li>Each row represents an observation (and vice versa)</li>
-<li>Each value is a single cell (and vice versa) ![]images/</li>
+<li>Each value is a single cell (and vice versa)</li>
 </ul>
-</section>
-<section id="exercise-two" class="slide level2 center">
-<h2>Exercise Two</h2>
+
+<img data-src="./images/data_structure.png" class="r-stretch"></section>
+<section id="exercise-two-collaborative" class="slide level2 center">
+<h2>Exercise Two (collaborative)</h2>
 <p>Describe what makes the <code>county_vars_1930</code> dataset tidy. Provide examples of the following using the dataset.</p>
 <ul>
 <li>variables:</li>
@@ -398,8 +399,8 @@
 <span id="cb7-12"><a></a>  <span class="fu">select</span>(name, count, perc_class)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="exercise-three" class="slide level2 center">
-<h2>Exercise Three</h2>
+<section id="exercise-three-collaborative" class="slide level2 center">
+<h2>Exercise Three (collaborative)</h2>
 <ol type="1">
 <li>Make the table pretty using the <code>gt</code> package.</li>
 <li>Create the second half of the table using the <code>county_vars_1930</code> dataframe for Edgecombe County, NC</li>
@@ -449,14 +450,14 @@
 <span id="cb8-19"><a></a>              <span class="at">values_from =</span> value)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="exercise-four" class="slide level2 center">
-<h2>Exercise four</h2>
+<section id="exercise-four-collaborative" class="slide level2 center">
+<h2>Exercise four (collaborative)</h2>
 <ol type="1">
 <li>Make the table pretty using the <code>gt</code> package.</li>
 <li>Create the second half of the table using the <code>county_vars_1930</code> dataframe for Edgecombe County, NC</li>
 </ol>
 </section>
-<section id="rural-electrification-surveys" class="slide level2 center">
+<section id="rural-electrification-surveys" class="slide level2 smaller center">
 <h2>Rural Electrification Surveys</h2>
 <ul>
 <li>Digitized data from 1934 Rural Electrification Surveys</li>
@@ -475,29 +476,33 @@
 <li><code>BILL_ANNUAL</code></li>
 </ul></li>
 </ul>
-<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource lgj: number-lines code-with-copy"><code class="sourceCode"><span id="cb9-1"><a></a>#| warning: false</span>
-<span id="cb9-2"><a></a>#| message: false</span>
-<span id="cb9-3"><a></a>#| echo: false</span>
-<span id="cb9-4"><a></a>#| eval: true</span>
-<span id="cb9-5"><a></a>survey_edgecombe &lt;- read_excel("~/Documents/GitHub/ES-202/hw/case_studies/week-04-REA/data/survey_edgecombe.xlsx")</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="load-data" class="slide level2 center">
+<h2>Load Data</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a></a>survey_edgecombe <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"data/survey_edgecombe.xlsx"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a>survey_edgecombe <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"survey_edgecombe.xlsx"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="exercise-four-1" class="slide level2 smaller center">
-<h2>Exercise Four</h2>
+<section id="exercise-four-collaborative-1" class="slide level2 smaller center">
+<h2>Exercise Four (collaborative)</h2>
 <ol type="1">
 <li><p>Compare average ratings for condition of the premise and interview quality by race and tenure. Remove data inputs with “Unknown” listed for race or tenure, and format the table nicely.</p></li>
 <li><p>Based on your findings, describe the role that rating the condition of the premise and interview quality played in determining the correction factor.</p></li>
-<li><p>Calculate the following for race and tenure. Remove data inputs with “Unknown” listed for race or tenure, and format the table nicely.</p></li>
-<li><p>Average uncorrected annual energy usage</p></li>
-<li><p>Average corrected annual energy usage</p></li>
-<li><p>Average bill</p></li>
-<li><p>Average cost per Kwh</p></li>
+<li><p>Calculate the following for race and tenure. Remove data inputs with “Unknown” listed for race or tenure, and format the table nicely.</p>
+<ul>
+<li>Average uncorrected annual energy usage</li>
+<li>Average corrected annual energy usage</li>
+<li>Average bill</li>
+<li>Average cost per Kwh</li>
+</ul></li>
+</ol>
+</section>
+<section id="exercise-five-individual" class="slide level2 smaller center">
+<h2>Exercise Five (individual)</h2>
+<ol type="1">
 <li><p>Based on your findings, describe the role that rating the condition of the premise and interview quality played in determining the correction factor. How did this state-sanctioned process shape the energy landscape in Edgecombe County that may have lasting effects today?</p></li>
 <li><p>Reflect on your findings and connect them to our readings on distributional justice AND restorative justice.</p></li>
 </ol>
-<p><em>Bonus:</em> Using the dataframe and data dictionary, compare patterns in a variable of your choice (i.e., owns a waffle iron, owns x number of hogs), and compare disparities among tenure and race. Remember to remove data inputs with “Unknown” listed for race or tenure, and format the table nicely.</p>
 
 
 </section></section>
@@ -718,6 +723,44 @@
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
         const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
