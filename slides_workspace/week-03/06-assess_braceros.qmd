@@ -48,7 +48,7 @@ library(tidyverse) # for tidying
 ```{r}
 # | eval: true
 # | echo: false
-bracero <- read_excel("~/Google Drive/My Drive/Teaching/ES-202/data/week_03/bracero_pull.xlsx")
+bracero <- read_excel("~/Google Drive/My Drive/Teaching/ES-202/Case Study Code/data/week_03/bracero_pull.xlsx")
 ```
 
 # Part II: Today's Goal
