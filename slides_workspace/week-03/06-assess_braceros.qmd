@@ -53,7 +53,7 @@ bracero <- read_excel("~/Google Drive/My Drive/Teaching/ES-202/data/week_03/brac
 
 # Part II: Today's Goal
 - Understand data structure
-- Transform  and tidy data for necessary questions
+- Transform and tidy data for necessary questions
 - Explore and summarize patterns
 - Connect it to theoretical understandings of procedural justice
 
@@ -192,7 +192,7 @@ head(bracero_clean)
   - mutate the `date` column to be in a DD-MM-YYYY format called `date_format`
     - hint: you may need to use the `?as.Date()` helper function
   - select the `title` , `date_format`, and `description`columns
-  - reorder the remaining columns by alphabetic order
+  - reorder the remaining columns by date
 
 # Transforming Data (Rows)
 - Moving on to rows! 

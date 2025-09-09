@@ -30,6 +30,76 @@
     ]
   },
   {
+    "objectID": "slides/week-01/02-Application.html#what-we-read",
+    "href": "slides/week-01/02-Application.html#what-we-read",
+    "title": "EJ + Intersectionality",
+    "section": "What we Read",
+    "text": "What we Read\n\nHolmes, A. G. D. (2020). Researcher Positionality- A Consideration of Its Influence and Place in Qualitative Research - A New Researcher Guide. 8(4) 1-10.\nDi Chiro, G. (2020). Mobilizing ‘intersectionality’ in environmental justice research and action in a time of crisis. Environmental justice, 316-333"
+  },
+  {
+    "objectID": "slides/week-01/02-Application.html#warm-up",
+    "href": "slides/week-01/02-Application.html#warm-up",
+    "title": "EJ + Intersectionality",
+    "section": "Warm-up",
+    "text": "Warm-up\n\nIn what contexts have your heard the term intersectional used?"
+  },
+  {
+    "objectID": "slides/week-01/02-Application.html#terms-to-define",
+    "href": "slides/week-01/02-Application.html#terms-to-define",
+    "title": "EJ + Intersectionality",
+    "section": "Terms to Define",
+    "text": "Terms to Define\n\nUsing the Di Chiro (2020) article, each team will define one cluster of terms…\n\nIntersectionality\n\nsystems of oppression\nmatrix of domination\n\nMultiplicity\n\nAdditive categories\n\nEnvironmental Justice\n\nDecolonial\nMulti-species\n\nCommons\n\nCollective care\nmulti-scalar"
+  },
+  {
+    "objectID": "slides/week-01/02-Application.html#mapping-it-out",
+    "href": "slides/week-01/02-Application.html#mapping-it-out",
+    "title": "EJ + Intersectionality",
+    "section": "Mapping it out",
+    "text": "Mapping it out\n\n\n\nOne teammate- tape your system to the board, draw connections/words/doodles as needed\nAnother teammate- explain your system to the class\nAs a class: Tell me how they connect to one another"
+  },
+  {
+    "objectID": "slides/week-01/02-Application.html#ej-intersectionality",
+    "href": "slides/week-01/02-Application.html#ej-intersectionality",
+    "title": "EJ + Intersectionality",
+    "section": "EJ + Intersectionality",
+    "text": "EJ + Intersectionality\n\nValue of multiplicative over additive approach?\nCan we begin to see how an intersectional approach can help build more meaningful movements?"
+  },
+  {
+    "objectID": "slides/week-01/02-Application.html#intersectionality-positionality",
+    "href": "slides/week-01/02-Application.html#intersectionality-positionality",
+    "title": "EJ + Intersectionality",
+    "section": "Intersectionality + Positionality",
+    "text": "Intersectionality + Positionality\n\nFixed versus fluid aspects of positionality?\nHow will this impact how we approach this course?"
+  },
+  {
+    "objectID": "slides/week-01/02-Application.html#positionality-assignment",
+    "href": "slides/week-01/02-Application.html#positionality-assignment",
+    "title": "EJ + Intersectionality",
+    "section": "Positionality Assignment",
+    "text": "Positionality Assignment\n\nAre we begining to see how positionality will influence how you engage with this course?\nDo we see opportunities for an intersectional approach this semester?\nQuestions on HW 01?"
+  },
+  {
+    "objectID": "slides/week-01/02-Application.html#creating-shared-expectations",
+    "href": "slides/week-01/02-Application.html#creating-shared-expectations",
+    "title": "EJ + Intersectionality",
+    "section": "Creating Shared Expectations",
+    "text": "Creating Shared Expectations\n\nHow do we want to be accountable to one another?\nThis could mean agreeing to…\n\nNot use devices on Tuesdays\nAssuming best intentions from peers\nEngaging in class conversation\nListening to and respecting others’ perspectives"
+  },
+  {
+    "objectID": "slides/week-01/02-Application.html#for-next-class",
+    "href": "slides/week-01/02-Application.html#for-next-class",
+    "title": "EJ + Intersectionality",
+    "section": "For Next Class",
+    "text": "For Next Class\n\nTwo readings on EJ + Distributional Justice\nJulia leading centering activity :-)\nPositionality Statement due Thursday (September 11, 2025) at 11:59 PM on Brightspace."
+  },
+  {
+    "objectID": "slides/week-01/02-Application.html#exit-ticket",
+    "href": "slides/week-01/02-Application.html#exit-ticket",
+    "title": "EJ + Intersectionality",
+    "section": "Exit Ticket",
+    "text": "Exit Ticket\nTell me one last question you have about the readings, the assignment, or the course?\nAdd your name if you’d like a response from me!"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Environmental Justice: A Community-Centric Approach",
@@ -263,7 +333,7 @@
     "href": "slides_workspace/week-02/04-assess_landfills.html#homework-approach",
     "title": "[Assess] Solid Waste Landfill Siting",
     "section": "Homework Approach",
-    "text": "Homework Approach\n\nAssignments will be started in class on Fridays in pairs and submitted the following Thursday individually.\nI’ll lecture a bit throughout the class to introduce new skills or topics, then let pairs work through sections of the assignment.\nI’ll choose pairs randomly using nametags"
+    "text": "Homework Approach\n\nAssignments will be started in class on Fridays in pairs and submitted the following Thursday individually.\nI’ll lecture a bit throughout the class to introduce new skills or topics, then let pairs work through sections of the assignment."
   },
   {
     "objectID": "slides_workspace/week-02/04-assess_landfills.html#learning-outcomes",
@@ -315,6 +385,13 @@
     "text": "Understanding data\n\nthe sites data that we’ve loaded is a dataframe, meaning it is a rectangular collection of variables (or columns) and observations (rows). In each cell, is a value. \nExamples of each?"
   },
   {
+    "objectID": "slides_workspace/week-02/04-assess_landfills.html#rules-of-tidy-data",
+    "href": "slides_workspace/week-02/04-assess_landfills.html#rules-of-tidy-data",
+    "title": "[Assess] Solid Waste Landfill Siting",
+    "section": "Rules of Tidy Data",
+    "text": "Rules of Tidy Data\n\nThis dataset is tabular, meaning that the data is organized into a table with rows and columns.\n\ntidy data has five rules:\n\nEvery variable has its own column.\nEvery observation is stored in its own row.\nEach value is stored in the cell of a corresponding variable.\nValues don’t contain units (this should be in a codebook).\nNo extraneous information (footnotes, extra titles, etc.)"
+  },
+  {
     "objectID": "slides_workspace/week-02/04-assess_landfills.html#sites-data",
     "href": "slides_workspace/week-02/04-assess_landfills.html#sites-data",
     "title": "[Assess] Solid Waste Landfill Siting",
@@ -326,14 +403,14 @@
     "href": "slides_workspace/week-02/04-assess_landfills.html#selecting-variables",
     "title": "[Assess] Solid Waste Landfill Siting",
     "section": "Selecting variables",
-    "text": "Selecting variables\nTable One: City of Houston Garbage Incinerators\n\ntable_one &lt;- sites |&gt;\n  filter(type == \"Incinerator\") |&gt;\n  select(facility, neighborhood, predom_eth_1979, location)"
+    "text": "Selecting variables\n\ntable_one &lt;- sites |&gt;\n  filter(type == \"Incinerator\") |&gt;\n  select(facility, neighborhood, predom_eth_1979, location)\n\ntable_one\n\n# A tibble: 5 × 4\n  facility         neighborhood           predom_eth_1979 location \n  &lt;chr&gt;            &lt;chr&gt;                  &lt;chr&gt;           &lt;chr&gt;    \n1 Fourth Ward      FOURTH WARD            Black           Southwest\n2 Patterson Street WEST END/COTTAGE GROVE Black           Northwest\n3 Kelly Street     KASHMERE GARDENS       Black           Northeast\n4 Holmes Road      SUNNYSIDE              Black           Southeast\n5 Velasco          SECOND WARD            Hispanic        Southeast"
   },
   {
     "objectID": "slides_workspace/week-02/04-assess_landfills.html#formatting-tables",
     "href": "slides_workspace/week-02/04-assess_landfills.html#formatting-tables",
     "title": "[Assess] Solid Waste Landfill Siting",
     "section": "Formatting Tables",
-    "text": "Formatting Tables\n\ntable_one |&gt;\n  gt() |&gt;\n  cols_label(\n    facility = \"Site of Incinerator\",\n    neighborhood = \"Neighborhood\",\n    predom_eth_1979 = \"Ethnicity\",\n    location = \"Location\"\n  ) |&gt;\n  tab_header(\n    title = (\"Table 1\"),\n    subtitle = \"City of Houston Garbage Incinerators\"\n  ) |&gt;\n  tab_source_note(\"The above Houston-owned garbage incinerators were in operation between the 1920s' and 1975\")\n\n\n\n\n\n\n\nTable 1\n\n\nCity of Houston Garbage Incinerators\n\n\nSite of Incinerator\nNeighborhood\nEthnicity\nLocation\n\n\n\n\nFourth Ward\nFOURTH WARD\nBlack\nSouthwest\n\n\nPatterson Street\nWEST END/COTTAGE GROVE\nBlack\nNorthwest\n\n\nKelly Street\nKASHMERE GARDENS\nBlack\nNortheast\n\n\nHolmes Road\nSUNNYSIDE\nBlack\nSoutheast\n\n\nVelasco\nSECOND WARD\nHispanic\nSoutheast\n\n\n\nThe above Houston-owned garbage incinerators were in operation between the 1920s' and 1975"
+    "text": "Formatting Tables\n\ntable_one |&gt;\n  gt() |&gt;\n  cols_label(\n    facility = \"Site of Incinerator\",\n    neighborhood = \"Neighborhood\",\n    predom_eth_1979 = \"Ethnicity\",\n    location = \"Location\"\n  ) |&gt;\n  tab_header(\n    title = (\"Table 1\"),\n    subtitle = \"City of Houston Garbage Incinerators\"\n  ) |&gt;\n  tab_source_note(\"The above Houston-owned garbage incinerators were in operation between the 1920's and 1975\")\n\n\n\n\n\n\n\nTable 1\n\n\nCity of Houston Garbage Incinerators\n\n\nSite of Incinerator\nNeighborhood\nEthnicity\nLocation\n\n\n\n\nFourth Ward\nFOURTH WARD\nBlack\nSouthwest\n\n\nPatterson Street\nWEST END/COTTAGE GROVE\nBlack\nNorthwest\n\n\nKelly Street\nKASHMERE GARDENS\nBlack\nNortheast\n\n\nHolmes Road\nSUNNYSIDE\nBlack\nSoutheast\n\n\nVelasco\nSECOND WARD\nHispanic\nSoutheast\n\n\n\nThe above Houston-owned garbage incinerators were in operation between the 1920's and 1975"
   },
   {
     "objectID": "slides_workspace/week-02/04-assess_landfills.html#exercise-one-rinse-wash-repeat-for-tables-2-and-3",
@@ -399,18 +476,18 @@
     "text": "Formatting colors and labels\n\nadding fill to the ggplot specifies that we want the chart colors to reflect the frequencies of each ethnicity across each disposal site type.\nscale_fill_manual() allows you to change the fill colors in your data.\n\nvalues can be color names, hex codes, or RGB values.\nname is the legend name\n\nlabs() allows you to rename your axes\n\n\nggplot(sites, aes(x = type, fill = predom_eth_1979)) +\n  geom_bar() +\n  scale_fill_manual(\n    values = c(\"Red\", \"Yellow\", \"Green\"),\n    name = \"Predominant Community Ethnicity\"\n  ) +\n  labs(x = \" \", y = \"Number of Facilities\")"
   },
   {
-    "objectID": "slides_workspace/week-02/04-assess_landfills.html#exercise-3-reading-a-vignette",
-    "href": "slides_workspace/week-02/04-assess_landfills.html#exercise-3-reading-a-vignette",
+    "objectID": "slides_workspace/week-02/04-assess_landfills.html#exercise-3-reading-a-vignette-collaborative",
+    "href": "slides_workspace/week-02/04-assess_landfills.html#exercise-3-reading-a-vignette-collaborative",
     "title": "[Assess] Solid Waste Landfill Siting",
-    "section": "Exercise 3: Reading a Vignette",
-    "text": "Exercise 3: Reading a Vignette\n\nOften, we get a bit mixed up when we’re first starting.\nOne helpful way to troubleshoot, can be typing “?” followed by the function into your environment (i.e., ?scale_fill_manual())\nRead the vignette for the scale_fill_manual() package. What package does it recommend for color blindness?"
+    "section": "Exercise 3: Reading a Vignette (collaborative)",
+    "text": "Exercise 3: Reading a Vignette (collaborative)\n\nOften, we get a bit mixed up when we’re first starting.\nOne helpful way to troubleshoot, can be typing “?” followed by the function into your environment (i.e., ?scale_fill_manual())\nRead the vignette for the scale_fill_manual() package. What package does it recommend for color blindness?"
   },
   {
-    "objectID": "slides_workspace/week-02/04-assess_landfills.html#connecting-to-theory",
-    "href": "slides_workspace/week-02/04-assess_landfills.html#connecting-to-theory",
+    "objectID": "slides_workspace/week-02/04-assess_landfills.html#exercise-04-individual",
+    "href": "slides_workspace/week-02/04-assess_landfills.html#exercise-04-individual",
     "title": "[Assess] Solid Waste Landfill Siting",
-    "section": "Connecting to Theory",
-    "text": "Connecting to Theory\n\nHaving recreated Bullard’s landfill case study in R, answer the following questions using the readings:"
+    "section": "Exercise 04 (individual)",
+    "text": "Exercise 04 (individual)\nConnect to theory"
   },
   {
     "objectID": "slides_workspace/week-01/01-Welcome.html#environmental-justice-a-community-centric-approach",
@@ -907,7 +984,7 @@
     "href": "hw/w2-hw02.html#learning-outcomes",
     "title": "HW 02: Solid Waste Sites Case Study",
     "section": "Learning Outcomes",
-    "text": "Learning Outcomes\n\nUnderstand what R can do\nRecreate tables 1-3 in Bullard’s Study\nVisualize distributional justice\nConnect it to theoretical understandings of distributional justice"
+    "text": "Learning Outcomes\n\nDemonstrate basic uses of R, namely formatting a .qmd assignment\nRecreate tables 1-3 in Bullard’s Study\nVisualize Distributional Justice\nConnect it to theoretical understandings of distributional justice"
   },
   {
     "objectID": "hw/w2-hw02.html#instructions",
@@ -1204,6 +1281,13 @@
     "text": "For Next Class\n\nTwo readings on EJ + Distributional Justice\nJulia leading centering activity :-)\nPositionality Statement due Thursday (September 11, 2025) at 11:59 PM on Brightspace."
   },
   {
+    "objectID": "slides_workspace/week-01/02-Application.html#exit-ticket",
+    "href": "slides_workspace/week-01/02-Application.html#exit-ticket",
+    "title": "EJ + Intersectionality",
+    "section": "Exit Ticket",
+    "text": "Exit Ticket\nTell me one last question you have about the readings, the assignment, or the course?\nAdd your name if you’d like a response from me!"
+  },
+  {
     "objectID": "slides_workspace/week-02/03-theory_dist_just.html#what-we-read",
     "href": "slides_workspace/week-02/03-theory_dist_just.html#what-we-read",
     "title": "[Theory] Distributional (in)Justice",
@@ -1229,21 +1313,21 @@
     "href": "slides_workspace/week-02/03-theory_dist_just.html#origins-of-ej",
     "title": "[Theory] Distributional (in)Justice",
     "section": "Origins of EJ",
-    "text": "Origins of EJ\n\nTerm “environmental justice” was popularized in 1980s\n1982: Began as a social movement\n\nCommunities of color organizing and resisting unfair siting activities (toxic waste, landfills, and oil refineries)\nProtests in Warren County, NC are especially salient to EJ movement\n\n1987: United Church of Christ (UCC) Commission for Racial Justice published report on Black and Latine exposure to toxic sites.\n1991: UCC hosted the First National People of Color Environmental Leadership Summit, where the 17 Principles of Environmental Justice were created"
+    "text": "Origins of EJ\n\n\n\nTerm “environmental justice” was popularized in 1980s\n1982: Began as a social movement\n\nCommunities of color organizing and resisting unfair siting activities (toxic waste, landfills, and oil refineries)\nProtests in Warren County, NC are especially salient to origins of EJ\n\n1987: United Church of Christ (UCC) Commission for Racial Justice published report on Black and Latine exposure to toxic sites.\n1991: UCC hosted the First National People of Color Environmental Leadership Summit, where the 17 Principles of Environmental Justice were created."
   },
   {
     "objectID": "slides_workspace/week-02/03-theory_dist_just.html#principles-of-ej-tenet-based-approach",
     "href": "slides_workspace/week-02/03-theory_dist_just.html#principles-of-ej-tenet-based-approach",
     "title": "[Theory] Distributional (in)Justice",
     "section": "17 Principles of EJ + Tenet-Based Approach",
-    "text": "17 Principles of EJ + Tenet-Based Approach\n\n17 Principles are still highly regarded\nA lot of academic conversations around what EJ means to whom, and how to classify it.\nlmk if you want more readings suggestions on this\nI chose a five tenet approach (currently used a lot in Energy Justice scholarship), because I think it provides a nice framework for theorizing different aspects of justice."
+    "text": "17 Principles of EJ + Tenet-Based Approach\n\n17 Principles are still highly regarded\nToday, a lot of academic conversations around what EJ means to whom, and how to classify it.\nI chose a five tenet approach (currently used a lot in Energy Justice scholarship), because it provides a nice framework for theorizing different aspects of justice, while still staying true to the EJ imaginaries of POC Env. Leadership summit"
   },
   {
     "objectID": "slides_workspace/week-02/03-theory_dist_just.html#principles-tenet-sorting",
     "href": "slides_workspace/week-02/03-theory_dist_just.html#principles-tenet-sorting",
     "title": "[Theory] Distributional (in)Justice",
     "section": "Principles + Tenet Sorting",
-    "text": "Principles + Tenet Sorting\n\n In groups of 4: Sort the 17 Principles of EJ into the five tenets, be ready to discuss!"
+    "text": "Principles + Tenet Sorting\n In groups of 4: Sort the 17 Principles of EJ into the five tenets, be ready to discuss!"
   },
   {
     "objectID": "slides_workspace/week-02/03-theory_dist_just.html#sorting-results",
@@ -1264,7 +1348,7 @@
     "href": "slides_workspace/week-02/03-theory_dist_just.html#theoretical-applications",
     "title": "[Theory] Distributional (in)Justice",
     "section": "Theoretical Applications",
-    "text": "Theoretical Applications"
+    "text": "Theoretical Applications\n\nFantastic case of distributional justice.\nSeminal study that influenced national SOE report, POC summit, and Environmental Justice Executive Order."
   },
   {
     "objectID": "slides_workspace/week-02/03-theory_dist_just.html#why-i-chose-this-case-study",
@@ -1372,25 +1456,25 @@
     "text": "ggplot\n\nggplot functions just like pipes (i.e., each line should end with a +)\n\n\ncounty_vars_1930 |&gt;\n  group_by(state) |&gt;\n  summarize(\n    sum_total_pop = sum(total_pop)\n  ) |&gt;\n  ggplot(aes(state, sum_total_pop)) +\n  geom_col() +\n  theme(axis.text.x = element_text(angle = 90))"
   },
   {
-    "objectID": "slides_workspace/week-04/08-assess_electrification.html#exercise-one",
-    "href": "slides_workspace/week-04/08-assess_electrification.html#exercise-one",
+    "objectID": "slides_workspace/week-04/08-assess_electrification.html#exercise-one-collaborative",
+    "href": "slides_workspace/week-04/08-assess_electrification.html#exercise-one-collaborative",
     "title": "[Assess] Rural Electrification Case Study",
-    "section": "Exercise One",
-    "text": "Exercise One\nRestyle the following code chunks and label what each line is doing, using “#”.\n\ncounty_vars_1930|&gt;filter(state %in%c(\"Massachusetts\", \"Tennessee\", \"Washington\", \"New Mexico\"))|&gt;group_by(state)|&gt; summarize(n=n(), mean_pop =mean(total_pop,na.rm =TRUE), mean_rural_farm_pop=mean(rural_farm_pop,na.rm=TRUE))|&gt;filter(mean_rural_farm_pop&gt;=6000)\n\ncounty_vars_1930|&gt;filter(county %in%c(\"Washington\",\"Jefferson\",\"Franklin\"),total_pop &gt;=4000)|&gt;group_by(county)|&gt;summarise(n_states=n())"
+    "section": "Exercise One (collaborative)",
+    "text": "Exercise One (collaborative)\nRestyle the following code chunks and label what each line is doing, using “#”.\n\ncounty_vars_1930|&gt;filter(state %in%c(\"Massachusetts\", \"Tennessee\", \"Washington\", \"New Mexico\"))|&gt;group_by(state)|&gt; summarize(n=n(), mean_pop =mean(total_pop,na.rm =TRUE), mean_rural_farm_pop=mean(rural_farm_pop,na.rm=TRUE))|&gt;filter(mean_rural_farm_pop&gt;=6000)\n\ncounty_vars_1930|&gt;filter(county %in%c(\"Washington\",\"Jefferson\",\"Franklin\"),total_pop &gt;=4000)|&gt;group_by(county)|&gt;summarise(n_states=n())"
   },
   {
-    "objectID": "slides_workspace/week-04/08-assess_electrification.html#three-rules-for-tidy-data",
-    "href": "slides_workspace/week-04/08-assess_electrification.html#three-rules-for-tidy-data",
+    "objectID": "slides_workspace/week-04/08-assess_electrification.html#tidy-data",
+    "href": "slides_workspace/week-04/08-assess_electrification.html#tidy-data",
     "title": "[Assess] Rural Electrification Case Study",
-    "section": "Three Rules for Tidy Data",
-    "text": "Three Rules for Tidy Data\n\nEach column represents a variable (and vice versa)\nEach row represents an observation (and vice versa)\nEach value is a single cell (and vice versa) ![]images/"
+    "section": "Tidy Data",
+    "text": "Tidy Data\n\nEach column represents a variable (and vice versa)\nEach row represents an observation (and vice versa)\nEach value is a single cell (and vice versa)"
   },
   {
-    "objectID": "slides_workspace/week-04/08-assess_electrification.html#exercise-two",
-    "href": "slides_workspace/week-04/08-assess_electrification.html#exercise-two",
+    "objectID": "slides_workspace/week-04/08-assess_electrification.html#exercise-two-collaborative",
+    "href": "slides_workspace/week-04/08-assess_electrification.html#exercise-two-collaborative",
     "title": "[Assess] Rural Electrification Case Study",
-    "section": "Exercise Two",
-    "text": "Exercise Two\nDescribe what makes the county_vars_1930 dataset tidy. Provide examples of the following using the dataset.\n\nvariables:\nobservations:\nvalues:"
+    "section": "Exercise Two (collaborative)",
+    "text": "Exercise Two (collaborative)\nDescribe what makes the county_vars_1930 dataset tidy. Provide examples of the following using the dataset.\n\nvariables:\nobservations:\nvalues:"
   },
   {
     "objectID": "slides_workspace/week-04/08-assess_electrification.html#lengthening-data",
@@ -1414,11 +1498,11 @@
     "text": "Lengthening Data\n\ndenom &lt;- data.frame(denom = c(NA, 3170276, 3170276, 2360429, 3170276, 3170276))\n\nstate_vars_1930 %&gt;% \n  filter(state == \"North Carolina\") %&gt;%\n  mutate(rural_pop = total_pop - urban_pop) %&gt;% \n  select(state, total_pop, urban_pop, rural_pop, rural_farm_pop, black_pop, white_pop) %&gt;% \n  pivot_longer(cols = c(total_pop:white_pop), \n               names_to = \"name\", \n               values_to = \"count\") %&gt;% \n  bind_cols(denom) %&gt;% \n  mutate(perc_class = round(((count/denom)*100),1)) %&gt;%\n  select(name, count, perc_class)"
   },
   {
-    "objectID": "slides_workspace/week-04/08-assess_electrification.html#exercise-three",
-    "href": "slides_workspace/week-04/08-assess_electrification.html#exercise-three",
+    "objectID": "slides_workspace/week-04/08-assess_electrification.html#exercise-three-collaborative",
+    "href": "slides_workspace/week-04/08-assess_electrification.html#exercise-three-collaborative",
     "title": "[Assess] Rural Electrification Case Study",
-    "section": "Exercise Three",
-    "text": "Exercise Three\n\nMake the table pretty using the gt package.\nCreate the second half of the table using the county_vars_1930 dataframe for Edgecombe County, NC"
+    "section": "Exercise Three (collaborative)",
+    "text": "Exercise Three (collaborative)\n\nMake the table pretty using the gt package.\nCreate the second half of the table using the county_vars_1930 dataframe for Edgecombe County, NC"
   },
   {
     "objectID": "slides_workspace/week-04/08-assess_electrification.html#widening-data",
@@ -1449,11 +1533,11 @@
     "text": "Combining Functions\n\nstate_vars_1930 %&gt;%\n  filter(state == \"North Carolina\") %&gt;%\n  mutate(black_perc_total_farms = (black_num_farms/(black_num_farms + white_num_farms)), \n         white_perc_total_farms = (white_num_farms/(black_num_farms + white_num_farms)), \n         black_acres_per_cap = black_acres/black_num_farms, \n         white_acres_per_cap = white_acres/white_num_farms,, \n         black_avg_val = black_farm_val/black_num_farms, \n         white_avg_val = white_farm_val/white_num_farms) %&gt;% \n  select(state, black_num_farms, white_num_farms, black_perc_total_farms,\n         white_perc_total_farms, black_farm_val, white_farm_val, black_acres_per_cap,\n         white_acres_per_cap, black_avg_val, white_avg_val) %&gt;% \n  pivot_longer(cols = starts_with(c(\"black\", \"white\")),\n               names_to = \"name\", \n               values_to = \"value\") %&gt;% \n  separate(name, \n           into = c(\"race\", \"name\"),\n           sep = \"_\", extra = \"merge\") %&gt;%\n  pivot_wider(names_from = race,\n              values_from = value)"
   },
   {
-    "objectID": "slides_workspace/week-04/08-assess_electrification.html#exercise-four",
-    "href": "slides_workspace/week-04/08-assess_electrification.html#exercise-four",
+    "objectID": "slides_workspace/week-04/08-assess_electrification.html#exercise-four-collaborative",
+    "href": "slides_workspace/week-04/08-assess_electrification.html#exercise-four-collaborative",
     "title": "[Assess] Rural Electrification Case Study",
-    "section": "Exercise four",
-    "text": "Exercise four\n\nMake the table pretty using the gt package.\nCreate the second half of the table using the county_vars_1930 dataframe for Edgecombe County, NC"
+    "section": "Exercise four (collaborative)",
+    "text": "Exercise four (collaborative)\n\nMake the table pretty using the gt package.\nCreate the second half of the table using the county_vars_1930 dataframe for Edgecombe County, NC"
   },
   {
     "objectID": "slides_workspace/week-04/08-assess_electrification.html#rural-electrification-surveys",
@@ -1463,11 +1547,25 @@
     "text": "Rural Electrification Surveys\n\nDigitized data from 1934 Rural Electrification Surveys\nDataset includes 412 entries, with 74 variables. Some highlights include:\n\nUSER_ID\nUSER_NUMBER\nLINE\nUSER_NAME\nCOND_PREMISES_RC\nRATE_INTER_RC\nTENURE\nRACE\nCORRECT_FACTOR\nKWH_YEAR\nBILL_ANNUAL"
   },
   {
-    "objectID": "slides_workspace/week-04/08-assess_electrification.html#exercise-four-1",
-    "href": "slides_workspace/week-04/08-assess_electrification.html#exercise-four-1",
+    "objectID": "slides_workspace/week-04/08-assess_electrification.html#load-data",
+    "href": "slides_workspace/week-04/08-assess_electrification.html#load-data",
     "title": "[Assess] Rural Electrification Case Study",
-    "section": "Exercise Four",
-    "text": "Exercise Four\n\nCompare average ratings for condition of the premise and interview quality by race and tenure. Remove data inputs with “Unknown” listed for race or tenure, and format the table nicely.\nBased on your findings, describe the role that rating the condition of the premise and interview quality played in determining the correction factor.\nCalculate the following for race and tenure. Remove data inputs with “Unknown” listed for race or tenure, and format the table nicely.\nAverage uncorrected annual energy usage\nAverage corrected annual energy usage\nAverage bill\nAverage cost per Kwh\nBased on your findings, describe the role that rating the condition of the premise and interview quality played in determining the correction factor. How did this state-sanctioned process shape the energy landscape in Edgecombe County that may have lasting effects today?\nReflect on your findings and connect them to our readings on distributional justice AND restorative justice.\n\nBonus: Using the dataframe and data dictionary, compare patterns in a variable of your choice (i.e., owns a waffle iron, owns x number of hogs), and compare disparities among tenure and race. Remember to remove data inputs with “Unknown” listed for race or tenure, and format the table nicely."
+    "section": "Load Data",
+    "text": "Load Data\n\nsurvey_edgecombe &lt;- read_excel(\"survey_edgecombe.xlsx\")"
+  },
+  {
+    "objectID": "slides_workspace/week-04/08-assess_electrification.html#exercise-four-collaborative-1",
+    "href": "slides_workspace/week-04/08-assess_electrification.html#exercise-four-collaborative-1",
+    "title": "[Assess] Rural Electrification Case Study",
+    "section": "Exercise Four (collaborative)",
+    "text": "Exercise Four (collaborative)\n\nCompare average ratings for condition of the premise and interview quality by race and tenure. Remove data inputs with “Unknown” listed for race or tenure, and format the table nicely.\nBased on your findings, describe the role that rating the condition of the premise and interview quality played in determining the correction factor.\nCalculate the following for race and tenure. Remove data inputs with “Unknown” listed for race or tenure, and format the table nicely.\n\nAverage uncorrected annual energy usage\nAverage corrected annual energy usage\nAverage bill\nAverage cost per Kwh"
+  },
+  {
+    "objectID": "slides_workspace/week-04/08-assess_electrification.html#exercise-five-individual",
+    "href": "slides_workspace/week-04/08-assess_electrification.html#exercise-five-individual",
+    "title": "[Assess] Rural Electrification Case Study",
+    "section": "Exercise Five (individual)",
+    "text": "Exercise Five (individual)\n\nBased on your findings, describe the role that rating the condition of the premise and interview quality played in determining the correction factor. How did this state-sanctioned process shape the energy landscape in Edgecombe County that may have lasting effects today?\nReflect on your findings and connect them to our readings on distributional justice AND restorative justice."
   },
   {
     "objectID": "final_project/-desc.html",
@@ -1773,108 +1871,150 @@
     ]
   },
   {
-    "objectID": "slides_workspace/week-02/04-assess_landfills.html#rules-of-tidy-data",
-    "href": "slides_workspace/week-02/04-assess_landfills.html#rules-of-tidy-data",
-    "title": "[Assess] Solid Waste Landfill Siting",
-    "section": "Rules of Tidy Data",
-    "text": "Rules of Tidy Data\n\nThis dataset is tabular, meaning that the data is organized into a table with rows and columns.\n\ntidy data has five rules:\n\nEvery variable has its own column.\nEvery observation is stored in its own row.\nEach value is stored in the cell of a corresponding variable.\nValues don’t contain units (this should be in a codebook).\nNo extraneous information (footnotes, extra titles, etc.)"
-  },
-  {
-    "objectID": "slides_workspace/week-02/04-assess_landfills.html#exercise-3-reading-a-vignette-collaborative",
-    "href": "slides_workspace/week-02/04-assess_landfills.html#exercise-3-reading-a-vignette-collaborative",
-    "title": "[Assess] Solid Waste Landfill Siting",
-    "section": "Exercise 3: Reading a Vignette (collaborative)",
-    "text": "Exercise 3: Reading a Vignette (collaborative)\n\nOften, we get a bit mixed up when we’re first starting.\nOne helpful way to troubleshoot, can be typing “?” followed by the function into your environment (i.e., ?scale_fill_manual())\nRead the vignette for the scale_fill_manual() package. What package does it recommend for color blindness?"
-  },
-  {
-    "objectID": "slides_workspace/week-02/04-assess_landfills.html#exercise-04-individual",
-    "href": "slides_workspace/week-02/04-assess_landfills.html#exercise-04-individual",
-    "title": "[Assess] Solid Waste Landfill Siting",
-    "section": "Exercise 04 (individual)",
-    "text": "Exercise 04 (individual)\nConnect to theory"
-  },
-  {
-    "objectID": "slides_workspace/week-04/08-assess_electrification.html#tidy-data",
-    "href": "slides_workspace/week-04/08-assess_electrification.html#tidy-data",
-    "title": "[Assess] Rural Electrification Case Study",
-    "section": "Tidy Data",
-    "text": "Tidy Data\n\nEach column represents a variable (and vice versa)\nEach row represents an observation (and vice versa)\nEach value is a single cell (and vice versa)"
-  },
-  {
-    "objectID": "slides_workspace/week-04/08-assess_electrification.html#exercise-one-collaborative",
-    "href": "slides_workspace/week-04/08-assess_electrification.html#exercise-one-collaborative",
-    "title": "[Assess] Rural Electrification Case Study",
-    "section": "Exercise One (collaborative)",
-    "text": "Exercise One (collaborative)\nRestyle the following code chunks and label what each line is doing, using “#”.\n\ncounty_vars_1930|&gt;filter(state %in%c(\"Massachusetts\", \"Tennessee\", \"Washington\", \"New Mexico\"))|&gt;group_by(state)|&gt; summarize(n=n(), mean_pop =mean(total_pop,na.rm =TRUE), mean_rural_farm_pop=mean(rural_farm_pop,na.rm=TRUE))|&gt;filter(mean_rural_farm_pop&gt;=6000)\n\ncounty_vars_1930|&gt;filter(county %in%c(\"Washington\",\"Jefferson\",\"Franklin\"),total_pop &gt;=4000)|&gt;group_by(county)|&gt;summarise(n_states=n())"
-  },
-  {
-    "objectID": "slides_workspace/week-04/08-assess_electrification.html#exercise-two-collaborative",
-    "href": "slides_workspace/week-04/08-assess_electrification.html#exercise-two-collaborative",
-    "title": "[Assess] Rural Electrification Case Study",
-    "section": "Exercise Two (collaborative)",
-    "text": "Exercise Two (collaborative)\nDescribe what makes the county_vars_1930 dataset tidy. Provide examples of the following using the dataset.\n\nvariables:\nobservations:\nvalues:"
-  },
-  {
-    "objectID": "slides_workspace/week-04/08-assess_electrification.html#exercise-three-collaborative",
-    "href": "slides_workspace/week-04/08-assess_electrification.html#exercise-three-collaborative",
-    "title": "[Assess] Rural Electrification Case Study",
-    "section": "Exercise Three (collaborative)",
-    "text": "Exercise Three (collaborative)\n\nMake the table pretty using the gt package.\nCreate the second half of the table using the county_vars_1930 dataframe for Edgecombe County, NC"
-  },
-  {
-    "objectID": "slides_workspace/week-04/08-assess_electrification.html#exercise-four-collaborative",
-    "href": "slides_workspace/week-04/08-assess_electrification.html#exercise-four-collaborative",
-    "title": "[Assess] Rural Electrification Case Study",
-    "section": "Exercise four (collaborative)",
-    "text": "Exercise four (collaborative)\n\nMake the table pretty using the gt package.\nCreate the second half of the table using the county_vars_1930 dataframe for Edgecombe County, NC"
-  },
-  {
-    "objectID": "slides_workspace/week-04/08-assess_electrification.html#exercise-four-.smaller-collaborative",
-    "href": "slides_workspace/week-04/08-assess_electrification.html#exercise-four-.smaller-collaborative",
-    "title": "[Assess] Rural Electrification Case Study",
-    "section": "Exercise Four {.smaller} (collaborative)",
-    "text": "Exercise Four {.smaller} (collaborative)\n\nCompare average ratings for condition of the premise and interview quality by race and tenure. Remove data inputs with “Unknown” listed for race or tenure, and format the table nicely.\nBased on your findings, describe the role that rating the condition of the premise and interview quality played in determining the correction factor.\nCalculate the following for race and tenure. Remove data inputs with “Unknown” listed for race or tenure, and format the table nicely.\nAverage uncorrected annual energy usage\nAverage corrected annual energy usage\nAverage bill\nAverage cost per Kwh"
-  },
-  {
-    "objectID": "slides_workspace/week-04/08-assess_electrification.html#exercise-five-.smaller-individual",
-    "href": "slides_workspace/week-04/08-assess_electrification.html#exercise-five-.smaller-individual",
-    "title": "[Assess] Rural Electrification Case Study",
-    "section": "Exercise Five {.smaller} (individual)",
-    "text": "Exercise Five {.smaller} (individual)\n\nBased on your findings, describe the role that rating the condition of the premise and interview quality played in determining the correction factor. How did this state-sanctioned process shape the energy landscape in Edgecombe County that may have lasting effects today?\nReflect on your findings and connect them to our readings on distributional justice AND restorative justice."
-  },
-  {
-    "objectID": "slides_workspace/week-04/08-assess_electrification.html#exercise-five.smaller-individual",
-    "href": "slides_workspace/week-04/08-assess_electrification.html#exercise-five.smaller-individual",
-    "title": "[Assess] Rural Electrification Case Study",
-    "section": "Exercise Five{.smaller} (individual)",
-    "text": "Exercise Five{.smaller} (individual)\n\nBased on your findings, describe the role that rating the condition of the premise and interview quality played in determining the correction factor. How did this state-sanctioned process shape the energy landscape in Edgecombe County that may have lasting effects today?\nReflect on your findings and connect them to our readings on distributional justice AND restorative justice."
-  },
-  {
-    "objectID": "slides_workspace/week-04/08-assess_electrification.html#exercise-four-collaborative-1",
-    "href": "slides_workspace/week-04/08-assess_electrification.html#exercise-four-collaborative-1",
-    "title": "[Assess] Rural Electrification Case Study",
-    "section": "Exercise Four (collaborative)",
-    "text": "Exercise Four (collaborative)\n\nCompare average ratings for condition of the premise and interview quality by race and tenure. Remove data inputs with “Unknown” listed for race or tenure, and format the table nicely.\nBased on your findings, describe the role that rating the condition of the premise and interview quality played in determining the correction factor.\nCalculate the following for race and tenure. Remove data inputs with “Unknown” listed for race or tenure, and format the table nicely.\n\nAverage uncorrected annual energy usage\nAverage corrected annual energy usage\nAverage bill\nAverage cost per Kwh"
-  },
-  {
-    "objectID": "slides_workspace/week-04/08-assess_electrification.html#exercise-five-individual",
-    "href": "slides_workspace/week-04/08-assess_electrification.html#exercise-five-individual",
-    "title": "[Assess] Rural Electrification Case Study",
-    "section": "Exercise Five (individual)",
-    "text": "Exercise Five (individual)\n\nBased on your findings, describe the role that rating the condition of the premise and interview quality played in determining the correction factor. How did this state-sanctioned process shape the energy landscape in Edgecombe County that may have lasting effects today?\nReflect on your findings and connect them to our readings on distributional justice AND restorative justice."
-  },
-  {
-    "objectID": "slides_workspace/week-04/08-assess_electrification.html#load-data",
-    "href": "slides_workspace/week-04/08-assess_electrification.html#load-data",
-    "title": "[Assess] Rural Electrification Case Study",
-    "section": "Load Data",
-    "text": "Load Data\n\nsurvey_edgecombe &lt;- read_excel(\"survey_edgecombe.xlsx\")"
-  },
-  {
-    "objectID": "slides_workspace/week-01/02-Application.html#exit-ticket",
-    "href": "slides_workspace/week-01/02-Application.html#exit-ticket",
+    "objectID": "slides/week-01/02-Application.html#our-results",
+    "href": "slides/week-01/02-Application.html#our-results",
     "title": "EJ + Intersectionality",
-    "section": "Exit Ticket",
-    "text": "Exit Ticket\nTell me one last question you have about the readings, the assignment, or the course?\nAdd your name if you’d like a response from me!"
+    "section": "Our Results",
+    "text": "Our Results"
+  },
+  {
+    "objectID": "slides_workspace/week-02/03-theory_dist_just.html#what-well-be-doing",
+    "href": "slides_workspace/week-02/03-theory_dist_just.html#what-well-be-doing",
+    "title": "[Theory] Distributional (in)Justice",
+    "section": "What we’ll be doing",
+    "text": "What we’ll be doing\n\nIntro to R and what it can do\nRecreating Bullard’s tables, creating our own.\nMaking one plot\nConnecting to theory"
+  },
+  {
+    "objectID": "slides_workspace/week-02/03-theory_dist_just.html#for-friday",
+    "href": "slides_workspace/week-02/03-theory_dist_just.html#for-friday",
+    "title": "[Theory] Distributional (in)Justice",
+    "section": "For Friday:",
+    "text": "For Friday:\n\nRead community case study in schedule\nReview Chapter 1 of RFDS [optional]\nMake sure posit login is working!"
+  },
+  {
+    "objectID": "slides_workspace/week-02/03-theory_dist_just.html#origins-of-ej-1",
+    "href": "slides_workspace/week-02/03-theory_dist_just.html#origins-of-ej-1",
+    "title": "[Theory] Distributional (in)Justice",
+    "section": "Origins of EJ",
+    "text": "Origins of EJ\n\nAny other reactions, thoughts, or things you’d like to discuss from the Murdock piece (history of EJ)?"
+  },
+  {
+    "objectID": "slides_workspace/week-02/03-theory_dist_just.html#deviations-from-equality",
+    "href": "slides_workspace/week-02/03-theory_dist_just.html#deviations-from-equality",
+    "title": "[Theory] Distributional (in)Justice",
+    "section": "Deviations from Equality",
+    "text": "Deviations from Equality\n\n Thoughts on equality-based approach?"
+  },
+  {
+    "objectID": "slides_workspace/week-02/03-theory_dist_just.html#minimum-capabilities",
+    "href": "slides_workspace/week-02/03-theory_dist_just.html#minimum-capabilities",
+    "title": "[Theory] Distributional (in)Justice",
+    "section": "Minimum Capabilities",
+    "text": "Minimum Capabilities\n\nRather than comparing people, maybe we focus on what people need to lead a meaningful life. (Sen, 2009)\nIncludes physical wellbeing and ability to make choices.\nCan align well with legal approach to environmental protection (right to basic free will and wellbeing)"
+  },
+  {
+    "objectID": "slides_workspace/week-02/03-theory_dist_just.html#deviations-from-strict-equality",
+    "href": "slides_workspace/week-02/03-theory_dist_just.html#deviations-from-strict-equality",
+    "title": "[Theory] Distributional (in)Justice",
+    "section": "Deviations from Strict Equality",
+    "text": "Deviations from Strict Equality"
+  },
+  {
+    "objectID": "slides_workspace/week-02/03-theory_dist_just.html#thoughts-on-distributional-justice",
+    "href": "slides_workspace/week-02/03-theory_dist_just.html#thoughts-on-distributional-justice",
+    "title": "[Theory] Distributional (in)Justice",
+    "section": "Thoughts on Distributional Justice?",
+    "text": "Thoughts on Distributional Justice?\n\nUtilitarianism\nEquality\nCapabilities"
+  },
+  {
+    "objectID": "slides_workspace/week-02/03-theory_dist_just.html#but-what-if-we-live-in-an-unequal-world",
+    "href": "slides_workspace/week-02/03-theory_dist_just.html#but-what-if-we-live-in-an-unequal-world",
+    "title": "[Theory] Distributional (in)Justice",
+    "section": "But what if we live in an unequal world?",
+    "text": "But what if we live in an unequal world?"
+  },
+  {
+    "objectID": "slides_workspace/week-02/03-theory_dist_just.html#but-what-if-the-world-is-unequal",
+    "href": "slides_workspace/week-02/03-theory_dist_just.html#but-what-if-the-world-is-unequal",
+    "title": "[Theory] Distributional (in)Justice",
+    "section": "But what if the world is unequal?",
+    "text": "But what if the world is unequal?\n\nBases for deviating from strict equality"
+  },
+  {
+    "objectID": "slides/week-02/03-theory_dist_just.html#what-we-read",
+    "href": "slides/week-02/03-theory_dist_just.html#what-we-read",
+    "title": "[Theory] Distributional (in)Justice",
+    "section": "What we Read",
+    "text": "What we Read\n\nMurdock, E. G. (2020). A history of environmental justice: Foundations, narratives, and perspectives. In Environmental justice (pp. 6-17). Routledge.\nKaswan, A. (2020). Distributive environmental justice. In Environmental justice (pp. 21-36). Routledge."
+  },
+  {
+    "objectID": "slides/week-02/03-theory_dist_just.html#origins-of-ej",
+    "href": "slides/week-02/03-theory_dist_just.html#origins-of-ej",
+    "title": "[Theory] Distributional (in)Justice",
+    "section": "Origins of EJ",
+    "text": "Origins of EJ\n\n\n\nTerm “environmental justice” was popularized in 1980s\n1982: Began as a social movement\n\nCommunities of color organizing and resisting unfair siting activities (toxic waste, landfills, and oil refineries)\nProtests in Warren County, NC are especially salient to origins of EJ\n\n1987: United Church of Christ (UCC) Commission for Racial Justice published report on Black and Latine exposure to toxic sites.\n1991: UCC hosted the First National People of Color Environmental Leadership Summit, where the 17 Principles of Environmental Justice were created."
+  },
+  {
+    "objectID": "slides/week-02/03-theory_dist_just.html#principles-of-ej-tenet-based-approach",
+    "href": "slides/week-02/03-theory_dist_just.html#principles-of-ej-tenet-based-approach",
+    "title": "[Theory] Distributional (in)Justice",
+    "section": "17 Principles of EJ + Tenet-Based Approach",
+    "text": "17 Principles of EJ + Tenet-Based Approach\n\n17 Principles are still highly regarded\nToday, a lot of academic conversations around what EJ means to whom, and how to classify it.\nI chose a five tenet approach (currently used a lot in Energy Justice scholarship), because it provides a nice framework for theorizing different aspects of justice, while still staying true to the EJ imaginaries of POC Env. Leadership summit"
+  },
+  {
+    "objectID": "slides/week-02/03-theory_dist_just.html#principles-tenet-sorting",
+    "href": "slides/week-02/03-theory_dist_just.html#principles-tenet-sorting",
+    "title": "[Theory] Distributional (in)Justice",
+    "section": "Principles + Tenet Sorting",
+    "text": "Principles + Tenet Sorting\n In two groups: Sort the 17 Principles of EJ into the five tenets, be ready to discuss!"
+  },
+  {
+    "objectID": "slides/week-02/03-theory_dist_just.html#sorting-results",
+    "href": "slides/week-02/03-theory_dist_just.html#sorting-results",
+    "title": "[Theory] Distributional (in)Justice",
+    "section": "Sorting Results",
+    "text": "Sorting Results\n\nDefining Environmental Justice is tricky, and many definitions/approaches will overlap.\n\nThis can be both a strength and a challenge.\nIf I could make this class 34 weeks long, I would!"
+  },
+  {
+    "objectID": "slides/week-02/03-theory_dist_just.html#origins-of-ej-1",
+    "href": "slides/week-02/03-theory_dist_just.html#origins-of-ej-1",
+    "title": "[Theory] Distributional (in)Justice",
+    "section": "Origins of EJ",
+    "text": "Origins of EJ\n\nAny other reactions, thoughts, or things you’d like to discuss from the Murdock piece (history of EJ)?"
+  },
+  {
+    "objectID": "slides/week-02/03-theory_dist_just.html#but-what-if-the-world-is-unequal",
+    "href": "slides/week-02/03-theory_dist_just.html#but-what-if-the-world-is-unequal",
+    "title": "[Theory] Distributional (in)Justice",
+    "section": "But what if the world is unequal?",
+    "text": "But what if the world is unequal?\n\nBases for deviating from strict equality"
+  },
+  {
+    "objectID": "slides/week-02/03-theory_dist_just.html#minimum-capabilities",
+    "href": "slides/week-02/03-theory_dist_just.html#minimum-capabilities",
+    "title": "[Theory] Distributional (in)Justice",
+    "section": "Minimum Capabilities",
+    "text": "Minimum Capabilities\n\nRather than comparing the burden that people bear, maybe we focus on what people need to lead a meaningful life (Sen, 2009).\nIncludes physical wellbeing and ability to make choices.\nCan align well with legal approach to environmental protection (right to basic free will and wellbeing)."
+  },
+  {
+    "objectID": "slides/week-02/03-theory_dist_just.html#thoughts-on-distributional-justice",
+    "href": "slides/week-02/03-theory_dist_just.html#thoughts-on-distributional-justice",
+    "title": "[Theory] Distributional (in)Justice",
+    "section": "Thoughts on Distributional Justice?",
+    "text": "Thoughts on Distributional Justice?\n\nUtilitarianism\nEquality\nCapabilities"
+  },
+  {
+    "objectID": "slides/week-02/03-theory_dist_just.html#theoretical-applications",
+    "href": "slides/week-02/03-theory_dist_just.html#theoretical-applications",
+    "title": "[Theory] Distributional (in)Justice",
+    "section": "Theoretical Applications",
+    "text": "Theoretical Applications\n\nFantastic case of distributional justice.\nUses data to legitimize lived experience.\nSeminal study that influenced national SOE report, POC summit, and Environmental Justice Executive Order."
+  },
+  {
+    "objectID": "slides/week-02/03-theory_dist_just.html#what-well-be-doing",
+    "href": "slides/week-02/03-theory_dist_just.html#what-well-be-doing",
+    "title": "[Theory] Distributional (in)Justice",
+    "section": "What we’ll be doing",
+    "text": "What we’ll be doing\n\nIntro to R and what it can do\nRecreating Bullard’s tables, creating our own.\nMaking one plot\nConnecting to theory"
   }
 ]

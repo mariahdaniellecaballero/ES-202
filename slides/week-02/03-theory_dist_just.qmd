@@ -15,4 +15,114 @@ format:
 execute:
   freeze: auto
 ---
-# Slides will be posted 24 hours in advance of class.
+
+#  Class Overview {.smaller}
+- Centering activity
+- Last week
+- EJ over time
+  - EJ timeline
+  - 17 principles of EJ + Tenet-based approach
+- Distributional Justice
+- Intro to community case study (Houston, TX, 1979)
+- Check for Posit Access
+
+# Centering Activity 
+Julia
+
+# Last week 
+![](./images/mind_map.png)
+
+# 
+![](./images/intersectional_Ej_fig.png)
+
+## What we Read {.smaller}
+- Murdock, E. G. (2020). [A history of environmental justice: Foundations, narratives, and perspectives](https://ebookcentral.proquest.com/lib/well/reader.action?docID=6228917&ppg=40&c=RVBVQg). In *Environmental justice* (pp. 6-17). Routledge.
+- Kaswan, A. (2020). [Distributive environmental justice](https://ebookcentral.proquest.com/lib/well/reader.action?docID=6228917&ppg=58&c=RVBVQg). In *Environmental justice* (pp. 21-36). Routledge.
+
+# EJ over Time
+
+## Origins of EJ {.smaller}
+::: columns
+::: {.column width="60%"}
+- Term "environmental justice" was popularized in 1980s
+- **1982:** Began as a social movement
+  - Communities of color organizing and resisting unfair siting activities (toxic waste, landfills, and oil refineries)
+  - Protests in Warren County, NC are especially salient to origins of EJ
+- **1987:** United Church of Christ (UCC) Commission for Racial Justice published report on Black and Latine exposure to toxic sites. 
+- **1991:** UCC hosted the First National People of Color Environmental Leadership Summit, where the 17 Principles of Environmental Justice were created.
+:::
+::: {.column width="40%"}
+![](./images/poc_env_summit.png)
+:::
+:::
+ 
+
+## 17 Principles of EJ + Tenet-Based Approach
+- 17 Principles are still highly regarded
+-  Today, a lot of academic conversations around what EJ means to whom, and how to classify it.
+- I chose a five tenet approach (currently used a lot in Energy Justice scholarship), because it provides a nice framework for theorizing different aspects of justice, *while still staying true to the EJ imaginaries of POC Env. Leadership summit*
+
+## Principles + Tenet Sorting
+<span style="color:red;"> In two groups: Sort the 17 Principles of EJ into the five tenets, be ready to discuss! </span> 
+
+## Sorting Results
+- Defining Environmental Justice is tricky, and many definitions/approaches will overlap. 
+  - This can be both a strength and a challenge. 
+  - If I could make this class 34 weeks long, I would!
+ 
+
+## Origins of EJ 
+- Any other reactions, thoughts, or things you'd like to discuss from the Murdock piece (history of EJ)? 
+
+# Distributional Justice
+- Three dominant theories:
+  - utilitarianism
+  - equality
+  - capabilities
+
+# Utilitarianism
+- "Most good for the most people"
+- Can justify poor conditions for few, if it means much better conditions for many. 
+- Utilitarians do not ignore that inequality is relative.
+  - Providing resources to low-income families more impactful than rich ones -> greater impact on overall social welfare. 
+
+# Equality
+- Based in Rawl's concept, "Veil of Ignorance"
+  - If we didn't know our own identity, and asked what kind of distribution would be most fair, we would choose equality as a foundation. 
+  - "No one should be subject to more harm than others"
+
+## But what if the world is unequal?{.smaller}
+- Bases for deviating from strict equality
+![](./images/deviating_from_equality.png)
+
+
+## Minimum Capabilities
+- Rather than comparing the burden that people bear, maybe we focus on what people need to lead a meaningful life (Sen, 2009). 
+- Includes physical wellbeing and ability to make choices.
+- Can align well with legal approach to environmental protection (right to basic free will and wellbeing).
+
+## Thoughts on Distributional Justice?
+- Utilitarianism
+- Equality
+- Capabilities
+
+# Intro to Community Case Study
+
+## Theoretical Applications 
+- Fantastic case of distributional justice. 
+- Uses data to legitimize lived experience.
+- Seminal study that influenced national SOE report, POC summit, and Environmental Justice Executive Order. 
+
+## What we'll be doing
+- Intro to R and what it can do 
+- Recreating Bullard's tables, creating our own. 
+- Making one plot 
+- Connecting to theory
+
+# Logistics
+For Friday: 
+
+- Clara leading centering activity. :-)
+- Read community case study in schedule
+- Review Chapter 1 of RFDS [optional]
+- Make sure posit login is working!

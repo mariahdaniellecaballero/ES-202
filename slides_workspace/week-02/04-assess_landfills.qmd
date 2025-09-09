@@ -18,7 +18,6 @@ execute:
 
 
 # Class Overview 
-
 - Centering activity
 - Setting the stage
 - Paired coding
@@ -49,7 +48,7 @@ Clara :-)
 ## Homework Approach
 - Assignments will be started in class on Fridays in pairs and submitted the following Thursday individually. 
 - I'll lecture a bit throughout the class to introduce new skills or topics, then let pairs work through sections of the assignment. 
-- I'll choose pairs randomly using nametags
+
 
 # Group Coding
 ## Learning Outcomes
@@ -69,7 +68,7 @@ Clara :-)
   - Robert Bullard's original data
 - Note on how I got this data
 
-## Understanding the IDE
+## Understanding the IDE {.smaller}
 ::: columns
 ::: {.column width="1%"}
 
@@ -150,7 +149,6 @@ sites
 # Recreating Tables 1 through 3 (collaborative)
 
 ## Selecting variables
-Table One: City of Houston Garbage Incinerators
 ```{r}
 #| warning: false
 #| message: false
@@ -158,6 +156,8 @@ Table One: City of Houston Garbage Incinerators
 table_one <- sites |>
   filter(type == "Incinerator") |>
   select(facility, neighborhood, predom_eth_1979, location)
+
+table_one
 ```
 
 ## Formatting Tables 
@@ -179,7 +179,7 @@ table_one |>
     title = ("Table 1"),
     subtitle = "City of Houston Garbage Incinerators"
   ) |>
-  tab_source_note("The above Houston-owned garbage incinerators were in operation between the 1920s' and 1975")
+  tab_source_note("The above Houston-owned garbage incinerators were in operation between the 1920's and 1975")
 ```
 
 ## Exercise One: Rinse, Wash, Repeat for Tables 2 and 3
