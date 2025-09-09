@@ -30,6 +30,83 @@
     ]
   },
   {
+    "objectID": "slides/week-02/03-theory_dist_just.html#what-we-read",
+    "href": "slides/week-02/03-theory_dist_just.html#what-we-read",
+    "title": "[Theory] Distributional (in)Justice",
+    "section": "What we Read",
+    "text": "What we Read\n\nMurdock, E. G. (2020). A history of environmental justice: Foundations, narratives, and perspectives. In Environmental justice (pp. 6-17). Routledge.\nKaswan, A. (2020). Distributive environmental justice. In Environmental justice (pp. 21-36). Routledge."
+  },
+  {
+    "objectID": "slides/week-02/03-theory_dist_just.html#origins-of-ej",
+    "href": "slides/week-02/03-theory_dist_just.html#origins-of-ej",
+    "title": "[Theory] Distributional (in)Justice",
+    "section": "Origins of EJ",
+    "text": "Origins of EJ\n\n\n\nTerm “environmental justice” was popularized in 1980s\n1982: Began as a social movement\n\nCommunities of color organizing and resisting unfair siting activities (toxic waste, landfills, and oil refineries)\nProtests in Warren County, NC are especially salient to origins of EJ\n\n1987: United Church of Christ (UCC) Commission for Racial Justice published report on Black and Latine exposure to toxic sites.\n1991: UCC hosted the First National People of Color Environmental Leadership Summit, where the 17 Principles of Environmental Justice were created."
+  },
+  {
+    "objectID": "slides/week-02/03-theory_dist_just.html#principles-of-ej-tenet-based-approach",
+    "href": "slides/week-02/03-theory_dist_just.html#principles-of-ej-tenet-based-approach",
+    "title": "[Theory] Distributional (in)Justice",
+    "section": "17 Principles of EJ + Tenet-Based Approach",
+    "text": "17 Principles of EJ + Tenet-Based Approach\n\n17 Principles are still highly regarded\nToday, a lot of academic conversations around what EJ means to whom, and how to classify it.\nI chose a five tenet approach (currently used a lot in Energy Justice scholarship), because it provides a nice framework for theorizing different aspects of justice, while still staying true to the EJ imaginaries of POC Env. Leadership summit"
+  },
+  {
+    "objectID": "slides/week-02/03-theory_dist_just.html#principles-tenet-sorting",
+    "href": "slides/week-02/03-theory_dist_just.html#principles-tenet-sorting",
+    "title": "[Theory] Distributional (in)Justice",
+    "section": "Principles + Tenet Sorting",
+    "text": "Principles + Tenet Sorting\n In two groups: Sort the 17 Principles of EJ into the five tenets, be ready to discuss!"
+  },
+  {
+    "objectID": "slides/week-02/03-theory_dist_just.html#sorting-results",
+    "href": "slides/week-02/03-theory_dist_just.html#sorting-results",
+    "title": "[Theory] Distributional (in)Justice",
+    "section": "Sorting Results",
+    "text": "Sorting Results\n\nDefining Environmental Justice is tricky, and many definitions/approaches will overlap.\n\nThis can be both a strength and a challenge.\nIf I could make this class 34 weeks long, I would!"
+  },
+  {
+    "objectID": "slides/week-02/03-theory_dist_just.html#origins-of-ej-1",
+    "href": "slides/week-02/03-theory_dist_just.html#origins-of-ej-1",
+    "title": "[Theory] Distributional (in)Justice",
+    "section": "Origins of EJ",
+    "text": "Origins of EJ\n\nAny other reactions, thoughts, or things you’d like to discuss from the Murdock piece (history of EJ)?"
+  },
+  {
+    "objectID": "slides/week-02/03-theory_dist_just.html#but-what-if-the-world-is-unequal",
+    "href": "slides/week-02/03-theory_dist_just.html#but-what-if-the-world-is-unequal",
+    "title": "[Theory] Distributional (in)Justice",
+    "section": "But what if the world is unequal?",
+    "text": "But what if the world is unequal?\n\nBases for deviating from strict equality"
+  },
+  {
+    "objectID": "slides/week-02/03-theory_dist_just.html#minimum-capabilities",
+    "href": "slides/week-02/03-theory_dist_just.html#minimum-capabilities",
+    "title": "[Theory] Distributional (in)Justice",
+    "section": "Minimum Capabilities",
+    "text": "Minimum Capabilities\n\nRather than comparing the burden that people bear, maybe we focus on what people need to lead a meaningful life (Sen, 2009).\nIncludes physical wellbeing and ability to make choices.\nCan align well with legal approach to environmental protection (right to basic free will and wellbeing)."
+  },
+  {
+    "objectID": "slides/week-02/03-theory_dist_just.html#thoughts-on-distributional-justice",
+    "href": "slides/week-02/03-theory_dist_just.html#thoughts-on-distributional-justice",
+    "title": "[Theory] Distributional (in)Justice",
+    "section": "Thoughts on Distributional Justice?",
+    "text": "Thoughts on Distributional Justice?\n\nUtilitarianism\nEquality\nCapabilities"
+  },
+  {
+    "objectID": "slides/week-02/03-theory_dist_just.html#theoretical-applications",
+    "href": "slides/week-02/03-theory_dist_just.html#theoretical-applications",
+    "title": "[Theory] Distributional (in)Justice",
+    "section": "Theoretical Applications",
+    "text": "Theoretical Applications\n\nFantastic case of distributional justice.\nUses data to legitimize lived experience.\nSeminal study that influenced national SOE report, POC summit, and Environmental Justice Executive Order."
+  },
+  {
+    "objectID": "slides/week-02/03-theory_dist_just.html#what-well-be-doing",
+    "href": "slides/week-02/03-theory_dist_just.html#what-well-be-doing",
+    "title": "[Theory] Distributional (in)Justice",
+    "section": "What we’ll be doing",
+    "text": "What we’ll be doing\n\nIntro to R and what it can do\nRecreating Bullard’s tables, creating our own.\nMaking one plot\nConnecting to theory"
+  },
+  {
     "objectID": "slides/week-01/02-Application.html#what-we-read",
     "href": "slides/week-01/02-Application.html#what-we-read",
     "title": "EJ + Intersectionality",
@@ -333,7 +410,7 @@
     "href": "slides_workspace/week-02/04-assess_landfills.html#homework-approach",
     "title": "[Assess] Solid Waste Landfill Siting",
     "section": "Homework Approach",
-    "text": "Homework Approach\n\nAssignments will be started in class on Fridays in pairs and submitted the following Thursday individually.\nI’ll lecture a bit throughout the class to introduce new skills or topics, then let pairs work through sections of the assignment.\nI’ll choose pairs randomly using nametags"
+    "text": "Homework Approach\n\nAssignments will be started in class on Fridays in pairs and submitted the following Thursday individually.\nI’ll lecture a bit throughout the class to introduce new skills or topics, then let pairs work through sections of the assignment."
   },
   {
     "objectID": "slides_workspace/week-02/04-assess_landfills.html#learning-outcomes",
@@ -403,14 +480,14 @@
     "href": "slides_workspace/week-02/04-assess_landfills.html#selecting-variables",
     "title": "[Assess] Solid Waste Landfill Siting",
     "section": "Selecting variables",
-    "text": "Selecting variables\nTable One: City of Houston Garbage Incinerators\n\ntable_one &lt;- sites |&gt;\n  filter(type == \"Incinerator\") |&gt;\n  select(facility, neighborhood, predom_eth_1979, location)"
+    "text": "Selecting variables\n\ntable_one &lt;- sites |&gt;\n  filter(type == \"Incinerator\") |&gt;\n  select(facility, neighborhood, predom_eth_1979, location)\n\ntable_one\n\n# A tibble: 5 × 4\n  facility         neighborhood           predom_eth_1979 location \n  &lt;chr&gt;            &lt;chr&gt;                  &lt;chr&gt;           &lt;chr&gt;    \n1 Fourth Ward      FOURTH WARD            Black           Southwest\n2 Patterson Street WEST END/COTTAGE GROVE Black           Northwest\n3 Kelly Street     KASHMERE GARDENS       Black           Northeast\n4 Holmes Road      SUNNYSIDE              Black           Southeast\n5 Velasco          SECOND WARD            Hispanic        Southeast"
   },
   {
     "objectID": "slides_workspace/week-02/04-assess_landfills.html#formatting-tables",
     "href": "slides_workspace/week-02/04-assess_landfills.html#formatting-tables",
     "title": "[Assess] Solid Waste Landfill Siting",
     "section": "Formatting Tables",
-    "text": "Formatting Tables\n\ntable_one |&gt;\n  gt() |&gt;\n  cols_label(\n    facility = \"Site of Incinerator\",\n    neighborhood = \"Neighborhood\",\n    predom_eth_1979 = \"Ethnicity\",\n    location = \"Location\"\n  ) |&gt;\n  tab_header(\n    title = (\"Table 1\"),\n    subtitle = \"City of Houston Garbage Incinerators\"\n  ) |&gt;\n  tab_source_note(\"The above Houston-owned garbage incinerators were in operation between the 1920s' and 1975\")\n\n\n\n\n\n\n\nTable 1\n\n\nCity of Houston Garbage Incinerators\n\n\nSite of Incinerator\nNeighborhood\nEthnicity\nLocation\n\n\n\n\nFourth Ward\nFOURTH WARD\nBlack\nSouthwest\n\n\nPatterson Street\nWEST END/COTTAGE GROVE\nBlack\nNorthwest\n\n\nKelly Street\nKASHMERE GARDENS\nBlack\nNortheast\n\n\nHolmes Road\nSUNNYSIDE\nBlack\nSoutheast\n\n\nVelasco\nSECOND WARD\nHispanic\nSoutheast\n\n\n\nThe above Houston-owned garbage incinerators were in operation between the 1920s' and 1975"
+    "text": "Formatting Tables\n\ntable_one |&gt;\n  gt() |&gt;\n  cols_label(\n    facility = \"Site of Incinerator\",\n    neighborhood = \"Neighborhood\",\n    predom_eth_1979 = \"Ethnicity\",\n    location = \"Location\"\n  ) |&gt;\n  tab_header(\n    title = (\"Table 1\"),\n    subtitle = \"City of Houston Garbage Incinerators\"\n  ) |&gt;\n  tab_source_note(\"The above Houston-owned garbage incinerators were in operation between the 1920's and 1975\")\n\n\n\n\n\n\n\nTable 1\n\n\nCity of Houston Garbage Incinerators\n\n\nSite of Incinerator\nNeighborhood\nEthnicity\nLocation\n\n\n\n\nFourth Ward\nFOURTH WARD\nBlack\nSouthwest\n\n\nPatterson Street\nWEST END/COTTAGE GROVE\nBlack\nNorthwest\n\n\nKelly Street\nKASHMERE GARDENS\nBlack\nNortheast\n\n\nHolmes Road\nSUNNYSIDE\nBlack\nSoutheast\n\n\nVelasco\nSECOND WARD\nHispanic\nSoutheast\n\n\n\nThe above Houston-owned garbage incinerators were in operation between the 1920's and 1975"
   },
   {
     "objectID": "slides_workspace/week-02/04-assess_landfills.html#exercise-one-rinse-wash-repeat-for-tables-2-and-3",
@@ -1295,81 +1372,74 @@
     "text": "What we Read\n\nMurdock, E. G. (2020). A history of environmental justice: Foundations, narratives, and perspectives. In Environmental justice (pp. 6-17). Routledge.\nKaswan, A. (2020). Distributive environmental justice. In Environmental justice (pp. 21-36). Routledge."
   },
   {
-    "objectID": "slides_workspace/week-02/03-theory_dist_just.html#what-we-know",
-    "href": "slides_workspace/week-02/03-theory_dist_just.html#what-we-know",
-    "title": "[Theory] Distributional (in)Justice",
-    "section": "What we know",
-    "text": "What we know\n\n In groups of 4: draft your definition of Environmental Justice, be ready to share!"
-  },
-  {
-    "objectID": "slides_workspace/week-02/03-theory_dist_just.html#similaritiesdifferences-in-definitions",
-    "href": "slides_workspace/week-02/03-theory_dist_just.html#similaritiesdifferences-in-definitions",
-    "title": "[Theory] Distributional (in)Justice",
-    "section": "Similarities/Differences in definitions?",
-    "text": "Similarities/Differences in definitions?"
-  },
-  {
     "objectID": "slides_workspace/week-02/03-theory_dist_just.html#origins-of-ej",
     "href": "slides_workspace/week-02/03-theory_dist_just.html#origins-of-ej",
     "title": "[Theory] Distributional (in)Justice",
     "section": "Origins of EJ",
-    "text": "Origins of EJ\n\nTerm “environmental justice” was popularized in 1980s\n1982: Began as a social movement\n\nCommunities of color organizing and resisting unfair siting activities (toxic waste, landfills, and oil refineries)\nProtests in Warren County, NC are especially salient to EJ movement\n\n1987: United Church of Christ (UCC) Commission for Racial Justice published report on Black and Latine exposure to toxic sites.\n1991: UCC hosted the First National People of Color Environmental Leadership Summit, where the 17 Principles of Environmental Justice were created"
+    "text": "Origins of EJ\n\n\n\nTerm “environmental justice” was popularized in 1980s\n1982: Began as a social movement\n\nCommunities of color organizing and resisting unfair siting activities (toxic waste, landfills, and oil refineries)\nProtests in Warren County, NC are especially salient to origins of EJ\n\n1987: United Church of Christ (UCC) Commission for Racial Justice published report on Black and Latine exposure to toxic sites.\n1991: UCC hosted the First National People of Color Environmental Leadership Summit, where the 17 Principles of Environmental Justice were created."
   },
   {
     "objectID": "slides_workspace/week-02/03-theory_dist_just.html#principles-of-ej-tenet-based-approach",
     "href": "slides_workspace/week-02/03-theory_dist_just.html#principles-of-ej-tenet-based-approach",
     "title": "[Theory] Distributional (in)Justice",
     "section": "17 Principles of EJ + Tenet-Based Approach",
-    "text": "17 Principles of EJ + Tenet-Based Approach\n\n17 Principles are still highly regarded\nA lot of academic conversations around what EJ means to whom, and how to classify it.\nlmk if you want more readings suggestions on this\nI chose a five tenet approach (currently used a lot in Energy Justice scholarship), because I think it provides a nice framework for theorizing different aspects of justice."
+    "text": "17 Principles of EJ + Tenet-Based Approach\n\n17 Principles are still highly regarded\nToday, a lot of academic conversations around what EJ means to whom, and how to classify it.\nI chose a five tenet approach (currently used a lot in Energy Justice scholarship), because it provides a nice framework for theorizing different aspects of justice, while still staying true to the EJ imaginaries of POC Env. Leadership summit"
   },
   {
     "objectID": "slides_workspace/week-02/03-theory_dist_just.html#principles-tenet-sorting",
     "href": "slides_workspace/week-02/03-theory_dist_just.html#principles-tenet-sorting",
     "title": "[Theory] Distributional (in)Justice",
     "section": "Principles + Tenet Sorting",
-    "text": "Principles + Tenet Sorting\n\n In groups of 4: Sort the 17 Principles of EJ into the five tenets, be ready to discuss!"
+    "text": "Principles + Tenet Sorting\n In groups of 4: Sort the 17 Principles of EJ into the five tenets, be ready to discuss!"
   },
   {
     "objectID": "slides_workspace/week-02/03-theory_dist_just.html#sorting-results",
     "href": "slides_workspace/week-02/03-theory_dist_just.html#sorting-results",
     "title": "[Theory] Distributional (in)Justice",
     "section": "Sorting Results",
-    "text": "Sorting Results\n\nDefining Environmental Justice is tricky, and many definitions/approaches will overlap.\n\nThis can be both a strength and a challenge.\n(If I could make this course 34 weeks long, I would!)"
+    "text": "Sorting Results\n\nDefining Environmental Justice is tricky, and many definitions/approaches will overlap.\n\nThis can be both a strength and a challenge.\nIf I could make this class 34 weeks long, I would!"
   },
   {
-    "objectID": "slides_workspace/week-02/03-theory_dist_just.html#overview",
-    "href": "slides_workspace/week-02/03-theory_dist_just.html#overview",
+    "objectID": "slides_workspace/week-02/03-theory_dist_just.html#origins-of-ej-1",
+    "href": "slides_workspace/week-02/03-theory_dist_just.html#origins-of-ej-1",
     "title": "[Theory] Distributional (in)Justice",
-    "section": "Overview",
-    "text": "Overview"
+    "section": "Origins of EJ",
+    "text": "Origins of EJ\n\nAny other reactions, thoughts, or things you’d like to discuss from the Murdock piece (history of EJ)?"
+  },
+  {
+    "objectID": "slides_workspace/week-02/03-theory_dist_just.html#but-what-if-the-world-is-unequal",
+    "href": "slides_workspace/week-02/03-theory_dist_just.html#but-what-if-the-world-is-unequal",
+    "title": "[Theory] Distributional (in)Justice",
+    "section": "But what if the world is unequal?",
+    "text": "But what if the world is unequal?\n\nBases for deviating from strict equality"
+  },
+  {
+    "objectID": "slides_workspace/week-02/03-theory_dist_just.html#minimum-capabilities",
+    "href": "slides_workspace/week-02/03-theory_dist_just.html#minimum-capabilities",
+    "title": "[Theory] Distributional (in)Justice",
+    "section": "Minimum Capabilities",
+    "text": "Minimum Capabilities\n\nRather than comparing the burden that people bear, maybe we focus on what people need to lead a meaningful life (Sen, 2009).\nIncludes physical wellbeing and ability to make choices.\nCan align well with legal approach to environmental protection (right to basic free will and wellbeing)."
+  },
+  {
+    "objectID": "slides_workspace/week-02/03-theory_dist_just.html#thoughts-on-distributional-justice",
+    "href": "slides_workspace/week-02/03-theory_dist_just.html#thoughts-on-distributional-justice",
+    "title": "[Theory] Distributional (in)Justice",
+    "section": "Thoughts on Distributional Justice?",
+    "text": "Thoughts on Distributional Justice?\n\nUtilitarianism\nEquality\nCapabilities"
   },
   {
     "objectID": "slides_workspace/week-02/03-theory_dist_just.html#theoretical-applications",
     "href": "slides_workspace/week-02/03-theory_dist_just.html#theoretical-applications",
     "title": "[Theory] Distributional (in)Justice",
     "section": "Theoretical Applications",
-    "text": "Theoretical Applications"
+    "text": "Theoretical Applications\n\nFantastic case of distributional justice.\nUses data to legitimize lived experience.\nSeminal study that influenced national SOE report, POC summit, and Environmental Justice Executive Order."
   },
   {
-    "objectID": "slides_workspace/week-02/03-theory_dist_just.html#why-i-chose-this-case-study",
-    "href": "slides_workspace/week-02/03-theory_dist_just.html#why-i-chose-this-case-study",
+    "objectID": "slides_workspace/week-02/03-theory_dist_just.html#what-well-be-doing",
+    "href": "slides_workspace/week-02/03-theory_dist_just.html#what-well-be-doing",
     "title": "[Theory] Distributional (in)Justice",
-    "section": "Why I chose this case study",
-    "text": "Why I chose this case study"
-  },
-  {
-    "objectID": "slides_workspace/week-02/03-theory_dist_just.html#assessment-approach",
-    "href": "slides_workspace/week-02/03-theory_dist_just.html#assessment-approach",
-    "title": "[Theory] Distributional (in)Justice",
-    "section": "Assessment Approach",
-    "text": "Assessment Approach"
-  },
-  {
-    "objectID": "slides_workspace/week-02/03-theory_dist_just.html#outcomes-of-this-case-study",
-    "href": "slides_workspace/week-02/03-theory_dist_just.html#outcomes-of-this-case-study",
-    "title": "[Theory] Distributional (in)Justice",
-    "section": "Outcomes of this case study",
-    "text": "Outcomes of this case study"
+    "section": "What we’ll be doing",
+    "text": "What we’ll be doing\n\nIntro to R and what it can do\nRecreating Bullard’s tables, creating our own.\nMaking one plot\nConnecting to theory"
   },
   {
     "objectID": "slides_workspace/week-03/05-theory_proc_just.html#overview",
@@ -1825,7 +1895,7 @@
     "href": "syllabus.html#course-community",
     "title": "Syllabus",
     "section": "Course Community",
-    "text": "Course Community\n\nTeaching, Learning, and Being in Community\nI hope that students not only take away the skills associated with the course’s measurable outcomes, but also learn more about themselves, their peers, and the environment around them. This requires a certain level of vulnerability and trust, which I hope that we can establish together.\nI also designed this course to help students foster community beyond the classroom, so that they too can go on to build expansive, solution-oriented movements that welcome everyone into a collective vision of what the world could be. I share some of adrienne marie brown’s 1 points on social justice and community, that may be useful to ask of yourself and others throughout this course:\n\nHow can we invite our peers into belonging?\nHow can we create conditions that ensure dignity for each person?\nHow can we challenge regressive beliefs meant to divide us, and remind one another that we belong to this planet, and each other?\nHow can we forge communities that not only survive, but can imagine more equitable realities?\n\n\n\nShared Expectations\n\n\n\n\n\n\nNote\n\n\n\nThis section will be completed during our first week of classes, more to come, soon!",
+    "text": "Course Community\n\nTeaching, Learning, and Being in Community\nI hope that students not only take away the skills associated with the course’s measurable outcomes, but also learn more about themselves, their peers, and the environment around them. This requires a certain level of vulnerability and trust, which I hope that we can establish together.\nI also designed this course to help students foster community beyond the classroom, so that they too can go on to build expansive, solution-oriented movements that welcome everyone into a collective vision of what the world could be. I share some of adrienne marie brown’s 1 points on social justice and community, that may be useful to ask of yourself and others throughout this course:\n\nHow can we invite our peers into belonging?\nHow can we create conditions that ensure dignity for each person?\nHow can we challenge regressive beliefs meant to divide us, and remind one another that we belong to this planet, and each other?\nHow can we forge communities that not only survive, but can imagine more equitable realities?\n\n\n\nShared Expectations\nIn this course, we intend to be accountable to one another by… - Assuming best intentions from peers - Asking for clarification if you disagree with a statement - Not having phones on the desk - Using devices for class material only - Collaborating with peers",
     "crumbs": [
       "Syllabus"
     ]
