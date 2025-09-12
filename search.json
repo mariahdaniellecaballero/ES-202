@@ -2057,7 +2057,7 @@
     "href": "slides/week-02/04-assess_landfills.html#exercise-3-reading-a-vignette-collaborative",
     "title": "[Assess] Solid Waste Landfill Siting",
     "section": "Exercise 3: Reading a Vignette (collaborative)",
-    "text": "Exercise 3: Reading a Vignette (collaborative)\n\nOften, we get a bit mixed up when we’re first starting.\nOne helpful way to troubleshoot, can be typing “?” followed by the function into your environment (i.e., ?scale_fill_manual())\nRead the vignette for the scale_fill_manual() package. What package does it recommend for color blindness?"
+    "text": "Exercise 3: Reading a Vignette (collaborative)\n\nOften, we get a bit mixed up when we’re first starting.\nOne helpful way to troubleshoot, can be typing “?” followed by the function into your console (i.e., ?scale_fill_manual())\nRead the vignette for the scale_fill_manual() package. What package does it recommend for color blindness?"
   },
   {
     "objectID": "slides/week-02/04-assess_landfills.html#exercise-04-individual",
