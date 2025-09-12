@@ -385,6 +385,13 @@
     "text": "summarize()\n\nsummarize() is often used in tandem with the group_by() function to calculate a summary statistic for a a group.\n\n\nbracero_clean |&gt;\n group_by(language) |&gt;\n summarize(n_interviews = n())\n\n# A tibble: 2 × 2\n  language n_interviews\n  &lt;chr&gt;           &lt;int&gt;\n1 eng                15\n2 spa                75"
   },
   {
+    "objectID": "slides_workspace/week-03/06-assess_braceros.html#slice",
+    "href": "slides_workspace/week-03/06-assess_braceros.html#slice",
+    "title": "[Assess] Bracero Farmworker Case Study",
+    "section": "slice",
+    "text": "slice\n\nslice_ functions help select a subset of rows\nslice_head(n = 5) will take the first five rows of the data\nslice_tail(n = 5) will take the last five rows of the data\nslice_min(x, n = 5) will take the five rows of data with the lowest values for column x.\nslice_max(x, n = 5) will take the five rows of data with the highest values for column x.\nslice_sample(n = 5) will select 5 random rows of data.\n\n\nbracero |&gt;\n  slice_sample(n = 15)\n\n# A tibble: 15 × 6\n   title                      subject      description date  identifier language\n   &lt;chr&gt;                      &lt;chr&gt;        &lt;chr&gt;       &lt;chr&gt; &lt;chr&gt;      &lt;chr&gt;   \n 1 Vincente Delgado           Bracero      \"Biographi… 2005… https://b… spa     \n 2 Salvador Esparza Carreño   Bracero      \"Biographi… 2003… https://b… spa     \n 3 Rodolfo Cruz Figueroa      Bracero      \"Biographi… 2002… https://b… spa     \n 4 Rodrigo Flores             Bracero      \"Biographi… 2003… https://b… spa     \n 5 Heriberto Cortéz Cortéz    Bracero      \"Biographi… 2002… https://b… spa     \n 6 Héctor Solís Fuentes       Bracero      \"Biographi… 2002… https://b… spa     \n 7 Pedro García               Bracero      \"Biographi… 2006… https://b… spa     \n 8 Alberto Montes González    Bracero      \"Biographi… 2005… https://b… spa     \n 9 Alberto Mendoza Torres     bracero      \"Biographi… 2003… https://b… spa     \n10 Anacleto Morales Franco    Bracero      \"Biographi… 2003… https://b… spa     \n11 Bernardo Treviño Cervantes bracero      \"Biographi… 2003… https://b… spa     \n12 Amadeo Tapia               Bracero      \"Biographi… 2006… https://b… spa     \n13 Enrique Torres Sánchez     Bracero      \"Biographi… 2003… https://b… spa     \n14 Socorro O. Pérez           Clerk typis… \"Biographi… 2003… https://b… eng     \n15 David Alfaro Sandoval      Bracero      \"Biographi… 2006… https://b… spa"
+  },
+  {
     "objectID": "slides_workspace/week-02/04-assess_landfills.html#my-approach-to-teaching-data-science-for-environmental-justice",
     "href": "slides_workspace/week-02/04-assess_landfills.html#my-approach-to-teaching-data-science-for-environmental-justice",
     "title": "[Assess] Solid Waste Landfill Siting",
@@ -565,6 +572,13 @@
     "title": "[Assess] Solid Waste Landfill Siting",
     "section": "Exercise 04 (individual)",
     "text": "Exercise 04 (individual)\nConnect to theory, see assignment for details."
+  },
+  {
+    "objectID": "slides_workspace/week-02/04-assess_landfills.html#next-week",
+    "href": "slides_workspace/week-02/04-assess_landfills.html#next-week",
+    "title": "[Assess] Solid Waste Landfill Siting",
+    "section": "Next Week",
+    "text": "Next Week\n\nZiyah leading centering activity\nFor Tuesday: Article on procedural justice\nHW 02 due Thursday at 11:59 PM\nES welcome back event! Tuesday, September 16, 12:30 to 1:30 PM, global flora courtyard\nClimate justice & war system event series: Tiara Na’Puti, Wednesday September 17, 5:30 to 7:30 PM, PNE Atrium"
   },
   {
     "objectID": "slides_workspace/week-01/01-Welcome.html#environmental-justice-a-community-centric-approach",
@@ -1871,90 +1885,6 @@
     "text": "For Friday\n\nCheck course website for readings\nPreview first assignment and come prepared with questions"
   },
   {
-    "objectID": "syllabus.html",
-    "href": "syllabus.html",
-    "title": "Syllabus",
-    "section": "",
-    "text": "In this interdisciplinary course, students are asked to engage with environmental justice — a social movement and form of inquiry intended to rectify the inequitable distribution of environmental benefit and burden — both theoretically and methodologically. Students will examine five forms of justice: distributional, recognitional, procedural, restorative, and cosmopolitan, and be invited to apply them to weekly community-level case studies. Using a combination of theory and introductory data visualization skills, we will learn from past injustices, explore present interventions, and imagine more equitable realities.\n\n\n\n\nDemonstrate an understanding of the nuances of an intersectional approach (i.e., how systems of power can reinforce oppression of land and people) and their applications to environmental injustice.\nReflect on how your positionality and lived experiences shape your approach to environmental justice.\nAssess empirical patterns of environmental injustice in US communities related to Food, Energy, and Water (FEW nexus).\nIdentify opportunities and challenges beyond distributional justice (procedural, recognitional, restorative, and cosmopolitan justice) for environmental solutions spatially and temporally.\nSuggest opportunities for intervention by developing a theory-driven logic model.",
-    "crumbs": [
-      "Syllabus"
-    ]
-  },
-  {
-    "objectID": "syllabus.html#goals-and-expectations",
-    "href": "syllabus.html#goals-and-expectations",
-    "title": "Syllabus",
-    "section": "",
-    "text": "In this interdisciplinary course, students are asked to engage with environmental justice — a social movement and form of inquiry intended to rectify the inequitable distribution of environmental benefit and burden — both theoretically and methodologically. Students will examine five forms of justice: distributional, recognitional, procedural, restorative, and cosmopolitan, and be invited to apply them to weekly community-level case studies. Using a combination of theory and introductory data visualization skills, we will learn from past injustices, explore present interventions, and imagine more equitable realities.\n\n\n\n\nDemonstrate an understanding of the nuances of an intersectional approach (i.e., how systems of power can reinforce oppression of land and people) and their applications to environmental injustice.\nReflect on how your positionality and lived experiences shape your approach to environmental justice.\nAssess empirical patterns of environmental injustice in US communities related to Food, Energy, and Water (FEW nexus).\nIdentify opportunities and challenges beyond distributional justice (procedural, recognitional, restorative, and cosmopolitan justice) for environmental solutions spatially and temporally.\nSuggest opportunities for intervention by developing a theory-driven logic model.",
-    "crumbs": [
-      "Syllabus"
-    ]
-  },
-  {
-    "objectID": "syllabus.html#course-community",
-    "href": "syllabus.html#course-community",
-    "title": "Syllabus",
-    "section": "Course Community",
-    "text": "Course Community\n\nTeaching, Learning, and Being in Community\nI hope that students not only take away the skills associated with the course’s measurable outcomes, but also learn more about themselves, their peers, and the environment around them. This requires a certain level of vulnerability and trust, which I hope that we can establish together.\nI also designed this course to help students foster community beyond the classroom, so that they too can go on to build expansive, solution-oriented movements that welcome everyone into a collective vision of what the world could be. I share some of adrienne marie brown’s 1 points on social justice and community, that may be useful to ask of yourself and others throughout this course:\n\nHow can we invite our peers into belonging?\nHow can we create conditions that ensure dignity for each person?\nHow can we challenge regressive beliefs meant to divide us, and remind one another that we belong to this planet, and each other?\nHow can we forge communities that not only survive, but can imagine more equitable realities?\n\n\n\nShared Expectations\nIn this course, we intend to be accountable to one another by… - Assuming best intentions from peers - Asking for clarification if you disagree with a statement - Not having phones on the desk - Using devices for class material only - Collaborating with peers",
-    "crumbs": [
-      "Syllabus"
-    ]
-  },
-  {
-    "objectID": "syllabus.html#course-policies",
-    "href": "syllabus.html#course-policies",
-    "title": "Syllabus",
-    "section": "Course Policies",
-    "text": "Course Policies\n\nLate Policy\nBecause we start homework assignments in class, and material is cumulative, it’s very important that readings and assignments are completed by the deadlines they are designed for. At the same time, I understand that life happens! To ensure students have a bit of added flexibility, each student has 3 24-hour late passes2:\n\nEach late pass may be applied to delay one assignment deadline by 24 hours within the semester.\nAny number of available passes may be applied to any assignment deadline. No work is accepted past the end of the final exam period, regardless of available late passes.\nLate passes are not transferable, reusable, or divisible.\nAfter your late pass budget is exhausted, each additional 24-hour delay in assignment submission is assessed a late penalty that subtracts 10% of the maximum assignment grade from your awarded grade on that assignment.\nTo use a late day, you must fill out this form before the assignment deadline.\n\nImportantly, because I designed the group project to be cumulative, and because a primary tenet of group collaboration is being accountable to one another, late work will not be accepted for the final group project, or any of its checkpoints.\nIf you anticipate an assignment will be late due to an emergency, please email me at least 24 hours before the due date to discuss a path forward. In collaboration with your class dean and/or health services, we will figure out the best path forward, together.\nIf you know you will need to miss class due to illness or family emergency, please let me know so we can make a plan for how to proceed.\n\n\nUse of Generative AI\nIn addition to the overwhelming energy and water use that data centers use to answer your queries (a distributional burden that communities like my hometown are now bearing 3), generative AI poses significant threats to the learning outcomes of this class. I designed this course to 1) strengthen students’ abilities to comprehend and apply justice-based theories, and 2) learn the foundations of data visualization in R. Therefore, I ask that you do not use it for the following:\n\nSummarizing or annoting readings\nGenerating code of any kind\nAnswering any questions on assignments\n\nIf you feel that generative AI can be used to improve your knowledge on a topic, or for brainstorming ideas without sacrificing your ability to think critically, please come speak with me about it, before you employ it in your workflow. I’m still learning the pros and cons of Generative AI in higher education, and I always welcome the discussion.\n\n\nCourse Components\n\nAttendance and Participation (10%): This primarily includes coming to class prepared (i.e., completed any preparatory readings/assignments before our scheduled course meeting), engaging with peers on course content (i.e., asking questions, sharing thoughts and ideas, participating in group activities).\nPositionality Statement (5%): The first assignment for the course will be a brief statement that explains your positionality and how it might influence your engagement with the course and its materials.\nWeekly Assignments (60%): Each week provides an opportunity to discuss and explore different forms of environmental justice through a community case study.\n\nTuesdays will focus on small and large-group discussions on key theoretical concepts related to that week’s community case study. Please come prepared to discuss the readings.\nFridays will mainly focus on an in-class data visualization exercise (each worth 10%) related to the weekly case study. Please read the assigned case study and review the exercise before class. Be prepared to work in rotating pairs on the assignment, then submit it individually by the following Thursday at 11:59 PM.\n\nCommunity Case Study Final Project (25%): End of semester group project on a community case study of your choice. Note that final project score is cumulative, including a project proposal (5%), project plan (10%), and final submission (10%). Please see the Final Project Description for more information.\n\n\n\nAssessment\nMy approach to assessment is centered on 1) gauging students’ learning as it corresponds to the course learning goals, and 2) providing feedback that facilitates growth. Wellesley’s grading policy aligns with these goals, and uses a relatively qualitative approach:\n\nGrade A is given to students who meet with conspicuous excellence every demand that can fairly be made by the course.\nGrade B is given to those students who add to the minimum of satisfactory attainment excellence in not all, but some of the following: organization, accuracy, originality, understanding, insight.\nGrade C is given to those students who have attained a satisfactory familiarity with the content of a course and who have demonstrated ability to use this knowledge in a satisfactory manner.\n\nFor individual work (weekly assignments and participation), I will provide written feedback on each learning outcome, along with a score of 1 to 5. For example, feedback on one community case study might look like this:\n\n\n\nLearning Outcome\nScore\n\n\n\n\nUnderstand basic tidy data structure\n4\n\n\nTransform and tidy data for necessary questions\n4\n\n\nExplore and summarize patterns\n3\n\n\nConnect it to theoretical understandings of procedural justice\n5\n\n\n\nFor team work (final group project), I will provide a rubric and grade the product on a percentage scale.\n\n\nCourse Readings\nThere are no textbooks for this course. All course readings will be made available on the website. Please see the schedule for each week’s corresponding material.\n\n\nLiving Syllabus\nSince this course is in its early development, I reserve the right to make minor adjustments, such as changes to assigned readings (well in advance of class), as needed or based on student feedback to improve the course.\n\n\nCommunication\nClass emails will be sent out via Brightspace. Please do feel free to email me with questions or concerns regarding the course, and I will do my best to respond within 48 hours (excluding weekends).\n\n\nAccessibility and Disability\nEvery student has the right to full access in this course. If you find any material difficulty to access due to course format, technology, or any other reason, please don’t hesitate to let me know so that we can identify appropriate accommodations.\nAdditionally, the Wellesley Office of Accessibility and Disability Resources (ADR) ensures that students receive reasonable and appropriate accommodations including but not limited to: testing accommodations, classroom accommodations, notetaking services, on-campus transportation, communication resources, and assistive technology. In the case that you require accommodations, please be in touch with ADR to request or update an accommodation letter.\n\n\nReligious Observance\nStudents observing a religious holiday that conflicts with a scheduled course event are encouraged to speak with me in advance to identify alternative arrangements. Students are also welcome to read more about the College’s Policy on National Holidays and Religious Days of Observance, or submit a Religious Observance Notification Form.\n\n\nDiscrimination, Harassment, and Sexual Misconduct\nWellesley College considers diversity essential to educational excellence, and we are committed to being a community in which each member thrives. The College does not allow discrimination or harassment based on race, color, sex, gender identity or expression, sexual orientation, ethnic or national origin or ancestry, physical or mental disability, pregnancy or any other protected status under applicable local, state or federal law.\nIf you or someone you know has experienced discrimination or harassment, support is available to you:\nConfidential Reporting: Students can report their experiences to Health Services (781-283-2810); Stone Center Counseling Service (781-283-2839); or Religious and Spiritual Life (781-283-2685). These offices are not required to report allegations of sexual misconduct to the College.\nNon-Confidential Reporting: You can let your instructor know. As faculty, we are obligated to report allegations of sex-based discrimination to the Non-discrimination/Title IX Office. You can report directly to the Non-discrimination/Title IX Office (781-283-2451) to receive support, and to learn more about your options for a response by the College or about reporting to a different institution. You can report to the Wellesley College Police Department (Emergency: 781-283-5555, Non-emergency: 781-283-2121) if you believe a crime has been committed, or if there is an immediate safety risk.\n\n\nFeedback\nI sincerely care about your experience in this course, and am always interested to hear your feedback. There are several ways to share your ideas and suggestions:\n\nCome talk to me! I know that students are likely to have different learning styles, which means I won’t be offended if you share ideas on how to improve things.\nYou can always provide feedback anonymously via this form\nI’ll also collect anonymous feedback about the course at the mid-semester point.",
-    "crumbs": [
-      "Syllabus"
-    ]
-  },
-  {
-    "objectID": "syllabus.html#important-dates",
-    "href": "syllabus.html#important-dates",
-    "title": "Syllabus",
-    "section": "Important Dates",
-    "text": "Important Dates\n\nSep 02: Classes begin\nSep 26: Credit/Noncredit grading option and Drop Deadline (4PM)\nOct 13-14: Indigenous Peoples’ Day; Fall break\nOct 28: Tanner Conference\nNov 26-28: Thanksgiving Break\nDec 10: Classes end\nDec 11-14: Reading period\nDec 15-18: Final exams",
-    "crumbs": [
-      "Syllabus"
-    ]
-  },
-  {
-    "objectID": "syllabus.html#acknowledgments",
-    "href": "syllabus.html#acknowledgments",
-    "title": "Syllabus",
-    "section": "Acknowledgments",
-    "text": "Acknowledgments\nThis course was created using templates created by Maria Tackett & Mine Cetinkaya-Rundel. I’m also very grateful for tips and resources from Dr. Yaniv Yacoby, Accessible Syllabus, and faculty feedback from the Wellesley Environmental Studies Department.",
-    "crumbs": [
-      "Syllabus"
-    ]
-  },
-  {
-    "objectID": "syllabus.html#footnotes",
-    "href": "syllabus.html#footnotes",
-    "title": "Syllabus",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nbrown, adrienne maree. (2024). Loving Corrections. AK Press.↩︎\nThanks to the Wellesley CS department for their late policy guidelines!↩︎\nRamadan, L., & Brownstone, S. (2024, July 28). Washington Is Giving Tax Breaks to Data Centers That Threaten the State’s Green Energy Push. ProPublica. https://www.propublica.org/article/data-centers-clean-energy-washington-state↩︎",
-    "crumbs": [
-      "Syllabus"
-    ]
-  },
-  {
-    "objectID": "slides_workspace/week-03/06-assess_braceros.html#slice",
-    "href": "slides_workspace/week-03/06-assess_braceros.html#slice",
-    "title": "[Assess] Bracero Farmworker Case Study",
-    "section": "slice",
-    "text": "slice\n\nslice_ functions help select a subset of rows\nslice_head(n = 5) will take the first five rows of the data\nslice_tail(n = 5) will take the last five rows of the data\nslice_min(x, n = 5) will take the five rows of data with the lowest values for column x.\nslice_max(x, n = 5) will take the five rows of data with the highest values for column x.\nslice_sample(n = 5) will select 5 random rows of data.\n\n\nbracero |&gt;\n  slice_sample(n = 15)\n\n# A tibble: 15 × 6\n   title                      subject      description date  identifier language\n   &lt;chr&gt;                      &lt;chr&gt;        &lt;chr&gt;       &lt;chr&gt; &lt;chr&gt;      &lt;chr&gt;   \n 1 Vincente Delgado           Bracero      \"Biographi… 2005… https://b… spa     \n 2 Salvador Esparza Carreño   Bracero      \"Biographi… 2003… https://b… spa     \n 3 Rodolfo Cruz Figueroa      Bracero      \"Biographi… 2002… https://b… spa     \n 4 Rodrigo Flores             Bracero      \"Biographi… 2003… https://b… spa     \n 5 Heriberto Cortéz Cortéz    Bracero      \"Biographi… 2002… https://b… spa     \n 6 Héctor Solís Fuentes       Bracero      \"Biographi… 2002… https://b… spa     \n 7 Pedro García               Bracero      \"Biographi… 2006… https://b… spa     \n 8 Alberto Montes González    Bracero      \"Biographi… 2005… https://b… spa     \n 9 Alberto Mendoza Torres     bracero      \"Biographi… 2003… https://b… spa     \n10 Anacleto Morales Franco    Bracero      \"Biographi… 2003… https://b… spa     \n11 Bernardo Treviño Cervantes bracero      \"Biographi… 2003… https://b… spa     \n12 Amadeo Tapia               Bracero      \"Biographi… 2006… https://b… spa     \n13 Enrique Torres Sánchez     Bracero      \"Biographi… 2003… https://b… spa     \n14 Socorro O. Pérez           Clerk typis… \"Biographi… 2003… https://b… eng     \n15 David Alfaro Sandoval      Bracero      \"Biographi… 2006… https://b… spa"
-  },
-  {
-    "objectID": "slides_workspace/week-02/04-assess_landfills.html#next-week",
-    "href": "slides_workspace/week-02/04-assess_landfills.html#next-week",
-    "title": "[Assess] Solid Waste Landfill Siting",
-    "section": "Next Week",
-    "text": "Next Week\n\nZiyah leading centering activity\nFor Tuesday: Article on procedural justice\nHW 02 due Thursday at 11:59 PM\nES welcome back event! Tuesday, September 16, 12:30 to 1:30 PM, global flora courtyard\nClimate justice & war system event series: Tiara Na’Puti, Wednesday September 17, 5:30 to 7:30 PM, PNE Atrium"
-  },
-  {
     "objectID": "slides/week-02/04-assess_landfills.html#my-approach-to-teaching-data-science-for-environmental-justice",
     "href": "slides/week-02/04-assess_landfills.html#my-approach-to-teaching-data-science-for-environmental-justice",
     "title": "[Assess] Solid Waste Landfill Siting",
@@ -2142,5 +2072,75 @@
     "title": "[Assess] Solid Waste Landfill Siting",
     "section": "Next Week",
     "text": "Next Week\n\nZiyah leading centering activity\nFor Tuesday: Article on procedural justice\nHW 02 due Thursday at 11:59 PM\nES welcome back event! Tuesday, September 16, 12:30 to 1:30 PM, global flora courtyard\nClimate justice & war system event series: Tiara Na’Puti, Wednesday September 17, 5:30 to 7:30 PM, PNE Atrium"
+  },
+  {
+    "objectID": "syllabus.html",
+    "href": "syllabus.html",
+    "title": "Syllabus",
+    "section": "",
+    "text": "In this interdisciplinary course, students are asked to engage with environmental justice — a social movement and form of inquiry intended to rectify the inequitable distribution of environmental benefit and burden — both theoretically and methodologically. Students will examine five forms of justice: distributional, recognitional, procedural, restorative, and cosmopolitan, and be invited to apply them to weekly community-level case studies. Using a combination of theory and introductory data visualization skills, we will learn from past injustices, explore present interventions, and imagine more equitable realities.\n\n\n\n\nDemonstrate an understanding of the nuances of an intersectional approach (i.e., how systems of power can reinforce oppression of land and people) and their applications to environmental injustice.\nReflect on how your positionality and lived experiences shape your approach to environmental justice.\nAssess empirical patterns of environmental injustice in US communities related to Food, Energy, and Water (FEW nexus).\nIdentify opportunities and challenges beyond distributional justice (procedural, recognitional, restorative, and cosmopolitan justice) for environmental solutions spatially and temporally.\nSuggest opportunities for intervention by developing a theory-driven logic model.",
+    "crumbs": [
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "syllabus.html#goals-and-expectations",
+    "href": "syllabus.html#goals-and-expectations",
+    "title": "Syllabus",
+    "section": "",
+    "text": "In this interdisciplinary course, students are asked to engage with environmental justice — a social movement and form of inquiry intended to rectify the inequitable distribution of environmental benefit and burden — both theoretically and methodologically. Students will examine five forms of justice: distributional, recognitional, procedural, restorative, and cosmopolitan, and be invited to apply them to weekly community-level case studies. Using a combination of theory and introductory data visualization skills, we will learn from past injustices, explore present interventions, and imagine more equitable realities.\n\n\n\n\nDemonstrate an understanding of the nuances of an intersectional approach (i.e., how systems of power can reinforce oppression of land and people) and their applications to environmental injustice.\nReflect on how your positionality and lived experiences shape your approach to environmental justice.\nAssess empirical patterns of environmental injustice in US communities related to Food, Energy, and Water (FEW nexus).\nIdentify opportunities and challenges beyond distributional justice (procedural, recognitional, restorative, and cosmopolitan justice) for environmental solutions spatially and temporally.\nSuggest opportunities for intervention by developing a theory-driven logic model.",
+    "crumbs": [
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "syllabus.html#course-community",
+    "href": "syllabus.html#course-community",
+    "title": "Syllabus",
+    "section": "Course Community",
+    "text": "Course Community\n\nTeaching, Learning, and Being in Community\nI hope that students not only take away the skills associated with the course’s measurable outcomes, but also learn more about themselves, their peers, and the environment around them. This requires a certain level of vulnerability and trust, which I hope that we can establish together.\nI also designed this course to help students foster community beyond the classroom, so that they too can go on to build expansive, solution-oriented movements that welcome everyone into a collective vision of what the world could be. I share some of adrienne marie brown’s 1 points on social justice and community, that may be useful to ask of yourself and others throughout this course:\n\nHow can we invite our peers into belonging?\nHow can we create conditions that ensure dignity for each person?\nHow can we challenge regressive beliefs meant to divide us, and remind one another that we belong to this planet, and each other?\nHow can we forge communities that not only survive, but can imagine more equitable realities?\n\n\n\nShared Expectations\nIn this course, we intend to be accountable to one another by… - Assuming best intentions from peers - Asking for clarification if you disagree with a statement - Not having phones on the desk - Using devices for class material only - Collaborating with peers",
+    "crumbs": [
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "syllabus.html#course-policies",
+    "href": "syllabus.html#course-policies",
+    "title": "Syllabus",
+    "section": "Course Policies",
+    "text": "Course Policies\n\nLate Policy\nBecause we start homework assignments in class, and material is cumulative, it’s very important that readings and assignments are completed by the deadlines they are designed for. At the same time, I understand that life happens! To ensure students have a bit of added flexibility, each student has 3 24-hour late passes2:\n\nEach late pass may be applied to delay one assignment deadline by 24 hours within the semester.\nAny number of available passes may be applied to any assignment deadline. No work is accepted past the end of the final exam period, regardless of available late passes.\nLate passes are not transferable, reusable, or divisible.\nAfter your late pass budget is exhausted, each additional 24-hour delay in assignment submission is assessed a late penalty that subtracts 10% of the maximum assignment grade from your awarded grade on that assignment.\nTo use a late day, you must fill out this form before the assignment deadline.\n\nImportantly, because I designed the group project to be cumulative, and because a primary tenet of group collaboration is being accountable to one another, late work will not be accepted for the final group project, or any of its checkpoints.\nIf you anticipate an assignment will be late due to an emergency, please email me at least 24 hours before the due date to discuss a path forward. In collaboration with your class dean and/or health services, we will figure out the best path forward, together.\nIf you know you will need to miss class due to illness or family emergency, please let me know so we can make a plan for how to proceed.\n\n\nUse of Generative AI\nIn addition to the overwhelming energy and water use that data centers use to answer your queries (a distributional burden that communities like my hometown are now bearing 3), generative AI poses significant threats to the learning outcomes of this class. I designed this course to 1) strengthen students’ abilities to comprehend and apply justice-based theories, and 2) learn the foundations of data visualization in R. Therefore, I ask that you do not use it for the following:\n\nSummarizing or annoting readings\nGenerating code of any kind\nAnswering any questions on assignments\n\nIf you feel that generative AI can be used to improve your knowledge on a topic, or for brainstorming ideas without sacrificing your ability to think critically, please come speak with me about it, before you employ it in your workflow. I’m still learning the pros and cons of Generative AI in higher education, and I always welcome the discussion.\n\n\nCourse Components\n\nAttendance and Participation (10%): This primarily includes coming to class prepared (i.e., completed any preparatory readings/assignments before our scheduled course meeting), engaging with peers on course content (i.e., asking questions, sharing thoughts and ideas, participating in group activities).\nPositionality Statement (5%): The first assignment for the course will be a brief statement that explains your positionality and how it might influence your engagement with the course and its materials.\nWeekly Assignments (60%): Each week provides an opportunity to discuss and explore different forms of environmental justice through a community case study.\n\nTuesdays will focus on small and large-group discussions on key theoretical concepts related to that week’s community case study. Please come prepared to discuss the readings.\nFridays will mainly focus on an in-class data visualization exercise (each worth 10%) related to the weekly case study. Please read the assigned case study and review the exercise before class. Be prepared to work in rotating pairs on the assignment, then submit it individually by the following Thursday at 11:59 PM.\n\nCommunity Case Study Final Project (25%): End of semester group project on a community case study of your choice. Note that final project score is cumulative, including a project proposal (5%), project plan (10%), and final submission (10%). Please see the Final Project Description for more information.\n\n\n\nAssessment\nMy approach to assessment is centered on 1) gauging students’ learning as it corresponds to the course learning goals, and 2) providing feedback that facilitates growth. Wellesley’s grading policy aligns with these goals, and uses a relatively qualitative approach:\n\nGrade A is given to students who meet with conspicuous excellence every demand that can fairly be made by the course.\nGrade B is given to those students who add to the minimum of satisfactory attainment excellence in not all, but some of the following: organization, accuracy, originality, understanding, insight.\nGrade C is given to those students who have attained a satisfactory familiarity with the content of a course and who have demonstrated ability to use this knowledge in a satisfactory manner.\n\nFor individual work (weekly assignments and participation), I will provide written feedback on each learning outcome, along with a score of 1 to 5. For example, feedback on one community case study might look like this:\n\n\n\nLearning Outcome\nScore\n\n\n\n\nUnderstand basic tidy data structure\n4\n\n\nTransform and tidy data for necessary questions\n4\n\n\nExplore and summarize patterns\n3\n\n\nConnect it to theoretical understandings of procedural justice\n5\n\n\n\nFor team work (final group project), I will provide a rubric and grade the product on a percentage scale.\n\n\nCourse Readings\nThere are no textbooks for this course. All course readings will be made available on the website. Please see the schedule for each week’s corresponding material.\n\n\nLiving Syllabus\nSince this course is in its early development, I reserve the right to make minor adjustments, such as changes to assigned readings (well in advance of class), as needed or based on student feedback to improve the course.\n\n\nCommunication\nClass emails will be sent out via Brightspace. Please do feel free to email me with questions or concerns regarding the course, and I will do my best to respond within 48 hours (excluding weekends).\n\n\nAccessibility and Disability\nEvery student has the right to full access in this course. If you find any material difficulty to access due to course format, technology, or any other reason, please don’t hesitate to let me know so that we can identify appropriate accommodations.\nAdditionally, the Wellesley Office of Accessibility and Disability Resources (ADR) ensures that students receive reasonable and appropriate accommodations including but not limited to: testing accommodations, classroom accommodations, notetaking services, on-campus transportation, communication resources, and assistive technology. In the case that you require accommodations, please be in touch with ADR to request or update an accommodation letter.\n\n\nReligious Observance\nStudents observing a religious holiday that conflicts with a scheduled course event are encouraged to speak with me in advance to identify alternative arrangements. Students are also welcome to read more about the College’s Policy on National Holidays and Religious Days of Observance, or submit a Religious Observance Notification Form.\n\n\nDiscrimination, Harassment, and Sexual Misconduct\nWellesley College considers diversity essential to educational excellence, and we are committed to being a community in which each member thrives. The College does not allow discrimination or harassment based on race, color, sex, gender identity or expression, sexual orientation, ethnic or national origin or ancestry, physical or mental disability, pregnancy or any other protected status under applicable local, state or federal law.\nIf you or someone you know has experienced discrimination or harassment, support is available to you:\nConfidential Reporting: Students can report their experiences to Health Services (781-283-2810); Stone Center Counseling Service (781-283-2839); or Religious and Spiritual Life (781-283-2685). These offices are not required to report allegations of sexual misconduct to the College.\nNon-Confidential Reporting: You can let your instructor know. As faculty, we are obligated to report allegations of sex-based discrimination to the Non-discrimination/Title IX Office. You can report directly to the Non-discrimination/Title IX Office (781-283-2451) to receive support, and to learn more about your options for a response by the College or about reporting to a different institution. You can report to the Wellesley College Police Department (Emergency: 781-283-5555, Non-emergency: 781-283-2121) if you believe a crime has been committed, or if there is an immediate safety risk.\n\n\nFeedback\nI sincerely care about your experience in this course, and am always interested to hear your feedback. There are several ways to share your ideas and suggestions:\n\nCome talk to me! I know that students are likely to have different learning styles, which means I won’t be offended if you share ideas on how to improve things.\nYou can always provide feedback anonymously via this form\nI’ll also collect anonymous feedback about the course at the mid-semester point.",
+    "crumbs": [
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "syllabus.html#important-dates",
+    "href": "syllabus.html#important-dates",
+    "title": "Syllabus",
+    "section": "Important Dates",
+    "text": "Important Dates\n\nSep 02: Classes begin\nSep 26: Credit/Noncredit grading option and Drop Deadline (4PM)\nOct 13-14: Indigenous Peoples’ Day; Fall break\nOct 28: Tanner Conference\nNov 26-28: Thanksgiving Break\nDec 10: Classes end\nDec 11-14: Reading period\nDec 15-18: Final exams",
+    "crumbs": [
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "syllabus.html#acknowledgments",
+    "href": "syllabus.html#acknowledgments",
+    "title": "Syllabus",
+    "section": "Acknowledgments",
+    "text": "Acknowledgments\nThis course was created using templates created by Maria Tackett & Mine Cetinkaya-Rundel. I’m also very grateful for tips and resources from Dr. Yaniv Yacoby, Accessible Syllabus, and faculty feedback from the Wellesley Environmental Studies Department.",
+    "crumbs": [
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "syllabus.html#footnotes",
+    "href": "syllabus.html#footnotes",
+    "title": "Syllabus",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nbrown, adrienne maree. (2024). Loving Corrections. AK Press.↩︎\nThanks to the Wellesley CS department for their late policy guidelines!↩︎\nRamadan, L., & Brownstone, S. (2024, July 28). Washington Is Giving Tax Breaks to Data Centers That Threaten the State’s Green Energy Push. ProPublica. https://www.propublica.org/article/data-centers-clean-energy-washington-state↩︎",
+    "crumbs": [
+      "Syllabus"
+    ]
   }
 ]

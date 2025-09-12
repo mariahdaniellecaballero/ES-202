@@ -16,7 +16,7 @@ This case study focuses on recreating Dr. Robert Bullard's foundational study, "
 
 
 ## Instructions
-1. Navigate to Posit Cloud and select the HW 02 assignment. 
+1. Navigate to Posit Cloud and select the [HW 02](https://posit.cloud/spaces/686564/content/all?sort=name_asc) assignment. 
 2. Follow along in class, and complete the assignment (if needed) outside of class.
 3. Render the quarto document as a pdf.
 
