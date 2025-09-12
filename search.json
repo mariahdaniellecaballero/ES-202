@@ -354,7 +354,7 @@
     "href": "slides_workspace/week-03/06-assess_braceros.html#filter-cont.",
     "title": "[Assess] Bracero Farmworker Case Study",
     "section": "filter() (cont.)",
-    "text": "filter() (cont.)\n\nYou can also combine multiple conditions:\n\n&gt; = greater than\n&gt;= = greater than or equal to\n&lt; = less than\n&lt;= less than or equal to\n== equal to\n!= does not equal\nCan use & to combine conditions\n| for or\n\nPerhaps we’re interested in interviews that took place after 2004 in English:\n\n\nbracero_clean |&gt;\n  filter(date_format &gt;= 2004-01-01 & language == \"eng\")\n\n# A tibble: 15 × 6\n   interviewee               subject description language date_format identifier\n   &lt;chr&gt;                     &lt;chr&gt;   &lt;chr&gt;       &lt;chr&gt;    &lt;date&gt;      &lt;chr&gt;     \n 1 Richard Hancock           Doña A… \"Biographi… eng      2003-04-21  https://b…\n 2 Inez Rios                 Intera… \"Biographi… eng      2003-01-31  https://b…\n 3 Ernesto Espino            Son of… \"Biographi… eng      2005-11-12  https://b…\n 4 Rudy Villalobos           Depart… \"Biographi… eng      2003-01-31  https://b…\n 5 Carol Norquest Jr.        Family… \"Biographi… eng      2003-04-03  https://b…\n 6 Eleanor Martin            Bookke… \"Biographi… eng      2003-03-17  https://b…\n 7 John Tomlin               Farmer  \"Biographi… eng      2003-04-23  https://b…\n 8 Sam Sánchez               Public… \"Biographi… eng      2003-04-19  https://b…\n 9 Elías Bonilla             Alliso… \"Biographi… eng      2003-04-02  https://b…\n10 Socorro O. Pérez          Clerk … \"Biographi… eng      2003-03-03  https://b…\n11 Laurentina Ramos Juárez   Ranche… \"Biographi… eng      2003-03-02  https://b…\n12 Crisostomo Luna del Angel Bracero \"Biographi… eng      2005-07-25  https://b…\n13 Andy Imutan               Activi… \"Biographi… eng      2005-09-27  https://b…\n14 Sally Gutiérrez McQuinn   Bookke… \"Biographi… eng      2005-07-28  https://b…\n15 Consuelo Lerma            Sewing  \"Biographi… eng      2003-03-07  https://b…"
+    "text": "filter() (cont.)\n\nYou can also combine multiple conditions:\n\n&gt; = greater than\n&gt;= = greater than or equal to\n&lt; = less than\n&lt;= less than or equal to\n== equal to\n!= does not equal\nCan use & to combine conditions\n| for or\n\nPerhaps we’re interested in interviews that took place after 2004 in English:\n\n\nbracero_clean |&gt;\n  filter(date_format &gt;= 2004-01-01 & language == \"eng\")"
   },
   {
     "objectID": "slides_workspace/week-03/06-assess_braceros.html#filter-and-str_detect",
@@ -368,21 +368,28 @@
     "href": "slides_workspace/week-03/06-assess_braceros.html#arrange",
     "title": "[Assess] Bracero Farmworker Case Study",
     "section": "arrange()",
-    "text": "arrange()\n\narrange() sorts your rows based on the values in the columns.\nIf you sort more than one row, it will sort the first variable, and the others will be used to “break ties”\nincluding desc() wills sort your column values big to small.\n\n\nbracero_clean |&gt; \n  arrange(date_format, interviewee)\n\n# A tibble: 90 × 6\n   interviewee             subject   description language date_format identifier\n   &lt;chr&gt;                   &lt;chr&gt;     &lt;chr&gt;       &lt;chr&gt;    &lt;date&gt;      &lt;chr&gt;     \n 1 Heriberto Cortéz Cortéz Bracero   \"Biographi… spa      2002-05-13  https://b…\n 2 Homero López Ortiz      Bracero   \"Biographi… spa      2002-05-31  https://b…\n 3 Patricio Corrales Rojas Bracero   \"Biographi… spa      2002-07-02  https://b…\n 4 Liborio Santiago Pérez  Bracero   \"Biographi… spa      2002-07-06  https://b…\n 5 Gregorio Corrales Rojas Bracero   \"Biographi… spa      2002-07-09  https://b…\n 6 Héctor Solís Fuentes    Bracero   \"Biographi… spa      2002-07-10  https://b…\n 7 Rodolfo Cruz Figueroa   Bracero   \"Biographi… spa      2002-07-25  https://b…\n 8 Herminio Quezada Durán  Bracero   \"Biographi… spa      2002-12-22  https://b…\n 9 Alfredo Fuentes Soto    Bracero   \"Biographi… spa      2003-01-31  https://b…\n10 Inez Rios               Interact… \"Biographi… eng      2003-01-31  https://b…\n# ℹ 80 more rows"
+    "text": "arrange()\n\narrange() sorts your rows based on the values in the columns.\nIf you sort more than one row, it will sort the first variable, and the others will be used to “break ties”\nincluding desc() wills sort your column values big to small.\n\n\nbracero_clean |&gt; \n  arrange(date_format, interviewee)"
   },
   {
     "objectID": "slides_workspace/week-03/06-assess_braceros.html#group_by-function",
     "href": "slides_workspace/week-03/06-assess_braceros.html#group_by-function",
     "title": "[Assess] Bracero Farmworker Case Study",
     "section": "group_by() function",
-    "text": "group_by() function"
+    "text": "group_by() function\n\ngroup_by() function is really helpful for dividing your data into groups for analysis.\ngroup_by() function does not change your data, but will change subsequent operations if you use them in tandem with a group_by()\n\n\nbracero_clean |&gt; \n  group_by(language)\n\n# A tibble: 90 × 6\n# Groups:   language [2]\n   interviewee              subject  description language date_format identifier\n   &lt;chr&gt;                    &lt;chr&gt;    &lt;chr&gt;       &lt;chr&gt;    &lt;date&gt;      &lt;chr&gt;     \n 1 Richard Hancock          Doña An… \"Biographi… eng      2003-04-21  https://b…\n 2 Pedro Cantor             Bracero  \"Biographi… spa      2005-07-27  https://b…\n 3 Asterio López León       Bracero  \"Biographi… spa      2006-05-22  https://b…\n 4 Vincente Delgado         Bracero  \"Biographi… spa      2005-09-01  https://b…\n 5 Inez Rios                Interac… \"Biographi… eng      2003-01-31  https://b…\n 6 Manuel Enriquez Savignac Bureau … \"Biographi… spa      2003-02-06  https://b…\n 7 Alberto Montes González  Bracero  \"Biographi… spa      2005-07-27  https://b…\n 8 Ernesto Espino           Son of … \"Biographi… eng      2005-11-12  https://b…\n 9 Jesús Ortíz Torres       Bracero  \"Biographi… spa      2005-08-31  https://b…\n10 José G. Corral           Son of … \"Biographi… spa      2005-11-12  https://b…\n# ℹ 80 more rows"
   },
   {
     "objectID": "slides_workspace/week-03/06-assess_braceros.html#summarize",
     "href": "slides_workspace/week-03/06-assess_braceros.html#summarize",
     "title": "[Assess] Bracero Farmworker Case Study",
     "section": "summarize()",
-    "text": "summarize()"
+    "text": "summarize()\n\nsummarize() is often used in tandem with the group_by() function to calculate a summary statistic for a a group.\n\n\nbracero_clean |&gt;\n group_by(language) |&gt;\n summarize(n_interviews = n())\n\n# A tibble: 2 × 2\n  language n_interviews\n  &lt;chr&gt;           &lt;int&gt;\n1 eng                15\n2 spa                75"
+  },
+  {
+    "objectID": "slides_workspace/week-03/06-assess_braceros.html#slice",
+    "href": "slides_workspace/week-03/06-assess_braceros.html#slice",
+    "title": "[Assess] Bracero Farmworker Case Study",
+    "section": "slice",
+    "text": "slice\n\nslice_ functions help select a subset of rows\nslice_head(n = 5) will take the first five rows of the data\nslice_tail(n = 5) will take the last five rows of the data\nslice_min(x, n = 5) will take the five rows of data with the lowest values for column x.\nslice_max(x, n = 5) will take the five rows of data with the highest values for column x.\nslice_sample(n = 5) will select 5 random rows of data.\n\n\nbracero |&gt;\n  slice_sample(n = 15)\n\n# A tibble: 15 × 6\n   title                      subject      description date  identifier language\n   &lt;chr&gt;                      &lt;chr&gt;        &lt;chr&gt;       &lt;chr&gt; &lt;chr&gt;      &lt;chr&gt;   \n 1 Vincente Delgado           Bracero      \"Biographi… 2005… https://b… spa     \n 2 Salvador Esparza Carreño   Bracero      \"Biographi… 2003… https://b… spa     \n 3 Rodolfo Cruz Figueroa      Bracero      \"Biographi… 2002… https://b… spa     \n 4 Rodrigo Flores             Bracero      \"Biographi… 2003… https://b… spa     \n 5 Heriberto Cortéz Cortéz    Bracero      \"Biographi… 2002… https://b… spa     \n 6 Héctor Solís Fuentes       Bracero      \"Biographi… 2002… https://b… spa     \n 7 Pedro García               Bracero      \"Biographi… 2006… https://b… spa     \n 8 Alberto Montes González    Bracero      \"Biographi… 2005… https://b… spa     \n 9 Alberto Mendoza Torres     bracero      \"Biographi… 2003… https://b… spa     \n10 Anacleto Morales Franco    Bracero      \"Biographi… 2003… https://b… spa     \n11 Bernardo Treviño Cervantes bracero      \"Biographi… 2003… https://b… spa     \n12 Amadeo Tapia               Bracero      \"Biographi… 2006… https://b… spa     \n13 Enrique Torres Sánchez     Bracero      \"Biographi… 2003… https://b… spa     \n14 Socorro O. Pérez           Clerk typis… \"Biographi… 2003… https://b… eng     \n15 David Alfaro Sandoval      Bracero      \"Biographi… 2006… https://b… spa"
   },
   {
     "objectID": "slides_workspace/week-02/04-assess_landfills.html#my-approach-to-teaching-data-science-for-environmental-justice",
@@ -564,7 +571,14 @@
     "href": "slides_workspace/week-02/04-assess_landfills.html#exercise-04-individual",
     "title": "[Assess] Solid Waste Landfill Siting",
     "section": "Exercise 04 (individual)",
-    "text": "Exercise 04 (individual)\nConnect to theory"
+    "text": "Exercise 04 (individual)\nConnect to theory, see assignment for details."
+  },
+  {
+    "objectID": "slides_workspace/week-02/04-assess_landfills.html#next-week",
+    "href": "slides_workspace/week-02/04-assess_landfills.html#next-week",
+    "title": "[Assess] Solid Waste Landfill Siting",
+    "section": "Next Week",
+    "text": "Next Week\n\nZiyah leading centering activity\nFor Tuesday: Article on procedural justice\nHW 02 due Thursday at 11:59 PM\nES welcome back event! Tuesday, September 16, 12:30 to 1:30 PM, global flora courtyard\nClimate justice & war system event series: Tiara Na’Puti, Wednesday September 17, 5:30 to 7:30 PM, PNE Atrium"
   },
   {
     "objectID": "slides_workspace/week-01/01-Welcome.html#environmental-justice-a-community-centric-approach",
@@ -1869,6 +1883,195 @@
     "title": "Welcome!",
     "section": "For Friday",
     "text": "For Friday\n\nCheck course website for readings\nPreview first assignment and come prepared with questions"
+  },
+  {
+    "objectID": "slides/week-02/04-assess_landfills.html#my-approach-to-teaching-data-science-for-environmental-justice",
+    "href": "slides/week-02/04-assess_landfills.html#my-approach-to-teaching-data-science-for-environmental-justice",
+    "title": "[Assess] Solid Waste Landfill Siting",
+    "section": "My Approach to Teaching Data Science for Environmental Justice",
+    "text": "My Approach to Teaching Data Science for Environmental Justice\n\nAssumes no background in data science\nFocuses on the use of data for communicating environmental injustices and working toward more just solutions\nIntended to connect to theoretical lessons"
+  },
+  {
+    "objectID": "slides/week-02/04-assess_landfills.html#general-data-science-process",
+    "href": "slides/week-02/04-assess_landfills.html#general-data-science-process",
+    "title": "[Assess] Solid Waste Landfill Siting",
+    "section": "General Data Science Process",
+    "text": "General Data Science Process"
+  },
+  {
+    "objectID": "slides/week-02/04-assess_landfills.html#course-organization",
+    "href": "slides/week-02/04-assess_landfills.html#course-organization",
+    "title": "[Assess] Solid Waste Landfill Siting",
+    "section": "Course Organization",
+    "text": "Course Organization\n\nBigger Picture Case Study (HW 02– lots of wins)\nSkills that build on one another (HW 03-07)\n\nData Tidying\nData Transforming\nData Visualization\nIntro to Spatial Data\n\nApply it! Use weeks 9 - 14 to show me your theoretical and methodological skills"
+  },
+  {
+    "objectID": "slides/week-02/04-assess_landfills.html#homework-approach",
+    "href": "slides/week-02/04-assess_landfills.html#homework-approach",
+    "title": "[Assess] Solid Waste Landfill Siting",
+    "section": "Homework Approach",
+    "text": "Homework Approach\n\nAssignments will be started in class on Fridays in pairs and submitted the following Thursday individually.\nI’ll lecture a bit throughout the class to introduce new skills or topics, then let pairs work through sections of the assignment."
+  },
+  {
+    "objectID": "slides/week-02/04-assess_landfills.html#learning-outcomes",
+    "href": "slides/week-02/04-assess_landfills.html#learning-outcomes",
+    "title": "[Assess] Solid Waste Landfill Siting",
+    "section": "Learning Outcomes",
+    "text": "Learning Outcomes\n\nBasic usage of R\nRecreate tables 1-3 in Bullard’s Study\nVisualize Distributional Justice\nConnect it to theoretical understandings of distributional justice"
+  },
+  {
+    "objectID": "slides/week-02/04-assess_landfills.html#lets-get-started",
+    "href": "slides/week-02/04-assess_landfills.html#lets-get-started",
+    "title": "[Assess] Solid Waste Landfill Siting",
+    "section": "Let’s Get Started",
+    "text": "Let’s Get Started\n\nFind your pair\nOpen Homework 02 folder in Posit Cloud."
+  },
+  {
+    "objectID": "slides/week-02/04-assess_landfills.html#importing-data",
+    "href": "slides/week-02/04-assess_landfills.html#importing-data",
+    "title": "[Assess] Solid Waste Landfill Siting",
+    "section": "Importing Data",
+    "text": "Importing Data\n\nThis assignment is comprised of one dataset:\n\nRobert Bullard’s original data\n\nNote on how I got this data"
+  },
+  {
+    "objectID": "slides/week-02/04-assess_landfills.html#understanding-the-ide",
+    "href": "slides/week-02/04-assess_landfills.html#understanding-the-ide",
+    "title": "[Assess] Solid Waste Landfill Siting",
+    "section": "Understanding the IDE",
+    "text": "Understanding the IDE\n\n\n\n\n![]"
+  },
+  {
+    "objectID": "slides/week-02/04-assess_landfills.html#installing-packages",
+    "href": "slides/week-02/04-assess_landfills.html#installing-packages",
+    "title": "[Assess] Solid Waste Landfill Siting",
+    "section": "Installing packages",
+    "text": "Installing packages\n\nPackages are comprised of functions, data, and additional documentation to load, clean, and analyze your data.\nInstalling a package needs only one line of code:\n\n\ninstall.packages(\"tidyverse\") # for tidying data\ninstall.packages(\"gt\")\ninstall.packages(\"gtsummary\") # creating tables\n\n\nFollowing an install, you need to load your packages:\n\n\nlibrary(tidyverse)\nlibrary(gt)\nlibrary(gtsummary)"
+  },
+  {
+    "objectID": "slides/week-02/04-assess_landfills.html#loading-data",
+    "href": "slides/week-02/04-assess_landfills.html#loading-data",
+    "title": "[Assess] Solid Waste Landfill Siting",
+    "section": "Loading Data",
+    "text": "Loading Data\n\nNow we load our data. In Posit Cloud, navigate to lower left corner and note the dataset entitled “bullard_1979_waste_sites.csv”\nLoad our first dataset, which includes the 13 landfill and incinerator sites in Bullard’s first case study.\n\n\nsites &lt;- read_csv(\"bullard_1979_waste_sites.csv\")"
+  },
+  {
+    "objectID": "slides/week-02/04-assess_landfills.html#understanding-data",
+    "href": "slides/week-02/04-assess_landfills.html#understanding-data",
+    "title": "[Assess] Solid Waste Landfill Siting",
+    "section": "Understanding data",
+    "text": "Understanding data\n\nthe sites data that we’ve loaded is a dataframe, meaning it is a rectangular collection of variables (or columns) and observations (rows). In each cell, is a value. \nExamples of each?"
+  },
+  {
+    "objectID": "slides/week-02/04-assess_landfills.html#rules-of-tidy-data",
+    "href": "slides/week-02/04-assess_landfills.html#rules-of-tidy-data",
+    "title": "[Assess] Solid Waste Landfill Siting",
+    "section": "Rules of Tidy Data",
+    "text": "Rules of Tidy Data\n\nThis dataset is tabular, meaning that the data is organized into a table with rows and columns.\n\ntidy data has five rules:\n\nEvery variable has its own column.\nEvery observation is stored in its own row.\nEach value is stored in the cell of a corresponding variable.\nValues don’t contain units (this should be in a codebook).\nNo extraneous information (footnotes, extra titles, etc.)"
+  },
+  {
+    "objectID": "slides/week-02/04-assess_landfills.html#sites-data",
+    "href": "slides/week-02/04-assess_landfills.html#sites-data",
+    "title": "[Assess] Solid Waste Landfill Siting",
+    "section": "Sites Data",
+    "text": "Sites Data\n\nsites\n\n# A tibble: 13 × 5\n   facility                 neighborhood          type  predom_eth_1979 location\n   &lt;chr&gt;                    &lt;chr&gt;                 &lt;chr&gt; &lt;chr&gt;           &lt;chr&gt;   \n 1 Fourth Ward              FOURTH WARD           Inci… Black           Southwe…\n 2 Patterson Street         WEST END/COTTAGE GRO… Inci… Black           Northwe…\n 3 Kelly Street             KASHMERE GARDENS      Inci… Black           Northea…\n 4 Holmes Road              SUNNYSIDE             Inci… Black           Southea…\n 5 Velasco                  SECOND WARD           Inci… Hispanic        Southea…\n 6 Westpark                 LARCHMONT             Mini… White           Sothwest\n 7 Kelly Street             KASHMERE GARDENS      Mini… Black           Northea…\n 8 Northwest Service Center CARVERDALE            Mini… Black           Northwe…\n 9 Fourth Ward              FOURTH WARD           Land… Black           Southwe…\n10 Sunnyside                SUNNYSIDE             Land… Black           Southea…\n11 Reed Road                SUNNYSIDE             Land… Black           Southea…\n12 Kirkpatrick              TRINITY GARDENS       Land… Black           Northea…\n13 West Donnovan            ACRES HOMES           Land… Black           Northwe…"
+  },
+  {
+    "objectID": "slides/week-02/04-assess_landfills.html#selecting-variables",
+    "href": "slides/week-02/04-assess_landfills.html#selecting-variables",
+    "title": "[Assess] Solid Waste Landfill Siting",
+    "section": "Selecting variables",
+    "text": "Selecting variables\n\ntable_one &lt;- sites |&gt;\n  filter(type == \"Incinerator\") |&gt;\n  select(facility, neighborhood, predom_eth_1979, location)\n\ntable_one\n\n# A tibble: 5 × 4\n  facility         neighborhood           predom_eth_1979 location \n  &lt;chr&gt;            &lt;chr&gt;                  &lt;chr&gt;           &lt;chr&gt;    \n1 Fourth Ward      FOURTH WARD            Black           Southwest\n2 Patterson Street WEST END/COTTAGE GROVE Black           Northwest\n3 Kelly Street     KASHMERE GARDENS       Black           Northeast\n4 Holmes Road      SUNNYSIDE              Black           Southeast\n5 Velasco          SECOND WARD            Hispanic        Southeast"
+  },
+  {
+    "objectID": "slides/week-02/04-assess_landfills.html#formatting-tables",
+    "href": "slides/week-02/04-assess_landfills.html#formatting-tables",
+    "title": "[Assess] Solid Waste Landfill Siting",
+    "section": "Formatting Tables",
+    "text": "Formatting Tables\n\ntable_one |&gt;\n  gt() |&gt;\n  cols_label(\n    facility = \"Site of Incinerator\",\n    neighborhood = \"Neighborhood\",\n    predom_eth_1979 = \"Ethnicity\",\n    location = \"Location\"\n  ) |&gt;\n  tab_header(\n    title = (\"Table 1\"),\n    subtitle = \"City of Houston Garbage Incinerators\"\n  ) |&gt;\n  tab_source_note(\"The above Houston-owned garbage incinerators were in operation between the 1920's and 1975\")\n\n\n\n\n\n\n\nTable 1\n\n\nCity of Houston Garbage Incinerators\n\n\nSite of Incinerator\nNeighborhood\nEthnicity\nLocation\n\n\n\n\nFourth Ward\nFOURTH WARD\nBlack\nSouthwest\n\n\nPatterson Street\nWEST END/COTTAGE GROVE\nBlack\nNorthwest\n\n\nKelly Street\nKASHMERE GARDENS\nBlack\nNortheast\n\n\nHolmes Road\nSUNNYSIDE\nBlack\nSoutheast\n\n\nVelasco\nSECOND WARD\nHispanic\nSoutheast\n\n\n\nThe above Houston-owned garbage incinerators were in operation between the 1920's and 1975"
+  },
+  {
+    "objectID": "slides/week-02/04-assess_landfills.html#exercise-one-rinse-wash-repeat-for-tables-2-and-3",
+    "href": "slides/week-02/04-assess_landfills.html#exercise-one-rinse-wash-repeat-for-tables-2-and-3",
+    "title": "[Assess] Solid Waste Landfill Siting",
+    "section": "Exercise One: Rinse, Wash, Repeat for Tables 2 and 3",
+    "text": "Exercise One: Rinse, Wash, Repeat for Tables 2 and 3\n\nRecreate tables 2 and 3 using the same approaches\nPay close attention to the information shared in each table"
+  },
+  {
+    "objectID": "slides/week-02/04-assess_landfills.html#prepping-data",
+    "href": "slides/week-02/04-assess_landfills.html#prepping-data",
+    "title": "[Assess] Solid Waste Landfill Siting",
+    "section": "Prepping Data",
+    "text": "Prepping Data\n\nBullard summarizes by both facility type and ethnicity (black versus non-black).\n\ncan use an if_else function nested in a mutate function.\n\nmutate function can add or modify a variable\nif_else creates a test and defines what to do with variables that meet (or do not) meet the test."
+  },
+  {
+    "objectID": "slides/week-02/04-assess_landfills.html#creating-summary-table",
+    "href": "slides/week-02/04-assess_landfills.html#creating-summary-table",
+    "title": "[Assess] Solid Waste Landfill Siting",
+    "section": "Creating Summary Table",
+    "text": "Creating Summary Table\n\nTo summarize by two groups, Bullard creates a crosstabs table\nCan be done using the gtsummary package\n\n\nsites |&gt;\n  mutate(predom_eth_1979 = if_else(predom_eth_1979 == \"Black\", \"Black\", \"Nonblack\")) |&gt;\n  tbl_cross(\n    row = type,\n    col = predom_eth_1979,\n    percent = \"row\"\n  )\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\npredom_eth_1979\n\nTotal\n\n\nBlack\nNonblack\n\n\n\n\ntype\n\n\n\n\n\n\n\n\n    Incinerator\n4 (80%)\n1 (20%)\n5 (100%)\n\n\n    Landfill\n5 (100%)\n0 (0%)\n5 (100%)\n\n\n    Mini-incinerator\n2 (67%)\n1 (33%)\n3 (100%)\n\n\nTotal\n11 (85%)\n2 (15%)\n13 (100%)"
+  },
+  {
+    "objectID": "slides/week-02/04-assess_landfills.html#formatting-table",
+    "href": "slides/week-02/04-assess_landfills.html#formatting-table",
+    "title": "[Assess] Solid Waste Landfill Siting",
+    "section": "Formatting Table",
+    "text": "Formatting Table\n\nsites |&gt;\n  mutate(predom_eth_1979 = if_else(predom_eth_1979 == \"Black\", \"Black\", \"Nonblack\")) |&gt;\n  tbl_cross(\n    row = type,\n    col = predom_eth_1979,\n    percent = \"row\",\n    label = list(type ~ \"Waste Disposal Sites\", predom_eth_1979 ~ \"Ethnicity\")\n  ) |&gt;\n  bold_labels()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEthnicity\n\nTotal\n\n\nBlack\nNonblack\n\n\n\n\nWaste Disposal Sites\n\n\n\n\n\n\n\n\n    Incinerator\n4 (80%)\n1 (20%)\n5 (100%)\n\n\n    Landfill\n5 (100%)\n0 (0%)\n5 (100%)\n\n\n    Mini-incinerator\n2 (67%)\n1 (33%)\n3 (100%)\n\n\nTotal\n11 (85%)\n2 (15%)\n13 (100%)"
+  },
+  {
+    "objectID": "slides/week-02/04-assess_landfills.html#exercise-2-one-more-summary-table",
+    "href": "slides/week-02/04-assess_landfills.html#exercise-2-one-more-summary-table",
+    "title": "[Assess] Solid Waste Landfill Siting",
+    "section": "Exercise 2: One more summary table",
+    "text": "Exercise 2: One more summary table\n\nSuppose you lived in a Southwest neighborhood and were interested in the distribution of facility types by Southwest versus non-southwest neighborhoods.\nCreate a cross tabs summary table (make sure it’s formatted nicely!)"
+  },
+  {
+    "objectID": "slides/week-02/04-assess_landfills.html#plot-the-data",
+    "href": "slides/week-02/04-assess_landfills.html#plot-the-data",
+    "title": "[Assess] Solid Waste Landfill Siting",
+    "section": "Plot the data",
+    "text": "Plot the data\nUsing ggplot2\n\nggplot2 is a lovely package for visualizing data.\nIt works works using a layer approach.\nThe first layer tells ggplot2 to create a graph base using the sites dataframe.\n\n\nggplot(data = sites)"
+  },
+  {
+    "objectID": "slides/week-02/04-assess_landfills.html#adding-variables",
+    "href": "slides/week-02/04-assess_landfills.html#adding-variables",
+    "title": "[Assess] Solid Waste Landfill Siting",
+    "section": "Adding Variables",
+    "text": "Adding Variables\n\nLet’s visualize ethnicity by facility type, similar to our approach in table 4, except as a bar chart.\nmapping tells ggplot how variables in the data will be mapped to visual aspects (aesthetics) of the plot.\naes is the function that defines what variables will be mapped to the x and y axes.\nx is the only variable in this case, but we will define it as type.\n\n\nggplot(data = sites, mapping = aes(x = type))"
+  },
+  {
+    "objectID": "slides/week-02/04-assess_landfills.html#adding-a-visual",
+    "href": "slides/week-02/04-assess_landfills.html#adding-a-visual",
+    "title": "[Assess] Solid Waste Landfill Siting",
+    "section": "Adding a Visual",
+    "text": "Adding a Visual\n\ngeom specifies how the plot will represent the data.\n\nin ggplot2, this can be functions like geom_bar, geom_point, or geom_boxplot.\n\n\n\nggplot(data = sites, mapping = aes(x = type)) +\n  geom_bar()"
+  },
+  {
+    "objectID": "slides/week-02/04-assess_landfills.html#formatting-colors-and-labels",
+    "href": "slides/week-02/04-assess_landfills.html#formatting-colors-and-labels",
+    "title": "[Assess] Solid Waste Landfill Siting",
+    "section": "Formatting colors and labels",
+    "text": "Formatting colors and labels\n\nadding fill to the ggplot specifies that we want the chart colors to reflect the frequencies of each ethnicity across each disposal site type.\nscale_fill_manual() allows you to change the fill colors in your data.\n\nvalues can be color names, hex codes, or RGB values.\nname is the legend name\n\nlabs() allows you to rename your axes\n\n\nggplot(sites, aes(x = type, fill = predom_eth_1979)) +\n  geom_bar() +\n  scale_fill_manual(\n    values = c(\"Red\", \"Yellow\", \"Green\"),\n    name = \"Predominant Community Ethnicity\"\n  ) +\n  labs(x = \" \", y = \"Number of Facilities\")"
+  },
+  {
+    "objectID": "slides/week-02/04-assess_landfills.html#exercise-3-reading-a-vignette-collaborative",
+    "href": "slides/week-02/04-assess_landfills.html#exercise-3-reading-a-vignette-collaborative",
+    "title": "[Assess] Solid Waste Landfill Siting",
+    "section": "Exercise 3: Reading a Vignette (collaborative)",
+    "text": "Exercise 3: Reading a Vignette (collaborative)\n\nOften, we get a bit mixed up when we’re first starting.\nOne helpful way to troubleshoot, can be typing “?” followed by the function into your environment (i.e., ?scale_fill_manual())\nRead the vignette for the scale_fill_manual() package. What package does it recommend for color blindness?"
+  },
+  {
+    "objectID": "slides/week-02/04-assess_landfills.html#exercise-04-individual",
+    "href": "slides/week-02/04-assess_landfills.html#exercise-04-individual",
+    "title": "[Assess] Solid Waste Landfill Siting",
+    "section": "Exercise 04 (individual)",
+    "text": "Exercise 04 (individual)\nConnect to theory, see assignment for details."
+  },
+  {
+    "objectID": "slides/week-02/04-assess_landfills.html#next-week",
+    "href": "slides/week-02/04-assess_landfills.html#next-week",
+    "title": "[Assess] Solid Waste Landfill Siting",
+    "section": "Next Week",
+    "text": "Next Week\n\nZiyah leading centering activity\nFor Tuesday: Article on procedural justice\nHW 02 due Thursday at 11:59 PM\nES welcome back event! Tuesday, September 16, 12:30 to 1:30 PM, global flora courtyard\nClimate justice & war system event series: Tiara Na’Puti, Wednesday September 17, 5:30 to 7:30 PM, PNE Atrium"
   },
   {
     "objectID": "syllabus.html",

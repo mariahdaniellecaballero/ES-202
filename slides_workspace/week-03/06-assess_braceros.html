@@ -197,7 +197,7 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">[Assess] Bracero Farmworker Case Study</h1>
-  <p class="subtitle">📍 Coachella Valley, CA</p>
+  <p class="subtitle">📍 Yakima Valley, WA</p>
 
 <div class="quarto-title-authors">
 </div>
@@ -248,6 +248,13 @@
 </div>
 </section>
 
+<section id="load-data" class="title-slide slide level1 center">
+<h1>Load Data</h1>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a>bracero <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"data/bracero_pull.xlsx"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+
 <section>
 <section id="part-ii-todays-goal" class="title-slide slide level1 center">
 <h1>Part II: Today’s Goal</h1>
@@ -273,7 +280,7 @@
 </ul></li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a><span class="fu">glimpse</span>(bracero)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a><span class="fu">glimpse</span>(bracero)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Rows: 90
 Columns: 6
@@ -328,8 +335,8 @@ $ language    &lt;chr&gt; "eng", "spa", "spa", "spa", "eng", "spa", "spa", "eng"
 <li>We use the mutate function to change the <code>date</code> column to a date format.</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a>bracero <span class="sc">|&gt;</span></span>
-<span id="cb5-2"><a></a>  <span class="fu">mutate</span>(<span class="at">date_format =</span> <span class="fu">as.Date</span>(date)) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a></a>bracero <span class="sc">|&gt;</span></span>
+<span id="cb6-2"><a></a>  <span class="fu">mutate</span>(<span class="at">date_format =</span> <span class="fu">as.Date</span>(date)) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 90 × 7
    title               subject description date  identifier language date_format
@@ -358,8 +365,8 @@ $ language    &lt;chr&gt; "eng", "spa", "spa", "spa", "eng", "spa", "spa", "eng"
 </ul></li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a>bracero <span class="sc">|&gt;</span> </span>
-<span id="cb7-2"><a></a>  <span class="fu">mutate</span>(<span class="at">subject_binary =</span> <span class="fu">ifelse</span>(subject <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"bracero"</span>, <span class="st">"Bracero"</span>), <span class="st">"Bracero"</span>, <span class="st">"Non-Bracero"</span> )) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a></a>bracero <span class="sc">|&gt;</span> </span>
+<span id="cb8-2"><a></a>  <span class="fu">mutate</span>(<span class="at">subject_binary =</span> <span class="fu">ifelse</span>(subject <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"bracero"</span>, <span class="st">"Bracero"</span>), <span class="st">"Bracero"</span>, <span class="st">"Non-Bracero"</span> )) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 90 × 7
    title            subject description date  identifier language subject_binary
@@ -385,17 +392,17 @@ $ language    &lt;chr&gt; "eng", "spa", "spa", "spa", "eng", "spa", "spa", "eng"
 <li><code>select()</code> can be used to select or deselect columns.</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9" data-code-line-numbers="|3|7|11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a><span class="co"># select column you don't want</span></span>
-<span id="cb9-2"><a></a>bracero <span class="sc">|&gt;</span></span>
-<span id="cb9-3"><a></a> <span class="fu">select</span>(<span class="sc">-</span>date)</span>
-<span id="cb9-4"><a></a></span>
-<span id="cb9-5"><a></a><span class="co"># select columns you do want</span></span>
-<span id="cb9-6"><a></a>bracero <span class="sc">|&gt;</span></span>
-<span id="cb9-7"><a></a> <span class="fu">select</span>(title, subject, description, date, identifier, language, date_format)</span>
-<span id="cb9-8"><a></a></span>
-<span id="cb9-9"><a></a><span class="co"># select columns in a row, except the column you don't want</span></span>
-<span id="cb9-10"><a></a>bracero <span class="sc">|&gt;</span></span>
-<span id="cb9-11"><a></a>  <span class="fu">select</span>(title<span class="sc">:</span>description, identifier<span class="sc">:</span>date_format)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb10" data-code-line-numbers="|3|7|11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a></a><span class="co"># select column you don't want</span></span>
+<span id="cb10-2"><a></a>bracero <span class="sc">|&gt;</span></span>
+<span id="cb10-3"><a></a> <span class="fu">select</span>(<span class="sc">-</span>date)</span>
+<span id="cb10-4"><a></a></span>
+<span id="cb10-5"><a></a><span class="co"># select columns you do want</span></span>
+<span id="cb10-6"><a></a>bracero <span class="sc">|&gt;</span></span>
+<span id="cb10-7"><a></a> <span class="fu">select</span>(title, subject, description, date, identifier, language, date_format)</span>
+<span id="cb10-8"><a></a></span>
+<span id="cb10-9"><a></a><span class="co"># select columns in a row, except the column you don't want</span></span>
+<span id="cb10-10"><a></a>bracero <span class="sc">|&gt;</span></span>
+<span id="cb10-11"><a></a>  <span class="fu">select</span>(title<span class="sc">:</span>description, identifier<span class="sc">:</span>date_format)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="rename-function" class="slide level2 smaller center">
@@ -408,8 +415,8 @@ $ language    &lt;chr&gt; "eng", "spa", "spa", "spa", "eng", "spa", "spa", "eng"
 </ul></li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a></a>bracero <span class="sc">|&gt;</span></span>
-<span id="cb10-2"><a></a>  <span class="fu">rename</span>(<span class="st">"interviewee"</span> <span class="ot">=</span> <span class="st">"title"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a>bracero <span class="sc">|&gt;</span></span>
+<span id="cb11-2"><a></a>  <span class="fu">rename</span>(<span class="st">"interviewee"</span> <span class="ot">=</span> <span class="st">"title"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 90 × 6
    interviewee              subject        description date  identifier language
@@ -435,8 +442,8 @@ $ language    &lt;chr&gt; "eng", "spa", "spa", "spa", "eng", "spa", "spa", "eng"
 <li><code>relocate</code> automatically puts the column at the front, so you have to specify <code>.after</code> or <code>.before</code>.</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a></a>bracero <span class="sc">|&gt;</span> </span>
-<span id="cb12-2"><a></a> <span class="fu">relocate</span>(identifier, <span class="at">.after =</span> language)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a></a>bracero <span class="sc">|&gt;</span> </span>
+<span id="cb13-2"><a></a> <span class="fu">relocate</span>(identifier, <span class="at">.after =</span> language)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 90 × 6
    title                    subject        description date  language identifier
@@ -461,13 +468,13 @@ $ language    &lt;chr&gt; "eng", "spa", "spa", "spa", "eng", "spa", "spa", "eng"
 <li>We can put all of these data transformation actions together using the pipe <code>|&gt;</code> function</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a></a>bracero_clean <span class="ot">&lt;-</span> bracero <span class="sc">|&gt;</span></span>
-<span id="cb14-2"><a></a>  <span class="fu">mutate</span>(<span class="at">date_format =</span> <span class="fu">as.Date</span>(date)) <span class="sc">|&gt;</span></span>
-<span id="cb14-3"><a></a>  <span class="fu">select</span>(<span class="sc">-</span>date) <span class="sc">|&gt;</span></span>
-<span id="cb14-4"><a></a>  <span class="fu">rename</span>(<span class="st">"interviewee"</span> <span class="ot">=</span> <span class="st">"title"</span>) <span class="sc">|&gt;</span></span>
-<span id="cb14-5"><a></a>  <span class="fu">relocate</span>(identifier, <span class="at">.after =</span> date_format)</span>
-<span id="cb14-6"><a></a></span>
-<span id="cb14-7"><a></a><span class="fu">head</span>(bracero_clean)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a></a>bracero_clean <span class="ot">&lt;-</span> bracero <span class="sc">|&gt;</span></span>
+<span id="cb15-2"><a></a>  <span class="fu">mutate</span>(<span class="at">date_format =</span> <span class="fu">as.Date</span>(date)) <span class="sc">|&gt;</span></span>
+<span id="cb15-3"><a></a>  <span class="fu">select</span>(<span class="sc">-</span>date) <span class="sc">|&gt;</span></span>
+<span id="cb15-4"><a></a>  <span class="fu">rename</span>(<span class="st">"interviewee"</span> <span class="ot">=</span> <span class="st">"title"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb15-5"><a></a>  <span class="fu">relocate</span>(identifier, <span class="at">.after =</span> date_format)</span>
+<span id="cb15-6"><a></a></span>
+<span id="cb15-7"><a></a><span class="fu">head</span>(bracero_clean)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 6 × 6
   interviewee              subject   description language date_format identifier
@@ -484,13 +491,13 @@ $ language    &lt;chr&gt; "eng", "spa", "spa", "spa", "eng", "spa", "spa", "eng"
 <section id="exercise-one" class="title-slide slide level1 center">
 <h1>Exercise One</h1>
 <ul>
-<li><p>Starting with the <code>bracero</code> dataframe, code the following three actions using the <code>|&gt;</code> into a new dataframe:</p>
+<li><p>Starting with the <code>bracero</code> dataframe, code the following three actions using the <code>|&gt;</code> into a new dataframe called <code>bracero_ex1</code>:</p>
 <ul>
 <li>mutate the <code>date</code> column to be in a DD-MM-YYYY format called <code>date_format</code>
 <ul>
 <li>hint: you may need to use the <code>?as.Date()</code> helper function</li>
 </ul></li>
-<li>select the <code>title</code> , <code>date_format</code>, and <code>description</code>columns</li>
+<li>select the <code>title</code> , <code>date_format</code>, and <code>description</code> columns</li>
 <li>reorder the remaining columns by date</li>
 </ul></li>
 </ul>
@@ -507,7 +514,7 @@ $ language    &lt;chr&gt; "eng", "spa", "spa", "spa", "eng", "spa", "spa", "eng"
 </ul></li>
 </ul>
 </section>
-<section id="filter-function" class="slide level2 center">
+<section id="filter-function" class="slide level2 smaller center">
 <h2>filter() function</h2>
 <ul>
 <li>Use the filter() function to select rows that correspond to values of interest.</li>
@@ -515,8 +522,8 @@ $ language    &lt;chr&gt; "eng", "spa", "spa", "spa", "eng", "spa", "spa", "eng"
 <li>use <code>==</code> to filter for a direct match</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a></a>bracero_clean <span class="sc">|&gt;</span></span>
-<span id="cb16-2"><a></a>  <span class="fu">filter</span>(language <span class="sc">==</span> <span class="st">"spa"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a></a>bracero_clean <span class="sc">|&gt;</span></span>
+<span id="cb17-2"><a></a>  <span class="fu">filter</span>(language <span class="sc">==</span> <span class="st">"spa"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 75 × 6
    interviewee              subject  description language date_format identifier
@@ -552,28 +559,8 @@ $ language    &lt;chr&gt; "eng", "spa", "spa", "spa", "eng", "spa", "spa", "eng"
 <li>Perhaps we’re interested in interviews that took place after 2004 in English:</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a></a>bracero_clean <span class="sc">|&gt;</span></span>
-<span id="cb18-2"><a></a>  <span class="fu">filter</span>(date_format <span class="sc">&gt;=</span> <span class="dv">2004-01-01</span> <span class="sc">&amp;</span> language <span class="sc">==</span> <span class="st">"eng"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 15 × 6
-   interviewee               subject description language date_format identifier
-   &lt;chr&gt;                     &lt;chr&gt;   &lt;chr&gt;       &lt;chr&gt;    &lt;date&gt;      &lt;chr&gt;     
- 1 Richard Hancock           Doña A… "Biographi… eng      2003-04-21  https://b…
- 2 Inez Rios                 Intera… "Biographi… eng      2003-01-31  https://b…
- 3 Ernesto Espino            Son of… "Biographi… eng      2005-11-12  https://b…
- 4 Rudy Villalobos           Depart… "Biographi… eng      2003-01-31  https://b…
- 5 Carol Norquest Jr.        Family… "Biographi… eng      2003-04-03  https://b…
- 6 Eleanor Martin            Bookke… "Biographi… eng      2003-03-17  https://b…
- 7 John Tomlin               Farmer  "Biographi… eng      2003-04-23  https://b…
- 8 Sam Sánchez               Public… "Biographi… eng      2003-04-19  https://b…
- 9 Elías Bonilla             Alliso… "Biographi… eng      2003-04-02  https://b…
-10 Socorro O. Pérez          Clerk … "Biographi… eng      2003-03-03  https://b…
-11 Laurentina Ramos Juárez   Ranche… "Biographi… eng      2003-03-02  https://b…
-12 Crisostomo Luna del Angel Bracero "Biographi… eng      2005-07-25  https://b…
-13 Andy Imutan               Activi… "Biographi… eng      2005-09-27  https://b…
-14 Sally Gutiérrez McQuinn   Bookke… "Biographi… eng      2005-07-28  https://b…
-15 Consuelo Lerma            Sewing  "Biographi… eng      2003-03-07  https://b…</code></pre>
-</div>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a></a>bracero_clean <span class="sc">|&gt;</span></span>
+<span id="cb19-2"><a></a>  <span class="fu">filter</span>(date_format <span class="sc">&gt;=</span> <span class="dv">2004-01-01</span> <span class="sc">&amp;</span> language <span class="sc">==</span> <span class="st">"eng"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="filter-and-str_detect" class="slide level2 center">
@@ -604,25 +591,9 @@ $ language    &lt;chr&gt; "eng", "spa", "spa", "spa", "eng", "spa", "spa", "eng"
 <div class="cell">
 <div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a></a>bracero_clean <span class="sc">|&gt;</span> </span>
 <span id="cb22-2"><a></a>  <span class="fu">arrange</span>(date_format, interviewee)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 90 × 6
-   interviewee             subject   description language date_format identifier
-   &lt;chr&gt;                   &lt;chr&gt;     &lt;chr&gt;       &lt;chr&gt;    &lt;date&gt;      &lt;chr&gt;     
- 1 Heriberto Cortéz Cortéz Bracero   "Biographi… spa      2002-05-13  https://b…
- 2 Homero López Ortiz      Bracero   "Biographi… spa      2002-05-31  https://b…
- 3 Patricio Corrales Rojas Bracero   "Biographi… spa      2002-07-02  https://b…
- 4 Liborio Santiago Pérez  Bracero   "Biographi… spa      2002-07-06  https://b…
- 5 Gregorio Corrales Rojas Bracero   "Biographi… spa      2002-07-09  https://b…
- 6 Héctor Solís Fuentes    Bracero   "Biographi… spa      2002-07-10  https://b…
- 7 Rodolfo Cruz Figueroa   Bracero   "Biographi… spa      2002-07-25  https://b…
- 8 Herminio Quezada Durán  Bracero   "Biographi… spa      2002-12-22  https://b…
- 9 Alfredo Fuentes Soto    Bracero   "Biographi… spa      2003-01-31  https://b…
-10 Inez Rios               Interact… "Biographi… eng      2003-01-31  https://b…
-# ℹ 80 more rows</code></pre>
-</div>
 </div>
 </section></section>
-<section id="exercise-two" class="title-slide slide level1 center">
+<section id="exercise-two" class="title-slide slide level1 smaller center">
 <h1>Exercise Two</h1>
 <ol type="1">
 <li><p>Filter the <code>bracero_clean</code> dataframe for any interviews that took place before 2005 with an interviewee whose name includes “Guadalupe”.</p></li>
@@ -639,26 +610,101 @@ $ language    &lt;chr&gt; "eng", "spa", "spa", "spa", "eng", "spa", "spa", "eng"
 <h1>Grouping Data</h1>
 
 </section>
-<section id="group_by-function" class="slide level2 center">
+<section id="group_by-function" class="slide level2 smaller center">
 <h2>group_by() function</h2>
+<ul>
+<li><code>group_by()</code> function is really helpful for dividing your data into groups for analysis.</li>
+<li><code>group_by()</code> function does not change your data, but will change subsequent operations if you use them in tandem with a <code>group_by()</code></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a></a>bracero_clean <span class="sc">|&gt;</span> </span>
+<span id="cb23-2"><a></a>  <span class="fu">group_by</span>(language)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 90 × 6
+# Groups:   language [2]
+   interviewee              subject  description language date_format identifier
+   &lt;chr&gt;                    &lt;chr&gt;    &lt;chr&gt;       &lt;chr&gt;    &lt;date&gt;      &lt;chr&gt;     
+ 1 Richard Hancock          Doña An… "Biographi… eng      2003-04-21  https://b…
+ 2 Pedro Cantor             Bracero  "Biographi… spa      2005-07-27  https://b…
+ 3 Asterio López León       Bracero  "Biographi… spa      2006-05-22  https://b…
+ 4 Vincente Delgado         Bracero  "Biographi… spa      2005-09-01  https://b…
+ 5 Inez Rios                Interac… "Biographi… eng      2003-01-31  https://b…
+ 6 Manuel Enriquez Savignac Bureau … "Biographi… spa      2003-02-06  https://b…
+ 7 Alberto Montes González  Bracero  "Biographi… spa      2005-07-27  https://b…
+ 8 Ernesto Espino           Son of … "Biographi… eng      2005-11-12  https://b…
+ 9 Jesús Ortíz Torres       Bracero  "Biographi… spa      2005-08-31  https://b…
+10 José G. Corral           Son of … "Biographi… spa      2005-11-12  https://b…
+# ℹ 80 more rows</code></pre>
+</div>
+</div>
 </section>
 <section id="summarize" class="slide level2 center">
 <h2>summarize()</h2>
+<ul>
+<li><code>summarize()</code> is often used in tandem with the <code>group_by()</code> function to calculate a summary statistic for a a group.</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a></a>bracero_clean <span class="sc">|&gt;</span></span>
+<span id="cb25-2"><a></a> <span class="fu">group_by</span>(language) <span class="sc">|&gt;</span></span>
+<span id="cb25-3"><a></a> <span class="fu">summarize</span>(<span class="at">n_interviews =</span> <span class="fu">n</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 2 × 2
+  language n_interviews
+  &lt;chr&gt;           &lt;int&gt;
+1 eng                15
+2 spa                75</code></pre>
+</div>
+</div>
+</section>
+<section id="slice" class="slide level2 smaller center">
+<h2>slice</h2>
+<ul>
+<li><code>slice_</code> functions help select a subset of rows</li>
+<li>slice_head(n = 5) will take the first five rows of the data</li>
+<li>slice_tail(n = 5) will take the last five rows of the data</li>
+<li>slice_min(x, n = 5) will take the five rows of data with the lowest values for column x.</li>
+<li>slice_max(x, n = 5) will take the five rows of data with the highest values for column x.</li>
+<li>slice_sample(n = 5) will select 5 random rows of data.</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a></a>bracero <span class="sc">|&gt;</span></span>
+<span id="cb27-2"><a></a>  <span class="fu">slice_sample</span>(<span class="at">n =</span> <span class="dv">15</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 15 × 6
+   title                      subject      description date  identifier language
+   &lt;chr&gt;                      &lt;chr&gt;        &lt;chr&gt;       &lt;chr&gt; &lt;chr&gt;      &lt;chr&gt;   
+ 1 Vincente Delgado           Bracero      "Biographi… 2005… https://b… spa     
+ 2 Salvador Esparza Carreño   Bracero      "Biographi… 2003… https://b… spa     
+ 3 Rodolfo Cruz Figueroa      Bracero      "Biographi… 2002… https://b… spa     
+ 4 Rodrigo Flores             Bracero      "Biographi… 2003… https://b… spa     
+ 5 Heriberto Cortéz Cortéz    Bracero      "Biographi… 2002… https://b… spa     
+ 6 Héctor Solís Fuentes       Bracero      "Biographi… 2002… https://b… spa     
+ 7 Pedro García               Bracero      "Biographi… 2006… https://b… spa     
+ 8 Alberto Montes González    Bracero      "Biographi… 2005… https://b… spa     
+ 9 Alberto Mendoza Torres     bracero      "Biographi… 2003… https://b… spa     
+10 Anacleto Morales Franco    Bracero      "Biographi… 2003… https://b… spa     
+11 Bernardo Treviño Cervantes bracero      "Biographi… 2003… https://b… spa     
+12 Amadeo Tapia               Bracero      "Biographi… 2006… https://b… spa     
+13 Enrique Torres Sánchez     Bracero      "Biographi… 2003… https://b… spa     
+14 Socorro O. Pérez           Clerk typis… "Biographi… 2003… https://b… eng     
+15 David Alfaro Sandoval      Bracero      "Biographi… 2006… https://b… spa     </code></pre>
+</div>
+</div>
 </section></section>
-<section id="exercise-three" class="title-slide slide level1 center">
+<section id="exercise-three" class="title-slide slide level1 smaller center">
 <h1>Exercise Three</h1>
 <ol type="1">
-<li>How many Braceros were interviewed in this dataset (i.e., Bracero is the topic)? Use a <code>group_by</code> function to count.</li>
+<li>How many Braceros were interviewed in this dataset (i.e., Bracero is the subject)? Use a <code>group_by</code> function to count.</li>
 </ol>
 <ul>
 <li>Hint: R is case-sensitive.</li>
 </ul>
 <ol start="2" type="1">
 <li>How many non-braceros were interviewed in this dataset?</li>
-<li>Based on the non-bracero topics, can you create a new factor column that groups the topics into 3-5 factors?</li>
+<li>Using the subject column, can you create a new factor column called <code>topic_group</code>that groups the subjects into 3-5 factors?</li>
 </ol>
 <ul>
-<li>use <code>mutate()</code>, and <code>case_match()</code> to classify the groups into a new column called <code>topic_group</code></li>
+<li>Hint: use <code>mutate()</code>, and <code>case_match()</code> to classify the groups into a new column called <code>topic_group</code>, I’ve given you a start!</li>
 </ul>
 <ol start="4" type="1">
 <li>Are there any interesting patterns in language spoken among your <code>topic_groups</code>? Use a <code>group_by</code> and <code>summarize</code> function to calculate.</li>
@@ -668,10 +714,12 @@ $ language    &lt;chr&gt; "eng", "spa", "spa", "spa", "eng", "spa", "spa", "eng"
 <section id="exercise-four" class="title-slide slide level1 center">
 <h1>Exercise Four</h1>
 <ol type="1">
-<li>Listen to an <a href="https://braceroarchive.org/items/show/138">interview with Mr.&nbsp;Cris Luna</a>, a Bracero from Ozuluama, Veracruz, Mexico.</li>
+<li>Explore the Bracero Archives and listen to at least one interview.</li>
 </ol>
-<p><a href="https://braceroarchive.org/items/show/81">interview with Mr.&nbsp;Raymundo Villa</a>, an interpreter from Ysleta, Texas who worked with</p>
-<p>Explore the Bracero archives, and listen to or read the biographical descriptions of interviews in the “Oral History” section. 2. Reflect on the aspects of procedural injustice as they relate to othe Bracero program: -</p>
+<ul>
+<li>Note that most all bracero interviews are conducted in spanish, if you’re interested in a perspective from an english-speaking bracero, I would suggest the interview with <a href="https://braceroarchive.org/items/show/138">Mr.&nbsp;Cris Luna</a>, a Bracero from Ozuluama, Veracruz, Mexico.</li>
+</ul>
+<p>Answer questions 2 and 3 using this week’s readings.</p>
 
 
 </section>

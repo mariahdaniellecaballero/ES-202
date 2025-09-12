@@ -28,6 +28,72 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-f563837468303362081e247dddd440d0.css">
   <link rel="stylesheet" href="custom.scss">
@@ -138,11 +204,1904 @@
 
   <p class="date">2025-09-12</p>
 </section>
-<section id="slides-will-be-posted-24-hours-in-advance-of-class." class="title-slide slide level1 center">
-<h1>Slides will be posted 24 hours in advance of class.</h1>
+<section id="class-overview" class="title-slide slide level1 center">
+<h1>Class Overview</h1>
+<ul>
+<li>Centering activity</li>
+<li>Setting the stage</li>
+<li>Paired coding</li>
+<li>Group Debrief</li>
+</ul>
+</section>
 
+<section id="centering-activity" class="title-slide slide level1 center">
+<h1>Centering Activity</h1>
+<p>Clara :-)</p>
+</section>
+
+<section>
+<section id="setting-the-stage" class="title-slide slide level1 center">
+<h1>Setting the Stage</h1>
 
 </section>
+<section id="my-approach-to-teaching-data-science-for-environmental-justice" class="slide level2 center">
+<h2>My Approach to Teaching Data Science for Environmental Justice</h2>
+<ul>
+<li>Assumes no background in data science</li>
+<li>Focuses on the use of data for communicating environmental injustices and working toward more just solutions</li>
+<li>Intended to connect to theoretical lessons</li>
+</ul>
+</section>
+<section id="general-data-science-process" class="slide level2 smaller center">
+<h2>General Data Science Process</h2>
+
+<img data-src="./images/tidy_approach.png" class="r-stretch"></section>
+<section id="course-organization" class="slide level2 center">
+<h2>Course Organization</h2>
+<ul>
+<li>Bigger Picture Case Study (HW 02– lots of wins)</li>
+<li>Skills that build on one another (HW 03-07)
+<ul>
+<li>Data Tidying</li>
+<li>Data Transforming</li>
+<li>Data Visualization</li>
+<li>Intro to Spatial Data</li>
+</ul></li>
+<li>Apply it! Use weeks 9 - 14 to show me your theoretical and methodological skills</li>
+</ul>
+</section>
+<section id="homework-approach" class="slide level2 center">
+<h2>Homework Approach</h2>
+<ul>
+<li>Assignments will be started in class on Fridays in pairs and submitted the following Thursday individually.</li>
+<li>I’ll lecture a bit throughout the class to introduce new skills or topics, then let pairs work through sections of the assignment.</li>
+</ul>
+</section></section>
+<section>
+<section id="group-coding" class="title-slide slide level1 center">
+<h1>Group Coding</h1>
+
+</section>
+<section id="learning-outcomes" class="slide level2 center">
+<h2>Learning Outcomes</h2>
+<ul>
+<li>Basic usage of R</li>
+<li>Recreate tables 1-3 in Bullard’s Study</li>
+<li>Visualize Distributional Justice</li>
+<li>Connect it to theoretical understandings of distributional justice</li>
+</ul>
+</section>
+<section id="lets-get-started" class="slide level2 center">
+<h2>Let’s Get Started</h2>
+<ul>
+<li>Find your pair</li>
+<li>Open <a href="case_studies/week-02-Bullard">Homework 02 folder</a> in Posit Cloud.</li>
+</ul>
+</section></section>
+<section>
+<section id="basic-uses-of-r-collaborative" class="title-slide slide level1 center">
+<h1>Basic uses of R (collaborative)</h1>
+
+</section>
+<section id="importing-data" class="slide level2 center">
+<h2>Importing Data</h2>
+<ul>
+<li>This assignment is comprised of one dataset:
+<ul>
+<li>Robert Bullard’s original data</li>
+</ul></li>
+<li>Note on how I got this data</li>
+</ul>
+</section>
+<section id="understanding-the-ide" class="slide level2 smaller center">
+<h2>Understanding the IDE</h2>
+<div class="columns">
+<div class="column" style="width:1%;">
+
+</div><div class="column" style="width:99%;">
+<p>![]<img data-src="./images/ide.png"></p>
+</div></div>
+</section>
+<section id="installing-packages" class="slide level2 center">
+<h2>Installing packages</h2>
+<ul>
+<li><strong>Packages</strong> are comprised of functions, data, and additional documentation to load, clean, and analyze your data.</li>
+<li>Installing a package needs only one line of code:</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a><span class="fu">install.packages</span>(<span class="st">"tidyverse"</span>) <span class="co"># for tidying data</span></span>
+<span id="cb1-2"><a></a><span class="fu">install.packages</span>(<span class="st">"gt"</span>)</span>
+<span id="cb1-3"><a></a><span class="fu">install.packages</span>(<span class="st">"gtsummary"</span>) <span class="co"># creating tables</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li>Following an install, you need to load your packages:</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb2-2"><a></a><span class="fu">library</span>(gt)</span>
+<span id="cb2-3"><a></a><span class="fu">library</span>(gtsummary)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="loading-data" class="slide level2 center">
+<h2>Loading Data</h2>
+<ul>
+<li>Now we load our data. In Posit Cloud, navigate to lower left corner and note the dataset entitled “bullard_1979_waste_sites.csv”</li>
+<li>Load our first dataset, which includes the 13 landfill and incinerator sites in Bullard’s first case study.</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a>sites <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"bullard_1979_waste_sites.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="understanding-data" class="slide level2 smaller center">
+<h2>Understanding data</h2>
+<ul>
+<li>the <code>sites</code> data that we’ve loaded is a <code>dataframe</code>, meaning it is a rectangular collection of variables (or columns) and observations (rows). In each cell, is a <code>value</code>. <img data-src="./images/data_structure.png"></li>
+<li>Examples of each?</li>
+</ul>
+</section>
+<section id="rules-of-tidy-data" class="slide level2 center">
+<h2>Rules of Tidy Data</h2>
+<ul>
+<li>This dataset is <code>tabular</code>, meaning that the data is organized into a table with rows and columns.
+<ul>
+<li><code>tidy</code> data has five rules:
+<ol type="1">
+<li>Every <code>variable</code> has its own column.</li>
+<li>Every <code>observation</code> is stored in its own row.</li>
+<li>Each <code>value</code> is stored in the cell of a corresponding variable.</li>
+<li>Values don’t contain units (this should be in a codebook).</li>
+<li>No extraneous information (footnotes, extra titles, etc.)</li>
+</ol></li>
+</ul></li>
+</ul>
+</section>
+<section id="sites-data" class="slide level2 smaller center">
+<h2>Sites Data</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a>sites</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 13 × 5
+   facility                 neighborhood          type  predom_eth_1979 location
+   &lt;chr&gt;                    &lt;chr&gt;                 &lt;chr&gt; &lt;chr&gt;           &lt;chr&gt;   
+ 1 Fourth Ward              FOURTH WARD           Inci… Black           Southwe…
+ 2 Patterson Street         WEST END/COTTAGE GRO… Inci… Black           Northwe…
+ 3 Kelly Street             KASHMERE GARDENS      Inci… Black           Northea…
+ 4 Holmes Road              SUNNYSIDE             Inci… Black           Southea…
+ 5 Velasco                  SECOND WARD           Inci… Hispanic        Southea…
+ 6 Westpark                 LARCHMONT             Mini… White           Sothwest
+ 7 Kelly Street             KASHMERE GARDENS      Mini… Black           Northea…
+ 8 Northwest Service Center CARVERDALE            Mini… Black           Northwe…
+ 9 Fourth Ward              FOURTH WARD           Land… Black           Southwe…
+10 Sunnyside                SUNNYSIDE             Land… Black           Southea…
+11 Reed Road                SUNNYSIDE             Land… Black           Southea…
+12 Kirkpatrick              TRINITY GARDENS       Land… Black           Northea…
+13 West Donnovan            ACRES HOMES           Land… Black           Northwe…</code></pre>
+</div>
+</div>
+</section></section>
+<section>
+<section id="recreating-tables-1-through-3-collaborative" class="title-slide slide level1 center">
+<h1>Recreating Tables 1 through 3 (collaborative)</h1>
+
+</section>
+<section id="selecting-variables" class="slide level2 center">
+<h2>Selecting variables</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a></a>table_one <span class="ot">&lt;-</span> sites <span class="sc">|&gt;</span></span>
+<span id="cb6-2"><a></a>  <span class="fu">filter</span>(type <span class="sc">==</span> <span class="st">"Incinerator"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb6-3"><a></a>  <span class="fu">select</span>(facility, neighborhood, predom_eth_1979, location)</span>
+<span id="cb6-4"><a></a></span>
+<span id="cb6-5"><a></a>table_one</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 5 × 4
+  facility         neighborhood           predom_eth_1979 location 
+  &lt;chr&gt;            &lt;chr&gt;                  &lt;chr&gt;           &lt;chr&gt;    
+1 Fourth Ward      FOURTH WARD            Black           Southwest
+2 Patterson Street WEST END/COTTAGE GROVE Black           Northwest
+3 Kelly Street     KASHMERE GARDENS       Black           Northeast
+4 Holmes Road      SUNNYSIDE              Black           Southeast
+5 Velasco          SECOND WARD            Hispanic        Southeast</code></pre>
+</div>
+</div>
+</section>
+<section id="formatting-tables" class="slide level2 smaller center">
+<h2>Formatting Tables</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8" data-code-line-numbers="1|2|3|9|13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a></a>table_one <span class="sc">|&gt;</span></span>
+<span id="cb8-2"><a></a>  <span class="fu">gt</span>() <span class="sc">|&gt;</span></span>
+<span id="cb8-3"><a></a>  <span class="fu">cols_label</span>(</span>
+<span id="cb8-4"><a></a>    <span class="at">facility =</span> <span class="st">"Site of Incinerator"</span>,</span>
+<span id="cb8-5"><a></a>    <span class="at">neighborhood =</span> <span class="st">"Neighborhood"</span>,</span>
+<span id="cb8-6"><a></a>    <span class="at">predom_eth_1979 =</span> <span class="st">"Ethnicity"</span>,</span>
+<span id="cb8-7"><a></a>    <span class="at">location =</span> <span class="st">"Location"</span></span>
+<span id="cb8-8"><a></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb8-9"><a></a>  <span class="fu">tab_header</span>(</span>
+<span id="cb8-10"><a></a>    <span class="at">title =</span> (<span class="st">"Table 1"</span>),</span>
+<span id="cb8-11"><a></a>    <span class="at">subtitle =</span> <span class="st">"City of Houston Garbage Incinerators"</span></span>
+<span id="cb8-12"><a></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb8-13"><a></a>  <span class="fu">tab_source_note</span>(<span class="st">"The above Houston-owned garbage incinerators were in operation between the 1920's and 1975"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="mxtmhxcqlr" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#mxtmhxcqlr table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#mxtmhxcqlr thead, #mxtmhxcqlr tbody, #mxtmhxcqlr tfoot, #mxtmhxcqlr tr, #mxtmhxcqlr td, #mxtmhxcqlr th {
+  border-style: none;
+}
+
+#mxtmhxcqlr p {
+  margin: 0;
+  padding: 0;
+}
+
+#mxtmhxcqlr .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#mxtmhxcqlr .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#mxtmhxcqlr .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#mxtmhxcqlr .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#mxtmhxcqlr .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#mxtmhxcqlr .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#mxtmhxcqlr .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#mxtmhxcqlr .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#mxtmhxcqlr .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#mxtmhxcqlr .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#mxtmhxcqlr .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#mxtmhxcqlr .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#mxtmhxcqlr .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#mxtmhxcqlr .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#mxtmhxcqlr .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#mxtmhxcqlr .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#mxtmhxcqlr .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#mxtmhxcqlr .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#mxtmhxcqlr .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#mxtmhxcqlr .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#mxtmhxcqlr .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#mxtmhxcqlr .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#mxtmhxcqlr .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#mxtmhxcqlr .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#mxtmhxcqlr .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#mxtmhxcqlr .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#mxtmhxcqlr .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#mxtmhxcqlr .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#mxtmhxcqlr .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#mxtmhxcqlr .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#mxtmhxcqlr .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#mxtmhxcqlr .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#mxtmhxcqlr .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#mxtmhxcqlr .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#mxtmhxcqlr .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#mxtmhxcqlr .gt_left {
+  text-align: left;
+}
+
+#mxtmhxcqlr .gt_center {
+  text-align: center;
+}
+
+#mxtmhxcqlr .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#mxtmhxcqlr .gt_font_normal {
+  font-weight: normal;
+}
+
+#mxtmhxcqlr .gt_font_bold {
+  font-weight: bold;
+}
+
+#mxtmhxcqlr .gt_font_italic {
+  font-style: italic;
+}
+
+#mxtmhxcqlr .gt_super {
+  font-size: 65%;
+}
+
+#mxtmhxcqlr .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#mxtmhxcqlr .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#mxtmhxcqlr .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#mxtmhxcqlr .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#mxtmhxcqlr .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#mxtmhxcqlr .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#mxtmhxcqlr .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#mxtmhxcqlr .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#mxtmhxcqlr div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+
+<table class="gt_table caption-top" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<thead>
+<tr class="gt_heading header">
+<th colspan="4" class="gt_heading gt_title gt_font_normal">Table 1</th>
+</tr>
+<tr class="gt_heading even">
+<th colspan="4" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border">City of Houston Garbage Incinerators</th>
+</tr>
+<tr class="gt_col_headings header">
+<th id="facility" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Site of Incinerator</th>
+<th id="neighborhood" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Neighborhood</th>
+<th id="predom_eth_1979" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Ethnicity</th>
+<th id="location" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Location</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_left" headers="facility">Fourth Ward</td>
+<td class="gt_row gt_left" headers="neighborhood">FOURTH WARD</td>
+<td class="gt_row gt_left" headers="predom_eth_1979">Black</td>
+<td class="gt_row gt_left" headers="location">Southwest</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="facility">Patterson Street</td>
+<td class="gt_row gt_left" headers="neighborhood">WEST END/COTTAGE GROVE</td>
+<td class="gt_row gt_left" headers="predom_eth_1979">Black</td>
+<td class="gt_row gt_left" headers="location">Northwest</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="facility">Kelly Street</td>
+<td class="gt_row gt_left" headers="neighborhood">KASHMERE GARDENS</td>
+<td class="gt_row gt_left" headers="predom_eth_1979">Black</td>
+<td class="gt_row gt_left" headers="location">Northeast</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="facility">Holmes Road</td>
+<td class="gt_row gt_left" headers="neighborhood">SUNNYSIDE</td>
+<td class="gt_row gt_left" headers="predom_eth_1979">Black</td>
+<td class="gt_row gt_left" headers="location">Southeast</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="facility">Velasco</td>
+<td class="gt_row gt_left" headers="neighborhood">SECOND WARD</td>
+<td class="gt_row gt_left" headers="predom_eth_1979">Hispanic</td>
+<td class="gt_row gt_left" headers="location">Southeast</td>
+</tr>
+</tbody><tfoot class="gt_sourcenotes">
+<tr class="odd">
+<td colspan="4" class="gt_sourcenote">The above Houston-owned garbage incinerators were in operation between the 1920's and 1975</td>
+</tr>
+</tfoot>
+
+</table>
+
+</div>
+</div>
+</div>
+</section>
+<section id="exercise-one-rinse-wash-repeat-for-tables-2-and-3" class="slide level2 center">
+<h2>Exercise One: Rinse, Wash, Repeat for Tables 2 and 3</h2>
+<ul>
+<li>Recreate tables 2 and 3 using the same approaches</li>
+<li>Pay close attention to the information shared in each table</li>
+</ul>
+</section></section>
+<section>
+<section id="visualizing-distributional-injustice" class="title-slide slide level1 center">
+<h1>Visualizing Distributional Injustice</h1>
+<ul>
+<li>First, let’s recreate table 4
+<ul>
+<li>Summarizes the type of landfill disposal site by % of black and non-black communities.</li>
+<li>Thoughts on process getting from <code>sites</code> dataframe to table 4?</li>
+</ul></li>
+</ul>
+</section>
+<section id="prepping-data" class="slide level2 center">
+<h2>Prepping Data</h2>
+<ul>
+<li>Bullard summarizes by both facility type and ethnicity (black versus non-black).
+<ul>
+<li>can use an <code>if_else</code> function nested in a <code>mutate</code> function.
+<ul>
+<li><code>mutate</code> function can add or modify a variable</li>
+<li><code>if_else</code> creates a test and defines what to do with variables that meet (or do not) meet the test.</li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="creating-summary-table" class="slide level2 smaller center">
+<h2>Creating Summary Table</h2>
+<ul>
+<li>To summarize by two groups, Bullard creates a <code>crosstabs</code> table</li>
+<li>Can be done using the <code>gtsummary</code> package</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9" data-code-line-numbers="|3|4|5|6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a>sites <span class="sc">|&gt;</span></span>
+<span id="cb9-2"><a></a>  <span class="fu">mutate</span>(<span class="at">predom_eth_1979 =</span> <span class="fu">if_else</span>(predom_eth_1979 <span class="sc">==</span> <span class="st">"Black"</span>, <span class="st">"Black"</span>, <span class="st">"Nonblack"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb9-3"><a></a>  <span class="fu">tbl_cross</span>(</span>
+<span id="cb9-4"><a></a>    <span class="at">row =</span> type,</span>
+<span id="cb9-5"><a></a>    <span class="at">col =</span> predom_eth_1979,</span>
+<span id="cb9-6"><a></a>    <span class="at">percent =</span> <span class="st">"row"</span></span>
+<span id="cb9-7"><a></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="nyfvypgbgp" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#nyfvypgbgp table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#nyfvypgbgp thead, #nyfvypgbgp tbody, #nyfvypgbgp tfoot, #nyfvypgbgp tr, #nyfvypgbgp td, #nyfvypgbgp th {
+  border-style: none;
+}
+
+#nyfvypgbgp p {
+  margin: 0;
+  padding: 0;
+}
+
+#nyfvypgbgp .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#nyfvypgbgp .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#nyfvypgbgp .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#nyfvypgbgp .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#nyfvypgbgp .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#nyfvypgbgp .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#nyfvypgbgp .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#nyfvypgbgp .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#nyfvypgbgp .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#nyfvypgbgp .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#nyfvypgbgp .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#nyfvypgbgp .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#nyfvypgbgp .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#nyfvypgbgp .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#nyfvypgbgp .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#nyfvypgbgp .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#nyfvypgbgp .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#nyfvypgbgp .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#nyfvypgbgp .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#nyfvypgbgp .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#nyfvypgbgp .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#nyfvypgbgp .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#nyfvypgbgp .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#nyfvypgbgp .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#nyfvypgbgp .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#nyfvypgbgp .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#nyfvypgbgp .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#nyfvypgbgp .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#nyfvypgbgp .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#nyfvypgbgp .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#nyfvypgbgp .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#nyfvypgbgp .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#nyfvypgbgp .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#nyfvypgbgp .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#nyfvypgbgp .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#nyfvypgbgp .gt_left {
+  text-align: left;
+}
+
+#nyfvypgbgp .gt_center {
+  text-align: center;
+}
+
+#nyfvypgbgp .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#nyfvypgbgp .gt_font_normal {
+  font-weight: normal;
+}
+
+#nyfvypgbgp .gt_font_bold {
+  font-weight: bold;
+}
+
+#nyfvypgbgp .gt_font_italic {
+  font-style: italic;
+}
+
+#nyfvypgbgp .gt_super {
+  font-size: 65%;
+}
+
+#nyfvypgbgp .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#nyfvypgbgp .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#nyfvypgbgp .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#nyfvypgbgp .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#nyfvypgbgp .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#nyfvypgbgp .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#nyfvypgbgp .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#nyfvypgbgp .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#nyfvypgbgp div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+
+<table class="gt_table caption-top" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="gt_col_headings gt_spanner_row header">
+<th rowspan="2" id="label" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col"></th>
+<th colspan="2" id="level 1; stat_1" class="gt_center gt_columns_top_border gt_column_spanner_outer" data-quarto-table-cell-role="th" scope="colgroup"><div class="gt_column_spanner">
+predom_eth_1979
+</div></th>
+<th rowspan="2" id="stat_0" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">Total</th>
+</tr>
+<tr class="gt_col_headings even">
+<th id="stat_1" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">Black</th>
+<th id="stat_2" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">Nonblack</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">type</td>
+<td class="gt_row gt_center" headers="stat_1"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_2"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_0"><br>
+</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Incinerator</td>
+<td class="gt_row gt_center" headers="stat_1">4 (80%)</td>
+<td class="gt_row gt_center" headers="stat_2">1 (20%)</td>
+<td class="gt_row gt_center" headers="stat_0">5 (100%)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Landfill</td>
+<td class="gt_row gt_center" headers="stat_1">5 (100%)</td>
+<td class="gt_row gt_center" headers="stat_2">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_0">5 (100%)</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Mini-incinerator</td>
+<td class="gt_row gt_center" headers="stat_1">2 (67%)</td>
+<td class="gt_row gt_center" headers="stat_2">1 (33%)</td>
+<td class="gt_row gt_center" headers="stat_0">3 (100%)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">Total</td>
+<td class="gt_row gt_center" headers="stat_1">11 (85%)</td>
+<td class="gt_row gt_center" headers="stat_2">2 (15%)</td>
+<td class="gt_row gt_center" headers="stat_0">13 (100%)</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</section>
+<section id="formatting-table" class="slide level2 smaller center">
+<h2>Formatting Table</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10" data-code-line-numbers="|7|9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a></a>sites <span class="sc">|&gt;</span></span>
+<span id="cb10-2"><a></a>  <span class="fu">mutate</span>(<span class="at">predom_eth_1979 =</span> <span class="fu">if_else</span>(predom_eth_1979 <span class="sc">==</span> <span class="st">"Black"</span>, <span class="st">"Black"</span>, <span class="st">"Nonblack"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb10-3"><a></a>  <span class="fu">tbl_cross</span>(</span>
+<span id="cb10-4"><a></a>    <span class="at">row =</span> type,</span>
+<span id="cb10-5"><a></a>    <span class="at">col =</span> predom_eth_1979,</span>
+<span id="cb10-6"><a></a>    <span class="at">percent =</span> <span class="st">"row"</span>,</span>
+<span id="cb10-7"><a></a>    <span class="at">label =</span> <span class="fu">list</span>(type <span class="sc">~</span> <span class="st">"Waste Disposal Sites"</span>, predom_eth_1979 <span class="sc">~</span> <span class="st">"Ethnicity"</span>)</span>
+<span id="cb10-8"><a></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb10-9"><a></a>  <span class="fu">bold_labels</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="qfphvxiytp" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#qfphvxiytp table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#qfphvxiytp thead, #qfphvxiytp tbody, #qfphvxiytp tfoot, #qfphvxiytp tr, #qfphvxiytp td, #qfphvxiytp th {
+  border-style: none;
+}
+
+#qfphvxiytp p {
+  margin: 0;
+  padding: 0;
+}
+
+#qfphvxiytp .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#qfphvxiytp .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#qfphvxiytp .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#qfphvxiytp .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#qfphvxiytp .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#qfphvxiytp .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#qfphvxiytp .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#qfphvxiytp .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#qfphvxiytp .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#qfphvxiytp .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#qfphvxiytp .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#qfphvxiytp .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#qfphvxiytp .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#qfphvxiytp .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#qfphvxiytp .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#qfphvxiytp .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#qfphvxiytp .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#qfphvxiytp .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#qfphvxiytp .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#qfphvxiytp .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#qfphvxiytp .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#qfphvxiytp .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#qfphvxiytp .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#qfphvxiytp .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#qfphvxiytp .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#qfphvxiytp .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#qfphvxiytp .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#qfphvxiytp .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#qfphvxiytp .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#qfphvxiytp .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#qfphvxiytp .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#qfphvxiytp .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#qfphvxiytp .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#qfphvxiytp .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#qfphvxiytp .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#qfphvxiytp .gt_left {
+  text-align: left;
+}
+
+#qfphvxiytp .gt_center {
+  text-align: center;
+}
+
+#qfphvxiytp .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#qfphvxiytp .gt_font_normal {
+  font-weight: normal;
+}
+
+#qfphvxiytp .gt_font_bold {
+  font-weight: bold;
+}
+
+#qfphvxiytp .gt_font_italic {
+  font-style: italic;
+}
+
+#qfphvxiytp .gt_super {
+  font-size: 65%;
+}
+
+#qfphvxiytp .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#qfphvxiytp .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#qfphvxiytp .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#qfphvxiytp .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#qfphvxiytp .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#qfphvxiytp .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#qfphvxiytp .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#qfphvxiytp .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#qfphvxiytp div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+
+<table class="gt_table caption-top" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="gt_col_headings gt_spanner_row header">
+<th rowspan="2" id="label" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col"></th>
+<th colspan="2" id="level 1; stat_1" class="gt_center gt_columns_top_border gt_column_spanner_outer" data-quarto-table-cell-role="th" scope="colgroup"><div class="gt_column_spanner">
+<strong>Ethnicity</strong>
+</div></th>
+<th rowspan="2" id="stat_0" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col"><strong>Total</strong></th>
+</tr>
+<tr class="gt_col_headings even">
+<th id="stat_1" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">Black</th>
+<th id="stat_2" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">Nonblack</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_left" headers="label" style="font-weight: bold">Waste Disposal Sites</td>
+<td class="gt_row gt_center" headers="stat_1"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_2"><br>
+</td>
+<td class="gt_row gt_center" headers="stat_0"><br>
+</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Incinerator</td>
+<td class="gt_row gt_center" headers="stat_1">4 (80%)</td>
+<td class="gt_row gt_center" headers="stat_2">1 (20%)</td>
+<td class="gt_row gt_center" headers="stat_0">5 (100%)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Landfill</td>
+<td class="gt_row gt_center" headers="stat_1">5 (100%)</td>
+<td class="gt_row gt_center" headers="stat_2">0 (0%)</td>
+<td class="gt_row gt_center" headers="stat_0">5 (100%)</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Mini-incinerator</td>
+<td class="gt_row gt_center" headers="stat_1">2 (67%)</td>
+<td class="gt_row gt_center" headers="stat_2">1 (33%)</td>
+<td class="gt_row gt_center" headers="stat_0">3 (100%)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label" style="font-weight: bold">Total</td>
+<td class="gt_row gt_center" headers="stat_1">11 (85%)</td>
+<td class="gt_row gt_center" headers="stat_2">2 (15%)</td>
+<td class="gt_row gt_center" headers="stat_0">13 (100%)</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</section>
+<section id="exercise-2-one-more-summary-table" class="slide level2 center">
+<h2>Exercise 2: One more summary table</h2>
+<ul>
+<li>Suppose you lived in a Southwest neighborhood and were interested in the distribution of facility types by Southwest versus non-southwest neighborhoods.</li>
+<li>Create a cross tabs summary table (make sure it’s formatted nicely!)</li>
+</ul>
+</section>
+<section id="plot-the-data" class="slide level2 center">
+<h2>Plot the data</h2>
+<h3 id="using-ggplot2">Using ggplot2</h3>
+<ul>
+<li><code>ggplot2</code> is a lovely package for visualizing data.</li>
+<li>It works works using a layer approach.</li>
+<li>The first layer tells ggplot2 to create a graph base using the <code>sites</code> dataframe.</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a><span class="fu">ggplot</span>(<span class="at">data =</span> sites)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="04-assess_landfills_files/figure-revealjs/unnamed-chunk-10-1.png" width="960" class="r-stretch"></section>
+<section id="adding-variables" class="slide level2 center">
+<h2>Adding Variables</h2>
+<ul>
+<li>Let’s visualize ethnicity by facility type, similar to our approach in table 4, except as a bar chart.</li>
+<li><code>mapping</code> tells ggplot how variables in the data will be mapped to visual aspects (aesthetics) of the plot.</li>
+<li><code>aes</code> is the function that defines what variables will be mapped to the x and y axes.</li>
+<li><code>x</code> is the only variable in this case, but we will define it as type.</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a></a><span class="fu">ggplot</span>(<span class="at">data =</span> sites, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> type))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="04-assess_landfills_files/figure-revealjs/unnamed-chunk-11-1.png" width="960" class="r-stretch"></section>
+<section id="adding-a-visual" class="slide level2 center">
+<h2>Adding a Visual</h2>
+<ul>
+<li><code>geom</code> specifies how the plot will represent the data.
+<ul>
+<li>in ggplot2, this can be functions like <code>geom_bar</code>, <code>geom_point</code>, or <code>geom_boxplot</code>.</li>
+</ul></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a></a><span class="fu">ggplot</span>(<span class="at">data =</span> sites, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> type)) <span class="sc">+</span></span>
+<span id="cb13-2"><a></a>  <span class="fu">geom_bar</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="04-assess_landfills_files/figure-revealjs/unnamed-chunk-12-1.png" width="960" class="r-stretch"></section>
+<section id="formatting-colors-and-labels" class="slide level2 smaller center">
+<h2>Formatting colors and labels</h2>
+<ul>
+<li>adding <code>fill</code> to the ggplot specifies that we want the chart colors to reflect the frequencies of each ethnicity across each disposal site type.</li>
+<li><code>scale_fill_manual()</code> allows you to change the fill colors in your data.
+<ul>
+<li><code>values</code> can be color names, hex codes, or RGB values.</li>
+<li><code>name</code> is the legend name</li>
+</ul></li>
+<li><code>labs()</code> allows you to rename your axes</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14" data-code-line-numbers="|1|3|4|5|7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a></a><span class="fu">ggplot</span>(sites, <span class="fu">aes</span>(<span class="at">x =</span> type, <span class="at">fill =</span> predom_eth_1979)) <span class="sc">+</span></span>
+<span id="cb14-2"><a></a>  <span class="fu">geom_bar</span>() <span class="sc">+</span></span>
+<span id="cb14-3"><a></a>  <span class="fu">scale_fill_manual</span>(</span>
+<span id="cb14-4"><a></a>    <span class="at">values =</span> <span class="fu">c</span>(<span class="st">"Red"</span>, <span class="st">"Yellow"</span>, <span class="st">"Green"</span>),</span>
+<span id="cb14-5"><a></a>    <span class="at">name =</span> <span class="st">"Predominant Community Ethnicity"</span></span>
+<span id="cb14-6"><a></a>  ) <span class="sc">+</span></span>
+<span id="cb14-7"><a></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">" "</span>, <span class="at">y =</span> <span class="st">"Number of Facilities"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="exercise-3-reading-a-vignette-collaborative" class="slide level2 center">
+<h2>Exercise 3: Reading a Vignette (collaborative)</h2>
+<ul>
+<li>Often, we get a bit mixed up when we’re first starting.</li>
+<li>One helpful way to troubleshoot, can be typing “?” followed by the function into your environment (i.e., <code>?scale_fill_manual()</code>)</li>
+<li>Read the vignette for the <code>scale_fill_manual()</code> package. What package does it recommend for color blindness?</li>
+</ul>
+</section>
+<section id="exercise-04-individual" class="slide level2 center">
+<h2>Exercise 04 (individual)</h2>
+<p>Connect to theory, see assignment for details.</p>
+</section>
+<section id="next-week" class="slide level2 center">
+<h2>Next Week</h2>
+<ul>
+<li>Ziyah leading centering activity</li>
+<li>For Tuesday: Article on procedural justice</li>
+<li>HW 02 due Thursday at 11:59 PM</li>
+<li>ES welcome back event! Tuesday, September 16, 12:30 to 1:30 PM, global flora courtyard</li>
+<li>Climate justice &amp; war system event series: Tiara Na’Puti, Wednesday September 17, 5:30 to 7:30 PM, PNE Atrium</li>
+</ul>
+
+
+</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
@@ -360,6 +2319,44 @@
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
         const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
