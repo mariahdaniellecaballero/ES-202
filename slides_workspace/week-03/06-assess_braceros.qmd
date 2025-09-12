@@ -1,6 +1,6 @@
 ---
 title: "[Assess] Bracero Farmworker Case Study"
-subtitle: "📍 Coachella Valley, CA"
+subtitle: "📍 Yakima Valley, WA"
 date: "September 19, 2025"
 format: 
   revealjs:
@@ -49,6 +49,15 @@ library(tidyverse) # for tidying
 # | eval: true
 # | echo: false
 bracero <- read_excel("~/Google Drive/My Drive/Teaching/ES-202/Case Study Code/data/week_03/bracero_pull.xlsx")
+```
+
+# Load Data
+```{r}
+#| warning: false
+#| message: false
+#| echo: true
+#| eval: false
+bracero <- read_excel("data/bracero_pull.xlsx")
 ```
 
 # Part II: Today's Goal
@@ -187,11 +196,11 @@ head(bracero_clean)
 ```
 
 # Exercise One
-- Starting with the `bracero` dataframe, code the following three actions using the `|>` into a new dataframe: 
+- Starting with the `bracero` dataframe, code the following three actions using the `|>` into a new dataframe called `bracero_ex1`: 
 
   - mutate the `date` column to be in a DD-MM-YYYY format called `date_format`
     - hint: you may need to use the `?as.Date()` helper function
-  - select the `title` , `date_format`, and `description`columns
+  - select the `title` , `date_format`, and `description` columns
   - reorder the remaining columns by date
 
 # Transforming Data (Rows)
@@ -199,7 +208,7 @@ head(bracero_clean)
   - `filter()` is a function that allows you to keep rows of interest (but won't change the order of your rows) 
   - `arrange()` changes the order of your rows (but won't filter for anything)
 
-## filter() function 
+## filter() function {.smaller}
 - Use the filter() function to select rows that correspond to values of interest. 
 - Say we're interested in only interviews that are spoken in spanish:
 - use `==` to filter for a direct match 
@@ -227,6 +236,7 @@ bracero_clean |>
 #| warning: false
 #| message: false
 #| echo: true
+#| eval: false
 
 bracero_clean |>
   filter(date_format >= 2004-01-01 & language == "eng")
@@ -250,12 +260,13 @@ bracero_clean |>
 #| warning: false
 #| message: false
 #| echo: true
+#| eval: false
 
 bracero_clean |> 
   arrange(date_format, interviewee)
 ```
 
-# Exercise Two
+# Exercise Two {.smaller}
 1. Filter the `bracero_clean` dataframe for any interviews that took place before 2005 with an interviewee whose name includes "Guadalupe".
 
 2. Sort the `bracero_clean` data frame in descending order by date. What was the date, how many interviews took place, and who is listed first?
@@ -266,24 +277,58 @@ bracero_clean |>
 
 # Grouping Data 
 
-## group_by() function
+## group_by() function {.smaller}
+- `group_by()` function is really helpful for dividing your data into groups for analysis. 
+- `group_by()` function does not change your data, but will change subsequent operations if you use them in tandem with a `group_by()`
+```{r}
+#| warning: false
+#| message: false
+#| echo: true
+#| eval: true
+
+bracero_clean |> 
+  group_by(language)
+```
 
 
 ## summarize()
+- `summarize()` is often used in tandem with the `group_by()` function to calculate a summary statistic for a a group. 
+```{r}
+#| warning: false
+#| message: false
+#| echo: true
+#| eval: true
+bracero_clean |>
+ group_by(language) |>
+ summarize(n_interviews = n())
+```
 
-# Exercise Three
-1. How many Braceros were interviewed in this dataset (i.e., Bracero is the topic)? Use a `group_by` function to count.
+## slice {.smaller}
+- `slice_` functions help select a subset of rows
+ - slice_head(n = 5) will take the first five rows of the data
+ - slice_tail(n = 5) will take the last five rows of the data
+ - slice_min(x, n = 5) will take the five rows of data with the lowest values for column x. 
+ - slice_max(x, n = 5) will take the five rows of data with the highest values for column x. 
+ - slice_sample(n = 5) will select 5 random rows of data.
+```{r}
+#| warning: false
+#| message: false
+#| echo: true
+#| eval: true
+bracero |>
+  slice_sample(n = 15)
+```
+
+# Exercise Three {.smaller}
+1. How many Braceros were interviewed in this dataset (i.e., Bracero is the subject)? Use a `group_by` function to count.
   - Hint: R is case-sensitive. 
 2. How many non-braceros were interviewed in this dataset? 
-3. Based on the non-bracero topics, can you create a new factor column that groups the topics into 3-5 factors?
-  - use `mutate()`, and `case_match()` to classify the groups into a new column called `topic_group`
+3.  Using the subject column, can you create a new factor column called `topic_group`that groups the subjects into 3-5 factors?
+  - Hint: use `mutate()`, and `case_match()` to classify the groups into a new column called `topic_group`, I've given you a start!
 4. Are there any interesting patterns in language spoken among your `topic_groups`? Use a `group_by` and `summarize` function to calculate.
 
 # Exercise Four 
-1. Listen to an [interview with Mr. Cris Luna](https://braceroarchive.org/items/show/138), a Bracero from Ozuluama, Veracruz, Mexico. 
+1. Explore the Bracero Archives and listen to at least one interview. 
+  - Note that most all bracero interviews are conducted in spanish, if you're interested in a perspective from an english-speaking bracero, I would suggest the interview with [Mr. Cris Luna](https://braceroarchive.org/items/show/138), a Bracero from Ozuluama, Veracruz, Mexico.
 
-[interview with Mr. Raymundo Villa](https://braceroarchive.org/items/show/81), an interpreter from Ysleta, Texas who worked with 
-
-Explore the Bracero archives, and listen to or read the biographical descriptions of interviews in the "Oral History" section. 
-2. Reflect on the aspects of procedural injustice as they relate to othe Bracero program: 
-  - 
+  Answer questions 2 and 3 using this week's readings. 

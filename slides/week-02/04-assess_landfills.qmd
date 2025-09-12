@@ -15,4 +15,297 @@ format:
 execute:
   freeze: auto
 ---
-# Slides will be posted 24 hours in advance of class.
+
+
+# Class Overview 
+- Centering activity
+- Setting the stage
+- Paired coding
+- Group Debrief
+
+# Centering Activity
+Clara :-)
+
+# Setting the Stage
+## My Approach to Teaching Data Science for Environmental Justice
+- Assumes no background in data science
+- Focuses on the use of data for communicating environmental injustices and working toward more just solutions
+- Intended to connect to theoretical lessons
+
+## General Data Science Process {.smaller}
+![](./images/tidy_approach.png)
+
+
+## Course Organization
+- Bigger Picture Case Study (HW 02-- lots of wins)
+- Skills that build on one another (HW 03-07)
+  - Data Tidying
+  - Data Transforming 
+  - Data Visualization
+  - Intro to Spatial Data
+- Apply it! Use weeks 9 - 14 to show me your theoretical and methodological skills
+
+## Homework Approach
+- Assignments will be started in class on Fridays in pairs and submitted the following Thursday individually. 
+- I'll lecture a bit throughout the class to introduce new skills or topics, then let pairs work through sections of the assignment. 
+
+
+# Group Coding
+## Learning Outcomes
+- Basic usage of R
+- Recreate tables 1-3 in Bullard's Study 
+- Visualize Distributional Justice
+- Connect it to theoretical understandings of distributional justice
+
+## Let's Get Started
+- Find your pair
+- Open [Homework 02 folder](case_studies/week-02-Bullard) in Posit Cloud.
+
+# Basic uses of R (collaborative)
+
+## Importing Data
+- This assignment is comprised of one dataset: 
+  - Robert Bullard's original data
+- Note on how I got this data
+
+## Understanding the IDE {.smaller}
+::: columns
+::: {.column width="1%"}
+
+:::
+::: {.column width="99%"}
+![]![](./images/ide.png)
+:::
+:::
+
+
+## Installing packages
+- **Packages** are comprised of functions, data, and additional documentation to load, clean, and analyze your data. 
+- Installing a package needs only one line of code: 
+```{r}
+#| eval: false
+#| echo: true
+install.packages("tidyverse") # for tidying data
+install.packages("gt")
+install.packages("gtsummary") # creating tables
+```
+
+- Following an install, you need to load your packages: 
+```{r}
+#| warning: false
+#| message: false
+#| echo: true
+library(tidyverse)
+library(gt)
+library(gtsummary)
+```
+
+
+## Loading Data
+- Now we load our data. In Posit Cloud, navigate to lower left corner and note the dataset entitled "bullard_1979_waste_sites.csv"
+- Load our first dataset, which includes the 13 landfill and incinerator sites in Bullard's first case study.
+
+```{r}
+#| warning: false
+#| message: false
+#| echo: false
+#| eval: true
+
+sites <- read_csv("/Users/mc152/Documents/GitHub/ES-202/hw/case_studies/week-02-Bullard/data/bullard_1979_waste_sites.csv")
+```
+
+```{r}
+#| warning: false
+#| message: false
+#| echo: true
+#| eval: false
+sites <- read_csv("bullard_1979_waste_sites.csv")
+```
+
+
+## Understanding data {.smaller}
+- the `sites` data that we've loaded is a `dataframe`, meaning it is a rectangular collection of variables (or columns) and observations (rows). In each cell, is a `value`. 
+![](./images/data_structure.png)
+- Examples of each?
+
+## Rules of Tidy Data
+- This dataset is `tabular`, meaning that the data is organized into a table with rows and columns. 
+  - `tidy` data has five rules: 
+    1. Every `variable` has its own column. 
+    2. Every `observation` is stored in its own row. 
+    3. Each `value` is stored in the cell of a corresponding variable.
+    4. Values don't contain units (this should be in a codebook).
+    5. No extraneous information (footnotes, extra titles, etc.)
+
+## Sites Data {.smaller}
+```{r}
+#| warning: false
+#| message: false
+#| echo: true
+sites
+```
+
+
+# Recreating Tables 1 through 3 (collaborative)
+
+## Selecting variables
+```{r}
+#| warning: false
+#| message: false
+#| echo: true
+table_one <- sites |>
+  filter(type == "Incinerator") |>
+  select(facility, neighborhood, predom_eth_1979, location)
+
+table_one
+```
+
+## Formatting Tables {.smaller}
+```{r}
+#| warning: false
+#| message: false
+#| echo: true
+#| code-line-numbers: "1|2|3|9|13"
+
+table_one |>
+  gt() |>
+  cols_label(
+    facility = "Site of Incinerator",
+    neighborhood = "Neighborhood",
+    predom_eth_1979 = "Ethnicity",
+    location = "Location"
+  ) |>
+  tab_header(
+    title = ("Table 1"),
+    subtitle = "City of Houston Garbage Incinerators"
+  ) |>
+  tab_source_note("The above Houston-owned garbage incinerators were in operation between the 1920's and 1975")
+```
+
+## Exercise One: Rinse, Wash, Repeat for Tables 2 and 3
+- Recreate tables 2 and 3 using the same approaches
+- Pay close attention to the information shared in each table
+
+# Visualizing Distributional Injustice
+- First, let's recreate table 4
+  - Summarizes the type of landfill disposal site by % of black and non-black communities.
+  - Thoughts on process getting from `sites` dataframe to table 4?
+
+## Prepping Data
+- Bullard summarizes by both facility type and ethnicity (black versus non-black). 
+  - can use an `if_else` function nested in a `mutate` function.
+    - `mutate` function can add or modify a variable
+    - `if_else` creates a test and defines what to do with variables that meet (or do not) meet the test. 
+
+## Creating Summary Table {.smaller}
+- To summarize by two groups, Bullard creates a `crosstabs` table
+- Can be done using the `gtsummary` package
+```{r}
+#| warning: false
+#| message: false
+#| echo: true
+#| code-line-numbers: "|3|4|5|6"
+
+sites |>
+  mutate(predom_eth_1979 = if_else(predom_eth_1979 == "Black", "Black", "Nonblack")) |>
+  tbl_cross(
+    row = type,
+    col = predom_eth_1979,
+    percent = "row"
+  )
+```
+
+## Formatting Table {.smaller}
+```{r}
+#| warning: false
+#| message: false
+#| echo: true
+#| code-line-numbers: "|7|9"
+
+sites |>
+  mutate(predom_eth_1979 = if_else(predom_eth_1979 == "Black", "Black", "Nonblack")) |>
+  tbl_cross(
+    row = type,
+    col = predom_eth_1979,
+    percent = "row",
+    label = list(type ~ "Waste Disposal Sites", predom_eth_1979 ~ "Ethnicity")
+  ) |>
+  bold_labels()
+```
+
+## Exercise 2: One more summary table 
+- Suppose you lived in a Southwest neighborhood and were interested in the distribution of facility types by Southwest versus non-southwest neighborhoods.
+- Create a cross tabs summary table (make sure it's formatted nicely!) 
+
+## Plot the data
+### Using ggplot2
+- `ggplot2` is a lovely package for visualizing data.
+- It works works using a layer approach. 
+- The first layer tells ggplot2 to create a graph base using the `sites` dataframe.
+```{r}
+#| warning: false
+#| message: false
+#| echo: true
+
+ggplot(data = sites)
+```
+
+## Adding Variables
+- Let's visualize ethnicity by facility type, similar to our approach in table 4, except as a bar chart. 
+- `mapping` tells ggplot how variables in the data will be mapped to visual aspects (aesthetics) of the plot.
+- `aes` is the function that defines what variables will be mapped to the x and y axes.
+- `x` is the only variable in this case, but we will define it as type. 
+
+```{r}
+#| warning: false
+#| message: false
+#| echo: true
+ggplot(data = sites, mapping = aes(x = type))
+```
+
+## Adding a Visual
+- `geom` specifies how the plot will represent the data. 
+  - in ggplot2, this can be functions like `geom_bar`, `geom_point`, or `geom_boxplot`.
+```{r}
+#| warning: false
+#| message: false
+#| echo: true
+ggplot(data = sites, mapping = aes(x = type)) +
+  geom_bar()
+```
+
+## Formatting colors and labels {.smaller}
+- adding `fill` to the ggplot specifies that we want the chart colors to reflect the frequencies of each ethnicity across each disposal site type. 
+- `scale_fill_manual()` allows you to change the fill colors in your data. 
+  - `values` can be color names, hex codes, or RGB values. 
+  - `name` is the legend name
+- `labs()` allows you to rename your axes
+```{r}
+#| warning: false
+#| message: false
+#| echo: true
+#| eval: false
+#| code-line-numbers: "|1|3|4|5|7"
+ggplot(sites, aes(x = type, fill = predom_eth_1979)) +
+  geom_bar() +
+  scale_fill_manual(
+    values = c("Red", "Yellow", "Green"),
+    name = "Predominant Community Ethnicity"
+  ) +
+  labs(x = " ", y = "Number of Facilities")
+```
+
+## Exercise 3: Reading a Vignette (collaborative)
+- Often, we get a bit mixed up when we're first starting. 
+- One helpful way to troubleshoot, can be typing "?" followed by the function into your environment (i.e., `?scale_fill_manual()`)
+- Read the vignette for the `scale_fill_manual()` package. What package does it recommend for color blindness?
+
+## Exercise 04 (individual)
+Connect to theory, see assignment for details. 
+
+## Next Week
+- Ziyah leading centering activity
+- For Tuesday: Article on procedural justice
+- HW 02 due Thursday at 11:59 PM
+- ES welcome back event! Tuesday, September 16, 12:30 to 1:30 PM, global flora courtyard
+- Climate justice & war system event series: Tiara Na'Puti, Wednesday September 17, 5:30 to 7:30 PM, PNE Atrium

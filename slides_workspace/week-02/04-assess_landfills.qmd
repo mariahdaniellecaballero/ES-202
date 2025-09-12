@@ -160,12 +160,12 @@ table_one <- sites |>
 table_one
 ```
 
-## Formatting Tables 
+## Formatting Tables {.smaller}
 ```{r}
 #| warning: false
 #| message: false
 #| echo: true
-#| code-line-numbers: "|2|3|8|11"
+#| code-line-numbers: "1|2|3|9|13"
 
 table_one |>
   gt() |>
@@ -197,14 +197,14 @@ table_one |>
     - `mutate` function can add or modify a variable
     - `if_else` creates a test and defines what to do with variables that meet (or do not) meet the test. 
 
-## Creating Summary Table
+## Creating Summary Table {.smaller}
 - To summarize by two groups, Bullard creates a `crosstabs` table
 - Can be done using the `gtsummary` package
 ```{r}
 #| warning: false
 #| message: false
 #| echo: true
-#| code-line-numbers: "|3|4|5"
+#| code-line-numbers: "|3|4|5|6"
 
 sites |>
   mutate(predom_eth_1979 = if_else(predom_eth_1979 == "Black", "Black", "Nonblack")) |>
@@ -220,7 +220,7 @@ sites |>
 #| warning: false
 #| message: false
 #| echo: true
-#| code-line-numbers: "|7|8"
+#| code-line-numbers: "|7|9"
 
 sites |>
   mutate(predom_eth_1979 = if_else(predom_eth_1979 == "Black", "Black", "Nonblack")) |>
@@ -285,7 +285,7 @@ ggplot(data = sites, mapping = aes(x = type)) +
 #| message: false
 #| echo: true
 #| eval: false
-#| code-line-numbers: "|1|3|4|5"
+#| code-line-numbers: "|1|3|4|5|7"
 ggplot(sites, aes(x = type, fill = predom_eth_1979)) +
   geom_bar() +
   scale_fill_manual(
@@ -301,4 +301,11 @@ ggplot(sites, aes(x = type, fill = predom_eth_1979)) +
 - Read the vignette for the `scale_fill_manual()` package. What package does it recommend for color blindness?
 
 ## Exercise 04 (individual)
-Connect to theory 
+Connect to theory, see assignment for details. 
+
+## Next Week
+- Ziyah leading centering activity
+- For Tuesday: Article on procedural justice
+- HW 02 due Thursday at 11:59 PM
+- ES welcome back event! Tuesday, September 16, 12:30 to 1:30 PM, global flora courtyard
+- Climate justice & war system event series: Tiara Na'Puti, Wednesday September 17, 5:30 to 7:30 PM, PNE Atrium
