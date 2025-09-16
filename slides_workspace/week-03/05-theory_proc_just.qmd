@@ -16,30 +16,95 @@ execute:
   freeze: auto
 ---
 
-#  Class Overview 
-
+##  Class Overview 
 - Centering activity
-- Paired conversations on procedural justice
-- Group synthesis
-- Intro to community case study (Coachella Valley, CA)
+- Last week
+- Procedural Justice
+ - Theoretical foundations
+- Bracero Program Activity
+- Closing
 
-# Intro to Community Case Study
 
-## Overview
+## Centering Activity
+- Ziyah :-) 
 
-## Theoretical Applications 
+## Last Week 
+- EJ over time + tenet-based approach
+- Foundational theories of distributional justice
+- Recreated Bullard's case study
 
-## Why I chose this case study
+## What we Read {.smaller}
+- Bell, D., & Carrick, J. (2017). Procedural environmental justice. In The Routledge handbook of environmental justice (pp. 101-112). Routledge.
 
-## Assessment Approach
+## Procedural Justice
+- Considers unequal share of authority, power and influence, and how they impact environmental decision-making 
+- Distributional injustice can be an outcome of procedural injustice, and vice versa.
+- Recognition justice is also a key component of procedural justice.
 
-## Outcomes of this case study
+## Conceptions of Procedural Environmental Justice {.smaller}
+- **Equality:** Power is shared equally among potential participants in decision-making process
+  - **Proportionality:** power in environmental decisionmaking should be deistributed *in proportion* to thier stake in the outcome. 
+  - **Plurality:** Everyone potentially affected by the outcome should be included in decision-making process *as an equal*.
 
-# Logistics
-For Friday: 
+#  
+![](./images/five_proc_just.png)
 
-- Read community case study in schedule
-- Review in-class activity
-- Make sure posit login is working!
+## Five Principles in Praxis 
+- **Continuum**
+  - Inclusiveness
+  - Consultation over time
+  - Design of Decision-making Procedures
+- **All or nothing**
+  - Shared decision-making authority
+  - Authoritative decision-making
 
+## Studying Procedural Justice
+- Ethnography/participant observation
+- Power-mapping
+- Comparison to theoretical framework
+
+## Overview of Bracero Program {.smaller}
+
+::: columns
+::: {.column width="60%" style="font-size: 70%;"}
+- **Bracero** translates to "strong arm"
+- **1942: Public Law 45** EO establishes a bi-lateral agreement between Mexico and the U.S. for short-term farm labor
+    - Mexican Revolution destabilized Mexico’s economy, WWII created a labor shortage in the U.S.
+- **1951: Public Law 78** passed to extend, formalize, and decentralize the Bracero Program, and include additional protections.
+  - Agreement promised fair wages, steady employment free housing, insurance, and transportation home.
+- **Program ended in 1964**, after admitting over **5 million** temporary workers across **24 states**
+:::
+
+::: {.column width="50%"}
+![](images/bracero.png)
+:::
+
+:::
+
+
+## Bracero Program + Procedural Justice
+- In groups of 3-4: 
+  - Read [P.L. 45](https://web.archive.org/web/20070203013418/http://www.ccrh.org/comm/moses/primary/bracero.html) and [P.L. 78](https://web.archive.org/web/20121025023105/http://library.uwb.edu/guides/USimmigration/65%20stat%20119.pdf)
+  - Consider potential for procedural injustice 
+    - According to Hunald & Young's five principles for fair procedure, what policy safegaurds (or lack thereof) may have posed challenges for Braceros? 
+  - Be prepared to debrief
+
+## Debrief 
+- What did we find? 
+
+## Logistics
+- Reena leading centering activity
+- For Friday: Article on Bracero program/ Mexican Migration in Yakima Valley, WA
+- HW 02 due Thursday at 11:59 PM
+- ES welcome back event! Tuesday, September 16, 12:30 to 1:30 PM, global flora courtyard
+- Climate justice & war system event series: Tiara Na'Puti, Wednesday September 17, 5:30 to 7:30 PM, PNE Atrium
+
+## Exit Ticket
+- Take two minutes and tell me something class-related:
+  - Anything you might change? 
+  - Things you'd like to see more of? 
+  - Concerns/worries?
+  - Snack suggestions?
+  - An animal in a hat?
+- Write your name if you'd like me to answer back!
 
