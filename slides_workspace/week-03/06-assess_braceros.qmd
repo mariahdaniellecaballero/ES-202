@@ -23,6 +23,41 @@ execute:
 - Group Debrief
 
 # Centering Activity
+* Reena :-)
+
+## Exit Ticket Results {.smaller}
+```{r}
+#| warning: false
+#| message: false
+#| echo: false
+#| eval: true
+
+library(tidyverse)
+library(showtext)
+library(wesanderson)
+
+column1_data <- c("Snack Suggestions", "Animal Drawing", "More/varied Readings", "More discussion/Active Learning", "More Detailed R Instructions", "Readings as pdfs")
+column2_data <- c(6, 6, 4, 6, 3, 1)
+
+# Create a two-column dataframe
+df <- data.frame(
+  Topic = column1_data,
+  Count = column2_data
+)
+
+my_palette <- wes_palette("FantasticFox1", 6, type = "continuous")
+
+# plot
+df %>% 
+  mutate(Topic = factor(Topic, levels = c("Readings as pdfs","More Detailed R Instructions", "More/varied Readings", "More discussion/Active Learning", "Animal Drawing",  "Snack Suggestions"))) %>% 
+  ggplot(aes(x = Topic, y = Count, fill = Topic)) + 
+  geom_bar(stat = "identity") + 
+  coord_flip() + 
+  scale_fill_manual(values = my_palette) + 
+  theme_minimal() + 
+  theme(legend.position = "none") + 
+  theme(text = element_text(family = "Raleway"))
+```
 
 # Setting the Stage
 - This week's focus is on data tidying and transformation
@@ -33,9 +68,10 @@ execute:
 - Find your pair
 - Open Posit
 
-# First Steps
+# First Steps {.smaller}
 - Import Data
 - Load packages
+  - You may need to install readxl using `install.packages("package name")`.
 ```{r}
 #| warning: false
 #| message: false
@@ -82,7 +118,8 @@ bracero <- read_excel("data/bracero_pull.xlsx")
 glimpse(bracero)
 ```
 
-## Data Types {.smaller}
+## Variable Types {.smaller}
+We will work primarily with five types of variables in this course:
 - `chr` is character
 - `dbl` is double (number)
 - `int` is an integer
@@ -100,15 +137,15 @@ glimpse(bracero)
 ```
 
 # Transforming Data (Columns) {.smaller}
-- Four functions can change the columns of your data without affecting your rows 
+- Four functions can change the *columns* of your data without affecting your *rows* 
   - mutate(): creates new columns based on existing ones
   - select(): chooses what columns you want in your dataframe
   - rename(): changes the names of current columns
   - relocate(): changes the position of those columns 
 
 ## mutate() function {.smaller}
-- We use the mutate function to change the `date` column to a date format. 
-
+- We use the mutate function to create a new column `date_format`, using the `date` column. 
+   - In this case, we use the `as.Date()` function nested in the mutate function to change the `date` column's data type.
 ```{r}
 #| warning: false
 #| message: false
@@ -120,8 +157,9 @@ bracero |>
 
 ## mutate() function (cont.) {.smaller}
 - We can also use mutate for creating new columns, and we can pair it with additional functions, such as ifelse statements. 
+  - `%in%c()` allows you to list multiple matches in the `subject` column.
 - Perhaps we were interested in creating a new column that defines whether an interview is from a bracero worker or not. 
-  - Note that if we wanted to further classify the subject, we might create a factor column and use the `case_match()` function, rather than an ifelse statement.
+  - Note that if we wanted to create more than two groups, we might create a factor column and use the `case_match()` function, rather than an ifelse statement.
 ```{r}
 #| warning: false
 #| message: false
@@ -157,7 +195,7 @@ bracero |>
 ## rename() function {.smaller}
 - sometimes original column names aren't very descriptive, or they're too long. 
 - the `rename()` function can help. 
-  - let's rename "title" to something more descriptive.
+  - let's rename "title" to something more descriptive like "interviewee".
 ```{r}
 #| warning: false
 #| message: false
@@ -181,27 +219,30 @@ bracero |>
 
 ## Put it together {.smaller}
 - We can put all of these data transformation actions together using the pipe `|>` function
+  - line 1: creates new dataframe called `bracero_clean`
+  - line 2: creates formatted date column called `date_format` 
+  - line 3: selects for all columns except for the old `date` column
+  - line 4: renames the `title` column to as `interviewee`
+  - line 5: moves the `indentifier` column to after the `date_format` column.
 ```{r}
 #| warning: false
 #| message: false
 #| echo: true
+#| code-line-numbers: "1|2|3|4|5"
 
 bracero_clean <- bracero |>
-  mutate(date_format = as.Date(date)) |>
-  select(-date) |>
-  rename("interviewee" = "title") |>
+  mutate(date_format = as.Date(date)) |> 
+  select(-date) |> 
+  rename("interviewee" = "title") |> 
   relocate(identifier, .after = date_format)
-
-head(bracero_clean)
 ```
 
 # Exercise One
-- Starting with the `bracero` dataframe, code the following three actions using the `|>` into a new dataframe called `bracero_ex1`: 
-
-  - mutate the `date` column to be in a DD-MM-YYYY format called `date_format`
-    - hint: you may need to use the `?as.Date()` helper function
-  - select the `title` , `date_format`, and `description` columns
-  - reorder the remaining columns by date
+- Starting with the `bracero` dataframe, code the following three actions using |> into a new dataframe called `bracero_ex1`: 
+    - mutate the `date`column to be in a 'year-month-date' format into a new column, called `date_format`. 
+        - hint: you may need to type `?as.Date()` into the console for help.
+    - select the `title`, `date_format`, and `description` columns.
+    - relocate the `date_format` column to be the first in the dataframe.
 
 # Transforming Data (Rows)
 - Moving on to rows! 
@@ -209,9 +250,9 @@ head(bracero_clean)
   - `arrange()` changes the order of your rows (but won't filter for anything)
 
 ## filter() function {.smaller}
-- Use the filter() function to select rows that correspond to values of interest. 
+- Use the `filter()` function to select rows that correspond to values of interest. 
 - Say we're interested in only interviews that are spoken in spanish:
-- use `==` to filter for a direct match 
+- use `==` to filter the language column for rows with a direct match (in this case "spa")
 ```{r}
 #| warning: false
 #| message: false
@@ -243,7 +284,7 @@ bracero_clean |>
 ```
 
 ## filter() and str_detect()
-- We can also combine filter with str_detect()
+- We can also combine filter with the `str_detect()` function, to look for character matches.
 ```{r}
 #| warning: false
 #| message: false
@@ -255,7 +296,7 @@ bracero_clean |>
 ## arrange()
 - `arrange()` sorts your rows based on the values in the columns. 
 - If you sort more than one row, it will sort the first variable, and the others will be used to "break ties"
-- including `desc()` wills sort your column values big to small. 
+- including `desc()` will sort your column values big to small. 
 ```{r}
 #| warning: false
 #| message: false
@@ -269,10 +310,9 @@ bracero_clean |>
 # Exercise Two {.smaller}
 1. Filter the `bracero_clean` dataframe for any interviews that took place before 2005 with an interviewee whose name includes "Guadalupe".
 
-2. Sort the `bracero_clean` data frame in descending order by date. What was the date, how many interviews took place, and who is listed first?
+2. Arrange the bracero_clean data frame in descending order by `date_format`. What was the date, how many interviews took place on the that date, and who is listed first?
 
-3. Filter the `bracero_clean` dataframe for any interviewees that mention "California". How many interviewees mention California? 
-  - If you're interested in reading descriptions, you can type "bracero_clean$description[]" with the row number in brackets to print the description in your environment window. 
+3. Filter the `bracero_clean` dataframe for any description columns that mention "California". How many interviewees are there?
 
 
 # Grouping Data 
@@ -280,6 +320,7 @@ bracero_clean |>
 ## group_by() function {.smaller}
 - `group_by()` function is really helpful for dividing your data into groups for analysis. 
 - `group_by()` function does not change your data, but will change subsequent operations if you use them in tandem with a `group_by()`
+- You can also group by multiple columns.
 ```{r}
 #| warning: false
 #| message: false
@@ -288,11 +329,15 @@ bracero_clean |>
 
 bracero_clean |> 
   group_by(language)
+
+# bracero_clean |>
+#  group_by(date_format, language)
 ```
 
 
 ## summarize()
-- `summarize()` is often used in tandem with the `group_by()` function to calculate a summary statistic for a a group. 
+- `summarize()` is often used in tandem with the `group_by()` function to calculate summary statistic(s) for a group. 
+- In this case we are grouping the `bracero_clean` dataframe by the values in the `language` column, and summarizing the number of interviews using the `n()` function in a new column called `n_interviews`.
 ```{r}
 #| warning: false
 #| message: false
@@ -323,9 +368,9 @@ bracero |>
 1. How many Braceros were interviewed in this dataset (i.e., Bracero is the subject)? Use a `group_by` function to count.
   - Hint: R is case-sensitive. 
 2. How many non-braceros were interviewed in this dataset? 
-3.  Using the subject column, can you create a new factor column called `topic_group`that groups the subjects into 3-5 factors?
+3. Using the `subject` column, can you create a new factor column called `topic_group`that collapses the subject column into 3-5 categories?
   - Hint: use `mutate()`, and `case_match()` to classify the groups into a new column called `topic_group`, I've given you a start!
-4. Are there any interesting patterns in language spoken among your `topic_groups`? Use a `group_by` and `summarize` function to calculate.
+4. Are there any interesting patterns in language spoken among your `topic_group` column in the `bracero_clean` dataframe? Use a `group_by` and `summarize` function to calculate.
 
 # Exercise Four 
 1. Explore the Bracero Archives and listen to at least one interview. 

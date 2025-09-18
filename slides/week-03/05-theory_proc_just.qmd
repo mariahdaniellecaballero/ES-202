@@ -1,5 +1,5 @@
 ---
-title: "[Theory] Distributional (in)Justice & Food"
+title: "[Theory] Procedural (in)Justice & Food"
 subtitle: "📍 Yakima Valley, WA"
 date: "September 16, 2025"
 format: 
