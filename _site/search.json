@@ -33,8 +33,8 @@
     "objectID": "slides/week-03/05-theory_proc_just.html#class-overview",
     "href": "slides/week-03/05-theory_proc_just.html#class-overview",
     "title": "[Theory] Procedural (in)Justice & Food",
-    "section": "",
-    "text": "Centering activity\nLast week\nProcedural Justice\nTheoretical foundations\nBracero Program Activity\nClosing"
+    "section": "Class Overview",
+    "text": "Class Overview\n\nCentering activity\nLast week\nProcedural Justice\nTheoretical foundations\nBracero Program Activity\nClosing"
   },
   {
     "objectID": "slides/week-03/05-theory_proc_just.html#centering-activity",
@@ -378,6 +378,13 @@
     "text": "Outcomes of this case study"
   },
   {
+    "objectID": "slides_workspace/week-03/06-assess_braceros.html#exit-ticket-results",
+    "href": "slides_workspace/week-03/06-assess_braceros.html#exit-ticket-results",
+    "title": "[Assess] Bracero Farmworker Case Study",
+    "section": "Exit Ticket Results",
+    "text": "Exit Ticket Results"
+  },
+  {
     "objectID": "slides_workspace/week-03/06-assess_braceros.html#our-data",
     "href": "slides_workspace/week-03/06-assess_braceros.html#our-data",
     "title": "[Assess] Bracero Farmworker Case Study",
@@ -385,11 +392,11 @@
     "text": "Our data\n\n90 rows (interviews)\n6 variables (all chr type)\n\ntitle = Person interviewed\nsubject = topic of interview\ndescription = summary of interview\ndate = date of interview\nidentifier = link to original interview file\nlanguage = language interview was conducted in\n\n\n\nglimpse(bracero)\n\nRows: 90\nColumns: 6\n$ title       &lt;chr&gt; \"Richard Hancock\", \"Pedro Cantor\", \"Asterio López León\", \"…\n$ subject     &lt;chr&gt; \"Doña Ana County Farm Bureau\", \"Bracero\", \"Bracero\", \"Brac…\n$ description &lt;chr&gt; \"Biographical Synopsis of Interviewee:  Richard Hancock wa…\n$ date        &lt;chr&gt; \"2003-04-21\", \"2005-07-27\", \"2006-05-22\", \"2005-09-01\", \"2…\n$ identifier  &lt;chr&gt; \"https://braceroarchive.org/items/show/82;https://braceroa…\n$ language    &lt;chr&gt; \"eng\", \"spa\", \"spa\", \"spa\", \"eng\", \"spa\", \"spa\", \"eng\", \"s…"
   },
   {
-    "objectID": "slides_workspace/week-03/06-assess_braceros.html#data-types",
-    "href": "slides_workspace/week-03/06-assess_braceros.html#data-types",
+    "objectID": "slides_workspace/week-03/06-assess_braceros.html#variable-types",
+    "href": "slides_workspace/week-03/06-assess_braceros.html#variable-types",
     "title": "[Assess] Bracero Farmworker Case Study",
-    "section": "Data Types",
-    "text": "Data Types\n\nchr is character\ndbl is double (number)\nint is an integer\ndttm is date-time\nfct is factor\n\nThoughts on what variables we may want to change the data types of?\n\n\nRows: 90\nColumns: 6\n$ title       &lt;chr&gt; \"Richard Hancock\", \"Pedro Cantor\", \"Asterio López León\", \"…\n$ subject     &lt;chr&gt; \"Doña Ana County Farm Bureau\", \"Bracero\", \"Bracero\", \"Brac…\n$ description &lt;chr&gt; \"Biographical Synopsis of Interviewee:  Richard Hancock wa…\n$ date        &lt;chr&gt; \"2003-04-21\", \"2005-07-27\", \"2006-05-22\", \"2005-09-01\", \"2…\n$ identifier  &lt;chr&gt; \"https://braceroarchive.org/items/show/82;https://braceroa…\n$ language    &lt;chr&gt; \"eng\", \"spa\", \"spa\", \"spa\", \"eng\", \"spa\", \"spa\", \"eng\", \"s…"
+    "section": "Variable Types",
+    "text": "Variable Types\nWe will work primarily with five types of variables in this course: - chr is character - dbl is double (number) - int is an integer - dttm is date-time - fct is factor\nThoughts on what variables we may want to change the data types of?\n\n\nRows: 90\nColumns: 6\n$ title       &lt;chr&gt; \"Richard Hancock\", \"Pedro Cantor\", \"Asterio López León\", \"…\n$ subject     &lt;chr&gt; \"Doña Ana County Farm Bureau\", \"Bracero\", \"Bracero\", \"Brac…\n$ description &lt;chr&gt; \"Biographical Synopsis of Interviewee:  Richard Hancock wa…\n$ date        &lt;chr&gt; \"2003-04-21\", \"2005-07-27\", \"2006-05-22\", \"2005-09-01\", \"2…\n$ identifier  &lt;chr&gt; \"https://braceroarchive.org/items/show/82;https://braceroa…\n$ language    &lt;chr&gt; \"eng\", \"spa\", \"spa\", \"spa\", \"eng\", \"spa\", \"spa\", \"eng\", \"s…"
   },
   {
     "objectID": "slides_workspace/week-03/06-assess_braceros.html#mutate-function",
@@ -1054,7 +1061,7 @@
     "href": "weeks/week-03.html",
     "title": "Week 03",
     "section": "",
-    "text": "Lectures\n\n\n\n\n\n\nTopic\n\n\n\nDate\n\n\n\n\n\n\n\n\n[Theory] Distributional (in)Justice & Food\n\n\nTue, Sep 16\n\n\n\n\n\n\n[Assess] Bracero Farmworker Case Study\n\n\nFri, Sep 19\n\n\n\n\n\n\nNo matching items\n\n\n\nAssignments\n\n\n\n\n\n\nAssignment\n\n\n\nTitle\n\n\n\nDue\n\n\n\n\n\n\n\n\nHomework\n\n\nHW 03: Bracero Case Study\n\n\nThu, Sep 25\n\n\n\n\n\n\nNo matching items\n\n\n\nReadings\n\n\n\n\n\n\nTuesday: Bell, D., & Carrick, J. (2017). Procedural environmental justice. In The Routledge handbook of environmental justice (pp. 101-112). Routledge.\n\n\nFriday: Gamboa, E. (1981). Mexican migration into Washington state: A History, 1940-1950. The Pacific Northwest Quarterly, 72(3), 121-131.\n\n\n[Optional Friday:] Wickham, H., Çetinkaya-Rundel, M., & Grolemund, G. (2023). R for Data Science (2e): Chapters 2 & 3. Sebastopol: O’Reilly."
+    "text": "Lectures\n\n\n\n\n\n\nTopic\n\n\n\nDate\n\n\n\n\n\n\n\n\n[Theory] Procedural (in)Justice & Food\n\n\nTue, Sep 16\n\n\n\n\n\n\n[Assess] Bracero Farmworker Case Study\n\n\nFri, Sep 19\n\n\n\n\n\n\nNo matching items\n\n\n\nAssignments\n\n\n\n\n\n\nAssignment\n\n\n\nTitle\n\n\n\nDue\n\n\n\n\n\n\n\n\nHomework\n\n\nHW 03: Bracero Case Study\n\n\nThu, Sep 25\n\n\n\n\n\n\nNo matching items\n\n\n\nReadings\n\n\n\n\n\n\nTuesday: Bell, D., & Carrick, J. (2017). Procedural environmental justice. In The Routledge handbook of environmental justice (pp. 101-112). Routledge.\n\n\nFriday: Gamboa, E. (1981). Mexican migration into Washington state: A History, 1940-1950. The Pacific Northwest Quarterly, 72(3), 121-131.\n\n\n[Optional Friday:] Wickham, H., Çetinkaya-Rundel, M., & Grolemund, G. (2023). R for Data Science (2e): Chapters 2 & 3. Sebastopol: O’Reilly."
   },
   {
     "objectID": "weeks/week-12.html",
@@ -2289,26 +2296,5 @@
     "crumbs": [
       "Syllabus"
     ]
-  },
-  {
-    "objectID": "slides_workspace/week-03/06-assess_braceros.html#variable-types",
-    "href": "slides_workspace/week-03/06-assess_braceros.html#variable-types",
-    "title": "[Assess] Bracero Farmworker Case Study",
-    "section": "Variable Types",
-    "text": "Variable Types\nWe will work primarily with five types of variables in this course: - chr is character - dbl is double (number) - int is an integer - dttm is date-time - fct is factor\nThoughts on what variables we may want to change the data types of?\n\n\nRows: 90\nColumns: 6\n$ title       &lt;chr&gt; \"Richard Hancock\", \"Pedro Cantor\", \"Asterio López León\", \"…\n$ subject     &lt;chr&gt; \"Doña Ana County Farm Bureau\", \"Bracero\", \"Bracero\", \"Brac…\n$ description &lt;chr&gt; \"Biographical Synopsis of Interviewee:  Richard Hancock wa…\n$ date        &lt;chr&gt; \"2003-04-21\", \"2005-07-27\", \"2006-05-22\", \"2005-09-01\", \"2…\n$ identifier  &lt;chr&gt; \"https://braceroarchive.org/items/show/82;https://braceroa…\n$ language    &lt;chr&gt; \"eng\", \"spa\", \"spa\", \"spa\", \"eng\", \"spa\", \"spa\", \"eng\", \"s…"
-  },
-  {
-    "objectID": "slides_workspace/week-03/06-assess_braceros.html#exit-ticket-results",
-    "href": "slides_workspace/week-03/06-assess_braceros.html#exit-ticket-results",
-    "title": "[Assess] Bracero Farmworker Case Study",
-    "section": "Exit Ticket Results",
-    "text": "Exit Ticket Results"
-  },
-  {
-    "objectID": "slides/week-03/05-theory_proc_just.html",
-    "href": "slides/week-03/05-theory_proc_just.html",
-    "title": "[Theory] Procedural (in)Justice & Food",
-    "section": "",
-    "text": "Centering activity\nLast week\nProcedural Justice\nTheoretical foundations\nBracero Program Activity\nClosing"
   }
 ]
