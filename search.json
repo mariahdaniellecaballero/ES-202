@@ -378,11 +378,46 @@
     "text": "Outcomes of this case study"
   },
   {
+    "objectID": "slides_workspace/week-03/06-assess_braceros.html#centering-activity",
+    "href": "slides_workspace/week-03/06-assess_braceros.html#centering-activity",
+    "title": "[Assess] Bracero Farmworker Case Study",
+    "section": "Centering Activity",
+    "text": "Centering Activity\n\nReena :-)"
+  },
+  {
     "objectID": "slides_workspace/week-03/06-assess_braceros.html#exit-ticket-results",
     "href": "slides_workspace/week-03/06-assess_braceros.html#exit-ticket-results",
     "title": "[Assess] Bracero Farmworker Case Study",
     "section": "Exit Ticket Results",
     "text": "Exit Ticket Results"
+  },
+  {
+    "objectID": "slides_workspace/week-03/06-assess_braceros.html#learning-outcomes",
+    "href": "slides_workspace/week-03/06-assess_braceros.html#learning-outcomes",
+    "title": "[Assess] Bracero Farmworker Case Study",
+    "section": "Learning Outcomes",
+    "text": "Learning Outcomes\n\nUnderstand data structure\nTransform and tidy data for necessary questions\nExplore and summarize patterns\nConnect your findings to theoretical understandings of procedural justice"
+  },
+  {
+    "objectID": "slides_workspace/week-03/06-assess_braceros.html#lets-get-started",
+    "href": "slides_workspace/week-03/06-assess_braceros.html#lets-get-started",
+    "title": "[Assess] Bracero Farmworker Case Study",
+    "section": "Let’s get Started",
+    "text": "Let’s get Started\n\nFind your pair\nOpen Posit"
+  },
+  {
+    "objectID": "slides_workspace/week-03/06-assess_braceros.html#first-steps",
+    "href": "slides_workspace/week-03/06-assess_braceros.html#first-steps",
+    "title": "[Assess] Bracero Farmworker Case Study",
+    "section": "First Steps",
+    "text": "First Steps\n\nImport Data\nLoad packages\n\nYou may need to install readxl using install.packages(\"package name\").\n\n\n\nlibrary(readxl) # for loading data\nlibrary(tidyverse) # for tidying"
+  },
+  {
+    "objectID": "slides_workspace/week-03/06-assess_braceros.html#load-data",
+    "href": "slides_workspace/week-03/06-assess_braceros.html#load-data",
+    "title": "[Assess] Bracero Farmworker Case Study",
+    "section": "Load Data",
+    "text": "Load Data\n\nbracero &lt;- read_excel(\"data/bracero_pull.xlsx\")"
   },
   {
     "objectID": "slides_workspace/week-03/06-assess_braceros.html#our-data",
@@ -396,70 +431,70 @@
     "href": "slides_workspace/week-03/06-assess_braceros.html#variable-types",
     "title": "[Assess] Bracero Farmworker Case Study",
     "section": "Variable Types",
-    "text": "Variable Types\nWe will work primarily with five types of variables in this course: - chr is character - dbl is double (number) - int is an integer - dttm is date-time - fct is factor\nThoughts on what variables we may want to change the data types of?\n\n\nRows: 90\nColumns: 6\n$ title       &lt;chr&gt; \"Richard Hancock\", \"Pedro Cantor\", \"Asterio López León\", \"…\n$ subject     &lt;chr&gt; \"Doña Ana County Farm Bureau\", \"Bracero\", \"Bracero\", \"Brac…\n$ description &lt;chr&gt; \"Biographical Synopsis of Interviewee:  Richard Hancock wa…\n$ date        &lt;chr&gt; \"2003-04-21\", \"2005-07-27\", \"2006-05-22\", \"2005-09-01\", \"2…\n$ identifier  &lt;chr&gt; \"https://braceroarchive.org/items/show/82;https://braceroa…\n$ language    &lt;chr&gt; \"eng\", \"spa\", \"spa\", \"spa\", \"eng\", \"spa\", \"spa\", \"eng\", \"s…"
+    "text": "Variable Types\nWe will work primarily with five types of variables in this course:\n\nchr is character\ndbl is double (number)\nint is an integer\ndate is date\nfct is factor\n\nThoughts on what variables we may want to change the data types of?\n\n\nRows: 90\nColumns: 6\n$ title       &lt;chr&gt; \"Richard Hancock\", \"Pedro Cantor\", \"Asterio López León\", \"…\n$ subject     &lt;chr&gt; \"Doña Ana County Farm Bureau\", \"Bracero\", \"Bracero\", \"Brac…\n$ description &lt;chr&gt; \"Biographical Synopsis of Interviewee:  Richard Hancock wa…\n$ date        &lt;chr&gt; \"2003-04-21\", \"2005-07-27\", \"2006-05-22\", \"2005-09-01\", \"2…\n$ identifier  &lt;chr&gt; \"https://braceroarchive.org/items/show/82;https://braceroa…\n$ language    &lt;chr&gt; \"eng\", \"spa\", \"spa\", \"spa\", \"eng\", \"spa\", \"spa\", \"eng\", \"s…"
   },
   {
     "objectID": "slides_workspace/week-03/06-assess_braceros.html#mutate-function",
     "href": "slides_workspace/week-03/06-assess_braceros.html#mutate-function",
     "title": "[Assess] Bracero Farmworker Case Study",
     "section": "mutate() function",
-    "text": "mutate() function\n\nWe use the mutate function to create a new column date_format, using the date column.\n\nIn this case, we use the as.Date() function nested in the mutate function to change the date column’s data type.\n\n\n\nbracero |&gt;\n  mutate(date_format = as.Date(date)) \n\n# A tibble: 90 × 7\n   title               subject description date  identifier language date_format\n   &lt;chr&gt;               &lt;chr&gt;   &lt;chr&gt;       &lt;chr&gt; &lt;chr&gt;      &lt;chr&gt;    &lt;date&gt;     \n 1 Richard Hancock     Doña A… \"Biographi… 2003… https://b… eng      2003-04-21 \n 2 Pedro Cantor        Bracero \"Biographi… 2005… https://b… spa      2005-07-27 \n 3 Asterio López León  Bracero \"Biographi… 2006… https://b… spa      2006-05-22 \n 4 Vincente Delgado    Bracero \"Biographi… 2005… https://b… spa      2005-09-01 \n 5 Inez Rios           Intera… \"Biographi… 2003… https://b… eng      2003-01-31 \n 6 Manuel Enriquez Sa… Bureau… \"Biographi… 2003… https://b… spa      2003-02-06 \n 7 Alberto Montes Gon… Bracero \"Biographi… 2005… https://b… spa      2005-07-27 \n 8 Ernesto Espino      Son of… \"Biographi… 2005… https://b… eng      2005-11-12 \n 9 Jesús Ortíz Torres  Bracero \"Biographi… 2005… https://b… spa      2005-08-31 \n10 José G. Corral      Son of… \"Biographi… 2005… https://b… spa      2005-11-12 \n# ℹ 80 more rows"
+    "text": "mutate() function\n\nmutate() creates new columns based on existing ones\nWe use the mutate() function to create a new column date_format, using the as.Date() function to change the original date column’s data type.\n\n\nbracero |&gt;\n  mutate(date_format = as.Date(date)) \n\n# A tibble: 90 × 7\n   title               subject description date  identifier language date_format\n   &lt;chr&gt;               &lt;chr&gt;   &lt;chr&gt;       &lt;chr&gt; &lt;chr&gt;      &lt;chr&gt;    &lt;date&gt;     \n 1 Richard Hancock     Doña A… \"Biographi… 2003… https://b… eng      2003-04-21 \n 2 Pedro Cantor        Bracero \"Biographi… 2005… https://b… spa      2005-07-27 \n 3 Asterio López León  Bracero \"Biographi… 2006… https://b… spa      2006-05-22 \n 4 Vincente Delgado    Bracero \"Biographi… 2005… https://b… spa      2005-09-01 \n 5 Inez Rios           Intera… \"Biographi… 2003… https://b… eng      2003-01-31 \n 6 Manuel Enriquez Sa… Bureau… \"Biographi… 2003… https://b… spa      2003-02-06 \n 7 Alberto Montes Gon… Bracero \"Biographi… 2005… https://b… spa      2005-07-27 \n 8 Ernesto Espino      Son of… \"Biographi… 2005… https://b… eng      2005-11-12 \n 9 Jesús Ortíz Torres  Bracero \"Biographi… 2005… https://b… spa      2005-08-31 \n10 José G. Corral      Son of… \"Biographi… 2005… https://b… spa      2005-11-12 \n# ℹ 80 more rows"
   },
   {
     "objectID": "slides_workspace/week-03/06-assess_braceros.html#mutate-function-cont.",
     "href": "slides_workspace/week-03/06-assess_braceros.html#mutate-function-cont.",
     "title": "[Assess] Bracero Farmworker Case Study",
     "section": "mutate() function (cont.)",
-    "text": "mutate() function (cont.)\n\nWe can also use mutate for creating new columns, and we can pair it with additional functions, such as ifelse statements.\n\n%in%c() allows you to list multiple matches in the subject column.\n\nPerhaps we were interested in creating a new column that defines whether an interview is from a bracero worker or not.\n\nNote that if we wanted to create more than two groups, we might create a factor column and use the case_match() function, rather than an ifelse statement.\n\n\n\nbracero |&gt; \n  mutate(subject_binary = ifelse(subject %in% c(\"bracero\", \"Bracero\"), \"Bracero\", \"Non-Bracero\" )) \n\n# A tibble: 90 × 7\n   title            subject description date  identifier language subject_binary\n   &lt;chr&gt;            &lt;chr&gt;   &lt;chr&gt;       &lt;chr&gt; &lt;chr&gt;      &lt;chr&gt;    &lt;chr&gt;         \n 1 Richard Hancock  Doña A… \"Biographi… 2003… https://b… eng      Non-Bracero   \n 2 Pedro Cantor     Bracero \"Biographi… 2005… https://b… spa      Bracero       \n 3 Asterio López L… Bracero \"Biographi… 2006… https://b… spa      Bracero       \n 4 Vincente Delgado Bracero \"Biographi… 2005… https://b… spa      Bracero       \n 5 Inez Rios        Intera… \"Biographi… 2003… https://b… eng      Non-Bracero   \n 6 Manuel Enriquez… Bureau… \"Biographi… 2003… https://b… spa      Non-Bracero   \n 7 Alberto Montes … Bracero \"Biographi… 2005… https://b… spa      Bracero       \n 8 Ernesto Espino   Son of… \"Biographi… 2005… https://b… eng      Non-Bracero   \n 9 Jesús Ortíz Tor… Bracero \"Biographi… 2005… https://b… spa      Bracero       \n10 José G. Corral   Son of… \"Biographi… 2005… https://b… spa      Non-Bracero   \n# ℹ 80 more rows"
+    "text": "mutate() function (cont.)\n\nWe can also pair it with additional functions, such as ifelse statements.\n\n%in%c() allows you to list multiple matches in the subject column."
   },
   {
     "objectID": "slides_workspace/week-03/06-assess_braceros.html#select-function",
     "href": "slides_workspace/week-03/06-assess_braceros.html#select-function",
     "title": "[Assess] Bracero Farmworker Case Study",
     "section": "select() function",
-    "text": "select() function\n\nPerhaps we’d like to remove the original date column from our dataframe.\nselect() can be used to select or deselect columns.\n\n\n# select column you don't want\nbracero |&gt;\n select(-date)\n\n# select columns you do want\nbracero |&gt;\n select(title, subject, description, date, identifier, language, date_format)\n\n# select columns in a row, except the column you don't want\nbracero |&gt;\n  select(title:description, identifier:date_format)"
+    "text": "select() function\n\nselect() can be used to select or deselect columns.\nPerhaps we’d like to remove the original date column from our dataframe.\n\n\n# select column you don't want\nbracero |&gt;\n select(-date)\n\n# select columns you do want\nbracero |&gt;\n select(title, subject, description, date, identifier, language, date_format)\n\n# select columns in a row, except the column you don't want\nbracero |&gt;\n  select(title:description, identifier:date_format)"
   },
   {
     "objectID": "slides_workspace/week-03/06-assess_braceros.html#rename-function",
     "href": "slides_workspace/week-03/06-assess_braceros.html#rename-function",
     "title": "[Assess] Bracero Farmworker Case Study",
     "section": "rename() function",
-    "text": "rename() function\n\nsometimes original column names aren’t very descriptive, or they’re too long.\nthe rename() function can help.\n\nlet’s rename “title” to something more descriptive like “interviewee”.\n\n\n\nbracero |&gt;\n  rename(\"interviewee\" = \"title\")\n\n# A tibble: 90 × 6\n   interviewee              subject        description date  identifier language\n   &lt;chr&gt;                    &lt;chr&gt;          &lt;chr&gt;       &lt;chr&gt; &lt;chr&gt;      &lt;chr&gt;   \n 1 Richard Hancock          Doña Ana Coun… \"Biographi… 2003… https://b… eng     \n 2 Pedro Cantor             Bracero        \"Biographi… 2005… https://b… spa     \n 3 Asterio López León       Bracero        \"Biographi… 2006… https://b… spa     \n 4 Vincente Delgado         Bracero        \"Biographi… 2005… https://b… spa     \n 5 Inez Rios                Interaction w… \"Biographi… 2003… https://b… eng     \n 6 Manuel Enriquez Savignac Bureau of Emp… \"Biographi… 2003… https://b… spa     \n 7 Alberto Montes González  Bracero        \"Biographi… 2005… https://b… spa     \n 8 Ernesto Espino           Son of bracero \"Biographi… 2005… https://b… eng     \n 9 Jesús Ortíz Torres       Bracero        \"Biographi… 2005… https://b… spa     \n10 José G. Corral           Son of a brac… \"Biographi… 2005… https://b… spa     \n# ℹ 80 more rows"
+    "text": "rename() function\n\nrename() changes the names of current columns\n\nlet’s rename title to something more descriptive like interviewee.\n\n\n\nbracero |&gt;\n  rename(\"interviewee\" = \"title\")\n\n# A tibble: 90 × 6\n   interviewee              subject        description date  identifier language\n   &lt;chr&gt;                    &lt;chr&gt;          &lt;chr&gt;       &lt;chr&gt; &lt;chr&gt;      &lt;chr&gt;   \n 1 Richard Hancock          Doña Ana Coun… \"Biographi… 2003… https://b… eng     \n 2 Pedro Cantor             Bracero        \"Biographi… 2005… https://b… spa     \n 3 Asterio López León       Bracero        \"Biographi… 2006… https://b… spa     \n 4 Vincente Delgado         Bracero        \"Biographi… 2005… https://b… spa     \n 5 Inez Rios                Interaction w… \"Biographi… 2003… https://b… eng     \n 6 Manuel Enriquez Savignac Bureau of Emp… \"Biographi… 2003… https://b… spa     \n 7 Alberto Montes González  Bracero        \"Biographi… 2005… https://b… spa     \n 8 Ernesto Espino           Son of bracero \"Biographi… 2005… https://b… eng     \n 9 Jesús Ortíz Torres       Bracero        \"Biographi… 2005… https://b… spa     \n10 José G. Corral           Son of a brac… \"Biographi… 2005… https://b… spa     \n# ℹ 80 more rows"
   },
   {
     "objectID": "slides_workspace/week-03/06-assess_braceros.html#relocate-function",
     "href": "slides_workspace/week-03/06-assess_braceros.html#relocate-function",
     "title": "[Assess] Bracero Farmworker Case Study",
     "section": "relocate() function",
-    "text": "relocate() function\n\nSay we want the identifier column at the very end of the dataframe\nrelocate automatically puts the column at the front, so you have to specify .after or .before.\n\n\nbracero |&gt; \n relocate(identifier, .after = language)\n\n# A tibble: 90 × 6\n   title                    subject        description date  language identifier\n   &lt;chr&gt;                    &lt;chr&gt;          &lt;chr&gt;       &lt;chr&gt; &lt;chr&gt;    &lt;chr&gt;     \n 1 Richard Hancock          Doña Ana Coun… \"Biographi… 2003… eng      https://b…\n 2 Pedro Cantor             Bracero        \"Biographi… 2005… spa      https://b…\n 3 Asterio López León       Bracero        \"Biographi… 2006… spa      https://b…\n 4 Vincente Delgado         Bracero        \"Biographi… 2005… spa      https://b…\n 5 Inez Rios                Interaction w… \"Biographi… 2003… eng      https://b…\n 6 Manuel Enriquez Savignac Bureau of Emp… \"Biographi… 2003… spa      https://b…\n 7 Alberto Montes González  Bracero        \"Biographi… 2005… spa      https://b…\n 8 Ernesto Espino           Son of bracero \"Biographi… 2005… eng      https://b…\n 9 Jesús Ortíz Torres       Bracero        \"Biographi… 2005… spa      https://b…\n10 José G. Corral           Son of a brac… \"Biographi… 2005… spa      https://b…\n# ℹ 80 more rows"
+    "text": "relocate() function\n\nrelocate() changes the position of columns\nrelocate() automatically puts the column at the front, so you have to specify the column’s location, and .after or .before.\n\n\nbracero |&gt; \n relocate(identifier, .after = language)\n\n# A tibble: 90 × 6\n   title                    subject        description date  language identifier\n   &lt;chr&gt;                    &lt;chr&gt;          &lt;chr&gt;       &lt;chr&gt; &lt;chr&gt;    &lt;chr&gt;     \n 1 Richard Hancock          Doña Ana Coun… \"Biographi… 2003… eng      https://b…\n 2 Pedro Cantor             Bracero        \"Biographi… 2005… spa      https://b…\n 3 Asterio López León       Bracero        \"Biographi… 2006… spa      https://b…\n 4 Vincente Delgado         Bracero        \"Biographi… 2005… spa      https://b…\n 5 Inez Rios                Interaction w… \"Biographi… 2003… eng      https://b…\n 6 Manuel Enriquez Savignac Bureau of Emp… \"Biographi… 2003… spa      https://b…\n 7 Alberto Montes González  Bracero        \"Biographi… 2005… spa      https://b…\n 8 Ernesto Espino           Son of bracero \"Biographi… 2005… eng      https://b…\n 9 Jesús Ortíz Torres       Bracero        \"Biographi… 2005… spa      https://b…\n10 José G. Corral           Son of a brac… \"Biographi… 2005… spa      https://b…\n# ℹ 80 more rows"
   },
   {
     "objectID": "slides_workspace/week-03/06-assess_braceros.html#put-it-together",
     "href": "slides_workspace/week-03/06-assess_braceros.html#put-it-together",
     "title": "[Assess] Bracero Farmworker Case Study",
     "section": "Put it together",
-    "text": "Put it together\n\nWe can put all of these data transformation actions together using the pipe |&gt; function\n\nline 1: creates new dataframe called bracero_clean\nline 2: creates formatted date column called date_format\nline 3: selects for all columns except for the old date column\nline 4: renames the title column to as interviewee\nline 5: moves the indentifier column to after the date_format column.\n\n\n\nbracero_clean &lt;- bracero |&gt;\n  mutate(date_format = as.Date(date)) |&gt; \n  select(-date) |&gt; \n  rename(\"interviewee\" = \"title\") |&gt; \n  relocate(identifier, .after = date_format)"
+    "text": "Put it together\n\nWe can put all of these data transformation actions together using the |&gt; function\n\nline 1: creates new dataframe called bracero_clean\nline 2: creates formatted date column called date_format from the original date column.\nline 3: selects for all columns except for the old date column\nline 4: renames the title column to interviewee\nline 5: moves the indentifier column to after the date_format column.\n\n\n\nbracero_clean &lt;- bracero |&gt;\n  mutate(date_format = as.Date(date)) |&gt; \n  select(-date) |&gt; \n  rename(\"interviewee\" = \"title\") |&gt; \n  relocate(identifier, .after = date_format)"
   },
   {
     "objectID": "slides_workspace/week-03/06-assess_braceros.html#filter-function",
     "href": "slides_workspace/week-03/06-assess_braceros.html#filter-function",
     "title": "[Assess] Bracero Farmworker Case Study",
     "section": "filter() function",
-    "text": "filter() function\n\nUse the filter() function to select rows that correspond to values of interest.\nSay we’re interested in only interviews that are spoken in spanish:\nuse == to filter the language column for rows with a direct match (in this case “spa”)\n\n\nbracero_clean |&gt;\n  filter(language == \"spa\")\n\n# A tibble: 75 × 6\n   interviewee              subject  description language date_format identifier\n   &lt;chr&gt;                    &lt;chr&gt;    &lt;chr&gt;       &lt;chr&gt;    &lt;date&gt;      &lt;chr&gt;     \n 1 Pedro Cantor             Bracero  \"Biographi… spa      2005-07-27  https://b…\n 2 Asterio López León       Bracero  \"Biographi… spa      2006-05-22  https://b…\n 3 Vincente Delgado         Bracero  \"Biographi… spa      2005-09-01  https://b…\n 4 Manuel Enriquez Savignac Bureau … \"Biographi… spa      2003-02-06  https://b…\n 5 Alberto Montes González  Bracero  \"Biographi… spa      2005-07-27  https://b…\n 6 Jesús Ortíz Torres       Bracero  \"Biographi… spa      2005-08-31  https://b…\n 7 José G. Corral           Son of … \"Biographi… spa      2005-11-12  https://b…\n 8 Eduardo De Santiago      Bracero  \"Biographi… spa      2003-03-03  https://b…\n 9 Salvador Torres Beltrán  Bracero  \"Biographi… spa      2006-05-22  https://b…\n10 Luis Zamudio Villagomez  Bracero  \"Biographi… spa      2005-07-27  https://b…\n# ℹ 65 more rows"
+    "text": "filter() function\n\nUse the filter() function to select rows that correspond to values of interest.\nuse == to filter the language column for rows with a direct match (in this case spa)\n\n\nbracero_clean |&gt;\n  filter(language == \"spa\")\n\n# A tibble: 75 × 6\n   interviewee              subject  description language date_format identifier\n   &lt;chr&gt;                    &lt;chr&gt;    &lt;chr&gt;       &lt;chr&gt;    &lt;date&gt;      &lt;chr&gt;     \n 1 Pedro Cantor             Bracero  \"Biographi… spa      2005-07-27  https://b…\n 2 Asterio López León       Bracero  \"Biographi… spa      2006-05-22  https://b…\n 3 Vincente Delgado         Bracero  \"Biographi… spa      2005-09-01  https://b…\n 4 Manuel Enriquez Savignac Bureau … \"Biographi… spa      2003-02-06  https://b…\n 5 Alberto Montes González  Bracero  \"Biographi… spa      2005-07-27  https://b…\n 6 Jesús Ortíz Torres       Bracero  \"Biographi… spa      2005-08-31  https://b…\n 7 José G. Corral           Son of … \"Biographi… spa      2005-11-12  https://b…\n 8 Eduardo De Santiago      Bracero  \"Biographi… spa      2003-03-03  https://b…\n 9 Salvador Torres Beltrán  Bracero  \"Biographi… spa      2006-05-22  https://b…\n10 Luis Zamudio Villagomez  Bracero  \"Biographi… spa      2005-07-27  https://b…\n# ℹ 65 more rows"
   },
   {
-    "objectID": "slides_workspace/week-03/06-assess_braceros.html#filter-cont.",
-    "href": "slides_workspace/week-03/06-assess_braceros.html#filter-cont.",
+    "objectID": "slides_workspace/week-03/06-assess_braceros.html#filter-operations",
+    "href": "slides_workspace/week-03/06-assess_braceros.html#filter-operations",
     "title": "[Assess] Bracero Farmworker Case Study",
-    "section": "filter() (cont.)",
-    "text": "filter() (cont.)\n\nYou can also combine multiple conditions:\n\n&gt; = greater than\n&gt;= = greater than or equal to\n&lt; = less than\n&lt;= less than or equal to\n== equal to\n!= does not equal\nCan use & to combine conditions\n| for or\n\nPerhaps we’re interested in interviews that took place after 2004 in English:\n\n\nbracero_clean |&gt;\n  filter(date_format &gt;= 2004-01-01 & language == \"eng\")"
+    "section": "filter() operations",
+    "text": "filter() operations\n\n&gt; greater than\n&gt;= greater than or equal to\n&lt; less than\n&lt;= less than or equal to\n== equal to\n!= does not equal\nCan use & to combine conditions (and)\n| to select multiple conditions (or)\nPerhaps we’re interested in interviews that took place after 2004 AND are in English:\n\n\nbracero_clean |&gt;\n  filter(date_format &gt;= 2004-01-01 & language == \"eng\")"
   },
   {
     "objectID": "slides_workspace/week-03/06-assess_braceros.html#filter-and-str_detect",
     "href": "slides_workspace/week-03/06-assess_braceros.html#filter-and-str_detect",
     "title": "[Assess] Bracero Farmworker Case Study",
     "section": "filter() and str_detect()",
-    "text": "filter() and str_detect()\n\nWe can also combine filter with the str_detect() function, to look for character matches.\n\n\nbracero_clean |&gt; \n  filter(str_detect(interviewee, \"Alberto\"))\n\n# A tibble: 3 × 6\n  interviewee              subject description   language date_format identifier\n  &lt;chr&gt;                    &lt;chr&gt;   &lt;chr&gt;         &lt;chr&gt;    &lt;date&gt;      &lt;chr&gt;     \n1 Alberto Montes González  Bracero \"Biographica… spa      2005-07-27  https://b…\n2 Alberto Magallón Jiménez Bracero \"Biographica… spa      2005-07-28  https://b…\n3 Alberto Mendoza Torres   bracero \"Biographica… spa      2003-09-26  https://b…"
+    "text": "filter() and str_detect()\n\nWe can also combine filter with the str_detect() function, to look for character matches in a column (in this case the interviewee column, with any matches including Alberto .\n\n\nbracero_clean |&gt; \n  filter(str_detect(interviewee, \"Alberto\"))\n\n# A tibble: 3 × 6\n  interviewee              subject description   language date_format identifier\n  &lt;chr&gt;                    &lt;chr&gt;   &lt;chr&gt;         &lt;chr&gt;    &lt;date&gt;      &lt;chr&gt;     \n1 Alberto Montes González  Bracero \"Biographica… spa      2005-07-27  https://b…\n2 Alberto Magallón Jiménez Bracero \"Biographica… spa      2005-07-28  https://b…\n3 Alberto Mendoza Torres   bracero \"Biographica… spa      2003-09-26  https://b…"
   },
   {
     "objectID": "slides_workspace/week-03/06-assess_braceros.html#arrange",
@@ -469,11 +504,18 @@
     "text": "arrange()\n\narrange() sorts your rows based on the values in the columns.\nIf you sort more than one row, it will sort the first variable, and the others will be used to “break ties”\nincluding desc() will sort your column values big to small.\n\n\nbracero_clean |&gt; \n  arrange(date_format, interviewee)"
   },
   {
+    "objectID": "slides_workspace/week-03/06-assess_braceros.html#exercise-two",
+    "href": "slides_workspace/week-03/06-assess_braceros.html#exercise-two",
+    "title": "[Assess] Bracero Farmworker Case Study",
+    "section": "Exercise Two",
+    "text": "Exercise Two\n\nFilter the bracero_clean dataframe for any interviews that took place before 2005 and with an interviewee whose name includes “Guadalupe”.\nArrange the bracero_clean data frame in descending order by date_format. What was the date, how many interviews took place on that date, and who is listed first?\nFilter the bracero_clean dataframe for any description columns that mention “California”. How many interviewees are there?"
+  },
+  {
     "objectID": "slides_workspace/week-03/06-assess_braceros.html#group_by-function",
     "href": "slides_workspace/week-03/06-assess_braceros.html#group_by-function",
     "title": "[Assess] Bracero Farmworker Case Study",
     "section": "group_by() function",
-    "text": "group_by() function\n\ngroup_by() function is really helpful for dividing your data into groups for analysis.\ngroup_by() function does not change your data, but will change subsequent operations if you use them in tandem with a group_by()\nYou can also group by multiple columns.\n\n\nbracero_clean |&gt; \n  group_by(language)\n\n# A tibble: 90 × 6\n# Groups:   language [2]\n   interviewee              subject  description language date_format identifier\n   &lt;chr&gt;                    &lt;chr&gt;    &lt;chr&gt;       &lt;chr&gt;    &lt;date&gt;      &lt;chr&gt;     \n 1 Richard Hancock          Doña An… \"Biographi… eng      2003-04-21  https://b…\n 2 Pedro Cantor             Bracero  \"Biographi… spa      2005-07-27  https://b…\n 3 Asterio López León       Bracero  \"Biographi… spa      2006-05-22  https://b…\n 4 Vincente Delgado         Bracero  \"Biographi… spa      2005-09-01  https://b…\n 5 Inez Rios                Interac… \"Biographi… eng      2003-01-31  https://b…\n 6 Manuel Enriquez Savignac Bureau … \"Biographi… spa      2003-02-06  https://b…\n 7 Alberto Montes González  Bracero  \"Biographi… spa      2005-07-27  https://b…\n 8 Ernesto Espino           Son of … \"Biographi… eng      2005-11-12  https://b…\n 9 Jesús Ortíz Torres       Bracero  \"Biographi… spa      2005-08-31  https://b…\n10 José G. Corral           Son of … \"Biographi… spa      2005-11-12  https://b…\n# ℹ 80 more rows\n\n# bracero_clean |&gt;\n#  group_by(date_format, language)"
+    "text": "group_by() function\n\ngroup_by() function is really helpful for sorting your data into groups for analysis.\ngroup_by() function does not change your data, but will change subsequent operations if you use them in tandem with a group_by()\nYou can also group by multiple columns.\n\n\nbracero_clean |&gt; \n  group_by(language)\n\n# A tibble: 90 × 6\n# Groups:   language [2]\n   interviewee              subject  description language date_format identifier\n   &lt;chr&gt;                    &lt;chr&gt;    &lt;chr&gt;       &lt;chr&gt;    &lt;date&gt;      &lt;chr&gt;     \n 1 Richard Hancock          Doña An… \"Biographi… eng      2003-04-21  https://b…\n 2 Pedro Cantor             Bracero  \"Biographi… spa      2005-07-27  https://b…\n 3 Asterio López León       Bracero  \"Biographi… spa      2006-05-22  https://b…\n 4 Vincente Delgado         Bracero  \"Biographi… spa      2005-09-01  https://b…\n 5 Inez Rios                Interac… \"Biographi… eng      2003-01-31  https://b…\n 6 Manuel Enriquez Savignac Bureau … \"Biographi… spa      2003-02-06  https://b…\n 7 Alberto Montes González  Bracero  \"Biographi… spa      2005-07-27  https://b…\n 8 Ernesto Espino           Son of … \"Biographi… eng      2005-11-12  https://b…\n 9 Jesús Ortíz Torres       Bracero  \"Biographi… spa      2005-08-31  https://b…\n10 José G. Corral           Son of … \"Biographi… spa      2005-11-12  https://b…\n# ℹ 80 more rows\n\n# bracero_clean |&gt;\n#  group_by(date_format, language)"
   },
   {
     "objectID": "slides_workspace/week-03/06-assess_braceros.html#summarize",
@@ -483,11 +525,25 @@
     "text": "summarize()\n\nsummarize() is often used in tandem with the group_by() function to calculate summary statistic(s) for a group.\nIn this case we are grouping the bracero_clean dataframe by the values in the language column, and summarizing the number of interviews using the n() function in a new column called n_interviews.\n\n\nbracero_clean |&gt;\n group_by(language) |&gt;\n summarize(n_interviews = n())\n\n# A tibble: 2 × 2\n  language n_interviews\n  &lt;chr&gt;           &lt;int&gt;\n1 eng                15\n2 spa                75"
   },
   {
+    "objectID": "slides_workspace/week-03/06-assess_braceros.html#other-summarize-functions",
+    "href": "slides_workspace/week-03/06-assess_braceros.html#other-summarize-functions",
+    "title": "[Assess] Bracero Farmworker Case Study",
+    "section": "Other summarize functions",
+    "text": "Other summarize functions\n\nYou can summarize values across groups using other functions, such as:\n\nmedian() = median\nmean() = average\nsum() = sum\n\n\n\nbracero_clean |&gt;\n group_by(language) |&gt;\n summarize(med_date = median(date_format))\n\n# A tibble: 2 × 2\n  language med_date  \n  &lt;chr&gt;    &lt;date&gt;    \n1 eng      2003-04-03\n2 spa      2003-06-30"
+  },
+  {
     "objectID": "slides_workspace/week-03/06-assess_braceros.html#slice",
     "href": "slides_workspace/week-03/06-assess_braceros.html#slice",
     "title": "[Assess] Bracero Farmworker Case Study",
     "section": "slice",
-    "text": "slice\n\nslice_ functions help select a subset of rows\nslice_head(n = 5) will take the first five rows of the data\nslice_tail(n = 5) will take the last five rows of the data\nslice_min(x, n = 5) will take the five rows of data with the lowest values for column x.\nslice_max(x, n = 5) will take the five rows of data with the highest values for column x.\nslice_sample(n = 5) will select 5 random rows of data.\n\n\nbracero |&gt;\n  slice_sample(n = 15)\n\n# A tibble: 15 × 6\n   title                        subject    description date  identifier language\n   &lt;chr&gt;                        &lt;chr&gt;      &lt;chr&gt;       &lt;chr&gt; &lt;chr&gt;      &lt;chr&gt;   \n 1 Liborio Santiago Pérez       Bracero    \"Biographi… 2002… https://b… spa     \n 2 Maurilio Salcido Hernández   Bracero    \"Biographi… 2003… https://b… spa     \n 3 Miguel Jáquez López          Bracero    \"Biographi… 2003… https://b… spa     \n 4 Roberto Ponce Covarrubias    Bracero    \"Biographi… 2003… https://b… spa     \n 5 José G. Corral               Son of a … \"Biographi… 2005… https://b… spa     \n 6 Socorro O. Pérez             Clerk typ… \"Biographi… 2003… https://b… eng     \n 7 Ismael Z. Nicolás Osorio     Bracero    \"Biographi… 2005… https://b… spa     \n 8 Manuel Enriquez Savignac     Bureau of… \"Biographi… 2003… https://b… spa     \n 9 José Isidro Vidaña Canales   Bracero    \"Biographi… 2003… https://b… spa     \n10 Gregorio Flores Pérez        Bracero    \"Biographi… 2003… https://b… spa     \n11 Sam Sánchez                  Public He… \"Biographi… 2003… https://b… eng     \n12 Andy Imutan                  Activist   \"Biographi… 2005… https://b… eng     \n13 Guadalupe García González    Bracero    \"Biographi… 2006… https://b… spa     \n14 José Guadalupe Blanco Ortega Bracero    \"Biographi… 2003… https://b… spa     \n15 Aurelio Marín Luna           Bracero    \"Biographi… 2006… https://b… spa"
+    "text": "slice\n\nslice_ functions help select a subset of rows\nslice_head(n = 5) will take the first five rows of the data\nslice_tail(n = 5) will take the last five rows of the data\nslice_min(x, n = 5) will take the five rows of data with the lowest values for column x.\nslice_max(x, n = 5) will take the five rows of data with the highest values for column x.\nslice_sample(n = 5) will select 5 random rows of data.\n\n\nbracero_clean |&gt;\n  slice_min(date_format, n = 3)\n\n# A tibble: 3 × 6\n  interviewee             subject description    language date_format identifier\n  &lt;chr&gt;                   &lt;chr&gt;   &lt;chr&gt;          &lt;chr&gt;    &lt;date&gt;      &lt;chr&gt;     \n1 Heriberto Cortéz Cortéz Bracero \"Biographical… spa      2002-05-13  https://b…\n2 Homero López Ortiz      Bracero \"Biographical… spa      2002-05-31  https://b…\n3 Patricio Corrales Rojas Bracero \"Biographical… spa      2002-07-02  https://b…"
+  },
+  {
+    "objectID": "slides_workspace/week-03/06-assess_braceros.html#logistics",
+    "href": "slides_workspace/week-03/06-assess_braceros.html#logistics",
+    "title": "[Assess] Bracero Farmworker Case Study",
+    "section": "Logistics",
+    "text": "Logistics\n\nTuesday: two readings on rural electrification in NC, one oral history\n\nKat leading centering activity :-)\n\nGrading HW 01 and 02 will be done this weekend!"
   },
   {
     "objectID": "slides_workspace/week-02/04-assess_landfills.html#my-approach-to-teaching-data-science-for-environmental-justice",
@@ -1556,91 +1612,91 @@
   {
     "objectID": "slides_workspace/week-03/05-theory_proc_just.html#class-overview",
     "href": "slides_workspace/week-03/05-theory_proc_just.html#class-overview",
-    "title": "[Theory] Distributional (in)Justice & Food",
+    "title": "[Theory] Procedural (in)Justice & Food",
     "section": "Class Overview",
     "text": "Class Overview\n\nCentering activity\nLast week\nProcedural Justice\nTheoretical foundations\nBracero Program Activity\nClosing"
   },
   {
     "objectID": "slides_workspace/week-03/05-theory_proc_just.html#centering-activity",
     "href": "slides_workspace/week-03/05-theory_proc_just.html#centering-activity",
-    "title": "[Theory] Distributional (in)Justice & Food",
+    "title": "[Theory] Procedural (in)Justice & Food",
     "section": "Centering Activity",
     "text": "Centering Activity\n\nZiyah :-)"
   },
   {
     "objectID": "slides_workspace/week-03/05-theory_proc_just.html#last-week",
     "href": "slides_workspace/week-03/05-theory_proc_just.html#last-week",
-    "title": "[Theory] Distributional (in)Justice & Food",
+    "title": "[Theory] Procedural (in)Justice & Food",
     "section": "Last Week",
     "text": "Last Week\n\nEJ over time + tenet-based approach\nFoundational theories of distributional justice\nRecreated Bullard’s case study"
   },
   {
     "objectID": "slides_workspace/week-03/05-theory_proc_just.html#what-we-read",
     "href": "slides_workspace/week-03/05-theory_proc_just.html#what-we-read",
-    "title": "[Theory] Distributional (in)Justice & Food",
+    "title": "[Theory] Procedural (in)Justice & Food",
     "section": "What we Read",
     "text": "What we Read\n\nBell, D., & Carrick, J. (2017). Procedural environmental justice. In The Routledge handbook of environmental justice (pp. 101-112). Routledge."
   },
   {
     "objectID": "slides_workspace/week-03/05-theory_proc_just.html#procedural-justice",
     "href": "slides_workspace/week-03/05-theory_proc_just.html#procedural-justice",
-    "title": "[Theory] Distributional (in)Justice & Food",
+    "title": "[Theory] Procedural (in)Justice & Food",
     "section": "Procedural Justice",
     "text": "Procedural Justice\n\nConsiders unequal share of authority, power and influence, and how they impact environmental decision-making\nDistributional injustice can be an outcome of procedural injustice, and vice versa.\nRecognition justice is also a key component of procedural justice."
   },
   {
     "objectID": "slides_workspace/week-03/05-theory_proc_just.html#conceptions-of-procedural-environmental-justice",
     "href": "slides_workspace/week-03/05-theory_proc_just.html#conceptions-of-procedural-environmental-justice",
-    "title": "[Theory] Distributional (in)Justice & Food",
+    "title": "[Theory] Procedural (in)Justice & Food",
     "section": "Conceptions of Procedural Environmental Justice",
     "text": "Conceptions of Procedural Environmental Justice\n\nEquality: Power is shared equally among potential participants in decision-making process\n\nProportionality: power in environmental decisionmaking should be deistributed in proportion to thier stake in the outcome.\nPlurality: Everyone potentially affected by the outcome should be included in decision-making process as an equal."
   },
   {
     "objectID": "slides_workspace/week-03/05-theory_proc_just.html#five-principles-in-praxis",
     "href": "slides_workspace/week-03/05-theory_proc_just.html#five-principles-in-praxis",
-    "title": "[Theory] Distributional (in)Justice & Food",
+    "title": "[Theory] Procedural (in)Justice & Food",
     "section": "Five Principles in Praxis",
     "text": "Five Principles in Praxis\n\nContinuum\n\nInclusiveness\nConsultation over time\nDesign of Decision-making Procedures\n\nAll or nothing\n\nShared decision-making authority\nAuthoritative decision-making"
   },
   {
     "objectID": "slides_workspace/week-03/05-theory_proc_just.html#studying-procedural-justice",
     "href": "slides_workspace/week-03/05-theory_proc_just.html#studying-procedural-justice",
-    "title": "[Theory] Distributional (in)Justice & Food",
+    "title": "[Theory] Procedural (in)Justice & Food",
     "section": "Studying Procedural Justice",
     "text": "Studying Procedural Justice\n\nEthnography/participant observation\nPower-mapping\nComparison to theoretical framework"
   },
   {
     "objectID": "slides_workspace/week-03/05-theory_proc_just.html#overview-of-bracero-program",
     "href": "slides_workspace/week-03/05-theory_proc_just.html#overview-of-bracero-program",
-    "title": "[Theory] Distributional (in)Justice & Food",
+    "title": "[Theory] Procedural (in)Justice & Food",
     "section": "Overview of Bracero Program",
     "text": "Overview of Bracero Program\n\n\n\nBracero translates to “strong arm”\n1942: Public Law 45 EO establishes a bi-lateral agreement between Mexico and the U.S. for short-term farm labor\n\nMexican Revolution destabilized Mexico’s economy, WWII created a labor shortage in the U.S.\n\n1951: Public Law 78 passed to extend, formalize, and decentralize the Bracero Program, and include additional protections.\n\nAgreement promised fair wages, steady employment free housing, insurance, and transportation home.\n\nProgram ended in 1964, after admitting over 5 million temporary workers across 24 states"
   },
   {
     "objectID": "slides_workspace/week-03/05-theory_proc_just.html#bracero-program-procedural-justice",
     "href": "slides_workspace/week-03/05-theory_proc_just.html#bracero-program-procedural-justice",
-    "title": "[Theory] Distributional (in)Justice & Food",
+    "title": "[Theory] Procedural (in)Justice & Food",
     "section": "Bracero Program + Procedural Justice",
     "text": "Bracero Program + Procedural Justice\n\nIn groups of 3-4:\n\nRead P.L. 45 and P.L. 78\nConsider potential for procedural injustice\n\nAccording to Hunald & Young’s five principles for fair procedure, what policy safegaurds (or lack thereof) may have posed challenges for Braceros?\n\nBe prepared to debrief"
   },
   {
     "objectID": "slides_workspace/week-03/05-theory_proc_just.html#debrief",
     "href": "slides_workspace/week-03/05-theory_proc_just.html#debrief",
-    "title": "[Theory] Distributional (in)Justice & Food",
+    "title": "[Theory] Procedural (in)Justice & Food",
     "section": "Debrief",
     "text": "Debrief\n\nWhat did we find?"
   },
   {
     "objectID": "slides_workspace/week-03/05-theory_proc_just.html#logistics",
     "href": "slides_workspace/week-03/05-theory_proc_just.html#logistics",
-    "title": "[Theory] Distributional (in)Justice & Food",
+    "title": "[Theory] Procedural (in)Justice & Food",
     "section": "Logistics",
     "text": "Logistics\n\nReena leading centering activity\nFor Friday: Article on Bracero program/ Mexican Migration in Yakima Valley, WA\nHW 02 due Thursday at 11:59 PM\nES welcome back event! Tuesday, September 16, 12:30 to 1:30 PM, global flora courtyard\nClimate justice & war system event series: Tiara Na’Puti, Wednesday September 17, 5:30 to 7:30 PM, PNE Atrium"
   },
   {
     "objectID": "slides_workspace/week-03/05-theory_proc_just.html#exit-ticket",
     "href": "slides_workspace/week-03/05-theory_proc_just.html#exit-ticket",
-    "title": "[Theory] Distributional (in)Justice & Food",
+    "title": "[Theory] Procedural (in)Justice & Food",
     "section": "Exit Ticket",
     "text": "Exit Ticket\n\nTake two minutes and tell me something class-related:\n\nAnything you might change?\nThings you’d like to see more of?\nConcerns/worries?\nSnack suggestions?\nAn animal in a hat?\n\nWrite your name if you’d like me to answer back!"
   },
@@ -1872,7 +1928,7 @@
     "href": "centering.html#schedule",
     "title": "Centering Activity Sign-Up",
     "section": "Schedule",
-    "text": "Schedule\n\n\n\nNote that this is updated as of September 02, 2025\n\n\n\n\n\n\n\n\nWeek\nDate\nTuesday\nFriday\n\n\n\n\n2\nSep 09- Sep 12\nJulia\n\n\n\n3\nSep 16 - Sep 19\nZiyah\nReena\n\n\n4\nSep 23 - Sep 26\nKat\nEmily\n\n\n5\nSep 30 - Oct 03\nNavya\nCampbell\n\n\n6\nOct 07 - Oct 10\nElizabeth\nSamantha\n\n\n7\nOct 14 - Oct 17\nNo class, October Break\nDr. Caballero\n\n\n8\nOct 21 - Oct 24\nGwen\nClara\n\n\n9\nOct 28 - Oct 31\nNo Class, Tanner Conference\n\n\n\n10\nNov 04 - Nov 07\nReyna\n\n\n\n11\nNov 11- Nov 14\nChloe\n\n\n\n12\nNov 18 - Nov 21\nJune\n\n\n\n13\nNov 25 - Nov 28\n\nNo Class, Thanksgiving\n\n\n14\nDec 02 - Dec 05\nSophie\n\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nIf you need to change the date for your centering activity, please email me at least 24 hours in advance of our class meeting.",
+    "text": "Schedule\n\n\n\nNote that this is updated as of September 10, 2025\n\n\n\n\n\n\n\n\nWeek\nDate\nTuesday\nFriday\n\n\n\n\n2\nSep 09- Sep 12\nJulia\n\n\n\n3\nSep 16 - Sep 19\nZiyah\nReena\n\n\n4\nSep 23 - Sep 26\nKat\nEmily\n\n\n5\nSep 30 - Oct 03\nNavya\nCampbell\n\n\n6\nOct 07 - Oct 10\nElizabeth\nSamantha\n\n\n7\nOct 14 - Oct 17\nNo class, October Break\nDr. Caballero\n\n\n8\nOct 21 - Oct 24\nGwen\nClara\n\n\n9\nOct 28 - Oct 31\nNo Class, Tanner Conference\n\n\n\n10\nNov 04 - Nov 07\nReyna\n\n\n\n11\nNov 11- Nov 14\nChloe\n\n\n\n12\nNov 18 - Nov 21\nJune\n\n\n\n13\nNov 25 - Nov 28\n\nNo Class, Thanksgiving\n\n\n14\nDec 02 - Dec 05\nSophie\n\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nIf you need to change the date for your centering activity, please email me at least 24 hours in advance of our class meeting.",
     "crumbs": [
       "Centering Activity"
     ]
