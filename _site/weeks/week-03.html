@@ -301,7 +301,7 @@ Date
 
 </tr>
 
-<tr data-index="1" data-listing-date-sort="1758254400000" data-listing-file-modified-sort="1758287815925" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1554" data-listing-title-sort="[Assess] Bracero Farmworker Case Study" data-listing-filename-sort="06-assess_braceros.qmd">
+<tr data-index="1" data-listing-date-sort="1758254400000" data-listing-file-modified-sort="1758288146795" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1554" data-listing-title-sort="[Assess] Bracero Farmworker Case Study" data-listing-filename-sort="06-assess_braceros.qmd">
 <td>
 <a href="../slides/week-03/06-assess_braceros.html" class="title listing-title">[Assess] Bracero Farmworker Case Study</a>
 </td>
@@ -453,7 +453,7 @@ Due
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/mariahdaniellecaballero\.github\.io\/ES-202\/");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
