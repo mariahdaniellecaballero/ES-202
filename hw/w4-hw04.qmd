@@ -14,7 +14,7 @@ This case study focuses on using rural electrification surveys collected in 1934
 - Connect findings to theoretical understandings of restorative justice
 
 ## Instructions
-1. Navigate to Posit Cloud and select the HW 04 assignment. 
+1. Navigate to [Posit Cloud](https://posit.cloud/spaces/686564/content/all?sort=name_asc) and select the HW 04 assignment. 
 2. Follow along in class, and complete the assignment (if needed) outside of class.
 3. Render the quarto document as a pdf.
 
@@ -24,4 +24,4 @@ Case studies are each 10% of your grade.
 
 
 ## Submission
-Submit the pdf to Brightspace [here]().
+Submit the pdf to Brightspace [here](https://brightspace.wellesley.edu/d2l/lms/dropbox/admin/mark/folder_submissions_users.d2l?db=1513&ou=7420).

@@ -29,7 +29,7 @@ center <- read_excel("data/ES-202_Fall_2025_centering.xlsx")
 #| output: true
 
 options(knitr.kable.NA = '')
-knitr::kable(center, caption = "Note that this is updated as of September 02, 2025")
+knitr::kable(center, caption = "Note that this is updated as of September 10, 2025")
 ```
 
 ::: {.callout-note}
