@@ -378,11 +378,46 @@
     "text": "Outcomes of this case study"
   },
   {
+    "objectID": "slides_workspace/week-03/06-assess_braceros.html#centering-activity",
+    "href": "slides_workspace/week-03/06-assess_braceros.html#centering-activity",
+    "title": "[Assess] Bracero Farmworker Case Study",
+    "section": "Centering Activity",
+    "text": "Centering Activity\n\nReena :-)"
+  },
+  {
     "objectID": "slides_workspace/week-03/06-assess_braceros.html#exit-ticket-results",
     "href": "slides_workspace/week-03/06-assess_braceros.html#exit-ticket-results",
     "title": "[Assess] Bracero Farmworker Case Study",
     "section": "Exit Ticket Results",
     "text": "Exit Ticket Results"
+  },
+  {
+    "objectID": "slides_workspace/week-03/06-assess_braceros.html#learning-outcomes",
+    "href": "slides_workspace/week-03/06-assess_braceros.html#learning-outcomes",
+    "title": "[Assess] Bracero Farmworker Case Study",
+    "section": "Learning Outcomes",
+    "text": "Learning Outcomes\n\nUnderstand data structure\nTransform and tidy data for necessary questions\nExplore and summarize patterns\nConnect your findings to theoretical understandings of procedural justice"
+  },
+  {
+    "objectID": "slides_workspace/week-03/06-assess_braceros.html#lets-get-started",
+    "href": "slides_workspace/week-03/06-assess_braceros.html#lets-get-started",
+    "title": "[Assess] Bracero Farmworker Case Study",
+    "section": "Let’s get Started",
+    "text": "Let’s get Started\n\nFind your pair\nOpen Posit"
+  },
+  {
+    "objectID": "slides_workspace/week-03/06-assess_braceros.html#first-steps",
+    "href": "slides_workspace/week-03/06-assess_braceros.html#first-steps",
+    "title": "[Assess] Bracero Farmworker Case Study",
+    "section": "First Steps",
+    "text": "First Steps\n\nImport Data\nLoad packages\n\nYou may need to install readxl using install.packages(\"package name\").\n\n\n\nlibrary(readxl) # for loading data\nlibrary(tidyverse) # for tidying"
+  },
+  {
+    "objectID": "slides_workspace/week-03/06-assess_braceros.html#load-data",
+    "href": "slides_workspace/week-03/06-assess_braceros.html#load-data",
+    "title": "[Assess] Bracero Farmworker Case Study",
+    "section": "Load Data",
+    "text": "Load Data\n\nbracero &lt;- read_excel(\"data/bracero_pull.xlsx\")"
   },
   {
     "objectID": "slides_workspace/week-03/06-assess_braceros.html#our-data",
@@ -448,11 +483,11 @@
     "text": "filter() function\n\nUse the filter() function to select rows that correspond to values of interest.\nuse == to filter the language column for rows with a direct match (in this case spa)\n\n\nbracero_clean |&gt;\n  filter(language == \"spa\")\n\n# A tibble: 75 × 6\n   interviewee              subject  description language date_format identifier\n   &lt;chr&gt;                    &lt;chr&gt;    &lt;chr&gt;       &lt;chr&gt;    &lt;date&gt;      &lt;chr&gt;     \n 1 Pedro Cantor             Bracero  \"Biographi… spa      2005-07-27  https://b…\n 2 Asterio López León       Bracero  \"Biographi… spa      2006-05-22  https://b…\n 3 Vincente Delgado         Bracero  \"Biographi… spa      2005-09-01  https://b…\n 4 Manuel Enriquez Savignac Bureau … \"Biographi… spa      2003-02-06  https://b…\n 5 Alberto Montes González  Bracero  \"Biographi… spa      2005-07-27  https://b…\n 6 Jesús Ortíz Torres       Bracero  \"Biographi… spa      2005-08-31  https://b…\n 7 José G. Corral           Son of … \"Biographi… spa      2005-11-12  https://b…\n 8 Eduardo De Santiago      Bracero  \"Biographi… spa      2003-03-03  https://b…\n 9 Salvador Torres Beltrán  Bracero  \"Biographi… spa      2006-05-22  https://b…\n10 Luis Zamudio Villagomez  Bracero  \"Biographi… spa      2005-07-27  https://b…\n# ℹ 65 more rows"
   },
   {
-    "objectID": "slides_workspace/week-03/06-assess_braceros.html#filter-cont.",
-    "href": "slides_workspace/week-03/06-assess_braceros.html#filter-cont.",
+    "objectID": "slides_workspace/week-03/06-assess_braceros.html#filter-operations",
+    "href": "slides_workspace/week-03/06-assess_braceros.html#filter-operations",
     "title": "[Assess] Bracero Farmworker Case Study",
-    "section": "filter() (cont.)",
-    "text": "filter() (cont.)\n\nYou can also combine multiple conditions:\n\n&gt; = greater than\n&gt;= = greater than or equal to\n&lt; = less than\n&lt;= less than or equal to\n== equal to\n!= does not equal\nCan use & to combine conditions (and)\n| to select multiple conditions (or)\n\nPerhaps we’re interested in interviews that took place after 2004 AND are in English:\n\n\nbracero_clean |&gt;\n  filter(date_format &gt;= 2004-01-01 & language == \"eng\")"
+    "section": "filter() operations",
+    "text": "filter() operations\n\n&gt; greater than\n&gt;= greater than or equal to\n&lt; less than\n&lt;= less than or equal to\n== equal to\n!= does not equal\nCan use & to combine conditions (and)\n| to select multiple conditions (or)\nPerhaps we’re interested in interviews that took place after 2004 AND are in English:\n\n\nbracero_clean |&gt;\n  filter(date_format &gt;= 2004-01-01 & language == \"eng\")"
   },
   {
     "objectID": "slides_workspace/week-03/06-assess_braceros.html#filter-and-str_detect",
@@ -469,6 +504,13 @@
     "text": "arrange()\n\narrange() sorts your rows based on the values in the columns.\nIf you sort more than one row, it will sort the first variable, and the others will be used to “break ties”\nincluding desc() will sort your column values big to small.\n\n\nbracero_clean |&gt; \n  arrange(date_format, interviewee)"
   },
   {
+    "objectID": "slides_workspace/week-03/06-assess_braceros.html#exercise-two",
+    "href": "slides_workspace/week-03/06-assess_braceros.html#exercise-two",
+    "title": "[Assess] Bracero Farmworker Case Study",
+    "section": "Exercise Two",
+    "text": "Exercise Two\n\nFilter the bracero_clean dataframe for any interviews that took place before 2005 and with an interviewee whose name includes “Guadalupe”.\nArrange the bracero_clean data frame in descending order by date_format. What was the date, how many interviews took place on that date, and who is listed first?\nFilter the bracero_clean dataframe for any description columns that mention “California”. How many interviewees are there?"
+  },
+  {
     "objectID": "slides_workspace/week-03/06-assess_braceros.html#group_by-function",
     "href": "slides_workspace/week-03/06-assess_braceros.html#group_by-function",
     "title": "[Assess] Bracero Farmworker Case Study",
@@ -483,11 +525,25 @@
     "text": "summarize()\n\nsummarize() is often used in tandem with the group_by() function to calculate summary statistic(s) for a group.\nIn this case we are grouping the bracero_clean dataframe by the values in the language column, and summarizing the number of interviews using the n() function in a new column called n_interviews.\n\n\nbracero_clean |&gt;\n group_by(language) |&gt;\n summarize(n_interviews = n())\n\n# A tibble: 2 × 2\n  language n_interviews\n  &lt;chr&gt;           &lt;int&gt;\n1 eng                15\n2 spa                75"
   },
   {
+    "objectID": "slides_workspace/week-03/06-assess_braceros.html#other-summarize-functions",
+    "href": "slides_workspace/week-03/06-assess_braceros.html#other-summarize-functions",
+    "title": "[Assess] Bracero Farmworker Case Study",
+    "section": "Other summarize functions",
+    "text": "Other summarize functions\n\nYou can summarize values across groups using other functions, such as:\n\nmedian() = median\nmean() = average\nsum() = sum\n\n\n\nbracero_clean |&gt;\n group_by(language) |&gt;\n summarize(med_date = median(date_format))\n\n# A tibble: 2 × 2\n  language med_date  \n  &lt;chr&gt;    &lt;date&gt;    \n1 eng      2003-04-03\n2 spa      2003-06-30"
+  },
+  {
     "objectID": "slides_workspace/week-03/06-assess_braceros.html#slice",
     "href": "slides_workspace/week-03/06-assess_braceros.html#slice",
     "title": "[Assess] Bracero Farmworker Case Study",
     "section": "slice",
     "text": "slice\n\nslice_ functions help select a subset of rows\nslice_head(n = 5) will take the first five rows of the data\nslice_tail(n = 5) will take the last five rows of the data\nslice_min(x, n = 5) will take the five rows of data with the lowest values for column x.\nslice_max(x, n = 5) will take the five rows of data with the highest values for column x.\nslice_sample(n = 5) will select 5 random rows of data.\n\n\nbracero_clean |&gt;\n  slice_min(date_format, n = 3)\n\n# A tibble: 3 × 6\n  interviewee             subject description    language date_format identifier\n  &lt;chr&gt;                   &lt;chr&gt;   &lt;chr&gt;          &lt;chr&gt;    &lt;date&gt;      &lt;chr&gt;     \n1 Heriberto Cortéz Cortéz Bracero \"Biographical… spa      2002-05-13  https://b…\n2 Homero López Ortiz      Bracero \"Biographical… spa      2002-05-31  https://b…\n3 Patricio Corrales Rojas Bracero \"Biographical… spa      2002-07-02  https://b…"
+  },
+  {
+    "objectID": "slides_workspace/week-03/06-assess_braceros.html#logistics",
+    "href": "slides_workspace/week-03/06-assess_braceros.html#logistics",
+    "title": "[Assess] Bracero Farmworker Case Study",
+    "section": "Logistics",
+    "text": "Logistics\n\nTuesday: two readings on rural electrification in NC, one oral history\n\nKat leading centering activity :-)\n\nGrading HW 01 and 02 will be done this weekend!"
   },
   {
     "objectID": "slides_workspace/week-02/04-assess_landfills.html#my-approach-to-teaching-data-science-for-environmental-justice",
@@ -1557,8 +1613,8 @@
     "objectID": "slides_workspace/week-03/05-theory_proc_just.html#class-overview",
     "href": "slides_workspace/week-03/05-theory_proc_just.html#class-overview",
     "title": "[Theory] Procedural (in)Justice & Food",
-    "section": "",
-    "text": "Centering activity\nLast week\nProcedural Justice\nTheoretical foundations\nBracero Program Activity\nClosing"
+    "section": "Class Overview",
+    "text": "Class Overview\n\nCentering activity\nLast week\nProcedural Justice\nTheoretical foundations\nBracero Program Activity\nClosing"
   },
   {
     "objectID": "slides_workspace/week-03/05-theory_proc_just.html#centering-activity",
@@ -2296,103 +2352,5 @@
     "crumbs": [
       "Syllabus"
     ]
-  },
-  {
-    "objectID": "slides_workspace/week-03/06-assess_braceros.html#first-steps",
-    "href": "slides_workspace/week-03/06-assess_braceros.html#first-steps",
-    "title": "[Assess] Bracero Farmworker Case Study",
-    "section": "First Steps",
-    "text": "First Steps\n\nImport Data\nLoad packages\n\nYou may need to install readxl using install.packages(\"package name\").\n\n\n\nlibrary(readxl) # for loading data\nlibrary(tidyverse) # for tidying"
-  },
-  {
-    "objectID": "slides_workspace/week-03/06-assess_braceros.html#setting-the-stage",
-    "href": "slides_workspace/week-03/06-assess_braceros.html#setting-the-stage",
-    "title": "[Assess] Bracero Farmworker Case Study",
-    "section": "Setting the Stage",
-    "text": "Setting the Stage\n\nThis week’s focus is on data tidying and transformation\nUsing metadata from 90 interviews in the Bracero Archive that I scraped\nImportant to note that each row represents a person, a life, and a family impacted by the Bracero Program"
-  },
-  {
-    "objectID": "slides_workspace/week-03/06-assess_braceros.html#lets-get-started",
-    "href": "slides_workspace/week-03/06-assess_braceros.html#lets-get-started",
-    "title": "[Assess] Bracero Farmworker Case Study",
-    "section": "Let’s get Started",
-    "text": "Let’s get Started\n\nFind your pair\nOpen Posit"
-  },
-  {
-    "objectID": "slides_workspace/week-03/06-assess_braceros.html#load-data",
-    "href": "slides_workspace/week-03/06-assess_braceros.html#load-data",
-    "title": "[Assess] Bracero Farmworker Case Study",
-    "section": "Load Data",
-    "text": "Load Data\n\nbracero &lt;- read_excel(\"data/bracero_pull.xlsx\")"
-  },
-  {
-    "objectID": "slides_workspace/week-03/06-assess_braceros.html#part-ii-todays-goal",
-    "href": "slides_workspace/week-03/06-assess_braceros.html#part-ii-todays-goal",
-    "title": "[Assess] Bracero Farmworker Case Study",
-    "section": "Part II: Today’s Goal",
-    "text": "Part II: Today’s Goal\n\nUnderstand data structure\nTransform and tidy data for necessary questions\nExplore and summarize patterns\nConnect your findings to theoretical understandings of procedural justice"
-  },
-  {
-    "objectID": "slides_workspace/week-03/06-assess_braceros.html#transforming-data-rows",
-    "href": "slides_workspace/week-03/06-assess_braceros.html#transforming-data-rows",
-    "title": "[Assess] Bracero Farmworker Case Study",
-    "section": "Transforming Data (Rows)",
-    "text": "Transforming Data (Rows)\n\nMoving on to rows!\n\nfilter() is a function that allows you to keep rows of interest (but won’t change the order of your rows)\narrange() changes the order of your rows (but won’t filter for anything)"
-  },
-  {
-    "objectID": "slides_workspace/week-03/05-theory_proc_just.html",
-    "href": "slides_workspace/week-03/05-theory_proc_just.html",
-    "title": "[Theory] Procedural (in)Justice & Food",
-    "section": "",
-    "text": "Centering activity\nLast week\nProcedural Justice\nTheoretical foundations\nBracero Program Activity\nClosing"
-  },
-  {
-    "objectID": "slides_workspace/week-03/06-assess_braceros.html#centering-activity",
-    "href": "slides_workspace/week-03/06-assess_braceros.html#centering-activity",
-    "title": "[Assess] Bracero Farmworker Case Study",
-    "section": "",
-    "text": "Reena :-)"
-  },
-  {
-    "objectID": "slides_workspace/week-03/06-assess_braceros.html#learning-outcomes",
-    "href": "slides_workspace/week-03/06-assess_braceros.html#learning-outcomes",
-    "title": "[Assess] Bracero Farmworker Case Study",
-    "section": "Learning Outcomes",
-    "text": "Learning Outcomes\n\nUnderstand data structure\nTransform and tidy data for necessary questions\nExplore and summarize patterns\nConnect your findings to theoretical understandings of procedural justice"
-  },
-  {
-    "objectID": "slides_workspace/week-03/06-assess_braceros.html#exercise-two",
-    "href": "slides_workspace/week-03/06-assess_braceros.html#exercise-two",
-    "title": "[Assess] Bracero Farmworker Case Study",
-    "section": "Exercise Two",
-    "text": "Exercise Two\n\nFilter the bracero_clean dataframe for any interviews that took place before 2005 and with an interviewee whose name includes “Guadalupe”.\nArrange the bracero_clean data frame in descending order by date_format. What was the date, how many interviews took place on that date, and who is listed first?\nFilter the bracero_clean dataframe for any description columns that mention “California”. How many interviewees are there?"
-  },
-  {
-    "objectID": "slides_workspace/week-03/06-assess_braceros.html#other-summarize-functions",
-    "href": "slides_workspace/week-03/06-assess_braceros.html#other-summarize-functions",
-    "title": "[Assess] Bracero Farmworker Case Study",
-    "section": "Other summarize functions",
-    "text": "Other summarize functions\n\nYou can summarize values across groups using other functions, such as:\n\nmedian() = median\nmean() = average\nsum() = sum\n\n\n\nbracero_clean |&gt;\n group_by(language) |&gt;\n summarize(med_date = median(date_format))\n\n# A tibble: 2 × 2\n  language med_date  \n  &lt;chr&gt;    &lt;date&gt;    \n1 eng      2003-04-03\n2 spa      2003-06-30"
-  },
-  {
-    "objectID": "slides_workspace/week-03/06-assess_braceros.html#logistics",
-    "href": "slides_workspace/week-03/06-assess_braceros.html#logistics",
-    "title": "[Assess] Bracero Farmworker Case Study",
-    "section": "Logistics",
-    "text": "Logistics\n\nTuesday: two readings on rural electrification in NC, one oral history\n\nKat leading centering activity :-)\n\nGrading HW 01 and 02 will be done this weekend!"
-  },
-  {
-    "objectID": "slides_workspace/week-03/06-assess_braceros.html#filter-operations",
-    "href": "slides_workspace/week-03/06-assess_braceros.html#filter-operations",
-    "title": "[Assess] Bracero Farmworker Case Study",
-    "section": "filter() operations",
-    "text": "filter() operations\n\n&gt; greater than\n&gt;= greater than or equal to\n&lt; less than\n&lt;= less than or equal to\n== equal to\n!= does not equal\nCan use & to combine conditions (and)\n| to select multiple conditions (or)\nPerhaps we’re interested in interviews that took place after 2004 AND are in English:\n\n\nbracero_clean |&gt;\n  filter(date_format &gt;= 2004-01-01 & language == \"eng\")"
-  },
-  {
-    "objectID": "slides_workspace/week-03/06-assess_braceros.html",
-    "href": "slides_workspace/week-03/06-assess_braceros.html",
-    "title": "[Assess] Bracero Farmworker Case Study",
-    "section": "",
-    "text": "Centering activity\nSetting the stage\nPaired coding\nGroup Debrief\n\n\n\n\nReena :-)"
   }
 ]
