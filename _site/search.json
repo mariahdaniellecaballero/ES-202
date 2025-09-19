@@ -1872,7 +1872,7 @@
     "href": "centering.html#schedule",
     "title": "Centering Activity Sign-Up",
     "section": "Schedule",
-    "text": "Schedule\n\n\n\nNote that this is updated as of September 02, 2025\n\n\n\n\n\n\n\n\nWeek\nDate\nTuesday\nFriday\n\n\n\n\n2\nSep 09- Sep 12\nJulia\n\n\n\n3\nSep 16 - Sep 19\nZiyah\nReena\n\n\n4\nSep 23 - Sep 26\nKat\nEmily\n\n\n5\nSep 30 - Oct 03\nNavya\nCampbell\n\n\n6\nOct 07 - Oct 10\nElizabeth\nSamantha\n\n\n7\nOct 14 - Oct 17\nNo class, October Break\nDr. Caballero\n\n\n8\nOct 21 - Oct 24\nGwen\nClara\n\n\n9\nOct 28 - Oct 31\nNo Class, Tanner Conference\n\n\n\n10\nNov 04 - Nov 07\nReyna\n\n\n\n11\nNov 11- Nov 14\nChloe\n\n\n\n12\nNov 18 - Nov 21\nJune\n\n\n\n13\nNov 25 - Nov 28\n\nNo Class, Thanksgiving\n\n\n14\nDec 02 - Dec 05\nSophie\n\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nIf you need to change the date for your centering activity, please email me at least 24 hours in advance of our class meeting.",
+    "text": "Schedule\n\n\n\nNote that this is updated as of September 10, 2025\n\n\n\n\n\n\n\n\nWeek\nDate\nTuesday\nFriday\n\n\n\n\n2\nSep 09- Sep 12\nJulia\n\n\n\n3\nSep 16 - Sep 19\nZiyah\nReena\n\n\n4\nSep 23 - Sep 26\nKat\nEmily\n\n\n5\nSep 30 - Oct 03\nNavya\nCampbell\n\n\n6\nOct 07 - Oct 10\nElizabeth\nSamantha\n\n\n7\nOct 14 - Oct 17\nNo class, October Break\nDr. Caballero\n\n\n8\nOct 21 - Oct 24\nGwen\nClara\n\n\n9\nOct 28 - Oct 31\nNo Class, Tanner Conference\n\n\n\n10\nNov 04 - Nov 07\nReyna\n\n\n\n11\nNov 11- Nov 14\nChloe\n\n\n\n12\nNov 18 - Nov 21\nJune\n\n\n\n13\nNov 25 - Nov 28\n\nNo Class, Thanksgiving\n\n\n14\nDec 02 - Dec 05\nSophie\n\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nIf you need to change the date for your centering activity, please email me at least 24 hours in advance of our class meeting.",
     "crumbs": [
       "Centering Activity"
     ]
@@ -2350,8 +2350,8 @@
     "objectID": "slides_workspace/week-03/06-assess_braceros.html#centering-activity",
     "href": "slides_workspace/week-03/06-assess_braceros.html#centering-activity",
     "title": "[Assess] Bracero Farmworker Case Study",
-    "section": "Centering Activity",
-    "text": "Centering Activity\n\nReena :-)"
+    "section": "",
+    "text": "Reena :-)"
   },
   {
     "objectID": "slides_workspace/week-03/06-assess_braceros.html#learning-outcomes",
@@ -2387,5 +2387,12 @@
     "title": "[Assess] Bracero Farmworker Case Study",
     "section": "filter() operations",
     "text": "filter() operations\n\n&gt; greater than\n&gt;= greater than or equal to\n&lt; less than\n&lt;= less than or equal to\n== equal to\n!= does not equal\nCan use & to combine conditions (and)\n| to select multiple conditions (or)\nPerhaps we’re interested in interviews that took place after 2004 AND are in English:\n\n\nbracero_clean |&gt;\n  filter(date_format &gt;= 2004-01-01 & language == \"eng\")"
+  },
+  {
+    "objectID": "slides_workspace/week-03/06-assess_braceros.html",
+    "href": "slides_workspace/week-03/06-assess_braceros.html",
+    "title": "[Assess] Bracero Farmworker Case Study",
+    "section": "",
+    "text": "Centering activity\nSetting the stage\nPaired coding\nGroup Debrief\n\n\n\n\nReena :-)"
   }
 ]
