@@ -16,14 +16,22 @@ execute:
   freeze: auto
 ---
 
-#  Class Overview 
+##  Class Overview 
 
 - Centering activity
-- Paired conversations on restorative justice
-- Group synthesis
+- Restorative Justice in Theory
 - Intro to community case study (Edgecombe County, NC)
+- Group Discussion + Debrief
 
-# Centering Activity
+## Centering Activity
+- Kat :-) 
+
+## Restorative Justice in Theory
+What we read: 
+- Ibrahim, A. A. (2023). [Empowering Those in Harm’s Way: A Restorative Justice Approach](https://drive.google.com/file/d/1Bv0Y5D2vnxD8RV4g6TVOWXwgZ5776j3M/view?usp=drive_link). In The Power of Energy Justice & the Social Contract (pp. 243-249). Cham: Springer Nature Switzerland.
+
+## Origins of Restorative Justice
+- 
 
 # Paired Conversations on Restorative Justice
 
