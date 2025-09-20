@@ -10,7 +10,7 @@ This case study focuses on using rural electrification surveys collected in 1934
 ## Learning Outcomes
 - Understand coding style best practices
 - Continued data tidying (lengthening and widening data)
-- Summarize patterns from census and survey data in the 1930s
+- Continued data transformation practics
 - Connect findings to theoretical understandings of restorative justice
 
 ## Instructions
