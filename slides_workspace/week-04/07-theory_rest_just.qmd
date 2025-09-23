@@ -26,30 +26,113 @@ execute:
 ## Centering Activity
 - Kat :-) 
 
-## Restorative Justice in Theory
+## Restorative Justice + Energy
 What we read: 
+
 - Ibrahim, A. A. (2023). [Empowering Those in Harm’s Way: A Restorative Justice Approach](https://drive.google.com/file/d/1Bv0Y5D2vnxD8RV4g6TVOWXwgZ5776j3M/view?usp=drive_link). In The Power of Energy Justice & the Social Contract (pp. 243-249). Cham: Springer Nature Switzerland.
+- Harrison, C. (2016). [Race, space, and electric power: Jim Crow and the 1934 North Carolina rural electrification survey](https://drive.google.com/file/d/1dp6uZGXynx23Kmse9aEtzkIzWFtJxJSh/view?usp=drive_link). Annals of the American Association of Geographers, 106(4), 909-931 
+- Oral history of Rural Electrification
 
 ## Origins of Restorative Justice
-- 
+- Rooted in criminal justice
+  - Focus on repairing harm by addressing needs of victims, and holding offenders responsible for repairing damages 
+- Ultimate goal is to restore victim/community to a place before harm was inflicted.
 
-# Paired Conversations on Restorative Justice
+## Restorative Justice + Energy {.smaller}
+- How injustice can be repaired and/or returned to its previous state
+  - For energy: Prioritizing communities that have born disproportionate burden due to historic policies and practices.
 
-# Intro to Community Case Study
+![Ibrahim, 2020](images/restorative_just.png)
 
-## Overview
+## Intro to Community Case Study{.smaller}
+::: {.columns}
+::: {.column width=50%}
+- Focus on Electrification in Rural North Carolina
+- How restorative injustice has shaped energy landscapes
+  - Harrison piece on state-sanctioned redlining (but for electricity)-- example of how data can be for *injustice*, too. 
+  - Interview on Rural cooperatives as firsthand account
+:::
+::: {.column width=50%}
+![Southern Oral History Project, 2025](images/NC_REA.jpeg)
+:::
+:::
 
-## Theoretical Applications 
+## Rural Electrification as a Policy {.smaller}
+::: {.columns}
+::: {.column width=50%}
+- **US in 1936:** Rural Electrification Act, EO passed by FDR to designate funds to create rural electric co-operatives.
+- **NC in 1930s:** Governor creates rural electrification committee to plan how rural electricity should be installed.
+  - 1934 Rural electrification survey issued, to *estimate electricity use*, *plan line distribution*, and *project profitability*
+:::
+::: {.column width=50%}
+![NRECA, 2010](images/REA_ad_NRECA.jpg)
+:::
+:::
 
-## Why I chose this case study
+## Harrison Piece {.smaller}
+- Digitized 1934 surveys for Edgecombe County
+  - Rural electrification planning is an example of how race, space, and energy resulted in marginalization of Black farming communities
+  - Demonstratees how power can be used to "assign, calculate, and rationalize the differential value assigned at the level of the population" (pp. 912)
 
-## Assessment Approach
+## Correction Factor {.smaller}
+::: {.columns}
+::: {.column width=50%}
+- 26 data points for each home, only two subjective values:
+  - Surveyors asked to grade "Condition of the house [A, B, C, D]" and "Authoritativeness of the interview [A, B, C, D]"
+  - Combined with race and land tenure to create correction factor 
+- Correction factor was multipled by projected electricity use to underestimate energy use. 
+:::
+::: {.column width=50%}
+![Harrison, 2016](images/REA_survey.png)
+:::
+::: 
 
-## Outcomes of this case study
+## Restorative (in)justice {.smaller}
+::: {.columns}
+::: {.column width=50%}
+- How is Edgecombe County a prime example of restorative injustice?
+  - In the 1930s, how did marginalized electricity access impact daily life?
+  - What lasting impacts/harm can be understood through uneven energy development proposed in Edgecombe?
+  - What might restorative justice look like for rural communities of color in the South today?
+:::
+::: {.column width=50%}
+![Harrison, 2016](images/Survey_map.png)
+:::
+::: 
+
+## Rural Cooperatives{.smaller}
+::: {.columns}
+::: {.column width=50%}
+- 1936- REA gave federal funds to rural communities to start their own electric companies (rural cooperatives)
+  - co-ops are nonprofits, and governed by a member-elected board. 
+- Edgecombe and Martin counties were the first REA-funded cooperative in the state
+-  Ultimately, it's hard to know if the 1934 rural electrification survey *actually* drove line buildout in Edgecombe, or if other states/cooperatives used the survey for their communities. 
+- How can this serve as a cautionary tale for "objective" data in decisionmaking?
+:::
+::: {.column width=50%}
+![NCDNCR, 2016](images/edgecombe.jpg)
+:::
+::: 
+
+## Alvin Morrison's Oral History
+- Black farmer in Iredell County, born in 1910
+  - Wealthy farmers in his community wer originally approached by Duke electric to power certain homes, and they refused. 
+  - After a cooperative was formed, Alvin + another Black farmer worked to sign up other members. 
+  - Describes how electricity changed his home and farm for the better. 
+
+## Rural cooperatives 
+- How does Alvin's oral history contrast the goals of the rural electrification survey? 
+- Are rural cooperatives an example of collective care? 
+- How does collective care connect to the three forms of justice we've discussed thus far?
+- What discriminatory policies of the past could be reimagined with collective care in mind? 
+  - Redlining + housing? Farmworker policies + food? 
+
+## Leaving you all with a Quote
+"Take a plant, a flower or anything. Your water, your light, the elements in the soil...*they have to work cooperatively to produce them*. That's just a basic concept that I have tried to follow throughout my life... And this rural cooperative movement I think confirms what I have believeed personally for a long, long time-- that, to succeed, *if you can get a group of people working together cooperatively, you can almost achieve whatever you desire*." -- Alvin Morrison, 1984
 
 # Logistics
 For Friday: 
 
-- Read community case study in schedule
-- Review in-class activity
-- Make sure posit login is working!
+- Emily leading centering activity :-)
+- Read R chapter if you want to preview material!
+- Case study using 1934 Rural Electrification Survey, Dr. Harrison to join us at the beginning of class

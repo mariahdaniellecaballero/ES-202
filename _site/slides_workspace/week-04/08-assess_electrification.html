@@ -225,12 +225,14 @@
 <h1>Setting the Stage</h1>
 <ul>
 <li>This week’s focus is on coding style and data tidying</li>
-<li>Using data from the 1930s Census and digitized Rural Electrification Surveys provided by Dr.&nbsp;Conor Harrison</li>
+<li>Using data from the 1934 Rural Electrification Surveys provided by Dr.&nbsp;Conor Harrison</li>
 </ul>
 </section>
 <section id="zoom-with-dr.-harrison" class="slide level2 center">
 <h2>Zoom with Dr.&nbsp;Harrison</h2>
 <ul>
+<li>Join using <a href="https://wellesley.zoom.us/j/94645455904?jst=2">link</a> in slides, or in Posit file</li>
+<li>Please mute yourself, so there’s no echoing.</li>
 <li>Feel free to ask questions!</li>
 </ul>
 </section>
@@ -238,8 +240,8 @@
 <h2>Learning Outcomes</h2>
 <ul>
 <li>Understand coding style best practices</li>
-<li>Continued data tidying (lengthening and widening data)</li>
-<li>Summarize patterns from census and survey data in the 1930s</li>
+<li>Continued data tidying</li>
+<li>New skills in data tidying (i.e., lengthening and widening data)</li>
 <li>Connect findings to theoretical understandings of restorative justice</li>
 </ul>
 </section></section>
@@ -830,7 +832,7 @@
         }
           var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
           var mailtoRegex = new RegExp(/^mailto:/);
-            var filterRegex = new RegExp("https:\/\/mariahdaniellecaballero\.github\.io\/ES-202\/");
+            var filterRegex = new RegExp('/' + window.location.host + '/');
           var isInternal = (href) => {
               return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
           }
