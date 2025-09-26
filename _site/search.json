@@ -30,6 +30,139 @@
     ]
   },
   {
+    "objectID": "slides/week-04/08-assess_electrification.html#zoom-with-dr.-harrison",
+    "href": "slides/week-04/08-assess_electrification.html#zoom-with-dr.-harrison",
+    "title": "[Assess] Rural Electrification Case Study",
+    "section": "Zoom with Dr. Harrison",
+    "text": "Zoom with Dr. Harrison\n\nJoin using link in slides, or in week 04 of schedule.\nPlease mute yourself, so there’s no echoing.\nFeel free to ask questions (unmute then)!"
+  },
+  {
+    "objectID": "slides/week-04/08-assess_electrification.html#learning-outcomes",
+    "href": "slides/week-04/08-assess_electrification.html#learning-outcomes",
+    "title": "[Assess] Rural Electrification Case Study",
+    "section": "Learning Outcomes",
+    "text": "Learning Outcomes\n\nUnderstand coding style best practices\nRead accompanying data documentation and understand data summaries\nNew skills in data tidying (i.e., lengthening and widening data)\nConnect findings to theoretical understandings of restorative justice"
+  },
+  {
+    "objectID": "slides/week-04/08-assess_electrification.html#load-packages",
+    "href": "slides/week-04/08-assess_electrification.html#load-packages",
+    "title": "[Assess] Rural Electrification Case Study",
+    "section": "Load Packages",
+    "text": "Load Packages\n\nlibrary(tidyverse)\nlibrary(readxl)"
+  },
+  {
+    "objectID": "slides/week-04/08-assess_electrification.html#naming-dataframes",
+    "href": "slides/week-04/08-assess_electrification.html#naming-dataframes",
+    "title": "[Assess] Rural Electrification Case Study",
+    "section": "Naming Dataframes",
+    "text": "Naming Dataframes\n\nNaming conventions are a matter of preference, but readability is key.\n\nR4ds suggests using lowercase letters, numbers, and underscores only.\nlonger, more informative names are usually beter than short, confusing names.\n\n\n\n# strive for\nsurvey &lt;- read_excel(\"data/survey_edgecombe.xlsx\", \n  sheet = \"Survey\")\n  \ndictionary &lt;- read_excel(\"data/survey_edgecombe.xlsx\", \n    sheet = \"Dictionary\")\n\n# avoid\nEDGECOMBESRVY1934 &lt;- read_excel(\"data/survey_edgecombe.xlsx\", sheet = \"Survey\")\n\nrm(EDGECOMBESRVY1934)"
+  },
+  {
+    "objectID": "slides/week-04/08-assess_electrification.html#spaces",
+    "href": "slides/week-04/08-assess_electrification.html#spaces",
+    "title": "[Assess] Rural Electrification Case Study",
+    "section": "Spaces",
+    "text": "Spaces\n\nSpaces should go on both sides of operators (-, +, &gt;, etc.), except for ^.\nparentheses do not need spaces around them.\nuse a space after a comma, like English. :-)\n\n\n# strive for\nmean(survey$HOGS)\n\n# avoid\nmean (survey$HOGS)"
+  },
+  {
+    "objectID": "slides/week-04/08-assess_electrification.html#pipes",
+    "href": "slides/week-04/08-assess_electrification.html#pipes",
+    "title": "[Assess] Rural Electrification Case Study",
+    "section": "Pipes",
+    "text": "Pipes\n\nPipes should have a space before them and should be the last part of a line.\nAfter a pipe, the next line should be indented two spaces (RStudio will automatically do this for you if you end your line with a pipe).\n\n\n# strive for\nsurvey |&gt;\n  filter(TENURE == \"Tenant\") |&gt;\n  count(WAFFLE_IRON)\n\n# avoid\nsurvey|&gt;filter(TENURE == \"Tenant\")|&gt;count(WAFFLE_IRON)"
+  },
+  {
+    "objectID": "slides/week-04/08-assess_electrification.html#ggplot",
+    "href": "slides/week-04/08-assess_electrification.html#ggplot",
+    "title": "[Assess] Rural Electrification Case Study",
+    "section": "ggplot",
+    "text": "ggplot\n\nggplot functions just like pipes (i.e., each new layer should end with a +)\n\n\nsurvey |&gt;\n  filter(RACE != \"Unknown\") |&gt;\n  ggplot(aes(KWH_YEAR, BILL_ANNUAL, color = RACE)) +\n  geom_point() + \n  theme_minimal()"
+  },
+  {
+    "objectID": "slides/week-04/08-assess_electrification.html#exercise-one-collaborative",
+    "href": "slides/week-04/08-assess_electrification.html#exercise-one-collaborative",
+    "title": "[Assess] Rural Electrification Case Study",
+    "section": "Exercise One (collaborative)",
+    "text": "Exercise One (collaborative)\nRestyle the following code chunks (in the empty chunk below) and label what each line is doing, using “#”.\n\nsurvey|&gt;filter(TENURE%in%c(\"Owner\",\"Tenant\")& RACE %in%c(\"Black\", \"White\"))|&gt;group_by(TENURE,RACE)|&gt;summarize(n=n(),mean_cows =mean(DAIRY_COW), mean_fruit=mean(FRUIT_ACRE))\n\nsurvey|&gt;filter(LINE %in%c(18,20,22,15)&RACE == \"Black\")|&gt;group_by(TENURE)|&gt;summarise(avg_hens=mean(HENS))"
+  },
+  {
+    "objectID": "slides/week-04/08-assess_electrification.html#reading-a-data-dictionary",
+    "href": "slides/week-04/08-assess_electrification.html#reading-a-data-dictionary",
+    "title": "[Assess] Rural Electrification Case Study",
+    "section": "Reading a Data Dictionary",
+    "text": "Reading a Data Dictionary\n\nData dictionaries offer descriptions of your dataframe that otherwise cannot be included in tidy data.\n\n\nglimpse(dictionary)\n\nRows: 71\nColumns: 3\n$ `Column Name` &lt;chr&gt; \"LINE\", \"USER_NAME\", \"COND_PREMISES_RC\", \"RATE_INTER_RC\"…\n$ Definition    &lt;chr&gt; \"Proposed Line Number\", \"Name of Proposed User (Last, Fi…\n$ Origin        &lt;chr&gt; \"Original Data\", \"Original Data\", \"Created\", \"Created\", …"
+  },
+  {
+    "objectID": "slides/week-04/08-assess_electrification.html#data-summaries",
+    "href": "slides/week-04/08-assess_electrification.html#data-summaries",
+    "title": "[Assess] Rural Electrification Case Study",
+    "section": "Data Summaries",
+    "text": "Data Summaries\n\nThe summary function provides a great opportunity to view and understand important aspects of your data.\n\n\nsummary(survey)\n\n   USER_ID           USER_NUMBER         LINE        USER_NAME        \n Length:329         Min.   : 1.00   Min.   :13.00   Length:329        \n Class :character   1st Qu.: 7.00   1st Qu.:18.00   Class :character  \n Mode  :character   Median :15.00   Median :20.00   Mode  :character  \n                    Mean   :16.26   Mean   :20.29                     \n                    3rd Qu.:23.00   3rd Qu.:23.00                     \n                    Max.   :48.00   Max.   :28.00                     \n                                                                      \n COND_PREMISES_RC RATE_INTER_RC      TENURE              RACE          \n Min.   :1.000    Min.   :1.000   Length:329         Length:329        \n 1st Qu.:3.000    1st Qu.:3.000   Class :character   Class :character  \n Median :3.000    Median :4.000   Mode  :character   Mode  :character  \n Mean   :3.187    Mean   :3.495                                        \n 3rd Qu.:4.000    3rd Qu.:4.000                                        \n Max.   :4.000    Max.   :4.000                                        \n NA's   :35       NA's   :40                                           \n LIGHTS_ONLY           ROOMS            OCCUPANTS            BLDGS          \n Length:329         Length:329         Length:329         Length:329        \n Class :character   Class :character   Class :character   Class :character  \n Mode  :character   Mode  :character   Mode  :character   Mode  :character  \n                                                                            \n                                                                            \n                                                                            \n                                                                            \n     BARN              GARAGE            POULTRY           MISC_BLDG        \n Length:329         Length:329         Length:329         Length:329        \n Class :character   Class :character   Class :character   Class :character  \n Mode  :character   Mode  :character   Mode  :character   Mode  :character  \n                                                                            \n                                                                            \n                                                                            \n                                                                            \n  TELEPHONE           REFRIGER          WASH_MACH            RANGE          \n Length:329         Length:329         Length:329         Length:329        \n Class :character   Class :character   Class :character   Class :character  \n Mode  :character   Mode  :character   Mode  :character   Mode  :character  \n                                                                            \n                                                                            \n                                                                            \n                                                                            \n     IRON            FAM_WATER         STOCK_WATER         MISC_WATER       \n Length:329         Length:329         Length:329         Length:329        \n Class :character   Class :character   Class :character   Class :character  \n Mode  :character   Mode  :character   Mode  :character   Mode  :character  \n                                                                            \n                                                                            \n                                                                            \n                                                                            \n    MOTORS          MILK_WARMER        HEATING_PAD        WAFFLE_IRON       \n Length:329         Length:329         Length:329         Length:329        \n Class :character   Class :character   Class :character   Class :character  \n Mode  :character   Mode  :character   Mode  :character   Mode  :character  \n                                                                            \n                                                                            \n                                                                            \n                                                                            \n   TOASTER           PERCOLATOR        CURLING_IRON        EGG_COOKER       \n Length:329         Length:329         Length:329         Length:329        \n Class :character   Class :character   Class :character   Class :character  \n Mode  :character   Mode  :character   Mode  :character   Mode  :character  \n                                                                            \n                                                                            \n                                                                            \n                                                                            \n  HOT_PLATE         PRESSURE_COOKER    TABLE_STOVE           RADIO          \n Length:329         Length:329         Length:329         Length:329        \n Class :character   Class :character   Class :character   Class :character  \n Mode  :character   Mode  :character   Mode  :character   Mode  :character  \n                                                                            \n                                                                            \n                                                                            \n                                                                            \n SOLDERING_IRON        VACUUM          SEWING_MACH            FANS          \n Length:329         Length:329         Length:329         Length:329        \n Class :character   Class :character   Class :character   Class :character  \n Mode  :character   Mode  :character   Mode  :character   Mode  :character  \n                                                                            \n                                                                            \n                                                                            \n                                                                            \n ICE_CREAM_FREEZER     CHURN           HAIR_CLIPPER          CLOCKS         \n Length:329         Length:329         Length:329         Length:329        \n Class :character   Class :character   Class :character   Class :character  \n Mode  :character   Mode  :character   Mode  :character   Mode  :character  \n                                                                            \n                                                                            \n                                                                            \n                                                                            \n JUICE_EXTRACTOR      DAIRY_COW           HENS             HOGS       \n Length:329         Min.   : 0.000   Min.   :  0.00   Min.   :  0.00  \n Class :character   1st Qu.: 0.000   1st Qu.:  0.00   1st Qu.:  0.00  \n Mode  :character   Median : 0.000   Median : 25.00   Median :  5.00  \n                    Mean   : 1.182   Mean   : 36.52   Mean   : 12.63  \n                    3rd Qu.: 1.000   3rd Qu.: 50.00   3rd Qu.: 15.00  \n                    Max.   :75.000   Max.   :650.00   Max.   :200.00  \n                                                                      \n  COTTON_ACRE      TOBACC_ACRE        TRUCK_ACRE       FRUIT_ACRE    \n Min.   :  0.00   Min.   :  0.000   Min.   : 0.000   Min.   :0.0000  \n 1st Qu.:  0.00   1st Qu.:  0.000   1st Qu.: 0.000   1st Qu.:0.0000  \n Median :  4.00   Median :  5.000   Median : 1.000   Median :0.0000  \n Mean   : 13.15   Mean   :  7.899   Mean   : 1.474   Mean   :0.2576  \n 3rd Qu.: 11.00   3rd Qu.: 10.000   3rd Qu.: 2.000   3rd Qu.:0.0000  \n Max.   :208.00   Max.   :100.000   Max.   :30.000   Max.   :5.0000  \n                                                                     \n  GENERAL_ACRE    COND_PREMISES       RATE_INTER        LIGHT_PLANT       \n Min.   :  0.00   Length:329         Length:329         Length:329        \n 1st Qu.:  0.00   Class :character   Class :character   Class :character  \n Median : 12.00   Mode  :character   Mode  :character   Mode  :character  \n Mean   : 30.53                                                           \n 3rd Qu.: 30.00                                                           \n Max.   :490.00                                                           \n                                                                          \n    RES_LOAD       NONRES_LOAD       BARN_LOAD         POUL_LOAD      \n Min.   :0.1000   Min.   :0.2000   Min.   :0.05000   Min.   :0.05000  \n 1st Qu.:0.2000   1st Qu.:0.3500   1st Qu.:0.05000   1st Qu.:0.05000  \n Median :0.3000   Median :0.3500   Median :0.05000   Median :0.05000  \n Mean   :0.3023   Mean   :0.8068   Mean   :0.05951   Mean   :0.05956  \n 3rd Qu.:0.3500   3rd Qu.:1.0000   3rd Qu.:0.05000   3rd Qu.:0.05000  \n Max.   :2.0000   Max.   :5.0000   Max.   :0.55000   Max.   :0.30000  \n NA's   :51       NA's   :307      NA's   :195       NA's   :261      \n   GARA_LOAD          FAM_LOAD       APPLI_LOAC          TOTAL_LOAD    \n Min.   :0.02500   Min.   :0.0250   Length:329         Min.   : 0.100  \n 1st Qu.:0.02500   1st Qu.:0.0250   Class :character   1st Qu.: 1.111  \n Median :0.02500   Median :0.3460   Mode  :character   Median : 5.611  \n Mean   :0.03016   Mean   :0.4594                      Mean   : 5.354  \n 3rd Qu.:0.02500   3rd Qu.:0.6920                      3rd Qu.: 5.981  \n Max.   :0.25000   Max.   :1.7300                      Max.   :51.660  \n NA's   :232       NA's   :283                         NA's   :67      \n CORRECT_FACTOR     CORRE_LOAD        KWH_MONTH         KWH_YEAR     \n Min.   :0.5760   Min.   : 0.0000   Min.   :  0.00   Min.   :   0.0  \n 1st Qu.:0.7700   1st Qu.: 0.8601   1st Qu.:  9.00   1st Qu.:  96.0  \n Median :0.8550   Median : 4.7590   Median : 53.00   Median : 624.0  \n Mean   :0.8554   Mean   : 5.2450   Mean   : 62.69   Mean   : 737.0  \n 3rd Qu.:0.9500   3rd Qu.: 6.8703   3rd Qu.: 77.02   3rd Qu.: 917.3  \n Max.   :1.0000   Max.   :51.6600   Max.   :734.00   Max.   :8808.0  \n NA's   :30       NA's   :29        NA's   :29       NA's   :23      \n   BILL_MONTH      BILL_ANNUAL        NOTES          \n Min.   : 1.000   Min.   :  0.00   Length:329        \n 1st Qu.: 1.000   1st Qu.: 12.00   Class :character  \n Median : 4.400   Median : 51.84   Mode  :character  \n Mean   : 4.751   Mean   : 55.71                     \n 3rd Qu.: 6.080   3rd Qu.: 72.84                     \n Max.   :50.130   Max.   :601.56                     \n NA's   :30       NA's   :23"
+  },
+  {
+    "objectID": "slides/week-04/08-assess_electrification.html#reading-data-summaries",
+    "href": "slides/week-04/08-assess_electrification.html#reading-data-summaries",
+    "title": "[Assess] Rural Electrification Case Study",
+    "section": "Reading Data Summaries",
+    "text": "Reading Data Summaries"
+  },
+  {
+    "objectID": "slides/week-04/08-assess_electrification.html#exercise-two-collaborative",
+    "href": "slides/week-04/08-assess_electrification.html#exercise-two-collaborative",
+    "title": "[Assess] Rural Electrification Case Study",
+    "section": "Exercise Two (collaborative)",
+    "text": "Exercise Two (collaborative)\nUsing the data dictionary and your summary() results of the survey dataframe, choose five variables and tell me:\n\nthe variable name\nits definition\nits data type\nwhether there are any NA values (if it’s numeric)."
+  },
+  {
+    "objectID": "slides/week-04/08-assess_electrification.html#lengthening-data",
+    "href": "slides/week-04/08-assess_electrification.html#lengthening-data",
+    "title": "[Assess] Rural Electrification Case Study",
+    "section": "Lengthening Data",
+    "text": "Lengthening Data\n\nSuppose we were interested in reshaping a dataframe we created called animals into a new dataframe called animals_long. We would use the pivot_longer() function and supply the following arguments:\n\ncols are the columns we want to pivot, in this case, all of the columns between DAIRY_COW and HOGS\nnames_to is the new column name that we want the column names we selected in the cols function to go into. In this case, we will call it animal.\nvalues_to is the new column name that we want the column values to go into. In this case, we will call it “count”.\n\n\n\nanimals &lt;- survey |&gt;\n  select(USER_NAME, DAIRY_COW:HOGS)\n\nanimals_long &lt;- animals |&gt;\n  pivot_longer(\n    cols = DAIRY_COW:HOGS,\n    names_to = \"animal\",\n    values_to = \"count\"\n  )\n\nanimals_long"
+  },
+  {
+    "objectID": "slides/week-04/08-assess_electrification.html#lengthening-data-cont.",
+    "href": "slides/week-04/08-assess_electrification.html#lengthening-data-cont.",
+    "title": "[Assess] Rural Electrification Case Study",
+    "section": "Lengthening Data (cont.)",
+    "text": "Lengthening Data (cont.)"
+  },
+  {
+    "objectID": "slides/week-04/08-assess_electrification.html#widening-data",
+    "href": "slides/week-04/08-assess_electrification.html#widening-data",
+    "title": "[Assess] Rural Electrification Case Study",
+    "section": "Widening Data",
+    "text": "Widening Data\n\nSuppose we were interested in reshaping the long dataframe we created called animals_long into our original dataframe called animals. We would use the pivot_wider() function and supply the following arguments:\n\nnames_from is the column with values that we want now be column names. In this case, it’s the animal column.\nvalues_from is the column with the values that we want to now be distributed across the column names. In this case, it’s the count column.\n\n\n\nanimals &lt;- animals_long |&gt;\n  pivot_wider(\n    names_from = \"animal\",\n    values_from = \"count\"\n  )\n\nanimals"
+  },
+  {
+    "objectID": "slides/week-04/08-assess_electrification.html#widening-data-cont.",
+    "href": "slides/week-04/08-assess_electrification.html#widening-data-cont.",
+    "title": "[Assess] Rural Electrification Case Study",
+    "section": "Widening Data (cont.)",
+    "text": "Widening Data (cont.)"
+  },
+  {
+    "objectID": "slides/week-04/08-assess_electrification.html#exercise-three-collaborative",
+    "href": "slides/week-04/08-assess_electrification.html#exercise-three-collaborative",
+    "title": "[Assess] Rural Electrification Case Study",
+    "section": "Exercise Three (collaborative)",
+    "text": "Exercise Three (collaborative)\nSee Posit assignment!"
+  },
+  {
+    "objectID": "slides/week-04/08-assess_electrification.html#exercise-four-individual",
+    "href": "slides/week-04/08-assess_electrification.html#exercise-four-individual",
+    "title": "[Assess] Rural Electrification Case Study",
+    "section": "Exercise Four (individual)",
+    "text": "Exercise Four (individual)\nSee Posit assignment!"
+  },
+  {
+    "objectID": "slides/week-04/08-assess_electrification.html#logistics",
+    "href": "slides/week-04/08-assess_electrification.html#logistics",
+    "title": "[Assess] Rural Electrification Case Study",
+    "section": "Logistics",
+    "text": "Logistics\n\nTwo pieces on recognitional justice and short documentary for Tuesday\nNavya leading centering activity :-)"
+  },
+  {
     "objectID": "slides/week-03/05-theory_proc_just.html#class-overview",
     "href": "slides/week-03/05-theory_proc_just.html#class-overview",
     "title": "[Theory] Procedural (in)Justice & Food",
@@ -1201,7 +1334,7 @@
     "href": "weeks/week-05.html",
     "title": "Week 05",
     "section": "",
-    "text": "Lectures\n\n\n\n\n\n\nTopic\n\n\n\nDate\n\n\n\n\n\n\n\n\n[Theory] Recognitional (in)Justice & Water\n\n\nTue, Sep 30\n\n\n\n\n\n\n[Assess] Culturally Important Species Case Study\n\n\nFri, Oct 03\n\n\n\n\n\n\nNo matching items\n\n\n\nAssignments\n\n\n\n\n\n\nAssignment\n\n\n\nTitle\n\n\n\nDue\n\n\n\n\n\n\n\n\nHomework\n\n\nHW 05: Culturally Important Species Case Study\n\n\nThu, Oct 09\n\n\n\n\n\n\nNo matching items\n\n\n\nReadings\n\n\n\n\n\n\nTuesday: Whyte, K. (2017). The recognition paradigm of environmental injustice. In The Routledge handbook of environmental justice (pp. 113- 123). Routledge.\n\n\nTuesday: Maldonado, J. K., Shearer, C., Bronen, R., Peterson, K., & Lazrus, H. (2013). The impact of climate change on tribal communities in the US: displacement, relocation, and human rights. In Climate change and indigenous peoples in the United States: Impacts, experiences and actions (pp. 93-106). Cham: Springer International Publishing.\n\n\nTuesday: Watch Vaughan-Lee, E. (2015). Isle de Jean Charles. Global Oneness Project.\n\n\n[Optional Friday:] Reyes-García, V., Cámara-Leret, R., Halpern, B. S., O’hara, C., Renard, D., Zafra-Calvo, N., & Díaz, S. (2023). Biocultural vulnerability exposes threats of culturally important species. Proceedings of the National Academy of Sciences, 120(2), e2217303120.\n\n\n[Optional Friday:] Wickham, H., Çetinkaya-Rundel, M., & Grolemund, G. (2023). R for Data Science (2e): Chapter 9. Sebastopol: O’Reilly."
+    "text": "Lectures\n\n\n\n\n\n\nTopic\n\n\n\nDate\n\n\n\n\n\n\n\n\n[Theory] Recognitional (in)Justice & Water\n\n\nTue, Sep 30\n\n\n\n\n\n\n[Assess] Culturally Important Species Case Study\n\n\nFri, Oct 03\n\n\n\n\n\n\nNo matching items\n\n\n\nAssignments\n\n\n\n\n\n\nAssignment\n\n\n\nTitle\n\n\n\nDue\n\n\n\n\n\n\n\n\nHomework\n\n\nHW 05: Culturally Important Species Case Study\n\n\nThu, Oct 09\n\n\n\n\n\n\nNo matching items\n\n\n\nReadings\n\n\n\n\n\n\nTuesday: Whyte, K. (2017). The recognition paradigm of environmental injustice. In The Routledge handbook of environmental justice (pp. 113- 123). Routledge.\n\n\nTuesday: Maldonado, J. K., Shearer, C., Bronen, R., Peterson, K., & Lazrus, H. (2013). The impact of climate change on tribal communities in the US: displacement, relocation, and human rights. In Climate change and indigenous peoples in the United States: Impacts, experiences and actions (pp. 93-106). Cham: Springer International Publishing.\n\n\nTuesday: Watch Vaughan-Lee, E. (2015). Isle de Jean Charles. Global Oneness Project.\n\n\n[Optional Friday:] Wickham, H., Çetinkaya-Rundel, M., & Grolemund, G. (2023). R for Data Science (2e): Chapter 9. Sebastopol: O’Reilly."
   },
   {
     "objectID": "weeks/week-10.html",
@@ -1762,6 +1895,132 @@
     "title": "[Theory] Procedural (in)Justice & Food",
     "section": "Exit Ticket",
     "text": "Exit Ticket\n\nTake two minutes and tell me something class-related:\n\nAnything you might change?\nThings you’d like to see more of?\nConcerns/worries?\nSnack suggestions?\nAn animal in a hat?\n\nWrite your name if you’d like me to answer back!"
+  },
+  {
+    "objectID": "slides_workspace/week-04/08-assess_electrification.html#zoom-with-dr.-harrison",
+    "href": "slides_workspace/week-04/08-assess_electrification.html#zoom-with-dr.-harrison",
+    "title": "[Assess] Rural Electrification Case Study",
+    "section": "Zoom with Dr. Harrison",
+    "text": "Zoom with Dr. Harrison\n\nJoin using link in slides, or in week 04 of schedule.\nPlease mute yourself, so there’s no echoing.\nFeel free to ask questions (unmute then)!"
+  },
+  {
+    "objectID": "slides_workspace/week-04/08-assess_electrification.html#learning-outcomes",
+    "href": "slides_workspace/week-04/08-assess_electrification.html#learning-outcomes",
+    "title": "[Assess] Rural Electrification Case Study",
+    "section": "Learning Outcomes",
+    "text": "Learning Outcomes\n\nUnderstand coding style best practices\nRead accompanying data documentation and understand data summaries\nNew skills in data tidying (i.e., lengthening and widening data)\nConnect findings to theoretical understandings of restorative justice"
+  },
+  {
+    "objectID": "slides_workspace/week-04/08-assess_electrification.html#load-packages",
+    "href": "slides_workspace/week-04/08-assess_electrification.html#load-packages",
+    "title": "[Assess] Rural Electrification Case Study",
+    "section": "Load Packages",
+    "text": "Load Packages\n\nlibrary(tidyverse)\nlibrary(readxl)"
+  },
+  {
+    "objectID": "slides_workspace/week-04/08-assess_electrification.html#naming-dataframes",
+    "href": "slides_workspace/week-04/08-assess_electrification.html#naming-dataframes",
+    "title": "[Assess] Rural Electrification Case Study",
+    "section": "Naming Dataframes",
+    "text": "Naming Dataframes\n\nNaming conventions are a matter of preference, but readability is key.\n\nR4ds suggests using lowercase letters, numbers, and underscores only.\nlonger, more informative names are usually beter than short, confusing names.\n\n\n\n# strive for\nsurvey &lt;- read_excel(\"data/survey_edgecombe.xlsx\", \n  sheet = \"Survey\")\n  \ndictionary &lt;- read_excel(\"data/survey_edgecombe.xlsx\", \n    sheet = \"Dictionary\")\n\n# avoid\nEDGECOMBESRVY1934 &lt;- read_excel(\"data/survey_edgecombe.xlsx\", sheet = \"Survey\")\n\nrm(EDGECOMBESRVY1934)"
+  },
+  {
+    "objectID": "slides_workspace/week-04/08-assess_electrification.html#spaces",
+    "href": "slides_workspace/week-04/08-assess_electrification.html#spaces",
+    "title": "[Assess] Rural Electrification Case Study",
+    "section": "Spaces",
+    "text": "Spaces\n\nSpaces should go on both sides of operators (-, +, &gt;, etc.), except for ^.\nparentheses do not need spaces around them.\nuse a space after a comma, like English. :-)\n\n\n# strive for\nmean(survey$HOGS)\n\n# avoid\nmean (survey$HOGS)"
+  },
+  {
+    "objectID": "slides_workspace/week-04/08-assess_electrification.html#pipes",
+    "href": "slides_workspace/week-04/08-assess_electrification.html#pipes",
+    "title": "[Assess] Rural Electrification Case Study",
+    "section": "Pipes",
+    "text": "Pipes\n\nPipes should have a space before them and should be the last part of a line.\nAfter a pipe, the next line should be indented two spaces (RStudio will automatically do this for you if you end your line with a pipe).\n\n\n# strive for\nsurvey |&gt;\n  filter(TENURE == \"Tenant\") |&gt;\n  count(WAFFLE_IRON)\n\n# avoid\nsurvey|&gt;filter(TENURE == \"Tenant\")|&gt;count(WAFFLE_IRON)"
+  },
+  {
+    "objectID": "slides_workspace/week-04/08-assess_electrification.html#ggplot",
+    "href": "slides_workspace/week-04/08-assess_electrification.html#ggplot",
+    "title": "[Assess] Rural Electrification Case Study",
+    "section": "ggplot",
+    "text": "ggplot\n\nggplot functions just like pipes (i.e., each new layer should end with a +)\n\n\nsurvey |&gt;\n  filter(RACE != \"Unknown\") |&gt;\n  ggplot(aes(KWH_YEAR, BILL_ANNUAL, color = RACE)) +\n  geom_point() + \n  theme_minimal()"
+  },
+  {
+    "objectID": "slides_workspace/week-04/08-assess_electrification.html#exercise-one-collaborative",
+    "href": "slides_workspace/week-04/08-assess_electrification.html#exercise-one-collaborative",
+    "title": "[Assess] Rural Electrification Case Study",
+    "section": "Exercise One (collaborative)",
+    "text": "Exercise One (collaborative)\nRestyle the following code chunks (in the empty chunk below) and label what each line is doing, using “#”.\n\nsurvey|&gt;filter(TENURE%in%c(\"Owner\",\"Tenant\")& RACE %in%c(\"Black\", \"White\"))|&gt;group_by(TENURE,RACE)|&gt;summarize(n=n(),mean_cows =mean(DAIRY_COW), mean_fruit=mean(FRUIT_ACRE))\n\nsurvey|&gt;filter(LINE %in%c(18,20,22,15)&RACE == \"Black\")|&gt;group_by(TENURE)|&gt;summarise(avg_hens=mean(HENS))"
+  },
+  {
+    "objectID": "slides_workspace/week-04/08-assess_electrification.html#reading-a-data-dictionary",
+    "href": "slides_workspace/week-04/08-assess_electrification.html#reading-a-data-dictionary",
+    "title": "[Assess] Rural Electrification Case Study",
+    "section": "Reading a Data Dictionary",
+    "text": "Reading a Data Dictionary\n\nData dictionaries offer descriptions of your dataframe that otherwise cannot be included in tidy data.\n\n\nglimpse(dictionary)\n\nRows: 71\nColumns: 3\n$ `Column Name` &lt;chr&gt; \"LINE\", \"USER_NAME\", \"COND_PREMISES_RC\", \"RATE_INTER_RC\"…\n$ Definition    &lt;chr&gt; \"Proposed Line Number\", \"Name of Proposed User (Last, Fi…\n$ Origin        &lt;chr&gt; \"Original Data\", \"Original Data\", \"Created\", \"Created\", …"
+  },
+  {
+    "objectID": "slides_workspace/week-04/08-assess_electrification.html#data-summaries",
+    "href": "slides_workspace/week-04/08-assess_electrification.html#data-summaries",
+    "title": "[Assess] Rural Electrification Case Study",
+    "section": "Data Summaries",
+    "text": "Data Summaries\n\nThe summary function provides a great opportunity to view and understand important aspects of your data.\n\n\nsummary(survey)\n\n   USER_ID           USER_NUMBER         LINE        USER_NAME        \n Length:329         Min.   : 1.00   Min.   :13.00   Length:329        \n Class :character   1st Qu.: 7.00   1st Qu.:18.00   Class :character  \n Mode  :character   Median :15.00   Median :20.00   Mode  :character  \n                    Mean   :16.26   Mean   :20.29                     \n                    3rd Qu.:23.00   3rd Qu.:23.00                     \n                    Max.   :48.00   Max.   :28.00                     \n                                                                      \n COND_PREMISES_RC RATE_INTER_RC      TENURE              RACE          \n Min.   :1.000    Min.   :1.000   Length:329         Length:329        \n 1st Qu.:3.000    1st Qu.:3.000   Class :character   Class :character  \n Median :3.000    Median :4.000   Mode  :character   Mode  :character  \n Mean   :3.187    Mean   :3.495                                        \n 3rd Qu.:4.000    3rd Qu.:4.000                                        \n Max.   :4.000    Max.   :4.000                                        \n NA's   :35       NA's   :40                                           \n LIGHTS_ONLY           ROOMS            OCCUPANTS            BLDGS          \n Length:329         Length:329         Length:329         Length:329        \n Class :character   Class :character   Class :character   Class :character  \n Mode  :character   Mode  :character   Mode  :character   Mode  :character  \n                                                                            \n                                                                            \n                                                                            \n                                                                            \n     BARN              GARAGE            POULTRY           MISC_BLDG        \n Length:329         Length:329         Length:329         Length:329        \n Class :character   Class :character   Class :character   Class :character  \n Mode  :character   Mode  :character   Mode  :character   Mode  :character  \n                                                                            \n                                                                            \n                                                                            \n                                                                            \n  TELEPHONE           REFRIGER          WASH_MACH            RANGE          \n Length:329         Length:329         Length:329         Length:329        \n Class :character   Class :character   Class :character   Class :character  \n Mode  :character   Mode  :character   Mode  :character   Mode  :character  \n                                                                            \n                                                                            \n                                                                            \n                                                                            \n     IRON            FAM_WATER         STOCK_WATER         MISC_WATER       \n Length:329         Length:329         Length:329         Length:329        \n Class :character   Class :character   Class :character   Class :character  \n Mode  :character   Mode  :character   Mode  :character   Mode  :character  \n                                                                            \n                                                                            \n                                                                            \n                                                                            \n    MOTORS          MILK_WARMER        HEATING_PAD        WAFFLE_IRON       \n Length:329         Length:329         Length:329         Length:329        \n Class :character   Class :character   Class :character   Class :character  \n Mode  :character   Mode  :character   Mode  :character   Mode  :character  \n                                                                            \n                                                                            \n                                                                            \n                                                                            \n   TOASTER           PERCOLATOR        CURLING_IRON        EGG_COOKER       \n Length:329         Length:329         Length:329         Length:329        \n Class :character   Class :character   Class :character   Class :character  \n Mode  :character   Mode  :character   Mode  :character   Mode  :character  \n                                                                            \n                                                                            \n                                                                            \n                                                                            \n  HOT_PLATE         PRESSURE_COOKER    TABLE_STOVE           RADIO          \n Length:329         Length:329         Length:329         Length:329        \n Class :character   Class :character   Class :character   Class :character  \n Mode  :character   Mode  :character   Mode  :character   Mode  :character  \n                                                                            \n                                                                            \n                                                                            \n                                                                            \n SOLDERING_IRON        VACUUM          SEWING_MACH            FANS          \n Length:329         Length:329         Length:329         Length:329        \n Class :character   Class :character   Class :character   Class :character  \n Mode  :character   Mode  :character   Mode  :character   Mode  :character  \n                                                                            \n                                                                            \n                                                                            \n                                                                            \n ICE_CREAM_FREEZER     CHURN           HAIR_CLIPPER          CLOCKS         \n Length:329         Length:329         Length:329         Length:329        \n Class :character   Class :character   Class :character   Class :character  \n Mode  :character   Mode  :character   Mode  :character   Mode  :character  \n                                                                            \n                                                                            \n                                                                            \n                                                                            \n JUICE_EXTRACTOR      DAIRY_COW           HENS             HOGS       \n Length:329         Min.   : 0.000   Min.   :  0.00   Min.   :  0.00  \n Class :character   1st Qu.: 0.000   1st Qu.:  0.00   1st Qu.:  0.00  \n Mode  :character   Median : 0.000   Median : 25.00   Median :  5.00  \n                    Mean   : 1.182   Mean   : 36.52   Mean   : 12.63  \n                    3rd Qu.: 1.000   3rd Qu.: 50.00   3rd Qu.: 15.00  \n                    Max.   :75.000   Max.   :650.00   Max.   :200.00  \n                                                                      \n  COTTON_ACRE      TOBACC_ACRE        TRUCK_ACRE       FRUIT_ACRE    \n Min.   :  0.00   Min.   :  0.000   Min.   : 0.000   Min.   :0.0000  \n 1st Qu.:  0.00   1st Qu.:  0.000   1st Qu.: 0.000   1st Qu.:0.0000  \n Median :  4.00   Median :  5.000   Median : 1.000   Median :0.0000  \n Mean   : 13.15   Mean   :  7.899   Mean   : 1.474   Mean   :0.2576  \n 3rd Qu.: 11.00   3rd Qu.: 10.000   3rd Qu.: 2.000   3rd Qu.:0.0000  \n Max.   :208.00   Max.   :100.000   Max.   :30.000   Max.   :5.0000  \n                                                                     \n  GENERAL_ACRE    COND_PREMISES       RATE_INTER        LIGHT_PLANT       \n Min.   :  0.00   Length:329         Length:329         Length:329        \n 1st Qu.:  0.00   Class :character   Class :character   Class :character  \n Median : 12.00   Mode  :character   Mode  :character   Mode  :character  \n Mean   : 30.53                                                           \n 3rd Qu.: 30.00                                                           \n Max.   :490.00                                                           \n                                                                          \n    RES_LOAD       NONRES_LOAD       BARN_LOAD         POUL_LOAD      \n Min.   :0.1000   Min.   :0.2000   Min.   :0.05000   Min.   :0.05000  \n 1st Qu.:0.2000   1st Qu.:0.3500   1st Qu.:0.05000   1st Qu.:0.05000  \n Median :0.3000   Median :0.3500   Median :0.05000   Median :0.05000  \n Mean   :0.3023   Mean   :0.8068   Mean   :0.05951   Mean   :0.05956  \n 3rd Qu.:0.3500   3rd Qu.:1.0000   3rd Qu.:0.05000   3rd Qu.:0.05000  \n Max.   :2.0000   Max.   :5.0000   Max.   :0.55000   Max.   :0.30000  \n NA's   :51       NA's   :307      NA's   :195       NA's   :261      \n   GARA_LOAD          FAM_LOAD       APPLI_LOAC          TOTAL_LOAD    \n Min.   :0.02500   Min.   :0.0250   Length:329         Min.   : 0.100  \n 1st Qu.:0.02500   1st Qu.:0.0250   Class :character   1st Qu.: 1.111  \n Median :0.02500   Median :0.3460   Mode  :character   Median : 5.611  \n Mean   :0.03016   Mean   :0.4594                      Mean   : 5.354  \n 3rd Qu.:0.02500   3rd Qu.:0.6920                      3rd Qu.: 5.981  \n Max.   :0.25000   Max.   :1.7300                      Max.   :51.660  \n NA's   :232       NA's   :283                         NA's   :67      \n CORRECT_FACTOR     CORRE_LOAD        KWH_MONTH         KWH_YEAR     \n Min.   :0.5760   Min.   : 0.0000   Min.   :  0.00   Min.   :   0.0  \n 1st Qu.:0.7700   1st Qu.: 0.8601   1st Qu.:  9.00   1st Qu.:  96.0  \n Median :0.8550   Median : 4.7590   Median : 53.00   Median : 624.0  \n Mean   :0.8554   Mean   : 5.2450   Mean   : 62.69   Mean   : 737.0  \n 3rd Qu.:0.9500   3rd Qu.: 6.8703   3rd Qu.: 77.02   3rd Qu.: 917.3  \n Max.   :1.0000   Max.   :51.6600   Max.   :734.00   Max.   :8808.0  \n NA's   :30       NA's   :29        NA's   :29       NA's   :23      \n   BILL_MONTH      BILL_ANNUAL        NOTES          \n Min.   : 1.000   Min.   :  0.00   Length:329        \n 1st Qu.: 1.000   1st Qu.: 12.00   Class :character  \n Median : 4.400   Median : 51.84   Mode  :character  \n Mean   : 4.751   Mean   : 55.71                     \n 3rd Qu.: 6.080   3rd Qu.: 72.84                     \n Max.   :50.130   Max.   :601.56                     \n NA's   :30       NA's   :23"
+  },
+  {
+    "objectID": "slides_workspace/week-04/08-assess_electrification.html#reading-data-summaries",
+    "href": "slides_workspace/week-04/08-assess_electrification.html#reading-data-summaries",
+    "title": "[Assess] Rural Electrification Case Study",
+    "section": "Reading Data Summaries",
+    "text": "Reading Data Summaries"
+  },
+  {
+    "objectID": "slides_workspace/week-04/08-assess_electrification.html#exercise-two-collaborative",
+    "href": "slides_workspace/week-04/08-assess_electrification.html#exercise-two-collaborative",
+    "title": "[Assess] Rural Electrification Case Study",
+    "section": "Exercise Two (collaborative)",
+    "text": "Exercise Two (collaborative)\nUsing the data dictionary and your summary() results of the survey dataframe, choose five variables and tell me:\n\nthe variable name\nits definition\nits data type\nwhether there are any NA values (if it’s numeric)."
+  },
+  {
+    "objectID": "slides_workspace/week-04/08-assess_electrification.html#lengthening-data",
+    "href": "slides_workspace/week-04/08-assess_electrification.html#lengthening-data",
+    "title": "[Assess] Rural Electrification Case Study",
+    "section": "Lengthening Data",
+    "text": "Lengthening Data\n\nSuppose we were interested in reshaping a dataframe we created called animals into a new dataframe called animals_long. We would use the pivot_longer() function and supply the following arguments:\n\ncols are the columns we want to pivot, in this case, all of the columns between DAIRY_COW and HOGS\nnames_to is the new column name that we want the column names we selected in the cols function to go into. In this case, we will call it animal.\nvalues_to is the new column name that we want the column values to go into. In this case, we will call it “count”.\n\n\n\nanimals &lt;- survey |&gt;\n  select(USER_NAME, DAIRY_COW:HOGS)\n\nanimals_long &lt;- animals |&gt;\n  pivot_longer(\n    cols = DAIRY_COW:HOGS,\n    names_to = \"animal\",\n    values_to = \"count\"\n  )\n\nanimals_long"
+  },
+  {
+    "objectID": "slides_workspace/week-04/08-assess_electrification.html#lengthening-data-cont.",
+    "href": "slides_workspace/week-04/08-assess_electrification.html#lengthening-data-cont.",
+    "title": "[Assess] Rural Electrification Case Study",
+    "section": "Lengthening Data (cont.)",
+    "text": "Lengthening Data (cont.)"
+  },
+  {
+    "objectID": "slides_workspace/week-04/08-assess_electrification.html#widening-data",
+    "href": "slides_workspace/week-04/08-assess_electrification.html#widening-data",
+    "title": "[Assess] Rural Electrification Case Study",
+    "section": "Widening Data",
+    "text": "Widening Data\n\nSuppose we were interested in reshaping the long dataframe we created called animals_long into our original dataframe called animals. We would use the pivot_wider() function and supply the following arguments:\n\nnames_from is the column with values that we want now be column names. In this case, it’s the animal column.\nvalues_from is the column with the values that we want to now be distributed across the column names. In this case, it’s the count column.\n\n\n\nanimals &lt;- animals_long |&gt;\n  pivot_wider(\n    names_from = \"animal\",\n    values_from = \"count\"\n  )\n\nanimals"
+  },
+  {
+    "objectID": "slides_workspace/week-04/08-assess_electrification.html#widening-data-cont.",
+    "href": "slides_workspace/week-04/08-assess_electrification.html#widening-data-cont.",
+    "title": "[Assess] Rural Electrification Case Study",
+    "section": "Widening Data (cont.)",
+    "text": "Widening Data (cont.)"
+  },
+  {
+    "objectID": "slides_workspace/week-04/08-assess_electrification.html#exercise-three-collaborative",
+    "href": "slides_workspace/week-04/08-assess_electrification.html#exercise-three-collaborative",
+    "title": "[Assess] Rural Electrification Case Study",
+    "section": "Exercise Three (collaborative)",
+    "text": "Exercise Three (collaborative)\nSee Posit assignment!"
+  },
+  {
+    "objectID": "slides_workspace/week-04/08-assess_electrification.html#exercise-four-individual",
+    "href": "slides_workspace/week-04/08-assess_electrification.html#exercise-four-individual",
+    "title": "[Assess] Rural Electrification Case Study",
+    "section": "Exercise Four (individual)",
+    "text": "Exercise Four (individual)\nSee Posit assignment!"
   },
   {
     "objectID": "final_project/-desc.html",
@@ -2520,264 +2779,5 @@
     "crumbs": [
       "Syllabus"
     ]
-  },
-  {
-    "objectID": "slides_workspace/week-04/08-assess_electrification.html#zoom-with-dr.-harrison",
-    "href": "slides_workspace/week-04/08-assess_electrification.html#zoom-with-dr.-harrison",
-    "title": "[Assess] Rural Electrification Case Study",
-    "section": "Zoom with Dr. Harrison",
-    "text": "Zoom with Dr. Harrison\n\nJoin using link in slides, or in week 04 of schedule.\nPlease mute yourself, so there’s no echoing.\nFeel free to ask questions (unmute then)!"
-  },
-  {
-    "objectID": "slides_workspace/week-04/08-assess_electrification.html#learning-outcomes",
-    "href": "slides_workspace/week-04/08-assess_electrification.html#learning-outcomes",
-    "title": "[Assess] Rural Electrification Case Study",
-    "section": "Learning Outcomes",
-    "text": "Learning Outcomes\n\nUnderstand coding style best practices\nRead accompanying data documentation and understand data summaries\nNew skills in data tidying (i.e., lengthening and widening data)\nConnect findings to theoretical understandings of restorative justice"
-  },
-  {
-    "objectID": "slides_workspace/week-04/08-assess_electrification.html#load-packages",
-    "href": "slides_workspace/week-04/08-assess_electrification.html#load-packages",
-    "title": "[Assess] Rural Electrification Case Study",
-    "section": "Load Packages",
-    "text": "Load Packages\n\nlibrary(tidyverse)\nlibrary(readxl)"
-  },
-  {
-    "objectID": "slides_workspace/week-04/08-assess_electrification.html#naming-dataframes",
-    "href": "slides_workspace/week-04/08-assess_electrification.html#naming-dataframes",
-    "title": "[Assess] Rural Electrification Case Study",
-    "section": "Naming Dataframes",
-    "text": "Naming Dataframes\n\nNaming conventions are a matter of preference, but readability is key.\n\nR4ds suggests using lowercase letters, numbers, and underscores only.\nlonger, more informative names are usually beter than short, confusing names.\n\n\n\n# strive for\nsurvey &lt;- read_excel(\"data/survey_edgecombe.xlsx\", \n  sheet = \"Survey\")\n  \ndictionary &lt;- read_excel(\"data/survey_edgecombe.xlsx\", \n    sheet = \"Dictionary\")\n\n# avoid\nEDGECOMBESRVY1934 &lt;- read_excel(\"data/survey_edgecombe.xlsx\", sheet = \"Survey\")\n\nrm(EDGECOMBESRVY1934)"
-  },
-  {
-    "objectID": "slides_workspace/week-04/08-assess_electrification.html#spaces",
-    "href": "slides_workspace/week-04/08-assess_electrification.html#spaces",
-    "title": "[Assess] Rural Electrification Case Study",
-    "section": "Spaces",
-    "text": "Spaces\n\nSpaces should go on both sides of operators (-, +, &gt;, etc.), except for ^.\nparentheses do not need spaces around them.\nuse a space after a comma, like English. :-)\n\n\n# strive for\nmean(survey$HOGS)\n\n# avoid\nmean (survey$HOGS)"
-  },
-  {
-    "objectID": "slides_workspace/week-04/08-assess_electrification.html#pipes",
-    "href": "slides_workspace/week-04/08-assess_electrification.html#pipes",
-    "title": "[Assess] Rural Electrification Case Study",
-    "section": "Pipes",
-    "text": "Pipes\n\nPipes should have a space before them and should be the last part of a line.\nAfter a pipe, the next line should be indented two spaces (RStudio will automatically do this for you if you end your line with a pipe).\n\n\n# strive for\nsurvey |&gt;\n  filter(TENURE == \"Tenant\") |&gt;\n  count(WAFFLE_IRON)\n\n# avoid\nsurvey|&gt;filter(TENURE == \"Tenant\")|&gt;count(WAFFLE_IRON)"
-  },
-  {
-    "objectID": "slides_workspace/week-04/08-assess_electrification.html#ggplot",
-    "href": "slides_workspace/week-04/08-assess_electrification.html#ggplot",
-    "title": "[Assess] Rural Electrification Case Study",
-    "section": "ggplot",
-    "text": "ggplot\n\nggplot functions just like pipes (i.e., each new layer should end with a +)\n\n\nsurvey |&gt;\n  filter(RACE != \"Unknown\") |&gt;\n  ggplot(aes(KWH_YEAR, BILL_ANNUAL, color = RACE)) +\n  geom_point() + \n  theme_minimal()"
-  },
-  {
-    "objectID": "slides_workspace/week-04/08-assess_electrification.html#exercise-one-collaborative",
-    "href": "slides_workspace/week-04/08-assess_electrification.html#exercise-one-collaborative",
-    "title": "[Assess] Rural Electrification Case Study",
-    "section": "Exercise One (collaborative)",
-    "text": "Exercise One (collaborative)\nRestyle the following code chunks (in the empty chunk below) and label what each line is doing, using “#”.\n\nsurvey|&gt;filter(TENURE%in%c(\"Owner\",\"Tenant\")& RACE %in%c(\"Black\", \"White\"))|&gt;group_by(TENURE,RACE)|&gt;summarize(n=n(),mean_cows =mean(DAIRY_COW), mean_fruit=mean(FRUIT_ACRE))\n\nsurvey|&gt;filter(LINE %in%c(18,20,22,15)&RACE == \"Black\")|&gt;group_by(TENURE)|&gt;summarise(avg_hens=mean(HENS))"
-  },
-  {
-    "objectID": "slides_workspace/week-04/08-assess_electrification.html#reading-a-data-dictionary",
-    "href": "slides_workspace/week-04/08-assess_electrification.html#reading-a-data-dictionary",
-    "title": "[Assess] Rural Electrification Case Study",
-    "section": "Reading a Data Dictionary",
-    "text": "Reading a Data Dictionary\n\nData dictionaries offer descriptions of your dataframe that otherwise cannot be included in tidy data.\n\n\nglimpse(dictionary)\n\nRows: 71\nColumns: 3\n$ `Column Name` &lt;chr&gt; \"LINE\", \"USER_NAME\", \"COND_PREMISES_RC\", \"RATE_INTER_RC\"…\n$ Definition    &lt;chr&gt; \"Proposed Line Number\", \"Name of Proposed User (Last, Fi…\n$ Origin        &lt;chr&gt; \"Original Data\", \"Original Data\", \"Created\", \"Created\", …"
-  },
-  {
-    "objectID": "slides_workspace/week-04/08-assess_electrification.html#reading-data-summaries",
-    "href": "slides_workspace/week-04/08-assess_electrification.html#reading-data-summaries",
-    "title": "[Assess] Rural Electrification Case Study",
-    "section": "Reading Data Summaries",
-    "text": "Reading Data Summaries"
-  },
-  {
-    "objectID": "slides_workspace/week-04/08-assess_electrification.html#exercise-two-collaborative",
-    "href": "slides_workspace/week-04/08-assess_electrification.html#exercise-two-collaborative",
-    "title": "[Assess] Rural Electrification Case Study",
-    "section": "Exercise Two (collaborative)",
-    "text": "Exercise Two (collaborative)\nUsing the data dictionary and your summary() results of the survey dataframe, choose five variables and tell me:\n\nthe variable name\nits definition\nits data type\nwhether there are any NA values (if it’s numeric)."
-  },
-  {
-    "objectID": "slides_workspace/week-04/08-assess_electrification.html#lengthening-data",
-    "href": "slides_workspace/week-04/08-assess_electrification.html#lengthening-data",
-    "title": "[Assess] Rural Electrification Case Study",
-    "section": "Lengthening Data",
-    "text": "Lengthening Data\n\nSuppose we were interested in reshaping a dataframe we created called animals into a new dataframe called animals_long. We would use the pivot_longer() function and supply the following arguments:\n\ncols are the columns we want to pivot, in this case, all of the columns between DAIRY_COW and HOGS\nnames_to is the new column name that we want the column names we selected in the cols function to go into. In this case, we will call it animal.\nvalues_to is the new column name that we want the column values to go into. In this case, we will call it “count”.\n\n\n\nanimals &lt;- survey |&gt;\n  select(USER_NAME, DAIRY_COW:HOGS)\n\nanimals_long &lt;- animals |&gt;\n  pivot_longer(\n    cols = DAIRY_COW:HOGS,\n    names_to = \"animal\",\n    values_to = \"count\"\n  )\n\nanimals_long"
-  },
-  {
-    "objectID": "slides_workspace/week-04/08-assess_electrification.html#widening-data",
-    "href": "slides_workspace/week-04/08-assess_electrification.html#widening-data",
-    "title": "[Assess] Rural Electrification Case Study",
-    "section": "Widening Data",
-    "text": "Widening Data\n\nSuppose we were interested in reshaping the long dataframe we created called animals_long into our original dataframe called animals. We would use the pivot_wider() function and supply the following arguments:\n\nnames_from is the column with values that we want now be column names. In this case, it’s the animal column.\nvalues_from is the column with the values that we want to now be distributed across the column names. In this case, it’s the count column.\n\n\n\nanimals &lt;- animals_long |&gt;\n  pivot_wider(\n    names_from = \"animal\",\n    values_from = \"count\"\n  )\n\nanimals"
-  },
-  {
-    "objectID": "slides_workspace/week-04/08-assess_electrification.html#exercise-three-collaborative",
-    "href": "slides_workspace/week-04/08-assess_electrification.html#exercise-three-collaborative",
-    "title": "[Assess] Rural Electrification Case Study",
-    "section": "Exercise Three (collaborative)",
-    "text": "Exercise Three (collaborative)\nSee Posit assignment!"
-  },
-  {
-    "objectID": "slides_workspace/week-04/08-assess_electrification.html#exercise-four-individual",
-    "href": "slides_workspace/week-04/08-assess_electrification.html#exercise-four-individual",
-    "title": "[Assess] Rural Electrification Case Study",
-    "section": "Exercise Four (individual)",
-    "text": "Exercise Four (individual)\nSee Posit assignment!"
-  },
-  {
-    "objectID": "slides_workspace/week-04/08-assess_electrification.html#data-summaries",
-    "href": "slides_workspace/week-04/08-assess_electrification.html#data-summaries",
-    "title": "[Assess] Rural Electrification Case Study",
-    "section": "Data Summaries",
-    "text": "Data Summaries\n\nThe summary function provides a great opportunity to view and understand important aspects of your data.\n\n\nsummary(survey)\n\n   USER_ID           USER_NUMBER         LINE        USER_NAME        \n Length:329         Min.   : 1.00   Min.   :13.00   Length:329        \n Class :character   1st Qu.: 7.00   1st Qu.:18.00   Class :character  \n Mode  :character   Median :15.00   Median :20.00   Mode  :character  \n                    Mean   :16.26   Mean   :20.29                     \n                    3rd Qu.:23.00   3rd Qu.:23.00                     \n                    Max.   :48.00   Max.   :28.00                     \n                                                                      \n COND_PREMISES_RC RATE_INTER_RC      TENURE              RACE          \n Min.   :1.000    Min.   :1.000   Length:329         Length:329        \n 1st Qu.:3.000    1st Qu.:3.000   Class :character   Class :character  \n Median :3.000    Median :4.000   Mode  :character   Mode  :character  \n Mean   :3.187    Mean   :3.495                                        \n 3rd Qu.:4.000    3rd Qu.:4.000                                        \n Max.   :4.000    Max.   :4.000                                        \n NA's   :35       NA's   :40                                           \n LIGHTS_ONLY           ROOMS            OCCUPANTS            BLDGS          \n Length:329         Length:329         Length:329         Length:329        \n Class :character   Class :character   Class :character   Class :character  \n Mode  :character   Mode  :character   Mode  :character   Mode  :character  \n                                                                            \n                                                                            \n                                                                            \n                                                                            \n     BARN              GARAGE            POULTRY           MISC_BLDG        \n Length:329         Length:329         Length:329         Length:329        \n Class :character   Class :character   Class :character   Class :character  \n Mode  :character   Mode  :character   Mode  :character   Mode  :character  \n                                                                            \n                                                                            \n                                                                            \n                                                                            \n  TELEPHONE           REFRIGER          WASH_MACH            RANGE          \n Length:329         Length:329         Length:329         Length:329        \n Class :character   Class :character   Class :character   Class :character  \n Mode  :character   Mode  :character   Mode  :character   Mode  :character  \n                                                                            \n                                                                            \n                                                                            \n                                                                            \n     IRON            FAM_WATER         STOCK_WATER         MISC_WATER       \n Length:329         Length:329         Length:329         Length:329        \n Class :character   Class :character   Class :character   Class :character  \n Mode  :character   Mode  :character   Mode  :character   Mode  :character  \n                                                                            \n                                                                            \n                                                                            \n                                                                            \n    MOTORS          MILK_WARMER        HEATING_PAD        WAFFLE_IRON       \n Length:329         Length:329         Length:329         Length:329        \n Class :character   Class :character   Class :character   Class :character  \n Mode  :character   Mode  :character   Mode  :character   Mode  :character  \n                                                                            \n                                                                            \n                                                                            \n                                                                            \n   TOASTER           PERCOLATOR        CURLING_IRON        EGG_COOKER       \n Length:329         Length:329         Length:329         Length:329        \n Class :character   Class :character   Class :character   Class :character  \n Mode  :character   Mode  :character   Mode  :character   Mode  :character  \n                                                                            \n                                                                            \n                                                                            \n                                                                            \n  HOT_PLATE         PRESSURE_COOKER    TABLE_STOVE           RADIO          \n Length:329         Length:329         Length:329         Length:329        \n Class :character   Class :character   Class :character   Class :character  \n Mode  :character   Mode  :character   Mode  :character   Mode  :character  \n                                                                            \n                                                                            \n                                                                            \n                                                                            \n SOLDERING_IRON        VACUUM          SEWING_MACH            FANS          \n Length:329         Length:329         Length:329         Length:329        \n Class :character   Class :character   Class :character   Class :character  \n Mode  :character   Mode  :character   Mode  :character   Mode  :character  \n                                                                            \n                                                                            \n                                                                            \n                                                                            \n ICE_CREAM_FREEZER     CHURN           HAIR_CLIPPER          CLOCKS         \n Length:329         Length:329         Length:329         Length:329        \n Class :character   Class :character   Class :character   Class :character  \n Mode  :character   Mode  :character   Mode  :character   Mode  :character  \n                                                                            \n                                                                            \n                                                                            \n                                                                            \n JUICE_EXTRACTOR      DAIRY_COW           HENS             HOGS       \n Length:329         Min.   : 0.000   Min.   :  0.00   Min.   :  0.00  \n Class :character   1st Qu.: 0.000   1st Qu.:  0.00   1st Qu.:  0.00  \n Mode  :character   Median : 0.000   Median : 25.00   Median :  5.00  \n                    Mean   : 1.182   Mean   : 36.52   Mean   : 12.63  \n                    3rd Qu.: 1.000   3rd Qu.: 50.00   3rd Qu.: 15.00  \n                    Max.   :75.000   Max.   :650.00   Max.   :200.00  \n                                                                      \n  COTTON_ACRE      TOBACC_ACRE        TRUCK_ACRE       FRUIT_ACRE    \n Min.   :  0.00   Min.   :  0.000   Min.   : 0.000   Min.   :0.0000  \n 1st Qu.:  0.00   1st Qu.:  0.000   1st Qu.: 0.000   1st Qu.:0.0000  \n Median :  4.00   Median :  5.000   Median : 1.000   Median :0.0000  \n Mean   : 13.15   Mean   :  7.899   Mean   : 1.474   Mean   :0.2576  \n 3rd Qu.: 11.00   3rd Qu.: 10.000   3rd Qu.: 2.000   3rd Qu.:0.0000  \n Max.   :208.00   Max.   :100.000   Max.   :30.000   Max.   :5.0000  \n                                                                     \n  GENERAL_ACRE    COND_PREMISES       RATE_INTER        LIGHT_PLANT       \n Min.   :  0.00   Length:329         Length:329         Length:329        \n 1st Qu.:  0.00   Class :character   Class :character   Class :character  \n Median : 12.00   Mode  :character   Mode  :character   Mode  :character  \n Mean   : 30.53                                                           \n 3rd Qu.: 30.00                                                           \n Max.   :490.00                                                           \n                                                                          \n    RES_LOAD       NONRES_LOAD       BARN_LOAD         POUL_LOAD      \n Min.   :0.1000   Min.   :0.2000   Min.   :0.05000   Min.   :0.05000  \n 1st Qu.:0.2000   1st Qu.:0.3500   1st Qu.:0.05000   1st Qu.:0.05000  \n Median :0.3000   Median :0.3500   Median :0.05000   Median :0.05000  \n Mean   :0.3023   Mean   :0.8068   Mean   :0.05951   Mean   :0.05956  \n 3rd Qu.:0.3500   3rd Qu.:1.0000   3rd Qu.:0.05000   3rd Qu.:0.05000  \n Max.   :2.0000   Max.   :5.0000   Max.   :0.55000   Max.   :0.30000  \n NA's   :51       NA's   :307      NA's   :195       NA's   :261      \n   GARA_LOAD          FAM_LOAD       APPLI_LOAC          TOTAL_LOAD    \n Min.   :0.02500   Min.   :0.0250   Length:329         Min.   : 0.100  \n 1st Qu.:0.02500   1st Qu.:0.0250   Class :character   1st Qu.: 1.111  \n Median :0.02500   Median :0.3460   Mode  :character   Median : 5.611  \n Mean   :0.03016   Mean   :0.4594                      Mean   : 5.354  \n 3rd Qu.:0.02500   3rd Qu.:0.6920                      3rd Qu.: 5.981  \n Max.   :0.25000   Max.   :1.7300                      Max.   :51.660  \n NA's   :232       NA's   :283                         NA's   :67      \n CORRECT_FACTOR     CORRE_LOAD        KWH_MONTH         KWH_YEAR     \n Min.   :0.5760   Min.   : 0.0000   Min.   :  0.00   Min.   :   0.0  \n 1st Qu.:0.7700   1st Qu.: 0.8601   1st Qu.:  9.00   1st Qu.:  96.0  \n Median :0.8550   Median : 4.7590   Median : 53.00   Median : 624.0  \n Mean   :0.8554   Mean   : 5.2450   Mean   : 62.69   Mean   : 737.0  \n 3rd Qu.:0.9500   3rd Qu.: 6.8703   3rd Qu.: 77.02   3rd Qu.: 917.3  \n Max.   :1.0000   Max.   :51.6600   Max.   :734.00   Max.   :8808.0  \n NA's   :30       NA's   :29        NA's   :29       NA's   :23      \n   BILL_MONTH      BILL_ANNUAL        NOTES          \n Min.   : 1.000   Min.   :  0.00   Length:329        \n 1st Qu.: 1.000   1st Qu.: 12.00   Class :character  \n Median : 4.400   Median : 51.84   Mode  :character  \n Mean   : 4.751   Mean   : 55.71                     \n 3rd Qu.: 6.080   3rd Qu.: 72.84                     \n Max.   :50.130   Max.   :601.56                     \n NA's   :30       NA's   :23"
-  },
-  {
-    "objectID": "slides_workspace/week-04/08-assess_electrification.html#lengthening-data-cont.",
-    "href": "slides_workspace/week-04/08-assess_electrification.html#lengthening-data-cont.",
-    "title": "[Assess] Rural Electrification Case Study",
-    "section": "Lengthening Data (cont.)",
-    "text": "Lengthening Data (cont.)"
-  },
-  {
-    "objectID": "slides_workspace/week-04/08-assess_electrification.html#widening-data-cont.",
-    "href": "slides_workspace/week-04/08-assess_electrification.html#widening-data-cont.",
-    "title": "[Assess] Rural Electrification Case Study",
-    "section": "Widening Data (cont.)",
-    "text": "Widening Data (cont.)"
-  },
-  {
-    "objectID": "slides_workspace/week-04/08-assess_electrification.html",
-    "href": "slides_workspace/week-04/08-assess_electrification.html",
-    "title": "[Assess] Rural Electrification Case Study",
-    "section": "",
-    "text": "Centering activity\nSetting the stage\nZoom with Dr. Harrison\nPaired coding\nGroup Debrief"
-  },
-  {
-    "objectID": "slides/week-04/08-assess_electrification.html#zoom-with-dr.-harrison",
-    "href": "slides/week-04/08-assess_electrification.html#zoom-with-dr.-harrison",
-    "title": "[Assess] Rural Electrification Case Study",
-    "section": "Zoom with Dr. Harrison",
-    "text": "Zoom with Dr. Harrison\n\nJoin using link in slides, or in week 04 of schedule.\nPlease mute yourself, so there’s no echoing.\nFeel free to ask questions (unmute then)!"
-  },
-  {
-    "objectID": "slides/week-04/08-assess_electrification.html#learning-outcomes",
-    "href": "slides/week-04/08-assess_electrification.html#learning-outcomes",
-    "title": "[Assess] Rural Electrification Case Study",
-    "section": "Learning Outcomes",
-    "text": "Learning Outcomes\n\nUnderstand coding style best practices\nRead accompanying data documentation and understand data summaries\nNew skills in data tidying (i.e., lengthening and widening data)\nConnect findings to theoretical understandings of restorative justice"
-  },
-  {
-    "objectID": "slides/week-04/08-assess_electrification.html#load-packages",
-    "href": "slides/week-04/08-assess_electrification.html#load-packages",
-    "title": "[Assess] Rural Electrification Case Study",
-    "section": "Load Packages",
-    "text": "Load Packages\n\nlibrary(tidyverse)\nlibrary(readxl)"
-  },
-  {
-    "objectID": "slides/week-04/08-assess_electrification.html#naming-dataframes",
-    "href": "slides/week-04/08-assess_electrification.html#naming-dataframes",
-    "title": "[Assess] Rural Electrification Case Study",
-    "section": "Naming Dataframes",
-    "text": "Naming Dataframes\n\nNaming conventions are a matter of preference, but readability is key.\n\nR4ds suggests using lowercase letters, numbers, and underscores only.\nlonger, more informative names are usually beter than short, confusing names.\n\n\n\n# strive for\nsurvey &lt;- read_excel(\"data/survey_edgecombe.xlsx\", \n  sheet = \"Survey\")\n  \ndictionary &lt;- read_excel(\"data/survey_edgecombe.xlsx\", \n    sheet = \"Dictionary\")\n\n# avoid\nEDGECOMBESRVY1934 &lt;- read_excel(\"data/survey_edgecombe.xlsx\", sheet = \"Survey\")\n\nrm(EDGECOMBESRVY1934)"
-  },
-  {
-    "objectID": "slides/week-04/08-assess_electrification.html#spaces",
-    "href": "slides/week-04/08-assess_electrification.html#spaces",
-    "title": "[Assess] Rural Electrification Case Study",
-    "section": "Spaces",
-    "text": "Spaces\n\nSpaces should go on both sides of operators (-, +, &gt;, etc.), except for ^.\nparentheses do not need spaces around them.\nuse a space after a comma, like English. :-)\n\n\n# strive for\nmean(survey$HOGS)\n\n# avoid\nmean (survey$HOGS)"
-  },
-  {
-    "objectID": "slides/week-04/08-assess_electrification.html#pipes",
-    "href": "slides/week-04/08-assess_electrification.html#pipes",
-    "title": "[Assess] Rural Electrification Case Study",
-    "section": "Pipes",
-    "text": "Pipes\n\nPipes should have a space before them and should be the last part of a line.\nAfter a pipe, the next line should be indented two spaces (RStudio will automatically do this for you if you end your line with a pipe).\n\n\n# strive for\nsurvey |&gt;\n  filter(TENURE == \"Tenant\") |&gt;\n  count(WAFFLE_IRON)\n\n# avoid\nsurvey|&gt;filter(TENURE == \"Tenant\")|&gt;count(WAFFLE_IRON)"
-  },
-  {
-    "objectID": "slides/week-04/08-assess_electrification.html#ggplot",
-    "href": "slides/week-04/08-assess_electrification.html#ggplot",
-    "title": "[Assess] Rural Electrification Case Study",
-    "section": "ggplot",
-    "text": "ggplot\n\nggplot functions just like pipes (i.e., each new layer should end with a +)\n\n\nsurvey |&gt;\n  filter(RACE != \"Unknown\") |&gt;\n  ggplot(aes(KWH_YEAR, BILL_ANNUAL, color = RACE)) +\n  geom_point() + \n  theme_minimal()"
-  },
-  {
-    "objectID": "slides/week-04/08-assess_electrification.html#exercise-one-collaborative",
-    "href": "slides/week-04/08-assess_electrification.html#exercise-one-collaborative",
-    "title": "[Assess] Rural Electrification Case Study",
-    "section": "Exercise One (collaborative)",
-    "text": "Exercise One (collaborative)\nRestyle the following code chunks (in the empty chunk below) and label what each line is doing, using “#”.\n\nsurvey|&gt;filter(TENURE%in%c(\"Owner\",\"Tenant\")& RACE %in%c(\"Black\", \"White\"))|&gt;group_by(TENURE,RACE)|&gt;summarize(n=n(),mean_cows =mean(DAIRY_COW), mean_fruit=mean(FRUIT_ACRE))\n\nsurvey|&gt;filter(LINE %in%c(18,20,22,15)&RACE == \"Black\")|&gt;group_by(TENURE)|&gt;summarise(avg_hens=mean(HENS))"
-  },
-  {
-    "objectID": "slides/week-04/08-assess_electrification.html#reading-a-data-dictionary",
-    "href": "slides/week-04/08-assess_electrification.html#reading-a-data-dictionary",
-    "title": "[Assess] Rural Electrification Case Study",
-    "section": "Reading a Data Dictionary",
-    "text": "Reading a Data Dictionary\n\nData dictionaries offer descriptions of your dataframe that otherwise cannot be included in tidy data.\n\n\nglimpse(dictionary)\n\nRows: 71\nColumns: 3\n$ `Column Name` &lt;chr&gt; \"LINE\", \"USER_NAME\", \"COND_PREMISES_RC\", \"RATE_INTER_RC\"…\n$ Definition    &lt;chr&gt; \"Proposed Line Number\", \"Name of Proposed User (Last, Fi…\n$ Origin        &lt;chr&gt; \"Original Data\", \"Original Data\", \"Created\", \"Created\", …"
-  },
-  {
-    "objectID": "slides/week-04/08-assess_electrification.html#data-summaries",
-    "href": "slides/week-04/08-assess_electrification.html#data-summaries",
-    "title": "[Assess] Rural Electrification Case Study",
-    "section": "Data Summaries",
-    "text": "Data Summaries\n\nThe summary function provides a great opportunity to view and understand important aspects of your data.\n\n\nsummary(survey)\n\n   USER_ID           USER_NUMBER         LINE        USER_NAME        \n Length:329         Min.   : 1.00   Min.   :13.00   Length:329        \n Class :character   1st Qu.: 7.00   1st Qu.:18.00   Class :character  \n Mode  :character   Median :15.00   Median :20.00   Mode  :character  \n                    Mean   :16.26   Mean   :20.29                     \n                    3rd Qu.:23.00   3rd Qu.:23.00                     \n                    Max.   :48.00   Max.   :28.00                     \n                                                                      \n COND_PREMISES_RC RATE_INTER_RC      TENURE              RACE          \n Min.   :1.000    Min.   :1.000   Length:329         Length:329        \n 1st Qu.:3.000    1st Qu.:3.000   Class :character   Class :character  \n Median :3.000    Median :4.000   Mode  :character   Mode  :character  \n Mean   :3.187    Mean   :3.495                                        \n 3rd Qu.:4.000    3rd Qu.:4.000                                        \n Max.   :4.000    Max.   :4.000                                        \n NA's   :35       NA's   :40                                           \n LIGHTS_ONLY           ROOMS            OCCUPANTS            BLDGS          \n Length:329         Length:329         Length:329         Length:329        \n Class :character   Class :character   Class :character   Class :character  \n Mode  :character   Mode  :character   Mode  :character   Mode  :character  \n                                                                            \n                                                                            \n                                                                            \n                                                                            \n     BARN              GARAGE            POULTRY           MISC_BLDG        \n Length:329         Length:329         Length:329         Length:329        \n Class :character   Class :character   Class :character   Class :character  \n Mode  :character   Mode  :character   Mode  :character   Mode  :character  \n                                                                            \n                                                                            \n                                                                            \n                                                                            \n  TELEPHONE           REFRIGER          WASH_MACH            RANGE          \n Length:329         Length:329         Length:329         Length:329        \n Class :character   Class :character   Class :character   Class :character  \n Mode  :character   Mode  :character   Mode  :character   Mode  :character  \n                                                                            \n                                                                            \n                                                                            \n                                                                            \n     IRON            FAM_WATER         STOCK_WATER         MISC_WATER       \n Length:329         Length:329         Length:329         Length:329        \n Class :character   Class :character   Class :character   Class :character  \n Mode  :character   Mode  :character   Mode  :character   Mode  :character  \n                                                                            \n                                                                            \n                                                                            \n                                                                            \n    MOTORS          MILK_WARMER        HEATING_PAD        WAFFLE_IRON       \n Length:329         Length:329         Length:329         Length:329        \n Class :character   Class :character   Class :character   Class :character  \n Mode  :character   Mode  :character   Mode  :character   Mode  :character  \n                                                                            \n                                                                            \n                                                                            \n                                                                            \n   TOASTER           PERCOLATOR        CURLING_IRON        EGG_COOKER       \n Length:329         Length:329         Length:329         Length:329        \n Class :character   Class :character   Class :character   Class :character  \n Mode  :character   Mode  :character   Mode  :character   Mode  :character  \n                                                                            \n                                                                            \n                                                                            \n                                                                            \n  HOT_PLATE         PRESSURE_COOKER    TABLE_STOVE           RADIO          \n Length:329         Length:329         Length:329         Length:329        \n Class :character   Class :character   Class :character   Class :character  \n Mode  :character   Mode  :character   Mode  :character   Mode  :character  \n                                                                            \n                                                                            \n                                                                            \n                                                                            \n SOLDERING_IRON        VACUUM          SEWING_MACH            FANS          \n Length:329         Length:329         Length:329         Length:329        \n Class :character   Class :character   Class :character   Class :character  \n Mode  :character   Mode  :character   Mode  :character   Mode  :character  \n                                                                            \n                                                                            \n                                                                            \n                                                                            \n ICE_CREAM_FREEZER     CHURN           HAIR_CLIPPER          CLOCKS         \n Length:329         Length:329         Length:329         Length:329        \n Class :character   Class :character   Class :character   Class :character  \n Mode  :character   Mode  :character   Mode  :character   Mode  :character  \n                                                                            \n                                                                            \n                                                                            \n                                                                            \n JUICE_EXTRACTOR      DAIRY_COW           HENS             HOGS       \n Length:329         Min.   : 0.000   Min.   :  0.00   Min.   :  0.00  \n Class :character   1st Qu.: 0.000   1st Qu.:  0.00   1st Qu.:  0.00  \n Mode  :character   Median : 0.000   Median : 25.00   Median :  5.00  \n                    Mean   : 1.182   Mean   : 36.52   Mean   : 12.63  \n                    3rd Qu.: 1.000   3rd Qu.: 50.00   3rd Qu.: 15.00  \n                    Max.   :75.000   Max.   :650.00   Max.   :200.00  \n                                                                      \n  COTTON_ACRE      TOBACC_ACRE        TRUCK_ACRE       FRUIT_ACRE    \n Min.   :  0.00   Min.   :  0.000   Min.   : 0.000   Min.   :0.0000  \n 1st Qu.:  0.00   1st Qu.:  0.000   1st Qu.: 0.000   1st Qu.:0.0000  \n Median :  4.00   Median :  5.000   Median : 1.000   Median :0.0000  \n Mean   : 13.15   Mean   :  7.899   Mean   : 1.474   Mean   :0.2576  \n 3rd Qu.: 11.00   3rd Qu.: 10.000   3rd Qu.: 2.000   3rd Qu.:0.0000  \n Max.   :208.00   Max.   :100.000   Max.   :30.000   Max.   :5.0000  \n                                                                     \n  GENERAL_ACRE    COND_PREMISES       RATE_INTER        LIGHT_PLANT       \n Min.   :  0.00   Length:329         Length:329         Length:329        \n 1st Qu.:  0.00   Class :character   Class :character   Class :character  \n Median : 12.00   Mode  :character   Mode  :character   Mode  :character  \n Mean   : 30.53                                                           \n 3rd Qu.: 30.00                                                           \n Max.   :490.00                                                           \n                                                                          \n    RES_LOAD       NONRES_LOAD       BARN_LOAD         POUL_LOAD      \n Min.   :0.1000   Min.   :0.2000   Min.   :0.05000   Min.   :0.05000  \n 1st Qu.:0.2000   1st Qu.:0.3500   1st Qu.:0.05000   1st Qu.:0.05000  \n Median :0.3000   Median :0.3500   Median :0.05000   Median :0.05000  \n Mean   :0.3023   Mean   :0.8068   Mean   :0.05951   Mean   :0.05956  \n 3rd Qu.:0.3500   3rd Qu.:1.0000   3rd Qu.:0.05000   3rd Qu.:0.05000  \n Max.   :2.0000   Max.   :5.0000   Max.   :0.55000   Max.   :0.30000  \n NA's   :51       NA's   :307      NA's   :195       NA's   :261      \n   GARA_LOAD          FAM_LOAD       APPLI_LOAC          TOTAL_LOAD    \n Min.   :0.02500   Min.   :0.0250   Length:329         Min.   : 0.100  \n 1st Qu.:0.02500   1st Qu.:0.0250   Class :character   1st Qu.: 1.111  \n Median :0.02500   Median :0.3460   Mode  :character   Median : 5.611  \n Mean   :0.03016   Mean   :0.4594                      Mean   : 5.354  \n 3rd Qu.:0.02500   3rd Qu.:0.6920                      3rd Qu.: 5.981  \n Max.   :0.25000   Max.   :1.7300                      Max.   :51.660  \n NA's   :232       NA's   :283                         NA's   :67      \n CORRECT_FACTOR     CORRE_LOAD        KWH_MONTH         KWH_YEAR     \n Min.   :0.5760   Min.   : 0.0000   Min.   :  0.00   Min.   :   0.0  \n 1st Qu.:0.7700   1st Qu.: 0.8601   1st Qu.:  9.00   1st Qu.:  96.0  \n Median :0.8550   Median : 4.7590   Median : 53.00   Median : 624.0  \n Mean   :0.8554   Mean   : 5.2450   Mean   : 62.69   Mean   : 737.0  \n 3rd Qu.:0.9500   3rd Qu.: 6.8703   3rd Qu.: 77.02   3rd Qu.: 917.3  \n Max.   :1.0000   Max.   :51.6600   Max.   :734.00   Max.   :8808.0  \n NA's   :30       NA's   :29        NA's   :29       NA's   :23      \n   BILL_MONTH      BILL_ANNUAL        NOTES          \n Min.   : 1.000   Min.   :  0.00   Length:329        \n 1st Qu.: 1.000   1st Qu.: 12.00   Class :character  \n Median : 4.400   Median : 51.84   Mode  :character  \n Mean   : 4.751   Mean   : 55.71                     \n 3rd Qu.: 6.080   3rd Qu.: 72.84                     \n Max.   :50.130   Max.   :601.56                     \n NA's   :30       NA's   :23"
-  },
-  {
-    "objectID": "slides/week-04/08-assess_electrification.html#reading-data-summaries",
-    "href": "slides/week-04/08-assess_electrification.html#reading-data-summaries",
-    "title": "[Assess] Rural Electrification Case Study",
-    "section": "Reading Data Summaries",
-    "text": "Reading Data Summaries"
-  },
-  {
-    "objectID": "slides/week-04/08-assess_electrification.html#exercise-two-collaborative",
-    "href": "slides/week-04/08-assess_electrification.html#exercise-two-collaborative",
-    "title": "[Assess] Rural Electrification Case Study",
-    "section": "Exercise Two (collaborative)",
-    "text": "Exercise Two (collaborative)\nUsing the data dictionary and your summary() results of the survey dataframe, choose five variables and tell me:\n\nthe variable name\nits definition\nits data type\nwhether there are any NA values (if it’s numeric)."
-  },
-  {
-    "objectID": "slides/week-04/08-assess_electrification.html#lengthening-data",
-    "href": "slides/week-04/08-assess_electrification.html#lengthening-data",
-    "title": "[Assess] Rural Electrification Case Study",
-    "section": "Lengthening Data",
-    "text": "Lengthening Data\n\nSuppose we were interested in reshaping a dataframe we created called animals into a new dataframe called animals_long. We would use the pivot_longer() function and supply the following arguments:\n\ncols are the columns we want to pivot, in this case, all of the columns between DAIRY_COW and HOGS\nnames_to is the new column name that we want the column names we selected in the cols function to go into. In this case, we will call it animal.\nvalues_to is the new column name that we want the column values to go into. In this case, we will call it “count”.\n\n\n\nanimals &lt;- survey |&gt;\n  select(USER_NAME, DAIRY_COW:HOGS)\n\nanimals_long &lt;- animals |&gt;\n  pivot_longer(\n    cols = DAIRY_COW:HOGS,\n    names_to = \"animal\",\n    values_to = \"count\"\n  )\n\nanimals_long"
-  },
-  {
-    "objectID": "slides/week-04/08-assess_electrification.html#lengthening-data-cont.",
-    "href": "slides/week-04/08-assess_electrification.html#lengthening-data-cont.",
-    "title": "[Assess] Rural Electrification Case Study",
-    "section": "Lengthening Data (cont.)",
-    "text": "Lengthening Data (cont.)"
-  },
-  {
-    "objectID": "slides/week-04/08-assess_electrification.html#widening-data",
-    "href": "slides/week-04/08-assess_electrification.html#widening-data",
-    "title": "[Assess] Rural Electrification Case Study",
-    "section": "Widening Data",
-    "text": "Widening Data\n\nSuppose we were interested in reshaping the long dataframe we created called animals_long into our original dataframe called animals. We would use the pivot_wider() function and supply the following arguments:\n\nnames_from is the column with values that we want now be column names. In this case, it’s the animal column.\nvalues_from is the column with the values that we want to now be distributed across the column names. In this case, it’s the count column.\n\n\n\nanimals &lt;- animals_long |&gt;\n  pivot_wider(\n    names_from = \"animal\",\n    values_from = \"count\"\n  )\n\nanimals"
-  },
-  {
-    "objectID": "slides/week-04/08-assess_electrification.html#widening-data-cont.",
-    "href": "slides/week-04/08-assess_electrification.html#widening-data-cont.",
-    "title": "[Assess] Rural Electrification Case Study",
-    "section": "Widening Data (cont.)",
-    "text": "Widening Data (cont.)"
-  },
-  {
-    "objectID": "slides/week-04/08-assess_electrification.html#exercise-three-collaborative",
-    "href": "slides/week-04/08-assess_electrification.html#exercise-three-collaborative",
-    "title": "[Assess] Rural Electrification Case Study",
-    "section": "Exercise Three (collaborative)",
-    "text": "Exercise Three (collaborative)\nSee Posit assignment!"
-  },
-  {
-    "objectID": "slides/week-04/08-assess_electrification.html#exercise-four-individual",
-    "href": "slides/week-04/08-assess_electrification.html#exercise-four-individual",
-    "title": "[Assess] Rural Electrification Case Study",
-    "section": "Exercise Four (individual)",
-    "text": "Exercise Four (individual)\nSee Posit assignment!"
   }
 ]
