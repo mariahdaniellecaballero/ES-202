@@ -1,6 +1,6 @@
 ---
 title: "[Assess] Rural Electrification Case Study"
-subtitle: "📍 Edgecombe County, CA"
+subtitle: "📍 Edgecombe County, NC"
 date: "September 26, 2025"
 format: 
   revealjs:
@@ -15,4 +15,233 @@ format:
 execute:
   freeze: auto
 ---
-# Slides will be posted 24 hours in advance of class.
+# Class Overview 
+- Centering activity
+- Setting the stage
+- Zoom with Dr. Harrison
+- Paired coding
+- Group Debrief
+
+# Centering Activity
+Emily :-)
+
+# Setting the Stage
+- This week's focus is on coding style and data tidying
+- Using data from the 1934 Rural Electrification Surveys provided by Dr. Conor Harrison
+
+## Zoom with Dr. Harrison
+- Join using [link](https://wellesley.zoom.us/j/94645455904?jst=2) in slides, or in week 04 of schedule. 
+- Please mute yourself, so there's no echoing. 
+- Feel free to ask questions (unmute then)!
+
+## Learning Outcomes
+- Understand coding style best practices
+- Read accompanying data documentation and understand data summaries
+- New skills in data tidying (i.e., lengthening and widening data)
+- Connect findings to theoretical understandings of restorative justice
+
+# Let's get Started
+- Find your pair
+- Open Posit
+
+## Load Packages
+```{r}
+#| warning: false
+#| message: false
+#| echo: true
+library(tidyverse)
+library(readxl)
+```
+
+```{r}
+# | eval: true
+# | echo: false
+survey <- read_excel("/Users/mc152/Library/CloudStorage/GoogleDrive-mc152@wellesley.edu/My Drive/Teaching/ES-202/Case Study Code/data/week-04/survey_edgecombe.xlsx", sheet = "Survey")
+
+dictionary <- read_excel("/Users/mc152/Library/CloudStorage/GoogleDrive-mc152@wellesley.edu/My Drive/Teaching/ES-202/Case Study Code/data/week-04/survey_edgecombe.xlsx", sheet = "Dictionary")
+```
+
+# Coding Style Best Practices
+
+## Naming Dataframes {.smaller}
+- Naming conventions are a matter of preference, but readability is key.
+  - R4ds suggests using lowercase letters, numbers, and underscores only. 
+  - longer, more informative names are usually beter than short, confusing names.
+```{r}
+#| warning: false
+#| message: false
+#| echo: true
+#| eval: false
+
+# strive for
+survey <- read_excel("data/survey_edgecombe.xlsx", 
+  sheet = "Survey")
+  
+dictionary <- read_excel("data/survey_edgecombe.xlsx", 
+    sheet = "Dictionary")
+
+# avoid
+EDGECOMBESRVY1934 <- read_excel("data/survey_edgecombe.xlsx", sheet = "Survey")
+
+rm(EDGECOMBESRVY1934)
+```
+
+
+## Spaces
+- Spaces should go on both sides of operators (-, +, >, etc.), except for ^.
+- parentheses do not need spaces around them. 
+- use a space after a comma, like English. :-) 
+
+```{r}
+#| warning: false
+#| message: false
+#| echo: true
+#| eval: false
+
+# strive for
+mean(survey$HOGS)
+
+# avoid
+mean (survey$HOGS)
+```
+
+## Pipes
+- Pipes should have a space before them and should be the last part of a line. 
+- After a pipe, the next line should be indented two spaces (RStudio will automatically do this for you if you end your line with a pipe).  
+
+```{r}
+#| warning: false
+#| message: false
+#| echo: true
+#| eval: false
+
+# strive for
+survey |>
+  filter(TENURE == "Tenant") |>
+  count(WAFFLE_IRON)
+
+# avoid
+survey|>filter(TENURE == "Tenant")|>count(WAFFLE_IRON)
+```
+
+## ggplot{.smaller}
+- ggplot functions just like pipes (i.e., each new layer should end with a +)
+```{r}
+#| warning: false
+#| message: false
+#| echo: true
+#| eval: true
+survey |>
+  filter(RACE != "Unknown") |>
+  ggplot(aes(KWH_YEAR, BILL_ANNUAL, color = RACE)) +
+  geom_point() + 
+  theme_minimal()
+```
+
+
+## Exercise One (collaborative)
+Restyle the following code chunks (in the empty chunk below) and label what each line is doing, using "#". 
+```{r}
+#| warning: false
+#| message: false
+#| echo: true
+#| eval: false
+
+survey|>filter(TENURE%in%c("Owner","Tenant")& RACE %in%c("Black", "White"))|>group_by(TENURE,RACE)|>summarize(n=n(),mean_cows =mean(DAIRY_COW), mean_fruit=mean(FRUIT_ACRE))
+
+survey|>filter(LINE %in%c(18,20,22,15)&RACE == "Black")|>group_by(TENURE)|>summarise(avg_hens=mean(HENS))
+```
+
+
+# Data Documentation
+
+## Reading a Data Dictionary {.smaller}
+- Data dictionaries offer descriptions of your dataframe that otherwise cannot be included in tidy data. 
+```{r}
+#| echo: true
+#| eval: true
+
+glimpse(dictionary)
+```
+
+
+## Data Summaries 
+- The `summary` function provides a great opportunity to view and understand important aspects of your data. 
+```{r}
+#| echo: true
+#| eval: true
+summary(survey)
+```
+
+## Reading Data Summaries {.smaller}
+![](images/data_summary.png)
+
+## Exercise Two (collaborative)
+Using the data dictionary and your `summary()` results of the `survey` dataframe, choose five variables and tell me: 
+
+1) the variable name
+2) its definition 
+3) its data type
+4) whether there are any NA values (if it's numeric). 
+
+# Lengthening and Widening Data {.smaller}
+
+
+## Lengthening Data {.smaller}
+- Suppose we were interested in reshaping a dataframe we created called `animals` into a new dataframe called `animals_long`. We would use the `pivot_longer()` function and supply the following arguments: 
+  - `cols` are the columns we want to pivot, in this case, all of the columns between `DAIRY_COW ` and `HOGS`
+  - `names_to` is the new column name that we want the column *names* we selected in the `cols` function to go into. In this case, we will call it `animal`. 
+  - `values_to` is the new column name that we want the column *values* to go into. In this case, we will call it "count". 
+
+```{r}
+#| echo: true
+#| eval: false
+animals <- survey |>
+  select(USER_NAME, DAIRY_COW:HOGS)
+
+animals_long <- animals |>
+  pivot_longer(
+    cols = DAIRY_COW:HOGS,
+    names_to = "animal",
+    values_to = "count"
+  )
+
+animals_long
+```
+
+## Lengthening Data (cont.) {.smaller}
+![](images/lengthen.png)
+
+## Widening Data {.smaller}
+- Suppose we were interested in reshaping the long dataframe we created called `animals_long` into our original dataframe called `animals`. We would use the `pivot_wider()` function and supply the following arguments: 
+  - `names_from` is the column with *values* that we want now be column *names*. In this case, it's the `animal` column. 
+  - `values_from` is the column with the *values* that we want to now be distributed across the column names. In this case, it's the `count` column.
+
+```{r}
+#| echo: true
+#| eval: false
+
+animals <- animals_long |>
+  pivot_wider(
+    names_from = "animal",
+    values_from = "count"
+  )
+
+animals
+```
+
+## Widening Data (cont.) {.smaller}
+![](images/widen.png)
+
+## Exercise Three (collaborative){.smaller}
+
+See Posit assignment!
+
+
+## Exercise Four (individual) {.smaller}
+
+See Posit assignment!
+
+## Logistics
+- Two pieces on recognitional justice and short documentary for Tuesday
+- Navya leading centering activity :-)

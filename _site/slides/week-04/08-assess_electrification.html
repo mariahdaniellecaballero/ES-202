@@ -28,6 +28,72 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-f563837468303362081e247dddd440d0.css">
   <link rel="stylesheet" href="custom.scss">
@@ -131,18 +197,407 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">[Assess] Rural Electrification Case Study</h1>
-  <p class="subtitle">📍 Edgecombe County, CA</p>
+  <p class="subtitle">📍 Edgecombe County, NC</p>
 
 <div class="quarto-title-authors">
 </div>
 
   <p class="date">2025-09-26</p>
 </section>
-<section id="slides-will-be-posted-24-hours-in-advance-of-class." class="title-slide slide level1 center">
-<h1>Slides will be posted 24 hours in advance of class.</h1>
+<section id="class-overview" class="title-slide slide level1 center">
+<h1>Class Overview</h1>
+<ul>
+<li>Centering activity</li>
+<li>Setting the stage</li>
+<li>Zoom with Dr.&nbsp;Harrison</li>
+<li>Paired coding</li>
+<li>Group Debrief</li>
+</ul>
+</section>
 
+<section id="centering-activity" class="title-slide slide level1 center">
+<h1>Centering Activity</h1>
+<p>Emily :-)</p>
+</section>
+
+<section>
+<section id="setting-the-stage" class="title-slide slide level1 center">
+<h1>Setting the Stage</h1>
+<ul>
+<li>This week’s focus is on coding style and data tidying</li>
+<li>Using data from the 1934 Rural Electrification Surveys provided by Dr.&nbsp;Conor Harrison</li>
+</ul>
+</section>
+<section id="zoom-with-dr.-harrison" class="slide level2 center">
+<h2>Zoom with Dr.&nbsp;Harrison</h2>
+<ul>
+<li>Join using <a href="https://wellesley.zoom.us/j/94645455904?jst=2">link</a> in slides, or in week 04 of schedule.</li>
+<li>Please mute yourself, so there’s no echoing.</li>
+<li>Feel free to ask questions (unmute then)!</li>
+</ul>
+</section>
+<section id="learning-outcomes" class="slide level2 center">
+<h2>Learning Outcomes</h2>
+<ul>
+<li>Understand coding style best practices</li>
+<li>Read accompanying data documentation and understand data summaries</li>
+<li>New skills in data tidying (i.e., lengthening and widening data)</li>
+<li>Connect findings to theoretical understandings of restorative justice</li>
+</ul>
+</section></section>
+<section>
+<section id="lets-get-started" class="title-slide slide level1 center">
+<h1>Let’s get Started</h1>
+<ul>
+<li>Find your pair</li>
+<li>Open Posit</li>
+</ul>
+</section>
+<section id="load-packages" class="slide level2 center">
+<h2>Load Packages</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-2"><a></a><span class="fu">library</span>(readxl)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section></section>
+<section>
+<section id="coding-style-best-practices" class="title-slide slide level1 center">
+<h1>Coding Style Best Practices</h1>
 
 </section>
+<section id="naming-dataframes" class="slide level2 smaller center">
+<h2>Naming Dataframes</h2>
+<ul>
+<li>Naming conventions are a matter of preference, but readability is key.
+<ul>
+<li>R4ds suggests using lowercase letters, numbers, and underscores only.</li>
+<li>longer, more informative names are usually beter than short, confusing names.</li>
+</ul></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a><span class="co"># strive for</span></span>
+<span id="cb2-2"><a></a>survey <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"data/survey_edgecombe.xlsx"</span>, </span>
+<span id="cb2-3"><a></a>  <span class="at">sheet =</span> <span class="st">"Survey"</span>)</span>
+<span id="cb2-4"><a></a>  </span>
+<span id="cb2-5"><a></a>dictionary <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"data/survey_edgecombe.xlsx"</span>, </span>
+<span id="cb2-6"><a></a>    <span class="at">sheet =</span> <span class="st">"Dictionary"</span>)</span>
+<span id="cb2-7"><a></a></span>
+<span id="cb2-8"><a></a><span class="co"># avoid</span></span>
+<span id="cb2-9"><a></a>EDGECOMBESRVY1934 <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"data/survey_edgecombe.xlsx"</span>, <span class="at">sheet =</span> <span class="st">"Survey"</span>)</span>
+<span id="cb2-10"><a></a></span>
+<span id="cb2-11"><a></a><span class="fu">rm</span>(EDGECOMBESRVY1934)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="spaces" class="slide level2 center">
+<h2>Spaces</h2>
+<ul>
+<li>Spaces should go on both sides of operators (-, +, &gt;, etc.), except for ^.</li>
+<li>parentheses do not need spaces around them.</li>
+<li>use a space after a comma, like English. :-)</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a><span class="co"># strive for</span></span>
+<span id="cb3-2"><a></a><span class="fu">mean</span>(survey<span class="sc">$</span>HOGS)</span>
+<span id="cb3-3"><a></a></span>
+<span id="cb3-4"><a></a><span class="co"># avoid</span></span>
+<span id="cb3-5"><a></a><span class="fu">mean</span> (survey<span class="sc">$</span>HOGS)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="pipes" class="slide level2 center">
+<h2>Pipes</h2>
+<ul>
+<li>Pipes should have a space before them and should be the last part of a line.</li>
+<li>After a pipe, the next line should be indented two spaces (RStudio will automatically do this for you if you end your line with a pipe).</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a><span class="co"># strive for</span></span>
+<span id="cb4-2"><a></a>survey <span class="sc">|&gt;</span></span>
+<span id="cb4-3"><a></a>  <span class="fu">filter</span>(TENURE <span class="sc">==</span> <span class="st">"Tenant"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb4-4"><a></a>  <span class="fu">count</span>(WAFFLE_IRON)</span>
+<span id="cb4-5"><a></a></span>
+<span id="cb4-6"><a></a><span class="co"># avoid</span></span>
+<span id="cb4-7"><a></a>survey<span class="sc">|&gt;</span><span class="fu">filter</span>(TENURE <span class="sc">==</span> <span class="st">"Tenant"</span>)<span class="sc">|&gt;</span><span class="fu">count</span>(WAFFLE_IRON)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="ggplot" class="slide level2 smaller center">
+<h2>ggplot</h2>
+<ul>
+<li>ggplot functions just like pipes (i.e., each new layer should end with a +)</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a>survey <span class="sc">|&gt;</span></span>
+<span id="cb5-2"><a></a>  <span class="fu">filter</span>(RACE <span class="sc">!=</span> <span class="st">"Unknown"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb5-3"><a></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(KWH_YEAR, BILL_ANNUAL, <span class="at">color =</span> RACE)) <span class="sc">+</span></span>
+<span id="cb5-4"><a></a>  <span class="fu">geom_point</span>() <span class="sc">+</span> </span>
+<span id="cb5-5"><a></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="08-assess_electrification_files/figure-revealjs/unnamed-chunk-6-1.png" width="960" class="r-stretch"></section>
+<section id="exercise-one-collaborative" class="slide level2 center">
+<h2>Exercise One (collaborative)</h2>
+<p>Restyle the following code chunks (in the empty chunk below) and label what each line is doing, using “#”.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a></a>survey<span class="sc">|&gt;</span><span class="fu">filter</span>(TENURE<span class="sc">%in%</span><span class="fu">c</span>(<span class="st">"Owner"</span>,<span class="st">"Tenant"</span>)<span class="sc">&amp;</span> RACE <span class="sc">%in%</span><span class="fu">c</span>(<span class="st">"Black"</span>, <span class="st">"White"</span>))<span class="sc">|&gt;</span><span class="fu">group_by</span>(TENURE,RACE)<span class="sc">|&gt;</span><span class="fu">summarize</span>(<span class="at">n=</span><span class="fu">n</span>(),<span class="at">mean_cows =</span><span class="fu">mean</span>(DAIRY_COW), <span class="at">mean_fruit=</span><span class="fu">mean</span>(FRUIT_ACRE))</span>
+<span id="cb6-2"><a></a></span>
+<span id="cb6-3"><a></a>survey<span class="sc">|&gt;</span><span class="fu">filter</span>(LINE <span class="sc">%in%</span><span class="fu">c</span>(<span class="dv">18</span>,<span class="dv">20</span>,<span class="dv">22</span>,<span class="dv">15</span>)<span class="sc">&amp;</span>RACE <span class="sc">==</span> <span class="st">"Black"</span>)<span class="sc">|&gt;</span><span class="fu">group_by</span>(TENURE)<span class="sc">|&gt;</span><span class="fu">summarise</span>(<span class="at">avg_hens=</span><span class="fu">mean</span>(HENS))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section></section>
+<section>
+<section id="data-documentation" class="title-slide slide level1 center">
+<h1>Data Documentation</h1>
+
+</section>
+<section id="reading-a-data-dictionary" class="slide level2 smaller center">
+<h2>Reading a Data Dictionary</h2>
+<ul>
+<li>Data dictionaries offer descriptions of your dataframe that otherwise cannot be included in tidy data.</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a><span class="fu">glimpse</span>(dictionary)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Rows: 71
+Columns: 3
+$ `Column Name` &lt;chr&gt; "LINE", "USER_NAME", "COND_PREMISES_RC", "RATE_INTER_RC"…
+$ Definition    &lt;chr&gt; "Proposed Line Number", "Name of Proposed User (Last, Fi…
+$ Origin        &lt;chr&gt; "Original Data", "Original Data", "Created", "Created", …</code></pre>
+</div>
+</div>
+</section>
+<section id="data-summaries" class="slide level2 center">
+<h2>Data Summaries</h2>
+<ul>
+<li>The <code>summary</code> function provides a great opportunity to view and understand important aspects of your data.</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a><span class="fu">summary</span>(survey)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   USER_ID           USER_NUMBER         LINE        USER_NAME        
+ Length:329         Min.   : 1.00   Min.   :13.00   Length:329        
+ Class :character   1st Qu.: 7.00   1st Qu.:18.00   Class :character  
+ Mode  :character   Median :15.00   Median :20.00   Mode  :character  
+                    Mean   :16.26   Mean   :20.29                     
+                    3rd Qu.:23.00   3rd Qu.:23.00                     
+                    Max.   :48.00   Max.   :28.00                     
+                                                                      
+ COND_PREMISES_RC RATE_INTER_RC      TENURE              RACE          
+ Min.   :1.000    Min.   :1.000   Length:329         Length:329        
+ 1st Qu.:3.000    1st Qu.:3.000   Class :character   Class :character  
+ Median :3.000    Median :4.000   Mode  :character   Mode  :character  
+ Mean   :3.187    Mean   :3.495                                        
+ 3rd Qu.:4.000    3rd Qu.:4.000                                        
+ Max.   :4.000    Max.   :4.000                                        
+ NA's   :35       NA's   :40                                           
+ LIGHTS_ONLY           ROOMS            OCCUPANTS            BLDGS          
+ Length:329         Length:329         Length:329         Length:329        
+ Class :character   Class :character   Class :character   Class :character  
+ Mode  :character   Mode  :character   Mode  :character   Mode  :character  
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+     BARN              GARAGE            POULTRY           MISC_BLDG        
+ Length:329         Length:329         Length:329         Length:329        
+ Class :character   Class :character   Class :character   Class :character  
+ Mode  :character   Mode  :character   Mode  :character   Mode  :character  
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+  TELEPHONE           REFRIGER          WASH_MACH            RANGE          
+ Length:329         Length:329         Length:329         Length:329        
+ Class :character   Class :character   Class :character   Class :character  
+ Mode  :character   Mode  :character   Mode  :character   Mode  :character  
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+     IRON            FAM_WATER         STOCK_WATER         MISC_WATER       
+ Length:329         Length:329         Length:329         Length:329        
+ Class :character   Class :character   Class :character   Class :character  
+ Mode  :character   Mode  :character   Mode  :character   Mode  :character  
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+    MOTORS          MILK_WARMER        HEATING_PAD        WAFFLE_IRON       
+ Length:329         Length:329         Length:329         Length:329        
+ Class :character   Class :character   Class :character   Class :character  
+ Mode  :character   Mode  :character   Mode  :character   Mode  :character  
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+   TOASTER           PERCOLATOR        CURLING_IRON        EGG_COOKER       
+ Length:329         Length:329         Length:329         Length:329        
+ Class :character   Class :character   Class :character   Class :character  
+ Mode  :character   Mode  :character   Mode  :character   Mode  :character  
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+  HOT_PLATE         PRESSURE_COOKER    TABLE_STOVE           RADIO          
+ Length:329         Length:329         Length:329         Length:329        
+ Class :character   Class :character   Class :character   Class :character  
+ Mode  :character   Mode  :character   Mode  :character   Mode  :character  
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+ SOLDERING_IRON        VACUUM          SEWING_MACH            FANS          
+ Length:329         Length:329         Length:329         Length:329        
+ Class :character   Class :character   Class :character   Class :character  
+ Mode  :character   Mode  :character   Mode  :character   Mode  :character  
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+ ICE_CREAM_FREEZER     CHURN           HAIR_CLIPPER          CLOCKS         
+ Length:329         Length:329         Length:329         Length:329        
+ Class :character   Class :character   Class :character   Class :character  
+ Mode  :character   Mode  :character   Mode  :character   Mode  :character  
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+ JUICE_EXTRACTOR      DAIRY_COW           HENS             HOGS       
+ Length:329         Min.   : 0.000   Min.   :  0.00   Min.   :  0.00  
+ Class :character   1st Qu.: 0.000   1st Qu.:  0.00   1st Qu.:  0.00  
+ Mode  :character   Median : 0.000   Median : 25.00   Median :  5.00  
+                    Mean   : 1.182   Mean   : 36.52   Mean   : 12.63  
+                    3rd Qu.: 1.000   3rd Qu.: 50.00   3rd Qu.: 15.00  
+                    Max.   :75.000   Max.   :650.00   Max.   :200.00  
+                                                                      
+  COTTON_ACRE      TOBACC_ACRE        TRUCK_ACRE       FRUIT_ACRE    
+ Min.   :  0.00   Min.   :  0.000   Min.   : 0.000   Min.   :0.0000  
+ 1st Qu.:  0.00   1st Qu.:  0.000   1st Qu.: 0.000   1st Qu.:0.0000  
+ Median :  4.00   Median :  5.000   Median : 1.000   Median :0.0000  
+ Mean   : 13.15   Mean   :  7.899   Mean   : 1.474   Mean   :0.2576  
+ 3rd Qu.: 11.00   3rd Qu.: 10.000   3rd Qu.: 2.000   3rd Qu.:0.0000  
+ Max.   :208.00   Max.   :100.000   Max.   :30.000   Max.   :5.0000  
+                                                                     
+  GENERAL_ACRE    COND_PREMISES       RATE_INTER        LIGHT_PLANT       
+ Min.   :  0.00   Length:329         Length:329         Length:329        
+ 1st Qu.:  0.00   Class :character   Class :character   Class :character  
+ Median : 12.00   Mode  :character   Mode  :character   Mode  :character  
+ Mean   : 30.53                                                           
+ 3rd Qu.: 30.00                                                           
+ Max.   :490.00                                                           
+                                                                          
+    RES_LOAD       NONRES_LOAD       BARN_LOAD         POUL_LOAD      
+ Min.   :0.1000   Min.   :0.2000   Min.   :0.05000   Min.   :0.05000  
+ 1st Qu.:0.2000   1st Qu.:0.3500   1st Qu.:0.05000   1st Qu.:0.05000  
+ Median :0.3000   Median :0.3500   Median :0.05000   Median :0.05000  
+ Mean   :0.3023   Mean   :0.8068   Mean   :0.05951   Mean   :0.05956  
+ 3rd Qu.:0.3500   3rd Qu.:1.0000   3rd Qu.:0.05000   3rd Qu.:0.05000  
+ Max.   :2.0000   Max.   :5.0000   Max.   :0.55000   Max.   :0.30000  
+ NA's   :51       NA's   :307      NA's   :195       NA's   :261      
+   GARA_LOAD          FAM_LOAD       APPLI_LOAC          TOTAL_LOAD    
+ Min.   :0.02500   Min.   :0.0250   Length:329         Min.   : 0.100  
+ 1st Qu.:0.02500   1st Qu.:0.0250   Class :character   1st Qu.: 1.111  
+ Median :0.02500   Median :0.3460   Mode  :character   Median : 5.611  
+ Mean   :0.03016   Mean   :0.4594                      Mean   : 5.354  
+ 3rd Qu.:0.02500   3rd Qu.:0.6920                      3rd Qu.: 5.981  
+ Max.   :0.25000   Max.   :1.7300                      Max.   :51.660  
+ NA's   :232       NA's   :283                         NA's   :67      
+ CORRECT_FACTOR     CORRE_LOAD        KWH_MONTH         KWH_YEAR     
+ Min.   :0.5760   Min.   : 0.0000   Min.   :  0.00   Min.   :   0.0  
+ 1st Qu.:0.7700   1st Qu.: 0.8601   1st Qu.:  9.00   1st Qu.:  96.0  
+ Median :0.8550   Median : 4.7590   Median : 53.00   Median : 624.0  
+ Mean   :0.8554   Mean   : 5.2450   Mean   : 62.69   Mean   : 737.0  
+ 3rd Qu.:0.9500   3rd Qu.: 6.8703   3rd Qu.: 77.02   3rd Qu.: 917.3  
+ Max.   :1.0000   Max.   :51.6600   Max.   :734.00   Max.   :8808.0  
+ NA's   :30       NA's   :29        NA's   :29       NA's   :23      
+   BILL_MONTH      BILL_ANNUAL        NOTES          
+ Min.   : 1.000   Min.   :  0.00   Length:329        
+ 1st Qu.: 1.000   1st Qu.: 12.00   Class :character  
+ Median : 4.400   Median : 51.84   Mode  :character  
+ Mean   : 4.751   Mean   : 55.71                     
+ 3rd Qu.: 6.080   3rd Qu.: 72.84                     
+ Max.   :50.130   Max.   :601.56                     
+ NA's   :30       NA's   :23                         </code></pre>
+</div>
+</div>
+</section>
+<section id="reading-data-summaries" class="slide level2 smaller center">
+<h2>Reading Data Summaries</h2>
+
+<img data-src="images/data_summary.png" class="r-stretch"></section>
+<section id="exercise-two-collaborative" class="slide level2 center">
+<h2>Exercise Two (collaborative)</h2>
+<p>Using the data dictionary and your <code>summary()</code> results of the <code>survey</code> dataframe, choose five variables and tell me:</p>
+<ol type="1">
+<li>the variable name</li>
+<li>its definition</li>
+<li>its data type</li>
+<li>whether there are any NA values (if it’s numeric).</li>
+</ol>
+</section></section>
+<section>
+<section id="lengthening-and-widening-data" class="title-slide slide level1 smaller center">
+<h1>Lengthening and Widening Data</h1>
+
+</section>
+<section id="lengthening-data" class="slide level2 smaller center">
+<h2>Lengthening Data</h2>
+<ul>
+<li>Suppose we were interested in reshaping a dataframe we created called <code>animals</code> into a new dataframe called <code>animals_long</code>. We would use the <code>pivot_longer()</code> function and supply the following arguments:
+<ul>
+<li><code>cols</code> are the columns we want to pivot, in this case, all of the columns between <code>DAIRY_COW</code> and <code>HOGS</code></li>
+<li><code>names_to</code> is the new column name that we want the column <em>names</em> we selected in the <code>cols</code> function to go into. In this case, we will call it <code>animal</code>.</li>
+<li><code>values_to</code> is the new column name that we want the column <em>values</em> to go into. In this case, we will call it “count”.</li>
+</ul></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a>animals <span class="ot">&lt;-</span> survey <span class="sc">|&gt;</span></span>
+<span id="cb11-2"><a></a>  <span class="fu">select</span>(USER_NAME, DAIRY_COW<span class="sc">:</span>HOGS)</span>
+<span id="cb11-3"><a></a></span>
+<span id="cb11-4"><a></a>animals_long <span class="ot">&lt;-</span> animals <span class="sc">|&gt;</span></span>
+<span id="cb11-5"><a></a>  <span class="fu">pivot_longer</span>(</span>
+<span id="cb11-6"><a></a>    <span class="at">cols =</span> DAIRY_COW<span class="sc">:</span>HOGS,</span>
+<span id="cb11-7"><a></a>    <span class="at">names_to =</span> <span class="st">"animal"</span>,</span>
+<span id="cb11-8"><a></a>    <span class="at">values_to =</span> <span class="st">"count"</span></span>
+<span id="cb11-9"><a></a>  )</span>
+<span id="cb11-10"><a></a></span>
+<span id="cb11-11"><a></a>animals_long</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="lengthening-data-cont." class="slide level2 smaller center">
+<h2>Lengthening Data (cont.)</h2>
+
+<img data-src="images/lengthen.png" class="r-stretch"></section>
+<section id="widening-data" class="slide level2 smaller center">
+<h2>Widening Data</h2>
+<ul>
+<li>Suppose we were interested in reshaping the long dataframe we created called <code>animals_long</code> into our original dataframe called <code>animals</code>. We would use the <code>pivot_wider()</code> function and supply the following arguments:
+<ul>
+<li><code>names_from</code> is the column with <em>values</em> that we want now be column <em>names</em>. In this case, it’s the <code>animal</code> column.</li>
+<li><code>values_from</code> is the column with the <em>values</em> that we want to now be distributed across the column names. In this case, it’s the <code>count</code> column.</li>
+</ul></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a></a>animals <span class="ot">&lt;-</span> animals_long <span class="sc">|&gt;</span></span>
+<span id="cb12-2"><a></a>  <span class="fu">pivot_wider</span>(</span>
+<span id="cb12-3"><a></a>    <span class="at">names_from =</span> <span class="st">"animal"</span>,</span>
+<span id="cb12-4"><a></a>    <span class="at">values_from =</span> <span class="st">"count"</span></span>
+<span id="cb12-5"><a></a>  )</span>
+<span id="cb12-6"><a></a></span>
+<span id="cb12-7"><a></a>animals</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="widening-data-cont." class="slide level2 smaller center">
+<h2>Widening Data (cont.)</h2>
+
+<img data-src="images/widen.png" class="r-stretch"></section>
+<section id="exercise-three-collaborative" class="slide level2 smaller center">
+<h2>Exercise Three (collaborative)</h2>
+<p>See Posit assignment!</p>
+</section>
+<section id="exercise-four-individual" class="slide level2 smaller center">
+<h2>Exercise Four (individual)</h2>
+<p>See Posit assignment!</p>
+
+
+</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
@@ -360,6 +815,44 @@
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
         const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
@@ -429,7 +922,7 @@
         }
           var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
           var mailtoRegex = new RegExp(/^mailto:/);
-            var filterRegex = new RegExp("https:\/\/mariahdaniellecaballero\.github\.io\/ES-202\/");
+            var filterRegex = new RegExp('/' + window.location.host + '/');
           var isInternal = (href) => {
               return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
           }

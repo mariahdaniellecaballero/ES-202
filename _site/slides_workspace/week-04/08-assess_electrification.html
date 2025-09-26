@@ -231,16 +231,16 @@
 <section id="zoom-with-dr.-harrison" class="slide level2 center">
 <h2>Zoom with Dr.&nbsp;Harrison</h2>
 <ul>
-<li>Join using <a href="https://wellesley.zoom.us/j/94645455904?jst=2">link</a> in slides, or in Posit file</li>
+<li>Join using <a href="https://wellesley.zoom.us/j/94645455904?jst=2">link</a> in slides, or in week 04 of schedule.</li>
 <li>Please mute yourself, so there’s no echoing.</li>
-<li>Feel free to ask questions!</li>
+<li>Feel free to ask questions (unmute then)!</li>
 </ul>
 </section>
 <section id="learning-outcomes" class="slide level2 center">
 <h2>Learning Outcomes</h2>
 <ul>
 <li>Understand coding style best practices</li>
-<li>Continued data tidying</li>
+<li>Read accompanying data documentation and understand data summaries</li>
 <li>New skills in data tidying (i.e., lengthening and widening data)</li>
 <li>Connect findings to theoretical understandings of restorative justice</li>
 </ul>
@@ -256,9 +256,8 @@
 <section id="load-packages" class="slide level2 center">
 <h2>Load Packages</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a><span class="fu">library</span>(readxl)</span>
-<span id="cb1-2"><a></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb1-3"><a></a><span class="fu">library</span>(gt)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-2"><a></a><span class="fu">library</span>(readxl)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section></section>
 <section>
@@ -266,8 +265,8 @@
 <h1>Coding Style Best Practices</h1>
 
 </section>
-<section id="names" class="slide level2 center">
-<h2>Names</h2>
+<section id="naming-dataframes" class="slide level2 smaller center">
+<h2>Naming Dataframes</h2>
 <ul>
 <li>Naming conventions are a matter of preference, but readability is key.
 <ul>
@@ -277,13 +276,16 @@
 </ul>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a><span class="co"># strive for</span></span>
-<span id="cb2-2"><a></a>county_vars_1930 <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data/county_vars_1930.csv"</span>)</span>
-<span id="cb2-3"><a></a>state_vars_1930 <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data/state_vars_1930.csv"</span>)</span>
-<span id="cb2-4"><a></a></span>
-<span id="cb2-5"><a></a><span class="co"># avoid</span></span>
-<span id="cb2-6"><a></a>CNTYVRS30 <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data/county_vars_1930.csv"</span>)</span>
+<span id="cb2-2"><a></a>survey <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"data/survey_edgecombe.xlsx"</span>, </span>
+<span id="cb2-3"><a></a>  <span class="at">sheet =</span> <span class="st">"Survey"</span>)</span>
+<span id="cb2-4"><a></a>  </span>
+<span id="cb2-5"><a></a>dictionary <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"data/survey_edgecombe.xlsx"</span>, </span>
+<span id="cb2-6"><a></a>    <span class="at">sheet =</span> <span class="st">"Dictionary"</span>)</span>
 <span id="cb2-7"><a></a></span>
-<span id="cb2-8"><a></a><span class="fu">rm</span>(CNTYVRS30)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-8"><a></a><span class="co"># avoid</span></span>
+<span id="cb2-9"><a></a>EDGECOMBESRVY1934 <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"data/survey_edgecombe.xlsx"</span>, <span class="at">sheet =</span> <span class="st">"Survey"</span>)</span>
+<span id="cb2-10"><a></a></span>
+<span id="cb2-11"><a></a><span class="fu">rm</span>(EDGECOMBESRVY1934)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="spaces" class="slide level2 center">
@@ -295,12 +297,10 @@
 </ul>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a><span class="co"># strive for</span></span>
-<span id="cb3-2"><a></a>(<span class="dv">15</span> <span class="sc">-</span> <span class="dv">5</span>)<span class="sc">^</span><span class="dv">2</span></span>
-<span id="cb3-3"><a></a><span class="fu">mean</span>(county_vars_1930<span class="sc">$</span>total_pop)</span>
-<span id="cb3-4"><a></a></span>
-<span id="cb3-5"><a></a><span class="co"># avoid</span></span>
-<span id="cb3-6"><a></a>( <span class="dv">15-5</span> )<span class="sc">^</span> <span class="dv">2</span></span>
-<span id="cb3-7"><a></a><span class="fu">mean</span> (county_vars_1930<span class="sc">$</span>total_pop)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb3-2"><a></a><span class="fu">mean</span>(survey<span class="sc">$</span>HOGS)</span>
+<span id="cb3-3"><a></a></span>
+<span id="cb3-4"><a></a><span class="co"># avoid</span></span>
+<span id="cb3-5"><a></a><span class="fu">mean</span> (survey<span class="sc">$</span>HOGS)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="pipes" class="slide level2 center">
@@ -311,200 +311,290 @@
 </ul>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a><span class="co"># strive for</span></span>
-<span id="cb4-2"><a></a>county_vars_1930 <span class="sc">|&gt;</span></span>
-<span id="cb4-3"><a></a>  <span class="fu">filter</span>(state <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"Massachusetts"</span>, <span class="st">"Washington"</span>)) <span class="sc">|&gt;</span></span>
-<span id="cb4-4"><a></a>  <span class="fu">count</span>(county)</span>
+<span id="cb4-2"><a></a>survey <span class="sc">|&gt;</span></span>
+<span id="cb4-3"><a></a>  <span class="fu">filter</span>(TENURE <span class="sc">==</span> <span class="st">"Tenant"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb4-4"><a></a>  <span class="fu">count</span>(WAFFLE_IRON)</span>
 <span id="cb4-5"><a></a></span>
 <span id="cb4-6"><a></a><span class="co"># avoid</span></span>
-<span id="cb4-7"><a></a>county_vars_1930 <span class="sc">|&gt;</span> <span class="fu">filter</span>(state <span class="sc">%in%</span><span class="fu">c</span>(<span class="st">"Massachusetts"</span>, <span class="st">"Washington"</span>)) <span class="sc">|&gt;</span> <span class="fu">count</span>(county)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb4-7"><a></a>survey<span class="sc">|&gt;</span><span class="fu">filter</span>(TENURE <span class="sc">==</span> <span class="st">"Tenant"</span>)<span class="sc">|&gt;</span><span class="fu">count</span>(WAFFLE_IRON)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="ggplot" class="slide level2 center">
+<section id="ggplot" class="slide level2 smaller center">
 <h2>ggplot</h2>
 <ul>
-<li>ggplot functions just like pipes (i.e., each line should end with a +)</li>
+<li>ggplot functions just like pipes (i.e., each new layer should end with a +)</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a>county_vars_1930 <span class="sc">|&gt;</span></span>
-<span id="cb5-2"><a></a>  <span class="fu">group_by</span>(state) <span class="sc">|&gt;</span></span>
-<span id="cb5-3"><a></a>  <span class="fu">summarize</span>(</span>
-<span id="cb5-4"><a></a>    <span class="at">sum_total_pop =</span> <span class="fu">sum</span>(total_pop)</span>
-<span id="cb5-5"><a></a>  ) <span class="sc">|&gt;</span></span>
-<span id="cb5-6"><a></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(state, sum_total_pop)) <span class="sc">+</span></span>
-<span id="cb5-7"><a></a>  <span class="fu">geom_col</span>() <span class="sc">+</span></span>
-<span id="cb5-8"><a></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">90</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a>survey <span class="sc">|&gt;</span></span>
+<span id="cb5-2"><a></a>  <span class="fu">filter</span>(RACE <span class="sc">!=</span> <span class="st">"Unknown"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb5-3"><a></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(KWH_YEAR, BILL_ANNUAL, <span class="at">color =</span> RACE)) <span class="sc">+</span></span>
+<span id="cb5-4"><a></a>  <span class="fu">geom_point</span>() <span class="sc">+</span> </span>
+<span id="cb5-5"><a></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
 </div>
-</section>
+<img data-src="08-assess_electrification_files/figure-revealjs/unnamed-chunk-6-1.png" width="960" class="r-stretch"></section>
 <section id="exercise-one-collaborative" class="slide level2 center">
 <h2>Exercise One (collaborative)</h2>
-<p>Restyle the following code chunks and label what each line is doing, using “#”.</p>
+<p>Restyle the following code chunks (in the empty chunk below) and label what each line is doing, using “#”.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a></a>county_vars_1930<span class="sc">|&gt;</span><span class="fu">filter</span>(state <span class="sc">%in%</span><span class="fu">c</span>(<span class="st">"Massachusetts"</span>, <span class="st">"Tennessee"</span>, <span class="st">"Washington"</span>, <span class="st">"New Mexico"</span>))<span class="sc">|&gt;</span><span class="fu">group_by</span>(state)<span class="sc">|&gt;</span> <span class="fu">summarize</span>(<span class="at">n=</span><span class="fu">n</span>(), <span class="at">mean_pop =</span><span class="fu">mean</span>(total_pop,<span class="at">na.rm =</span><span class="cn">TRUE</span>), <span class="at">mean_rural_farm_pop=</span><span class="fu">mean</span>(rural_farm_pop,<span class="at">na.rm=</span><span class="cn">TRUE</span>))<span class="sc">|&gt;</span><span class="fu">filter</span>(mean_rural_farm_pop<span class="sc">&gt;=</span><span class="dv">6000</span>)</span>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a></a>survey<span class="sc">|&gt;</span><span class="fu">filter</span>(TENURE<span class="sc">%in%</span><span class="fu">c</span>(<span class="st">"Owner"</span>,<span class="st">"Tenant"</span>)<span class="sc">&amp;</span> RACE <span class="sc">%in%</span><span class="fu">c</span>(<span class="st">"Black"</span>, <span class="st">"White"</span>))<span class="sc">|&gt;</span><span class="fu">group_by</span>(TENURE,RACE)<span class="sc">|&gt;</span><span class="fu">summarize</span>(<span class="at">n=</span><span class="fu">n</span>(),<span class="at">mean_cows =</span><span class="fu">mean</span>(DAIRY_COW), <span class="at">mean_fruit=</span><span class="fu">mean</span>(FRUIT_ACRE))</span>
 <span id="cb6-2"><a></a></span>
-<span id="cb6-3"><a></a>county_vars_1930<span class="sc">|&gt;</span><span class="fu">filter</span>(county <span class="sc">%in%</span><span class="fu">c</span>(<span class="st">"Washington"</span>,<span class="st">"Jefferson"</span>,<span class="st">"Franklin"</span>),total_pop <span class="sc">&gt;=</span><span class="dv">4000</span>)<span class="sc">|&gt;</span><span class="fu">group_by</span>(county)<span class="sc">|&gt;</span><span class="fu">summarise</span>(<span class="at">n_states=</span><span class="fu">n</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb6-3"><a></a>survey<span class="sc">|&gt;</span><span class="fu">filter</span>(LINE <span class="sc">%in%</span><span class="fu">c</span>(<span class="dv">18</span>,<span class="dv">20</span>,<span class="dv">22</span>,<span class="dv">15</span>)<span class="sc">&amp;</span>RACE <span class="sc">==</span> <span class="st">"Black"</span>)<span class="sc">|&gt;</span><span class="fu">group_by</span>(TENURE)<span class="sc">|&gt;</span><span class="fu">summarise</span>(<span class="at">avg_hens=</span><span class="fu">mean</span>(HENS))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section></section>
 <section>
-<section id="data-tidying" class="title-slide slide level1 center">
-<h1>Data Tidying</h1>
+<section id="data-documentation" class="title-slide slide level1 center">
+<h1>Data Documentation</h1>
 
 </section>
-<section id="tidy-data" class="slide level2 smaller center">
-<h2>Tidy Data</h2>
+<section id="reading-a-data-dictionary" class="slide level2 smaller center">
+<h2>Reading a Data Dictionary</h2>
 <ul>
-<li>Each column represents a variable (and vice versa)</li>
-<li>Each row represents an observation (and vice versa)</li>
-<li>Each value is a single cell (and vice versa)</li>
+<li>Data dictionaries offer descriptions of your dataframe that otherwise cannot be included in tidy data.</li>
 </ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a><span class="fu">glimpse</span>(dictionary)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Rows: 71
+Columns: 3
+$ `Column Name` &lt;chr&gt; "LINE", "USER_NAME", "COND_PREMISES_RC", "RATE_INTER_RC"…
+$ Definition    &lt;chr&gt; "Proposed Line Number", "Name of Proposed User (Last, Fi…
+$ Origin        &lt;chr&gt; "Original Data", "Original Data", "Created", "Created", …</code></pre>
+</div>
+</div>
+</section>
+<section id="data-summaries" class="slide level2 center">
+<h2>Data Summaries</h2>
+<ul>
+<li>The <code>summary</code> function provides a great opportunity to view and understand important aspects of your data.</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a><span class="fu">summary</span>(survey)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   USER_ID           USER_NUMBER         LINE        USER_NAME        
+ Length:329         Min.   : 1.00   Min.   :13.00   Length:329        
+ Class :character   1st Qu.: 7.00   1st Qu.:18.00   Class :character  
+ Mode  :character   Median :15.00   Median :20.00   Mode  :character  
+                    Mean   :16.26   Mean   :20.29                     
+                    3rd Qu.:23.00   3rd Qu.:23.00                     
+                    Max.   :48.00   Max.   :28.00                     
+                                                                      
+ COND_PREMISES_RC RATE_INTER_RC      TENURE              RACE          
+ Min.   :1.000    Min.   :1.000   Length:329         Length:329        
+ 1st Qu.:3.000    1st Qu.:3.000   Class :character   Class :character  
+ Median :3.000    Median :4.000   Mode  :character   Mode  :character  
+ Mean   :3.187    Mean   :3.495                                        
+ 3rd Qu.:4.000    3rd Qu.:4.000                                        
+ Max.   :4.000    Max.   :4.000                                        
+ NA's   :35       NA's   :40                                           
+ LIGHTS_ONLY           ROOMS            OCCUPANTS            BLDGS          
+ Length:329         Length:329         Length:329         Length:329        
+ Class :character   Class :character   Class :character   Class :character  
+ Mode  :character   Mode  :character   Mode  :character   Mode  :character  
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+     BARN              GARAGE            POULTRY           MISC_BLDG        
+ Length:329         Length:329         Length:329         Length:329        
+ Class :character   Class :character   Class :character   Class :character  
+ Mode  :character   Mode  :character   Mode  :character   Mode  :character  
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+  TELEPHONE           REFRIGER          WASH_MACH            RANGE          
+ Length:329         Length:329         Length:329         Length:329        
+ Class :character   Class :character   Class :character   Class :character  
+ Mode  :character   Mode  :character   Mode  :character   Mode  :character  
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+     IRON            FAM_WATER         STOCK_WATER         MISC_WATER       
+ Length:329         Length:329         Length:329         Length:329        
+ Class :character   Class :character   Class :character   Class :character  
+ Mode  :character   Mode  :character   Mode  :character   Mode  :character  
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+    MOTORS          MILK_WARMER        HEATING_PAD        WAFFLE_IRON       
+ Length:329         Length:329         Length:329         Length:329        
+ Class :character   Class :character   Class :character   Class :character  
+ Mode  :character   Mode  :character   Mode  :character   Mode  :character  
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+   TOASTER           PERCOLATOR        CURLING_IRON        EGG_COOKER       
+ Length:329         Length:329         Length:329         Length:329        
+ Class :character   Class :character   Class :character   Class :character  
+ Mode  :character   Mode  :character   Mode  :character   Mode  :character  
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+  HOT_PLATE         PRESSURE_COOKER    TABLE_STOVE           RADIO          
+ Length:329         Length:329         Length:329         Length:329        
+ Class :character   Class :character   Class :character   Class :character  
+ Mode  :character   Mode  :character   Mode  :character   Mode  :character  
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+ SOLDERING_IRON        VACUUM          SEWING_MACH            FANS          
+ Length:329         Length:329         Length:329         Length:329        
+ Class :character   Class :character   Class :character   Class :character  
+ Mode  :character   Mode  :character   Mode  :character   Mode  :character  
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+ ICE_CREAM_FREEZER     CHURN           HAIR_CLIPPER          CLOCKS         
+ Length:329         Length:329         Length:329         Length:329        
+ Class :character   Class :character   Class :character   Class :character  
+ Mode  :character   Mode  :character   Mode  :character   Mode  :character  
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+ JUICE_EXTRACTOR      DAIRY_COW           HENS             HOGS       
+ Length:329         Min.   : 0.000   Min.   :  0.00   Min.   :  0.00  
+ Class :character   1st Qu.: 0.000   1st Qu.:  0.00   1st Qu.:  0.00  
+ Mode  :character   Median : 0.000   Median : 25.00   Median :  5.00  
+                    Mean   : 1.182   Mean   : 36.52   Mean   : 12.63  
+                    3rd Qu.: 1.000   3rd Qu.: 50.00   3rd Qu.: 15.00  
+                    Max.   :75.000   Max.   :650.00   Max.   :200.00  
+                                                                      
+  COTTON_ACRE      TOBACC_ACRE        TRUCK_ACRE       FRUIT_ACRE    
+ Min.   :  0.00   Min.   :  0.000   Min.   : 0.000   Min.   :0.0000  
+ 1st Qu.:  0.00   1st Qu.:  0.000   1st Qu.: 0.000   1st Qu.:0.0000  
+ Median :  4.00   Median :  5.000   Median : 1.000   Median :0.0000  
+ Mean   : 13.15   Mean   :  7.899   Mean   : 1.474   Mean   :0.2576  
+ 3rd Qu.: 11.00   3rd Qu.: 10.000   3rd Qu.: 2.000   3rd Qu.:0.0000  
+ Max.   :208.00   Max.   :100.000   Max.   :30.000   Max.   :5.0000  
+                                                                     
+  GENERAL_ACRE    COND_PREMISES       RATE_INTER        LIGHT_PLANT       
+ Min.   :  0.00   Length:329         Length:329         Length:329        
+ 1st Qu.:  0.00   Class :character   Class :character   Class :character  
+ Median : 12.00   Mode  :character   Mode  :character   Mode  :character  
+ Mean   : 30.53                                                           
+ 3rd Qu.: 30.00                                                           
+ Max.   :490.00                                                           
+                                                                          
+    RES_LOAD       NONRES_LOAD       BARN_LOAD         POUL_LOAD      
+ Min.   :0.1000   Min.   :0.2000   Min.   :0.05000   Min.   :0.05000  
+ 1st Qu.:0.2000   1st Qu.:0.3500   1st Qu.:0.05000   1st Qu.:0.05000  
+ Median :0.3000   Median :0.3500   Median :0.05000   Median :0.05000  
+ Mean   :0.3023   Mean   :0.8068   Mean   :0.05951   Mean   :0.05956  
+ 3rd Qu.:0.3500   3rd Qu.:1.0000   3rd Qu.:0.05000   3rd Qu.:0.05000  
+ Max.   :2.0000   Max.   :5.0000   Max.   :0.55000   Max.   :0.30000  
+ NA's   :51       NA's   :307      NA's   :195       NA's   :261      
+   GARA_LOAD          FAM_LOAD       APPLI_LOAC          TOTAL_LOAD    
+ Min.   :0.02500   Min.   :0.0250   Length:329         Min.   : 0.100  
+ 1st Qu.:0.02500   1st Qu.:0.0250   Class :character   1st Qu.: 1.111  
+ Median :0.02500   Median :0.3460   Mode  :character   Median : 5.611  
+ Mean   :0.03016   Mean   :0.4594                      Mean   : 5.354  
+ 3rd Qu.:0.02500   3rd Qu.:0.6920                      3rd Qu.: 5.981  
+ Max.   :0.25000   Max.   :1.7300                      Max.   :51.660  
+ NA's   :232       NA's   :283                         NA's   :67      
+ CORRECT_FACTOR     CORRE_LOAD        KWH_MONTH         KWH_YEAR     
+ Min.   :0.5760   Min.   : 0.0000   Min.   :  0.00   Min.   :   0.0  
+ 1st Qu.:0.7700   1st Qu.: 0.8601   1st Qu.:  9.00   1st Qu.:  96.0  
+ Median :0.8550   Median : 4.7590   Median : 53.00   Median : 624.0  
+ Mean   :0.8554   Mean   : 5.2450   Mean   : 62.69   Mean   : 737.0  
+ 3rd Qu.:0.9500   3rd Qu.: 6.8703   3rd Qu.: 77.02   3rd Qu.: 917.3  
+ Max.   :1.0000   Max.   :51.6600   Max.   :734.00   Max.   :8808.0  
+ NA's   :30       NA's   :29        NA's   :29       NA's   :23      
+   BILL_MONTH      BILL_ANNUAL        NOTES          
+ Min.   : 1.000   Min.   :  0.00   Length:329        
+ 1st Qu.: 1.000   1st Qu.: 12.00   Class :character  
+ Median : 4.400   Median : 51.84   Mode  :character  
+ Mean   : 4.751   Mean   : 55.71                     
+ 3rd Qu.: 6.080   3rd Qu.: 72.84                     
+ Max.   :50.130   Max.   :601.56                     
+ NA's   :30       NA's   :23                         </code></pre>
+</div>
+</div>
+</section>
+<section id="reading-data-summaries" class="slide level2 smaller center">
+<h2>Reading Data Summaries</h2>
 
-<img data-src="./images/data_structure.png" class="r-stretch"></section>
+<img data-src="images/data_summary.png" class="r-stretch"></section>
 <section id="exercise-two-collaborative" class="slide level2 center">
 <h2>Exercise Two (collaborative)</h2>
-<p>Describe what makes the <code>county_vars_1930</code> dataset tidy. Provide examples of the following using the dataset.</p>
-<ul>
-<li>variables:</li>
-<li>observations:</li>
-<li>values:</li>
-</ul>
+<p>Using the data dictionary and your <code>summary()</code> results of the <code>survey</code> dataframe, choose five variables and tell me:</p>
+<ol type="1">
+<li>the variable name</li>
+<li>its definition</li>
+<li>its data type</li>
+<li>whether there are any NA values (if it’s numeric).</li>
+</ol>
+</section></section>
+<section>
+<section id="lengthening-and-widening-data" class="title-slide slide level1 smaller center">
+<h1>Lengthening and Widening Data</h1>
+
 </section>
 <section id="lengthening-data" class="slide level2 smaller center">
 <h2>Lengthening Data</h2>
-<p>How do we get from the <code>state_vars_1930</code> dataframe to Table one in Dr.&nbsp;Harrison’s manuscript?</p>
-
-<img data-src="images/Table_one_REA.png" class="r-stretch"></section>
-<section id="lengthening-data-1" class="slide level2 center">
-<h2>Lengthening Data</h2>
 <ul>
-<li>In pairs, brainstorm the general process you might need to take to get from the <code>state_vars_1930</code> dataframe to table one on whiteboards.</li>
-<li>hints:
+<li>Suppose we were interested in reshaping a dataframe we created called <code>animals</code> into a new dataframe called <code>animals_long</code>. We would use the <code>pivot_longer()</code> function and supply the following arguments:
 <ul>
-<li>You may need to calculate the total rural population (population that is non-urban)</li>
-<li>You’ll likely need to reshape your data</li>
-<li>We haven’t learned all of the functions necessary to fully create the table, so we can strategize together on how to calculate percentage of class</li>
+<li><code>cols</code> are the columns we want to pivot, in this case, all of the columns between <code>DAIRY_COW</code> and <code>HOGS</code></li>
+<li><code>names_to</code> is the new column name that we want the column <em>names</em> we selected in the <code>cols</code> function to go into. In this case, we will call it <code>animal</code>.</li>
+<li><code>values_to</code> is the new column name that we want the column <em>values</em> to go into. In this case, we will call it “count”.</li>
 </ul></li>
 </ul>
-</section>
-<section id="lengthening-data-2" class="slide level2 center">
-<h2>Lengthening Data</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7" data-code-line-numbers="1|3|4|5|6|7|10|11|12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a>denom <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">denom =</span> <span class="fu">c</span>(<span class="cn">NA</span>, <span class="dv">3170276</span>, <span class="dv">3170276</span>, <span class="dv">2360429</span>, <span class="dv">3170276</span>, <span class="dv">3170276</span>))</span>
-<span id="cb7-2"><a></a></span>
-<span id="cb7-3"><a></a>state_vars_1930 <span class="sc">%&gt;%</span> </span>
-<span id="cb7-4"><a></a>  <span class="fu">filter</span>(state <span class="sc">==</span> <span class="st">"North Carolina"</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb7-5"><a></a>  <span class="fu">mutate</span>(<span class="at">rural_pop =</span> total_pop <span class="sc">-</span> urban_pop) <span class="sc">%&gt;%</span> </span>
-<span id="cb7-6"><a></a>  <span class="fu">select</span>(state, total_pop, urban_pop, rural_pop, rural_farm_pop, black_pop, white_pop) <span class="sc">%&gt;%</span> </span>
-<span id="cb7-7"><a></a>  <span class="fu">pivot_longer</span>(<span class="at">cols =</span> <span class="fu">c</span>(total_pop<span class="sc">:</span>white_pop), </span>
-<span id="cb7-8"><a></a>               <span class="at">names_to =</span> <span class="st">"name"</span>, </span>
-<span id="cb7-9"><a></a>               <span class="at">values_to =</span> <span class="st">"count"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb7-10"><a></a>  <span class="fu">bind_cols</span>(denom) <span class="sc">%&gt;%</span> </span>
-<span id="cb7-11"><a></a>  <span class="fu">mutate</span>(<span class="at">perc_class =</span> <span class="fu">round</span>(((count<span class="sc">/</span>denom)<span class="sc">*</span><span class="dv">100</span>),<span class="dv">1</span>)) <span class="sc">%&gt;%</span></span>
-<span id="cb7-12"><a></a>  <span class="fu">select</span>(name, count, perc_class)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a>animals <span class="ot">&lt;-</span> survey <span class="sc">|&gt;</span></span>
+<span id="cb11-2"><a></a>  <span class="fu">select</span>(USER_NAME, DAIRY_COW<span class="sc">:</span>HOGS)</span>
+<span id="cb11-3"><a></a></span>
+<span id="cb11-4"><a></a>animals_long <span class="ot">&lt;-</span> animals <span class="sc">|&gt;</span></span>
+<span id="cb11-5"><a></a>  <span class="fu">pivot_longer</span>(</span>
+<span id="cb11-6"><a></a>    <span class="at">cols =</span> DAIRY_COW<span class="sc">:</span>HOGS,</span>
+<span id="cb11-7"><a></a>    <span class="at">names_to =</span> <span class="st">"animal"</span>,</span>
+<span id="cb11-8"><a></a>    <span class="at">values_to =</span> <span class="st">"count"</span></span>
+<span id="cb11-9"><a></a>  )</span>
+<span id="cb11-10"><a></a></span>
+<span id="cb11-11"><a></a>animals_long</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="exercise-three-collaborative" class="slide level2 center">
-<h2>Exercise Three (collaborative)</h2>
-<ol type="1">
-<li>Make the table pretty using the <code>gt</code> package.</li>
-<li>Create the second half of the table using the <code>county_vars_1930</code> dataframe for Edgecombe County, NC</li>
-</ol>
-</section>
-<section id="widening-data" class="slide level2 center">
+<section id="lengthening-data-cont." class="slide level2 smaller center">
+<h2>Lengthening Data (cont.)</h2>
+
+<img data-src="images/lengthen.png" class="r-stretch"></section>
+<section id="widening-data" class="slide level2 smaller center">
 <h2>Widening Data</h2>
+<ul>
+<li>Suppose we were interested in reshaping the long dataframe we created called <code>animals_long</code> into our original dataframe called <code>animals</code>. We would use the <code>pivot_wider()</code> function and supply the following arguments:
+<ul>
+<li><code>names_from</code> is the column with <em>values</em> that we want now be column <em>names</em>. In this case, it’s the <code>animal</code> column.</li>
+<li><code>values_from</code> is the column with the <em>values</em> that we want to now be distributed across the column names. In this case, it’s the <code>count</code> column.</li>
+</ul></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a></a>animals <span class="ot">&lt;-</span> animals_long <span class="sc">|&gt;</span></span>
+<span id="cb12-2"><a></a>  <span class="fu">pivot_wider</span>(</span>
+<span id="cb12-3"><a></a>    <span class="at">names_from =</span> <span class="st">"animal"</span>,</span>
+<span id="cb12-4"><a></a>    <span class="at">values_from =</span> <span class="st">"count"</span></span>
+<span id="cb12-5"><a></a>  )</span>
+<span id="cb12-6"><a></a></span>
+<span id="cb12-7"><a></a>animals</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </section>
-<section id="lengthening-data-3" class="slide level2 smaller center">
-<h2>Lengthening Data</h2>
-<p>How do we get from the <code>state_vars_1930</code> dataframe to Table two in Dr.&nbsp;Harrison’s manuscript?</p>
+<section id="widening-data-cont." class="slide level2 smaller center">
+<h2>Widening Data (cont.)</h2>
 
-<img data-src="images/Table_two_REA.png" class="r-stretch"></section>
-<section id="widening-data-1" class="slide level2 center">
-<h2>Widening data</h2>
-<ul>
-<li>In pairs, brainstorm the general process you might need to take to get from the <code>state_vars_1930</code> dataframe to table 2 on whiteboards.</li>
-<li>hints:
-<ul>
-<li>You may need to calculate % of total farms, acres per capita, and the average land and building value by race</li>
-<li>You’ll likely need to reshape the data</li>
-<li>We haven’t learned all of the functions necessary to fully create the table, so we can strategize together on how to calculate percentage of class</li>
-</ul></li>
-</ul>
+<img data-src="images/widen.png" class="r-stretch"></section>
+<section id="exercise-three-collaborative" class="slide level2 smaller center">
+<h2>Exercise Three (collaborative)</h2>
+<p>See Posit assignment!</p>
 </section>
-<section id="combining-functions" class="slide level2 center">
-<h2>Combining Functions</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb8" data-code-line-numbers="1|2|3|9|12|15|18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a></a>state_vars_1930 <span class="sc">%&gt;%</span></span>
-<span id="cb8-2"><a></a>  <span class="fu">filter</span>(state <span class="sc">==</span> <span class="st">"North Carolina"</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb8-3"><a></a>  <span class="fu">mutate</span>(<span class="at">black_perc_total_farms =</span> (black_num_farms<span class="sc">/</span>(black_num_farms <span class="sc">+</span> white_num_farms)), </span>
-<span id="cb8-4"><a></a>         <span class="at">white_perc_total_farms =</span> (white_num_farms<span class="sc">/</span>(black_num_farms <span class="sc">+</span> white_num_farms)), </span>
-<span id="cb8-5"><a></a>         <span class="at">black_acres_per_cap =</span> black_acres<span class="sc">/</span>black_num_farms, </span>
-<span id="cb8-6"><a></a>         <span class="at">white_acres_per_cap =</span> white_acres<span class="sc">/</span>white_num_farms,, </span>
-<span id="cb8-7"><a></a>         <span class="at">black_avg_val =</span> black_farm_val<span class="sc">/</span>black_num_farms, </span>
-<span id="cb8-8"><a></a>         <span class="at">white_avg_val =</span> white_farm_val<span class="sc">/</span>white_num_farms) <span class="sc">%&gt;%</span> </span>
-<span id="cb8-9"><a></a>  <span class="fu">select</span>(state, black_num_farms, white_num_farms, black_perc_total_farms,</span>
-<span id="cb8-10"><a></a>         white_perc_total_farms, black_farm_val, white_farm_val, black_acres_per_cap,</span>
-<span id="cb8-11"><a></a>         white_acres_per_cap, black_avg_val, white_avg_val) <span class="sc">%&gt;%</span> </span>
-<span id="cb8-12"><a></a>  <span class="fu">pivot_longer</span>(<span class="at">cols =</span> <span class="fu">starts_with</span>(<span class="fu">c</span>(<span class="st">"black"</span>, <span class="st">"white"</span>)),</span>
-<span id="cb8-13"><a></a>               <span class="at">names_to =</span> <span class="st">"name"</span>, </span>
-<span id="cb8-14"><a></a>               <span class="at">values_to =</span> <span class="st">"value"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb8-15"><a></a>  <span class="fu">separate</span>(name, </span>
-<span id="cb8-16"><a></a>           <span class="at">into =</span> <span class="fu">c</span>(<span class="st">"race"</span>, <span class="st">"name"</span>),</span>
-<span id="cb8-17"><a></a>           <span class="at">sep =</span> <span class="st">"_"</span>, <span class="at">extra =</span> <span class="st">"merge"</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb8-18"><a></a>  <span class="fu">pivot_wider</span>(<span class="at">names_from =</span> race,</span>
-<span id="cb8-19"><a></a>              <span class="at">values_from =</span> value)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section>
-<section id="exercise-four-collaborative" class="slide level2 center">
-<h2>Exercise four (collaborative)</h2>
-<ol type="1">
-<li>Make the table pretty using the <code>gt</code> package.</li>
-<li>Create the second half of the table using the <code>county_vars_1930</code> dataframe for Edgecombe County, NC</li>
-</ol>
-</section>
-<section id="rural-electrification-surveys" class="slide level2 smaller center">
-<h2>Rural Electrification Surveys</h2>
-<ul>
-<li>Digitized data from 1934 Rural Electrification Surveys</li>
-<li>Dataset includes 412 entries, with 74 variables. Some highlights include:
-<ul>
-<li><code>USER_ID</code></li>
-<li><code>USER_NUMBER</code></li>
-<li><code>LINE</code></li>
-<li><code>USER_NAME</code></li>
-<li><code>COND_PREMISES_RC</code></li>
-<li><code>RATE_INTER_RC</code></li>
-<li><code>TENURE</code></li>
-<li><code>RACE</code></li>
-<li><code>CORRECT_FACTOR</code></li>
-<li><code>KWH_YEAR</code></li>
-<li><code>BILL_ANNUAL</code></li>
-</ul></li>
-</ul>
-</section>
-<section id="load-data" class="slide level2 center">
-<h2>Load Data</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a>survey_edgecombe <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"survey_edgecombe.xlsx"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section>
-<section id="exercise-four-collaborative-1" class="slide level2 smaller center">
-<h2>Exercise Four (collaborative)</h2>
-<ol type="1">
-<li><p>Compare average ratings for condition of the premise and interview quality by race and tenure. Remove data inputs with “Unknown” listed for race or tenure, and format the table nicely.</p></li>
-<li><p>Based on your findings, describe the role that rating the condition of the premise and interview quality played in determining the correction factor.</p></li>
-<li><p>Calculate the following for race and tenure. Remove data inputs with “Unknown” listed for race or tenure, and format the table nicely.</p>
-<ul>
-<li>Average uncorrected annual energy usage</li>
-<li>Average corrected annual energy usage</li>
-<li>Average bill</li>
-<li>Average cost per Kwh</li>
-</ul></li>
-</ol>
-</section>
-<section id="exercise-five-individual" class="slide level2 smaller center">
-<h2>Exercise Five (individual)</h2>
-<ol type="1">
-<li><p>Based on your findings, describe the role that rating the condition of the premise and interview quality played in determining the correction factor. How did this state-sanctioned process shape the energy landscape in Edgecombe County that may have lasting effects today?</p></li>
-<li><p>Reflect on your findings and connect them to our readings on distributional justice AND restorative justice.</p></li>
-</ol>
+<section id="exercise-four-individual" class="slide level2 smaller center">
+<h2>Exercise Four (individual)</h2>
+<p>See Posit assignment!</p>
 
 
 </section></section>
