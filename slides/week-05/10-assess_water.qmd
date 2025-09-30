@@ -1,5 +1,5 @@
 ---
-title: "[Assess] Culturally Important Species Case Study"
+title: "[Assess] Coastal Livelihoods Case Study"
 subtitle: "📍 Isle de Jean Charles, LA"
 date: "October 03, 2025"
 format: 

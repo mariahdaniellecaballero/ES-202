@@ -1,11 +1,11 @@
 ---
-title: "HW 05: Culturally Important Species Case Study"
+title: "HW 05: Coastal Livelihoods Case Study"
 date: "October 09, 2025"
 categories: "Homework"
 ---
 
 ## Overview 
-This case study focuses on data collected about culturally-important species made available by [Reyes-García et al., 2023](https://www.pnas.org/doi/10.1073/pnas.2217303120#data-availability), and connecting it back to foundational theoretical aspects of recognition justice.
+This case study focuses on publicly-available data from federal organizations such as the Federal Emergency Management Agency (FEMA), the Department of Transportation (DOT), the Centers for Disease Control (CDC), and the National Oceanic and Atmospheric Administration (NOAA) to understand the distributional and recognitional challenges facing Isle de Jean Charles.
 
 ## Learning Outcomes
 - Transform and summarize data for plotting
