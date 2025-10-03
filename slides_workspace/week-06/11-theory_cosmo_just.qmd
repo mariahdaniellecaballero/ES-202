@@ -1,6 +1,6 @@
 ---
 title: "[Theory] Cosmopolitan (in)Justice & Climate"
-subtitle: "📍 Dubai, UAE"
+subtitle: "📍 Sharm el Sheikh, Egypt"
 date: "October 07, 2025"
 format: 
   revealjs:
@@ -16,9 +16,4 @@ execute:
   freeze: auto
 ---
 
-# Centering Activity
-- "I Don't think so Honey", Group Projects
-
-# First half of class: 
-  - discuss group projects, potential challenges 
-  - 
+# slides will be posted 24 hours in advance of class.

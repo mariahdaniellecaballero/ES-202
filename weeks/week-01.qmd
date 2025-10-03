@@ -48,6 +48,6 @@ tbl-colwidths: [10,50,40]
 |                                                                                                           |
 |-----------------------------------------------------------------------------------------------------------|
 | **Tuesday:** Course Syllabus                                                                              |
-| **Friday:**  Holmes, A. G. D. (2020). [Researcher Positionality- A Consideration of Its Influence and Place in Qualitative Research - A New Researcher Guide](https://www.ulethbridge.ca/sites/default/files/2024/09/holmes_2020.pdf). 8(4) 1-10.                                                                     |
+| **Friday:**  Holmes, A. G. D. (2020). [Researcher Positionality- A Consideration of Its Influence and Place in Qualitative Research - A New Researcher Guide](https://drive.google.com/drive/folders/1Rh3roCYigTKkSGtQEma19-Ks9Id_dSxP). 8(4) 1-10.                                                                     |
 
-| **Friday:** Di Chiro, G. (2020). [Mobilizing 'intersectionality' in environmental justice research and action in a time of crisis](https://ebookcentral.proquest.com/lib/well/reader.action?docID=6228917&ppg=463&c=RVBVQg). Environmental justice, 316-333                                             
+| **Friday:** Di Chiro, G. (2020). [Mobilizing 'intersectionality' in environmental justice research and action in a time of crisis](https://drive.google.com/drive/folders/1Rh3roCYigTKkSGtQEma19-Ks9Id_dSxP). Environmental justice, 316-333                                             
