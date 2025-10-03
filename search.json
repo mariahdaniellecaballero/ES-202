@@ -370,7 +370,7 @@
     "href": "slides/week-05/10-assess_water.html#load-data",
     "title": "[Assess] Coastal Livelihoods Case Study",
     "section": "Load data",
-    "text": "Load data\n\nLA_tracts &lt;- read_sf(\"data/LA_tracts/LA_tracts.shp\")\n\n\n# | eval: true\n# | echo: false\nLA_tracts &lt;- read_sf(\"~/Library/CloudStorage/GoogleDrive-mc152@wellesley.edu/My Drive/Teaching/ES-202/Case Study Code/data/week_05/LA_tracts/LA_tracts.shp\")"
+    "text": "Load data\n\nLA_tracts &lt;- read_sf(\"data/LA_tracts/LA_tracts.shp\")"
   },
   {
     "objectID": "slides/week-05/10-assess_water.html#understanding-our-data",
@@ -489,7 +489,7 @@
     "href": "slides/week-05/10-assess_water.html#logistics",
     "title": "[Assess] Coastal Livelihoods Case Study",
     "section": "Logistics",
-    "text": "Logistics\n\nTwo pieces for Tuesday’s discussion\nGwen leading centering activity :-)"
+    "text": "Logistics\n\nTwo pieces for Tuesday’s discussion\nElizabeth leading centering activity :-)"
   },
   {
     "objectID": "slides/week-01/02-Application.html#what-we-read",
