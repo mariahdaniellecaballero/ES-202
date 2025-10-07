@@ -1,6 +1,6 @@
 ---
 title: "[Theory] Cosmopolitan (in)Justice & Climate"
-subtitle: "📍 Dubai, UAE"
+subtitle: "📍 Sharm el Sheikh, Egypt"
 date: "October 07, 2025"
 format: 
   revealjs:
@@ -16,4 +16,105 @@ execute:
   freeze: auto
 ---
 
-# Slides will be posted 24 hours in advance of class.
+##  Class Overview 
+
+- Centering activity
+- Cosmopolitan Justice
+- Intro to community case study (Sharm el Sheikh, Egypt)
+- Group Discussion + Debrief
+
+## Centering Activity
+
+- Elizabeth :-) 
+
+## Quick Updates
+- HW 04 is graded and feedback is published on Brightspace!
+- Reminder on AI policy
+  - tldr: I much prefer to chat in office hours, answer emails, or grade your slightly imperfect responses!🙂
+
+## Cosmopolitan Justice + Climate {.smaller}
+- **What we read:**
+  - Skillington, T. (2023). [Cosmopolitan Theories of Justice](https://drive.google.com/drive/folders/15WAmBBXQ1bChRIue7CYk15j1XO6fNbyM). In J. Ohlsson & S. Przybylinski (Eds.), Theorising Justice: A Primer for Social Scientists (1st ed., pp. 45–59). Bristol University Press. 
+  -  Klöck, C., Castro, P., Chin-Yee, S., B. Gurresø, C., Desmasures, C., Bouly, E., ... & De Pryck, K. (2024). [Beyond AOSIS: small island states’ presence and participation at COP27](https://drive.google.com/drive/folders/15WAmBBXQ1bChRIue7CYk15j1XO6fNbyM). Climate and Development, 1-12.|
+
+## Cosmopolitan Justice in Theory{.smaller}
+::: columns
+::: {.column width="50%"}
+
+- Most recent tenant in EJ scholarship (~2023)
+- Cosmopolitan justice dates back to Immanuel Kant's ideas of Stoics and Cynics (18th Century)
+  - Stoics: nested relationship of belonging between local and global humanity
+
+:::
+::: {.column width="50%"}
+![Skillington 2020](images/foundation.png)
+:::
+:::
+
+## Forms of Cosmopolitan Justice {.smaller}
+![Skillington 2020](images/forms_cosmo.png)
+
+
+## Cosmopolitan + Distributive Justice {.smaller}
+- Distribution should not be constrained by borders, but should be equitable across the globe
+  - If all individuals have moral value, shared across all of humanity, we are all morally bound to one another, regardless of citizenship. 
+- But how do we redress climate change implications at a global level? 
+
+## Cosmopolitan + Procedural Justice {.smaller}
+- Procedurally, democratic processes should address disconnect that may exist between decisionmaking processes and those affected.
+  - How do we create transnational governance structures, and do decisions supercede local decisions? 
+
+## Intro to community case study {.smaller}
+::: columns
+::: {.column width="50%"}
+- Welcome to COP27! 
+- November 2022 in Sharm el-Sheikh, Egypt 
+- 46,000 delegates from all over the world
+- Major Policy Tracks: 
+  - Loss and Damage Fund for impacted nations, largely funded by EU + other high emitters.
+  - Climate finance for adaptation
+  - Nationally Determined Contributions (NDC) targets 
+  - Fossil fuel phaseout 
+:::
+::: {.column width="50%"}
+![UNclimatechange, 2022](images/sharm.png)
+:::
+:::
+
+## Climate Negotiations {.smaller}
+- Each country sends delegates to negotiate on their behalf
+  - 16,000 delegates (largest was UAE with 1070 delegates, smallest was 1 delegate)
+- Observers can also attend (with badges)
+  - 11,700 NGO members
+  - 2,200 Other agencies/businesses 
+  - 3,300 media 
+- Negotiations last 2 weeks 
+
+## Focus on Small Island States {.smaller}
+- Excellent example of cosmopolitan, distributive, and procedural injustice. 
+- Small island states' Coalition approach has made significant changes in global climate policy. 
+- Alliance of Small Island States (AOSIS) considered the "conscience of the negotiations"
+
+## AOSIS Anthem {.smaller}
+{{< video https://youtu.be/eKNXSNc6rmc?si=b7Uoef3A4hsFuhEJ width="750" height="375" >}}
+
+## Challenges for AOSIS {.smaller}
+- Less resources, fewer delegates
+- 11,969 delegates, ranging from 0 to 92 per state
+  - Delegates often from NGOs, universities, or private sector
+- Breadth in size, landscapes, climate challenges, and interests
+- Variation in language proficiency on technical subjects
+
+## Skillington's Proposal for Global Cosmopolitan Distributive Justice {.smaller}
+"First, at a transnational level where a confederation of high polluting states *acknowledges its historical responsibilities for inflicting hardships on others*, as well as the ongoing capabilities of its members to address these harms and offer assistance to its primary victims. Second at the global level where a new global resource tax regime could be introduced to *accumulate revenues from high polluters around the world and redistribute funds* among those adversely affected by the effects of deteriorating climate conditions" (pp. 52)
+
+## AOSIS + Cosmopolitan Justice {.smaller}
+- Is the loss and damage fund an attempt at cosmopolitan distributive justice? 
+  - What's missing from COP negotiations for legal, moral, political and/or cultural cosmopolitanism?
+- Other governance structures for climate change and cosmopolitanism? 
+
+## Logistics 
+- Samantha leading centering activity :-)
+- Focus on more plots + EDA using COP2022 delegate data! 
+- [optional] Read R4DS Chapters 10 + 11
+
