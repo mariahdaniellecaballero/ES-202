@@ -9,7 +9,7 @@ This case study uses annual solar energy potential data from the National Renewa
 ## Learning Outcomes
 - Change a map's projection
 - Create a map using a shapefile
-- Work with raster data
+- Apply thematic components for interdisciplinary communication
 - Connect findings to theoretical understandings of recognition justice
 
 ## Instructions
