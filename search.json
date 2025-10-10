@@ -1712,7 +1712,7 @@
     "href": "weeks/week-07.html",
     "title": "Week 07",
     "section": "",
-    "text": "Important\n\n\n\nNote that there is no class on Tuesday, October 14, 2025 due to October break.\n\n\n\nLectures\n\n\n\n\n\n\nTopic\n\n\n\nDate\n\n\n\n\n\n\n\n\n[Theory] Community-Based Interventions & Theories of Change\n\n\nFri, Oct 17\n\n\n\n\n\n\nNo matching items\n\n\n\nAssignments\n\n\n\n\nAssignment\nTitle\nDue\n\n\n\n\n\nNo matching items\n\n\n\nReadings\n\n\n\n\n\n\nFriday: Kellogg, W. K. (2004). Chapter One: Introduction to Logic Models in Logic Model Development Guide. Kellogg Foundation.\n\n\nFriday: Kellogg, W. K. (2004). Chapter Two: Developing a Basic Logic Model for Your Program in Logic Model Development Guide. Kellogg Foundation.\n\n\nFriday: Kreger, M., Sargent, K., Arons, A., Standish, M., & Brindis, C. D. (2011). Creating an environmental justice framework for policy change in childhood asthma: a grassroots to treetops approach. American journal of public health, 101(S1), S208-S216."
+    "text": "Important\n\n\n\nNote that there is no class on Tuesday, October 14, 2025 due to October break.\n\n\n\nLectures\n\n\n\n\n\n\nTopic\n\n\n\nDate\n\n\n\n\n\n\n\n\n[Theory] Community-Based Interventions & Theories of Change\n\n\nFri, Oct 17\n\n\n\n\n\n\nNo matching items\n\n\n\nAssignments\n\n\n\n\nAssignment\nTitle\nDue\n\n\n\n\n\nNo matching items\n\n\n\nReadings\n\n\n\n\n\n\nFriday: Kellogg, W. K. (2004). Chapters One and Two in Logic Model Development Guide. Kellogg Foundation.\n\n\nFriday: Kreger, M., Sargent, K., Arons, A., Standish, M., & Brindis, C. D. (2011). Creating an environmental justice framework for policy change in childhood asthma: a grassroots to treetops approach. American journal of public health, 101(S1), S208-S216."
   },
   {
     "objectID": "weeks/week-05.html",
@@ -1768,7 +1768,7 @@
     "href": "weeks/week-06.html",
     "title": "Week 06",
     "section": "",
-    "text": "Lectures\n\n\n\n\n\n\nTopic\n\n\n\nDate\n\n\n\n\n\n\n\n\n[Theory] Cosmopolitan (in)Justice & Climate\n\n\nTue, Oct 07\n\n\n\n\n\n\n[Assess] Global Stocktake Case Study\n\n\nFri, Oct 10\n\n\n\n\n\n\nNo matching items\n\n\n\nAssignments\n\n\n\n\n\n\nAssignment\n\n\n\nTitle\n\n\n\nDue\n\n\n\n\n\n\n\n\nHomework\n\n\nHW 06: COP Delegate Case Study\n\n\nThu, Oct 16\n\n\n\n\n\n\nNo matching items\n\n\n\nReadings\n\n\n\n\n\n\nTuesday: Skillington, T. (2023). Cosmopolitan Theories of Justice. In J. Ohlsson & S. Przybylinski (Eds.), Theorising Justice: A Primer for Social Scientists (1st ed., pp. 45–59). Bristol University Press.\n\n\nTuesday: Klöck, C., Castro, P., Chin-Yee, S., B. Gurresø, C., Desmasures, C., Bouly, E., … & De Pryck, K. (2024). Beyond AOSIS: small island states’ presence and participation at COP27. Climate and Development, 1-12.\n\n\n[Optional Friday:] Wickham, H., Çetinkaya-Rundel, M., & Grolemund, G. (2023). R for Data Science (2e): Chapters 10 and 11. Sebastopol: O’Reilly."
+    "text": "Lectures\n\n\n\n\n\n\nTopic\n\n\n\nDate\n\n\n\n\n\n\n\n\n[Theory] Cosmopolitan (in)Justice & Climate\n\n\nTue, Oct 07\n\n\n\n\n\n\n[Assess] Global Stocktake Case Study\n\n\nFri, Oct 10\n\n\n\n\n\n\nNo matching items\n\n\n\nAssignments\n\n\n\n\n\n\nAssignment\n\n\n\nTitle\n\n\n\nDue\n\n\n\n\n\n\n\n\nHomework\n\n\nHW 06: COP Delegate Case Study\n\n\nFri, Oct 17\n\n\n\n\n\n\nNo matching items\n\n\n\nReadings\n\n\n\n\n\n\nTuesday: Skillington, T. (2023). Cosmopolitan Theories of Justice. In J. Ohlsson & S. Przybylinski (Eds.), Theorising Justice: A Primer for Social Scientists (1st ed., pp. 45–59). Bristol University Press.\n\n\nTuesday: Klöck, C., Castro, P., Chin-Yee, S., B. Gurresø, C., Desmasures, C., Bouly, E., … & De Pryck, K. (2024). Beyond AOSIS: small island states’ presence and participation at COP27. Climate and Development, 1-12.\n\n\n[Optional Friday:] Wickham, H., Çetinkaya-Rundel, M., & Grolemund, G. (2023). R for Data Science (2e): Chapters 10 and 11. Sebastopol: O’Reilly."
   },
   {
     "objectID": "weeks/week-02.html",
@@ -2841,7 +2841,7 @@
     "href": "slides/week-06/12-assess_COP.html#loading-data",
     "title": "[Assess] Global Stocktake Case Study",
     "section": "Loading data",
-    "text": "Loading data\n\ncop_delegates &lt;- read_csv(\"data/cop_delegates.csv\")"
+    "text": "Loading data\n\ncop_delegates &lt;- read_csv(\"data/cop_delegates.csv\")\n\n\n# | eval: true\n# | echo: false\ncop_delegates &lt;- read_csv(\"~/Library/CloudStorage/GoogleDrive-mc152@wellesley.edu/My Drive/Teaching/ES-202/Case Study Code/data/week_06/cop_delegates.csv\")\n\nNew names:\nRows: 367747 Columns: 22\n── Column specification\n──────────────────────────────────────────────────────── Delimiter: \",\" chr\n(11): Group_Type, Delegation, Honorific, Person_Name, Job_Title, Divisio... dbl\n(11): ...1, Virtual, Overflow, Year, Female, IGO, NGO, Observer, Party, ...\nℹ Use `spec()` to retrieve the full column specification for this data. ℹ\nSpecify the column types or set `show_col_types = FALSE` to quiet this message.\n• `` -&gt; `...1`"
   },
   {
     "objectID": "slides/week-06/12-assess_COP.html#take-a-look-at-data",
@@ -2939,14 +2939,14 @@
     "href": "slides/week-06/12-assess_COP.html#histogram",
     "title": "[Assess] Global Stocktake Case Study",
     "section": "Histogram",
-    "text": "Histogram\n\nAny important variation among delegate counts?"
+    "text": "Histogram\n\nAny important variation among delegate counts?\n\n\n\n`stat_bin()` using `bins = 30`. Pick better value `binwidth`."
   },
   {
     "objectID": "slides/week-06/12-assess_COP.html#histogram-bindwidth",
     "href": "slides/week-06/12-assess_COP.html#histogram-bindwidth",
     "title": "[Assess] Global Stocktake Case Study",
     "section": "Histogram (bindwidth)",
-    "text": "Histogram (bindwidth)\n\nWe can also filter our dataset to look closer at the variation among smaller parties (n &lt;100).\nchanging our binwidth allows us to see patterns among the majority of the data."
+    "text": "Histogram (bindwidth)\n\nWe can also filter our dataset to look closer at the variation among smaller parties (n &lt;100).\nchanging our binwidth allows us to see patterns among the majority of the data.\n\n\ncop_27 |&gt;\n  filter(n &lt; 100) |&gt;\n  ggplot() +\n  geom_histogram(aes(x = n), binwidth = 5)"
   },
   {
     "objectID": "slides/week-06/12-assess_COP.html#categorical-and-continuous",
@@ -3016,7 +3016,7 @@
     "href": "slides/week-06/12-assess_COP.html#not-bad",
     "title": "[Assess] Global Stocktake Case Study",
     "section": "Not bad!",
-    "text": "Not bad!"
+    "text": "Not bad!\n\n\nWarning: The `size` argument of `element_line()` is deprecated as of ggplot2 3.4.0.\nℹ Please use the `linewidth` argument instead.\nℹ The deprecated feature was likely used in the ggthemr package.\n  Please report the issue to the authors.\n\n\nWarning: The `size` argument of `element_rect()` is deprecated as of ggplot2 3.4.0.\nℹ Please use the `linewidth` argument instead.\nℹ The deprecated feature was likely used in the ggthemr package.\n  Please report the issue to the authors.\n\n\nWarning: The `scale_name` argument of `discrete_scale()` is deprecated as of ggplot2\n3.5.0."
   },
   {
     "objectID": "slides/week-06/12-assess_COP.html#ggplot2-cheatsheet",

@@ -271,6 +271,22 @@
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a>cop_delegates <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data/cop_delegates.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a><span class="co"># | eval: true</span></span>
+<span id="cb3-2"><a></a><span class="co"># | echo: false</span></span>
+<span id="cb3-3"><a></a>cop_delegates <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"~/Library/CloudStorage/GoogleDrive-mc152@wellesley.edu/My Drive/Teaching/ES-202/Case Study Code/data/week_06/cop_delegates.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>New names:
+Rows: 367747 Columns: 22
+── Column specification
+──────────────────────────────────────────────────────── Delimiter: "," chr
+(11): Group_Type, Delegation, Honorific, Person_Name, Job_Title, Divisio... dbl
+(11): ...1, Virtual, Overflow, Year, Female, IGO, NGO, Observer, Party, ...
+ℹ Use `spec()` to retrieve the full column specification for this data. ℹ
+Specify the column types or set `show_col_types = FALSE` to quiet this message.
+• `` -&gt; `...1`</code></pre>
+</div>
+</div>
 </section>
 <section id="take-a-look-at-data" class="slide level2 center">
 <h2>Take a look at data</h2>
@@ -292,8 +308,8 @@
 </ul></li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a>parties <span class="ot">&lt;-</span> cop_delegates <span class="sc">|&gt;</span></span>
-<span id="cb3-2"><a></a>  <span class="fu">filter</span>(Group_Type <span class="sc">==</span> <span class="st">"Parties"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a>parties <span class="ot">&lt;-</span> cop_delegates <span class="sc">|&gt;</span></span>
+<span id="cb5-2"><a></a>  <span class="fu">filter</span>(Group_Type <span class="sc">==</span> <span class="st">"Parties"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="applying-thematic-components-to-plots" class="slide level2 center">
@@ -316,9 +332,9 @@
 <li>Perhaps we were interested in how the number of party delegates has changed over time for AOSIS and non-AOSIS countries.</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a>annual_parties <span class="ot">&lt;-</span> parties <span class="sc">|&gt;</span></span>
-<span id="cb4-2"><a></a>  <span class="fu">group_by</span>(Year, AOSIS) <span class="sc">|&gt;</span></span>
-<span id="cb4-3"><a></a>  <span class="fu">count</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a></a>annual_parties <span class="ot">&lt;-</span> parties <span class="sc">|&gt;</span></span>
+<span id="cb6-2"><a></a>  <span class="fu">group_by</span>(Year, AOSIS) <span class="sc">|&gt;</span></span>
+<span id="cb6-3"><a></a>  <span class="fu">count</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="scalescont." class="slide level2 smaller center">
@@ -330,12 +346,12 @@
 </ul></li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a>annual_parties <span class="sc">|&gt;</span></span>
-<span id="cb5-2"><a></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
-<span id="cb5-3"><a></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">x =</span> Year, <span class="at">y =</span> n, <span class="at">color =</span> AOSIS))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a>annual_parties <span class="sc">|&gt;</span></span>
+<span id="cb7-2"><a></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb7-3"><a></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">x =</span> Year, <span class="at">y =</span> n, <span class="at">color =</span> AOSIS))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="12-assess_COP_files/figure-revealjs/unnamed-chunk-6-1.png" width="960" class="r-stretch"></section>
+<img data-src="12-assess_COP_files/figure-html/unnamed-chunk-6-1.png" width="672" class="r-stretch"></section>
 <section id="scales-axes-tickslabels" class="slide level2 smaller center">
 <h2>Scales (Axes ticks/labels)</h2>
 <ul>
@@ -343,18 +359,18 @@
 <li><code>scale_y_continuous()</code> allows you to change your y axis visuals. Let’s just add a comma to our delegate count <code>labels</code> using the <code>lable_comma()</code> function, so it’s more clear to folks.</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6" data-code-line-numbers="|4|5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a></a>annual_parties <span class="sc">|&gt;</span></span>
-<span id="cb6-2"><a></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
-<span id="cb6-3"><a></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">x =</span> Year, <span class="at">y =</span> n, <span class="at">color =</span> AOSIS)) <span class="sc">+</span></span>
-<span id="cb6-4"><a></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">1995</span>, <span class="dv">2025</span>, <span class="at">by =</span> <span class="dv">5</span>)) <span class="sc">+</span></span>
-<span id="cb6-5"><a></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> <span class="fu">label_comma</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8" data-code-line-numbers="|4|5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a></a>annual_parties <span class="sc">|&gt;</span></span>
+<span id="cb8-2"><a></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb8-3"><a></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">x =</span> Year, <span class="at">y =</span> n, <span class="at">color =</span> AOSIS)) <span class="sc">+</span></span>
+<span id="cb8-4"><a></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">1995</span>, <span class="dv">2025</span>, <span class="at">by =</span> <span class="dv">5</span>)) <span class="sc">+</span></span>
+<span id="cb8-5"><a></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> <span class="fu">label_comma</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="axes-scale-outcome" class="slide level2 smaller center">
 <h2>Axes scale outcome</h2>
 <p>Ah, much better!</p>
 
-<img data-src="12-assess_COP_files/figure-revealjs/unnamed-chunk-8-1.png" width="960" class="r-stretch"></section>
+<img data-src="12-assess_COP_files/figure-html/unnamed-chunk-8-1.png" width="672" class="r-stretch"></section>
 <section id="scales-colors" class="slide level2 smaller center">
 <h2>Scales (colors)</h2>
 <ul>
@@ -366,22 +382,22 @@
 </ul></li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7" data-code-line-numbers="|6|7|8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a>annual_parties <span class="sc">|&gt;</span></span>
-<span id="cb7-2"><a></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
-<span id="cb7-3"><a></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">x =</span> Year, <span class="at">y =</span> n, <span class="at">color =</span> AOSIS)) <span class="sc">+</span></span>
-<span id="cb7-4"><a></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">1995</span>, <span class="dv">2025</span>, <span class="at">by =</span> <span class="dv">5</span>)) <span class="sc">+</span></span>
-<span id="cb7-5"><a></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> <span class="fu">label_comma</span>()) <span class="sc">+</span></span>
-<span id="cb7-6"><a></a>  <span class="fu">scale_color_manual</span>(</span>
-<span id="cb7-7"><a></a>    <span class="at">values =</span> <span class="fu">c</span>(<span class="st">"lightblue"</span>, <span class="st">"gray50"</span>),</span>
-<span id="cb7-8"><a></a>    <span class="at">name =</span> <span class="st">"Coalition"</span>, <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"AOSIS"</span>, <span class="st">"Non-AOSIS"</span>)</span>
-<span id="cb7-9"><a></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9" data-code-line-numbers="|6|7|8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a>annual_parties <span class="sc">|&gt;</span></span>
+<span id="cb9-2"><a></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb9-3"><a></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">x =</span> Year, <span class="at">y =</span> n, <span class="at">color =</span> AOSIS)) <span class="sc">+</span></span>
+<span id="cb9-4"><a></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">1995</span>, <span class="dv">2025</span>, <span class="at">by =</span> <span class="dv">5</span>)) <span class="sc">+</span></span>
+<span id="cb9-5"><a></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> <span class="fu">label_comma</span>()) <span class="sc">+</span></span>
+<span id="cb9-6"><a></a>  <span class="fu">scale_color_manual</span>(</span>
+<span id="cb9-7"><a></a>    <span class="at">values =</span> <span class="fu">c</span>(<span class="st">"lightblue"</span>, <span class="st">"gray50"</span>),</span>
+<span id="cb9-8"><a></a>    <span class="at">name =</span> <span class="st">"Coalition"</span>, <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"AOSIS"</span>, <span class="st">"Non-AOSIS"</span>)</span>
+<span id="cb9-9"><a></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="color-scales-outcome" class="slide level2 smaller center">
 <h2>Color scales outcome</h2>
 <p>Looking good!</p>
 
-<img data-src="12-assess_COP_files/figure-revealjs/unnamed-chunk-10-1.png" width="960" class="r-stretch"></section>
+<img data-src="12-assess_COP_files/figure-html/unnamed-chunk-10-1.png" width="672" class="r-stretch"></section>
 <section id="lastly-themes" class="slide level2 smaller center">
 <h2>Lastly, Themes!</h2>
 <ul>
@@ -393,18 +409,18 @@
 </ul></li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8" data-code-line-numbers="|10|11|12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a></a>annual_parties <span class="sc">|&gt;</span></span>
-<span id="cb8-2"><a></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
-<span id="cb8-3"><a></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">x =</span> Year, <span class="at">y =</span> n, <span class="at">color =</span> AOSIS)) <span class="sc">+</span></span>
-<span id="cb8-4"><a></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">1995</span>, <span class="dv">2025</span>, <span class="at">by =</span> <span class="dv">5</span>)) <span class="sc">+</span></span>
-<span id="cb8-5"><a></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> <span class="fu">label_comma</span>()) <span class="sc">+</span></span>
-<span id="cb8-6"><a></a>  <span class="fu">scale_color_manual</span>(</span>
-<span id="cb8-7"><a></a>    <span class="at">values =</span> <span class="fu">c</span>(<span class="st">"lightblue"</span>, <span class="st">"gray70"</span>),</span>
-<span id="cb8-8"><a></a>    <span class="at">name =</span> <span class="st">"Party Coalition"</span>, <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"AOSIS"</span>, <span class="st">"Non-AOSIS"</span>)</span>
-<span id="cb8-9"><a></a>  ) <span class="sc">+</span></span>
-<span id="cb8-10"><a></a>  <span class="fu">labs</span>(<span class="at">y =</span> <span class="st">"Number of Delegates"</span>) <span class="sc">+</span></span>
-<span id="cb8-11"><a></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
-<span id="cb8-12"><a></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"bottom"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb10" data-code-line-numbers="|10|11|12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a></a>annual_parties <span class="sc">|&gt;</span></span>
+<span id="cb10-2"><a></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb10-3"><a></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">x =</span> Year, <span class="at">y =</span> n, <span class="at">color =</span> AOSIS)) <span class="sc">+</span></span>
+<span id="cb10-4"><a></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">1995</span>, <span class="dv">2025</span>, <span class="at">by =</span> <span class="dv">5</span>)) <span class="sc">+</span></span>
+<span id="cb10-5"><a></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> <span class="fu">label_comma</span>()) <span class="sc">+</span></span>
+<span id="cb10-6"><a></a>  <span class="fu">scale_color_manual</span>(</span>
+<span id="cb10-7"><a></a>    <span class="at">values =</span> <span class="fu">c</span>(<span class="st">"lightblue"</span>, <span class="st">"gray70"</span>),</span>
+<span id="cb10-8"><a></a>    <span class="at">name =</span> <span class="st">"Party Coalition"</span>, <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"AOSIS"</span>, <span class="st">"Non-AOSIS"</span>)</span>
+<span id="cb10-9"><a></a>  ) <span class="sc">+</span></span>
+<span id="cb10-10"><a></a>  <span class="fu">labs</span>(<span class="at">y =</span> <span class="st">"Number of Delegates"</span>) <span class="sc">+</span></span>
+<span id="cb10-11"><a></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb10-12"><a></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"bottom"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="ex_01" class="slide level2 smaller center">
@@ -440,14 +456,14 @@
 <li><code>geom_histogram()</code> gives us a great look at variation in a variable.</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a>cop_27 <span class="ot">&lt;-</span> parties <span class="sc">|&gt;</span></span>
-<span id="cb9-2"><a></a>  <span class="fu">filter</span>(Year <span class="sc">==</span> <span class="dv">2022</span>) <span class="sc">|&gt;</span></span>
-<span id="cb9-3"><a></a>  <span class="fu">count</span>(AOSIS, Delegation)</span>
-<span id="cb9-4"><a></a></span>
-<span id="cb9-5"><a></a><span class="co"># plot</span></span>
-<span id="cb9-6"><a></a>cop_27 <span class="sc">|&gt;</span></span>
-<span id="cb9-7"><a></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
-<span id="cb9-8"><a></a>  <span class="fu">geom_histogram</span>(<span class="fu">aes</span>(<span class="at">x =</span> n))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a>cop_27 <span class="ot">&lt;-</span> parties <span class="sc">|&gt;</span></span>
+<span id="cb11-2"><a></a>  <span class="fu">filter</span>(Year <span class="sc">==</span> <span class="dv">2022</span>) <span class="sc">|&gt;</span></span>
+<span id="cb11-3"><a></a>  <span class="fu">count</span>(AOSIS, Delegation)</span>
+<span id="cb11-4"><a></a></span>
+<span id="cb11-5"><a></a><span class="co"># plot</span></span>
+<span id="cb11-6"><a></a>cop_27 <span class="sc">|&gt;</span></span>
+<span id="cb11-7"><a></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb11-8"><a></a>  <span class="fu">geom_histogram</span>(<span class="fu">aes</span>(<span class="at">x =</span> n))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="histogram" class="slide level2 smaller center">
@@ -455,16 +471,27 @@
 <ul>
 <li>Any important variation among delegate counts?</li>
 </ul>
+<div class="cell">
+<div class="cell-output cell-output-stderr">
+<pre><code>`stat_bin()` using `bins = 30`. Pick better value `binwidth`.</code></pre>
+</div>
 
-<img data-src="12-assess_COP_files/figure-revealjs/unnamed-chunk-13-1.png" width="960" class="r-stretch"></section>
+</div>
+<img data-src="12-assess_COP_files/figure-html/unnamed-chunk-13-1.png" width="672" class="r-stretch"></section>
 <section id="histogram-bindwidth" class="slide level2 smaller center">
 <h2>Histogram (bindwidth)</h2>
 <ul>
 <li>We can also filter our dataset to look closer at the variation among smaller parties (n &lt;100).</li>
 <li>changing our <code>binwidth</code> allows us to see patterns among the majority of the data.</li>
 </ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a></a>cop_27 <span class="sc">|&gt;</span></span>
+<span id="cb13-2"><a></a>  <span class="fu">filter</span>(n <span class="sc">&lt;</span> <span class="dv">100</span>) <span class="sc">|&gt;</span></span>
+<span id="cb13-3"><a></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb13-4"><a></a>  <span class="fu">geom_histogram</span>(<span class="fu">aes</span>(<span class="at">x =</span> n), <span class="at">binwidth =</span> <span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
-<img data-src="12-assess_COP_files/figure-revealjs/unnamed-chunk-14-1.png" width="960" class="r-stretch"></section>
+</div>
+<img data-src="12-assess_COP_files/figure-html/unnamed-chunk-14-1.png" width="672" class="r-stretch"></section>
 <section id="categorical-and-continuous" class="slide level2 smaller center">
 <h2>Categorical and Continuous</h2>
 <ul>
@@ -472,16 +499,16 @@
 <li>A boxplot is a great way to visualize continuous data with a categorical grouping!</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a></a>delegate_size <span class="ot">&lt;-</span> parties <span class="sc">|&gt;</span></span>
-<span id="cb10-2"><a></a>  <span class="fu">group_by</span>(AOSIS, Delegation, Year) <span class="sc">|&gt;</span></span>
-<span id="cb10-3"><a></a>  <span class="fu">tally</span>()</span>
-<span id="cb10-4"><a></a></span>
-<span id="cb10-5"><a></a>delegate_size <span class="sc">|&gt;</span></span>
-<span id="cb10-6"><a></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
-<span id="cb10-7"><a></a>  <span class="fu">geom_boxplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> AOSIS, <span class="at">y =</span> n))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a></a>delegate_size <span class="ot">&lt;-</span> parties <span class="sc">|&gt;</span></span>
+<span id="cb14-2"><a></a>  <span class="fu">group_by</span>(AOSIS, Delegation, Year) <span class="sc">|&gt;</span></span>
+<span id="cb14-3"><a></a>  <span class="fu">tally</span>()</span>
+<span id="cb14-4"><a></a></span>
+<span id="cb14-5"><a></a>delegate_size <span class="sc">|&gt;</span></span>
+<span id="cb14-6"><a></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb14-7"><a></a>  <span class="fu">geom_boxplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> AOSIS, <span class="at">y =</span> n))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="12-assess_COP_files/figure-revealjs/unnamed-chunk-15-1.png" width="960" class="r-stretch"></section>
+<img data-src="12-assess_COP_files/figure-html/unnamed-chunk-15-1.png" width="672" class="r-stretch"></section>
 <section id="two-categorical-variables" class="slide level2 smaller center">
 <h2>Two Categorical Variables</h2>
 <ul>
@@ -493,18 +520,18 @@
 </ul></li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a>cop_27_aosis <span class="ot">&lt;-</span> parties <span class="sc">|&gt;</span></span>
-<span id="cb11-2"><a></a>  <span class="fu">filter</span>(Year <span class="sc">==</span> <span class="dv">2022</span> <span class="sc">&amp;</span> AOSIS <span class="sc">==</span> <span class="st">"AOSIS"</span>)</span>
-<span id="cb11-3"><a></a></span>
-<span id="cb11-4"><a></a>cop_27_aosis <span class="sc">|&gt;</span></span>
-<span id="cb11-5"><a></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
-<span id="cb11-6"><a></a>  <span class="fu">geom_count</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">factor</span>(Female), <span class="at">y =</span> Delegation))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a></a>cop_27_aosis <span class="ot">&lt;-</span> parties <span class="sc">|&gt;</span></span>
+<span id="cb15-2"><a></a>  <span class="fu">filter</span>(Year <span class="sc">==</span> <span class="dv">2022</span> <span class="sc">&amp;</span> AOSIS <span class="sc">==</span> <span class="st">"AOSIS"</span>)</span>
+<span id="cb15-3"><a></a></span>
+<span id="cb15-4"><a></a>cop_27_aosis <span class="sc">|&gt;</span></span>
+<span id="cb15-5"><a></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb15-6"><a></a>  <span class="fu">geom_count</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">factor</span>(Female), <span class="at">y =</span> Delegation))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="geom_count" class="slide level2 smaller center">
 <h2>geom_count()</h2>
 
-<img data-src="12-assess_COP_files/figure-revealjs/unnamed-chunk-17-1.png" width="960" class="r-stretch"></section>
+<img data-src="12-assess_COP_files/figure-html/unnamed-chunk-17-1.png" width="672" class="r-stretch"></section>
 <section id="ex_02" class="slide level2 center">
 <h2>EX_02</h2>
 <ol type="1">
@@ -540,11 +567,11 @@
 <section id="summarizing-my-data" class="slide level2 smaller center">
 <h2>Summarizing my data</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a></a>higher_ed <span class="ot">&lt;-</span> cop_delegates <span class="sc">|&gt;</span></span>
-<span id="cb12-2"><a></a>  <span class="fu">filter</span>(<span class="fu">str_detect</span>(Affiliation, <span class="st">"University"</span>) <span class="sc">|</span> </span>
-<span id="cb12-3"><a></a>           <span class="fu">str_detect</span>(Affiliation, <span class="st">"College"</span>)) <span class="sc">|&gt;</span> </span>
-<span id="cb12-4"><a></a>  <span class="fu">group_by</span>(Year, AOSIS) <span class="sc">|&gt;</span></span>
-<span id="cb12-5"><a></a>  <span class="fu">count</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a></a>higher_ed <span class="ot">&lt;-</span> cop_delegates <span class="sc">|&gt;</span></span>
+<span id="cb16-2"><a></a>  <span class="fu">filter</span>(<span class="fu">str_detect</span>(Affiliation, <span class="st">"University"</span>) <span class="sc">|</span> </span>
+<span id="cb16-3"><a></a>           <span class="fu">str_detect</span>(Affiliation, <span class="st">"College"</span>)) <span class="sc">|&gt;</span> </span>
+<span id="cb16-4"><a></a>  <span class="fu">group_by</span>(Year, AOSIS) <span class="sc">|&gt;</span></span>
+<span id="cb16-5"><a></a>  <span class="fu">count</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="r-graph-gallery" class="slide level2 smaller center">
@@ -558,17 +585,35 @@
 </ul></li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a></a><span class="fu">ggthemr</span>(<span class="st">"solarized"</span>)</span>
-<span id="cb13-2"><a></a></span>
-<span id="cb13-3"><a></a>higher_ed <span class="sc">%&gt;%</span></span>
-<span id="cb13-4"><a></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
-<span id="cb13-5"><a></a>    <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">x=</span>Year, <span class="at">y=</span>n, <span class="at">group=</span>AOSIS, <span class="at">color=</span>AOSIS))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a></a><span class="fu">ggthemr</span>(<span class="st">"solarized"</span>)</span>
+<span id="cb17-2"><a></a></span>
+<span id="cb17-3"><a></a>higher_ed <span class="sc">%&gt;%</span></span>
+<span id="cb17-4"><a></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb17-5"><a></a>    <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">x=</span>Year, <span class="at">y=</span>n, <span class="at">group=</span>AOSIS, <span class="at">color=</span>AOSIS))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="not-bad" class="slide level2 smaller center">
 <h2>Not bad!</h2>
+<div class="cell">
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: The `size` argument of `element_line()` is deprecated as of ggplot2 3.4.0.
+ℹ Please use the `linewidth` argument instead.
+ℹ The deprecated feature was likely used in the ggthemr package.
+  Please report the issue to the authors.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: The `size` argument of `element_rect()` is deprecated as of ggplot2 3.4.0.
+ℹ Please use the `linewidth` argument instead.
+ℹ The deprecated feature was likely used in the ggthemr package.
+  Please report the issue to the authors.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: The `scale_name` argument of `discrete_scale()` is deprecated as of ggplot2
+3.5.0.</code></pre>
+</div>
 
-<img data-src="12-assess_COP_files/figure-revealjs/unnamed-chunk-20-1.png" width="960" class="r-stretch"></section>
+</div>
+<img data-src="12-assess_COP_files/figure-html/unnamed-chunk-20-1.png" width="672" class="r-stretch"></section>
 <section id="ggplot2-cheatsheet" class="slide level2 smaller center">
 <h2>GGplot2 Cheatsheet</h2>
 <ul>
@@ -578,21 +623,21 @@
 <section id="ta-da" class="slide level2 smaller center">
 <h2>Ta da!</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a></a>higher_ed <span class="sc">|&gt;</span></span>
-<span id="cb14-2"><a></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
-<span id="cb14-3"><a></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">x =</span> Year, <span class="at">y =</span> n, <span class="at">group =</span> AOSIS, <span class="at">color =</span> AOSIS),</span>
-<span id="cb14-4"><a></a>    <span class="at">linewidth =</span> <span class="fl">1.5</span></span>
-<span id="cb14-5"><a></a>  ) <span class="sc">+</span></span>
-<span id="cb14-6"><a></a>  <span class="fu">labs</span>(<span class="at">y =</span> <span class="st">"Number of Higher Ed Delegates"</span>) <span class="sc">+</span></span>
-<span id="cb14-7"><a></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">1995</span>, <span class="dv">2025</span>, <span class="at">by =</span> <span class="dv">5</span>)) <span class="sc">+</span></span>
-<span id="cb14-8"><a></a>  <span class="fu">scale_y_continuous</span>(</span>
-<span id="cb14-9"><a></a>    <span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">3000</span>, <span class="at">by =</span> <span class="dv">500</span>),</span>
-<span id="cb14-10"><a></a>    <span class="at">labels =</span> <span class="fu">label_comma</span>()</span>
-<span id="cb14-11"><a></a>  ) <span class="sc">+</span></span>
-<span id="cb14-12"><a></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"bottom"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a></a>higher_ed <span class="sc">|&gt;</span></span>
+<span id="cb21-2"><a></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb21-3"><a></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">x =</span> Year, <span class="at">y =</span> n, <span class="at">group =</span> AOSIS, <span class="at">color =</span> AOSIS),</span>
+<span id="cb21-4"><a></a>    <span class="at">linewidth =</span> <span class="fl">1.5</span></span>
+<span id="cb21-5"><a></a>  ) <span class="sc">+</span></span>
+<span id="cb21-6"><a></a>  <span class="fu">labs</span>(<span class="at">y =</span> <span class="st">"Number of Higher Ed Delegates"</span>) <span class="sc">+</span></span>
+<span id="cb21-7"><a></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">1995</span>, <span class="dv">2025</span>, <span class="at">by =</span> <span class="dv">5</span>)) <span class="sc">+</span></span>
+<span id="cb21-8"><a></a>  <span class="fu">scale_y_continuous</span>(</span>
+<span id="cb21-9"><a></a>    <span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">3000</span>, <span class="at">by =</span> <span class="dv">500</span>),</span>
+<span id="cb21-10"><a></a>    <span class="at">labels =</span> <span class="fu">label_comma</span>()</span>
+<span id="cb21-11"><a></a>  ) <span class="sc">+</span></span>
+<span id="cb21-12"><a></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"bottom"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="12-assess_COP_files/figure-revealjs/unnamed-chunk-21-1.png" width="960" class="r-stretch"></section>
+<img data-src="12-assess_COP_files/figure-html/unnamed-chunk-21-1.png" width="672" class="r-stretch"></section>
 <section id="ex_03-ex_04" class="slide level2 center">
 <h2>EX_03 + EX_04:</h2>
 <ul>
@@ -826,44 +871,6 @@
         ]
       });
     </script>
-    
-    <script>
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-      // slide changes (different for each slide format).
-      (function () {
-        // dispatch for htmlwidgets
-        function fireSlideEnter() {
-          const event = window.document.createEvent("Event");
-          event.initEvent("slideenter", true, true);
-          window.document.dispatchEvent(event);
-        }
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-          fireSlideEnter();
-
-          // dispatch for shiny
-          if (window.jQuery) {
-            if (previousSlide) {
-              window.jQuery(previousSlide).trigger("hidden");
-            }
-            if (currentSlide) {
-              window.jQuery(currentSlide).trigger("shown");
-            }
-          }
-        }
-
-        // hookup for slidy
-        if (window.w3c_slidy) {
-          window.w3c_slidy.add_observer(function (slide_num) {
-            // slide_num starts at position 1
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-          });
-        }
-
-      })();
-    </script>
-
     <script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
         const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
