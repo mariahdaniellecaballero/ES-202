@@ -1768,7 +1768,7 @@
     "href": "weeks/week-06.html",
     "title": "Week 06",
     "section": "",
-    "text": "Lectures\n\n\n\n\n\n\nTopic\n\n\n\nDate\n\n\n\n\n\n\n\n\n[Theory] Cosmopolitan (in)Justice & Climate\n\n\nTue, Oct 07\n\n\n\n\n\n\n[Assess] Global Stocktake Case Study\n\n\nFri, Oct 10\n\n\n\n\n\n\nNo matching items\n\n\n\nAssignments\n\n\n\n\n\n\nAssignment\n\n\n\nTitle\n\n\n\nDue\n\n\n\n\n\n\n\n\nHomework\n\n\nHW 06: Global Stocktake Case Study\n\n\nThu, Oct 16\n\n\n\n\n\n\nNo matching items\n\n\n\nReadings\n\n\n\n\n\n\nTuesday: Skillington, T. (2023). Cosmopolitan Theories of Justice. In J. Ohlsson & S. Przybylinski (Eds.), Theorising Justice: A Primer for Social Scientists (1st ed., pp. 45–59). Bristol University Press.\n\n\nTuesday: Klöck, C., Castro, P., Chin-Yee, S., B. Gurresø, C., Desmasures, C., Bouly, E., … & De Pryck, K. (2024). Beyond AOSIS: small island states’ presence and participation at COP27. Climate and Development, 1-12.\n\n\n[Optional Friday:] Wickham, H., Çetinkaya-Rundel, M., & Grolemund, G. (2023). R for Data Science (2e): Chapters 10 and 11. Sebastopol: O’Reilly."
+    "text": "Lectures\n\n\n\n\n\n\nTopic\n\n\n\nDate\n\n\n\n\n\n\n\n\n[Theory] Cosmopolitan (in)Justice & Climate\n\n\nTue, Oct 07\n\n\n\n\n\n\n[Assess] Global Stocktake Case Study\n\n\nFri, Oct 10\n\n\n\n\n\n\nNo matching items\n\n\n\nAssignments\n\n\n\n\n\n\nAssignment\n\n\n\nTitle\n\n\n\nDue\n\n\n\n\n\n\n\n\nHomework\n\n\nHW 06: COP Delegate Case Study\n\n\nThu, Oct 16\n\n\n\n\n\n\nNo matching items\n\n\n\nReadings\n\n\n\n\n\n\nTuesday: Skillington, T. (2023). Cosmopolitan Theories of Justice. In J. Ohlsson & S. Przybylinski (Eds.), Theorising Justice: A Primer for Social Scientists (1st ed., pp. 45–59). Bristol University Press.\n\n\nTuesday: Klöck, C., Castro, P., Chin-Yee, S., B. Gurresø, C., Desmasures, C., Bouly, E., … & De Pryck, K. (2024). Beyond AOSIS: small island states’ presence and participation at COP27. Climate and Development, 1-12.\n\n\n[Optional Friday:] Wickham, H., Çetinkaya-Rundel, M., & Grolemund, G. (2023). R for Data Science (2e): Chapters 10 and 11. Sebastopol: O’Reilly."
   },
   {
     "objectID": "weeks/week-02.html",
@@ -1885,42 +1885,42 @@
   {
     "objectID": "hw/w6-hw06.html",
     "href": "hw/w6-hw06.html",
-    "title": "HW 06: Global Stocktake Case Study",
+    "title": "HW 06: COP Delegate Case Study",
     "section": "",
-    "text": "This case study uses global greenhouse gas (GHG) emission data from the European Commission’s Emissions Database for Global Atmospheric Research, and connecting it back to foundational theoretical aspects of cosmopolitan justice."
+    "text": "This case study uses delegate data from over 30 years of international climate change conferences published open source in a Nature Scientific Dataset, and connecting it back to foundational theoretical aspects of cosmopolitan justice."
   },
   {
     "objectID": "hw/w6-hw06.html#overview",
     "href": "hw/w6-hw06.html#overview",
-    "title": "HW 06: Global Stocktake Case Study",
+    "title": "HW 06: COP Delegate Case Study",
     "section": "",
-    "text": "This case study uses global greenhouse gas (GHG) emission data from the European Commission’s Emissions Database for Global Atmospheric Research, and connecting it back to foundational theoretical aspects of cosmopolitan justice."
+    "text": "This case study uses delegate data from over 30 years of international climate change conferences published open source in a Nature Scientific Dataset, and connecting it back to foundational theoretical aspects of cosmopolitan justice."
   },
   {
     "objectID": "hw/w6-hw06.html#learning-outcomes",
     "href": "hw/w6-hw06.html#learning-outcomes",
-    "title": "HW 06: Global Stocktake Case Study",
+    "title": "HW 06: COP Delegate Case Study",
     "section": "Learning Outcomes",
-    "text": "Learning Outcomes\n\nConduct Exploratory Data Analysis (EDA)\nIdentify potential patterns in data\nUse the foundations of good graphics to communicate findings\nConnect findings to theoretical understandings of cosmopolitan justice"
+    "text": "Learning Outcomes\n\nApply thematic components to ggplot figures\nConduct Exploratory Data Analysis (EDA)\nUnderstand data visualization options for different data relationships\nConnect findings to theoretical understandings of cosmopolitan justice"
   },
   {
     "objectID": "hw/w6-hw06.html#instructions",
     "href": "hw/w6-hw06.html#instructions",
-    "title": "HW 06: Global Stocktake Case Study",
+    "title": "HW 06: COP Delegate Case Study",
     "section": "Instructions",
     "text": "Instructions\n\nNavigate to Posit Cloud and select the HW 06 assignment.\nFollow along in class, and complete the assignment (if needed) outside of class.\nRender the quarto document as a pdf."
   },
   {
     "objectID": "hw/w6-hw06.html#grading",
     "href": "hw/w6-hw06.html#grading",
-    "title": "HW 06: Global Stocktake Case Study",
+    "title": "HW 06: COP Delegate Case Study",
     "section": "Grading",
     "text": "Grading\nCase studies are each 10% of your grade."
   },
   {
     "objectID": "hw/w6-hw06.html#submission",
     "href": "hw/w6-hw06.html#submission",
-    "title": "HW 06: Global Stocktake Case Study",
+    "title": "HW 06: COP Delegate Case Study",
     "section": "Submission",
     "text": "Submission\nSubmit the pdf to Brightspace here."
   },
@@ -3437,5 +3437,292 @@
     "crumbs": [
       "Syllabus"
     ]
+  },
+  {
+    "objectID": "slides/week-06/12-assess_COP.html#learning-outcomes",
+    "href": "slides/week-06/12-assess_COP.html#learning-outcomes",
+    "title": "[Assess] Global Stocktake Case Study",
+    "section": "Learning Outcomes",
+    "text": "Learning Outcomes\n\nApply thematic components to ggplot figures\nConduct Exploratory Data Analysis (EDA)\nUnderstand data visualization options for different data relationships\nConnect findings to theoretical understandings of cosmopolitan justice"
+  },
+  {
+    "objectID": "slides/week-06/12-assess_COP.html#centering-activity",
+    "href": "slides/week-06/12-assess_COP.html#centering-activity",
+    "title": "[Assess] Global Stocktake Case Study",
+    "section": "Centering Activity",
+    "text": "Centering Activity\n\nClara :-)"
+  },
+  {
+    "objectID": "slides/week-06/12-assess_COP.html#setting-the-stage",
+    "href": "slides/week-06/12-assess_COP.html#setting-the-stage",
+    "title": "[Assess] Global Stocktake Case Study",
+    "section": "Setting the Stage",
+    "text": "Setting the Stage\n\nThis week’s focus is on formatting plots and Exploratory Data Analysis!\nUsing delegate data for COP1-COP29 (1995 to 2024)"
+  },
+  {
+    "objectID": "slides/week-06/12-assess_COP.html#lets-get-started",
+    "href": "slides/week-06/12-assess_COP.html#lets-get-started",
+    "title": "[Assess] Global Stocktake Case Study",
+    "section": "Let’s get Started",
+    "text": "Let’s get Started\n\nFind your pair\nOpen Posit"
+  },
+  {
+    "objectID": "slides/week-06/12-assess_COP.html#loading-packages",
+    "href": "slides/week-06/12-assess_COP.html#loading-packages",
+    "title": "[Assess] Global Stocktake Case Study",
+    "section": "Loading packages",
+    "text": "Loading packages\n\nWe’ll need to install three new packages\n\nRun lines 1-3 in you console without the “#”\nPaste lines 4-8 in your analysis.qmd file\nSometimes we might want to use packages currently under development, in which case we can use the install_github() function to install the ggthemr package.\n\n\n\n# install.packages(\"scales\")\n# install.packages(\"RColorBrewer\")\n# install.packages(\"devtools\")\nlibrary(readr)\nlibrary(tidyverse)\nlibrary(scales)\nlibrary(RColorBrewer)\nlibrary(devtools)\n\n# devtools::install_github('Mikata-Project/ggthemr')\nlibrary(ggthemr)"
+  },
+  {
+    "objectID": "slides/week-06/12-assess_COP.html#todays-recipe",
+    "href": "slides/week-06/12-assess_COP.html#todays-recipe",
+    "title": "[Assess] Global Stocktake Case Study",
+    "section": "Today’s Recipe",
+    "text": "Today’s Recipe"
+  },
+  {
+    "objectID": "slides/week-06/12-assess_COP.html#where-were-headed",
+    "href": "slides/week-06/12-assess_COP.html#where-were-headed",
+    "title": "[Assess] Global Stocktake Case Study",
+    "section": "Where we’re headed",
+    "text": "Where we’re headed"
+  },
+  {
+    "objectID": "slides/week-06/12-assess_COP.html#loading-data",
+    "href": "slides/week-06/12-assess_COP.html#loading-data",
+    "title": "[Assess] Global Stocktake Case Study",
+    "section": "Loading data",
+    "text": "Loading data\n\ncop_delegates &lt;- read_csv(\"data/cop_delegates.csv\")"
+  },
+  {
+    "objectID": "slides/week-06/12-assess_COP.html#take-a-look-at-data",
+    "href": "slides/week-06/12-assess_COP.html#take-a-look-at-data",
+    "title": "[Assess] Global Stocktake Case Study",
+    "section": "Take a look at data",
+    "text": "Take a look at data\n\nThere are 367,747 delegates in this dataset spanning from COP1 to COP29.\nThere are 21 variables:\n\nWhat information do we know about each delegate?\nWhich variables are relevant for thinking about cosmopolitan justice and COP negotiations?"
+  },
+  {
+    "objectID": "slides/week-06/12-assess_COP.html#subsetting-the-data",
+    "href": "slides/week-06/12-assess_COP.html#subsetting-the-data",
+    "title": "[Assess] Global Stocktake Case Study",
+    "section": "Subsetting the Data",
+    "text": "Subsetting the Data\n\nLet’s filter only for those involved in negotiations.\n\nThis brings our df down to a meager 197,621 people over 30 years.\n\n\n\nparties &lt;- cop_delegates |&gt;\n  filter(Group_Type == \"Parties\")"
+  },
+  {
+    "objectID": "slides/week-06/12-assess_COP.html#applying-thematic-components-to-plots",
+    "href": "slides/week-06/12-assess_COP.html#applying-thematic-components-to-plots",
+    "title": "[Assess] Global Stocktake Case Study",
+    "section": "Applying Thematic Components to Plots",
+    "text": "Applying Thematic Components to Plots\n\nWe learned about geoms, aestheic mappings, plot statistics, positions, and facets last week!\n\nLet’s talk scales and themes this week."
+  },
+  {
+    "objectID": "slides/week-06/12-assess_COP.html#scales",
+    "href": "slides/week-06/12-assess_COP.html#scales",
+    "title": "[Assess] Global Stocktake Case Study",
+    "section": "Scales",
+    "text": "Scales\n\nScales are used to customize your aesthetic mappings. We most frequently will use scales to:\n\nchange axis ticks\nadd color palettes to your plots\n\nPerhaps we were interested in how the number of party delegates has changed over time for AOSIS and non-AOSIS countries.\n\n\nannual_parties &lt;- parties |&gt;\n  group_by(Year, AOSIS) |&gt;\n  count()"
+  },
+  {
+    "objectID": "slides/week-06/12-assess_COP.html#scalescont.",
+    "href": "slides/week-06/12-assess_COP.html#scalescont.",
+    "title": "[Assess] Global Stocktake Case Study",
+    "section": "Scales(cont.)",
+    "text": "Scales(cont.)\n\nLet’s start with a basic line graph.\n\nHow are the axes looking?\n\n\n\nannual_parties |&gt;\n  ggplot() +\n  geom_line(aes(x = Year, y = n, color = AOSIS))"
+  },
+  {
+    "objectID": "slides/week-06/12-assess_COP.html#scales-axes-tickes",
+    "href": "slides/week-06/12-assess_COP.html#scales-axes-tickes",
+    "title": "[Assess] Global Stocktake Case Study",
+    "section": "Scales (Axes tickes)",
+    "text": "Scales (Axes tickes)\n\nannual_parties |&gt;\n  ggplot() +\n  geom_line(aes(x = Year, y = n, color = AOSIS)) +\n  scale_x_continuous(breaks = seq(1995, 2025, by = 5)) +\n  scale_y_continuous(labels = label_comma())"
+  },
+  {
+    "objectID": "slides/week-06/12-assess_COP.html#scales-axes-tickslabels",
+    "href": "slides/week-06/12-assess_COP.html#scales-axes-tickslabels",
+    "title": "[Assess] Global Stocktake Case Study",
+    "section": "Scales (Axes ticks/labels)",
+    "text": "Scales (Axes ticks/labels)\n\nscale_x_continuous() allows you to change your x axis visuals. In this case, let’s change the ticks, or “breaks”. seq() creates a sequence of breaks if you provide it a start (1995), a finish (2025), and a pattern (by = 5).\nscale_y_continuous() allows you to change your y axis visuals. Let’s just add a comma to our delegate count labels using the lable_comma() function, so it’s more clear to folks.\n\n\nannual_parties |&gt;\n  ggplot() +\n  geom_line(aes(x = Year, y = n, color = AOSIS)) +\n  scale_x_continuous(breaks = seq(1995, 2025, by = 5)) +\n  scale_y_continuous(labels = label_comma())"
+  },
+  {
+    "objectID": "slides/week-06/12-assess_COP.html#scales-outcome",
+    "href": "slides/week-06/12-assess_COP.html#scales-outcome",
+    "title": "[Assess] Global Stocktake Case Study",
+    "section": "Scales outcome",
+    "text": "Scales outcome\nAh, much better!"
+  },
+  {
+    "objectID": "slides/week-06/12-assess_COP.html#scales-colors",
+    "href": "slides/week-06/12-assess_COP.html#scales-colors",
+    "title": "[Assess] Global Stocktake Case Study",
+    "section": "Scales (colors)",
+    "text": "Scales (colors)\n\nscale_color_manual() allows us to define a custom color palette for categorical variables.\n\nvalues can be color names (red/blue) or hex codes, which you can find on websites like coolors.co!\nname will change the title of your legend\nlabels will change the labels associated with your colors\n\n\n\nannual_parties |&gt;\n  ggplot() +\n  geom_line(aes(x = Year, y = n, color = AOSIS)) +\n  scale_x_continuous(breaks = seq(1995, 2025, by = 5)) +\n  scale_y_continuous(labels = label_comma()) +\n  scale_color_manual(\n    values = c(\"lightblue\", \"gray50\"),\n    name = \"Coalition\", labels = c(\"AOSIS\", \"Non-AOSIS\")\n  )"
+  },
+  {
+    "objectID": "slides/week-06/12-assess_COP.html#axes-scale-outcome",
+    "href": "slides/week-06/12-assess_COP.html#axes-scale-outcome",
+    "title": "[Assess] Global Stocktake Case Study",
+    "section": "Axes scale outcome",
+    "text": "Axes scale outcome\nAh, much better!"
+  },
+  {
+    "objectID": "slides/week-06/12-assess_COP.html#color-scales-outcome",
+    "href": "slides/week-06/12-assess_COP.html#color-scales-outcome",
+    "title": "[Assess] Global Stocktake Case Study",
+    "section": "Color scales outcome",
+    "text": "Color scales outcome\nLooking good!"
+  },
+  {
+    "objectID": "slides/week-06/12-assess_COP.html#lastly-themes",
+    "href": "slides/week-06/12-assess_COP.html#lastly-themes",
+    "title": "[Assess] Global Stocktake Case Study",
+    "section": "Lastly, Themes!",
+    "text": "Lastly, Themes!\n\nThemes control the non-data related aspects of a plot, such as labels, plot background, and legend position.\n\nlabs() allows us to fix our y axis label.\ntheme_minimal() changes the background of the plot (there are eight themes, see here for more options!)\nlegend.position allows us to move the legend from the right side to another position.\n\n\n\nannual_parties |&gt;\n  ggplot() +\n  geom_line(aes(x = Year, y = n, color = AOSIS)) +\n  scale_x_continuous(breaks = seq(1995, 2025, by = 5)) +\n  scale_y_continuous(labels = label_comma()) +\n  scale_color_manual(\n    values = c(\"lightblue\", \"gray70\"),\n    name = \"Party Coalition\", labels = c(\"AOSIS\", \"Non-AOSIS\")\n  ) +\n  labs(y = \"Number of Delegates\") +\n  theme_minimal() +\n  theme(legend.position = \"bottom\")"
+  },
+  {
+    "objectID": "slides/week-06/12-assess_COP.html#ex_01",
+    "href": "slides/week-06/12-assess_COP.html#ex_01",
+    "title": "[Assess] Global Stocktake Case Study",
+    "section": "EX_01",
+    "text": "EX_01\nCreate a line chart for the percent of female negotiators between 1995 and 2024 for AOSIS and Non-AOSIS countries. Make sure to:\n\nchange the y scale to reflect a percentage\nhint: you can use ?label_percent() for help\nchange your colors using the scale_color_manual() function\nChange your y axis label\napply a different theme for your plot\nand place the legend on top of your plot.\n\nI’ve provided the code for calculating a summary dataframe to get you started!"
+  },
+  {
+    "objectID": "slides/week-06/12-assess_COP.html#exploratory-data-analysis",
+    "href": "slides/week-06/12-assess_COP.html#exploratory-data-analysis",
+    "title": "[Assess] Global Stocktake Case Study",
+    "section": "Exploratory Data Analysis",
+    "text": "Exploratory Data Analysis\n\nEDA is a process meant to better understand the kinds of variation in your data, and the type of covariation between variables that might be present.\nEDA has no rules! The goal is to generate questions and explore your data to decide which graphs, models, or transformations to make.\nThere are lots of ways to explore your data, but let’s learn three ways based on our variable types\n\none continuous\none categorical and one continuous\ntwo categorical"
+  },
+  {
+    "objectID": "slides/week-06/12-assess_COP.html#one-continuous-variable",
+    "href": "slides/week-06/12-assess_COP.html#one-continuous-variable",
+    "title": "[Assess] Global Stocktake Case Study",
+    "section": "One Continuous Variable",
+    "text": "One Continuous Variable\n\nLet’s create a subset of our data for COP27 delegates, and count the number of delegates per country.\ngeom_histogram() gives us a great look at variation in a variable.\n\n\ncop_27 &lt;- parties |&gt;\n  filter(Year == 2022) |&gt;\n  count(AOSIS, Delegation)\n\n# plot\ncop_27 |&gt;\n  ggplot() +\n  geom_histogram(aes(x = n))"
+  },
+  {
+    "objectID": "slides/week-06/12-assess_COP.html#histogram",
+    "href": "slides/week-06/12-assess_COP.html#histogram",
+    "title": "[Assess] Global Stocktake Case Study",
+    "section": "Histogram",
+    "text": "Histogram\n\nAny important variation among delegate counts?"
+  },
+  {
+    "objectID": "slides/week-06/12-assess_COP.html#histogram-bindwidth",
+    "href": "slides/week-06/12-assess_COP.html#histogram-bindwidth",
+    "title": "[Assess] Global Stocktake Case Study",
+    "section": "Histogram (bindwidth)",
+    "text": "Histogram (bindwidth)\n\nWe can also filter our dataset to look closer at the variation among smaller parties (n &lt;100).\nchanging our binwidth allows us to see patterns among the majority of the data."
+  },
+  {
+    "objectID": "slides/week-06/12-assess_COP.html#categorical-and-continuous",
+    "href": "slides/week-06/12-assess_COP.html#categorical-and-continuous",
+    "title": "[Assess] Global Stocktake Case Study",
+    "section": "Categorical and Continuous",
+    "text": "Categorical and Continuous\n\nPerhaps we wanted to understand the variation in party size between AOSIS and Non-AOSIS countries.\nA boxplot is a great way to visualize continuous data with a categorical grouping!\n\n\ndelegate_size &lt;- parties |&gt;\n  group_by(AOSIS, Delegation, Year) |&gt;\n  tally()\n\ndelegate_size |&gt;\n  ggplot() +\n  geom_boxplot(aes(x = AOSIS, y = n))"
+  },
+  {
+    "objectID": "slides/week-06/12-assess_COP.html#two-categorical",
+    "href": "slides/week-06/12-assess_COP.html#two-categorical",
+    "title": "[Assess] Global Stocktake Case Study",
+    "section": "Two Categorical",
+    "text": "Two Categorical\n\nWe can even do a quick exploration of the relationship between two categorical variables.\nSuppose we were interested in the gender balance among AOSIS delegates\n\nwe can use the geom_count() function to visualize the pattern between Female and Delegation\nnote that “female” is a 1,0, so we need to change the data type from continuous to categorical using the factor function.\n\n\n\ncop_27_aosis &lt;- parties |&gt;\n  filter(Year == 2022 & AOSIS == \"AOSIS\")\n\ncop_27_aosis |&gt;\n  ggplot() +\n  geom_count(aes(x = factor(Female), y = Delegation))"
+  },
+  {
+    "objectID": "slides/week-06/12-assess_COP.html#ex_02",
+    "href": "slides/week-06/12-assess_COP.html#ex_02",
+    "title": "[Assess] Global Stocktake Case Study",
+    "section": "EX_02",
+    "text": "EX_02\n\nUsing the delegate_size dataframe, filter out the outlying delegate numbers (i.e., n &lt;1000) and visualize the variation in party size between AOSIS and Non-AOSIS countries using a boxplot.\nUsing the results from the previous question, what sort of variation do you see in delegation size between AOSIS and non-AOSIS countries?\n\n\nHere’s a quick explanation of boxplots in case it’s been awhile. :-)"
+  },
+  {
+    "objectID": "slides/week-06/12-assess_COP.html#two-categorical-variables",
+    "href": "slides/week-06/12-assess_COP.html#two-categorical-variables",
+    "title": "[Assess] Global Stocktake Case Study",
+    "section": "Two Categorical Variables",
+    "text": "Two Categorical Variables\n\nWe can even do a quick exploration of the relationship between two categorical variables.\nSuppose we were interested in the gender balance among AOSIS delegates\n\nwe can use the geom_count() function to visualize the pattern between Female and Delegation\nnote that “female” is a 1,0, so we need to change the data type from continuous to categorical using the factor function.\n\n\n\ncop_27_aosis &lt;- parties |&gt;\n  filter(Year == 2022 & AOSIS == \"AOSIS\")\n\ncop_27_aosis |&gt;\n  ggplot() +\n  geom_count(aes(x = factor(Female), y = Delegation))"
+  },
+  {
+    "objectID": "slides/week-06/12-assess_COP.html#geom_count",
+    "href": "slides/week-06/12-assess_COP.html#geom_count",
+    "title": "[Assess] Global Stocktake Case Study",
+    "section": "geom_count()",
+    "text": "geom_count()"
+  },
+  {
+    "objectID": "slides/week-06/12-assess_COP.html#data-visualization-options",
+    "href": "slides/week-06/12-assess_COP.html#data-visualization-options",
+    "title": "[Assess] Global Stocktake Case Study",
+    "section": "Data Visualization Options",
+    "text": "Data Visualization Options\nNow that we know how to format figures and explore variation in our data, we can think about how we might want to use our data to tell a story.\nHere are some great resources that I use often for inspiration."
+  },
+  {
+    "objectID": "slides/week-06/12-assess_COP.html#from-data-to-viz",
+    "href": "slides/week-06/12-assess_COP.html#from-data-to-viz",
+    "title": "[Assess] Global Stocktake Case Study",
+    "section": "From Data to Viz",
+    "text": "From Data to Viz\n\nThis is a great visual I often use when I’m thinking about the kinds of variables I have (or could create)."
+  },
+  {
+    "objectID": "slides/week-06/12-assess_COP.html#example-workflow",
+    "href": "slides/week-06/12-assess_COP.html#example-workflow",
+    "title": "[Assess] Global Stocktake Case Study",
+    "section": "Example Workflow",
+    "text": "Example Workflow\n\nSay I’m interested in the number of delegates from universities or colleges in COP attendance, and their affiliated country, between 1995 and 2024.\nIf I filter the data and create a summarized dataframe, I’ll have:\n\none categorical and several numeric variables, one of which is ordered (aka, year).\nI think a grouped line plot could be good here."
+  },
+  {
+    "objectID": "slides/week-06/12-assess_COP.html#summarizing-my-data",
+    "href": "slides/week-06/12-assess_COP.html#summarizing-my-data",
+    "title": "[Assess] Global Stocktake Case Study",
+    "section": "Summarizing my data",
+    "text": "Summarizing my data\n\nhigher_ed &lt;- cop_delegates |&gt;\n  filter(str_detect(Affiliation, \"University\") | \n           str_detect(Affiliation, \"College\")) |&gt; \n  group_by(Year, AOSIS) |&gt;\n  count()"
+  },
+  {
+    "objectID": "slides/week-06/12-assess_COP.html#r-graph-gallery",
+    "href": "slides/week-06/12-assess_COP.html#r-graph-gallery",
+    "title": "[Assess] Global Stocktake Case Study",
+    "section": "R Graph Gallery",
+    "text": "R Graph Gallery\n\nOnce I choose a visual I’m interested in, I often use the website r-graph-gallery.com to find base code for kind of visual I’m interested in creating.\nI’ll select the “line graph” icon and find example code that creates a graphic I like.\nLastly, I can set a theme using the ggethemr package, let’s use one called “light”.\n\nYou can see more palette options, here!\n\n\n\nggthemr(\"solarized\")\n\nhigher_ed %&gt;%\n  ggplot() +\n    geom_line(aes(x=Year, y=n, group=AOSIS, color=AOSIS))"
+  },
+  {
+    "objectID": "slides/week-06/12-assess_COP.html#ggplot2-cheatsheet",
+    "href": "slides/week-06/12-assess_COP.html#ggplot2-cheatsheet",
+    "title": "[Assess] Global Stocktake Case Study",
+    "section": "GGplot2 Cheatsheet",
+    "text": "GGplot2 Cheatsheet\n\nLastly, once I have the base plot that I like, I’ll use the ggplot2 cheatsheet to change small things that require code I haven’t committed to memory, like axes labels, themes, etc."
+  },
+  {
+    "objectID": "slides/week-06/12-assess_COP.html#ta-da",
+    "href": "slides/week-06/12-assess_COP.html#ta-da",
+    "title": "[Assess] Global Stocktake Case Study",
+    "section": "Ta da!",
+    "text": "Ta da!\n\nhigher_ed |&gt;\n  ggplot() +\n  geom_line(aes(x = Year, y = n, group = AOSIS, color = AOSIS),\n    linewidth = 1.5\n  ) +\n  labs(y = \"Number of Higher Ed Delegates\") +\n  scale_x_continuous(breaks = seq(1995, 2025, by = 5)) +\n  scale_y_continuous(\n    breaks = seq(0, 3000, by = 500),\n    labels = label_comma()\n  ) +\n  theme(legend.position = \"bottom\")"
+  },
+  {
+    "objectID": "slides/week-06/12-assess_COP.html#ex_03-ex_04",
+    "href": "slides/week-06/12-assess_COP.html#ex_03-ex_04",
+    "title": "[Assess] Global Stocktake Case Study",
+    "section": "EX_03 + EX_04:",
+    "text": "EX_03 + EX_04:\n\nSee Posit!"
+  },
+  {
+    "objectID": "slides/week-06/12-assess_COP.html#logistics",
+    "href": "slides/week-06/12-assess_COP.html#logistics",
+    "title": "[Assess] Global Stocktake Case Study",
+    "section": "Logistics",
+    "text": "Logistics\n\nNo class Tuesday, Happy Fall Break!\nDr. Caballero to lead centering on Friday\nLogic model discussion next Friday"
+  },
+  {
+    "objectID": "slides/week-06/12-assess_COP.html#not-bad",
+    "href": "slides/week-06/12-assess_COP.html#not-bad",
+    "title": "[Assess] Global Stocktake Case Study",
+    "section": "Not bad!",
+    "text": "Not bad!"
+  },
+  {
+    "objectID": "slides/week-06/12-assess_COP.html",
+    "href": "slides/week-06/12-assess_COP.html",
+    "title": "[Assess] Global Stocktake Case Study",
+    "section": "",
+    "text": "Centering activity\nSetting the stage\nPaired coding\n\n\n\n\nClara :-)\n\n\n\n\n\nThis week’s focus is on formatting plots and Exploratory Data Analysis!\nUsing delegate data for COP1-COP29 (1995 to 2024)\n\n\n\n\n\nApply thematic components to ggplot figures\nConduct Exploratory Data Analysis (EDA)\nUnderstand data visualization options for different data relationships\nConnect findings to theoretical understandings of cosmopolitan justice\n\n\n\n\n\nFind your pair\nOpen Posit\n\n\n\n\n\nWe’ll need to install three new packages\n\nRun lines 1-3 in you console without the “#”\nPaste lines 4-8 in your analysis.qmd file\nSometimes we might want to use packages currently under development, in which case we can use the install_github() function to install the ggthemr package.\n\n\n\n# install.packages(\"scales\")\n# install.packages(\"RColorBrewer\")\n# install.packages(\"devtools\")\nlibrary(readr)\nlibrary(tidyverse)\nlibrary(scales)\nlibrary(RColorBrewer)\nlibrary(devtools)\n\n# devtools::install_github('Mikata-Project/ggthemr')\nlibrary(ggthemr)\n\n\n\n\n\ncop_delegates &lt;- read_csv(\"data/cop_delegates.csv\")\n\n\n\n\n\nThere are 367,747 delegates in this dataset spanning from COP1 to COP29.\nThere are 21 variables:\n\nWhat information do we know about each delegate?\nWhich variables are relevant for thinking about cosmopolitan justice and COP negotiations?\n\n\n\n\n\n\nLet’s filter only for those involved in negotiations.\n\nThis brings our df down to a meager 197,621 people over 30 years.\n\n\n\nparties &lt;- cop_delegates |&gt;\n  filter(Group_Type == \"Parties\")\n\n\n\n\n\nWe learned about geoms, aestheic mappings, plot statistics, positions, and facets last week!\n\nLet’s talk scales and themes this week.\n\n\n\n\n\n\nScales are used to customize your aesthetic mappings. We most frequently will use scales to:\n\nchange axis ticks\nadd color palettes to your plots\n\nPerhaps we were interested in how the number of party delegates has changed over time for AOSIS and non-AOSIS countries.\n\n\nannual_parties &lt;- parties |&gt;\n  group_by(Year, AOSIS) |&gt;\n  count()\n\n\n\n\n\nLet’s start with a basic line graph.\n\nHow are the axes looking?\n\n\n\nannual_parties |&gt;\n  ggplot() +\n  geom_line(aes(x = Year, y = n, color = AOSIS))\n\n\n\n\n\n\n\n\n\n\n\n\nscale_x_continuous() allows you to change your x axis visuals. In this case, let’s change the ticks, or “breaks”. seq() creates a sequence of breaks if you provide it a start (1995), a finish (2025), and a pattern (by = 5).\nscale_y_continuous() allows you to change your y axis visuals. Let’s just add a comma to our delegate count labels using the lable_comma() function, so it’s more clear to folks.\n\n\nannual_parties |&gt;\n  ggplot() +\n  geom_line(aes(x = Year, y = n, color = AOSIS)) +\n  scale_x_continuous(breaks = seq(1995, 2025, by = 5)) +\n  scale_y_continuous(labels = label_comma())\n\n\n\n\nAh, much better!\n\n\n\n\n\n\n\n\n\n\n\n\n\nscale_color_manual() allows us to define a custom color palette for categorical variables.\n\nvalues can be color names (red/blue) or hex codes, which you can find on websites like coolors.co!\nname will change the title of your legend\nlabels will change the labels associated with your colors\n\n\n\nannual_parties |&gt;\n  ggplot() +\n  geom_line(aes(x = Year, y = n, color = AOSIS)) +\n  scale_x_continuous(breaks = seq(1995, 2025, by = 5)) +\n  scale_y_continuous(labels = label_comma()) +\n  scale_color_manual(\n    values = c(\"lightblue\", \"gray50\"),\n    name = \"Coalition\", labels = c(\"AOSIS\", \"Non-AOSIS\")\n  )\n\n\n\n\nLooking good!\n\n\n\n\n\n\n\n\n\n\n\n\n\nThemes control the non-data related aspects of a plot, such as labels, plot background, and legend position.\n\nlabs() allows us to fix our y axis label.\ntheme_minimal() changes the background of the plot (there are eight themes, see here for more options!)\nlegend.position allows us to move the legend from the right side to another position.\n\n\n\nannual_parties |&gt;\n  ggplot() +\n  geom_line(aes(x = Year, y = n, color = AOSIS)) +\n  scale_x_continuous(breaks = seq(1995, 2025, by = 5)) +\n  scale_y_continuous(labels = label_comma()) +\n  scale_color_manual(\n    values = c(\"lightblue\", \"gray70\"),\n    name = \"Party Coalition\", labels = c(\"AOSIS\", \"Non-AOSIS\")\n  ) +\n  labs(y = \"Number of Delegates\") +\n  theme_minimal() +\n  theme(legend.position = \"bottom\")\n\n\n\n\nCreate a line chart for the percent of female negotiators between 1995 and 2024 for AOSIS and Non-AOSIS countries. Make sure to:\n\nchange the y scale to reflect a percentage\nhint: you can use ?label_percent() for help\nchange your colors using the scale_color_manual() function\nChange your y axis label\napply a different theme for your plot\nand place the legend on top of your plot.\n\nI’ve provided the code for calculating a summary dataframe to get you started!\n\n\n\n\nEDA is a process meant to better understand the kinds of variation in your data, and the type of covariation between variables that might be present.\nEDA has no rules! The goal is to generate questions and explore your data to decide which graphs, models, or transformations to make.\nThere are lots of ways to explore your data, but let’s learn three ways based on our variable types\n\none continuous\none categorical and one continuous\ntwo categorical\n\n\n\n\n\n\nLet’s create a subset of our data for COP27 delegates, and count the number of delegates per country.\ngeom_histogram() gives us a great look at variation in a variable.\n\n\ncop_27 &lt;- parties |&gt;\n  filter(Year == 2022) |&gt;\n  count(AOSIS, Delegation)\n\n# plot\ncop_27 |&gt;\n  ggplot() +\n  geom_histogram(aes(x = n))\n\n\n\n\n\nAny important variation among delegate counts?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWe can also filter our dataset to look closer at the variation among smaller parties (n &lt;100).\nchanging our binwidth allows us to see patterns among the majority of the data.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPerhaps we wanted to understand the variation in party size between AOSIS and Non-AOSIS countries.\nA boxplot is a great way to visualize continuous data with a categorical grouping!\n\n\ndelegate_size &lt;- parties |&gt;\n  group_by(AOSIS, Delegation, Year) |&gt;\n  tally()\n\ndelegate_size |&gt;\n  ggplot() +\n  geom_boxplot(aes(x = AOSIS, y = n))\n\n\n\n\n\n\n\n\n\n\n\n\nWe can even do a quick exploration of the relationship between two categorical variables.\nSuppose we were interested in the gender balance among AOSIS delegates\n\nwe can use the geom_count() function to visualize the pattern between Female and Delegation\nnote that “female” is a 1,0, so we need to change the data type from continuous to categorical using the factor function.\n\n\n\ncop_27_aosis &lt;- parties |&gt;\n  filter(Year == 2022 & AOSIS == \"AOSIS\")\n\ncop_27_aosis |&gt;\n  ggplot() +\n  geom_count(aes(x = factor(Female), y = Delegation))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUsing the delegate_size dataframe, filter out the outlying delegate numbers (i.e., n &lt;1000) and visualize the variation in party size between AOSIS and Non-AOSIS countries using a boxplot.\nUsing the results from the previous question, what sort of variation do you see in delegation size between AOSIS and non-AOSIS countries?\n\n\nHere’s a quick explanation of boxplots in case it’s been awhile. :-)\n\n\n\n\nNow that we know how to format figures and explore variation in our data, we can think about how we might want to use our data to tell a story.\nHere are some great resources that I use often for inspiration.\n\n\n\n\nThis is a great visual I often use when I’m thinking about the kinds of variables I have (or could create). \n\n\n\n\n\nSay I’m interested in the number of delegates from universities or colleges in COP attendance, and their affiliated country, between 1995 and 2024.\nIf I filter the data and create a summarized dataframe, I’ll have:\n\none categorical and several numeric variables, one of which is ordered (aka, year).\nI think a grouped line plot could be good here.\n\n\n\n\n\n\n\n\n\nOnce I choose a visual I’m interested in, I often use the website r-graph-gallery.com to find base code for kind of visual I’m interested in creating.\nI’ll select the “line graph” icon and find example code that creates a graphic I like.\nLastly, I can set a theme using the ggethemr package, let’s use one called “light”.\n\nYou can see more palette options, here!\n\n\n\nggthemr(\"solarized\")\n\nhigher_ed %&gt;%\n  ggplot() +\n    geom_line(aes(x=Year, y=n, group=AOSIS, color=AOSIS))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLastly, once I have the base plot that I like, I’ll use the ggplot2 cheatsheet to change small things that require code I haven’t committed to memory, like axes labels, themes, etc.\n\n\n\n\n\nhigher_ed |&gt;\n  ggplot() +\n  geom_line(aes(x = Year, y = n, group = AOSIS, color = AOSIS),\n    linewidth = 1.5\n  ) +\n  labs(y = \"Number of Higher Ed Delegates\") +\n  scale_x_continuous(breaks = seq(1995, 2025, by = 5)) +\n  scale_y_continuous(\n    breaks = seq(0, 3000, by = 500),\n    labels = label_comma()\n  ) +\n  theme(legend.position = \"bottom\")\n\n\n\n\n\n\n\n\n\n\n\n\nSee Posit!\n\n\n\n\n\nNo class Tuesday, Happy Fall Break!\nDr. Caballero to lead centering on Friday\nLogic model discussion next Friday"
   }
 ]

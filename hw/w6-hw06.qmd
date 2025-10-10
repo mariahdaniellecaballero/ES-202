@@ -1,16 +1,16 @@
 ---
-title: "HW 06: Global Stocktake Case Study"
+title: "HW 06: COP Delegate Case Study"
 date: "October 16, 2025"
 categories: "Homework"
 ---
 
 ## Overview 
-This case study uses global greenhouse gas (GHG) emission data from the European Commission's [Emissions Database for Global Atmospheric Research](https://edgar.jrc.ec.europa.eu/report_2024#data_download), and connecting it back to foundational theoretical aspects of cosmopolitan justice.
+This case study uses delegate data from over 30 years of international climate change conferences published open source in a [Nature Scientific Dataset](https://www.nature.com/articles/s41597-024-03978-7), and connecting it back to foundational theoretical aspects of cosmopolitan justice.
 
 ## Learning Outcomes
+- Apply thematic components to ggplot figures 
 - Conduct Exploratory Data Analysis (EDA)
-- Identify potential patterns in data
-- Use the foundations of good graphics to communicate findings
+- Understand data visualization options for different data relationships
 - Connect findings to theoretical understandings of cosmopolitan justice
 
 ## Instructions

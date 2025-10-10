@@ -28,6 +28,72 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-f563837468303362081e247dddd440d0.css">
   <link rel="stylesheet" href="custom.scss">
@@ -131,18 +197,418 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">[Assess] Global Stocktake Case Study</h1>
-  <p class="subtitle">📍 Dubai, UAE</p>
+  <p class="subtitle">📍 Sharm el Sheikh, Egypt</p>
 
 <div class="quarto-title-authors">
 </div>
 
   <p class="date">2025-10-10</p>
 </section>
-<section id="slides-will-be-posted-24-hours-in-advance-of-class." class="title-slide slide level1 center">
-<h1>Slides will be posted 24 hours in advance of class.</h1>
-
-
+<section>
+<section id="class-overview" class="title-slide slide level1 center">
+<h1>Class Overview</h1>
+<ul>
+<li>Centering activity</li>
+<li>Setting the stage</li>
+<li>Paired coding</li>
+</ul>
 </section>
+<section id="centering-activity" class="slide level2 center">
+<h2>Centering Activity</h2>
+<ul>
+<li>Clara :-)</li>
+</ul>
+</section>
+<section id="setting-the-stage" class="slide level2 center">
+<h2>Setting the Stage</h2>
+<ul>
+<li>This week’s focus is on formatting plots and Exploratory Data Analysis!</li>
+<li>Using delegate data for COP1-COP29 (1995 to 2024)</li>
+</ul>
+</section>
+<section id="learning-outcomes" class="slide level2 center">
+<h2>Learning Outcomes</h2>
+<ul>
+<li>Apply thematic components to ggplot figures</li>
+<li>Conduct Exploratory Data Analysis (EDA)</li>
+<li>Understand data visualization options for different data relationships</li>
+<li>Connect findings to theoretical understandings of cosmopolitan justice</li>
+</ul>
+</section>
+<section id="lets-get-started" class="slide level2 center">
+<h2>Let’s get Started</h2>
+<ul>
+<li>Find your pair</li>
+<li>Open Posit</li>
+</ul>
+</section>
+<section id="loading-packages" class="slide level2 smaller center">
+<h2>Loading packages</h2>
+<ul>
+<li>We’ll need to install three new packages
+<ul>
+<li>Run lines 1-3 in you <em>console</em> without the “#”</li>
+<li>Paste lines 4-8 in your <em>analysis.qmd</em> file</li>
+<li>Sometimes we might want to use packages currently under development, in which case we can use the <code>install_github()</code> function to install the <code>ggthemr</code> package.</li>
+</ul></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a><span class="co"># install.packages("scales")</span></span>
+<span id="cb1-2"><a></a><span class="co"># install.packages("RColorBrewer")</span></span>
+<span id="cb1-3"><a></a><span class="co"># install.packages("devtools")</span></span>
+<span id="cb1-4"><a></a><span class="fu">library</span>(readr)</span>
+<span id="cb1-5"><a></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-6"><a></a><span class="fu">library</span>(scales)</span>
+<span id="cb1-7"><a></a><span class="fu">library</span>(RColorBrewer)</span>
+<span id="cb1-8"><a></a><span class="fu">library</span>(devtools)</span>
+<span id="cb1-9"><a></a></span>
+<span id="cb1-10"><a></a><span class="co"># devtools::install_github('Mikata-Project/ggthemr')</span></span>
+<span id="cb1-11"><a></a><span class="fu">library</span>(ggthemr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="loading-data" class="slide level2 center">
+<h2>Loading data</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a>cop_delegates <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data/cop_delegates.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="take-a-look-at-data" class="slide level2 center">
+<h2>Take a look at data</h2>
+<ul>
+<li>There are 367,747 delegates in this dataset spanning from COP1 to COP29.</li>
+<li>There are 21 variables:
+<ul>
+<li>What information do we know about each delegate?</li>
+<li>Which variables are relevant for thinking about cosmopolitan justice and COP negotiations?</li>
+</ul></li>
+</ul>
+</section>
+<section id="subsetting-the-data" class="slide level2 center">
+<h2>Subsetting the Data</h2>
+<ul>
+<li>Let’s filter only for those involved in negotiations.
+<ul>
+<li>This brings our df down to a meager 197,621 people over 30 years.</li>
+</ul></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a>parties <span class="ot">&lt;-</span> cop_delegates <span class="sc">|&gt;</span></span>
+<span id="cb3-2"><a></a>  <span class="fu">filter</span>(Group_Type <span class="sc">==</span> <span class="st">"Parties"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="applying-thematic-components-to-plots" class="slide level2 center">
+<h2>Applying Thematic Components to Plots</h2>
+<ul>
+<li>We learned about geoms, aestheic mappings, plot statistics, positions, and facets last week!
+<ul>
+<li>Let’s talk scales and themes this week.</li>
+</ul></li>
+</ul>
+</section>
+<section id="scales" class="slide level2 smaller center">
+<h2>Scales</h2>
+<ul>
+<li>Scales are used to customize your aesthetic mappings. We most frequently will use scales to:
+<ul>
+<li>change axis ticks</li>
+<li>add color palettes to your plots</li>
+</ul></li>
+<li>Perhaps we were interested in how the number of party delegates has changed over time for AOSIS and non-AOSIS countries.</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a>annual_parties <span class="ot">&lt;-</span> parties <span class="sc">|&gt;</span></span>
+<span id="cb4-2"><a></a>  <span class="fu">group_by</span>(Year, AOSIS) <span class="sc">|&gt;</span></span>
+<span id="cb4-3"><a></a>  <span class="fu">count</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="scalescont." class="slide level2 smaller center">
+<h2>Scales(cont.)</h2>
+<ul>
+<li>Let’s start with a basic line graph.
+<ul>
+<li>How are the axes looking?</li>
+</ul></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a>annual_parties <span class="sc">|&gt;</span></span>
+<span id="cb5-2"><a></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb5-3"><a></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">x =</span> Year, <span class="at">y =</span> n, <span class="at">color =</span> AOSIS))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="12-assess_COP_files/figure-revealjs/unnamed-chunk-6-1.png" width="960" class="r-stretch"></section>
+<section id="scales-axes-tickslabels" class="slide level2 smaller center">
+<h2>Scales (Axes ticks/labels)</h2>
+<ul>
+<li><code>scale_x_continuous()</code> allows you to change your x axis visuals. In this case, let’s change the ticks, or “breaks”. <code>seq()</code> creates a sequence of breaks if you provide it a start (1995), a finish (2025), and a pattern (by = 5).</li>
+<li><code>scale_y_continuous()</code> allows you to change your y axis visuals. Let’s just add a comma to our delegate count <code>labels</code> using the <code>lable_comma()</code> function, so it’s more clear to folks.</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6" data-code-line-numbers="|4|5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a></a>annual_parties <span class="sc">|&gt;</span></span>
+<span id="cb6-2"><a></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb6-3"><a></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">x =</span> Year, <span class="at">y =</span> n, <span class="at">color =</span> AOSIS)) <span class="sc">+</span></span>
+<span id="cb6-4"><a></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">1995</span>, <span class="dv">2025</span>, <span class="at">by =</span> <span class="dv">5</span>)) <span class="sc">+</span></span>
+<span id="cb6-5"><a></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> <span class="fu">label_comma</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="axes-scale-outcome" class="slide level2 smaller center">
+<h2>Axes scale outcome</h2>
+<p>Ah, much better!</p>
+
+<img data-src="12-assess_COP_files/figure-revealjs/unnamed-chunk-8-1.png" width="960" class="r-stretch"></section>
+<section id="scales-colors" class="slide level2 smaller center">
+<h2>Scales (colors)</h2>
+<ul>
+<li><code>scale_color_manual()</code> allows us to define a custom color palette for categorical variables.
+<ul>
+<li>values can be color names (red/blue) or hex codes, which you can find on websites like <a href="#/C3423F/#5BC0EB">coolors.co</a>!</li>
+<li><code>name</code> will change the title of your legend</li>
+<li><code>labels</code> will change the labels associated with your colors</li>
+</ul></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7" data-code-line-numbers="|6|7|8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a>annual_parties <span class="sc">|&gt;</span></span>
+<span id="cb7-2"><a></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb7-3"><a></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">x =</span> Year, <span class="at">y =</span> n, <span class="at">color =</span> AOSIS)) <span class="sc">+</span></span>
+<span id="cb7-4"><a></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">1995</span>, <span class="dv">2025</span>, <span class="at">by =</span> <span class="dv">5</span>)) <span class="sc">+</span></span>
+<span id="cb7-5"><a></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> <span class="fu">label_comma</span>()) <span class="sc">+</span></span>
+<span id="cb7-6"><a></a>  <span class="fu">scale_color_manual</span>(</span>
+<span id="cb7-7"><a></a>    <span class="at">values =</span> <span class="fu">c</span>(<span class="st">"lightblue"</span>, <span class="st">"gray50"</span>),</span>
+<span id="cb7-8"><a></a>    <span class="at">name =</span> <span class="st">"Coalition"</span>, <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"AOSIS"</span>, <span class="st">"Non-AOSIS"</span>)</span>
+<span id="cb7-9"><a></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="color-scales-outcome" class="slide level2 smaller center">
+<h2>Color scales outcome</h2>
+<p>Looking good!</p>
+
+<img data-src="12-assess_COP_files/figure-revealjs/unnamed-chunk-10-1.png" width="960" class="r-stretch"></section>
+<section id="lastly-themes" class="slide level2 smaller center">
+<h2>Lastly, Themes!</h2>
+<ul>
+<li>Themes control the non-data related aspects of a plot, such as labels, plot background, and legend position.
+<ul>
+<li><code>labs()</code> allows us to fix our y axis label.</li>
+<li><code>theme_minimal()</code> changes the background of the plot (there are eight themes, see <a href="https://ggplot2.tidyverse.org/reference/ggtheme.html">here</a> for more options!)</li>
+<li><code>legend.position</code> allows us to move the legend from the right side to another position.</li>
+</ul></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8" data-code-line-numbers="|10|11|12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a></a>annual_parties <span class="sc">|&gt;</span></span>
+<span id="cb8-2"><a></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb8-3"><a></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">x =</span> Year, <span class="at">y =</span> n, <span class="at">color =</span> AOSIS)) <span class="sc">+</span></span>
+<span id="cb8-4"><a></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">1995</span>, <span class="dv">2025</span>, <span class="at">by =</span> <span class="dv">5</span>)) <span class="sc">+</span></span>
+<span id="cb8-5"><a></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> <span class="fu">label_comma</span>()) <span class="sc">+</span></span>
+<span id="cb8-6"><a></a>  <span class="fu">scale_color_manual</span>(</span>
+<span id="cb8-7"><a></a>    <span class="at">values =</span> <span class="fu">c</span>(<span class="st">"lightblue"</span>, <span class="st">"gray70"</span>),</span>
+<span id="cb8-8"><a></a>    <span class="at">name =</span> <span class="st">"Party Coalition"</span>, <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"AOSIS"</span>, <span class="st">"Non-AOSIS"</span>)</span>
+<span id="cb8-9"><a></a>  ) <span class="sc">+</span></span>
+<span id="cb8-10"><a></a>  <span class="fu">labs</span>(<span class="at">y =</span> <span class="st">"Number of Delegates"</span>) <span class="sc">+</span></span>
+<span id="cb8-11"><a></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb8-12"><a></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"bottom"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="ex_01" class="slide level2 smaller center">
+<h2>EX_01</h2>
+<p>Create a line chart for the percent of female negotiators between 1995 and 2024 for AOSIS and Non-AOSIS countries. Make sure to:</p>
+<ul>
+<li>change the y scale to reflect a percentage</li>
+<li>hint: you can use <code>?label_percent()</code> for help</li>
+<li>change your colors using the <code>scale_color_manual()</code> function</li>
+<li>Change your y axis label</li>
+<li>apply a different theme for your plot</li>
+<li>and place the legend on top of your plot.</li>
+</ul>
+<p>I’ve provided the code for calculating a summary dataframe to get you started!</p>
+</section>
+<section id="exploratory-data-analysis" class="slide level2 smaller center">
+<h2>Exploratory Data Analysis</h2>
+<ul>
+<li>EDA is a process meant to better understand the kinds of variation in your data, and the type of covariation between variables that might be present.</li>
+<li>EDA has no rules! The goal is to generate questions and explore your data to decide which graphs, models, or transformations to make.</li>
+<li>There are lots of ways to explore your data, but let’s learn three ways based on our variable types
+<ul>
+<li>one continuous</li>
+<li>one categorical and one continuous</li>
+<li>two categorical</li>
+</ul></li>
+</ul>
+</section>
+<section id="one-continuous-variable" class="slide level2 smaller center">
+<h2>One Continuous Variable</h2>
+<ul>
+<li>Let’s create a subset of our data for COP27 delegates, and count the number of delegates per country.</li>
+<li><code>geom_histogram()</code> gives us a great look at variation in a variable.</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a>cop_27 <span class="ot">&lt;-</span> parties <span class="sc">|&gt;</span></span>
+<span id="cb9-2"><a></a>  <span class="fu">filter</span>(Year <span class="sc">==</span> <span class="dv">2022</span>) <span class="sc">|&gt;</span></span>
+<span id="cb9-3"><a></a>  <span class="fu">count</span>(AOSIS, Delegation)</span>
+<span id="cb9-4"><a></a></span>
+<span id="cb9-5"><a></a><span class="co"># plot</span></span>
+<span id="cb9-6"><a></a>cop_27 <span class="sc">|&gt;</span></span>
+<span id="cb9-7"><a></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb9-8"><a></a>  <span class="fu">geom_histogram</span>(<span class="fu">aes</span>(<span class="at">x =</span> n))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="histogram" class="slide level2 smaller center">
+<h2>Histogram</h2>
+<ul>
+<li>Any important variation among delegate counts?</li>
+</ul>
+
+<img data-src="12-assess_COP_files/figure-revealjs/unnamed-chunk-13-1.png" width="960" class="r-stretch"></section>
+<section id="histogram-bindwidth" class="slide level2 smaller center">
+<h2>Histogram (bindwidth)</h2>
+<ul>
+<li>We can also filter our dataset to look closer at the variation among smaller parties (n &lt;100).</li>
+<li>changing our <code>binwidth</code> allows us to see patterns among the majority of the data.</li>
+</ul>
+
+<img data-src="12-assess_COP_files/figure-revealjs/unnamed-chunk-14-1.png" width="960" class="r-stretch"></section>
+<section id="categorical-and-continuous" class="slide level2 smaller center">
+<h2>Categorical and Continuous</h2>
+<ul>
+<li>Perhaps we wanted to understand the variation in party size between AOSIS and Non-AOSIS countries.</li>
+<li>A boxplot is a great way to visualize continuous data with a categorical grouping!</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a></a>delegate_size <span class="ot">&lt;-</span> parties <span class="sc">|&gt;</span></span>
+<span id="cb10-2"><a></a>  <span class="fu">group_by</span>(AOSIS, Delegation, Year) <span class="sc">|&gt;</span></span>
+<span id="cb10-3"><a></a>  <span class="fu">tally</span>()</span>
+<span id="cb10-4"><a></a></span>
+<span id="cb10-5"><a></a>delegate_size <span class="sc">|&gt;</span></span>
+<span id="cb10-6"><a></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb10-7"><a></a>  <span class="fu">geom_boxplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> AOSIS, <span class="at">y =</span> n))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="12-assess_COP_files/figure-revealjs/unnamed-chunk-15-1.png" width="960" class="r-stretch"></section>
+<section id="two-categorical-variables" class="slide level2 smaller center">
+<h2>Two Categorical Variables</h2>
+<ul>
+<li>We can even do a quick exploration of the relationship between two categorical variables.</li>
+<li>Suppose we were interested in the gender balance among AOSIS delegates
+<ul>
+<li>we can use the <code>geom_count()</code> function to visualize the pattern between <code>Female</code> and <code>Delegation</code></li>
+<li>note that “female” is a 1,0, so we need to change the data type from continuous to categorical using the <code>factor</code> function.</li>
+</ul></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a>cop_27_aosis <span class="ot">&lt;-</span> parties <span class="sc">|&gt;</span></span>
+<span id="cb11-2"><a></a>  <span class="fu">filter</span>(Year <span class="sc">==</span> <span class="dv">2022</span> <span class="sc">&amp;</span> AOSIS <span class="sc">==</span> <span class="st">"AOSIS"</span>)</span>
+<span id="cb11-3"><a></a></span>
+<span id="cb11-4"><a></a>cop_27_aosis <span class="sc">|&gt;</span></span>
+<span id="cb11-5"><a></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb11-6"><a></a>  <span class="fu">geom_count</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">factor</span>(Female), <span class="at">y =</span> Delegation))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="geom_count" class="slide level2 smaller center">
+<h2>geom_count()</h2>
+
+<img data-src="12-assess_COP_files/figure-revealjs/unnamed-chunk-17-1.png" width="960" class="r-stretch"></section>
+<section id="ex_02" class="slide level2 center">
+<h2>EX_02</h2>
+<ol type="1">
+<li><p>Using the <code>delegate_size</code> dataframe, filter out the outlying delegate numbers (i.e., n &lt;1000) and visualize the variation in party size between AOSIS and Non-AOSIS countries using a boxplot.</p></li>
+<li><p>Using the results from the previous question, what sort of variation do you see in delegation size between AOSIS and non-AOSIS countries?</p></li>
+</ol>
+<ul>
+<li>Here’s a <a href="https://www.simplypsychology.org/boxplots.html">quick explanation</a> of boxplots in case it’s been awhile. :-)</li>
+</ul>
+</section>
+<section id="data-visualization-options" class="slide level2 center">
+<h2>Data Visualization Options</h2>
+<p>Now that we know how to format figures and explore variation in our data, we can think about how we might want to use our data to tell a story.</p>
+<p>Here are some great resources that I use often for inspiration.</p>
+</section>
+<section id="from-data-to-viz" class="slide level2 smaller center">
+<h2>From Data to Viz</h2>
+<ul>
+<li><a href="https://drive.google.com/drive/folders/1aA_tWldPtM-wmbZvVYsOIF14Iec4bZmA?usp=drive_link">This is a great visual</a> I often use when I’m thinking about the kinds of variables I have (or could create). <img data-src="images/poster-big.png" alt="alt"></li>
+</ul>
+</section>
+<section id="example-workflow" class="slide level2 center">
+<h2>Example Workflow</h2>
+<ul>
+<li>Say I’m interested in the number of delegates from universities or colleges in COP attendance, and their affiliated country, between 1995 and 2024.</li>
+<li>If I filter the data and create a summarized dataframe, I’ll have:
+<ul>
+<li>one categorical and several numeric variables, one of which is ordered (aka, year).</li>
+<li>I think a grouped line plot could be good here.</li>
+</ul></li>
+</ul>
+</section>
+<section id="summarizing-my-data" class="slide level2 smaller center">
+<h2>Summarizing my data</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a></a>higher_ed <span class="ot">&lt;-</span> cop_delegates <span class="sc">|&gt;</span></span>
+<span id="cb12-2"><a></a>  <span class="fu">filter</span>(<span class="fu">str_detect</span>(Affiliation, <span class="st">"University"</span>) <span class="sc">|</span> </span>
+<span id="cb12-3"><a></a>           <span class="fu">str_detect</span>(Affiliation, <span class="st">"College"</span>)) <span class="sc">|&gt;</span> </span>
+<span id="cb12-4"><a></a>  <span class="fu">group_by</span>(Year, AOSIS) <span class="sc">|&gt;</span></span>
+<span id="cb12-5"><a></a>  <span class="fu">count</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="r-graph-gallery" class="slide level2 smaller center">
+<h2>R Graph Gallery</h2>
+<ul>
+<li>Once I choose a visual I’m interested in, I often use the website <a href="https://r-graph-gallery.com/">r-graph-gallery.com</a> to find base code for kind of visual I’m interested in creating.</li>
+<li>I’ll select the “line graph” icon and find example code that creates a graphic I like.</li>
+<li>Lastly, I can set a theme using the <code>ggethemr</code> package, let’s use one called “light”.
+<ul>
+<li>You can see more palette options, <a href="https://github.com/Mikata-Project/ggthemr">here</a>!</li>
+</ul></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a></a><span class="fu">ggthemr</span>(<span class="st">"solarized"</span>)</span>
+<span id="cb13-2"><a></a></span>
+<span id="cb13-3"><a></a>higher_ed <span class="sc">%&gt;%</span></span>
+<span id="cb13-4"><a></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb13-5"><a></a>    <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">x=</span>Year, <span class="at">y=</span>n, <span class="at">group=</span>AOSIS, <span class="at">color=</span>AOSIS))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="not-bad" class="slide level2 smaller center">
+<h2>Not bad!</h2>
+
+<img data-src="12-assess_COP_files/figure-revealjs/unnamed-chunk-20-1.png" width="960" class="r-stretch"></section>
+<section id="ggplot2-cheatsheet" class="slide level2 smaller center">
+<h2>GGplot2 Cheatsheet</h2>
+<ul>
+<li>Lastly, once I have the base plot that I like, I’ll use the <a href="https://rstudio.github.io/cheatsheets/html/data-visualization.html">ggplot2 cheatsheet</a> to change small things that require code I haven’t committed to memory, like axes labels, themes, etc.</li>
+</ul>
+</section>
+<section id="ta-da" class="slide level2 smaller center">
+<h2>Ta da!</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a></a>higher_ed <span class="sc">|&gt;</span></span>
+<span id="cb14-2"><a></a>  <span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb14-3"><a></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">x =</span> Year, <span class="at">y =</span> n, <span class="at">group =</span> AOSIS, <span class="at">color =</span> AOSIS),</span>
+<span id="cb14-4"><a></a>    <span class="at">linewidth =</span> <span class="fl">1.5</span></span>
+<span id="cb14-5"><a></a>  ) <span class="sc">+</span></span>
+<span id="cb14-6"><a></a>  <span class="fu">labs</span>(<span class="at">y =</span> <span class="st">"Number of Higher Ed Delegates"</span>) <span class="sc">+</span></span>
+<span id="cb14-7"><a></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">1995</span>, <span class="dv">2025</span>, <span class="at">by =</span> <span class="dv">5</span>)) <span class="sc">+</span></span>
+<span id="cb14-8"><a></a>  <span class="fu">scale_y_continuous</span>(</span>
+<span id="cb14-9"><a></a>    <span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">3000</span>, <span class="at">by =</span> <span class="dv">500</span>),</span>
+<span id="cb14-10"><a></a>    <span class="at">labels =</span> <span class="fu">label_comma</span>()</span>
+<span id="cb14-11"><a></a>  ) <span class="sc">+</span></span>
+<span id="cb14-12"><a></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"bottom"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="12-assess_COP_files/figure-revealjs/unnamed-chunk-21-1.png" width="960" class="r-stretch"></section>
+<section id="ex_03-ex_04" class="slide level2 center">
+<h2>EX_03 + EX_04:</h2>
+<ul>
+<li>See Posit!</li>
+</ul>
+</section>
+<section id="logistics" class="slide level2 center">
+<h2>Logistics</h2>
+<ul>
+<li>No class Tuesday, Happy Fall Break!</li>
+<li>Dr.&nbsp;Caballero to lead centering on Friday</li>
+<li>Logic model discussion next Friday</li>
+</ul>
+
+
+</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
@@ -360,6 +826,44 @@
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
         const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
@@ -429,7 +933,7 @@
         }
           var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
           var mailtoRegex = new RegExp(/^mailto:/);
-            var filterRegex = new RegExp("https:\/\/mariahdaniellecaballero\.github\.io\/ES-202\/");
+            var filterRegex = new RegExp('/' + window.location.host + '/');
           var isInternal = (href) => {
               return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
           }
