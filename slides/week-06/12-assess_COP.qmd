@@ -282,7 +282,7 @@ cop_27 |>
 - We can also filter our dataset to look closer at the variation among smaller parties (n <100). 
 - changing our `binwidth` allows us to see patterns among the majority of the data. 
 ```{r}
-#| echo: false
+#| echo: true
 #| eval: true
 
 cop_27 |>

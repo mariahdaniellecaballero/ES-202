@@ -1,6 +1,6 @@
 ---
 title: "HW 06: COP Delegate Case Study"
-date: "October 16, 2025"
+date: "October 17, 2025"
 categories: "Homework"
 ---
 
