@@ -98,34 +98,6 @@ ul.task-list li input[type="checkbox"] {
       window['quarto-listing-loaded']();
     }
   })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-assignments .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-categories','listing-title','listing-date',{ data: ['index'] },{ data: ['categories'] }],
-      
-      searchColumns: [],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-assignments'] = new List('listing-assignments', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
   </script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
@@ -238,8 +210,8 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#lectures" id="toc-lectures" class="nav-link active" data-scroll-target="#lectures">Lectures</a></li>
-  <li><a href="#assignments" id="toc-assignments" class="nav-link" data-scroll-target="#assignments">Assignments</a></li>
+  <li><a href="#guest-lecturer" id="toc-guest-lecturer" class="nav-link active" data-scroll-target="#guest-lecturer">Guest Lecturer</a></li>
+  <li><a href="#lectures" id="toc-lectures" class="nav-link" data-scroll-target="#lectures">Lectures</a></li>
   <li><a href="#readings" id="toc-readings" class="nav-link" data-scroll-target="#readings">Readings</a></li>
   </ul>
 </nav>
@@ -250,7 +222,7 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Week 13</h1>
-<p class="subtitle lead">Recognition Justice in Houston County, GA</p>
+<p class="subtitle lead">Cosmopolitan Justice in Framingham, MA</p>
 </div>
 
 <div>
@@ -285,6 +257,10 @@ Important
 <p>Note that there is no class on Friday, November 28, 2025 due to Thanksgiving Break.</p>
 </div>
 </div>
+<section id="guest-lecturer" class="level1">
+<h1>Guest Lecturer</h1>
+<p>Angie Alberto Escobar is Director of Gas to Geo Transition at <a href="https://www.heet.org/who-we-are">HEET</a>, leading efforts to shift from gas to networked geothermal systems with equity at the core. She supports municipalities in assessing geothermal potential, coordinates technical partners, and co-develops engagement strategies that prioritize community leadership and long-term resilience.</p>
+</section>
 <section id="lectures" class="level1">
 <h1>Lectures</h1>
 <div id="listing-slides" class="quarto-listing quarto-listing-container-table">
@@ -304,9 +280,9 @@ Date
 </thead>
 <tbody class="list">
 
-<tr data-index="0" data-listing-date-sort="1764046800000" data-listing-file-modified-sort="1756222617420" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="[Theory] Recognitional Justice &amp; Energy" data-listing-filename-sort="23-theory_rec_just.qmd">
+<tr data-index="0" data-listing-date-sort="1764046800000" data-listing-file-modified-sort="1760555452557" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="Ms. Alberto Escobar's Slides" data-listing-filename-sort="23-theory_rec_just.qmd">
 <td>
-<a href="../slides/week-13/23-theory_rec_just.html" class="title listing-title">[Theory] Recognitional Justice &amp; Energy</a>
+<a href="../slides/week-13/23-theory_rec_just.html" class="title listing-title">Ms.&nbsp;Alberto Escobar’s Slides</a>
 </td>
 <td>
 <span class="listing-date">Tue, Nov 25</span>
@@ -314,23 +290,6 @@ Date
 
 </tr>
 
-</tbody>
-</table>
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
-</section>
-<section id="assignments" class="level1">
-<h1>Assignments</h1>
-<div id="listing-assignments" class="quarto-listing quarto-listing-container-table">
-<table class="quarto-listing-table table caption-top" data-quarto-postprocess="true">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th">Assignment</th>
-<th data-quarto-table-cell-role="th">Title</th>
-<th data-quarto-table-cell-role="th">Due</th>
-</tr>
-</thead>
-<tbody class="list">
 </tbody>
 </table>
 <div class="listing-no-matching d-none">No matching items</div>

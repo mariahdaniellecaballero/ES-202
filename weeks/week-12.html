@@ -98,34 +98,6 @@ ul.task-list li input[type="checkbox"] {
       window['quarto-listing-loaded']();
     }
   })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-assignments .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-categories','listing-title','listing-date',{ data: ['index'] },{ data: ['categories'] }],
-      
-      searchColumns: [],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-assignments'] = new List('listing-assignments', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
   </script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
@@ -238,8 +210,8 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#lectures" id="toc-lectures" class="nav-link active" data-scroll-target="#lectures">Lectures</a></li>
-  <li><a href="#assignments" id="toc-assignments" class="nav-link" data-scroll-target="#assignments">Assignments</a></li>
+  <li><a href="#guest-lecturer" id="toc-guest-lecturer" class="nav-link active" data-scroll-target="#guest-lecturer">Guest Lecturer</a></li>
+  <li><a href="#lectures" id="toc-lectures" class="nav-link" data-scroll-target="#lectures">Lectures</a></li>
   <li><a href="#readings" id="toc-readings" class="nav-link" data-scroll-target="#readings">Readings</a></li>
   </ul>
 </nav>
@@ -250,7 +222,7 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Week 12</h1>
-<p class="subtitle lead">Restorative Justice in Philadelphia, PA</p>
+<p class="subtitle lead">Recognition Justice in Boston, MA</p>
 </div>
 
 <div>
@@ -272,6 +244,10 @@ window.Quarto = {
 </header>
 
 
+<section id="guest-lecturer" class="level1">
+<h1>Guest Lecturer</h1>
+<p>Catherine McCandless (’14) is an experienced professional in climate resilience and environmental planning, currently serving as Senior Climate Resilience Project Manager for the <a href="https://www.boston.gov/departments/climate-resilience#about-the-office">City of Boston Climate Resilience Department</a> since March 2021. In this role, Catherine oversees the Climate Ready Boston initiative and collaborates with the Boston Conservation Commission on neighborhood climate resilience projects and municipal planning. Prior experience includes positions at VHB as an Environmental Planner and Planning and Design Intern, where Catherine managed environmental review processes and contributed to transportation project graphics. Additional roles with the Boston Planning &amp; Development Agency and JPNDC honed skills in community engagement and affordable housing project coordination. Catherine holds a Master’s in Urban Planning from Harvard University and a Bachelor’s in Architecture and Biological Sciences from Wellesley College.</p>
+</section>
 <section id="lectures" class="level1">
 <h1>Lectures</h1>
 <div id="listing-slides" class="quarto-listing quarto-listing-container-table">
@@ -291,9 +267,9 @@ Date
 </thead>
 <tbody class="list">
 
-<tr data-index="0" data-listing-date-sort="1763442000000" data-listing-file-modified-sort="1756222597583" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="[Theory] Restorative Justice &amp; Food" data-listing-filename-sort="21-theory_rest_just.qmd">
+<tr data-index="0" data-listing-date-sort="1763442000000" data-listing-file-modified-sort="1760554480600" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="Ms. McCandless' Slides" data-listing-filename-sort="21-theory_rest_just.qmd">
 <td>
-<a href="../slides/week-12/21-theory_rest_just.html" class="title listing-title">[Theory] Restorative Justice &amp; Food</a>
+<a href="../slides/week-12/21-theory_rest_just.html" class="title listing-title">Ms.&nbsp;McCandless’ Slides</a>
 </td>
 <td>
 <span class="listing-date">Tue, Nov 18</span>
@@ -311,23 +287,6 @@ Date
 
 </tr>
 
-</tbody>
-</table>
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
-</section>
-<section id="assignments" class="level1">
-<h1>Assignments</h1>
-<div id="listing-assignments" class="quarto-listing quarto-listing-container-table">
-<table class="quarto-listing-table table caption-top" data-quarto-postprocess="true">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th">Assignment</th>
-<th data-quarto-table-cell-role="th">Title</th>
-<th data-quarto-table-cell-role="th">Due</th>
-</tr>
-</thead>
-<tbody class="list">
 </tbody>
 </table>
 <div class="listing-no-matching d-none">No matching items</div>

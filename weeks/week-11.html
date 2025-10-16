@@ -98,34 +98,6 @@ ul.task-list li input[type="checkbox"] {
       window['quarto-listing-loaded']();
     }
   })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-assignments .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-categories','listing-title','listing-date',{ data: ['index'] },{ data: ['categories'] }],
-      
-      searchColumns: [],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-assignments'] = new List('listing-assignments', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
   </script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
@@ -238,8 +210,8 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#lectures" id="toc-lectures" class="nav-link active" data-scroll-target="#lectures">Lectures</a></li>
-  <li><a href="#assignments" id="toc-assignments" class="nav-link" data-scroll-target="#assignments">Assignments</a></li>
+  <li><a href="#guest-lecturer" id="toc-guest-lecturer" class="nav-link active" data-scroll-target="#guest-lecturer">Guest Lecturer</a></li>
+  <li><a href="#lectures" id="toc-lectures" class="nav-link" data-scroll-target="#lectures">Lectures</a></li>
   <li><a href="#readings" id="toc-readings" class="nav-link" data-scroll-target="#readings">Readings</a></li>
   </ul>
 </nav>
@@ -272,6 +244,10 @@ window.Quarto = {
 </header>
 
 
+<section id="guest-lecturer" class="level1">
+<h1>Guest Lecturer</h1>
+<p><a href="https://mdibl.org/faculty/jane-e-disney-ph-d/">Dr.&nbsp;Jane Disney</a> is an Associate Professor of Environmental Health at MDI Biological Laboratory in Bar Harbor, ME. Her research involves citizen science to investigate Per- and Polyfluoroalkyl substances (PFAS) contamination in drinking water from private wells in neighborhoods surrounding rural schools in Maine. As the principal investigator of the Community Lab, Dr.&nbsp;Disney has involved 41 teachers from 35 schools and over 5,000 students in Maine and New Hampshire to collect drinking water samples. This work aims to inform public health measures and influence state policies.</p>
+</section>
 <section id="lectures" class="level1">
 <h1>Lectures</h1>
 <div id="listing-slides" class="quarto-listing quarto-listing-container-table">
@@ -291,9 +267,9 @@ Date
 </thead>
 <tbody class="list">
 
-<tr data-index="0" data-listing-date-sort="1762837200000" data-listing-file-modified-sort="1756222577948" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="[Theory] Procedural Justice &amp; Water" data-listing-filename-sort="19-theory_proc_just.qmd">
+<tr data-index="0" data-listing-date-sort="1762837200000" data-listing-file-modified-sort="1760553754361" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="Dr. Disney's Slides" data-listing-filename-sort="19-theory_proc_just.qmd">
 <td>
-<a href="../slides/week-11/19-theory_proc_just.html" class="title listing-title">[Theory] Procedural Justice &amp; Water</a>
+<a href="../slides/week-11/19-theory_proc_just.html" class="title listing-title">Dr.&nbsp;Disney’s Slides</a>
 </td>
 <td>
 <span class="listing-date">Tue, Nov 11</span>
@@ -316,28 +292,21 @@ Date
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
 </section>
-<section id="assignments" class="level1">
-<h1>Assignments</h1>
-<div id="listing-assignments" class="quarto-listing quarto-listing-container-table">
-<table class="quarto-listing-table table caption-top" data-quarto-postprocess="true">
-<thead>
-<tr class="header">
-<th data-quarto-table-cell-role="th">Assignment</th>
-<th data-quarto-table-cell-role="th">Title</th>
-<th data-quarto-table-cell-role="th">Due</th>
-</tr>
-</thead>
-<tbody class="list">
-</tbody>
-</table>
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
-</section>
 <section id="readings" class="level1">
 <h1>Readings</h1>
-<p><strong>Tuesday</strong>:<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10985836/pdf/nihms-1978694.pdf">A State-By-State Comparison of Policies that Protect Private Well Users</a></p>
-<p><a href="https://ehp.niehs.nih.gov/doi/pdf/10.1289/EHP14653">Examining Private Wells from a High School in Rural Maine</a></p>
-<p><a href="https://ehp.niehs.nih.gov/doi/epdf/10.1289/EHP13421">A Mixed Methods Approach to Understanding the Public Health Impact of a School-Based Citizen Science Program to Reduce Arsenic in Private Well Water</a></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 10%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>Tuesday:</strong> Schmitt, K., Minovi, D., Loeb, S., &amp; Ward, M. H. (2024). <a href="https://drive.google.com/drive/folders/1Bcf-6-YmRordpN3-PL18tvXw9K_lU33N">A state-by-state comparison of policies that protect private well users</a>. <em>Journal of Exposure Science &amp; Environmental Epidemiology</em>, 34(1), 155-160.</td>
+</tr>
+<tr class="even">
+<td><strong>Tuesday:</strong> Taylor, A., Garretson, A., Bieluch, K. H., Buckman, K. L., Lust, H., Bailey, C., … &amp; Disney, J. E. (2024). <a href="https://drive.google.com/drive/folders/1Bcf-6-YmRordpN3-PL18tvXw9K_lU33N">A mixed methods approach to understanding the public health impact of a school-based citizen science program to reduce arsenic in private well water</a>. <em>Environmental Health Perspectives</em>, 132(8), 087006.</td>
+</tr>
+</tbody>
+</table>
 
 
 
