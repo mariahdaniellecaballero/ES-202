@@ -1,6 +1,6 @@
 ---
-title: "[Theory] Distributional Justice & Food"
-subtitle: "📍 Springfield, MA"
+title: "Dr. Xiuhtecutli's Slides"
+subtitle: "📍 Apopka, FL"
 date: "November 4, 2025"
 format: 
   revealjs:

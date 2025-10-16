@@ -195,16 +195,17 @@ ul.task-list li input[type="checkbox"] {
 <p>Submit a group project plan that outlines the project deliverables, comprising three main sections:</p>
 <section id="section-one-background" class="level3">
 <h3 class="anchored" data-anchor-id="section-one-background">Section One: Background</h3>
-<p>Provide an overview of your group’s case study (~300 words), including:</p>
+<p>Provide an overview of your group’s case study, including:</p>
 <ul>
 <li>Environmental justice theme</li>
 <li>Community case study– which community have you chosen, and why might it be a good representation of this EJ theme?</li>
+<li>At least three citations related to your community case study’s background and EJ challenge, to ensure your background section provides enough context for your case study.</li>
 <li>Which theoretical concepts are likely to apply to this case study?</li>
 </ul>
 </section>
 <section id="section-two-analysis-plan" class="level3">
 <h3 class="anchored" data-anchor-id="section-two-analysis-plan">Section Two: Analysis Plan</h3>
-<p>Provide an overview of your group’s anticipated analysis plan (~300 words), including:</p>
+<p>Provide an overview of your group’s anticipated analysis plan, including:</p>
 <ul>
 <li>Data analysis plan:
 <ul>
@@ -221,7 +222,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="section-three-group-expectations" class="level3">
 <h3 class="anchored" data-anchor-id="section-three-group-expectations">Section Three: Group Expectations</h3>
-<p>Provide an overview of how your group will realize your interdisciplinary research plan (~300 words):</p>
+<p>Provide an overview of how your group will realize your interdisciplinary research plan:</p>
 <ul>
 <li>What are the individual responsibilities for each team member?</li>
 <li>How will you remain accountable to one another?</li>
@@ -235,17 +236,64 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="rubric" class="level2">
 <h2 class="anchored" data-anchor-id="rubric">Rubric</h2>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Important
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>This is currently under development– please check back soon!</p>
+<p>The project plan is worth 25 points, and 10% of your grade.</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 5%">
+<col style="width: 6%">
+<col style="width: 25%">
+<col style="width: 27%">
+<col style="width: 35%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Theme</th>
+<th style="text-align: left;">Component</th>
+<th style="text-align: left;">1 - Needs work</th>
+<th style="text-align: left;">3- Okay</th>
+<th style="text-align: left;">5- Excellent</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Background</td>
+<td style="text-align: left;">EJ Theme + Case Study</td>
+<td style="text-align: left;">EJ theme and case study are not well-defined, references are lacking.</td>
+<td style="text-align: left;">EJ theme and case study are well-defined, but references are not reputable.</td>
+<td style="text-align: left;">EJ theme and case study are clearly delineated, at least 3 citations are provided.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Theoretical Applications</td>
+<td style="text-align: left;">Theories are not definied or do not clearly apply to the case study.</td>
+<td style="text-align: left;">Theories are mostly applicable, or mostly well-defined</td>
+<td style="text-align: left;">Theoretical applications are strong and clearly defined.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Analysis Plan</td>
+<td style="text-align: left;">Analysis Plan</td>
+<td style="text-align: left;">It is unclear how data sources, methods, or visuals apply to case study.</td>
+<td style="text-align: left;">Data sources/methods and intended visuals are relatively well-defined, but questions remain.</td>
+<td style="text-align: left;">Data sources, analysis methods, and visuals are clearly outlined in the document, using textual descriptions or draft sketches.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Intervention Plan</td>
+<td style="text-align: left;">Potential intervention and partner organizations are unclear or do not apply to the topic.</td>
+<td style="text-align: left;">Potential intervention and partner organizations are relatively well-defined and apply to the topic.</td>
+<td style="text-align: left;">Potential intervention and partner organizations are defined and make sense for the EJ topic.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Group Expectations</td>
+<td style="text-align: left;">Group Expectations</td>
+<td style="text-align: left;">Group expectations are unclear or sparse, and are likely to pose challenges for the group.</td>
+<td style="text-align: left;">Group expectations are vague and could pose challenges.</td>
+<td style="text-align: left;">Group expectations are clearly defined and will support group throughout the remainder of the partnership.</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 
@@ -325,7 +373,7 @@ Important
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/mariahdaniellecaballero\.github\.io\/ES-202\/");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

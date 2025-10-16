@@ -1,6 +1,6 @@
 ---
-title: "[Theory] Restorative Justice & Food"
-subtitle: "📍 Philadelphia, PA"
+title: "Ms. McCandless' Slides"
+subtitle: "📍 Boston, MA"
 date: "November 18, 2025"
 format: 
   revealjs:

@@ -15,5 +15,45 @@ execute:
   freeze: auto
 ---
 
-# Slide content
+##  Class Overview 
+- Centering activity
+- Mid-semester Logistics
+- Final Project Team Selections
+- Intro to Logic Models
+- Group Discussion + Debrief
+
+## Centering Activity
+- Dr. Caballero
+
+## Overview of Class Schedule {.smaller}
+![](images/Course_Overview.png)
+
+## Mid-point Reflection 
+- Up until this point we've: 
+  - Reflexively considered our identity through positionality statements 
+  - Learned five tenets of justice, and considered them in theory and in praxis using different communities as case studies
+  - Learned introductory skills in data science and visualization
+  - Applied EJ methods and theory to topics of waste, food, water, climate, and energy throughout time and space
+
+## Looking Ahead
+- **Tuesdays:**
+  - 5 speakers across FEW + Climate nexus
+  - Representing advocacy and community organizing, academia, and local government. 
+  - Mix of education/disciplinary backgrounds, some Wellesley alum! 
+  - Sign-up list for speaker engagement: Opportunity for class participation
+- **Fridays:** 
+  - In-class time to work on final projects
+
+
+## Mid-Semester Evaluation
+- Will email out to class, want to collect feedback about how the first half went, and where we're headed. 
+  - Due Wednesday, October 22, 2025 at 11:59 PM [Class participation credit]
+
+## Logistics
+- Class starts at 9:55, please do your very best to make it on time! 
+  - In addition to my time, I really care about our guest speakers, and I want to ensure we can get through our centering activity AND start our Zoom sessions at 10 AM sharp. 
+- Alden is joining class on Tuesday as an observer. 
+  - Thoughts on where he should sit? 
+
+## Final Project Team Selections
 

@@ -1,7 +1,6 @@
 ---
 title: "[Strategize]: Final Project Plans"
-subtitle: "📍 Springfield, MA"
-date: "October 24, 2025"
+date: "October 31, 2025"
 format: 
   revealjs:
     theme:

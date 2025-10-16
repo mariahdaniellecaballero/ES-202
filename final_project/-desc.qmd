@@ -7,7 +7,7 @@ categories: "Final Project"
 The final group project is intended to assess your theoretical and methodological skills in environmental justice. Teams are tasked with creating a multimedia narrative of one environmental justice theme (food, energy, water, waste, or climate) based on a community case study of their choice. Final project reports should include both a visual and narrative component: 
 
 - **Visual Component:** Use data to demonstrate environmental injustice occurring in a community of your choice using *at least three data visualizations*
-- **Narrative Component:** Provide background information on the community of interest, apply *two or more theoretical tenets of justice* to describe an unjust process, and propose a more equitable intervention using a basic logic model (1500 words) 
+- **Narrative Component:** Provide background information on the community of interest, apply *two or more theoretical tenets of justice* to describe an unjust process, and propose a more equitable intervention using a basic logic model (2000 words) 
 
 ## Team Selection
 Teams will be based on a combination of 1) anonymous student preferences for teammates (complementary disciplinary strengths and experiences, and coordinating schedules) and 2) my discretion. Teams will comprise 2-3 people. 
@@ -20,7 +20,7 @@ Please see [Data Sources](data_sources.qmd) for a list of potential data sources
 ## Timeline
 The final group project is cumulative, because I'm interested in students learning the *process* of interdisciplinary, collaborative research. Several components are due throughout the semester to help complete it. Deadlines include: 
 
-- [**Project Proposal:**](w8-project_proposal.qmd) Thursday, October 30, 2025 at 11:59 PM
+- [**Project Proposal:**](w8-project_proposal.qmd) Friday, October 24, 2025 at 11:59 PM
 - [**Project Plan:**](w10-project_plan.qmd) Friday, November 07, 2025 at 11:59 PM
 - [**Final Project:**](w15-final_project.qmd) Friday, December 09, 2025 before class
 

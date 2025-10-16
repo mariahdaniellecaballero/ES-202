@@ -1,6 +1,6 @@
 ---
 title: "Week 12"
-subtitle: "Restorative Justice in Philadelphia, PA"
+subtitle: "Recognition Justice in Boston, MA"
 description: "Nov 18 - Nov 21"
 author: ""
 date: ""
@@ -17,30 +17,15 @@ listing:
     sort: [filename]
     sort-ui: false
     filter-ui: false
-  - id: assignments
-    contents:
-      - ../hw/w12-*.qmd
-    type: table
-    fields: [categories, title, date]
-    date-format: "ddd, MMM DD"
-    field-display-names:
-      categories: "Assignment"
-      title: "Title"
-      date: "Due"
-    sort: [date]
-    sort-ui: false
-    filter-ui: false
 tbl-colwidths: [10,50,40]
 ---
+
+# Guest Lecturer
+Catherine McCandless ('14) is an experienced professional in climate resilience and environmental planning, currently serving as Senior Climate Resilience Project Manager for the [City of Boston Climate Resilience Department](https://www.boston.gov/departments/climate-resilience#about-the-office) since March 2021. In this role, Catherine oversees the Climate Ready Boston initiative and collaborates with the Boston Conservation Commission on neighborhood climate resilience projects and municipal planning. Prior experience includes positions at VHB as an Environmental Planner and Planning and Design Intern, where Catherine managed environmental review processes and contributed to transportation project graphics. Additional roles with the Boston Planning & Development Agency and JPNDC honed skills in community engagement and affordable housing project coordination. Catherine holds a Master's in Urban Planning from Harvard University and a Bachelor's in Architecture and Biological Sciences from Wellesley College.
 
 # Lectures
 
 ::: {#slides}
-:::
-
-# Assignments
-
-::: {#assignments}
 :::
 
 # Readings

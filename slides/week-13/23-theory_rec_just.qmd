@@ -1,6 +1,6 @@
 ---
-title: "[Theory] Recognitional Justice & Energy"
-subtitle: "📍 Houston County, GA"
+title: "Ms. Alberto Escobar's Slides"
+subtitle: "📍 Framingham, MA"
 date: "November 25, 2025"
 format: 
   revealjs:

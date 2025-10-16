@@ -7,14 +7,15 @@ categories: "Final Project"
 Submit a group project plan that outlines the project deliverables, comprising three main sections: 
 
 ### Section One: Background  
-Provide an overview of your group's case study (~300 words), including:
+Provide an overview of your group's case study, including:
 
 - Environmental justice theme
 - Community case study-- which community have you chosen, and why might it be a good representation of this EJ theme? 
+- At least three citations related to your community case study's background and EJ challenge, to ensure your background section provides enough context for your case study.
 - Which theoretical concepts are likely to apply to this case study?
 
 ### Section Two: Analysis Plan
-Provide an overview of your group's anticipated analysis plan (~300 words), including: 
+Provide an overview of your group's anticipated analysis plan, including: 
 
 - Data analysis plan: 
     - What data source(s) will you use? 
@@ -26,7 +27,7 @@ Provide an overview of your group's anticipated analysis plan (~300 words), incl
 
 
 ### Section Three: Group Expectations
-Provide an overview of how your group will realize your interdisciplinary research plan (~300 words): 
+Provide an overview of how your group will realize your interdisciplinary research plan: 
 
 - What are the individual responsibilities for each team member? 
 - How will you remain accountable to one another?
@@ -37,6 +38,26 @@ Provide an overview of how your group will realize your interdisciplinary resear
 - How can I support your group as you realize your plan?
 
 ## Rubric
-::: {.callout-important}
-This is currently under development-- please check back soon!
-:::
+The project plan is worth 25 points, and 10% of your grade. 
+
+
+```{r}
+#| echo: false
+#| eval: true
+#| output: false
+library(readxl)
+library(tidyverse)
+
+rubric <- read_excel("/Users/mc152/Library/CloudStorage/GoogleDrive-mc152@wellesley.edu/My Drive/Teaching/ES-202/ES-202 Final Project Rubric.xlsx", 
+sheet = "Project_plan")
+```
+
+```{r}
+#| echo: false
+#| eval: true
+#| output: true
+
+options(knitr.kable.NA = '')
+knitr::kable(rubric)
+```
+

@@ -3,7 +3,21 @@ title: "Data Sources"
 date: "December 09, 2025"
 categories: "Final Project"
 ---
+## Variable Overview 
+### Food
 
-::: {.callout-important}
-This is currently under development-- please check back soon!
-:::
+### Energy
+
+### Water
+
+### Climate
+
+### Socio-economic
+
+
+
+## Data Download
+The dataset can be downloaded [here](). 
+
+It can also be viewed as a map [here](). 
+

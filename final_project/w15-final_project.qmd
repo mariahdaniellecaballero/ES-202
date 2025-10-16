@@ -4,6 +4,119 @@ date: "December 09, 2025"
 categories: "Final Project"
 ---
 
-::: {.callout-important}
-This is currently under development-- please check back soon!
-:::
+# Overview 
+The final project is a cumulation of the theory and methods skills your team has acquired througout the semester to identify and assess environmental injustice, apply theory, and propose an intervention. 
+
+**There are three files due at 11:59 PM on Tuesday, December 09, 2025:**
+
+ 1. Written report (~2,000 words) comprising four sections.
+ 2. Accompanying R code analysis document for data visualizations. 
+ 3. PDF of presentation for 7-minute presentation on final day of class. 
+
+**Additionally, please be prepared to present your team's final project in class on Tuesday, December 09, 2025.**  
+
+
+# Report Outline
+## Section One: Introduction
+This section provides important context to the reader about your community case study, the EJ challenge it is currently facing, and its theoretical applications to the 5 tenets of environmental justice.
+
+### Case Study Background 
+This sub-section provides foundational context related to your community case study. It provides the reader with important details related to how environmental injustice has been shaped throughout time and space. Therefore, you might include some combination of the following: 
+
+- The historical context of your community (i.e., important connections to land, immigration patterns, economic development, or inequitable policies that have shaped injustice).
+- Demographic information of your community (i.e., racial/ethnic makeup, education, and economic patterns). 
+- Multi-scalar patterns related to your community (i.e., state or federal policies, global impacts of climate change)
+This section should be ~500 words and cite at least 7 sources. 
+
+### Theoretical Connections
+This sub-section is focused on the theoretical applications to your community case study. In this section you should: 
+
+- Describe the EJ injustice your community is facing
+- Define at least two theoretical EJ tenets and describe how they apply to your community's EJ injustice 
+
+This section should be ~300 words and should cite at least 3 sources (do feel free to cite course readings). 
+
+## Section Two: Data Analysis 
+This section provides empirical support for your community case study and its EJ challenge, using open-source data and replicable data analysis. 
+
+### Methodology 
+In this sub-section, describe the data sources your team used in your analysis and any methods used to tidy, transform, and visualize the data including: 
+
+- The organization the dataset originated from 
+- The year(s) that the dataset represents 
+- The geographic scale that the dataset represents
+- Any tidying or data transformations conducted
+- Visualization approach
+
+This sub-section should be ~250 words and should cite both your open-source datasets, and the programming language used.
+
+### Results 
+This sub-section details the results from your data analysis. It should include: 
+
+- Narrative description of your results 
+- The three visuals you created, labeled and referenced in your narrative description
+
+This sub-section should be ~250 words. 
+
+## Section Three: Proposed Intervention
+This section details your proposed intervention and accompanying logic model. 
+
+### Description
+This sub-section details your proposed intervention, including potential community organization partnerships, inputs, activities, and intended outcomes. In other words, if your team lived in this community, what outcomes would you like to see, and what steps will you need to take to realize sustainable, equitable change? Feel free to learn from other community organizing, research, and policy organizations to inspire your intervention. This section should be ~500 words. 
+
+### Logic Model
+This sub-section should include a graphical representation of your proposed intervention in the form of a basic logic model. It should include the main components of a logic model such as proposed inputs, activities, outputs, outcomes, and impact. 
+
+Note that you can create this in whichever software you prefer, including Microsoft Powerpoint, Canva, or Goodnotes. 
+
+## Section Four: Team Contribution Statements
+Lastly, this section should include team contribution statements from each team member on the components that each person contributed including: 
+
+- Drafting the report
+- Editing the report
+- Creating the logic model
+- Analyzing the data 
+- Visualizing the data 
+- Reference support 
+- Formatting and citations 
+- Any other forms of support 
+
+This section should be ~200 words. 
+
+# Formatting Instructions
+## Document Details
+Please format the report using the report outline (i.e., four sections and accompanying sub-sections). The report should be single-spaced with 1-inch margins and use 12-pt sans-serif font. Feel free to download the [report template]() to get started! 
+
+## Visuals 
+Ensure the visuals are a balance of both aesthetics and content. This should include things like:
+
+- A [legible font](https://www.datawrapper.de/blog/fonts-for-data-visualization)
+- A consistent and accessible [color palette](https://projects.susielu.com/viz-palette) 
+- clear axes labels and effective figure captions
+
+## Citations
+Cite your sources using APA (7th edition) style citations. Be sure to include credible supporting evidence, such as information from peer-reviewed literature, books, local journalism, or primary sources. If you need support identifying supporting literature, please don't hesitate to reach out to me, or [make an appointment with LTS](https://wellesley.libcal.com/appointments)!
+
+# Rubric
+The final project is worth 50 points, and 10% of your grade. 
+
+```{r}
+#| echo: false
+#| eval: true
+#| output: false
+library(readxl)
+library(tidyverse)
+
+rubric <- read_excel("/Users/mc152/Library/CloudStorage/GoogleDrive-mc152@wellesley.edu/My Drive/Teaching/ES-202/ES-202 Final Project Rubric.xlsx", 
+sheet = "Final_Project")
+```
+
+```{r}
+#| echo: false
+#| eval: true
+#| output: true
+
+options(knitr.kable.NA = '')
+knitr::kable(rubric)
+```
+

@@ -17,35 +17,18 @@ listing:
     sort: [filename]
     sort-ui: false
     filter-ui: false
-  - id: assignments
-    contents:
-      - ../hw/w11-*.qmd
-    type: table
-    fields: [categories, title, date]
-    date-format: "ddd, MMM DD"
-    field-display-names:
-      categories: "Assignment"
-      title: "Title"
-      date: "Due"
-    sort: [date]
-    sort-ui: false
-    filter-ui: false
 tbl-colwidths: [10,50,40]
 ---
+# Guest Lecturer
+[Dr. Jane Disney](https://mdibl.org/faculty/jane-e-disney-ph-d/) is an Associate Professor of Environmental Health at MDI Biological Laboratory in Bar Harbor, ME. Her research involves citizen science to investigate Per- and Polyfluoroalkyl substances (PFAS) contamination in drinking water from private wells in neighborhoods surrounding rural schools in Maine. As the principal investigator of the Community Lab, Dr. Disney has involved 41 teachers from 35 schools and over 5,000 students in Maine and New Hampshire to collect drinking water samples. This work aims to inform public health measures and influence state policies.
 
 # Lectures
 
 ::: {#slides}
 :::
 
-# Assignments
-
-::: {#assignments}
-:::
-
 # Readings
-**Tuesday**:[A State-By-State Comparison of Policies that Protect Private Well Users](https://pmc.ncbi.nlm.nih.gov/articles/PMC10985836/pdf/nihms-1978694.pdf)
-
-[Examining Private Wells from a High School in Rural Maine](https://ehp.niehs.nih.gov/doi/pdf/10.1289/EHP14653)
-
-[A Mixed Methods Approach to Understanding the Public Health Impact of a School-Based Citizen Science Program to Reduce Arsenic in Private Well Water](https://ehp.niehs.nih.gov/doi/epdf/10.1289/EHP13421)
+|                                                                                                           |
+|-----------------------------------------------------------------------------------------------------------|
+|**Tuesday:** Schmitt, K., Minovi, D., Loeb, S., & Ward, M. H. (2024). [A state-by-state comparison of policies that protect private well users](https://drive.google.com/drive/folders/1Bcf-6-YmRordpN3-PL18tvXw9K_lU33N). *Journal of Exposure Science & Environmental Epidemiology*, 34(1), 155-160.|
+|**Tuesday:** Taylor, A., Garretson, A., Bieluch, K. H., Buckman, K. L., Lust, H., Bailey, C., ... & Disney, J. E. (2024). [A mixed methods approach to understanding the public health impact of a school-based citizen science program to reduce arsenic in private well water](https://drive.google.com/drive/folders/1Bcf-6-YmRordpN3-PL18tvXw9K_lU33N). *Environmental Health Perspectives*, 132(8), 087006.|

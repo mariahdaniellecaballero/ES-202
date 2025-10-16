@@ -1,6 +1,6 @@
 ---
 title: "Week 13"
-subtitle: "Recognition Justice in Houston County, GA"
+subtitle: "Cosmopolitan Justice in Framingham, MA"
 description: "Nov 25 - Nov 28"
 author: ""
 date: ""
@@ -17,19 +17,6 @@ listing:
     sort: [filename]
     sort-ui: false
     filter-ui: false
-  - id: assignments
-    contents:
-      - ../hw/w13-*.qmd
-    type: table
-    fields: [categories, title, date]
-    date-format: "ddd, MMM DD"
-    field-display-names:
-      categories: "Assignment"
-      title: "Title"
-      date: "Due"
-    sort: [date]
-    sort-ui: false
-    filter-ui: false
 tbl-colwidths: [10,50,40]
 ---
 
@@ -37,14 +24,14 @@ tbl-colwidths: [10,50,40]
 Note that there is no class on Friday, November 28, 2025 due to Thanksgiving Break.
 :::
 
+# Guest Lecturer
+Angie Alberto Escobar is Director of Gas to Geo Transition at [HEET](https://www.heet.org/who-we-are), leading efforts to shift from gas to networked geothermal systems with equity at the core. She supports municipalities in assessing geothermal potential, coordinates technical partners, and co-develops engagement strategies that prioritize community leadership and long-term resilience.
+
 # Lectures
 
 ::: {#slides}
 :::
 
-# Assignments
 
-::: {#assignments}
-:::
 
 # Readings
