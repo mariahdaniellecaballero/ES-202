@@ -15,4 +15,97 @@ execute:
   freeze: auto
 ---
 
-# Slides will be posted 24 hours in advance of class.
+##  Class Overview 
+- Centering activity
+- Mid-semester Logistics
+- Final Project Team Selections
+- Intro to Logic Models
+- Group Discussion + Debrief
+
+## Centering Activity
+![](images/Witch_name.jpg)
+
+## Overview of Class Schedule {.smaller}
+![](images/Course_Overview.png)
+
+## Mid-point Reflection 
+- Up until this point we've: 
+  - Reflexively considered our identity through positionality statements 
+  - Learned five tenets of justice, and considered them in theory and in praxis using different communities as case studies
+  - Learned introductory skills in data science and visualization
+  - Applied EJ methods and theory to topics of waste, food, water, climate, and energy throughout time and space
+
+# Mid-Semester Evaluation
+- Will email out to class, want to collect feedback about how the first half went, and where we're headed. 
+  - Due Wednesday, October 22, 2025 at 11:59 PM [Class participation credit]
+
+## Looking Ahead
+- **Tuesdays:**
+  - 5 speakers across FEW + Climate nexus
+  - Representing advocacy and community organizing, academia, and local government. 
+  - Mix of education/disciplinary backgrounds, some Wellesley alum! 
+  - Sign-up list for speaker engagement: Opportunity for class participation
+- **Fridays:** 
+  - In-class time to work on final projects
+
+## Website Resources for Final Project
+- [Data sources](https://mariahdaniellecaballero.github.io/ES-202/final_project/data_sources.html)
+- [Project descriptions](https://mariahdaniellecaballero.github.io/ES-202/final_project/-desc.html)
+
+## Project Proposals
+Email me a concise description, approximately 300 words in length, outlining the project that you and your team intend to undertake. This should include information such as the environmental justice topic, the community case study, and potential theories that may apply to the case study.
+
+Thoughts on current deadlines?
+
+## Final Project Team Selections
+- Teams will be based on your preferences and my discretion 
+- To gain a better sense of your preferences, we'll make mini resumes for future partners: 
+  - What to highlight? schedules, skills, leadership styles, interests? 
+- We'll spend ~15 minutes circulating and exchanging "resumes"
+- At the end of the time, you'll share your collaborator preferences
+  - I'll make final decisions and email out the group names this afternoon. 
+
+## What We Read
+
+- **Friday:** Kellogg, W. K. (2004). [Chapters One and Two](https://drive.google.com/drive/folders/1F_2-X_JVeQLgaMxbjR0bdntatLOK9uxE) in Logic Model Development Guide. Kellogg Foundation.
+- **Friday:** Kreger, M., Sargent, K., Arons, A., Standish, M., & Brindis, C. D. (2011). [Creating an environmental justice framework for policy change in childhood asthma: a grassroots to treetops approach](https://drive.google.com/drive/folders/1F_2-X_JVeQLgaMxbjR0bdntatLOK9uxE). American journal of public health, 101(S1), S208-S216.
+
+## Why a Logic Model?
+- It's often easy to define what you *want to do*, but it's less easy to define *how you'll get there*, and how you'll *evaluate success*.
+- Logic models are useful for communicating a plan for the change you want to see, how you'll measure impact, and the factors at play. 
+- Program evaluation is a really cool and important job for community impact and change!
+
+## Basic Logic Model {.smaller}
+- Plan backwards, take inspiration from others, and learn along the way! 
+![Kellogg, 2004](images/basic_logic_model.png)
+
+## Logic Model Discussion
+- What is the value of program evaluation in EJ organizing and policy change? 
+- Why is meaasuring impact important? What's challenging about measuring impact for local interventions? 
+- Can you see the logic model as a useful tool for new organizations? 
+
+
+## Childhood Asthma in California 
+- Local, regional and state-level initiative to integrate EJ into childhood asthma prevention
+- Coalition building at the forefront of planning 
+- Flexibility in program implementation and evaluation along the way
+- Really impressive policy outcomes! 
+
+## CAFA Logic Model 
+-![Kreger, 2011](images/Kreger_2011.png)
+
+## CAFA Strategies and Outcomes
+- What are the strengths and challenges of CAFA's approach? 
+- Thoughts on their "Grasstops" to "Treetops" approach? 
+- What role does data play in CAFA's EJ advocacy and policy approaches? 
+
+## Logistics
+- HW 06 due tonight at 11:59 PM!
+- Class starts at 9:55, please do your very best to make it on time! 
+  - In addition to my time, I really care about our guest speakers, and I want to ensure we can get through our centering activity AND start our Zoom sessions at 10 AM.
+- Alden is joining class on Tuesday as an observer. 
+  - Thoughts on where he should sit? 
+
+## Tuesday Class
+- Two readings on Navajo Nation and Recognition Justice 
+- Gwen leading centering activity on Tuesday. :-) 

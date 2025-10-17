@@ -4,20 +4,43 @@ date: "December 09, 2025"
 categories: "Final Project"
 ---
 ## Variable Overview 
-### Food
+```{r}
+#| echo: false
+#| eval: true
+#| output: false
+library(readxl)
+library(tidyverse)
+library(knitr)
+library(kableExtra)
 
-### Energy
+vars <- read_excel("/Users/mc152/Library/CloudStorage/GoogleDrive-mc152@wellesley.edu/My Drive/Teaching/ES-202/Final_Dataset_variable_names.xlsx")
+```
 
-### Water
+```{r}
+#| echo: false
+#| eval: true
+#| output: true
 
-### Climate
-
-### Socio-economic
-
+options(knitr.kable.NA = '')
+vars %>%
+  kable("html", escape = FALSE) %>%
+  kable_styling(full_width = FALSE) %>%
+  column_spec(
+    which(names(vars) == "Description"), 
+    width = "30em", 
+    extra_css = "word-wrap: break-word; white-space: normal;"
+  )
+```
 
 
 ## Data Download
-The dataset can be downloaded [here](). 
+The dataset can be downloaded [here](https://drive.google.com/drive/folders/1hZWFZCzqoeWvpHIh0ZIbBVR8hKqKJBfA). 
 
-It can also be viewed as a map [here](). 
+It can also be viewed as an interactive map [here](https://arcg.is/0CKCDb0). To view different variables: 
+
+ - Click the "layers" tab on the upper left corner
+ - Select the "ES-202 Final Shapefile" layer
+ - Select the "styles" tab on the upper right corner
+ - Choose 1-2 "atttributes" using the shapefile variable names above 
+ - Pick a style to map the variables (I like "relationship" for 2 variables, and "counts and amounts" for 1 variable)
 
