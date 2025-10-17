@@ -67,6 +67,8 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="../site_libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="../site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
 
 
 </head>
@@ -149,14 +151,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#variable-overview" id="toc-variable-overview" class="nav-link active" data-scroll-target="#variable-overview">Variable Overview</a>
-  <ul class="collapse">
-  <li><a href="#food" id="toc-food" class="nav-link" data-scroll-target="#food">Food</a></li>
-  <li><a href="#energy" id="toc-energy" class="nav-link" data-scroll-target="#energy">Energy</a></li>
-  <li><a href="#water" id="toc-water" class="nav-link" data-scroll-target="#water">Water</a></li>
-  <li><a href="#climate" id="toc-climate" class="nav-link" data-scroll-target="#climate">Climate</a></li>
-  <li><a href="#socio-economic" id="toc-socio-economic" class="nav-link" data-scroll-target="#socio-economic">Socio-economic</a></li>
-  </ul></li>
+  <li><a href="#variable-overview" id="toc-variable-overview" class="nav-link active" data-scroll-target="#variable-overview">Variable Overview</a></li>
   <li><a href="#data-download" id="toc-data-download" class="nav-link" data-scroll-target="#data-download">Data Download</a></li>
   </ul>
 </nav>
@@ -194,26 +189,508 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="variable-overview" class="level2">
 <h2 class="anchored" data-anchor-id="variable-overview">Variable Overview</h2>
-<section id="food" class="level3">
-<h3 class="anchored" data-anchor-id="food">Food</h3>
-</section>
-<section id="energy" class="level3">
-<h3 class="anchored" data-anchor-id="energy">Energy</h3>
-</section>
-<section id="water" class="level3">
-<h3 class="anchored" data-anchor-id="water">Water</h3>
-</section>
-<section id="climate" class="level3">
-<h3 class="anchored" data-anchor-id="climate">Climate</h3>
-</section>
-<section id="socio-economic" class="level3">
-<h3 class="anchored" data-anchor-id="socio-economic">Socio-economic</h3>
-</section>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table caption-top table-sm table-striped small" data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Theme</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Variable Name</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Description</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Source</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Years</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Shapefile variable name</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Geographic Identifiers</td>
+<td style="text-align: left;">id</td>
+<td style="text-align: left; width: 30em; word-wrap: break-word; white-space: normal;">Census FIPS code for tract</td>
+<td style="text-align: left;">USEPA EJScreen</td>
+<td style="text-align: left;">2018 - 2022</td>
+<td style="text-align: left;">GEOID</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">state_name</td>
+<td style="text-align: left; width: 30em; word-wrap: break-word; white-space: normal;">Name of state</td>
+<td style="text-align: left;">USEPA EJScreen</td>
+<td style="text-align: left;">2018 - 2022</td>
+<td style="text-align: left;">stat_nm</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">cnty_name</td>
+<td style="text-align: left; width: 30em; word-wrap: break-word; white-space: normal;">County Name</td>
+<td style="text-align: left;">USEPA EJScreen</td>
+<td style="text-align: left;">2018 - 2022</td>
+<td style="text-align: left;">cnty_nm</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">region</td>
+<td style="text-align: left; width: 30em; word-wrap: break-word; white-space: normal;">US EPA region number</td>
+<td style="text-align: left;">USEPA EJScreen</td>
+<td style="text-align: left;">2018 - 2022</td>
+<td style="text-align: left;">region</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">rural</td>
+<td style="text-align: left; width: 30em; word-wrap: break-word; white-space: normal;">Rural or urban community</td>
+<td style="text-align: left;">USDA RUCA</td>
+<td style="text-align: left;">2020 census</td>
+<td style="text-align: left;">ruralty</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Socioeconomic</td>
+<td style="text-align: left;">acstotpop</td>
+<td style="text-align: left; width: 30em; word-wrap: break-word; white-space: normal;">Total population</td>
+<td style="text-align: left;">USEPA EJScreen</td>
+<td style="text-align: left;">2018 - 2022</td>
+<td style="text-align: left;">acsttpp</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">peopcolorpct</td>
+<td style="text-align: left; width: 30em; word-wrap: break-word; white-space: normal;">% people of color</td>
+<td style="text-align: left;">USEPA EJScreen</td>
+<td style="text-align: left;">2018 - 2022</td>
+<td style="text-align: left;">ppclrpc</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">lowincpct</td>
+<td style="text-align: left; width: 30em; word-wrap: break-word; white-space: normal;">% low income</td>
+<td style="text-align: left;">USEPA EJScreen</td>
+<td style="text-align: left;">2018 - 2022</td>
+<td style="text-align: left;">lwncpct</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">unemppct</td>
+<td style="text-align: left; width: 30em; word-wrap: break-word; white-space: normal;">% unemployed</td>
+<td style="text-align: left;">USEPA EJScreen</td>
+<td style="text-align: left;">2018 - 2022</td>
+<td style="text-align: left;">unmppct</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">disabilitypct</td>
+<td style="text-align: left; width: 30em; word-wrap: break-word; white-space: normal;">% persons with disabilities</td>
+<td style="text-align: left;">USEPA EJScreen</td>
+<td style="text-align: left;">2018 - 2022</td>
+<td style="text-align: left;">dsbltyp</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">lingisopct</td>
+<td style="text-align: left; width: 30em; word-wrap: break-word; white-space: normal;">% Limited English speaking households</td>
+<td style="text-align: left;">USEPA EJScreen</td>
+<td style="text-align: left;">2018 - 2022</td>
+<td style="text-align: left;">lngspct</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">lesshspct</td>
+<td style="text-align: left; width: 30em; word-wrap: break-word; white-space: normal;">% less than high school education</td>
+<td style="text-align: left;">USEPA EJScreen</td>
+<td style="text-align: left;">2018 - 2022</td>
+<td style="text-align: left;">lsshspc</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">under5pct</td>
+<td style="text-align: left; width: 30em; word-wrap: break-word; white-space: normal;">% under age 5</td>
+<td style="text-align: left;">USEPA EJScreen</td>
+<td style="text-align: left;">2018 - 2022</td>
+<td style="text-align: left;">undr5pc</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">over64pct</td>
+<td style="text-align: left; width: 30em; word-wrap: break-word; white-space: normal;">% over age 64</td>
+<td style="text-align: left;">USEPA EJScreen</td>
+<td style="text-align: left;">2018 - 2022</td>
+<td style="text-align: left;">ovr64pc</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">perc_non_citizen</td>
+<td style="text-align: left; width: 30em; word-wrap: break-word; white-space: normal;">% of individuals that are not US citizens</td>
+<td style="text-align: left;">ACS 5-year estimates</td>
+<td style="text-align: left;">2018-2022</td>
+<td style="text-align: left;">prc_nn_</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">lifeexppct</td>
+<td style="text-align: left; width: 30em; word-wrap: break-word; white-space: normal;">% low life expectancy</td>
+<td style="text-align: left;">USEPA EJScreen</td>
+<td style="text-align: left;">2018 - 2022</td>
+<td style="text-align: left;">lfxppct</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Housing /Built Environment</td>
+<td style="text-align: left;">pre1960pct</td>
+<td style="text-align: left; width: 30em; word-wrap: break-word; white-space: normal;">Percent of housing units built before 1960 (Indicator of Lead Paint)</td>
+<td style="text-align: left;">USEPA EJScreen</td>
+<td style="text-align: left;">2018-2022</td>
+<td style="text-align: left;">pr1960p</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">ptraf</td>
+<td style="text-align: left; width: 30em; word-wrap: break-word; white-space: normal;">Count of vehicles (annual average daily traffic [AADT]) at major roads within 10 kilometers (km), divided by distance in km.</td>
+<td style="text-align: left;">USEPA EJScreen</td>
+<td style="text-align: left;">2018-2022</td>
+<td style="text-align: left;">ptraf</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">lacktrpt</td>
+<td style="text-align: left; width: 30em; word-wrap: break-word; white-space: normal;">Percent of adult population lacking reliable transportation in the past 12 months</td>
+<td style="text-align: left;">CDC PLACES</td>
+<td style="text-align: left;">2022</td>
+<td style="text-align: left;">lcktrpt</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">perc_mob_hom</td>
+<td style="text-align: left; width: 30em; word-wrap: break-word; white-space: normal;">Percent of households living in mobile homes</td>
+<td style="text-align: left;">ACS 5-year estimates</td>
+<td style="text-align: left;">2018-2022</td>
+<td style="text-align: left;">prc_mb_</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">perc_renters</td>
+<td style="text-align: left; width: 30em; word-wrap: break-word; white-space: normal;">Percent of renters</td>
+<td style="text-align: left;">ACS 5-year estimates</td>
+<td style="text-align: left;">2018-2022</td>
+<td style="text-align: left;">pct_rnt</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">housinsecu</td>
+<td style="text-align: left; width: 30em; word-wrap: break-word; white-space: normal;">Percent of adult population experiencing housing insecurity in the past 12 months.</td>
+<td style="text-align: left;">CDC PLACES</td>
+<td style="text-align: left;">2022</td>
+<td style="text-align: left;">housnsc</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Health</td>
+<td style="text-align: left;">cancer</td>
+<td style="text-align: left; width: 30em; word-wrap: break-word; white-space: normal;">Percent of adult population with cancer (non-skin) or melanoma</td>
+<td style="text-align: left;">CDC PLACES</td>
+<td style="text-align: left;">2022</td>
+<td style="text-align: left;">cancer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">casthma</td>
+<td style="text-align: left; width: 30em; word-wrap: break-word; white-space: normal;">Percent of adult population with asthma</td>
+<td style="text-align: left;">CDC PLACES</td>
+<td style="text-align: left;">2022</td>
+<td style="text-align: left;">casthma</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">depression</td>
+<td style="text-align: left; width: 30em; word-wrap: break-word; white-space: normal;">Percent of adult population with depression</td>
+<td style="text-align: left;">CDC PLACES</td>
+<td style="text-align: left;">2022</td>
+<td style="text-align: left;">deprssn</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">lpa</td>
+<td style="text-align: left; width: 30em; word-wrap: break-word; white-space: normal;">Percent of adult population with no leisure-time physical activity</td>
+<td style="text-align: left;">CDC PLACES</td>
+<td style="text-align: left;">2022</td>
+<td style="text-align: left;">lpa</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">sleep</td>
+<td style="text-align: left; width: 30em; word-wrap: break-word; white-space: normal;">Percent of adult population with short sleep duration</td>
+<td style="text-align: left;">CDC PLACES</td>
+<td style="text-align: left;">2022</td>
+<td style="text-align: left;">sleep</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">ghlth</td>
+<td style="text-align: left; width: 30em; word-wrap: break-word; white-space: normal;">Percent of adult population with fair or poor self-rated health status</td>
+<td style="text-align: left;">CDC PLACES</td>
+<td style="text-align: left;">2022</td>
+<td style="text-align: left;">ghlth</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">mhlth</td>
+<td style="text-align: left; width: 30em; word-wrap: break-word; white-space: normal;">Percent of adult population with frequent mental distress</td>
+<td style="text-align: left;">CDC PLACES</td>
+<td style="text-align: left;">2022</td>
+<td style="text-align: left;">mhlth</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">phlth</td>
+<td style="text-align: left; width: 30em; word-wrap: break-word; white-space: normal;">Percent of adult population with frequent physical distress</td>
+<td style="text-align: left;">CDC PLACES</td>
+<td style="text-align: left;">2022</td>
+<td style="text-align: left;">phlth</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">isolation</td>
+<td style="text-align: left; width: 30em; word-wrap: break-word; white-space: normal;">Percent of adult population with feelings of social isolation</td>
+<td style="text-align: left;">CDC PLACES</td>
+<td style="text-align: left;">2022</td>
+<td style="text-align: left;">isolatn</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">access2</td>
+<td style="text-align: left; width: 30em; word-wrap: break-word; white-space: normal;">Percent of adult population wihtout health insurance (aged 18-64 years)</td>
+<td style="text-align: left;">CDC PLACES</td>
+<td style="text-align: left;">2022</td>
+<td style="text-align: left;">access2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Climate</td>
+<td style="text-align: left;">pm25</td>
+<td style="text-align: left; width: 30em; word-wrap: break-word; white-space: normal;">PM 2.5 levels in air measured using an annual average.</td>
+<td style="text-align: left;">USEPA EJScreen</td>
+<td style="text-align: left;">2018 - 2022</td>
+<td style="text-align: left;">pm25</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">ozone</td>
+<td style="text-align: left; width: 30em; word-wrap: break-word; white-space: normal;">Ozone annual mean top 10 of daily maximum 8-hour concentration in air</td>
+<td style="text-align: left;">USEPA EJScreen</td>
+<td style="text-align: left;">2018 - 2022</td>
+<td style="text-align: left;">ozone</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">dslpm</td>
+<td style="text-align: left; width: 30em; word-wrap: break-word; white-space: normal;">Diesel PM level in air</td>
+<td style="text-align: left;">USEPA EJScreen</td>
+<td style="text-align: left;">2018 - 2022</td>
+<td style="text-align: left;">dslpm</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">no2</td>
+<td style="text-align: left; width: 30em; word-wrap: break-word; white-space: normal;">Average annual nitrogen dioxide (NO2) levels expressed as part per billion (by volume).</td>
+<td style="text-align: left;">USEPA EJScreen</td>
+<td style="text-align: left;">2018 - 2022</td>
+<td style="text-align: left;">no2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">annlls</td>
+<td style="text-align: left; width: 30em; word-wrap: break-word; white-space: normal;">Estimate annualized loss due to climate disaster ($)</td>
+<td style="text-align: left;">FEMA NRI</td>
+<td style="text-align: left;">2021</td>
+<td style="text-align: left;">annlls</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">extht</td>
+<td style="text-align: left; width: 30em; word-wrap: break-word; white-space: normal;">Increase in number of days over 90 degress by mid-century</td>
+<td style="text-align: left;">DOI/NOAA CMRA</td>
+<td style="text-align: left;">2022</td>
+<td style="text-align: left;">extht</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">extrmp</td>
+<td style="text-align: left; width: 30em; word-wrap: break-word; white-space: normal;">Number of days exceeding 99th percentile of precipitation by mid-century</td>
+<td style="text-align: left;">DOI/NOAA CMRA</td>
+<td style="text-align: left;">2022</td>
+<td style="text-align: left;">extrmp</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">drghtd</td>
+<td style="text-align: left; width: 30em; word-wrap: break-word; white-space: normal;">Percent change in number of days with less than 0.01 inches of precipitation</td>
+<td style="text-align: left;">DOI/NOAA CMRA</td>
+<td style="text-align: left;">2022</td>
+<td style="text-align: left;">drghtd</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">pctnnd</td>
+<td style="text-align: left; width: 30em; word-wrap: break-word; white-space: normal;">Percent of tract inundated by 0.5 sea level increase by 2100</td>
+<td style="text-align: left;">DOI/NOAA CMRA</td>
+<td style="text-align: left;">2022</td>
+<td style="text-align: left;">pctnnd</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Energy</td>
+<td style="text-align: left;">eb</td>
+<td style="text-align: left; width: 30em; word-wrap: break-word; white-space: normal;">Percent of annual household allocated to energy costs</td>
+<td style="text-align: left;">DOE LEAD</td>
+<td style="text-align: left;">2024</td>
+<td style="text-align: left;">eb</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">eb_elec</td>
+<td style="text-align: left; width: 30em; word-wrap: break-word; white-space: normal;">Percent of annual household allocated to electricity costs</td>
+<td style="text-align: left;">DOE LEAD</td>
+<td style="text-align: left;">2024</td>
+<td style="text-align: left;">eb_elec</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">eb_gas</td>
+<td style="text-align: left; width: 30em; word-wrap: break-word; white-space: normal;">Percent of annual household allocated to gas costs</td>
+<td style="text-align: left;">DOE LEAD</td>
+<td style="text-align: left;">2024</td>
+<td style="text-align: left;">eb_gas</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">eb_othr</td>
+<td style="text-align: left; width: 30em; word-wrap: break-word; white-space: normal;">Percent of annual household allocated to other energy costs</td>
+<td style="text-align: left;">DOE LEAD</td>
+<td style="text-align: left;">2024</td>
+<td style="text-align: left;">eb_othr</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">ec</td>
+<td style="text-align: left; width: 30em; word-wrap: break-word; white-space: normal;">Average annual household cost ($) of energy</td>
+<td style="text-align: left;">DOE LEAD</td>
+<td style="text-align: left;">2024</td>
+<td style="text-align: left;">ec</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">ec_elec</td>
+<td style="text-align: left; width: 30em; word-wrap: break-word; white-space: normal;">Average annual household cost ($) of electricity</td>
+<td style="text-align: left;">DOE LEAD</td>
+<td style="text-align: left;">2024</td>
+<td style="text-align: left;">ec_elec</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">ec_gas</td>
+<td style="text-align: left; width: 30em; word-wrap: break-word; white-space: normal;">Average annual household cost ($) of gas</td>
+<td style="text-align: left;">DOE LEAD</td>
+<td style="text-align: left;">2024</td>
+<td style="text-align: left;">ec_gas</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">ec_othr</td>
+<td style="text-align: left; width: 30em; word-wrap: break-word; white-space: normal;">Average annual household cost ($) of other energy costs</td>
+<td style="text-align: left;">DOE LEAD</td>
+<td style="text-align: left;">2024</td>
+<td style="text-align: left;">ec_othr</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">shututility</td>
+<td style="text-align: left; width: 30em; word-wrap: break-word; white-space: normal;">Percent of adult population who received a utility services shut off threat in the past 12 months</td>
+<td style="text-align: left;">CDC PLACES</td>
+<td style="text-align: left;">2022</td>
+<td style="text-align: left;">shttlty</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Food</td>
+<td style="text-align: left;">foodinsecu</td>
+<td style="text-align: left; width: 30em; word-wrap: break-word; white-space: normal;">Percent of adult population experiencing food insecurity in the past 12 months</td>
+<td style="text-align: left;">CDC PLACES</td>
+<td style="text-align: left;">2022</td>
+<td style="text-align: left;">foodnsc</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">foodstamp</td>
+<td style="text-align: left; width: 30em; word-wrap: break-word; white-space: normal;">Percent of adult population who received food stamps in the past 12 months</td>
+<td style="text-align: left;">CDC PLACES</td>
+<td style="text-align: left;">2022</td>
+<td style="text-align: left;">fodstmp</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Water</td>
+<td style="text-align: left;">pwdis</td>
+<td style="text-align: left; width: 30em; word-wrap: break-word; white-space: normal;">RSEI modeled toxicity-weighted concentrations of TRI listed chemicals in water stream segments within 500 meters, divided by distance in km.</td>
+<td style="text-align: left;">USEPA EJScreen</td>
+<td style="text-align: left;">2018 - 2022</td>
+<td style="text-align: left;">pwdis</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">dwater</td>
+<td style="text-align: left; width: 30em; word-wrap: break-word; white-space: normal;">Score based on number of Safe Drinking Water Act violations not returned to compliance that community water systems have received over the past five years; violations are weighted based age and severity.</td>
+<td style="text-align: left;">USEPA EJScreen</td>
+<td style="text-align: left;">2018 - 2022</td>
+<td style="text-align: left;">dwater</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Pollution</td>
+<td style="text-align: left;">rsei_air</td>
+<td style="text-align: left; width: 30em; word-wrap: break-word; white-space: normal;">RSEI modeled toxicity-weighted concentrations in air of TRI listed chemicals.</td>
+<td style="text-align: left;">USEPA EJScreen</td>
+<td style="text-align: left;">2018 - 2022</td>
+<td style="text-align: left;">rsei_ar</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">pnpl</td>
+<td style="text-align: left; width: 30em; word-wrap: break-word; white-space: normal;">Count of Superfund sites (proposed and final NPL sites and SAA sites) within 10 km, each divided by distance in km.</td>
+<td style="text-align: left;">USEPA EJScreen</td>
+<td style="text-align: left;">2018 - 2022</td>
+<td style="text-align: left;">pnpl</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">prmp</td>
+<td style="text-align: left; width: 30em; word-wrap: break-word; white-space: normal;">Count of RMP (potential chemical accident management plan) facilities within 10 km, each divided by distance in km.</td>
+<td style="text-align: left;">USEPA EJScreen</td>
+<td style="text-align: left;">2018 - 2022</td>
+<td style="text-align: left;">prmp</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">ptsdf</td>
+<td style="text-align: left; width: 30em; word-wrap: break-word; white-space: normal;">Count of hazardous waste management facilities (TSDFs and LQGs) within 10 km, each divided by distance in km.</td>
+<td style="text-align: left;">USEPA EJScreen</td>
+<td style="text-align: left;">2018 - 2022</td>
+<td style="text-align: left;">ptsdf</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">ust</td>
+<td style="text-align: left; width: 30em; word-wrap: break-word; white-space: normal;">Count of Leaky underground storage tanks (multiplied by a factor of 7.7) and the number of undergroung storage tanks within a 1,500-foot buffered block group.</td>
+<td style="text-align: left;">USEPA EJScreen</td>
+<td style="text-align: left;">2018 - 2022</td>
+<td style="text-align: left;">ust</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 </section>
 <section id="data-download" class="level2">
 <h2 class="anchored" data-anchor-id="data-download">Data Download</h2>
-<p>The dataset can be downloaded <a href="">here</a>.</p>
-<p>It can also be viewed as a map <a href="">here</a>.</p>
+<p>The dataset can be downloaded <a href="https://drive.google.com/drive/folders/1hZWFZCzqoeWvpHIh0ZIbBVR8hKqKJBfA">here</a>.</p>
+<p>It can also be viewed as an interactive map <a href="https://arcg.is/0CKCDb0">here</a>. To view different variables:</p>
+<ul>
+<li>Click the “layers” tab on the upper left corner</li>
+<li>Select the “ES-202 Final Shapefile” layer</li>
+<li>Select the “styles” tab on the upper right corner</li>
+<li>Choose 1-2 “atttributes” using the shapefile variable names above</li>
+<li>Pick a style to map the variables (I like “relationship” for 2 variables, and “counts and amounts” for 1 variable)</li>
+</ul>
 
 
 </section>
