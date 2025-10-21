@@ -714,6 +714,20 @@
     ]
   },
   {
+    "objectID": "final_project/data_sources.html",
+    "href": "final_project/data_sources.html",
+    "title": "Data Sources",
+    "section": "",
+    "text": "Theme\nVariable Name\nDescription\nSource\nYears\nShapefile variable name\n\n\n\n\nGeographic Identifiers\nid\nCensus FIPS code for tract\nUSEPA EJScreen\n2018 - 2022\nGEOID\n\n\n\nstate_name\nName of state\nUSEPA EJScreen\n2018 - 2022\nstat_nm\n\n\n\ncnty_name\nCounty Name\nUSEPA EJScreen\n2018 - 2022\ncnty_nm\n\n\n\nregion\nUS EPA region number\nUSEPA EJScreen\n2018 - 2022\nregion\n\n\n\nrural\nRural or urban community\nUSDA RUCA\n2020 census\nruralty\n\n\nSocioeconomic\nacstotpop\nTotal population\nUSEPA EJScreen\n2018 - 2022\nacsttpp\n\n\n\npeopcolorpct\n% people of color\nUSEPA EJScreen\n2018 - 2022\nppclrpc\n\n\n\nlowincpct\n% low income\nUSEPA EJScreen\n2018 - 2022\nlwncpct\n\n\n\nunemppct\n% unemployed\nUSEPA EJScreen\n2018 - 2022\nunmppct\n\n\n\ndisabilitypct\n% persons with disabilities\nUSEPA EJScreen\n2018 - 2022\ndsbltyp\n\n\n\nlingisopct\n% Limited English speaking households\nUSEPA EJScreen\n2018 - 2022\nlngspct\n\n\n\nlesshspct\n% less than high school education\nUSEPA EJScreen\n2018 - 2022\nlsshspc\n\n\n\nunder5pct\n% under age 5\nUSEPA EJScreen\n2018 - 2022\nundr5pc\n\n\n\nover64pct\n% over age 64\nUSEPA EJScreen\n2018 - 2022\novr64pc\n\n\n\nperc_non_citizen\n% of individuals that are not US citizens\nACS 5-year estimates\n2018-2022\nprc_nn_\n\n\n\nlifeexppct\n% low life expectancy\nUSEPA EJScreen\n2018 - 2022\nlfxppct\n\n\nHousing /Built Environment\npre1960pct\nPercent of housing units built before 1960 (Indicator of Lead Paint)\nUSEPA EJScreen\n2018-2022\npr1960p\n\n\n\nptraf\nCount of vehicles (annual average daily traffic [AADT]) at major roads within 10 kilometers (km), divided by distance in km.\nUSEPA EJScreen\n2018-2022\nptraf\n\n\n\nlacktrpt\nPercent of adult population lacking reliable transportation in the past 12 months\nCDC PLACES\n2022\nlcktrpt\n\n\n\nperc_mob_hom\nPercent of households living in mobile homes\nACS 5-year estimates\n2018-2022\nprc_mb_\n\n\n\nperc_renters\nPercent of renters\nACS 5-year estimates\n2018-2022\npct_rnt\n\n\n\nhousinsecu\nPercent of adult population experiencing housing insecurity in the past 12 months.\nCDC PLACES\n2022\nhousnsc\n\n\nHealth\ncancer\nPercent of adult population with cancer (non-skin) or melanoma\nCDC PLACES\n2022\ncancer\n\n\n\ncasthma\nPercent of adult population with asthma\nCDC PLACES\n2022\ncasthma\n\n\n\ndepression\nPercent of adult population with depression\nCDC PLACES\n2022\ndeprssn\n\n\n\nlpa\nPercent of adult population with no leisure-time physical activity\nCDC PLACES\n2022\nlpa\n\n\n\nsleep\nPercent of adult population with short sleep duration\nCDC PLACES\n2022\nsleep\n\n\n\nghlth\nPercent of adult population with fair or poor self-rated health status\nCDC PLACES\n2022\nghlth\n\n\n\nmhlth\nPercent of adult population with frequent mental distress\nCDC PLACES\n2022\nmhlth\n\n\n\nphlth\nPercent of adult population with frequent physical distress\nCDC PLACES\n2022\nphlth\n\n\n\nisolation\nPercent of adult population with feelings of social isolation\nCDC PLACES\n2022\nisolatn\n\n\n\naccess2\nPercent of adult population wihtout health insurance (aged 18-64 years)\nCDC PLACES\n2022\naccess2\n\n\nClimate\npm25\nPM 2.5 levels in air measured using an annual average.\nUSEPA EJScreen\n2018 - 2022\npm25\n\n\n\nozone\nOzone annual mean top 10 of daily maximum 8-hour concentration in air\nUSEPA EJScreen\n2018 - 2022\nozone\n\n\n\ndslpm\nDiesel PM level in air\nUSEPA EJScreen\n2018 - 2022\ndslpm\n\n\n\nno2\nAverage annual nitrogen dioxide (NO2) levels expressed as part per billion (by volume).\nUSEPA EJScreen\n2018 - 2022\nno2\n\n\n\nannlls\nEstimate annualized loss due to climate disaster ($)\nFEMA NRI\n2021\nannlls\n\n\n\nextht\nIncrease in number of days over 90 degress by mid-century\nDOI/NOAA CMRA\n2022\nextht\n\n\n\nextrmp\nNumber of days exceeding 99th percentile of precipitation by mid-century\nDOI/NOAA CMRA\n2022\nextrmp\n\n\n\ndrghtd\nPercent change in number of days with less than 0.01 inches of precipitation\nDOI/NOAA CMRA\n2022\ndrghtd\n\n\n\npctnnd\nPercent of tract inundated by 0.5 sea level increase by 2100\nDOI/NOAA CMRA\n2022\npctnnd\n\n\nEnergy\neb\nPercent of annual household allocated to energy costs\nDOE LEAD\n2024\neb\n\n\n\neb_elec\nPercent of annual household allocated to electricity costs\nDOE LEAD\n2024\neb_elec\n\n\n\neb_gas\nPercent of annual household allocated to gas costs\nDOE LEAD\n2024\neb_gas\n\n\n\neb_othr\nPercent of annual household allocated to other energy costs\nDOE LEAD\n2024\neb_othr\n\n\n\nec\nAverage annual household cost ($) of energy\nDOE LEAD\n2024\nec\n\n\n\nec_elec\nAverage annual household cost ($) of electricity\nDOE LEAD\n2024\nec_elec\n\n\n\nec_gas\nAverage annual household cost ($) of gas\nDOE LEAD\n2024\nec_gas\n\n\n\nec_othr\nAverage annual household cost ($) of other energy costs\nDOE LEAD\n2024\nec_othr\n\n\n\nshututility\nPercent of adult population who received a utility services shut off threat in the past 12 months\nCDC PLACES\n2022\nshttlty\n\n\nFood\nfoodinsecu\nPercent of adult population experiencing food insecurity in the past 12 months\nCDC PLACES\n2022\nfoodnsc\n\n\n\nfoodstamp\nPercent of adult population who received food stamps in the past 12 months\nCDC PLACES\n2022\nfodstmp\n\n\nWater\npwdis\nRSEI modeled toxicity-weighted concentrations of TRI listed chemicals in water stream segments within 500 meters, divided by distance in km.\nUSEPA EJScreen\n2018 - 2022\npwdis\n\n\n\ndwater\nScore based on number of Safe Drinking Water Act violations not returned to compliance that community water systems have received over the past five years; violations are weighted based age and severity.\nUSEPA EJScreen\n2018 - 2022\ndwater\n\n\nPollution\nrsei_air\nRSEI modeled toxicity-weighted concentrations in air of TRI listed chemicals.\nUSEPA EJScreen\n2018 - 2022\nrsei_ar\n\n\n\npnpl\nCount of Superfund sites (proposed and final NPL sites and SAA sites) within 10 km, each divided by distance in km.\nUSEPA EJScreen\n2018 - 2022\npnpl\n\n\n\nprmp\nCount of RMP (potential chemical accident management plan) facilities within 10 km, each divided by distance in km.\nUSEPA EJScreen\n2018 - 2022\nprmp\n\n\n\nptsdf\nCount of hazardous waste management facilities (TSDFs and LQGs) within 10 km, each divided by distance in km.\nUSEPA EJScreen\n2018 - 2022\nptsdf\n\n\n\nust\nCount of Leaky underground storage tanks (multiplied by a factor of 7.7) and the number of undergroung storage tanks within a 1,500-foot buffered block group.\nUSEPA EJScreen\n2018 - 2022\nust"
+  },
+  {
+    "objectID": "final_project/data_sources.html#variable-overview",
+    "href": "final_project/data_sources.html#variable-overview",
+    "title": "Data Sources",
+    "section": "",
+    "text": "Theme\nVariable Name\nDescription\nSource\nYears\nShapefile variable name\n\n\n\n\nGeographic Identifiers\nid\nCensus FIPS code for tract\nUSEPA EJScreen\n2018 - 2022\nGEOID\n\n\n\nstate_name\nName of state\nUSEPA EJScreen\n2018 - 2022\nstat_nm\n\n\n\ncnty_name\nCounty Name\nUSEPA EJScreen\n2018 - 2022\ncnty_nm\n\n\n\nregion\nUS EPA region number\nUSEPA EJScreen\n2018 - 2022\nregion\n\n\n\nrural\nRural or urban community\nUSDA RUCA\n2020 census\nruralty\n\n\nSocioeconomic\nacstotpop\nTotal population\nUSEPA EJScreen\n2018 - 2022\nacsttpp\n\n\n\npeopcolorpct\n% people of color\nUSEPA EJScreen\n2018 - 2022\nppclrpc\n\n\n\nlowincpct\n% low income\nUSEPA EJScreen\n2018 - 2022\nlwncpct\n\n\n\nunemppct\n% unemployed\nUSEPA EJScreen\n2018 - 2022\nunmppct\n\n\n\ndisabilitypct\n% persons with disabilities\nUSEPA EJScreen\n2018 - 2022\ndsbltyp\n\n\n\nlingisopct\n% Limited English speaking households\nUSEPA EJScreen\n2018 - 2022\nlngspct\n\n\n\nlesshspct\n% less than high school education\nUSEPA EJScreen\n2018 - 2022\nlsshspc\n\n\n\nunder5pct\n% under age 5\nUSEPA EJScreen\n2018 - 2022\nundr5pc\n\n\n\nover64pct\n% over age 64\nUSEPA EJScreen\n2018 - 2022\novr64pc\n\n\n\nperc_non_citizen\n% of individuals that are not US citizens\nACS 5-year estimates\n2018-2022\nprc_nn_\n\n\n\nlifeexppct\n% low life expectancy\nUSEPA EJScreen\n2018 - 2022\nlfxppct\n\n\nHousing /Built Environment\npre1960pct\nPercent of housing units built before 1960 (Indicator of Lead Paint)\nUSEPA EJScreen\n2018-2022\npr1960p\n\n\n\nptraf\nCount of vehicles (annual average daily traffic [AADT]) at major roads within 10 kilometers (km), divided by distance in km.\nUSEPA EJScreen\n2018-2022\nptraf\n\n\n\nlacktrpt\nPercent of adult population lacking reliable transportation in the past 12 months\nCDC PLACES\n2022\nlcktrpt\n\n\n\nperc_mob_hom\nPercent of households living in mobile homes\nACS 5-year estimates\n2018-2022\nprc_mb_\n\n\n\nperc_renters\nPercent of renters\nACS 5-year estimates\n2018-2022\npct_rnt\n\n\n\nhousinsecu\nPercent of adult population experiencing housing insecurity in the past 12 months.\nCDC PLACES\n2022\nhousnsc\n\n\nHealth\ncancer\nPercent of adult population with cancer (non-skin) or melanoma\nCDC PLACES\n2022\ncancer\n\n\n\ncasthma\nPercent of adult population with asthma\nCDC PLACES\n2022\ncasthma\n\n\n\ndepression\nPercent of adult population with depression\nCDC PLACES\n2022\ndeprssn\n\n\n\nlpa\nPercent of adult population with no leisure-time physical activity\nCDC PLACES\n2022\nlpa\n\n\n\nsleep\nPercent of adult population with short sleep duration\nCDC PLACES\n2022\nsleep\n\n\n\nghlth\nPercent of adult population with fair or poor self-rated health status\nCDC PLACES\n2022\nghlth\n\n\n\nmhlth\nPercent of adult population with frequent mental distress\nCDC PLACES\n2022\nmhlth\n\n\n\nphlth\nPercent of adult population with frequent physical distress\nCDC PLACES\n2022\nphlth\n\n\n\nisolation\nPercent of adult population with feelings of social isolation\nCDC PLACES\n2022\nisolatn\n\n\n\naccess2\nPercent of adult population wihtout health insurance (aged 18-64 years)\nCDC PLACES\n2022\naccess2\n\n\nClimate\npm25\nPM 2.5 levels in air measured using an annual average.\nUSEPA EJScreen\n2018 - 2022\npm25\n\n\n\nozone\nOzone annual mean top 10 of daily maximum 8-hour concentration in air\nUSEPA EJScreen\n2018 - 2022\nozone\n\n\n\ndslpm\nDiesel PM level in air\nUSEPA EJScreen\n2018 - 2022\ndslpm\n\n\n\nno2\nAverage annual nitrogen dioxide (NO2) levels expressed as part per billion (by volume).\nUSEPA EJScreen\n2018 - 2022\nno2\n\n\n\nannlls\nEstimate annualized loss due to climate disaster ($)\nFEMA NRI\n2021\nannlls\n\n\n\nextht\nIncrease in number of days over 90 degress by mid-century\nDOI/NOAA CMRA\n2022\nextht\n\n\n\nextrmp\nNumber of days exceeding 99th percentile of precipitation by mid-century\nDOI/NOAA CMRA\n2022\nextrmp\n\n\n\ndrghtd\nPercent change in number of days with less than 0.01 inches of precipitation\nDOI/NOAA CMRA\n2022\ndrghtd\n\n\n\npctnnd\nPercent of tract inundated by 0.5 sea level increase by 2100\nDOI/NOAA CMRA\n2022\npctnnd\n\n\nEnergy\neb\nPercent of annual household allocated to energy costs\nDOE LEAD\n2024\neb\n\n\n\neb_elec\nPercent of annual household allocated to electricity costs\nDOE LEAD\n2024\neb_elec\n\n\n\neb_gas\nPercent of annual household allocated to gas costs\nDOE LEAD\n2024\neb_gas\n\n\n\neb_othr\nPercent of annual household allocated to other energy costs\nDOE LEAD\n2024\neb_othr\n\n\n\nec\nAverage annual household cost ($) of energy\nDOE LEAD\n2024\nec\n\n\n\nec_elec\nAverage annual household cost ($) of electricity\nDOE LEAD\n2024\nec_elec\n\n\n\nec_gas\nAverage annual household cost ($) of gas\nDOE LEAD\n2024\nec_gas\n\n\n\nec_othr\nAverage annual household cost ($) of other energy costs\nDOE LEAD\n2024\nec_othr\n\n\n\nshututility\nPercent of adult population who received a utility services shut off threat in the past 12 months\nCDC PLACES\n2022\nshttlty\n\n\nFood\nfoodinsecu\nPercent of adult population experiencing food insecurity in the past 12 months\nCDC PLACES\n2022\nfoodnsc\n\n\n\nfoodstamp\nPercent of adult population who received food stamps in the past 12 months\nCDC PLACES\n2022\nfodstmp\n\n\nWater\npwdis\nRSEI modeled toxicity-weighted concentrations of TRI listed chemicals in water stream segments within 500 meters, divided by distance in km.\nUSEPA EJScreen\n2018 - 2022\npwdis\n\n\n\ndwater\nScore based on number of Safe Drinking Water Act violations not returned to compliance that community water systems have received over the past five years; violations are weighted based age and severity.\nUSEPA EJScreen\n2018 - 2022\ndwater\n\n\nPollution\nrsei_air\nRSEI modeled toxicity-weighted concentrations in air of TRI listed chemicals.\nUSEPA EJScreen\n2018 - 2022\nrsei_ar\n\n\n\npnpl\nCount of Superfund sites (proposed and final NPL sites and SAA sites) within 10 km, each divided by distance in km.\nUSEPA EJScreen\n2018 - 2022\npnpl\n\n\n\nprmp\nCount of RMP (potential chemical accident management plan) facilities within 10 km, each divided by distance in km.\nUSEPA EJScreen\n2018 - 2022\nprmp\n\n\n\nptsdf\nCount of hazardous waste management facilities (TSDFs and LQGs) within 10 km, each divided by distance in km.\nUSEPA EJScreen\n2018 - 2022\nptsdf\n\n\n\nust\nCount of Leaky underground storage tanks (multiplied by a factor of 7.7) and the number of undergroung storage tanks within a 1,500-foot buffered block group.\nUSEPA EJScreen\n2018 - 2022\nust"
+  },
+  {
     "objectID": "final_project/data_sources.html#data-download",
     "href": "final_project/data_sources.html#data-download",
     "title": "Data Sources",
@@ -1319,8 +1333,8 @@
     "objectID": "slides_workspace/week-07/13-theory_intrvntmn.html#class-overview",
     "href": "slides_workspace/week-07/13-theory_intrvntmn.html#class-overview",
     "title": "[Theory] Community-Based Interventions & Theories of Change",
-    "section": "",
-    "text": "Centering activity\nMid-semester Logistics\nFinal Project Team Selections\nIntro to Logic Models\nGroup Discussion + Debrief"
+    "section": "Class Overview",
+    "text": "Class Overview\n\nCentering activity\nMid-semester Logistics\nFinal Project Team Selections\nIntro to Logic Models\nGroup Discussion + Debrief"
   },
   {
     "objectID": "slides_workspace/week-07/13-theory_intrvntmn.html#centering-activity",
@@ -1351,11 +1365,74 @@
     "text": "Looking Ahead\n\nTuesdays:\n\n5 speakers across FEW + Climate nexus\nRepresenting advocacy and community organizing, academia, and local government.\nMix of education/disciplinary backgrounds, some Wellesley alum!\nSign-up list for speaker engagement: Opportunity for class participation\n\nFridays:\n\nIn-class time to work on final projects"
   },
   {
-    "objectID": "slides_workspace/week-07/13-theory_intrvntmn.html#mid-semester-evaluation",
-    "href": "slides_workspace/week-07/13-theory_intrvntmn.html#mid-semester-evaluation",
+    "objectID": "slides_workspace/week-07/13-theory_intrvntmn.html#website-resources-for-final-project",
+    "href": "slides_workspace/week-07/13-theory_intrvntmn.html#website-resources-for-final-project",
     "title": "[Theory] Community-Based Interventions & Theories of Change",
-    "section": "Mid-Semester Evaluation",
-    "text": "Mid-Semester Evaluation\n\nWill email out to class, want to collect feedback about how the first half went, and where we’re headed.\n\nDue Wednesday, October 22, 2025 at 11:59 PM [Class participation credit]"
+    "section": "Website Resources for Final Project",
+    "text": "Website Resources for Final Project\n\nData sources\nProject descriptions"
+  },
+  {
+    "objectID": "slides_workspace/week-07/13-theory_intrvntmn.html#project-proposals",
+    "href": "slides_workspace/week-07/13-theory_intrvntmn.html#project-proposals",
+    "title": "[Theory] Community-Based Interventions & Theories of Change",
+    "section": "Project Proposals",
+    "text": "Project Proposals\nEmail me a concise description, approximately 300 words in length, outlining the project that you and your team intend to undertake. This should include information such as the environmental justice topic, the community case study, and potential theories that may apply to the case study.\nThoughts on current deadlines?"
+  },
+  {
+    "objectID": "slides_workspace/week-07/13-theory_intrvntmn.html#final-project-team-selections",
+    "href": "slides_workspace/week-07/13-theory_intrvntmn.html#final-project-team-selections",
+    "title": "[Theory] Community-Based Interventions & Theories of Change",
+    "section": "Final Project Team Selections",
+    "text": "Final Project Team Selections\n\nTeams will be based on your preferences and my discretion\nTo gain a better sense of your preferences, we’ll make mini resumes for future partners:\n\nWhat to highlight? schedules, skills, leadership styles, interests?\n\nWe’ll spend ~15 minutes circulating and exchanging “resumes”\nAt the end of the time, you’ll share your collaborator preferences\n\nI’ll make final decisions and email out the group names this afternoon."
+  },
+  {
+    "objectID": "slides_workspace/week-07/13-theory_intrvntmn.html#what-we-read",
+    "href": "slides_workspace/week-07/13-theory_intrvntmn.html#what-we-read",
+    "title": "[Theory] Community-Based Interventions & Theories of Change",
+    "section": "What We Read",
+    "text": "What We Read\n\nFriday: Kellogg, W. K. (2004). Chapters One and Two in Logic Model Development Guide. Kellogg Foundation.\nFriday: Kreger, M., Sargent, K., Arons, A., Standish, M., & Brindis, C. D. (2011). Creating an environmental justice framework for policy change in childhood asthma: a grassroots to treetops approach. American journal of public health, 101(S1), S208-S216."
+  },
+  {
+    "objectID": "slides_workspace/week-07/13-theory_intrvntmn.html#why-a-logic-model",
+    "href": "slides_workspace/week-07/13-theory_intrvntmn.html#why-a-logic-model",
+    "title": "[Theory] Community-Based Interventions & Theories of Change",
+    "section": "Why a Logic Model?",
+    "text": "Why a Logic Model?\n\nIt’s often easy to define what you want to do, but it’s less easy to define how you’ll get there, and how you’ll evaluate success.\nLogic models are useful for communicating a plan for the change you want to see, how you’ll measure impact, and the factors at play.\nProgram evaluation is a really cool and important job for community impact and change!"
+  },
+  {
+    "objectID": "slides_workspace/week-07/13-theory_intrvntmn.html#basic-logic-model",
+    "href": "slides_workspace/week-07/13-theory_intrvntmn.html#basic-logic-model",
+    "title": "[Theory] Community-Based Interventions & Theories of Change",
+    "section": "Basic Logic Model",
+    "text": "Basic Logic Model\n\nPlan backwards, take inspiration from others, and learn along the way!"
+  },
+  {
+    "objectID": "slides_workspace/week-07/13-theory_intrvntmn.html#logic-model-discussion",
+    "href": "slides_workspace/week-07/13-theory_intrvntmn.html#logic-model-discussion",
+    "title": "[Theory] Community-Based Interventions & Theories of Change",
+    "section": "Logic Model Discussion",
+    "text": "Logic Model Discussion\n\nWhat is the value of program evaluation in EJ organizing and policy change?\nWhy is meaasuring impact important? What’s challenging about measuring impact for local interventions?\nCan you see the logic model as a useful tool for new organizations?"
+  },
+  {
+    "objectID": "slides_workspace/week-07/13-theory_intrvntmn.html#childhood-asthma-in-california",
+    "href": "slides_workspace/week-07/13-theory_intrvntmn.html#childhood-asthma-in-california",
+    "title": "[Theory] Community-Based Interventions & Theories of Change",
+    "section": "Childhood Asthma in California",
+    "text": "Childhood Asthma in California\n\nLocal, regional and state-level initiative to integrate EJ into childhood asthma prevention\nCoalition building at the forefront of planning\nFlexibility in program implementation and evaluation along the way\nReally impressive policy outcomes!"
+  },
+  {
+    "objectID": "slides_workspace/week-07/13-theory_intrvntmn.html#cafa-logic-model",
+    "href": "slides_workspace/week-07/13-theory_intrvntmn.html#cafa-logic-model",
+    "title": "[Theory] Community-Based Interventions & Theories of Change",
+    "section": "CAFA Logic Model",
+    "text": "CAFA Logic Model\n-"
+  },
+  {
+    "objectID": "slides_workspace/week-07/13-theory_intrvntmn.html#cafa-strategies-and-outcomes",
+    "href": "slides_workspace/week-07/13-theory_intrvntmn.html#cafa-strategies-and-outcomes",
+    "title": "[Theory] Community-Based Interventions & Theories of Change",
+    "section": "CAFA Strategies and Outcomes",
+    "text": "CAFA Strategies and Outcomes\n\nWhat are the strengths and challenges of CAFA’s approach?\nThoughts on their “Grasstops” to “Treetops” approach?\nWhat role does data play in CAFA’s EJ advocacy and policy approaches?"
   },
   {
     "objectID": "slides_workspace/week-07/13-theory_intrvntmn.html#logistics",
@@ -1365,11 +1442,11 @@
     "text": "Logistics\n\nClass starts at 9:55, please do your very best to make it on time!\n\nIn addition to my time, I really care about our guest speakers, and I want to ensure we can get through our centering activity AND start our Zoom sessions at 10 AM.\n\nAlden is joining class on Tuesday as an observer.\n\nThoughts on where he should sit?"
   },
   {
-    "objectID": "slides_workspace/week-07/13-theory_intrvntmn.html#final-project-team-selections",
-    "href": "slides_workspace/week-07/13-theory_intrvntmn.html#final-project-team-selections",
+    "objectID": "slides_workspace/week-07/13-theory_intrvntmn.html#tuesday-class",
+    "href": "slides_workspace/week-07/13-theory_intrvntmn.html#tuesday-class",
     "title": "[Theory] Community-Based Interventions & Theories of Change",
-    "section": "Final Project Team Selections",
-    "text": "Final Project Team Selections\n\nTeams will be based on your preferences and my discretion\nTo gain a better sense of your preferences, we’ll make mini resumes for future partners:\n\nWhat to highlight? schedules, skills, leadership styles, interests?\n\nWe’ll spend ~15 minutes circulating and exchanging “resumes”\nAt the end of the time, you’ll share your collaborator preferences\n\nI’ll make final decisions and email out the group names this afternoon."
+    "section": "Tuesday Class",
+    "text": "Tuesday Class\n\nTwo readings on Navajo Nation and Recognition Justice\nGwen leading centering activity on Tuesday. :-)"
   },
   {
     "objectID": "slides_workspace/week-01/01-Welcome.html#environmental-justice-a-community-centric-approach",
@@ -3152,6 +3229,125 @@
     "text": "Logistics\n\nNo class Tuesday, Happy Fall Break!\nDr. Caballero to lead centering on Friday\nLogic model discussion next Friday"
   },
   {
+    "objectID": "slides/week-07/13-theory_intrvntmn.html#class-overview",
+    "href": "slides/week-07/13-theory_intrvntmn.html#class-overview",
+    "title": "[Theory] Community-Based Interventions & Theories of Change",
+    "section": "Class Overview",
+    "text": "Class Overview\n\nCentering activity\nMid-semester Logistics\nFinal Project Team Selections\nIntro to Logic Models\nGroup Discussion + Debrief"
+  },
+  {
+    "objectID": "slides/week-07/13-theory_intrvntmn.html#centering-activity",
+    "href": "slides/week-07/13-theory_intrvntmn.html#centering-activity",
+    "title": "[Theory] Community-Based Interventions & Theories of Change",
+    "section": "Centering Activity",
+    "text": "Centering Activity"
+  },
+  {
+    "objectID": "slides/week-07/13-theory_intrvntmn.html#overview-of-class-schedule",
+    "href": "slides/week-07/13-theory_intrvntmn.html#overview-of-class-schedule",
+    "title": "[Theory] Community-Based Interventions & Theories of Change",
+    "section": "Overview of Class Schedule",
+    "text": "Overview of Class Schedule"
+  },
+  {
+    "objectID": "slides/week-07/13-theory_intrvntmn.html#mid-point-reflection",
+    "href": "slides/week-07/13-theory_intrvntmn.html#mid-point-reflection",
+    "title": "[Theory] Community-Based Interventions & Theories of Change",
+    "section": "Mid-point Reflection",
+    "text": "Mid-point Reflection\n\nUp until this point we’ve:\n\nReflexively considered our identity through positionality statements\nLearned five tenets of justice, and considered them in theory and in praxis using different communities as case studies\nLearned introductory skills in data science and visualization\nApplied EJ methods and theory to topics of waste, food, water, climate, and energy throughout time and space"
+  },
+  {
+    "objectID": "slides/week-07/13-theory_intrvntmn.html#looking-ahead",
+    "href": "slides/week-07/13-theory_intrvntmn.html#looking-ahead",
+    "title": "[Theory] Community-Based Interventions & Theories of Change",
+    "section": "Looking Ahead",
+    "text": "Looking Ahead\n\nTuesdays:\n\n5 speakers across FEW + Climate nexus\nRepresenting advocacy and community organizing, academia, and local government.\nMix of education/disciplinary backgrounds, some Wellesley alum!\nSign-up list for speaker engagement: Opportunity for class participation\n\nFridays:\n\nIn-class time to work on final projects"
+  },
+  {
+    "objectID": "slides/week-07/13-theory_intrvntmn.html#website-resources-for-final-project",
+    "href": "slides/week-07/13-theory_intrvntmn.html#website-resources-for-final-project",
+    "title": "[Theory] Community-Based Interventions & Theories of Change",
+    "section": "Website Resources for Final Project",
+    "text": "Website Resources for Final Project\n\nData sources\nProject descriptions"
+  },
+  {
+    "objectID": "slides/week-07/13-theory_intrvntmn.html#project-proposals",
+    "href": "slides/week-07/13-theory_intrvntmn.html#project-proposals",
+    "title": "[Theory] Community-Based Interventions & Theories of Change",
+    "section": "Project Proposals",
+    "text": "Project Proposals\nEmail me a concise description, approximately 300 words in length, outlining the project that you and your team intend to undertake. This should include information such as the environmental justice topic, the community case study, and potential theories that may apply to the case study.\nThoughts on current deadlines?"
+  },
+  {
+    "objectID": "slides/week-07/13-theory_intrvntmn.html#final-project-team-selections",
+    "href": "slides/week-07/13-theory_intrvntmn.html#final-project-team-selections",
+    "title": "[Theory] Community-Based Interventions & Theories of Change",
+    "section": "Final Project Team Selections",
+    "text": "Final Project Team Selections\n\nTeams will be based on your preferences and my discretion\nTo gain a better sense of your preferences, we’ll make mini resumes for future partners:\n\nWhat to highlight? schedules, skills, leadership styles, interests?\n\nWe’ll spend ~15 minutes circulating and exchanging “resumes”\nAt the end of the time, you’ll share your collaborator preferences\n\nI’ll make final decisions and email out the group names this afternoon."
+  },
+  {
+    "objectID": "slides/week-07/13-theory_intrvntmn.html#what-we-read",
+    "href": "slides/week-07/13-theory_intrvntmn.html#what-we-read",
+    "title": "[Theory] Community-Based Interventions & Theories of Change",
+    "section": "What We Read",
+    "text": "What We Read\n\nFriday: Kellogg, W. K. (2004). Chapters One and Two in Logic Model Development Guide. Kellogg Foundation.\nFriday: Kreger, M., Sargent, K., Arons, A., Standish, M., & Brindis, C. D. (2011). Creating an environmental justice framework for policy change in childhood asthma: a grassroots to treetops approach. American journal of public health, 101(S1), S208-S216."
+  },
+  {
+    "objectID": "slides/week-07/13-theory_intrvntmn.html#why-a-logic-model",
+    "href": "slides/week-07/13-theory_intrvntmn.html#why-a-logic-model",
+    "title": "[Theory] Community-Based Interventions & Theories of Change",
+    "section": "Why a Logic Model?",
+    "text": "Why a Logic Model?\n\nIt’s often easy to define what you want to do, but it’s less easy to define how you’ll get there, and how you’ll evaluate success.\nLogic models are useful for communicating a plan for the change you want to see, how you’ll measure impact, and the factors at play.\nProgram evaluation is a really cool and important job for community impact and change!"
+  },
+  {
+    "objectID": "slides/week-07/13-theory_intrvntmn.html#basic-logic-model",
+    "href": "slides/week-07/13-theory_intrvntmn.html#basic-logic-model",
+    "title": "[Theory] Community-Based Interventions & Theories of Change",
+    "section": "Basic Logic Model",
+    "text": "Basic Logic Model\n\nPlan backwards, take inspiration from others, and learn along the way!"
+  },
+  {
+    "objectID": "slides/week-07/13-theory_intrvntmn.html#logic-model-discussion",
+    "href": "slides/week-07/13-theory_intrvntmn.html#logic-model-discussion",
+    "title": "[Theory] Community-Based Interventions & Theories of Change",
+    "section": "Logic Model Discussion",
+    "text": "Logic Model Discussion\n\nWhat is the value of program evaluation in EJ organizing and policy change?\nWhy is meaasuring impact important? What’s challenging about measuring impact for local interventions?\nCan you see the logic model as a useful tool for new organizations?"
+  },
+  {
+    "objectID": "slides/week-07/13-theory_intrvntmn.html#childhood-asthma-in-california",
+    "href": "slides/week-07/13-theory_intrvntmn.html#childhood-asthma-in-california",
+    "title": "[Theory] Community-Based Interventions & Theories of Change",
+    "section": "Childhood Asthma in California",
+    "text": "Childhood Asthma in California\n\nLocal, regional and state-level initiative to integrate EJ into childhood asthma prevention\nCoalition building at the forefront of planning\nFlexibility in program implementation and evaluation along the way\nReally impressive policy outcomes!"
+  },
+  {
+    "objectID": "slides/week-07/13-theory_intrvntmn.html#cafa-logic-model",
+    "href": "slides/week-07/13-theory_intrvntmn.html#cafa-logic-model",
+    "title": "[Theory] Community-Based Interventions & Theories of Change",
+    "section": "CAFA Logic Model",
+    "text": "CAFA Logic Model\n-"
+  },
+  {
+    "objectID": "slides/week-07/13-theory_intrvntmn.html#cafa-strategies-and-outcomes",
+    "href": "slides/week-07/13-theory_intrvntmn.html#cafa-strategies-and-outcomes",
+    "title": "[Theory] Community-Based Interventions & Theories of Change",
+    "section": "CAFA Strategies and Outcomes",
+    "text": "CAFA Strategies and Outcomes\n\nWhat are the strengths and challenges of CAFA’s approach?\nThoughts on their “Grasstops” to “Treetops” approach?\nWhat role does data play in CAFA’s EJ advocacy and policy approaches?"
+  },
+  {
+    "objectID": "slides/week-07/13-theory_intrvntmn.html#logistics",
+    "href": "slides/week-07/13-theory_intrvntmn.html#logistics",
+    "title": "[Theory] Community-Based Interventions & Theories of Change",
+    "section": "Logistics",
+    "text": "Logistics\n\nHW 06 due tonight at 11:59 PM!\nClass starts at 9:55, please do your very best to make it on time!\n\nIn addition to my time, I really care about our guest speakers, and I want to ensure we can get through our centering activity AND start our Zoom sessions at 10 AM.\n\nAlden is joining class on Tuesday as an observer.\n\nThoughts on where he should sit?"
+  },
+  {
+    "objectID": "slides/week-07/13-theory_intrvntmn.html#tuesday-class",
+    "href": "slides/week-07/13-theory_intrvntmn.html#tuesday-class",
+    "title": "[Theory] Community-Based Interventions & Theories of Change",
+    "section": "Tuesday Class",
+    "text": "Tuesday Class\n\nTwo readings on Navajo Nation and Recognition Justice\nGwen leading centering activity on Tuesday. :-)"
+  },
+  {
     "objectID": "slides/week-05/09-theory_rec_just.html#class-overview",
     "href": "slides/week-05/09-theory_rec_just.html#class-overview",
     "title": "[Theory] Recognitional (in)Justice & Water",
@@ -3789,227 +3985,164 @@
     ]
   },
   {
-    "objectID": "final_project/data_sources.html",
-    "href": "final_project/data_sources.html",
-    "title": "Data Sources",
-    "section": "",
-    "text": "Theme\nVariable Name\nDescription\nSource\nYears\nShapefile variable name\n\n\n\n\nGeographic Identifiers\nid\nCensus FIPS code for tract\nUSEPA EJScreen\n2018 - 2022\nGEOID\n\n\n\nstate_name\nName of state\nUSEPA EJScreen\n2018 - 2022\nstat_nm\n\n\n\ncnty_name\nCounty Name\nUSEPA EJScreen\n2018 - 2022\ncnty_nm\n\n\n\nregion\nUS EPA region number\nUSEPA EJScreen\n2018 - 2022\nregion\n\n\n\nrural\nRural or urban community\nUSDA RUCA\n2020 census\nruralty\n\n\nSocioeconomic\nacstotpop\nTotal population\nUSEPA EJScreen\n2018 - 2022\nacsttpp\n\n\n\npeopcolorpct\n% people of color\nUSEPA EJScreen\n2018 - 2022\nppclrpc\n\n\n\nlowincpct\n% low income\nUSEPA EJScreen\n2018 - 2022\nlwncpct\n\n\n\nunemppct\n% unemployed\nUSEPA EJScreen\n2018 - 2022\nunmppct\n\n\n\ndisabilitypct\n% persons with disabilities\nUSEPA EJScreen\n2018 - 2022\ndsbltyp\n\n\n\nlingisopct\n% Limited English speaking households\nUSEPA EJScreen\n2018 - 2022\nlngspct\n\n\n\nlesshspct\n% less than high school education\nUSEPA EJScreen\n2018 - 2022\nlsshspc\n\n\n\nunder5pct\n% under age 5\nUSEPA EJScreen\n2018 - 2022\nundr5pc\n\n\n\nover64pct\n% over age 64\nUSEPA EJScreen\n2018 - 2022\novr64pc\n\n\n\nperc_non_citizen\n% of individuals that are not US citizens\nACS 5-year estimates\n2018-2022\nprc_nn_\n\n\n\nlifeexppct\n% low life expectancy\nUSEPA EJScreen\n2018 - 2022\nlfxppct\n\n\nHousing /Built Environment\npre1960pct\nPercent of housing units built before 1960 (Indicator of Lead Paint)\nUSEPA EJScreen\n2018-2022\npr1960p\n\n\n\nptraf\nCount of vehicles (annual average daily traffic [AADT]) at major roads within 10 kilometers (km), divided by distance in km.\nUSEPA EJScreen\n2018-2022\nptraf\n\n\n\nlacktrpt\nPercent of adult population lacking reliable transportation in the past 12 months\nCDC PLACES\n2022\nlcktrpt\n\n\n\nperc_mob_hom\nPercent of households living in mobile homes\nACS 5-year estimates\n2018-2022\nprc_mb_\n\n\n\nperc_renters\nPercent of renters\nACS 5-year estimates\n2018-2022\npct_rnt\n\n\n\nhousinsecu\nPercent of adult population experiencing housing insecurity in the past 12 months.\nCDC PLACES\n2022\nhousnsc\n\n\nHealth\ncancer\nPercent of adult population with cancer (non-skin) or melanoma\nCDC PLACES\n2022\ncancer\n\n\n\ncasthma\nPercent of adult population with asthma\nCDC PLACES\n2022\ncasthma\n\n\n\ndepression\nPercent of adult population with depression\nCDC PLACES\n2022\ndeprssn\n\n\n\nlpa\nPercent of adult population with no leisure-time physical activity\nCDC PLACES\n2022\nlpa\n\n\n\nsleep\nPercent of adult population with short sleep duration\nCDC PLACES\n2022\nsleep\n\n\n\nghlth\nPercent of adult population with fair or poor self-rated health status\nCDC PLACES\n2022\nghlth\n\n\n\nmhlth\nPercent of adult population with frequent mental distress\nCDC PLACES\n2022\nmhlth\n\n\n\nphlth\nPercent of adult population with frequent physical distress\nCDC PLACES\n2022\nphlth\n\n\n\nisolation\nPercent of adult population with feelings of social isolation\nCDC PLACES\n2022\nisolatn\n\n\n\naccess2\nPercent of adult population wihtout health insurance (aged 18-64 years)\nCDC PLACES\n2022\naccess2\n\n\nClimate\npm25\nPM 2.5 levels in air measured using an annual average.\nUSEPA EJScreen\n2018 - 2022\npm25\n\n\n\nozone\nOzone annual mean top 10 of daily maximum 8-hour concentration in air\nUSEPA EJScreen\n2018 - 2022\nozone\n\n\n\ndslpm\nDiesel PM level in air\nUSEPA EJScreen\n2018 - 2022\ndslpm\n\n\n\nno2\nAverage annual nitrogen dioxide (NO2) levels expressed as part per billion (by volume).\nUSEPA EJScreen\n2018 - 2022\nno2\n\n\n\nannlls\nEstimate annualized loss due to climate disaster ($)\nFEMA NRI\n2021\nannlls\n\n\n\nextht\nIncrease in number of days over 90 degress by mid-century\nDOI/NOAA CMRA\n2022\nextht\n\n\n\nextrmp\nNumber of days exceeding 99th percentile of precipitation by mid-century\nDOI/NOAA CMRA\n2022\nextrmp\n\n\n\ndrghtd\nPercent change in number of days with less than 0.01 inches of precipitation\nDOI/NOAA CMRA\n2022\ndrghtd\n\n\n\npctnnd\nPercent of tract inundated by 0.5 sea level increase by 2100\nDOI/NOAA CMRA\n2022\npctnnd\n\n\nEnergy\neb\nPercent of annual household allocated to energy costs\nDOE LEAD\n2024\neb\n\n\n\neb_elec\nPercent of annual household allocated to electricity costs\nDOE LEAD\n2024\neb_elec\n\n\n\neb_gas\nPercent of annual household allocated to gas costs\nDOE LEAD\n2024\neb_gas\n\n\n\neb_othr\nPercent of annual household allocated to other energy costs\nDOE LEAD\n2024\neb_othr\n\n\n\nec\nAverage annual household cost ($) of energy\nDOE LEAD\n2024\nec\n\n\n\nec_elec\nAverage annual household cost ($) of electricity\nDOE LEAD\n2024\nec_elec\n\n\n\nec_gas\nAverage annual household cost ($) of gas\nDOE LEAD\n2024\nec_gas\n\n\n\nec_othr\nAverage annual household cost ($) of other energy costs\nDOE LEAD\n2024\nec_othr\n\n\n\nshututility\nPercent of adult population who received a utility services shut off threat in the past 12 months\nCDC PLACES\n2022\nshttlty\n\n\nFood\nfoodinsecu\nPercent of adult population experiencing food insecurity in the past 12 months\nCDC PLACES\n2022\nfoodnsc\n\n\n\nfoodstamp\nPercent of adult population who received food stamps in the past 12 months\nCDC PLACES\n2022\nfodstmp\n\n\nWater\npwdis\nRSEI modeled toxicity-weighted concentrations of TRI listed chemicals in water stream segments within 500 meters, divided by distance in km.\nUSEPA EJScreen\n2018 - 2022\npwdis\n\n\n\ndwater\nScore based on number of Safe Drinking Water Act violations not returned to compliance that community water systems have received over the past five years; violations are weighted based age and severity.\nUSEPA EJScreen\n2018 - 2022\ndwater\n\n\nPollution\nrsei_air\nRSEI modeled toxicity-weighted concentrations in air of TRI listed chemicals.\nUSEPA EJScreen\n2018 - 2022\nrsei_ar\n\n\n\npnpl\nCount of Superfund sites (proposed and final NPL sites and SAA sites) within 10 km, each divided by distance in km.\nUSEPA EJScreen\n2018 - 2022\npnpl\n\n\n\nprmp\nCount of RMP (potential chemical accident management plan) facilities within 10 km, each divided by distance in km.\nUSEPA EJScreen\n2018 - 2022\nprmp\n\n\n\nptsdf\nCount of hazardous waste management facilities (TSDFs and LQGs) within 10 km, each divided by distance in km.\nUSEPA EJScreen\n2018 - 2022\nptsdf\n\n\n\nust\nCount of Leaky underground storage tanks (multiplied by a factor of 7.7) and the number of undergroung storage tanks within a 1,500-foot buffered block group.\nUSEPA EJScreen\n2018 - 2022\nust"
-  },
-  {
-    "objectID": "final_project/data_sources.html#variable-overview",
-    "href": "final_project/data_sources.html#variable-overview",
-    "title": "Data Sources",
-    "section": "",
-    "text": "Theme\nVariable Name\nDescription\nSource\nYears\nShapefile variable name\n\n\n\n\nGeographic Identifiers\nid\nCensus FIPS code for tract\nUSEPA EJScreen\n2018 - 2022\nGEOID\n\n\n\nstate_name\nName of state\nUSEPA EJScreen\n2018 - 2022\nstat_nm\n\n\n\ncnty_name\nCounty Name\nUSEPA EJScreen\n2018 - 2022\ncnty_nm\n\n\n\nregion\nUS EPA region number\nUSEPA EJScreen\n2018 - 2022\nregion\n\n\n\nrural\nRural or urban community\nUSDA RUCA\n2020 census\nruralty\n\n\nSocioeconomic\nacstotpop\nTotal population\nUSEPA EJScreen\n2018 - 2022\nacsttpp\n\n\n\npeopcolorpct\n% people of color\nUSEPA EJScreen\n2018 - 2022\nppclrpc\n\n\n\nlowincpct\n% low income\nUSEPA EJScreen\n2018 - 2022\nlwncpct\n\n\n\nunemppct\n% unemployed\nUSEPA EJScreen\n2018 - 2022\nunmppct\n\n\n\ndisabilitypct\n% persons with disabilities\nUSEPA EJScreen\n2018 - 2022\ndsbltyp\n\n\n\nlingisopct\n% Limited English speaking households\nUSEPA EJScreen\n2018 - 2022\nlngspct\n\n\n\nlesshspct\n% less than high school education\nUSEPA EJScreen\n2018 - 2022\nlsshspc\n\n\n\nunder5pct\n% under age 5\nUSEPA EJScreen\n2018 - 2022\nundr5pc\n\n\n\nover64pct\n% over age 64\nUSEPA EJScreen\n2018 - 2022\novr64pc\n\n\n\nperc_non_citizen\n% of individuals that are not US citizens\nACS 5-year estimates\n2018-2022\nprc_nn_\n\n\n\nlifeexppct\n% low life expectancy\nUSEPA EJScreen\n2018 - 2022\nlfxppct\n\n\nHousing /Built Environment\npre1960pct\nPercent of housing units built before 1960 (Indicator of Lead Paint)\nUSEPA EJScreen\n2018-2022\npr1960p\n\n\n\nptraf\nCount of vehicles (annual average daily traffic [AADT]) at major roads within 10 kilometers (km), divided by distance in km.\nUSEPA EJScreen\n2018-2022\nptraf\n\n\n\nlacktrpt\nPercent of adult population lacking reliable transportation in the past 12 months\nCDC PLACES\n2022\nlcktrpt\n\n\n\nperc_mob_hom\nPercent of households living in mobile homes\nACS 5-year estimates\n2018-2022\nprc_mb_\n\n\n\nperc_renters\nPercent of renters\nACS 5-year estimates\n2018-2022\npct_rnt\n\n\n\nhousinsecu\nPercent of adult population experiencing housing insecurity in the past 12 months.\nCDC PLACES\n2022\nhousnsc\n\n\nHealth\ncancer\nPercent of adult population with cancer (non-skin) or melanoma\nCDC PLACES\n2022\ncancer\n\n\n\ncasthma\nPercent of adult population with asthma\nCDC PLACES\n2022\ncasthma\n\n\n\ndepression\nPercent of adult population with depression\nCDC PLACES\n2022\ndeprssn\n\n\n\nlpa\nPercent of adult population with no leisure-time physical activity\nCDC PLACES\n2022\nlpa\n\n\n\nsleep\nPercent of adult population with short sleep duration\nCDC PLACES\n2022\nsleep\n\n\n\nghlth\nPercent of adult population with fair or poor self-rated health status\nCDC PLACES\n2022\nghlth\n\n\n\nmhlth\nPercent of adult population with frequent mental distress\nCDC PLACES\n2022\nmhlth\n\n\n\nphlth\nPercent of adult population with frequent physical distress\nCDC PLACES\n2022\nphlth\n\n\n\nisolation\nPercent of adult population with feelings of social isolation\nCDC PLACES\n2022\nisolatn\n\n\n\naccess2\nPercent of adult population wihtout health insurance (aged 18-64 years)\nCDC PLACES\n2022\naccess2\n\n\nClimate\npm25\nPM 2.5 levels in air measured using an annual average.\nUSEPA EJScreen\n2018 - 2022\npm25\n\n\n\nozone\nOzone annual mean top 10 of daily maximum 8-hour concentration in air\nUSEPA EJScreen\n2018 - 2022\nozone\n\n\n\ndslpm\nDiesel PM level in air\nUSEPA EJScreen\n2018 - 2022\ndslpm\n\n\n\nno2\nAverage annual nitrogen dioxide (NO2) levels expressed as part per billion (by volume).\nUSEPA EJScreen\n2018 - 2022\nno2\n\n\n\nannlls\nEstimate annualized loss due to climate disaster ($)\nFEMA NRI\n2021\nannlls\n\n\n\nextht\nIncrease in number of days over 90 degress by mid-century\nDOI/NOAA CMRA\n2022\nextht\n\n\n\nextrmp\nNumber of days exceeding 99th percentile of precipitation by mid-century\nDOI/NOAA CMRA\n2022\nextrmp\n\n\n\ndrghtd\nPercent change in number of days with less than 0.01 inches of precipitation\nDOI/NOAA CMRA\n2022\ndrghtd\n\n\n\npctnnd\nPercent of tract inundated by 0.5 sea level increase by 2100\nDOI/NOAA CMRA\n2022\npctnnd\n\n\nEnergy\neb\nPercent of annual household allocated to energy costs\nDOE LEAD\n2024\neb\n\n\n\neb_elec\nPercent of annual household allocated to electricity costs\nDOE LEAD\n2024\neb_elec\n\n\n\neb_gas\nPercent of annual household allocated to gas costs\nDOE LEAD\n2024\neb_gas\n\n\n\neb_othr\nPercent of annual household allocated to other energy costs\nDOE LEAD\n2024\neb_othr\n\n\n\nec\nAverage annual household cost ($) of energy\nDOE LEAD\n2024\nec\n\n\n\nec_elec\nAverage annual household cost ($) of electricity\nDOE LEAD\n2024\nec_elec\n\n\n\nec_gas\nAverage annual household cost ($) of gas\nDOE LEAD\n2024\nec_gas\n\n\n\nec_othr\nAverage annual household cost ($) of other energy costs\nDOE LEAD\n2024\nec_othr\n\n\n\nshututility\nPercent of adult population who received a utility services shut off threat in the past 12 months\nCDC PLACES\n2022\nshttlty\n\n\nFood\nfoodinsecu\nPercent of adult population experiencing food insecurity in the past 12 months\nCDC PLACES\n2022\nfoodnsc\n\n\n\nfoodstamp\nPercent of adult population who received food stamps in the past 12 months\nCDC PLACES\n2022\nfodstmp\n\n\nWater\npwdis\nRSEI modeled toxicity-weighted concentrations of TRI listed chemicals in water stream segments within 500 meters, divided by distance in km.\nUSEPA EJScreen\n2018 - 2022\npwdis\n\n\n\ndwater\nScore based on number of Safe Drinking Water Act violations not returned to compliance that community water systems have received over the past five years; violations are weighted based age and severity.\nUSEPA EJScreen\n2018 - 2022\ndwater\n\n\nPollution\nrsei_air\nRSEI modeled toxicity-weighted concentrations in air of TRI listed chemicals.\nUSEPA EJScreen\n2018 - 2022\nrsei_ar\n\n\n\npnpl\nCount of Superfund sites (proposed and final NPL sites and SAA sites) within 10 km, each divided by distance in km.\nUSEPA EJScreen\n2018 - 2022\npnpl\n\n\n\nprmp\nCount of RMP (potential chemical accident management plan) facilities within 10 km, each divided by distance in km.\nUSEPA EJScreen\n2018 - 2022\nprmp\n\n\n\nptsdf\nCount of hazardous waste management facilities (TSDFs and LQGs) within 10 km, each divided by distance in km.\nUSEPA EJScreen\n2018 - 2022\nptsdf\n\n\n\nust\nCount of Leaky underground storage tanks (multiplied by a factor of 7.7) and the number of undergroung storage tanks within a 1,500-foot buffered block group.\nUSEPA EJScreen\n2018 - 2022\nust"
-  },
-  {
-    "objectID": "slides_workspace/week-07/13-theory_intrvntmn.html#witch-name",
-    "href": "slides_workspace/week-07/13-theory_intrvntmn.html#witch-name",
-    "title": "[Theory] Community-Based Interventions & Theories of Change",
-    "section": "Witch Name",
-    "text": "Witch Name"
-  },
-  {
-    "objectID": "slides_workspace/week-07/13-theory_intrvntmn.html#website-resources-for-final-project",
-    "href": "slides_workspace/week-07/13-theory_intrvntmn.html#website-resources-for-final-project",
-    "title": "[Theory] Community-Based Interventions & Theories of Change",
-    "section": "Website Resources for Final Project",
-    "text": "Website Resources for Final Project\n\nData sources\nProject descriptions"
-  },
-  {
-    "objectID": "slides_workspace/week-07/13-theory_intrvntmn.html#project-proposals",
-    "href": "slides_workspace/week-07/13-theory_intrvntmn.html#project-proposals",
-    "title": "[Theory] Community-Based Interventions & Theories of Change",
-    "section": "Project Proposals",
-    "text": "Project Proposals\nEmail me a concise description, approximately 300 words in length, outlining the project that you and your team intend to undertake. This should include information such as the environmental justice topic, the community case study, and potential theories that may apply to the case study.\nThoughts on current deadlines?"
-  },
-  {
-    "objectID": "slides_workspace/week-07/13-theory_intrvntmn.html#intro-to-logic-models",
-    "href": "slides_workspace/week-07/13-theory_intrvntmn.html#intro-to-logic-models",
-    "title": "[Theory] Community-Based Interventions & Theories of Change",
-    "section": "Intro to Logic Models",
-    "text": "Intro to Logic Models"
-  },
-  {
-    "objectID": "slides_workspace/week-07/13-theory_intrvntmn.html#tuesday-class",
-    "href": "slides_workspace/week-07/13-theory_intrvntmn.html#tuesday-class",
-    "title": "[Theory] Community-Based Interventions & Theories of Change",
-    "section": "Tuesday Class",
-    "text": "Tuesday Class\n\nTwo readings on Navajo Nation and Recognition Justice\nGwen leading centering activity on Tuesday. :-)"
-  },
-  {
-    "objectID": "slides_workspace/week-07/13-theory_intrvntmn.html#what-we-read",
-    "href": "slides_workspace/week-07/13-theory_intrvntmn.html#what-we-read",
-    "title": "[Theory] Community-Based Interventions & Theories of Change",
-    "section": "What We Read",
-    "text": "What We Read\n\nFriday: Kellogg, W. K. (2004). Chapters One and Two in Logic Model Development Guide. Kellogg Foundation.\nFriday: Kreger, M., Sargent, K., Arons, A., Standish, M., & Brindis, C. D. (2011). Creating an environmental justice framework for policy change in childhood asthma: a grassroots to treetops approach. American journal of public health, 101(S1), S208-S216."
-  },
-  {
-    "objectID": "slides_workspace/week-07/13-theory_intrvntmn.html#why-a-logic-model",
-    "href": "slides_workspace/week-07/13-theory_intrvntmn.html#why-a-logic-model",
-    "title": "[Theory] Community-Based Interventions & Theories of Change",
-    "section": "Why a Logic Model?",
-    "text": "Why a Logic Model?\n\nIt’s often easy to define what you want to do, but it’s less easy to define how you’ll get there, and how you’ll evaluate success.\nLogic models are useful for communicating a plan for the change you want to see, how you’ll measure impact, and the factors at play.\nProgram evaluation is a really cool and important job for community impact and change!"
-  },
-  {
-    "objectID": "slides_workspace/week-07/13-theory_intrvntmn.html#basic-logic-model",
-    "href": "slides_workspace/week-07/13-theory_intrvntmn.html#basic-logic-model",
-    "title": "[Theory] Community-Based Interventions & Theories of Change",
-    "section": "Basic Logic Model",
-    "text": "Basic Logic Model\n\nPlan backwards, take inspiration from others, and learn along the way!"
-  },
-  {
-    "objectID": "slides_workspace/week-07/13-theory_intrvntmn.html#logic-model-discussion",
-    "href": "slides_workspace/week-07/13-theory_intrvntmn.html#logic-model-discussion",
-    "title": "[Theory] Community-Based Interventions & Theories of Change",
-    "section": "Logic Model Discussion",
-    "text": "Logic Model Discussion\n\nWhat is the value of program evaluation in EJ organizing and policy change?\nWhy is meaasuring impact important? What’s challenging about measuring impact for local interventions?\nCan you see the logic model as a useful tool for new organizations?"
-  },
-  {
-    "objectID": "slides_workspace/week-07/13-theory_intrvntmn.html#childhood-asthma-in-california",
-    "href": "slides_workspace/week-07/13-theory_intrvntmn.html#childhood-asthma-in-california",
-    "title": "[Theory] Community-Based Interventions & Theories of Change",
-    "section": "Childhood Asthma in California",
-    "text": "Childhood Asthma in California\n\nLocal, regional and state-level initiative to integrate EJ into childhood asthma prevention\nCoalition building at the forefront of planning\nFlexibility in program implementation and evaluation along the way\nReally impressive policy outcomes!"
-  },
-  {
-    "objectID": "slides_workspace/week-07/13-theory_intrvntmn.html#cafa-logic-model",
-    "href": "slides_workspace/week-07/13-theory_intrvntmn.html#cafa-logic-model",
-    "title": "[Theory] Community-Based Interventions & Theories of Change",
-    "section": "CAFA Logic Model",
-    "text": "CAFA Logic Model\n-"
-  },
-  {
-    "objectID": "slides_workspace/week-07/13-theory_intrvntmn.html#cafa-strategies-and-outcomes",
-    "href": "slides_workspace/week-07/13-theory_intrvntmn.html#cafa-strategies-and-outcomes",
-    "title": "[Theory] Community-Based Interventions & Theories of Change",
-    "section": "CAFA Strategies and Outcomes",
-    "text": "CAFA Strategies and Outcomes\n\nWhat are the strengths and challenges of CAFA’s approach?\nThoughts on their “Grasstops” to “Treetops” approach?\nWhat role does data play in CAFA’s EJ advocacy and policy approaches?"
-  },
-  {
-    "objectID": "slides_workspace/week-07/13-theory_intrvntmn.html",
-    "href": "slides_workspace/week-07/13-theory_intrvntmn.html",
-    "title": "[Theory] Community-Based Interventions & Theories of Change",
-    "section": "",
-    "text": "Centering activity\nMid-semester Logistics\nFinal Project Team Selections\nIntro to Logic Models\nGroup Discussion + Debrief"
-  },
-  {
-    "objectID": "slides/week-07/13-theory_intrvntmn.html#class-overview",
-    "href": "slides/week-07/13-theory_intrvntmn.html#class-overview",
-    "title": "[Theory] Community-Based Interventions & Theories of Change",
+    "objectID": "slides/week-08/15-theory_rec_just.html#class-overview",
+    "href": "slides/week-08/15-theory_rec_just.html#class-overview",
+    "title": "[Theory] Recognitional Justice & Energy",
     "section": "Class Overview",
-    "text": "Class Overview\n\nCentering activity\nMid-semester Logistics\nFinal Project Team Selections\nIntro to Logic Models\nGroup Discussion + Debrief"
+    "text": "Class Overview\n\nCentering activity\nRecalling Recognition Justice\nIntro to community case study (Solar in Navajo Nation)\nGroup Discussion + Debrief"
   },
   {
-    "objectID": "slides/week-07/13-theory_intrvntmn.html#centering-activity",
-    "href": "slides/week-07/13-theory_intrvntmn.html#centering-activity",
-    "title": "[Theory] Community-Based Interventions & Theories of Change",
+    "objectID": "slides/week-08/15-theory_rec_just.html#centering-activity",
+    "href": "slides/week-08/15-theory_rec_just.html#centering-activity",
+    "title": "[Theory] Recognitional Justice & Energy",
     "section": "Centering Activity",
-    "text": "Centering Activity"
+    "text": "Centering Activity\n\nGwen :-)"
   },
   {
-    "objectID": "slides/week-07/13-theory_intrvntmn.html#overview-of-class-schedule",
-    "href": "slides/week-07/13-theory_intrvntmn.html#overview-of-class-schedule",
-    "title": "[Theory] Community-Based Interventions & Theories of Change",
-    "section": "Overview of Class Schedule",
-    "text": "Overview of Class Schedule"
-  },
-  {
-    "objectID": "slides/week-07/13-theory_intrvntmn.html#mid-point-reflection",
-    "href": "slides/week-07/13-theory_intrvntmn.html#mid-point-reflection",
-    "title": "[Theory] Community-Based Interventions & Theories of Change",
-    "section": "Mid-point Reflection",
-    "text": "Mid-point Reflection\n\nUp until this point we’ve:\n\nReflexively considered our identity through positionality statements\nLearned five tenets of justice, and considered them in theory and in praxis using different communities as case studies\nLearned introductory skills in data science and visualization\nApplied EJ methods and theory to topics of waste, food, water, climate, and energy throughout time and space"
-  },
-  {
-    "objectID": "slides/week-07/13-theory_intrvntmn.html#looking-ahead",
-    "href": "slides/week-07/13-theory_intrvntmn.html#looking-ahead",
-    "title": "[Theory] Community-Based Interventions & Theories of Change",
-    "section": "Looking Ahead",
-    "text": "Looking Ahead\n\nTuesdays:\n\n5 speakers across FEW + Climate nexus\nRepresenting advocacy and community organizing, academia, and local government.\nMix of education/disciplinary backgrounds, some Wellesley alum!\nSign-up list for speaker engagement: Opportunity for class participation\n\nFridays:\n\nIn-class time to work on final projects"
-  },
-  {
-    "objectID": "slides/week-07/13-theory_intrvntmn.html#website-resources-for-final-project",
-    "href": "slides/week-07/13-theory_intrvntmn.html#website-resources-for-final-project",
-    "title": "[Theory] Community-Based Interventions & Theories of Change",
-    "section": "Website Resources for Final Project",
-    "text": "Website Resources for Final Project\n\nData sources\nProject descriptions"
-  },
-  {
-    "objectID": "slides/week-07/13-theory_intrvntmn.html#project-proposals",
-    "href": "slides/week-07/13-theory_intrvntmn.html#project-proposals",
-    "title": "[Theory] Community-Based Interventions & Theories of Change",
-    "section": "Project Proposals",
-    "text": "Project Proposals\nEmail me a concise description, approximately 300 words in length, outlining the project that you and your team intend to undertake. This should include information such as the environmental justice topic, the community case study, and potential theories that may apply to the case study.\nThoughts on current deadlines?"
-  },
-  {
-    "objectID": "slides/week-07/13-theory_intrvntmn.html#final-project-team-selections",
-    "href": "slides/week-07/13-theory_intrvntmn.html#final-project-team-selections",
-    "title": "[Theory] Community-Based Interventions & Theories of Change",
-    "section": "Final Project Team Selections",
-    "text": "Final Project Team Selections\n\nTeams will be based on your preferences and my discretion\nTo gain a better sense of your preferences, we’ll make mini resumes for future partners:\n\nWhat to highlight? schedules, skills, leadership styles, interests?\n\nWe’ll spend ~15 minutes circulating and exchanging “resumes”\nAt the end of the time, you’ll share your collaborator preferences\n\nI’ll make final decisions and email out the group names this afternoon."
-  },
-  {
-    "objectID": "slides/week-07/13-theory_intrvntmn.html#what-we-read",
-    "href": "slides/week-07/13-theory_intrvntmn.html#what-we-read",
-    "title": "[Theory] Community-Based Interventions & Theories of Change",
+    "objectID": "slides/week-08/15-theory_rec_just.html#what-we-read",
+    "href": "slides/week-08/15-theory_rec_just.html#what-we-read",
+    "title": "[Theory] Recognitional Justice & Energy",
     "section": "What We Read",
-    "text": "What We Read\n\nFriday: Kellogg, W. K. (2004). Chapters One and Two in Logic Model Development Guide. Kellogg Foundation.\nFriday: Kreger, M., Sargent, K., Arons, A., Standish, M., & Brindis, C. D. (2011). Creating an environmental justice framework for policy change in childhood asthma: a grassroots to treetops approach. American journal of public health, 101(S1), S208-S216."
+    "text": "What We Read\n\nPowell, D.E., (2018). Interlude 3: Off-Grid in the Chuskas (pp.230-235). In Landscapes of Power: Politics of Energy in the Navajo Nation (pp. 187–235). Duke University Press. https://doi.org/10.2307/j.ctv1220jnq.11\nPasqualetti, M. J., Jones, T. E., Necefer, L., Scott, C. A., & Colombi, B. J. (2016). A paradox of plenty: Renewable energy on Navajo Nation Lands. Society & Natural Resources, 29(8), 885-899."
   },
   {
-    "objectID": "slides/week-07/13-theory_intrvntmn.html#why-a-logic-model",
-    "href": "slides/week-07/13-theory_intrvntmn.html#why-a-logic-model",
-    "title": "[Theory] Community-Based Interventions & Theories of Change",
-    "section": "Why a Logic Model?",
-    "text": "Why a Logic Model?\n\nIt’s often easy to define what you want to do, but it’s less easy to define how you’ll get there, and how you’ll evaluate success.\nLogic models are useful for communicating a plan for the change you want to see, how you’ll measure impact, and the factors at play.\nProgram evaluation is a really cool and important job for community impact and change!"
+    "objectID": "slides/week-08/15-theory_rec_just.html#recalling-recognition-justice",
+    "href": "slides/week-08/15-theory_rec_just.html#recalling-recognition-justice",
+    "title": "[Theory] Recognitional Justice & Energy",
+    "section": "Recalling Recognition Justice",
+    "text": "Recalling Recognition Justice\n\nMisrecognition can occur via three processes: \nFigueroa (2006) defines misrecognition as rooted in environmental identity + heritage."
   },
   {
-    "objectID": "slides/week-07/13-theory_intrvntmn.html#basic-logic-model",
-    "href": "slides/week-07/13-theory_intrvntmn.html#basic-logic-model",
-    "title": "[Theory] Community-Based Interventions & Theories of Change",
-    "section": "Basic Logic Model",
-    "text": "Basic Logic Model\n\nPlan backwards, take inspiration from others, and learn along the way!"
+    "objectID": "slides/week-08/15-theory_rec_just.html#whytes-recognition-paradigm-2017",
+    "href": "slides/week-08/15-theory_rec_just.html#whytes-recognition-paradigm-2017",
+    "title": "[Theory] Recognitional Justice & Energy",
+    "section": "Whyte’s Recognition Paradigm (2017)",
+    "text": "Whyte’s Recognition Paradigm (2017)\n\n\n\n“Paradigm” refers to a criterion that can be used to identify whether an unjust process is occurring.\n\nDistributional paradigm\nProcedural paradigm\nRecognition paradigm\n\nExamples of each?"
   },
   {
-    "objectID": "slides/week-07/13-theory_intrvntmn.html#logic-model-discussion",
-    "href": "slides/week-07/13-theory_intrvntmn.html#logic-model-discussion",
-    "title": "[Theory] Community-Based Interventions & Theories of Change",
-    "section": "Logic Model Discussion",
-    "text": "Logic Model Discussion\n\nWhat is the value of program evaluation in EJ organizing and policy change?\nWhy is meaasuring impact important? What’s challenging about measuring impact for local interventions?\nCan you see the logic model as a useful tool for new organizations?"
+    "objectID": "slides/week-08/15-theory_rec_just.html#intro-to-community-case-study",
+    "href": "slides/week-08/15-theory_rec_just.html#intro-to-community-case-study",
+    "title": "[Theory] Recognitional Justice & Energy",
+    "section": "Intro to Community Case Study",
+    "text": "Intro to Community Case Study\n\nExample of all five EJ tenets\nPasqualetti, et al. (2016) asks, why hasn’t more RE been developed on Tribal lands, specifically in Navajo Nation?\n\nRelationship to extractive energy development\nSpiritual and social values\nEnergy governance"
   },
   {
-    "objectID": "slides/week-07/13-theory_intrvntmn.html#childhood-asthma-in-california",
-    "href": "slides/week-07/13-theory_intrvntmn.html#childhood-asthma-in-california",
-    "title": "[Theory] Community-Based Interventions & Theories of Change",
-    "section": "Childhood Asthma in California",
-    "text": "Childhood Asthma in California\n\nLocal, regional and state-level initiative to integrate EJ into childhood asthma prevention\nCoalition building at the forefront of planning\nFlexibility in program implementation and evaluation along the way\nReally impressive policy outcomes!"
+    "objectID": "slides/week-08/15-theory_rec_just.html#relationship-to-extractive-energy-development",
+    "href": "slides/week-08/15-theory_rec_just.html#relationship-to-extractive-energy-development",
+    "title": "[Theory] Recognitional Justice & Energy",
+    "section": "Relationship to Extractive Energy Development",
+    "text": "Relationship to Extractive Energy Development"
   },
   {
-    "objectID": "slides/week-07/13-theory_intrvntmn.html#cafa-logic-model",
-    "href": "slides/week-07/13-theory_intrvntmn.html#cafa-logic-model",
-    "title": "[Theory] Community-Based Interventions & Theories of Change",
-    "section": "CAFA Logic Model",
-    "text": "CAFA Logic Model\n-"
+    "objectID": "slides/week-08/15-theory_rec_just.html#extractive-energy-development",
+    "href": "slides/week-08/15-theory_rec_just.html#extractive-energy-development",
+    "title": "[Theory] Recognitional Justice & Energy",
+    "section": "Extractive Energy Development",
+    "text": "Extractive Energy Development"
   },
   {
-    "objectID": "slides/week-07/13-theory_intrvntmn.html#cafa-strategies-and-outcomes",
-    "href": "slides/week-07/13-theory_intrvntmn.html#cafa-strategies-and-outcomes",
-    "title": "[Theory] Community-Based Interventions & Theories of Change",
-    "section": "CAFA Strategies and Outcomes",
-    "text": "CAFA Strategies and Outcomes\n\nWhat are the strengths and challenges of CAFA’s approach?\nThoughts on their “Grasstops” to “Treetops” approach?\nWhat role does data play in CAFA’s EJ advocacy and policy approaches?"
+    "objectID": "slides/week-08/15-theory_rec_just.html#slide-title",
+    "href": "slides/week-08/15-theory_rec_just.html#slide-title",
+    "title": "[Theory] Recognitional Justice & Energy",
+    "section": "Slide Title",
+    "text": "Slide Title"
   },
   {
-    "objectID": "slides/week-07/13-theory_intrvntmn.html#logistics",
-    "href": "slides/week-07/13-theory_intrvntmn.html#logistics",
-    "title": "[Theory] Community-Based Interventions & Theories of Change",
-    "section": "Logistics",
-    "text": "Logistics\n\nClass starts at 9:55, please do your very best to make it on time!\n\nIn addition to my time, I really care about our guest speakers, and I want to ensure we can get through our centering activity AND start our Zoom sessions at 10 AM.\n\nAlden is joining class on Tuesday as an observer.\n\nThoughts on where he should sit?"
+    "objectID": "slides/week-08/15-theory_rec_just.html#map",
+    "href": "slides/week-08/15-theory_rec_just.html#map",
+    "title": "[Theory] Recognitional Justice & Energy",
+    "section": "Map",
+    "text": "Map"
   },
   {
-    "objectID": "slides/week-07/13-theory_intrvntmn.html#tuesday-class",
-    "href": "slides/week-07/13-theory_intrvntmn.html#tuesday-class",
-    "title": "[Theory] Community-Based Interventions & Theories of Change",
-    "section": "Tuesday Class",
-    "text": "Tuesday Class\n\nTwo readings on Navajo Nation and Recognition Justice\nGwen leading centering activity on Tuesday. :-)"
+    "objectID": "slides/week-08/15-theory_rec_just.html#navajo-nation",
+    "href": "slides/week-08/15-theory_rec_just.html#navajo-nation",
+    "title": "[Theory] Recognitional Justice & Energy",
+    "section": "Navajo Nation",
+    "text": "Navajo Nation\n\nDiné translates to “the people”\nLocated in three corners: Utah, Arizona, and New Mexico\nBiggest Tribe in terms of:\n\nArea: Size of Ireland\nPopulation: 300,000+ members\n\nYoung population, high unemployment rates (48.5%, 11x national average), and low household income ($8,250 annually, 10% of national average).\nComplex history of coal and uranium mining"
+  },
+  {
+    "objectID": "slides/week-08/15-theory_rec_just.html#history-of-energy-extractivism-on-navajo-lands",
+    "href": "slides/week-08/15-theory_rec_just.html#history-of-energy-extractivism-on-navajo-lands",
+    "title": "[Theory] Recognitional Justice & Energy",
+    "section": "History of Energy Extractivism on Navajo Lands",
+    "text": "History of Energy Extractivism on Navajo Lands\n\n\n\nHighest value of economic activity for decades has been fossil fuel/mining activities.\nLong history of Navajo Nation fighting for control of their land’s mineral resources.\n\nCoal slurry (mix of coal + water shipped to NV, hugely depleting groundwater)\nSubbituminous coal mining (Significant air pollution)\nUranium mining and milling (Terrible environmental health risks)\n\n\n\n\n\n\nPember, 2014"
+  },
+  {
+    "objectID": "slides/week-08/15-theory_rec_just.html#energy-extractivism-on-navajo-lands",
+    "href": "slides/week-08/15-theory_rec_just.html#energy-extractivism-on-navajo-lands",
+    "title": "[Theory] Recognitional Justice & Energy",
+    "section": "Energy Extractivism on Navajo Lands",
+    "text": "Energy Extractivism on Navajo Lands\n\n\n\nHighest value of economic activity for decades has been fossil fuel/mining.\nLong history of Navajo Nation fighting for control of their land’s mineral resources.\n\nCoal slurry (mix of coal + water shipped to NV, hugely depleting groundwater)\nSubbituminous coal mining (Significant air pollution)\nUranium mining and milling (environmental health risks)\n\n\n\n\n\n\nPember, 2014"
+  },
+  {
+    "objectID": "slides/week-08/15-theory_rec_just.html#solar-potential",
+    "href": "slides/week-08/15-theory_rec_just.html#solar-potential",
+    "title": "[Theory] Recognitional Justice & Energy",
+    "section": "Solar Potential",
+    "text": "Solar Potential"
+  },
+  {
+    "objectID": "slides/week-08/15-theory_rec_just.html#solar-paradox-of-plenty",
+    "href": "slides/week-08/15-theory_rec_just.html#solar-paradox-of-plenty",
+    "title": "[Theory] Recognitional Justice & Energy",
+    "section": "Solar Paradox of Plenty",
+    "text": "Solar Paradox of Plenty\n\n\n\nNavajo Nation solar potential is 100x the installed capacity of California.\n\nNavajo Nation wasn’t included in REA of 1935.\nRoughly 1/3 of Navajo Nation homes don’t have electricity today.\nMatrilineal spiritual + ancestral grazing lands are very remote.\n\n\n\n\n\n\nTraditional Hogan; Krol, 2018"
+  },
+  {
+    "objectID": "slides/week-08/15-theory_rec_just.html#spiritual-ties",
+    "href": "slides/week-08/15-theory_rec_just.html#spiritual-ties",
+    "title": "[Theory] Recognitional Justice & Energy",
+    "section": "Spiritual Ties",
+    "text": "Spiritual Ties\n\n\n\nK’é is Navajo word for kinship, applies to human and non-human relationships.\nHózhó focuses on environmental preservation.\n\nNavajo people are likely to place more importance on future costs to the environment than promise of employment/economic benefit.\n\n\n\n\n\n\nGenerating the Winds, ink and acrylic on muslin; Thomas Haukaas"
+  },
+  {
+    "objectID": "slides/week-08/15-theory_rec_just.html#energy-governance",
+    "href": "slides/week-08/15-theory_rec_just.html#energy-governance",
+    "title": "[Theory] Recognitional Justice & Energy",
+    "section": "Energy Governance",
+    "text": "Energy Governance\n\n\n\nTribal Lands are a mix of Public, Tribal Trust, Tribal Fee, Bureau of Land Management (BLM), Private, State (3 states), and BIA Indian Allotments\n\nThis makes governance very challenging.\nSome Federal processes and policies apply to Tribal lands\nStates have little authority over Tribal lands\nNavajo Nation Codes regulate RE development, 110 chapter governments often have final say via approval rights\n\n\n\n\n\n\nNNLD, 2020"
+  },
+  {
+    "objectID": "slides/week-08/15-theory_rec_just.html#solar-in-navajo-nation",
+    "href": "slides/week-08/15-theory_rec_just.html#solar-in-navajo-nation",
+    "title": "[Theory] Recognitional Justice & Energy",
+    "section": "Solar in Navajo Nation",
+    "text": "Solar in Navajo Nation\n\nDo any forms of misrecognition feel applicable to Pasqualetti’s piece (cultural domination, non-recognition, disrespect)?\nDo the other four tenets apply to this case study?\nHow does scale factor in to EJ implications of solar (i.e., distributed, community, utility-scale)?\n\n\nBeshilas et al., 2023"
+  },
+  {
+    "objectID": "slides/week-08/15-theory_rec_just.html#off-grid-in-the-chuskas",
+    "href": "slides/week-08/15-theory_rec_just.html#off-grid-in-the-chuskas",
+    "title": "[Theory] Recognitional Justice & Energy",
+    "section": "Off-Grid in the Chuskas",
+    "text": "Off-Grid in the Chuskas\n\n\n\nShort piece in “Landscapes of Power”\n\nPowell stays off-grid in Hogan with Adella Begaye\nDetails Angie + Jay’s experience as seasonal sheep + goat herders\n\nDescribes heterogeneity in NN lives; energy preferences for independence, environmental heritages and livelihoods, modernity versus tradition"
+  },
+  {
+    "objectID": "slides/week-08/15-theory_rec_just.html#xx",
+    "href": "slides/week-08/15-theory_rec_just.html#xx",
+    "title": "[Theory] Recognitional Justice & Energy",
+    "section": "xx",
+    "text": "xx"
+  },
+  {
+    "objectID": "slides/week-08/15-theory_rec_just.html#friday-logistics",
+    "href": "slides/week-08/15-theory_rec_just.html#friday-logistics",
+    "title": "[Theory] Recognitional Justice & Energy",
+    "section": "Friday Logistics",
+    "text": "Friday Logistics\n\nMid-semester evaluation due Wednesday (Oct 22)\nProject Proposal is Due Friday (Oct 24)\nLast Community Case Study on Solar Potential and energy burden\nSimmie leading centering activity :-)"
+  },
+  {
+    "objectID": "slides/week-08/15-theory_rec_just.html#processes-for-solar-recognition-justice",
+    "href": "slides/week-08/15-theory_rec_just.html#processes-for-solar-recognition-justice",
+    "title": "[Theory] Recognitional Justice & Energy",
+    "section": "Processes for Solar + Recognition Justice?",
+    "text": "Processes for Solar + Recognition Justice?\n\nWhat aspects of decisionmaking should be prioritized for the Navajo Nation’s energy transition?\n\nEnergy legacies\nEnvironmental heritage\nGovernance\nSelf-Determination\n\nIf we were part of a community organization to increase solar uptake among NN households, what might our logic model look like (inputs, activities, outcomes)?"
+  },
+  {
+    "objectID": "slides/week-08/15-theory_rec_just.html#whytes-recognition-paradigm",
+    "href": "slides/week-08/15-theory_rec_just.html#whytes-recognition-paradigm",
+    "title": "[Theory] Recognitional Justice & Energy",
+    "section": "Whyte’s Recognition Paradigm",
+    "text": "Whyte’s Recognition Paradigm\n\n\n\n“Paradigm” refers to a criterion that can be used to identify whether an unjust process is occurring.\n\nDistributional paradigm\nProcedural paradigm\nRecognition paradigm\n\nExamples of each?"
   }
 ]
