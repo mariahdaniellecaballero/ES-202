@@ -1,0 +1,23 @@
+## Schedule 
+```{r}
+#| echo: false
+#| eval: true
+#| output: false
+library(readxl)
+library(tidyverse)
+
+center <- read_excel("~/Google Drive/My Drive/Teaching/ES-202/ES_202_Guest_Speaker_Engagement_List.xlsx")
+```
+
+```{r}
+#| echo: false
+#| eval: true
+#| output: true
+
+options(knitr.kable.NA = '')
+knitr::kable(center, caption = "Note that this is updated as of October 20, 2025")
+```
+
+::: {.callout-note}
+If you need to change your sign-up, please email me at least 24 hours in advance of our class meeting. 
+:::
