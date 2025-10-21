@@ -20,53 +20,55 @@
     ]
   },
   {
-    "listing": "/weeks/week-15.html",
+    "listing": "/weeks/week-14.html",
     "items": [
-      "/slides/week-15/26-reflect_last_day.html",
-      "/final_project/w15-final_project.html"
+      "/slides/week-14/24-theory_cosmo_just.html",
+      "/slides/week-14/25-assess_group_proj.html"
     ]
   },
   {
-    "listing": "/weeks/week-03.html",
+    "listing": "/weeks/week-01.html",
     "items": [
-      "/slides/week-03/05-theory_proc_just.html",
-      "/slides/week-03/06-assess_braceros.html",
-      "/hw/w3-hw03.html"
+      "/slides/week-01/01-Welcome.html",
+      "/slides/week-01/02-Application.html",
+      "/hw/w1-hw01.html"
     ]
   },
   {
-    "listing": "/weeks/week-12.html",
+    "listing": "/weeks/week-02.html",
     "items": [
-      "/slides/week-12/21-theory_rest_just.html",
-      "/slides/week-12/22-assess_group_proj.html"
+      "/slides/week-02/03-theory_dist_just.html",
+      "/slides/week-02/04-assess_landfills.html",
+      "/hw/w2-hw02.html"
     ]
   },
   {
-    "listing": "/weeks/week-07.html",
+    "listing": "/weeks/week-06.html",
     "items": [
-      "/slides/week-07/13-theory_intrvntmn.html"
+      "/slides/week-06/11-theory_cosmo_just.html",
+      "/slides/week-06/12-assess_COP.html",
+      "/hw/w6-hw06.html"
     ]
   },
   {
-    "listing": "/weeks/week-05.html",
+    "listing": "/weeks/week-13.html",
     "items": [
-      "/slides/week-05/09-theory_rec_just.html",
-      "/slides/week-05/10-assess_water.html",
-      "/hw/w5-hw05.html"
+      "/slides/week-13/23-theory_rec_just.html"
     ]
   },
   {
-    "listing": "/weeks/week-10.html",
+    "listing": "/weeks/week-11.html",
     "items": [
-      "/slides/week-10/17-theory_dist_just.html",
-      "/slides/week-10/18-assess_group_project.html",
-      "/final_project/w10-project_plan.html"
+      "/slides/week-11/19-theory_proc_just.html",
+      "/slides/week-11/20-assess_group_proj.html"
     ]
   },
   {
-    "listing": "/weeks/week-09.html",
+    "listing": "/weeks/week-04.html",
     "items": [
-      "/slides/week-09/16-project_plan.html"
+      "/slides/week-04/07-theory_rest_just.html",
+      "/slides/week-04/08-assess_electrification.html",
+      "/hw/w4-hw04.html"
     ]
   },
   {
@@ -79,55 +81,53 @@
     ]
   },
   {
-    "listing": "/weeks/week-04.html",
+    "listing": "/weeks/week-09.html",
     "items": [
-      "/slides/week-04/07-theory_rest_just.html",
-      "/slides/week-04/08-assess_electrification.html",
-      "/hw/w4-hw04.html"
+      "/slides/week-09/16-project_plan.html"
     ]
   },
   {
-    "listing": "/weeks/week-11.html",
+    "listing": "/weeks/week-10.html",
     "items": [
-      "/slides/week-11/19-theory_proc_just.html",
-      "/slides/week-11/20-assess_group_proj.html"
+      "/slides/week-10/17-theory_dist_just.html",
+      "/slides/week-10/18-assess_group_project.html",
+      "/final_project/w10-project_plan.html"
     ]
   },
   {
-    "listing": "/weeks/week-13.html",
+    "listing": "/weeks/week-05.html",
     "items": [
-      "/slides/week-13/23-theory_rec_just.html"
+      "/slides/week-05/09-theory_rec_just.html",
+      "/slides/week-05/10-assess_water.html",
+      "/hw/w5-hw05.html"
     ]
   },
   {
-    "listing": "/weeks/week-06.html",
+    "listing": "/weeks/week-07.html",
     "items": [
-      "/slides/week-06/11-theory_cosmo_just.html",
-      "/slides/week-06/12-assess_COP.html",
-      "/hw/w6-hw06.html"
+      "/slides/week-07/13-theory_intrvntmn.html"
     ]
   },
   {
-    "listing": "/weeks/week-02.html",
+    "listing": "/weeks/week-12.html",
     "items": [
-      "/slides/week-02/03-theory_dist_just.html",
-      "/slides/week-02/04-assess_landfills.html",
-      "/hw/w2-hw02.html"
+      "/slides/week-12/21-theory_rest_just.html",
+      "/slides/week-12/22-assess_group_proj.html"
     ]
   },
   {
-    "listing": "/weeks/week-01.html",
+    "listing": "/weeks/week-03.html",
     "items": [
-      "/slides/week-01/01-Welcome.html",
-      "/slides/week-01/02-Application.html",
-      "/hw/w1-hw01.html"
+      "/slides/week-03/05-theory_proc_just.html",
+      "/slides/week-03/06-assess_braceros.html",
+      "/hw/w3-hw03.html"
     ]
   },
   {
-    "listing": "/weeks/week-14.html",
+    "listing": "/weeks/week-15.html",
     "items": [
-      "/slides/week-14/24-theory_cosmo_just.html",
-      "/slides/week-14/25-assess_group_proj.html"
+      "/slides/week-15/26-reflect_last_day.html",
+      "/final_project/w15-final_project.html"
     ]
   }
 ]

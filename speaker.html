@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="">
-<meta name="description" content="Oct 21 - Oct 24">
 
-<title>Week 08 – ES-202 Course Website</title>
+<title>speaker – ES-202 Course Website</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -25,24 +23,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-79da42d4e9332a072a08d0ee5d72051a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-79da42d4e9332a072a08d0ee5d72051a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -70,93 +66,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-slides .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-slides'] = new List('listing-slides', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-assignments .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-categories','listing-title','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-assignments'] = new List('listing-assignments', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -169,7 +79,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Week 08</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./speaker.html">Speaker Engagement</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -183,8 +93,8 @@ window.Quarto = {
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header">
-      <a href="../index.html" class="sidebar-logo-link">
-      <img src="../images/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      <a href="./index.html" class="sidebar-logo-link">
+      <img src="./images/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
       <div class="sidebar-tools-main">
     <a href="https://github.com/mariahdaniellecaballero/ES-202" title="GitHub" class="quarto-navigation-tool px-1" aria-label="GitHub"><i class="bi bi-github"></i></a>
@@ -200,31 +110,31 @@ window.Quarto = {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../index.html" class="sidebar-item-text sidebar-link">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Home</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../syllabus.html" class="sidebar-item-text sidebar-link">
+  <a href="./syllabus.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Syllabus</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../schedule.html" class="sidebar-item-text sidebar-link">
+  <a href="./schedule.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Schedule</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../centering.html" class="sidebar-item-text sidebar-link">
+  <a href="./centering.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Centering Activity</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../speaker.html" class="sidebar-item-text sidebar-link">
+  <a href="./speaker.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Speaker Engagement</span></a>
   </div>
 </li>
@@ -244,157 +154,138 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#lectures" id="toc-lectures" class="nav-link active" data-scroll-target="#lectures">Lectures</a></li>
-  <li><a href="#assignments" id="toc-assignments" class="nav-link" data-scroll-target="#assignments">Assignments</a></li>
-  <li><a href="#readings" id="toc-readings" class="nav-link" data-scroll-target="#readings">Readings</a></li>
+  <li><a href="#schedule" id="toc-schedule" class="nav-link active" data-scroll-target="#schedule">Schedule</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Week 08</h1>
-<p class="subtitle lead">Recognition Justice in Navajo Nation, U.S.</p>
-</div>
-
-<div>
-  <div class="description">
-    Oct 21 - Oct 24
-  </div>
-</div>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
 
 
-</header>
-
-
-<section id="lectures" class="level1">
-<h1>Lectures</h1>
-<div id="listing-slides" class="quarto-listing quarto-listing-container-table">
-<table class="quarto-listing-table table">
-<thead>
-<tr>
-
-<th>
-Topic
-</th>
-
-<th>
-Date
-</th>
-
-</tr>
-</thead>
-<tbody class="list">
-
-<tr data-index="0" data-listing-date-sort="1761019200000" data-listing-file-modified-sort="1761053398367" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="737" data-listing-title-sort="[Theory] Recognitional Justice &amp; Energy" data-listing-filename-sort="15-theory_rec_just.qmd">
-<td>
-<a href="../slides/week-08/15-theory_rec_just.html" class="title listing-title">[Theory] Recognitional Justice &amp; Energy</a>
-</td>
-<td>
-<span class="listing-date">Tue, Oct 21</span>
-</td>
-
-</tr>
-
-<tr data-index="1" data-listing-date-sort="1761278400000" data-listing-file-modified-sort="1756222528223" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="[Assess] Solar Energy Case Study" data-listing-filename-sort="16-assess_solar.qmd">
-<td>
-<a href="../slides/week-08/16-assess_solar.html" class="title listing-title">[Assess] Solar Energy Case Study</a>
-</td>
-<td>
-<span class="listing-date">Fri, Oct 24</span>
-</td>
-
-</tr>
-
-</tbody>
-</table>
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
-</section>
-<section id="assignments" class="level1">
-<h1>Assignments</h1>
-<div id="listing-assignments" class="quarto-listing quarto-listing-container-table">
-<table class="quarto-listing-table table">
-<thead>
-<tr>
-
-<th>
-Assignment
-</th>
-
-<th>
-Title
-</th>
-
-<th>
-Due
-</th>
-
-</tr>
-</thead>
-<tbody class="list">
-
-<tr data-index="0" data-categories="RmluYWwlMjBQcm9qZWN0" data-listing-date-sort="1761278400000" data-listing-file-modified-sort="1760544599183" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="46" data-listing-title-sort="Group Project Proposal" data-listing-filename-sort="w8-project_proposal.qmd">
-<td>
-<span class="listing-categories">Final Project</span>
-</td>
-<td>
-<a href="../final_project/w8-project_proposal.html" class="title listing-title">Group Project Proposal</a>
-</td>
-<td>
-<span class="listing-date">Fri, Oct 24</span>
-</td>
-
-</tr>
-
-<tr data-index="1" data-categories="SG9tZXdvcms=" data-listing-date-sort="1761796800000" data-listing-file-modified-sort="1759867456009" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="117" data-listing-title-sort="HW 07: Solar Energy Case Study" data-listing-filename-sort="w8-hw07.qmd">
-<td>
-<span class="listing-categories">Homework</span>
-</td>
-<td>
-<a href="../hw/w8-hw07.html" class="title listing-title">HW 07: Solar Energy Case Study</a>
-</td>
-<td>
-<span class="listing-date">Thu, Oct 30</span>
-</td>
-
-</tr>
-
-</tbody>
-</table>
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
-</section>
-<section id="readings" class="level1">
-<h1>Readings</h1>
-<table class="caption-top table">
+<section id="schedule" class="level2">
+<h2 class="anchored" data-anchor-id="schedule">Schedule</h2>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>Note that this is updated as of October 20, 2025</caption>
 <colgroup>
-<col style="width: 10%">
+<col style="width: 1%">
+<col style="width: 3%">
+<col style="width: 5%">
+<col style="width: 78%">
+<col style="width: 6%">
+<col style="width: 5%">
 </colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Week</th>
+<th style="text-align: left;">Date</th>
+<th style="text-align: left;">Theme</th>
+<th style="text-align: left;">Speaker</th>
+<th style="text-align: left;">Prepare Questions (2)</th>
+<th style="text-align: left;">Thank you email (1)</th>
+</tr>
+</thead>
 <tbody>
 <tr class="odd">
-<td><strong>Tuesday:</strong> Powell, D.E., (2018). <a href="https://drive.google.com/drive/folders/1NC9gdY57e31h-GyAOgHXmpjdXBsxgX-W">Interlude 3: Off-Grid in the Chuskas</a> (pp.230-235). In Landscapes of Power: Politics of Energy in the Navajo Nation (pp.&nbsp;187–235). Duke University Press. https://doi.org/10.2307/j.ctv1220jnq.11</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: left;">2025-11-04</td>
+<td style="text-align: left;">Food</td>
+<td style="text-align: left;">Dr.&nbsp;Neza Xiuhtecutli is a senior grassroots advocacy organizer for the National Sustainable Agriculture Coalition and will be lecturing on community organizing, occupational health, and advocacy.</td>
+<td style="text-align: left;">Sophie</td>
+<td style="text-align: left;">Julia</td>
 </tr>
 <tr class="even">
-<td><strong>Tuesday:</strong> Pasqualetti, M. J., Jones, T. E., Necefer, L., Scott, C. A., &amp; Colombi, B. J. (2016). <a href="https://drive.google.com/drive/folders/1NC9gdY57e31h-GyAOgHXmpjdXBsxgX-W">A paradox of plenty: Renewable energy on Navajo Nation Lands</a>. Society &amp; Natural Resources, 29(8), 885-899.</td>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Ziyah</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
-<td><em>Optional Friday:</em> Wickham, H., Navarro, D., &amp; Pedersen, T.L. (2025). <a href="https://ggplot2-book.org/maps.html">ggplot2: Elegant Graphics for Data Analysis (3e): Chapter 6</a>. Sebastopol: O’Reilly.</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: left;">2025-11-11</td>
+<td style="text-align: left;">Water</td>
+<td style="text-align: left;">Dr.&nbsp;Jane Disney is an associate professor of environmental health at MDI Biological labpratory. She will be lecturing on community engaged research with rural schools in Maine to study private well contamination.</td>
+<td style="text-align: left;">Gwen</td>
+<td style="text-align: left;">Navya</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">June</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">2025-11-18</td>
+<td style="text-align: left;">Climate</td>
+<td style="text-align: left;">Cat McCandless ’14 is a Senior Climate Resilience Project Manager for the city of Boston. She will be lecturing about her masters in urban planning and ongoing climate resilience and community engagement projects in Boston.</td>
+<td style="text-align: left;">Reena</td>
+<td style="text-align: left;">Anya</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Katherine</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">13</td>
+<td style="text-align: left;">2025-11-25</td>
+<td style="text-align: left;">Energy</td>
+<td style="text-align: left;">Angie Alberto Escobar is Director of Gas to Geo Transition at HEET, a local non-profit focused on ethical and efficient energy transitions, specifically around geothermal. Angie will be lecturing on community engagement and the energy transition in the Boston regional area.</td>
+<td style="text-align: left;">Reyna</td>
+<td style="text-align: left;">Simmie</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Clara</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">14</td>
+<td style="text-align: left;">2025-12-02</td>
+<td style="text-align: left;">Climate and Energy</td>
+<td style="text-align: left;">Francelis Morillo-Suarez ’21 is a Clean Energy and Climate Planner II for the Metropolitan Area Planning Council, a regional planning agency serving greater Boston. Francelis will be lecturing on local and regional climate action, net-zero planning, and community engagement.</td>
+<td style="text-align: left;">Chloe</td>
+<td style="text-align: left;">Emily</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Elizabeth</td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
-
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If you need to change your sign-up, please email me at least 24 hours in advance of our class meeting.</p>
+</div>
+</div>
 
 
 </section>
