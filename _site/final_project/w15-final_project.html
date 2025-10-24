@@ -309,7 +309,7 @@ ul.task-list li input[type="checkbox"] {
 <h1>Formatting Instructions</h1>
 <section id="document-details" class="level2">
 <h2 class="anchored" data-anchor-id="document-details">Document Details</h2>
-<p>Please format the report using the report outline (i.e., four sections and accompanying sub-sections). The report should be single-spaced with 1-inch margins and use 12-pt sans-serif font. Feel free to download the <a href="">report template</a> to get started!</p>
+<p>Please format the report using the report outline (i.e., four sections and accompanying sub-sections). The report should be single-spaced with 1-inch margins and use 12-pt sans-serif font. Feel free to download the <a href="https://docs.google.com/document/d/1hO-cjgOm2_f1SRro72qBZRGgi2yF_o3I1aqE8FTzCMU/edit?tab=t.0#heading=h.jr9cp6mer7k4">report template</a> to get started!</p>
 </section>
 <section id="visuals" class="level2">
 <h2 class="anchored" data-anchor-id="visuals">Visuals</h2>
@@ -499,7 +499,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/mariahdaniellecaballero\.github\.io\/ES-202\/");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

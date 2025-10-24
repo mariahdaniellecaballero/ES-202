@@ -13,7 +13,7 @@ library(tidyverse)
 library(knitr)
 library(kableExtra)
 
-vars <- read_excel("/Users/mc152/Library/CloudStorage/GoogleDrive-mc152@wellesley.edu/My Drive/Teaching/ES-202/Final_Dataset_variable_names.xlsx")
+vars <- read_excel("/Users/mc152/Library/CloudStorage/GoogleDrive-mc152@wellesley.edu/My Drive/Teaching/ES-202/Final/Final_Dataset_variable_names.xlsx")
 ```
 
 ```{r}
