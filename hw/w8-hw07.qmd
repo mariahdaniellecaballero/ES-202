@@ -4,13 +4,13 @@ date: "October 30, 2025"
 categories: "Homework"
 ---
 ## Overview 
-This case study uses annual solar energy potential data from the National Renewable Energy Lab's [National Solar Radiation Data Base](https://www.nrel.gov/gis/solar-resource-maps) and energy burden data from the Department of Energy's [Low-Income Energy Affodability Data Tool](https://www.energy.gov/scep/slsc/lead-tool), and connecting it back to foundational theoretical aspects of recognition justice.
+This case study uses data on solar development  data from the National Renewable Energy Lab's [Screening Tool for Equitable Adoption and Deployment of Solar](https://data.nrel.gov/submissions/238) and energy burden data from the Department of Energy's [Low-Income Energy Affordability Data Tool](https://www.energy.gov/scep/slsc/lead-tool), and connecting it back to the five tenets of EJ. 
 
 ## Learning Outcomes
-- Change a map's projection
-- Create a map using a shapefile
-- Apply thematic components for interdisciplinary communication
-- Connect findings to theoretical understandings of recognition justice
+- Read spatial data and transform its projection 
+- Create a Chloropleth Map
+- Creating a Bivariate Map
+- Connect findings to theoretical understandings of the five tenets of Environmental Justice
 
 ## Instructions
 1. Navigate to Posit Cloud and select the HW 07 assignment. 

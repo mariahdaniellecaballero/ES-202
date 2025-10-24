@@ -16,4 +16,401 @@ execute:
   freeze: auto
 ---
 
-# Slides will be posted 24 hours in advance of class.
+## Class Overview 
+- Centering activity
+- Setting the stage
+- Paired coding
+
+## Centering Activity
+- Simmie :-)
+- [Link](https://youtu.be/tUtPiYbnUfA?si=rOgnVpzmUzWpCtzv) (see 1:32)
+
+## Mid-Semester Update
+- Got 13 responses! 
+- Realized I can't make this for credit AND make it anonymous
+- If you're one of the two people who haven't filled out the feedback form, let's talk!
+
+## Setting the Stage
+- This week's focus is on making maps!
+- Using publicly available data from the National Renewable Energy Laboratory (NREL), the U.S. Census, and the Department of Energy (DOE). 
+
+## A Note on Tribal Data {.smaller}
+- Really quite hard to find data for Tribal Census Tracts. 
+  - Had to use Areal Weight Interpolation to generate estimates from census tract values. 
+  - This approach is especially imperfect when the population is not distributed equally. 
+![](images/tribal_cts.png)
+
+
+## Learning Outcomes
+1. Read spatial data and transform its projection 
+2. Create a Chloropleth Map
+3. Creating a Bivariate Map
+4. Connect findings to theoretical understandings of the five tenets of Environmental Justice
+
+## Let's get Started
+- Find your pair
+- Open Posit
+
+## Loading packages {.smaller}
+- Install 4 new packages. 
+  - Run lines 1-4 **in your console (below)**
+- Load 6 packages
+  - Type lines 6-11 **in your analysis.qmd (above)**
+```{r}
+#| warning: false
+#| message: false
+#| echo: true
+# install.packages("crsuggest")
+# install.packages("biscale")
+# install.packages("RColorBrewer)
+# install.packages("cowplot)
+
+library(tidyverse)
+library(sf)
+library(crsuggest)
+library(biscale)
+library(RColorBrewer)
+library(cowplot)
+```
+
+## Reading in data {.smaller}
+- Use the `read_sf()` package for reading a shapefile.
+  - shapefiles have multiple parts, so they're stored in their own folder (nn_sf), and the shapefile is called `nn_sf.shp`. 
+  - We have to type the full filepath to read in the data!
+```{r}
+#| warning: false
+#| message: false
+#| echo: true
+#| eval: false
+
+nn_sf <- read_sf("data/nn_sf/nn_sf.shp")
+```
+
+```{r}
+# | eval: true
+# | echo: false
+nn_sf <- read_sf("~/Library/CloudStorage/GoogleDrive-mc152@wellesley.edu/My Drive/Teaching/ES-202/Case Study Code/data/week_08/Final_datasets/nn_sf/nn_sf.shp")
+energy_pts <- read_sf("~/Library/CloudStorage/GoogleDrive-mc152@wellesley.edu/My Drive/Teaching/ES-202/Case Study Code/data/week_08/Final_datasets/energy_pts/energy_pts.shp")
+```
+
+## Take a Look at the Data {.smaller}
+- Last time we used `mapview()` to take a quick look at our spatial data. 
+  - We can actually use ggplot() with a new geom!
+    - ✨geom_sf()✨
+```{r}
+#| warning: false
+#| message: false
+#| echo: true
+#| eval: true
+nn_sf |>
+  ggplot() +
+  geom_sf()
+```
+
+## Project Data {.smaller}
+- ggplot() assumes planar data (x and y axes)
+  - But the earth is round.. 
+- Projections allow us to visualize the Earth on a planar surface, while trying to preserve accuracy for analyses. 
+  - This is expecially important for local maps (like ours)
+  - We can use the `suggest_crs()` function to suggest the best coordinate system for our data.
+  - `st_transform()` will change our projection if supplied a new `crs_code`. 
+```{r}
+#| warning: false
+#| message: false
+#| echo: true
+#| eval: false
+
+# check projection
+nn_sf |> st_crs()
+
+# suggest better crs (may want to # this out in .qmd)
+#suggest_crs(nn_sf)
+
+# Change projection
+nn_sf <- nn_sf |>
+  st_transform(6627)
+```
+
+## EX_01 {.smaller}
+Load and project locations of large-scale energy projects in the data folder: 
+
+1. Use `read_sf` to read the `energy_pts.shp` shapefile into your environment, call it `energy_pts`.
+2. Change the projection of your `energy_pts` shapefile to match the Navajo Nation shapefile. 
+3. Tell me about this data, what kinds of energy projects are included in the shapefile, and which produces the most electricity? 
+
+## Making a Chloropleth Map {.smaller}
+
+## Simple Fill Map {.smaller}
+- We can use the same ggplot aesthetics (fill, color, size, etc) to visualize variables on a map. 
+  - For instance, we can change the `fill` in our map to represent Average Energy Burden (`avg_eb`).
+  - Any thoughts on the legend, though?  
+```{r}
+#| warning: false
+#| message: false
+#| echo: true
+#| eval: true
+nn_sf |>
+  ggplot() +
+  geom_sf(aes(fill = avg_eb))
+```
+
+## Create Chloropleth Categories {.smaller}
+- Chloropleths are helpful because they allow the viewer to quickly compare values across space. 
+  - To create our chloropleth categories, we should first understand how our data is distributed.
+  - Then, we can use the `mutate()` function to create a new variable `avg_eb_cat` using the `cut()` function. 
+    - Breaks start with our rounded lowest number, and end with the rounded highest number. 
+```{r}
+#| warning: false
+#| message: false
+#| echo: true
+#| eval: true
+
+# look at data distribution
+summary(nn_sf$avg_eb)
+
+# mutate variables using "cut"
+nn_sf <- nn_sf |>
+  mutate(avg_eb_cat = cut(avg_eb,
+    breaks = c(3, 4, 5, 6, 8),
+    labels = c("3–4%", "4–5%", "5–6%", "6–8%")
+  ))
+```
+
+## Plot Chloropleth {.smaller}
+- Lastly, we can define a color palette (I suggest a sequential palette, to showcase the low to high values). 
+  - I use the `RColorBrewer` package to define my pallete (read more [here](https://r-graph-gallery.com/38-rcolorbrewers-palettes.html)!)
+- Then, we plot and change a few aesthetics!
+  - Change the fill to our new categorical variable, `avg_eb_cat`
+  - Change the linewidth
+  - Use `scale_fill_manual()` to use my palette, and rename the legend 
+  - Use `theme_void()` to ensure a blank base plot. 
+```{r}
+#| warning: false
+#| message: false
+#| echo: true
+#| eval: false
+
+# create a palette
+my_palette <- brewer.pal(n = 4, name = "Oranges")
+
+
+# plot!
+nn_sf |>
+  ggplot() +
+  geom_sf(aes(fill = avg_eb_cat), linewidth = 0.05) +
+  scale_fill_manual(
+    values = my_palette,
+    name = "Average Energy Burden"
+  ) +
+  theme_void()
+```
+
+## Et voilà!
+```{r}
+#| warning: false
+#| message: false
+#| echo: false
+#| eval: true
+
+my_palette <- brewer.pal(n = 4, name = "Oranges")
+nn_sf |>
+  ggplot() +
+  geom_sf(aes(fill = avg_eb_cat), linewidth = 0.05) +
+  scale_fill_manual(
+    values = my_palette,
+    name = "Average Energy Burden"
+  ) +
+  theme_void()
+```
+
+## Bonus: Layer Multiple Shapefiles {.smaller}
+- We can actually layer multiple shapefiles on top of one another. 
+  - Take the previous code, and indicate the dataframe in the `geom_sf()` layer, rather than piped at the top. 
+  - Add another `geom_sf()` for the `energy_pts` layer, change the `size` and `color` aesthetics. 
+  - Change the color aesthetics using `scale_color_manual()`
+```{r}
+#| warning: false
+#| message: false
+#| echo: true
+#| eval: false
+
+# previous code
+ggplot() +
+  geom_sf(data = nn_sf, aes(fill = avg_eb_cat), linewidth = 0.05) +
+  scale_fill_manual(
+    values = my_palette,
+    name = "Average Energy Burden"
+  ) +
+  # added points sf and changed size + color
+  geom_sf(
+    data = energy_pts, aes(size = totl_mw, color = type),
+    alpha = 0.8
+  ) +
+  scale_color_manual(
+    values = c("black", "yellow", "gray"),
+    name = "Plant Type"
+  ) +
+  theme_void()
+```
+
+## The Results
+```{r}
+#| warning: false
+#| message: false
+#| echo: false
+#| eval: true
+
+ggplot() +
+  geom_sf(data = nn_sf, aes(fill = avg_eb_cat), linewidth = 0.05) +
+  scale_fill_manual(
+    values = my_palette,
+    name = "Average Energy Burden"
+  ) +
+  # added points sf and changed size + color
+  geom_sf(
+    data = energy_pts, aes(size = totl_mw, color = type),
+    alpha = 0.8
+  ) +
+  scale_color_manual(
+    values = c("black", "yellow", "gray"),
+    name = "Plant Type"
+  ) +
+  theme_void()
+```
+
+## EX_02 {.smaller}
+Create a chloropleth map using a continuous variable of your choosing in the `nn_sf` shapefile. Note that you can refer to the `nn_sf_dictionary.xlsx` file in your data folder if you're unsure of a variable name. 
+
+1. Look at the distribution of your variable to determine your bins using the `summary()` function.
+2. Create a new categorical variable using the `mutate()` and `cut()` functions
+3. Create a palette of your choosing, (make sure the colors make sense for a chloropleth!) 
+4. Create your chloropleth map, and note any interesting spatial trends. 
+
+
+## Create a Bivariate Map 
+- bivariate mapping allows us to visualize two variables (e.g., the residential solar potential `npv_rs_` and percent of single family homes `perc_sf`) in the same map.
+
+## Create a Bivariate Dataframe {.smaller}
+- We'll use the `biscale` package to create a new dataframe called `bi_var` categories are assigned to the data using the `bi_class()` function.
+- `npv_rs_` is our x, perc_sf  is our y, and we'll choose fisher breaks for our style, and 3 colors for the dim option.
+  - **NOTE**: Legend breaks vary by the story we’re trying to tell. There’s a handy book chapter that details the differences in legend classifications [here](https://geographicdata.science/book/notebooks/05_choropleth.html#).
+
+```{r}
+#| warning: false
+#| message: false
+#| echo: true
+#| eval: true
+
+bi_var <- bi_class(nn_sf,
+  x = npv_rs_, y = perc_sf,
+  style = "fisher", dim = 3)
+
+bi_var$bi_class
+```
+
+## Create Bivariate Map {.smaller}
+- The `biscale` package uses the ggplot2 approach, which we’re already familiar with! 
+ - We create a `ggplot()` object, add a `geom_sf()` object, specifying our new `bi_var` dataframe, our fill column,  `bi_class`, and some other aesthetic details, such as line color and width.
+
+I chose the “Bluegill” palette for this approach, but there are [several others](https://cran.r-project.org/web/packages/biscale/vignettes/bivariate_palettes.html) available.
+```{r}
+#| warning: false
+#| message: false
+#| echo: true
+#| eval: true
+
+bi_var_map <- ggplot() +
+  geom_sf(
+    data = bi_var, aes(fill = bi_class),
+    color = "white", size = 0.1, show.legend = FALSE
+  ) +
+  bi_scale_fill(pal = "Bluegill", dim = 3) +
+  bi_theme()
+```
+
+## Results {.smaller}
+```{r}
+#| warning: false
+#| message: false
+#| echo: false
+#| eval: true
+bi_var_map
+```
+
+## Create Bivariate Legend {.smaller}
+- I also want to create a nice legend to accompany this, so I’ll use the `bi_legend()` function to specify my palette, the number of colors, and the labels I’d like.
+```{r}
+#| warning: false
+#| message: false
+#| echo: true
+#| eval: true
+
+bi_var_legend <- bi_legend(
+  pal = "Bluegill",
+  dim = 3,
+  xlab = "Profitability for Residential PV",
+  ylab = "% SF Homes",
+  size = 8
+)
+bi_var_legend
+
+```
+
+## Stitch it Together {.smaller}
+- The last step is adding the map and legend together, using the `ggdraw()` function from the `cowplot` package. 
+  - `draw_plot()` adds your map and legend together in one plot. 
+  - `x` (0 = left, 1 = right), and `y` (0 = bottom, 1 = top) changes the location of the legend
+  - `width` and `height` change the legend size relative to the map. 
+```{r}
+#| warning: false
+#| message: false
+#| echo: true
+#| eval: false
+
+ggdraw() +
+  draw_plot(bi_var_map) + 
+  draw_plot(bi_var_legend,
+    x = 0.05,
+    y = 0.05,
+    width = 0.25, 
+    height = 0.25)
+```
+
+## All Together Now! {.smaller}
+```{r}
+#| warning: false
+#| message: false
+#| echo: false
+#| eval: true
+
+ggdraw() +
+  draw_plot(bi_var_map) + # main map
+  draw_plot(bi_var_legend,
+    x = 0.05, # x position (0 = left, 1 = right)
+    y = 0.05, # y position (0 = bottom, 1 = top)
+    width = 0.25, # width of the legend relative to map
+    height = 0.25
+  )
+```
+
+## EX_03 {.smaller}
+Create a bivariate map using a continuous variable of your choosing in the `nn_sf` shapefile. Note that you can refer to the `nn_sf_dictionary.xlsx` file in your data folder if you're unsure of a variable name. 
+
+1. Create a new dataframe called `bivar_2` and use the `bi_class()` function to generate a bivariate dataframe for your two variables of interest. 
+2. Create the bivariate map.
+3. Create an accompanying bivariate legend. 
+4. Stitch the map and legend together to create your final map 
+
+## EX_04 
+See Posit assignment!
+
+## Logistics {.smaller}
+- Project proposal due tonight at 11:59 PM. 
+- No class on Tuesday!
+- Native American and Indigenous Heritage Month starts November 1. 
+  - November 3: “Indigenous Wisdom and the Teachings of Trees” 
+  - November 5: Decolonizing Drag with Lady Shug
+  - November 9: Language Circle: Language, Identity and Community, An Indigenous Perspective
+  - November 13: The Colonial History of the American Legal System
+  - November 15: Davis Museum Tour: Colonial Legacies of Curatorial
+Practices
