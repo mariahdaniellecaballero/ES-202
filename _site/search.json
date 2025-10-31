@@ -1192,6 +1192,216 @@
     "text": "For Friday\n\nCheck course website for readings\nPreview first assignment and come prepared with questions"
   },
   {
+    "objectID": "slides/week-08/16-assess_solar.html#class-overview",
+    "href": "slides/week-08/16-assess_solar.html#class-overview",
+    "title": "[Assess] Solar Energy Case Study",
+    "section": "Class Overview",
+    "text": "Class Overview\n\nCentering activity\nSetting the stage\nPaired coding"
+  },
+  {
+    "objectID": "slides/week-08/16-assess_solar.html#centering-activity",
+    "href": "slides/week-08/16-assess_solar.html#centering-activity",
+    "title": "[Assess] Solar Energy Case Study",
+    "section": "Centering Activity",
+    "text": "Centering Activity\n\nSimmie :-)\nLink (see 1:32)"
+  },
+  {
+    "objectID": "slides/week-08/16-assess_solar.html#mid-semester-update",
+    "href": "slides/week-08/16-assess_solar.html#mid-semester-update",
+    "title": "[Assess] Solar Energy Case Study",
+    "section": "Mid-Semester Update",
+    "text": "Mid-Semester Update\n\nGot 13 responses!\nRealized I can’t make this for credit AND make it anonymous\nIf you’re one of the two people who haven’t filled out the feedback form, let’s talk!"
+  },
+  {
+    "objectID": "slides/week-08/16-assess_solar.html#setting-the-stage",
+    "href": "slides/week-08/16-assess_solar.html#setting-the-stage",
+    "title": "[Assess] Solar Energy Case Study",
+    "section": "Setting the Stage",
+    "text": "Setting the Stage\n\nThis week’s focus is on making maps!\nUsing publicly available data from the National Renewable Energy Laboratory (NREL), the U.S. Census, and the Department of Energy (DOE)."
+  },
+  {
+    "objectID": "slides/week-08/16-assess_solar.html#a-note-on-tribal-data",
+    "href": "slides/week-08/16-assess_solar.html#a-note-on-tribal-data",
+    "title": "[Assess] Solar Energy Case Study",
+    "section": "A Note on Tribal Data",
+    "text": "A Note on Tribal Data\n\nReally quite hard to find data for Tribal Census Tracts.\n\nHad to use Areal Weight Interpolation to generate estimates from census tract values.\nThis approach is especially imperfect when the population is not distributed equally."
+  },
+  {
+    "objectID": "slides/week-08/16-assess_solar.html#learning-outcomes",
+    "href": "slides/week-08/16-assess_solar.html#learning-outcomes",
+    "title": "[Assess] Solar Energy Case Study",
+    "section": "Learning Outcomes",
+    "text": "Learning Outcomes\n\nRead spatial data and transform its projection\nCreate a Chloropleth Map\nCreating a Bivariate Map\nConnect findings to theoretical understandings of the five tenets of Environmental Justice"
+  },
+  {
+    "objectID": "slides/week-08/16-assess_solar.html#lets-get-started",
+    "href": "slides/week-08/16-assess_solar.html#lets-get-started",
+    "title": "[Assess] Solar Energy Case Study",
+    "section": "Let’s get Started",
+    "text": "Let’s get Started\n\nFind your pair\nOpen Posit"
+  },
+  {
+    "objectID": "slides/week-08/16-assess_solar.html#loading-packages",
+    "href": "slides/week-08/16-assess_solar.html#loading-packages",
+    "title": "[Assess] Solar Energy Case Study",
+    "section": "Loading packages",
+    "text": "Loading packages\n\nInstall 4 new packages.\n\nRun lines 1-4 in your console (below)\n\nLoad 6 packages\n\nType lines 6-11 in your analysis.qmd (above)\n\n\n\n# install.packages(\"crsuggest\")\n# install.packages(\"biscale\")\n# install.packages(\"RColorBrewer)\n# install.packages(\"cowplot)\n\nlibrary(tidyverse)\nlibrary(sf)\nlibrary(crsuggest)\nlibrary(biscale)\nlibrary(RColorBrewer)\nlibrary(cowplot)"
+  },
+  {
+    "objectID": "slides/week-08/16-assess_solar.html#reading-in-data",
+    "href": "slides/week-08/16-assess_solar.html#reading-in-data",
+    "title": "[Assess] Solar Energy Case Study",
+    "section": "Reading in data",
+    "text": "Reading in data\n\nUse the read_sf() package for reading a shapefile.\n\nshapefiles have multiple parts, so they’re stored in their own folder (nn_sf), and the shapefile is called nn_sf.shp.\nWe have to type the full filepath to read in the data!\n\n\n\nnn_sf &lt;- read_sf(\"data/nn_sf/nn_sf.shp\")"
+  },
+  {
+    "objectID": "slides/week-08/16-assess_solar.html#take-a-look-at-the-data",
+    "href": "slides/week-08/16-assess_solar.html#take-a-look-at-the-data",
+    "title": "[Assess] Solar Energy Case Study",
+    "section": "Take a Look at the Data",
+    "text": "Take a Look at the Data\n\nLast time we used mapview() to take a quick look at our spatial data.\n\nWe can actually use ggplot() with a new geom!\n\n✨geom_sf()✨\n\n\n\n\nnn_sf |&gt;\n  ggplot() +\n  geom_sf()"
+  },
+  {
+    "objectID": "slides/week-08/16-assess_solar.html#project-data",
+    "href": "slides/week-08/16-assess_solar.html#project-data",
+    "title": "[Assess] Solar Energy Case Study",
+    "section": "Project Data",
+    "text": "Project Data\n\nggplot() assumes planar data (x and y axes)\n\nBut the earth is round..\n\nProjections allow us to visualize the Earth on a planar surface, while trying to preserve accuracy for analyses.\n\nThis is expecially important for local maps (like ours)\nWe can use the suggest_crs() function to suggest the best coordinate system for our data.\nst_transform() will change our projection if supplied a new crs_code.\n\n\n\n# check projection\nnn_sf |&gt; st_crs()\n\n# suggest better crs (may want to # this out in .qmd)\n#suggest_crs(nn_sf)\n\n# Change projection\nnn_sf &lt;- nn_sf |&gt;\n  st_transform(6627)"
+  },
+  {
+    "objectID": "slides/week-08/16-assess_solar.html#ex_01",
+    "href": "slides/week-08/16-assess_solar.html#ex_01",
+    "title": "[Assess] Solar Energy Case Study",
+    "section": "EX_01",
+    "text": "EX_01\nLoad and project locations of large-scale energy projects in the data folder:\n\nUse read_sf to read the energy_pts.shp shapefile into your environment, call it energy_pts.\nChange the projection of your energy_pts shapefile to match the Navajo Nation shapefile.\nTell me about this data, what kinds of energy projects are included in the shapefile, and which produces the most electricity?"
+  },
+  {
+    "objectID": "slides/week-08/16-assess_solar.html#making-a-chloropleth-map",
+    "href": "slides/week-08/16-assess_solar.html#making-a-chloropleth-map",
+    "title": "[Assess] Solar Energy Case Study",
+    "section": "Making a Chloropleth Map",
+    "text": "Making a Chloropleth Map"
+  },
+  {
+    "objectID": "slides/week-08/16-assess_solar.html#simple-fill-map",
+    "href": "slides/week-08/16-assess_solar.html#simple-fill-map",
+    "title": "[Assess] Solar Energy Case Study",
+    "section": "Simple Fill Map",
+    "text": "Simple Fill Map\n\nWe can use the same ggplot aesthetics (fill, color, size, etc) to visualize variables on a map.\n\nFor instance, we can change the fill in our map to represent Average Energy Burden (avg_eb).\nAny thoughts on the legend, though?\n\n\n\nnn_sf |&gt;\n  ggplot() +\n  geom_sf(aes(fill = avg_eb))"
+  },
+  {
+    "objectID": "slides/week-08/16-assess_solar.html#create-chloropleth-categories",
+    "href": "slides/week-08/16-assess_solar.html#create-chloropleth-categories",
+    "title": "[Assess] Solar Energy Case Study",
+    "section": "Create Chloropleth Categories",
+    "text": "Create Chloropleth Categories\n\nChloropleths are helpful because they allow the viewer to quickly compare values across space.\n\nTo create our chloropleth categories, we should first understand how our data is distributed.\nThen, we can use the mutate() function to create a new variable avg_eb_cat using the cut() function.\n\nBreaks start with our rounded lowest number, and end with the rounded highest number.\n\n\n\n\n# look at data distribution\nsummary(nn_sf$avg_eb)\n\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NA's \n  3.644   4.988   5.304   5.425   5.945   7.820       1 \n\n# mutate variables using \"cut\"\nnn_sf &lt;- nn_sf |&gt;\n  mutate(avg_eb_cat = cut(avg_eb,\n    breaks = c(3, 4, 5, 6, 8),\n    labels = c(\"3–4%\", \"4–5%\", \"5–6%\", \"6–8%\")\n  ))"
+  },
+  {
+    "objectID": "slides/week-08/16-assess_solar.html#plot-chloropleth",
+    "href": "slides/week-08/16-assess_solar.html#plot-chloropleth",
+    "title": "[Assess] Solar Energy Case Study",
+    "section": "Plot Chloropleth",
+    "text": "Plot Chloropleth\n\nLastly, we can define a color palette (I suggest a sequential palette, to showcase the low to high values).\n\nI use the RColorBrewer package to define my pallete (read more here!)\n\nThen, we plot and change a few aesthetics!\n\nChange the fill to our new categorical variable, avg_eb_cat\nChange the linewidth\nUse scale_fill_manual() to use my palette, and rename the legend\nUse theme_void() to ensure a blank base plot.\n\n\n\n# create a palette\nmy_palette &lt;- brewer.pal(n = 4, name = \"Oranges\")\n\n\n# plot!\nnn_sf |&gt;\n  ggplot() +\n  geom_sf(aes(fill = avg_eb_cat), linewidth = 0.05) +\n  scale_fill_manual(\n    values = my_palette,\n    name = \"Average Energy Burden\"\n  ) +\n  theme_void()"
+  },
+  {
+    "objectID": "slides/week-08/16-assess_solar.html#et-voilà",
+    "href": "slides/week-08/16-assess_solar.html#et-voilà",
+    "title": "[Assess] Solar Energy Case Study",
+    "section": "Et voilà!",
+    "text": "Et voilà!"
+  },
+  {
+    "objectID": "slides/week-08/16-assess_solar.html#bonus-layer-multiple-shapefiles",
+    "href": "slides/week-08/16-assess_solar.html#bonus-layer-multiple-shapefiles",
+    "title": "[Assess] Solar Energy Case Study",
+    "section": "Bonus: Layer Multiple Shapefiles",
+    "text": "Bonus: Layer Multiple Shapefiles\n\nWe can actually layer multiple shapefiles on top of one another.\n\nTake the previous code, and indicate the dataframe in the geom_sf() layer, rather than piped at the top.\nAdd another geom_sf() for the energy_pts layer, change the size and color aesthetics.\nChange the color aesthetics using scale_color_manual()\n\n\n\n# previous code\nggplot() +\n  geom_sf(data = nn_sf, aes(fill = avg_eb_cat), linewidth = 0.05) +\n  scale_fill_manual(\n    values = my_palette,\n    name = \"Average Energy Burden\"\n  ) +\n  # added points sf and changed size + color\n  geom_sf(\n    data = energy_pts, aes(size = totl_mw, color = type),\n    alpha = 0.8\n  ) +\n  scale_color_manual(\n    values = c(\"black\", \"yellow\", \"gray\"),\n    name = \"Plant Type\"\n  ) +\n  theme_void()"
+  },
+  {
+    "objectID": "slides/week-08/16-assess_solar.html#the-results",
+    "href": "slides/week-08/16-assess_solar.html#the-results",
+    "title": "[Assess] Solar Energy Case Study",
+    "section": "The Results",
+    "text": "The Results"
+  },
+  {
+    "objectID": "slides/week-08/16-assess_solar.html#ex_02",
+    "href": "slides/week-08/16-assess_solar.html#ex_02",
+    "title": "[Assess] Solar Energy Case Study",
+    "section": "EX_02",
+    "text": "EX_02\nCreate a chloropleth map using a continuous variable of your choosing in the nn_sf shapefile. Note that you can refer to the nn_sf_dictionary.xlsx file in your data folder if you’re unsure of a variable name.\n\nLook at the distribution of your variable to determine your bins using the summary() function.\nCreate a new categorical variable using the mutate() and cut() functions\nCreate a palette of your choosing, (make sure the colors make sense for a chloropleth!)\nCreate your chloropleth map, and note any interesting spatial trends."
+  },
+  {
+    "objectID": "slides/week-08/16-assess_solar.html#create-a-bivariate-map",
+    "href": "slides/week-08/16-assess_solar.html#create-a-bivariate-map",
+    "title": "[Assess] Solar Energy Case Study",
+    "section": "Create a Bivariate Map",
+    "text": "Create a Bivariate Map\n\nbivariate mapping allows us to visualize two variables (e.g., the residential solar potential npv_rs_ and percent of single family homes perc_sf) in the same map."
+  },
+  {
+    "objectID": "slides/week-08/16-assess_solar.html#create-a-bivariate-dataframe",
+    "href": "slides/week-08/16-assess_solar.html#create-a-bivariate-dataframe",
+    "title": "[Assess] Solar Energy Case Study",
+    "section": "Create a Bivariate Dataframe",
+    "text": "Create a Bivariate Dataframe\n\nWe’ll use the biscale package to create a new dataframe called bi_var categories are assigned to the data using the bi_class() function.\nnpv_rs_ is our x, perc_sf is our y, and we’ll choose fisher breaks for our style, and 3 colors for the dim option.\n\nNOTE: Legend breaks vary by the story we’re trying to tell. There’s a handy book chapter that details the differences in legend classifications here.\n\n\n\nbi_var &lt;- bi_class(nn_sf,\n  x = npv_rs_, y = perc_sf,\n  style = \"fisher\", dim = 3)\n\nbi_var$bi_class\n\n [1] \"2-2\" \"3-1\" \"3-2\" \"2-3\" \"3-3\" \"2-2\" \"2-2\" \"3-3\" \"3-1\" \"3-3\" \"3-1\" \"3-1\"\n[13] \"3-1\" \"3-3\" \"3-3\" \"2-2\" \"3-3\" \"3-3\" \"3-1\" \"3-2\" \"3-3\" \"3-2\" \"3-2\" \"3-1\"\n[25] \"3-1\" \"2-1\" \"2-1\" \"3-3\" \"2-3\" \"3-2\" \"2-1\" \"2-2\" \"3-3\" \"3-1\" \"3-3\" \"2-1\"\n[37] \"2-2\" \"1-2\""
+  },
+  {
+    "objectID": "slides/week-08/16-assess_solar.html#create-bivariate-map",
+    "href": "slides/week-08/16-assess_solar.html#create-bivariate-map",
+    "title": "[Assess] Solar Energy Case Study",
+    "section": "Create Bivariate Map",
+    "text": "Create Bivariate Map\n\nThe biscale package uses the ggplot2 approach, which we’re already familiar with!\nWe create a ggplot() object, add a geom_sf() object, specifying our new bi_var dataframe, our fill column, bi_class, and some other aesthetic details, such as line color and width.\n\nI chose the “Bluegill” palette for this approach, but there are several others available.\n\nbi_var_map &lt;- ggplot() +\n  geom_sf(\n    data = bi_var, aes(fill = bi_class),\n    color = \"white\", size = 0.1, show.legend = FALSE\n  ) +\n  bi_scale_fill(pal = \"Bluegill\", dim = 3) +\n  bi_theme()"
+  },
+  {
+    "objectID": "slides/week-08/16-assess_solar.html#results",
+    "href": "slides/week-08/16-assess_solar.html#results",
+    "title": "[Assess] Solar Energy Case Study",
+    "section": "Results",
+    "text": "Results"
+  },
+  {
+    "objectID": "slides/week-08/16-assess_solar.html#create-bivariate-legend",
+    "href": "slides/week-08/16-assess_solar.html#create-bivariate-legend",
+    "title": "[Assess] Solar Energy Case Study",
+    "section": "Create Bivariate Legend",
+    "text": "Create Bivariate Legend\n\nI also want to create a nice legend to accompany this, so I’ll use the bi_legend() function to specify my palette, the number of colors, and the labels I’d like.\n\n\nbi_var_legend &lt;- bi_legend(\n  pal = \"Bluegill\",\n  dim = 3,\n  xlab = \"Profitability for Residential PV\",\n  ylab = \"% SF Homes\",\n  size = 8\n)\nbi_var_legend"
+  },
+  {
+    "objectID": "slides/week-08/16-assess_solar.html#stitch-it-together",
+    "href": "slides/week-08/16-assess_solar.html#stitch-it-together",
+    "title": "[Assess] Solar Energy Case Study",
+    "section": "Stitch it Together",
+    "text": "Stitch it Together\n\nThe last step is adding the map and legend together, using the ggdraw() function from the cowplot package.\n\ndraw_plot() adds your map and legend together in one plot.\nx (0 = left, 1 = right), and y (0 = bottom, 1 = top) changes the location of the legend\nwidth and height change the legend size relative to the map.\n\n\n\nggdraw() +\n  draw_plot(bi_var_map) + \n  draw_plot(bi_var_legend,\n    x = 0.05,\n    y = 0.05,\n    width = 0.25, \n    height = 0.25)"
+  },
+  {
+    "objectID": "slides/week-08/16-assess_solar.html#all-together-now",
+    "href": "slides/week-08/16-assess_solar.html#all-together-now",
+    "title": "[Assess] Solar Energy Case Study",
+    "section": "All Together Now!",
+    "text": "All Together Now!"
+  },
+  {
+    "objectID": "slides/week-08/16-assess_solar.html#ex_03",
+    "href": "slides/week-08/16-assess_solar.html#ex_03",
+    "title": "[Assess] Solar Energy Case Study",
+    "section": "EX_03",
+    "text": "EX_03\nCreate a bivariate map using a continuous variable of your choosing in the nn_sf shapefile. Note that you can refer to the nn_sf_dictionary.xlsx file in your data folder if you’re unsure of a variable name.\n\nCreate a new dataframe called bivar_2 and use the bi_class() function to generate a bivariate dataframe for your two variables of interest.\nCreate the bivariate map.\nCreate an accompanying bivariate legend.\nStitch the map and legend together to create your final map"
+  },
+  {
+    "objectID": "slides/week-08/16-assess_solar.html#ex_04",
+    "href": "slides/week-08/16-assess_solar.html#ex_04",
+    "title": "[Assess] Solar Energy Case Study",
+    "section": "EX_04",
+    "text": "EX_04\nSee Posit assignment!"
+  },
+  {
+    "objectID": "slides/week-08/16-assess_solar.html#logistics",
+    "href": "slides/week-08/16-assess_solar.html#logistics",
+    "title": "[Assess] Solar Energy Case Study",
+    "section": "Logistics",
+    "text": "Logistics\n\nProject proposal due tonight at 11:59 PM.\nNo class on Tuesday!\nNative American and Indigenous Heritage Month starts November 1.\n\nNovember 3: “Indigenous Wisdom and the Teachings of Trees”\nNovember 5: Decolonizing Drag with Lady Shug\nNovember 9: Language Circle: Language, Identity and Community, An Indigenous Perspective\nNovember 13: The Colonial History of the American Legal System\nNovember 15: Davis Museum Tour: Colonial Legacies of Curatorial Practices"
+  },
+  {
     "objectID": "centering.html",
     "href": "centering.html",
     "title": "Centering Activity Sign-Up",
@@ -4117,220 +4327,108 @@
     ]
   },
   {
-    "objectID": "slides/week-08/16-assess_solar.html#class-overview",
-    "href": "slides/week-08/16-assess_solar.html#class-overview",
-    "title": "[Assess] Solar Energy Case Study",
-    "section": "Class Overview",
-    "text": "Class Overview\n\nCentering activity\nSetting the stage\nPaired coding"
+    "objectID": "slides/week-09/16-project_plan.html#happy-halloween",
+    "href": "slides/week-09/16-project_plan.html#happy-halloween",
+    "title": "[Strategize]: Final Project Plans",
+    "section": "Happy Halloween!",
+    "text": "Happy Halloween!\n\nCentering Activity\nReviewing Timelines\nProject updates\n\nRotating Check-in"
   },
   {
-    "objectID": "slides/week-08/16-assess_solar.html#centering-activity",
-    "href": "slides/week-08/16-assess_solar.html#centering-activity",
-    "title": "[Assess] Solar Energy Case Study",
+    "objectID": "slides/week-09/16-project_plan.html#halloween",
+    "href": "slides/week-09/16-project_plan.html#halloween",
+    "title": "[Strategize]: Final Project Plans",
+    "section": "Halloween",
+    "text": "Halloween"
+  },
+  {
+    "objectID": "slides/week-09/16-project_plan.html#centering-activity",
+    "href": "slides/week-09/16-project_plan.html#centering-activity",
+    "title": "[Strategize]: Final Project Plans",
     "section": "Centering Activity",
-    "text": "Centering Activity\n\nSimmie :-)\nLink (see 1:32)"
+    "text": "Centering Activity\n\nDia de los Muertos is tomorrow!\n\nWatch: Journey of cempasúchil [4:18-9:38]\nEat: Pan de Muerto\nDrink: Vegan Mexican Hot Chocolate from Taza, a Oaxacan chocolate store in Boston. :-)"
   },
   {
-    "objectID": "slides/week-08/16-assess_solar.html#mid-semester-update",
-    "href": "slides/week-08/16-assess_solar.html#mid-semester-update",
-    "title": "[Assess] Solar Energy Case Study",
-    "section": "Mid-Semester Update",
-    "text": "Mid-Semester Update\n\nGot 13 responses!\nRealized I can’t make this for credit AND make it anonymous\nIf you’re one of the two people who haven’t filled out the feedback form, let’s talk!"
+    "objectID": "slides/week-09/16-project_plan.html#any-guesses",
+    "href": "slides/week-09/16-project_plan.html#any-guesses",
+    "title": "[Strategize]: Final Project Plans",
+    "section": "Any Guesses?",
+    "text": "Any Guesses?"
   },
   {
-    "objectID": "slides/week-08/16-assess_solar.html#setting-the-stage",
-    "href": "slides/week-08/16-assess_solar.html#setting-the-stage",
-    "title": "[Assess] Solar Energy Case Study",
-    "section": "Setting the Stage",
-    "text": "Setting the Stage\n\nThis week’s focus is on making maps!\nUsing publicly available data from the National Renewable Energy Laboratory (NREL), the U.S. Census, and the Department of Energy (DOE)."
+    "objectID": "slides/week-09/16-project_plan.html#mid-semester-feedback",
+    "href": "slides/week-09/16-project_plan.html#mid-semester-feedback",
+    "title": "[Strategize]: Final Project Plans",
+    "section": "Mid-Semester Feedback",
+    "text": "Mid-Semester Feedback"
   },
   {
-    "objectID": "slides/week-08/16-assess_solar.html#learning-outcomes",
-    "href": "slides/week-08/16-assess_solar.html#learning-outcomes",
-    "title": "[Assess] Solar Energy Case Study",
-    "section": "Learning Outcomes",
-    "text": "Learning Outcomes\n\nRead spatial data and transform its projection\nCreate a Chloropleth Map\nCreating a Bivariate Map\nConnect findings to theoretical understandings of the five tenets of Environmental Justice"
+    "objectID": "slides/week-09/16-project_plan.html#reviewing-timelines",
+    "href": "slides/week-09/16-project_plan.html#reviewing-timelines",
+    "title": "[Strategize]: Final Project Plans",
+    "section": "Reviewing Timelines",
+    "text": "Reviewing Timelines\n\nProject proposal feedback posted in Brightspace\nFive in-class Fridays to work on final project (two before project plan, three more before final presentations)\nProject Plan is due November 7:\n\nBackground\nAnalysis Plan\nGroup Expectations"
   },
   {
-    "objectID": "slides/week-08/16-assess_solar.html#lets-get-started",
-    "href": "slides/week-08/16-assess_solar.html#lets-get-started",
-    "title": "[Assess] Solar Energy Case Study",
-    "section": "Let’s get Started",
-    "text": "Let’s get Started\n\nFind your pair\nOpen Posit"
+    "objectID": "slides/week-09/16-project_plan.html#project-updates",
+    "href": "slides/week-09/16-project_plan.html#project-updates",
+    "title": "[Strategize]: Final Project Plans",
+    "section": "Project Updates",
+    "text": "Project Updates\n\n5 minutes to update one another/read feedback and discuss share out topics.\nGroup share out:\n\nOverview of project\nGoals for today\nBiggest challenge you’re facing"
   },
   {
-    "objectID": "slides/week-08/16-assess_solar.html#loading-packages",
-    "href": "slides/week-08/16-assess_solar.html#loading-packages",
-    "title": "[Assess] Solar Energy Case Study",
-    "section": "Loading packages",
-    "text": "Loading packages\n\nInstall 4 new packages.\n\nRun lines 1-4 in your console (below)\n\nLoad 6 packages\n\nType lines 6-11 in your analysis.qmd (above)\n\n\n\n# install.packages(\"crsuggest\")\n# install.packages(\"biscale\")\n# install.packages(\"RColorBrewer)\n# install.packages(\"cowplot)\n\nlibrary(tidyverse)\nlibrary(sf)\nlibrary(crsuggest)\nlibrary(biscale)\nlibrary(RColorBrewer)\nlibrary(cowplot)"
+    "objectID": "slides/week-09/16-project_plan.html#before-you-go",
+    "href": "slides/week-09/16-project_plan.html#before-you-go",
+    "title": "[Strategize]: Final Project Plans",
+    "section": "Before you go!",
+    "text": "Before you go!\n\nToday: 12:45 - 2PM ES Pre-registration event!\nTuesday:\n\nDr. Neza Xiuhtecutli is joining our class!\nReminder to try to arrive at 9:55 AM\n2 Readings on agricultural health and safety\nReyna leading centering activity :-)\nSophie and Ziyah to prepare questions\nJulia sending thank you email (cc’ me please!)"
   },
   {
-    "objectID": "slides/week-08/16-assess_solar.html#reading-in-data",
-    "href": "slides/week-08/16-assess_solar.html#reading-in-data",
-    "title": "[Assess] Solar Energy Case Study",
-    "section": "Reading in data",
-    "text": "Reading in data\n\nUse the read_sf() package for reading a shapefile.\n\nshapefiles have multiple parts, so they’re stored in their own folder (nn_sf), and the shapefile is called nn_sf.shp.\nWe have to type the full filepath to read in the data!\n\n\n\nnn_sf &lt;- read_sf(\"data/nn_sf/nn_sf.shp\")"
+    "objectID": "slides/week-09/16-project_plan.html#remaining-50-minutes",
+    "href": "slides/week-09/16-project_plan.html#remaining-50-minutes",
+    "title": "[Strategize]: Final Project Plans",
+    "section": "Remaining ~50 minutes:",
+    "text": "Remaining ~50 minutes:\n\nGroup work time\n\nDr. Caballero to meet with each group for 5-10 minutes"
   },
   {
-    "objectID": "slides/week-08/16-assess_solar.html#take-a-look-at-the-data",
-    "href": "slides/week-08/16-assess_solar.html#take-a-look-at-the-data",
-    "title": "[Assess] Solar Energy Case Study",
-    "section": "Take a Look at the Data",
-    "text": "Take a Look at the Data\n\nLast time we used mapview() to take a quick look at our spatial data.\n\nWe can actually use ggplot() with a new geom!\n\n✨geom_sf()✨\n\n\n\n\nnn_sf |&gt;\n  ggplot() +\n  geom_sf()"
+    "objectID": "slides/week-09/16-project_plan.html#course-content-theory",
+    "href": "slides/week-09/16-project_plan.html#course-content-theory",
+    "title": "[Strategize]: Final Project Plans",
+    "section": "Course Content [Theory]",
+    "text": "Course Content [Theory]\n\n65% of students ranked the theoretical aspects of this course as a 5, 35% of students ranked the theoretical aspects of this course as a 4.\nMost frequent points:\n\n78% of students liked Tuesday structure and 5 tenet framework\n21% of students wanted more opportunities for reviewing and applying tenets to real-world situations"
   },
   {
-    "objectID": "slides/week-08/16-assess_solar.html#project-data",
-    "href": "slides/week-08/16-assess_solar.html#project-data",
-    "title": "[Assess] Solar Energy Case Study",
-    "section": "Project Data",
-    "text": "Project Data\n\nggplot() assumes planar data (x and y axes)\n\nBut the earth is round..\n\nProjections allow us to visualize the Earth on a planar surface, while trying to preserve accuracy for analyses.\n\nThis is expecially important for local maps (like ours)\nWe can use the suggest_crs() function to suggest the best coordinate system for our data.\nst_transform() will change our projection if supplied a new crs_code.\n\n\n\n# check projection\nnn_sf |&gt; st_crs()\n\n# suggest better crs (may want to # this out in .qmd)\n#suggest_crs(nn_sf)\n\n# Change projection\nnn_sf &lt;- nn_sf |&gt;\n  st_transform(6627)"
+    "objectID": "slides/week-09/16-project_plan.html#course-content-methods",
+    "href": "slides/week-09/16-project_plan.html#course-content-methods",
+    "title": "[Strategize]: Final Project Plans",
+    "section": "Course Content [Methods]",
+    "text": "Course Content [Methods]\n\n50% of students ranked the methodological aspects of this course as a 5, 36% of students ranked the methodological aspects of this course as a 4, and 14% ranked them a 3.\nMost frequent points:\n\n71% of students liked Friday structure and felt that the R visualization/storytelling components were helpful.\n29% of students wanted more opportunities for reviewing the things we’d learned in the weeks prior.\n21% of students preferred the theoretical aspects of the class, but generally found it interesting/helpful."
   },
   {
-    "objectID": "slides/week-08/16-assess_solar.html#ex_01",
-    "href": "slides/week-08/16-assess_solar.html#ex_01",
-    "title": "[Assess] Solar Energy Case Study",
-    "section": "EX_01",
-    "text": "EX_01\nLoad and project locations of large-scale energy projects in the data folder:\n\nUse read_sf to read the energy_pts.shp shapefile into your environment, call it energy_pts.\nChange the projection of your energy_pts shapefile to match the Navajo Nation shapefile.\nTell me about this data, what kinds of energy projects are included in the shapefile, and which produces the most electricity?"
+    "objectID": "slides/week-09/16-project_plan.html#reflections-for-me-and-you",
+    "href": "slides/week-09/16-project_plan.html#reflections-for-me-and-you",
+    "title": "[Strategize]: Final Project Plans",
+    "section": "Reflections for me (and you)",
+    "text": "Reflections for me (and you)\n\nFor me:\n\nStructure collaborative/supportive work\nR review resource\nSnacks!\nThings for next time: (more opportunities for small-group discussion, earlier grade check-in)\n\nFor you:\n\nMaintain structure, especially as we approach finals\nParticipate more in class\nStrengthen and apply R skills\nContinue doing readings\nCome to office hours\nAttendance/tardiness"
   },
   {
-    "objectID": "slides/week-08/16-assess_solar.html#making-a-chloropleth-map",
-    "href": "slides/week-08/16-assess_solar.html#making-a-chloropleth-map",
-    "title": "[Assess] Solar Energy Case Study",
-    "section": "Making a Chloropleth Map",
-    "text": "Making a Chloropleth Map"
+    "objectID": "slides/week-09/16-project_plan.html#where-were-headed",
+    "href": "slides/week-09/16-project_plan.html#where-were-headed",
+    "title": "[Strategize]: Final Project Plans",
+    "section": "Where we’re headed",
+    "text": "Where we’re headed\n\nMost frequent word shared: Excited (64%)\nDr. Caballero to make an R review reference worksheet over the weekend that summarizes what we’ve learned up until this point.\nHow can I support theoretical connections/applications?"
   },
   {
-    "objectID": "slides/week-08/16-assess_solar.html#simple-fill-map",
-    "href": "slides/week-08/16-assess_solar.html#simple-fill-map",
-    "title": "[Assess] Solar Energy Case Study",
-    "section": "Simple Fill Map",
-    "text": "Simple Fill Map\n\nWe can use the same ggplot aesthetics (fill, color, size, etc) to visualize variables on a map.\n\nFor instance, we can change the fill in our map to represent Average Energy Burden (avg_eb).\nAny thoughts on the legend, though?\n\n\n\nnn_sf |&gt;\n  ggplot() +\n  geom_sf(aes(fill = avg_eb))"
+    "objectID": "slides/week-09/16-project_plan.html#reflections-for-me",
+    "href": "slides/week-09/16-project_plan.html#reflections-for-me",
+    "title": "[Strategize]: Final Project Plans",
+    "section": "Reflections for me",
+    "text": "Reflections for me\n\nStructure collaborative/supportive work\nR review resource\nSnacks!\nThings for next time: (more opportunities for small-group discussion, earlier grade check-in)"
   },
   {
-    "objectID": "slides/week-08/16-assess_solar.html#create-chloropleth-categories",
-    "href": "slides/week-08/16-assess_solar.html#create-chloropleth-categories",
-    "title": "[Assess] Solar Energy Case Study",
-    "section": "Create Chloropleth Categories",
-    "text": "Create Chloropleth Categories\n\nChloropleths are helpful because they allow the viewer to quickly compare values across space.\n\nTo create our chloropleth categories, we should first understand how our data is distributed.\nThen, we can use the mutate() function to create a new variable avg_eb_cat using the cut() function.\n\nBreaks start with our rounded lowest number, and end with the rounded highest number.\n\n\n\n\n# look at data distribution\nsummary(nn_sf$avg_eb)\n\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NA's \n  3.644   4.988   5.304   5.425   5.945   7.820       1 \n\n# mutate variables using \"cut\"\nnn_sf &lt;- nn_sf |&gt;\n  mutate(avg_eb_cat = cut(avg_eb,\n    breaks = c(3, 4, 5, 6, 8),\n    labels = c(\"3–4%\", \"4–5%\", \"5–6%\", \"6–8%\")\n  ))"
-  },
-  {
-    "objectID": "slides/week-08/16-assess_solar.html#plot-chloropleth",
-    "href": "slides/week-08/16-assess_solar.html#plot-chloropleth",
-    "title": "[Assess] Solar Energy Case Study",
-    "section": "Plot Chloropleth",
-    "text": "Plot Chloropleth\n\nLastly, we can define a color palette (I suggest a sequential palette, to showcase the low to high values).\n\nI use the RColorBrewer package to define my pallete (read more here!)\n\nThen, we plot and change a few aesthetics!\n\nChange the fill to our new categorical variable, avg_eb_cat\nChange the linewidth\nUse scale_fill_manual() to use my palette, and rename the legend\nUse theme_void() to ensure a blank base plot.\n\n\n\n# create a palette\nmy_palette &lt;- brewer.pal(n = 4, name = \"Oranges\")\n\n\n# plot!\nnn_sf |&gt;\n  ggplot() +\n  geom_sf(aes(fill = avg_eb_cat), linewidth = 0.05) +\n  scale_fill_manual(\n    values = my_palette,\n    name = \"Average Energy Burden\"\n  ) +\n  theme_void()"
-  },
-  {
-    "objectID": "slides/week-08/16-assess_solar.html#et-voila",
-    "href": "slides/week-08/16-assess_solar.html#et-voila",
-    "title": "[Assess] Solar Energy Case Study",
-    "section": "Et voila",
-    "text": "Et voila"
-  },
-  {
-    "objectID": "slides/week-08/16-assess_solar.html#et-voilà",
-    "href": "slides/week-08/16-assess_solar.html#et-voilà",
-    "title": "[Assess] Solar Energy Case Study",
-    "section": "Et voilà!",
-    "text": "Et voilà!"
-  },
-  {
-    "objectID": "slides/week-08/16-assess_solar.html#bonus-layer-multiple-shapefiles",
-    "href": "slides/week-08/16-assess_solar.html#bonus-layer-multiple-shapefiles",
-    "title": "[Assess] Solar Energy Case Study",
-    "section": "Bonus: Layer Multiple Shapefiles",
-    "text": "Bonus: Layer Multiple Shapefiles\n\nWe can actually layer multiple shapefiles on top of one another.\n\nTake the previous code, and indicate the dataframe in the geom_sf() layer, rather than piped at the top.\nAdd another geom_sf() for the energy_pts layer, change the size and color aesthetics.\nChange the color aesthetics using scale_color_manual()\n\n\n\n# previous code\nggplot() +\n  geom_sf(data = nn_sf, aes(fill = avg_eb_cat), linewidth = 0.05) +\n  scale_fill_manual(\n    values = my_palette,\n    name = \"Average Energy Burden\"\n  ) +\n  # added points sf and changed size + color\n  geom_sf(\n    data = energy_pts, aes(size = totl_mw, color = type),\n    alpha = 0.8\n  ) +\n  scale_color_manual(\n    values = c(\"black\", \"yellow\", \"gray\"),\n    name = \"Plant Type\"\n  ) +\n  theme_void()"
-  },
-  {
-    "objectID": "slides/week-08/16-assess_solar.html#the-results",
-    "href": "slides/week-08/16-assess_solar.html#the-results",
-    "title": "[Assess] Solar Energy Case Study",
-    "section": "The Results",
-    "text": "The Results"
-  },
-  {
-    "objectID": "slides/week-08/16-assess_solar.html#ex_02",
-    "href": "slides/week-08/16-assess_solar.html#ex_02",
-    "title": "[Assess] Solar Energy Case Study",
-    "section": "EX_02",
-    "text": "EX_02\nCreate a chloropleth map using a continuous variable of your choosing in the nn_sf shapefile. Note that you can refer to the nn_sf_dictionary.xlsx file in your data folder if you’re unsure of a variable name.\n\nLook at the distribution of your variable to determine your bins using the summary() function.\nCreate a new categorical variable using the mutate() and cut() functions\nCreate a palette of your choosing, (make sure the colors make sense for a chloropleth!)\nCreate your chloropleth map, and note any interesting spatial trends."
-  },
-  {
-    "objectID": "slides/week-08/16-assess_solar.html#create-a-bivariate-map",
-    "href": "slides/week-08/16-assess_solar.html#create-a-bivariate-map",
-    "title": "[Assess] Solar Energy Case Study",
-    "section": "Create a Bivariate Map",
-    "text": "Create a Bivariate Map\n\nbivariate mapping allows us to visualize two variables (e.g., the residential solar potential npv_rs_ and percent of single family homes perc_sf) in the same map."
-  },
-  {
-    "objectID": "slides/week-08/16-assess_solar.html#create-a-bivariate-dataframe",
-    "href": "slides/week-08/16-assess_solar.html#create-a-bivariate-dataframe",
-    "title": "[Assess] Solar Energy Case Study",
-    "section": "Create a Bivariate Dataframe",
-    "text": "Create a Bivariate Dataframe\n\nWe’ll use the biscale package to create a new dataframe called bi_var categories are assigned to the data using the bi_class() function.\nnpv_rs_ is our x, perc_sf is our y, and we’ll choose fisher breaks for our style, and 3 colors for the dim option.\n\nNOTE: Legend breaks vary by the story we’re trying to tell. There’s a handy book chapter that details the differences in legend classifications here.\n\n\n\nbi_var &lt;- bi_class(nn_sf,\n  x = npv_rs_, y = perc_sf,\n  style = \"fisher\", dim = 3)\n\nbi_var$bi_class\n\n [1] \"2-2\" \"3-1\" \"3-2\" \"2-3\" \"3-3\" \"2-2\" \"2-2\" \"3-3\" \"3-1\" \"3-3\" \"3-1\" \"3-1\"\n[13] \"3-1\" \"3-3\" \"3-3\" \"2-2\" \"3-3\" \"3-3\" \"3-1\" \"3-2\" \"3-3\" \"3-2\" \"3-2\" \"3-1\"\n[25] \"3-1\" \"2-1\" \"2-1\" \"3-3\" \"2-3\" \"3-2\" \"2-1\" \"2-2\" \"3-3\" \"3-1\" \"3-3\" \"2-1\"\n[37] \"2-2\" \"1-2\""
-  },
-  {
-    "objectID": "slides/week-08/16-assess_solar.html#create-bivariate-map",
-    "href": "slides/week-08/16-assess_solar.html#create-bivariate-map",
-    "title": "[Assess] Solar Energy Case Study",
-    "section": "Create Bivariate Map",
-    "text": "Create Bivariate Map\n\nThe biscale package uses the ggplot2 approach, which we’re already familiar with!\nWe create a ggplot() object, add a geom_sf() object, specifying our new bi_var dataframe, our fill column, bi_class, and some other aesthetic details, such as line color and width.\n\nI chose the “Bluegill” palette for this approach, but there are several others available.\n\nbi_var_map &lt;- ggplot() +\n  geom_sf(\n    data = bi_var, aes(fill = bi_class),\n    color = \"white\", size = 0.1, show.legend = FALSE\n  ) +\n  bi_scale_fill(pal = \"Bluegill\", dim = 3) +\n  bi_theme()"
-  },
-  {
-    "objectID": "slides/week-08/16-assess_solar.html#results",
-    "href": "slides/week-08/16-assess_solar.html#results",
-    "title": "[Assess] Solar Energy Case Study",
-    "section": "Results",
-    "text": "Results"
-  },
-  {
-    "objectID": "slides/week-08/16-assess_solar.html#create-bivariate-legend",
-    "href": "slides/week-08/16-assess_solar.html#create-bivariate-legend",
-    "title": "[Assess] Solar Energy Case Study",
-    "section": "Create Bivariate Legend",
-    "text": "Create Bivariate Legend\n\nI also want to create a nice legend to accompany this, so I’ll use the bi_legend() function to specify my palette, the number of colors, and the labels I’d like.\n\n\nbi_var_legend &lt;- bi_legend(\n  pal = \"Bluegill\",\n  dim = 3,\n  xlab = \"Profitability for Residential PV\",\n  ylab = \"% SF Homes\",\n  size = 8\n)\nbi_var_legend"
-  },
-  {
-    "objectID": "slides/week-08/16-assess_solar.html#stitch-it-together",
-    "href": "slides/week-08/16-assess_solar.html#stitch-it-together",
-    "title": "[Assess] Solar Energy Case Study",
-    "section": "Stitch it Together",
-    "text": "Stitch it Together\n\nThe last step is adding the map and legend together, using the ggdraw() function from the cowplot package.\n\ndraw_plot() adds your map and legend together in one plot.\nx (0 = left, 1 = right), and y (0 = bottom, 1 = top) changes the location of the legend\nwidth and height change the legend size relative to the map.\n\n\n\nggdraw() +\n  draw_plot(bi_var_map) + \n  draw_plot(bi_var_legend,\n    x = 0.05,\n    y = 0.05,\n    width = 0.25, \n    height = 0.25)"
-  },
-  {
-    "objectID": "slides/week-08/16-assess_solar.html#all-together-now",
-    "href": "slides/week-08/16-assess_solar.html#all-together-now",
-    "title": "[Assess] Solar Energy Case Study",
-    "section": "All Together Now!",
-    "text": "All Together Now!"
-  },
-  {
-    "objectID": "slides/week-08/16-assess_solar.html#ex_03",
-    "href": "slides/week-08/16-assess_solar.html#ex_03",
-    "title": "[Assess] Solar Energy Case Study",
-    "section": "EX_03",
-    "text": "EX_03\nCreate a bivariate map using a continuous variable of your choosing in the nn_sf shapefile. Note that you can refer to the nn_sf_dictionary.xlsx file in your data folder if you’re unsure of a variable name.\n\nCreate a new dataframe called bivar_2 and use the bi_class() function to generate a bivariate dataframe for your two variables of interest.\nCreate the bivariate map.\nCreate an accompanying bivariate legend.\nStitch the map and legend together to create your final map"
-  },
-  {
-    "objectID": "slides/week-08/16-assess_solar.html#ex_04",
-    "href": "slides/week-08/16-assess_solar.html#ex_04",
-    "title": "[Assess] Solar Energy Case Study",
-    "section": "EX_04",
-    "text": "EX_04\nSee Posit assignment!"
-  },
-  {
-    "objectID": "slides/week-08/16-assess_solar.html#a-note-on-tribal-data",
-    "href": "slides/week-08/16-assess_solar.html#a-note-on-tribal-data",
-    "title": "[Assess] Solar Energy Case Study",
-    "section": "A Note on Tribal Data",
-    "text": "A Note on Tribal Data\n\nReally quite hard to find data for Tribal Census Tracts.\n\nHad to use Areal Weight Interpolation to generate estimates from census tract values.\nThis approach is especially imperfect when the population is not distributed equally."
-  },
-  {
-    "objectID": "slides/week-08/16-assess_solar.html#logistics",
-    "href": "slides/week-08/16-assess_solar.html#logistics",
-    "title": "[Assess] Solar Energy Case Study",
-    "section": "Logistics",
-    "text": "Logistics\n\nProject proposal due tonight at 11:59 PM.\nNo class on Tuesday!\nNative American and Indigenous Heritage Month starts November 1.\n\nNovember 3: “Indigenous Wisdom and the Teachings of Trees”\nNovember 5: Decolonizing Drag with Lady Shug\nNovember 9: Language Circle: Language, Identity and Community, An Indigenous Perspective\nNovember 13: The Colonial History of the American Legal System\nNovember 15: Davis Museum Tour: Colonial Legacies of Curatorial Practices"
+    "objectID": "slides/week-09/16-project_plan.html#and-for-you",
+    "href": "slides/week-09/16-project_plan.html#and-for-you",
+    "title": "[Strategize]: Final Project Plans",
+    "section": "And for you",
+    "text": "And for you\n\nMaintain structure, especially as we approach finals\nParticipate more in class\nStrengthen and apply R skills\nContinue doing readings\nCome to office hours\nAttendance/tardiness"
   }
 ]

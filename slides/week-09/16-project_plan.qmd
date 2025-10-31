@@ -15,4 +15,81 @@ execute:
   freeze: auto
 ---
 
-# Slides will be posted 24 hours in advance of class.
+## Happy Halloween! 
+- Centering Activity
+- Reviewing Timelines
+- Project updates
+  - Rotating Check-in
+
+## Any Guesses? 
+![](images/Molly_McIntire.png)
+
+## Centering Activity 
+- Dia de los Muertos is tomorrow!
+  - Watch: [Journey of cempasúchil](https://www.youtube.com/watch?v=rMMf7ZdbpDs) [4:18-9:38]
+  - Eat: Pan de Muerto 
+  - Drink: Vegan Mexican Hot Chocolate from Taza, a Oaxacan chocolate store in Boston. :-) 
+
+## Mid-Semester Feedback
+
+## Course Content [Theory] {.smaller}
+- 65% of students ranked the theoretical aspects of this course as a 5, 35% of students ranked the theoretical aspects of this course as a 4. 
+- Most frequent points: 
+  - 78% of students liked Tuesday structure and 5 tenet framework
+  - 21% of students wanted more opportunities for reviewing and applying tenets to real-world situations 
+
+## Course Content [Methods] {.smaller}
+- 50% of students ranked the methodological aspects of this course as a 5, 36% of students ranked the methodological aspects of this course as a 4, and 14% ranked them a 3.
+- Most frequent points: 
+  - 71% of students liked Friday structure and felt that the R visualization/storytelling components were helpful. 
+  - 29% of students wanted more opportunities for reviewing the things we'd learned in the weeks prior. 
+  - 21% of students preferred the theoretical aspects of the class, but generally found it interesting/helpful.
+
+## Reflections for me
+
+  - Structure collaborative/supportive work
+  - R review resource
+  - Snacks!
+  - Things for next time: (more opportunities for small-group discussion, earlier grade check-in)
+
+## And for you
+  - Maintain structure, especially as we approach finals
+  - Participate more in class
+  - Strengthen and apply R skills
+  - Continue doing readings
+  - Come to office hours
+  - Attendance/tardiness 
+
+## Where we're headed 
+- Most frequent word shared: Excited (64%)
+- Dr. Caballero to make an R review reference worksheet over the weekend that summarizes what we've learned up until this point. 
+- How can I support theoretical connections/applications? 
+
+## Reviewing Timelines
+- Project proposal feedback posted in Brightspace 
+- Five in-class Fridays to work on final project (two before project plan, three more before final presentations)
+- [Project Plan](https://mariahdaniellecaballero.github.io/ES-202/final_project/w10-project_plan.html) is due November 7: 
+  - Background
+  - Analysis Plan
+  - Group Expectations
+
+## Project Updates
+- 5 minutes to update one another/read feedback and discuss share out topics.
+- Group share out: 
+  - Overview of project
+  - Goals for today
+  - Biggest challenge you're facing
+
+## Remaining ~50 minutes: 
+  - Group work time
+    - Dr. Caballero to meet with each group for 5-10 minutes
+
+## Before you go!
+- Today: 12:45 - 2PM ES Pre-registration event!
+- Tuesday: 
+  - Dr. Neza Xiuhtecutli is joining our class!
+  - Reminder to try to arrive at 9:55 AM
+  - 2 Readings on agricultural health and safety
+  - Reyna leading centering activity :-) 
+  - Sophie and Ziyah to prepare questions
+  - Julia sending thank you email (cc' me please!)
