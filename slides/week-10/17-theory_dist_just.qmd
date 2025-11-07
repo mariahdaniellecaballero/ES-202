@@ -16,4 +16,4 @@ execute:
   freeze: auto
 ---
 
-# Slides will be posted 24 hours in advance of class.
+Dr. Xiuhtecutli's slides can be accessed [here](guest_lecture/H-2A%20and%20EJ.pdf)
