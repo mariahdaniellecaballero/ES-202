@@ -188,13 +188,13 @@
 <h2>Drafting a Basic Logic Model</h2>
 <ul>
 <li>In two teams, brainstorm these categories:</li>
-<li>Team One
+<li><strong>Team One</strong>
 <ul>
 <li>Factors</li>
 <li>Resources</li>
 <li>Activities</li>
 </ul></li>
-<li>Team Two
+<li><strong>Team Two</strong>
 <ul>
 <li>Outputs</li>
 <li>Outcomes</li>
@@ -510,7 +510,7 @@
         }
           var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
           var mailtoRegex = new RegExp(/^mailto:/);
-            var filterRegex = new RegExp('/' + window.location.host + '/');
+            var filterRegex = new RegExp("https:\/\/mariahdaniellecaballero\.github\.io\/ES-202\/");
           var isInternal = (href) => {
               return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
           }
