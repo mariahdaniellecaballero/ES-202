@@ -134,6 +134,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./speaker.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Speaker Engagement</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="https://drive.usercontent.google.com/download?id=196okt0bv9UGk2-3iuD7mIIQmenG7om_T&amp;authuser=0&amp;acrobatPromotionSource=gdrive_chrome-grid" class="sidebar-item-text sidebar-link">
  <span class="menu-text">R Cheat Sheet</span></a>
   </div>
@@ -455,7 +461,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/mariahdaniellecaballero\.github\.io\/ES-202\/");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
