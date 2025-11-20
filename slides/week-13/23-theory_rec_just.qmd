@@ -1,5 +1,5 @@
 ---
-title: "Ms. Alberto Escobar's Slides"
+title: "HEET Slides"
 subtitle: "📍 Framingham, MA"
 date: "November 25, 2025"
 format: 
