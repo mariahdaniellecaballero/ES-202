@@ -2381,7 +2381,7 @@
     "href": "weeks/week-13.html",
     "title": "Week 13",
     "section": "",
-    "text": "Important\n\n\n\nNote that there is no class on Friday, November 28, 2025 due to Thanksgiving Break.\n\n\n\nGuest Lecturer\nAngie Alberto Escobar is Director of Gas to Geo Transition at HEET, leading efforts to shift from gas to networked geothermal systems with equity at the core. She supports municipalities in assessing geothermal potential, coordinates technical partners, and co-develops engagement strategies that prioritize community leadership and long-term resilience.\n\n\nLectures\n\n\n\n\n\n\nTopic\n\n\n\nDate\n\n\n\n\n\n\n\n\nMs. Alberto Escobar’s Slides\n\n\nTue, Nov 25\n\n\n\n\n\n\nNo matching items\n\n\n\nReadings"
+    "text": "Important\n\n\n\nNote that our Tuesday class is hybrid. To join virtually, please use this link. There is no class on Friday, November 28, 2025 due to Thanksgiving Break.\n\n\n\nGuest Lecturer\nAngie Alberto Escobar is Director of Gas to Geo Transition at HEET, leading efforts to shift from gas to networked geothermal systems with equity at the core. She supports municipalities in assessing geothermal potential, coordinates technical partners, and co-develops engagement strategies that prioritize community leadership and long-term resilience.\n\n\nLectures\n\n\n\n\n\n\nTopic\n\n\n\nDate\n\n\n\n\n\n\n\n\nHEET Slides\n\n\nTue, Nov 25\n\n\n\n\n\n\nNo matching items\n\n\n\nReadings\n\n\n\n\n\n\nTuesday: Partin et al., (2025). Chapter one: Introduction and Chapter 4: Equity and Environmental Justice Perspectives on TENs in Thermal Energy Networks in the United States: Emerging Opportunities, Challenges, and Needs. Transformative Strategies Consulting.\n\n\nTuesday: PBS News Hour (2025): Unlikely Alliance Builds Cleaner Geothermal Energy Network."
   },
   {
     "objectID": "weeks/week-11.html",
@@ -4528,5 +4528,173 @@
     "crumbs": [
       "Speaker Engagement"
     ]
+  },
+  {
+    "objectID": "slides/week-12/22-assess_group_proj.html#overview",
+    "href": "slides/week-12/22-assess_group_proj.html#overview",
+    "title": "[Assess] Group Projects",
+    "section": "",
+    "text": "Centering Activity\nSpatial data in R (mini-lecture)\nPaired Work\nFew Logistics"
+  },
+  {
+    "objectID": "slides/week-12/22-assess_group_proj.html#centering-activity",
+    "href": "slides/week-12/22-assess_group_proj.html#centering-activity",
+    "title": "[Assess] Group Projects",
+    "section": "Centering Activity",
+    "text": "Centering Activity\n\nWrite something you’re most proud of this semester on the white board\n\nCan be non-academic, in fact I suggest it!\n\nTake a few minutes to read how far we’ve come!"
+  },
+  {
+    "objectID": "slides/week-12/22-assess_group_proj.html#spatial-data-in-r",
+    "href": "slides/week-12/22-assess_group_proj.html#spatial-data-in-r",
+    "title": "[Assess] Group Projects",
+    "section": "Spatial Data in R",
+    "text": "Spatial Data in R\n\nSpatial Operations\nWorking with Redlining Data"
+  },
+  {
+    "objectID": "slides/week-12/22-assess_group_proj.html#loading-packages-data",
+    "href": "slides/week-12/22-assess_group_proj.html#loading-packages-data",
+    "title": "[Assess] Group Projects",
+    "section": "Loading Packages + Data",
+    "text": "Loading Packages + Data\n\nLoad sf, tidyverse, mapview, tigris, and wesanderson packages\nDataset from NYC Open Data Portal on Rat Inspections\n\nNeighborhood Tabulation Areas Dataset (NTAs) from NYC Open Data Portal\n\n\n\nlibrary(sf)\nlibrary(tidyverse)\nlibrary(tigris)\nlibrary(wesanderson)\n\nbrkln_rats &lt;- read_sf(\"data/brooklyn_rats/rats.shp\")\nnta &lt;- read_sf(\"data/nta/nta.shp\") |&gt;\n  filter(BoroName == \"Brooklyn\")"
+  },
+  {
+    "objectID": "slides/week-12/22-assess_group_proj.html#spatial-operations",
+    "href": "slides/week-12/22-assess_group_proj.html#spatial-operations",
+    "title": "[Assess] Group Projects",
+    "section": "Spatial Operations",
+    "text": "Spatial Operations\n\nSometimes, we want to select data based on its spatial attributes, rather than numeric/character attributes.\nSpatial operations are lovely for this reason!\n\n\nbrkln_rats\n\nSimple feature collection with 5169 features and 5 fields\nGeometry type: POINT\nDimension:     XY\nBounding box:  xmin: -74.03695 ymin: 40.5721 xmax: -73.85655 ymax: 40.73692\nGeodetic CRS:  WGS 84\n# A tibble: 5,169 × 6\n    jb_____ inspctn_t  inspctn_d        jb_prgr result             geometry\n      &lt;dbl&gt; &lt;chr&gt;      &lt;chr&gt;              &lt;dbl&gt; &lt;chr&gt;           &lt;POINT [°]&gt;\n 1 14137326 Initial    08/01/2025 08:1…       1 Rat A…  (-73.9383 40.68687)\n 2 14137670 Initial    08/01/2025 08:5…       1 Rat A… (-73.92992 40.70549)\n 3 14137481 Compliance 08/01/2025 09:0…       4 Rat A… (-73.94362 40.68193)\n 4 14137661 Compliance 08/01/2025 09:0…       2 Rat A… (-73.94177 40.70747)\n 5 14137115 Initial    08/01/2025 09:1…       1 Rat A…  (-73.94126 40.6991)\n 6 14137116 Initial    08/01/2025 09:1…       1 Rat A… (-73.94124 40.69902)\n 7 14137484 Initial    08/01/2025 09:2…       1 Rat A… (-73.94307 40.68184)\n 8 14137747 Initial    08/01/2025 09:2…       1 Rat A… (-73.96871 40.64889)\n 9 14137485 Compliance 08/01/2025 09:2…      14 Rat A…  (-73.9429 40.68186)\n10 14137662 Compliance 08/01/2025 09:3…       2 Rat A… (-73.94399 40.70872)\n# ℹ 5,159 more rows"
+  },
+  {
+    "objectID": "slides/week-12/22-assess_group_proj.html#spatial-subsetting",
+    "href": "slides/week-12/22-assess_group_proj.html#spatial-subsetting",
+    "title": "[Assess] Group Projects",
+    "section": "Spatial Subsetting",
+    "text": "Spatial Subsetting\n\nPerhaps we’re interested in selecting only the activity in their neighborhood?\nSpatial Subsetting allows you to select\n\n\nplgw &lt;- nta |&gt;\n  filter(NTAName == \"Prospect Lefferts Gardens-Wingate\")\n\nplgw_rats &lt;- brkln_rats[plgw, ]"
+  },
+  {
+    "objectID": "slides/week-12/22-assess_group_proj.html#contains",
+    "href": "slides/week-12/22-assess_group_proj.html#contains",
+    "title": "[Assess] Group Projects",
+    "section": "Contains",
+    "text": "Contains"
+  },
+  {
+    "objectID": "slides/week-12/22-assess_group_proj.html#intersects",
+    "href": "slides/week-12/22-assess_group_proj.html#intersects",
+    "title": "[Assess] Group Projects",
+    "section": "Intersects",
+    "text": "Intersects"
+  },
+  {
+    "objectID": "slides/week-12/22-assess_group_proj.html#overlaps",
+    "href": "slides/week-12/22-assess_group_proj.html#overlaps",
+    "title": "[Assess] Group Projects",
+    "section": "Overlaps",
+    "text": "Overlaps"
+  },
+  {
+    "objectID": "slides/week-12/22-assess_group_proj.html#working-with-redlining-data",
+    "href": "slides/week-12/22-assess_group_proj.html#working-with-redlining-data",
+    "title": "[Assess] Group Projects",
+    "section": "Working with Redlining Data",
+    "text": "Working with Redlining Data\n\nDownloaded spatial data as a GEOJson file for Nashville, TN from the Mapping Inequality website.\ngeoJSON is a text-based spatial files that is easy to use and lightweight.\nWe can also use the rm() function to remove objects in our environment we no longer need.\n\n\nnash_holc &lt;- st_read(\"data/nashville_redlining.json\")\n\nrm(brkln_rats, nta, plgw, plgw_rats)"
+  },
+  {
+    "objectID": "slides/week-12/22-assess_group_proj.html#crosswalked-census-tracts",
+    "href": "slides/week-12/22-assess_group_proj.html#crosswalked-census-tracts",
+    "title": "[Assess] Group Projects",
+    "section": "Crosswalked Census Tracts",
+    "text": "Crosswalked Census Tracts\n\nThere’s also data available from the mapping inequality project that “crosswalks” the original shapefile to census 2010 and 2020 census tracts.\nThis is useful because you can much more easily join your CT data and visualize both sociodemographics and historic disinvestment.\n\n\nnash_ct &lt;- st_read(\"data/2020_redline_tracts.geojson\") |&gt;\n  filter(city == \"Nashville\")"
+  },
+  {
+    "objectID": "slides/week-12/22-assess_group_proj.html#joining-two-dataframes",
+    "href": "slides/week-12/22-assess_group_proj.html#joining-two-dataframes",
+    "title": "[Assess] Group Projects",
+    "section": "Joining Two Dataframes",
+    "text": "Joining Two Dataframes"
+  },
+  {
+    "objectID": "slides/week-12/22-assess_group_proj.html#visualizing-continuous-and-categorical-variables",
+    "href": "slides/week-12/22-assess_group_proj.html#visualizing-continuous-and-categorical-variables",
+    "title": "[Assess] Group Projects",
+    "section": "Visualizing continuous and categorical variables",
+    "text": "Visualizing continuous and categorical variables"
+  },
+  {
+    "objectID": "slides/week-12/22-assess_group_proj.html#quick-look-at-our-data",
+    "href": "slides/week-12/22-assess_group_proj.html#quick-look-at-our-data",
+    "title": "[Assess] Group Projects",
+    "section": "Quick look at our data",
+    "text": "Quick look at our data\n\nHere’s all of the Rat Activity Sightings since my friends moved into Brooklyn (08/01/2025).\n\n\nggplot() +\n  geom_sf(data = nta) +\n  geom_sf(data = brkln_rats)"
+  },
+  {
+    "objectID": "slides/week-12/22-assess_group_proj.html#my-friends-rats",
+    "href": "slides/week-12/22-assess_group_proj.html#my-friends-rats",
+    "title": "[Assess] Group Projects",
+    "section": "My Friends’ Rats",
+    "text": "My Friends’ Rats\n\nggplot() +\n  geom_sf(data = plgw) +\n  geom_sf(data = plgw_rats)"
+  },
+  {
+    "objectID": "slides/week-12/22-assess_group_proj.html#nashville-holc-map",
+    "href": "slides/week-12/22-assess_group_proj.html#nashville-holc-map",
+    "title": "[Assess] Group Projects",
+    "section": "Nashville HOLC map",
+    "text": "Nashville HOLC map\n\nggplot(data = nash_holc) +\n  geom_sf(aes(fill = grade)) +\n  scale_fill_manual(values = unique(nash_holc$fill))"
+  },
+  {
+    "objectID": "slides/week-12/22-assess_group_proj.html#holc-cts",
+    "href": "slides/week-12/22-assess_group_proj.html#holc-cts",
+    "title": "[Assess] Group Projects",
+    "section": "HOLC CTs",
+    "text": "HOLC CTs\n\nggplot(data = nash_ct) +\n  geom_sf(aes(fill = grade)) +\n  scale_fill_manual(values = unique(nash_ct$fill))"
+  },
+  {
+    "objectID": "slides/week-12/22-assess_group_proj.html#adding-a-continuous-ej-variable",
+    "href": "slides/week-12/22-assess_group_proj.html#adding-a-continuous-ej-variable",
+    "title": "[Assess] Group Projects",
+    "section": "Adding a Continuous EJ Variable",
+    "text": "Adding a Continuous EJ Variable\n\nnash_ej_ct &lt;- read_sf(\"data/nash_ej/nash_ej.shp\")"
+  },
+  {
+    "objectID": "slides/week-12/22-assess_group_proj.html#mapping-together",
+    "href": "slides/week-12/22-assess_group_proj.html#mapping-together",
+    "title": "[Assess] Group Projects",
+    "section": "Mapping Together",
+    "text": "Mapping Together\n\nI was inspired by this NYTimes Data piece\n\n\n# turning off this pesky option \n sf_use_s2(FALSE)\n\n# ensure projection is the same\nnash_holc &lt;- nash_holc |&gt; st_transform(st_crs(nash_ej_ct))\n\n# select cts in HOLC area\nholc_ej &lt;- nash_ej_ct[nash_holc,]\n\n# filter HOLC regions for D grade\nnash_holc_d &lt;- nash_holc |&gt; \n  filter(grade == \"D\")"
+  },
+  {
+    "objectID": "slides/week-12/22-assess_group_proj.html#map",
+    "href": "slides/week-12/22-assess_group_proj.html#map",
+    "title": "[Assess] Group Projects",
+    "section": "Map!",
+    "text": "Map!\n\nggplot() +\n  geom_sf(data = holc_ej, aes(fill = lfxppct)) +\n  scale_fill_gradientn(\n    colors = wes_palette(\"Zissou1\", 100, type = \"continuous\"),\n    name = \"% Low Life Expectancy\"\n  ) +\n  geom_sf(\n    data = nash_holc_d,\n    color = \"black\",\n    fill = NA,\n    linewidth = 0.8\n  ) +\n  theme_void()"
+  },
+  {
+    "objectID": "slides/week-12/22-assess_group_proj.html#preparing-data-for-mapping",
+    "href": "slides/week-12/22-assess_group_proj.html#preparing-data-for-mapping",
+    "title": "[Assess] Group Projects",
+    "section": "Preparing data for Mapping",
+    "text": "Preparing data for Mapping\n\nI was inspired by this NYTimes Data piece\n\n\n# turning off this pesky option\nsf_use_s2(FALSE)\n\n# ensure projection is the same\nnash_holc &lt;- nash_holc |&gt; st_transform(st_crs(nash_ej_ct))\n\n# select cts in HOLC area\nholc_ej &lt;- nash_ej_ct[nash_holc, ]\n\n# filter HOLC regions for D grade\nnash_holc_d &lt;- nash_holc |&gt;\n  filter(grade == \"D\")"
+  },
+  {
+    "objectID": "slides/week-12/22-assess_group_proj.html",
+    "href": "slides/week-12/22-assess_group_proj.html",
+    "title": "[Assess] Group Projects",
+    "section": "",
+    "text": "Centering Activity\nSpatial data in R (mini-lecture)\nPaired Work\nFew Logistics"
+  },
+  {
+    "objectID": "slides/week-12/22-assess_group_proj.html#paired-work",
+    "href": "slides/week-12/22-assess_group_proj.html#paired-work",
+    "title": "[Assess] Group Projects",
+    "section": "Paired Work",
+    "text": "Paired Work"
+  },
+  {
+    "objectID": "slides/week-12/22-assess_group_proj.html#few-logistics",
+    "href": "slides/week-12/22-assess_group_proj.html#few-logistics",
+    "title": "[Assess] Group Projects",
+    "section": "Few Logistics",
+    "text": "Few Logistics\n\nHEET joining us on Tuesday!\n\nOne reading and one video to watch (pay attention to assigned chapters)\nClass will be hybrid, use link on Week 13 to join!\n\nReyna + Clara to prepare questions, Simmie to send thank you email.\nOffice Hours Wednesday, October 26, 2025 will be virtual"
   }
 ]

@@ -16,4 +16,4 @@ execute:
   freeze: auto
 ---
 
-# Slides will be posted 24 hours in advance of class.
+## Slides will be posted 24 hours in advance of class.
