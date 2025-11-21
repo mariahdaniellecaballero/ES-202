@@ -39,4 +39,4 @@ The final project is a cumulative reflection of your theoretical and methodologi
 
 -   [**Project Proposal:**](final_project/w8-project_proposal.qmd) Friday, October 24, 2025 at 11:59 PM
 -   [**Project Plan:**](final_project/w10-project_plan.qmd) Friday, November 07, 2025 at 11:59 PM
--   [**Final Project:**](final_project/w15-final_project.qmd) Friday, December 09, 2025 before class
+-   [**Final Project:**](final_project/w15-final_project.qmd) Tuesday, December 09, 2025 at 11:59
