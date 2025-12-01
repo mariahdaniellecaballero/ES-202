@@ -307,6 +307,16 @@ Date
 </section>
 <section id="readings" class="level1">
 <h1>Readings</h1>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 10%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>Tuesday:</strong> Baker, S. (2021). <a href="https://drive.google.com/drive/folders/1XKV3sM4v96rGwVAwLCOK_ymaYg07lTRw">Conclusion: Revolutionary Power</a> in <em>Revolutionary power: An activist’s guide to the energy transition</em>. Island Press.</td>
+</tr>
+</tbody>
+</table>
 
 
 
@@ -385,7 +395,7 @@ Date
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/mariahdaniellecaballero\.github\.io\/ES-202\/");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
