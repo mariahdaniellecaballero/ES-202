@@ -15,4 +15,42 @@ execute:
   freeze: auto
 ---
 
-# Slides will be posted 24 hours in advance of class.
+## Centering 
+- Sophie :-) 
+
+## Overview 
+- LERs 
+- Final Project Work Time
+
+## LERs {.smaller}
+- I teach this course again in the spring, and *I really will use these*! Please consider taking the time to give constructive feedback.
+
+::: {.callout-note}
+- As a reminder, the course goals are: 
+  - Demonstrate an understanding of the nuances of an intersectional approach (i.e., race, ethnicity, gender, sexuality, class, and disability) and their applications to environmental injustice.
+  - Reflect on how your positionality and lived experiences shape your approach to environmental justice.
+  - Assess empirical patterns of environmental injustice in US communities related to Food, Energy, and Water (FEW nexus).
+  - Identify opportunities and challenges beyond distributional justice (procedural, recognitional, restorative, and cosmopolitan justice) for environmental solutions spatially and temporally.
+  - Suggest opportunities for intervention by developing a theory-driven logic model.
+:::
+
+## LERs {.smaller}
+  - **What worked well for the course** (e.g., pacing, topics, skills learned, environment)? 
+  - **What might I consider changing** (e.g., number of guest lectures, Posit Cloud usage, case study topics, something else)?
+  - **Any other constructive advice on how I can help better facilitate learning**. 
+    - I will play the Tiny Desk for my [most streamed artist of 2025](https://www.youtube.com/watch?v=ouuPSxE1hK4&list=RDouuPSxE1hK4&start_radio=1) while you fill them out!
+
+## Group Work
+  
+## Presentation Order
+- We'll [pick randomly](https://pickerwheel.com/) using this spinner wheel
+
+## Logistics {.smaller}
+- Giving a presentation on this class at an international conference in two weeks!
+  - Session is called, "Building Climate Literacy for Action"
+  - Can I share some of your (anonymous) work with the audience? 
+  - Anything I should add to my presentation?
+  
+- Tuesday
+  - LDOC!
+  - Please email presentations to me by 9 AM Tuesday, I will compile them into one big presentation :-)
