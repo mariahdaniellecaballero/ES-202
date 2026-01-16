@@ -20,9 +20,9 @@ Please see [Data Sources](data_sources.qmd) for a list of potential data sources
 ## Timeline
 The final group project is cumulative, because I'm interested in students learning the *process* of interdisciplinary, collaborative research. Several components are due throughout the semester to help complete it. Deadlines include: 
 
-- [**Project Proposal:**](w8-project_proposal.qmd) Friday, October 24, 2025 at 11:59 PM
-- [**Project Plan:**](w10-project_plan.qmd) Friday, November 07, 2025 at 11:59 PM
-- [**Final Project:**](w15-final_project.qmd) Friday, December 09, 2025 before class
+- [Project Plan](w10-project_plan.qmd): Thursday, April 02, 2026 at 11:59 PM
+- [Data Manipulation Checkpoint](w12-data_manip.qmd): Thursday, April 16, 2026 at 11:59 PM
+- [Final Project](w15-final_project.qmd): Thursday, April 30, 2026 at 11:59
 
 ### Acknowledgements
 Thanks to Dr. Matthew Brett's [Data Science for Everyone course](https://matthew-brett.github.io/dsfe/projects/data), and [UC Berkeley's Data and Justice course](https://docs.google.com/document/d/e/2PACX-1vStSkib8yxUyashb3KGHcWr1bdTY5dlncSqlInNX67baLc1zAxWm6S2MrpxwfqMAYXjNzuTACtGc3Kc/pub?urp=gmail_link&gxids=7628), whose open-source syllabi served as inspiration for this assignment. 
