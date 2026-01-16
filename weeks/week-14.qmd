@@ -1,7 +1,7 @@
 ---
 title: "Week 14"
-subtitle: "Restorative Justice in Greater Boston, MA"
-description: "Dec 02 - Dec 05"
+subtitle: "Project Strategizing"
+description: "Apr 20 - Apr 23"
 author: ""
 date: ""
 listing:
@@ -19,18 +19,12 @@ listing:
     filter-ui: false
 tbl-colwidths: [10,50,40]
 ---
-# Guest Lecturer 
-Franelis Morillo Suarez ('21) is a Clean Energy & Climate Planner II for the [Metropolitan Area Planning Council](https://www.mapc.org/our-work/expertise/climate/) (MAPC). In her role, she provides technical assistance to communities for their climate mitigation and resilience work in the Greater Boston region, and advocates for centering equity in plans, policies, programs, and community engagement. As an Afro-Latina and a resident of an environmental justice community, she is very passionate about equitably creating more resilient communities while simultaneously mitigating climate change. She is passionate about climate justice and bringing a public health lens into her work, while keeping racial equity at the forefront, especially when it comes to community engagement.
-
-She received a Sustainability Certificate and earned a Bachelor of Arts in Environmental Studies and Italian Studies from Wellesley College. She recently received a Climate Change & Health Certificate from the Yale School of Public Health.
+::: {.callout-important}
+Note that there is no class on Monday, April 20, 2026 due to President's Day. 
+:::
 
 # Lectures
 
 ::: {#slides}
 :::
 
-
-# Readings
-|                                                                                                           |
-|-----------------------------------------------------------------------------------------------------------|
-|**Tuesday:** Baker, S. (2021). [Conclusion: Revolutionary Power](https://drive.google.com/drive/folders/1XKV3sM4v96rGwVAwLCOK_ymaYg07lTRw) in *Revolutionary power: An activist's guide to the energy transition*. Island Press.|

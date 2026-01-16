@@ -1,0 +1,18 @@
+---
+title: "Tenet-Based Approach + Intro to R"
+date: "January 29, 2026"
+format: 
+  revealjs:
+    theme:
+      - default
+    css: custom.scss
+    transition: fade
+    slide-number: true
+    incremental: false 
+    chalkboard: true
+    center: true
+execute:
+  freeze: auto
+  echo: true
+---
+## Slides will be posted 24 hours in advance of class. 

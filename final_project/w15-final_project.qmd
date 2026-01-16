@@ -1,19 +1,19 @@
 ---
 title: "Final Project"
-date: "December 09, 2025"
+date: "April 30, 2026"
 categories: "Final Project"
 ---
 
 # Overview 
 The final project is a cumulation of the theory and methods skills your team has acquired througout the semester to identify and assess environmental injustice, apply theory, and propose an intervention. 
 
-**There are three files due at 11:59 PM on Tuesday, December 09, 2025:**
+**There are three files due at 11:59 PM on Thursday, April 30, 2026:**
 
  1. Written report (~2,000 words) comprising four sections.
  2. Accompanying R code analysis document for data visualizations. 
  3. PDF of presentation for 7-minute presentation on final day of class. 
 
-**Additionally, please be prepared to present your team's final project in class on Tuesday, December 09, 2025.**  
+**Additionally, please be prepared to present your team's final project in class on Thursday, April 30, 2026**  
 
 
 # Report Outline

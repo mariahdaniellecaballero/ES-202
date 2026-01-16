@@ -1,6 +1,6 @@
 ---
-title: "[Theory] Recognitional Justice & Energy"
-subtitle: "📍 Houston County, GA"
+title: "HEET Slides"
+subtitle: "📍 Framingham, MA"
 date: "November 25, 2025"
 format: 
   revealjs:
@@ -16,4 +16,4 @@ execute:
   freeze: auto
 ---
 
-# Slide content
+## Slides will be posted 24 hours in advance of class.

@@ -15,4 +15,48 @@ execute:
   freeze: auto
 ---
 
-# Slide content
+## Overview
+- Centering Activity
+- Reviewing Questions
+- Project updates
+  - Paired Workshopping
+
+## Centering Activity {.smaller}
+- Write 3-5 worries that you're carrying into the classroom.
+- Doodle a Worry Monster and enlist it to gobble your list of worries (at least for the next ~70 minutes)
+  - I've given you some inspiration to start!
+![alt](images/worry_monsters.png)
+
+## Reviewing Questions
+- How are project plans coming along? 
+  - Any questions/concerns thus far? 
+  - Thoughts on R reference sheet [print/online?]
+
+## Paired Workshopping (~15 minutes)
+Pairs: 
+
+- EJ in Texas + EJ in Puerto Rico
+- Water Justice in California + Env Health in Boston
+- Food Justice in NYC + EJ in NYC
+
+## Paired Workshopping: 
+In pairs, discuss: 
+
+- Overview of project
+- Greatest challenge/barrier? 
+- Biggest win?
+- Suggestions/Lessons Learned for your pair?
+
+
+## Final check-in
+- How are speakers going? 
+- How can I help more on final projects?
+- Thoughts on Tuesday before Thanksgiving (11/25)?
+
+## Logistics!
+- Tonight: Project Plans due at 11:59 pm. 
+- Tuesday: 
+  - Dr. Jane Disney is joining us!
+  - Two readings on private wells and environmental health
+  - Chloe is leading our centering activity :-) 
+  - Gwen + June to prepare questions, Navya to send thank you email

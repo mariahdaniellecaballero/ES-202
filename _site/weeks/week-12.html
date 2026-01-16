@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="">
-<meta name="description" content="Nov 18 - Nov 21">
+<meta name="description" content="Apr 6 - Apr 9">
 
 <title>Week 12 – ES-202 Course Website</title>
 <style>
@@ -98,6 +98,34 @@ ul.task-list li input[type="checkbox"] {
       window['quarto-listing-loaded']();
     }
   })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-assignments .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-categories','listing-title','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-assignments'] = new List('listing-assignments', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
   </script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
@@ -160,7 +188,7 @@ window.Quarto = {
       </a>
       <div class="sidebar-tools-main">
     <a href="https://github.com/mariahdaniellecaballero/ES-202" title="GitHub" class="quarto-navigation-tool px-1" aria-label="GitHub"><i class="bi bi-github"></i></a>
-    <a href="https://rstudio.cloud/spaces/237799" title="RStudio Cloud" class="quarto-navigation-tool px-1" aria-label="RStudio Cloud"><i class="bi bi-cloud-fill"></i></a>
+    <a href="https://brightspace.wellesley.edu/d2l/home/12719" title="Brightspace" class="quarto-navigation-tool px-1" aria-label="Brightspace"><i class="bi bi-backpack3-fill"></i></a>
 </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -190,24 +218,6 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../centering.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Centering Activity</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../speaker.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Speaker Engagement</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="https://drive.usercontent.google.com/download?id=196okt0bv9UGk2-3iuD7mIIQmenG7om_T&amp;authuser=0&amp;acrobatPromotionSource=gdrive_chrome-grid" class="sidebar-item-text sidebar-link">
- <span class="menu-text">R Cheat Sheet</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="https://docs.google.com/document/d/1-NDZl_DhfwxHM4T2AhiVBVR7m3s6qMOtvYcFUz1r_ps/edit?usp=sharing" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Find a Typo?</span></a>
   </div>
@@ -222,8 +232,8 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#guest-lecturer" id="toc-guest-lecturer" class="nav-link active" data-scroll-target="#guest-lecturer">Guest Lecturer</a></li>
-  <li><a href="#lectures" id="toc-lectures" class="nav-link" data-scroll-target="#lectures">Lectures</a></li>
+  <li><a href="#lectures" id="toc-lectures" class="nav-link active" data-scroll-target="#lectures">Lectures</a></li>
+  <li><a href="#assignments" id="toc-assignments" class="nav-link" data-scroll-target="#assignments">Assignments</a></li>
   <li><a href="#readings" id="toc-readings" class="nav-link" data-scroll-target="#readings">Readings</a></li>
   </ul>
 </nav>
@@ -234,12 +244,12 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Week 12</h1>
-<p class="subtitle lead">Recognition Justice in Boston, MA</p>
+<p class="subtitle lead">Food Justice in Springfield, MA</p>
 </div>
 
 <div>
   <div class="description">
-    Nov 18 - Nov 21
+    Apr 6 - Apr 9
   </div>
 </div>
 
@@ -256,10 +266,19 @@ window.Quarto = {
 </header>
 
 
-<section id="guest-lecturer" class="level1">
-<h1>Guest Lecturer</h1>
-<p>Catherine McCandless (’14) is an experienced professional in climate resilience and environmental planning, currently serving as Senior Climate Resilience Project Manager for the <a href="https://www.boston.gov/departments/climate-resilience#about-the-office">City of Boston Climate Resilience Department</a> since March 2021. In this role, Catherine oversees the Climate Ready Boston initiative and collaborates with the Boston Conservation Commission on neighborhood climate resilience projects and municipal planning. Prior experience includes positions at VHB as an Environmental Planner and Planning and Design Intern, where Catherine managed environmental review processes and contributed to transportation project graphics. Additional roles with the Boston Planning &amp; Development Agency and JPNDC honed skills in community engagement and affordable housing project coordination. Catherine holds a Master’s in Urban Planning from Harvard University and a Bachelor’s in Architecture and Biological Sciences from Wellesley College.</p>
-</section>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Note that there will be no class on April 9, 2026. Dr.&nbsp;Caballero will be at a workshop in South Carolina.</p>
+</div>
+</div>
 <section id="lectures" class="level1">
 <h1>Lectures</h1>
 <div id="listing-slides" class="quarto-listing quarto-listing-container-table">
@@ -279,22 +298,53 @@ Date
 </thead>
 <tbody class="list">
 
-<tr data-index="0" data-listing-date-sort="1763442000000" data-listing-file-modified-sort="1760554480600" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="Ms. McCandless' Slides" data-listing-filename-sort="21-theory_rest_just.qmd">
+<tr data-index="0" data-listing-date-sort="1775448000000" data-listing-file-modified-sort="1768584863919" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1" data-listing-title-sort="Guest Lecture Slides" data-listing-filename-sort="20-guest_lecture.qmd">
 <td>
-<a href="../slides/week-12/21-theory_rest_just.html" class="title listing-title">Ms.&nbsp;McCandless’ Slides</a>
+<a href="../slides/week-12/20-guest_lecture.html" class="title listing-title">Guest Lecture Slides</a>
 </td>
 <td>
-<span class="listing-date">Tue, Nov 18</span>
+<span class="listing-date">Mon, Apr 06</span>
 </td>
 
 </tr>
 
-<tr data-index="1" data-listing-date-sort="1763701200000" data-listing-file-modified-sort="1763735473479" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="654" data-listing-title-sort="[Assess] Group Projects" data-listing-filename-sort="22-assess_group_proj.qmd">
+</tbody>
+</table>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</section>
+<section id="assignments" class="level1">
+<h1>Assignments</h1>
+<div id="listing-assignments" class="quarto-listing quarto-listing-container-table">
+<table class="quarto-listing-table table">
+<thead>
+<tr>
+
+<th>
+Assignment
+</th>
+
+<th>
+Title
+</th>
+
+<th>
+Due
+</th>
+
+</tr>
+</thead>
+<tbody class="list">
+
+<tr data-index="0" data-categories="RmluYWwlMjBQcm9qZWN0" data-listing-date-sort="1776312000000" data-listing-file-modified-sort="1768584720511" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="11" data-listing-title-sort="Data Manipulation Checkpoint" data-listing-filename-sort="w12-data_manip.qmd">
 <td>
-<a href="../slides/week-12/22-assess_group_proj.html" class="title listing-title">[Assess] Group Projects</a>
+<span class="listing-categories">Final Project</span>
 </td>
 <td>
-<span class="listing-date">Fri, Nov 21</span>
+<a href="../final_project/w12-data_manip.html" class="title listing-title">Data Manipulation Checkpoint</a>
+</td>
+<td>
+<span class="listing-date">Thu, Apr 16</span>
 </td>
 
 </tr>
@@ -306,19 +356,6 @@ Date
 </section>
 <section id="readings" class="level1">
 <h1>Readings</h1>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 10%">
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Tuesday:</strong> White-Hammond, M., Brizius, A., Eshel, K, McCandless, C., Davis, Z., … (2022). <em>Introduction and Project Context</em> in <a href="https://drive.google.com/drive/u/0/folders/1l2vWgenIgYjaB3rmeDdEPZUzsYkUCmhF">Coastal Resilience Solutions for East Boston and Charlestown (Phase II)</a>. 1-27.</td>
-</tr>
-<tr class="even">
-<td><strong>Tuesday:</strong> Explore: <a href="https://www.boston.gov/departments/climate-resilience/coastal-resilience-implementation">Coastal Resilience Project Tracker</a></td>
-</tr>
-</tbody>
-</table>
 
 
 
@@ -397,7 +434,7 @@ Date
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/mariahdaniellecaballero\.github\.io\/ES-202\/");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

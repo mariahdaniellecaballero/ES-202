@@ -1,7 +1,7 @@
 ---
 title: "Week 05"
-subtitle: "Recognition (in)Justice in Isle de Jean Charles, LA"
-description: "Sep 30 - Oct 03"
+subtitle: "Restorative (in)Justice in Edgecombe County, NC"
+description: "Feb 17 - Feb 19"
 author: ""
 date: ""
 listing:
@@ -33,6 +33,10 @@ listing:
 tbl-colwidths: [10,50,40]
 ---
 
+::: {.callout-important}
+Note that there is no class on Monday, February 16, 2026. The following day (Tuesday, February 17) will be on Monday schedule.
+:::
+
 # Lectures
 
 ::: {#slides}
@@ -44,22 +48,9 @@ tbl-colwidths: [10,50,40]
 :::
 
 # Readings
-|                                                                                                           |
-|-----------------------------------------------------------------------------------------------------------|
-|**Tuesday:**  Whyte, K. (2017). [The recognition paradigm of environmental injustice](https://drive.google.com/drive/folders/1bLgzLarcAIlVXbshvUHGHCzDVk57yhuL). In The Routledge handbook of environmental justice (pp. 113- 123). Routledge.                        |
-|**Tuesday:** Maldonado, J. K., Shearer, C., Bronen, R., Peterson, K., & Lazrus, H. (2013). [The impact of climate change on tribal communities in the US: displacement, relocation, and human rights](https://drive.google.com/drive/folders/1bLgzLarcAIlVXbshvUHGHCzDVk57yhuL). In *Climate Change and Indigenous Peoples in the United States: Impacts, Experiences and Actions (pp. 93-106)*. Cham: Springer International Publishing.|
-|**Tuesday:** *Watch* Vaughan-Lee, E. (2015). [Isle de Jean Charles](https://mass.pbslearningmedia.org/resource/gop-4/isle-de-jean-charles-global-oneness-project/). Global Oneness Project. |
-*[Optional Friday:]* Wickham, H., Çetinkaya-Rundel, M., & Grolemund, G. (2023). [R for Data Science (2e): Chapter 9](https://r4ds.hadley.nz/layers.html). Sebastopol: O'Reilly.   |  
-
-# Additional Reading on Isle de Jean Charles Resettlement
-
-::: {.callout-note}
-If you're interested in aditional reading on how the Isle de Jean Charles Resettlement is going (and how the Brunet kids are growing up), I recommend: 
-
-- Jones, T., L., & Simon, E. (2025). [As millions face climate relocation, the nation’s first attempt sparks warnings and regret](https://floodlightnews.org/isle-de-jean-charles-climate-relocation-broken-promises/). Floodlight.
-
-
-- Jessee, Nathan. (2020). [Community Resettlement in Louisiana: Learning from Histories of Horror and Hope](https://www.researchgate.net/publication/337225835_Community_Resettlement_in_Louisiana_Learning_from_Histories_of_Horror_and_Hope).
-
-- Winther (2020). [Lowland Kids](https://www.youtube.com/watch?v=tHV0F3-72Eo)
-:::
+| | |
+|---------|-------------------------------------------------------------------------|    
+|**Monday** |Ibrahim, A. A. (2023). [Empowering Those in Harm’s Way: A Restorative Justice Approach](https://drive.google.com/file/d/1Bv0Y5D2vnxD8RV4g6TVOWXwgZ5776j3M/view?usp=drive_link). In The Power of Energy Justice & the Social Contract (pp. 243-249). Cham: Springer Nature Switzerland.                        |
+|**Monday** |Harrison, C. (2016). [Race, space, and electric power: Jim Crow and the 1934 North Carolina rural electrification survey](https://drive.google.com/file/d/1dp6uZGXynx23Kmse9aEtzkIzWFtJxJSh/view?usp=drive_link). Annals of the American Association of Geographers, 106(4), 909-931|
+|**Monday** | Listen to [Alvin Morrison's interview](https://dc.lib.unc.edu/cdm/compoundobject/collection/sohp/id/10633/rec/29) from the [Southern Oral History Program](https://dc.lib.unc.edu/cdm/search/collection/sohp/searchterm/D.%20Rural%20Electrification/field/projec/mode/exact/conn/and/order/title) (or read the transcript) on rural electrification in North Carolina.|
+|*Optional Thursday*| Wickham, H., Çetinkaya-Rundel, M., & Grolemund, G. (2023). [R for Data Science (2e): Chapters 4 and 5](https://r4ds.hadley.nz/workflow-style.html). Sebastopol: O'Reilly.   |       

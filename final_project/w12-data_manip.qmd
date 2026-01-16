@@ -1,0 +1,9 @@
+---
+title: "Data Manipulation Checkpoint"
+date: "April 16, 2026"
+categories: "Final Project"
+---
+
+::: {.callout-note}
+This section is currently under development, check back soon please!
+:::

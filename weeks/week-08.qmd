@@ -1,7 +1,7 @@
 ---
 title: "Week 08"
-subtitle: "Recognition Justice in Navajo Nation, U.S."
-description: "Oct 21 - Oct 24"
+subtitle: "Multi-Tenet Justice in Navajo Nation, U.S."
+description: "Mar 9 - Mar 12"
 author: ""
 date: ""
 listing:
@@ -45,9 +45,8 @@ tbl-colwidths: [10,50,40]
 :::
 
 # Readings
-
-|                                                                                                           |
-|-----------------------------------------------------------------------------------------------------------|
-|**Tuesday:** Powell, D.E., (2018). [Interlude 3: Off-Grid in the Chuskas](https://drive.google.com/drive/folders/1NC9gdY57e31h-GyAOgHXmpjdXBsxgX-W) (pp.230-235). In Landscapes of Power: Politics of Energy in the Navajo Nation (pp. 187–235). Duke University Press. https://doi.org/10.2307/j.ctv1220jnq.11 |
-|**Tuesday:** Pasqualetti, M. J., Jones, T. E., Necefer, L., Scott, C. A., & Colombi, B. J. (2016). [A paradox of plenty: Renewable energy on Navajo Nation Lands](https://drive.google.com/drive/folders/1NC9gdY57e31h-GyAOgHXmpjdXBsxgX-W). Society & Natural Resources, 29(8), 885-899.|
-|*Optional Friday:* Wickham, H., Navarro, D., & Pedersen, T.L. (2025). [ggplot2: Elegant Graphics for Data Analysis (3e): Chapter 6](https://ggplot2-book.org/maps.html). Sebastopol: O'Reilly.  |
+| | |
+|---------|-------------------------------------------------------------------------|  
+|**Monday** |Powell, D.E., (2018). [Interlude 3: Off-Grid in the Chuskas](https://drive.google.com/drive/folders/1NC9gdY57e31h-GyAOgHXmpjdXBsxgX-W) (pp.230-235). In Landscapes of Power: Politics of Energy in the Navajo Nation (pp. 187–235). Duke University Press. https://doi.org/10.2307/j.ctv1220jnq.11 |
+|**Monday** | Pasqualetti, M. J., Jones, T. E., Necefer, L., Scott, C. A., & Colombi, B. J. (2016). [A paradox of plenty: Renewable energy on Navajo Nation Lands](https://drive.google.com/drive/folders/1NC9gdY57e31h-GyAOgHXmpjdXBsxgX-W). Society & Natural Resources, 29(8), 885-899.|
+|*Optional Thursday* | Wickham, H., Navarro, D., & Pedersen, T.L. (2025). [ggplot2: Elegant Graphics for Data Analysis (3e): Chapter 6](https://ggplot2-book.org/maps.html). Sebastopol: O'Reilly.  |

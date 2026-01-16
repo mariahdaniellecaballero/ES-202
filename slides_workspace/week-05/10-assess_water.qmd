@@ -100,8 +100,8 @@ glimpse(LA_tracts)
 ```
 
 ## Looking at spatial data {.smaller}
-- the `geometry` variable data in our dataframe and the `.shp` file type of data suggests this is spatial data. 
-- let's take a look with the `mapview()` function.
+- the  `geometry` variable data in our dataframe and the `.shp` file type of data suggests this is spatial data. 
+- let's quickly map things, to see what data we have. I'll visualize the `gegrphy` column using the `mapview()` function. 
 ```{r}
 #| warning: false
 #| message: false
@@ -310,5 +310,5 @@ see Posit Assignment!
 
 ## Logistics
 - Two pieces for Tuesday's discussion
-- Gwen leading centering activity :-) 
+- Elizabeth leading centering activity :-) 
 

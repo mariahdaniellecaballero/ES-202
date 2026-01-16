@@ -43,7 +43,7 @@ execute:
 
 ## Conceptions of Procedural Environmental Justice {.smaller}
 - **Equality:** Power is shared equally among potential participants in decision-making process
-  - **Proportionality:** power in environmental decisionmaking should be deistributed *in proportion* to thier stake in the outcome. 
+  - **Proportionality:** power in environmental decisionmaking should be distributed *in proportion* to their stake in the outcome. 
   - **Plurality:** Everyone potentially affected by the outcome should be included in decision-making process *as an equal*.
 
 #  

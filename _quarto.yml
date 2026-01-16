@@ -12,9 +12,9 @@ website:
       - icon: github
         href: https://github.com/mariahdaniellecaballero/ES-202
         text: GitHub
-      - icon: cloud-fill
-        href: https://rstudio.cloud/spaces/237799
-        text: RStudio Cloud
+      - icon: backpack3-fill
+        href: https://brightspace.wellesley.edu/d2l/home/12719
+        text: Brightspace
     style: docked
     contents:
       - href: index.qmd
@@ -23,12 +23,6 @@ website:
         text: Syllabus
       - href: schedule.qmd
         text: Schedule
-      - href: centering.qmd
-        text: Centering Activity
-      - href: speaker.qmd
-        text: Speaker Engagement
-      - href: https://drive.usercontent.google.com/download?id=196okt0bv9UGk2-3iuD7mIIQmenG7om_T&authuser=0&acrobatPromotionSource=gdrive_chrome-grid
-        text: R Cheat Sheet
       - href: https://docs.google.com/document/d/1-NDZl_DhfwxHM4T2AhiVBVR7m3s6qMOtvYcFUz1r_ps/edit?usp=sharing
         text: Find a Typo?
         

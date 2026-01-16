@@ -1,0 +1,19 @@
+---
+title: "Guest Lecture Slides"
+subtitle: "📍 "
+date: "April 13, 2026"
+format: 
+  revealjs:
+    theme:
+      - default
+    css: custom.scss
+    transition: fade
+    slide-number: true
+    incremental: false 
+    chalkboard: true
+    center: true
+execute:
+  freeze: auto
+---
+
+# Slides will be posted 24 hours in advance of class.

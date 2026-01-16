@@ -1,0 +1,26 @@
+---
+title: "HW 05: Coastal Livelihoods Case Study"
+date: "March 04, 2026"
+categories: "Homework"
+---
+
+## Overview 
+This case study focuses on publicly-available data from federal organizations such as the Federal Emergency Management Agency (FEMA), the Department of Transportation (DOT), the Centers for Disease Control (CDC), and the National Oceanic and Atmospheric Administration (NOAA) to understand the distributional and recognitional challenges facing Isle de Jean Charles.
+
+## Learning Outcomes
+- Transform and summarize data for plotting
+- Learn how layers in ggplot2 work together to create a plot
+- Summarize patterns from open-source data
+- Connect findings to theoretical understandings of recognition justice
+
+## Instructions
+Download the project file [here]() to your computer and complete the assignment in Rstudio.
+
+Render your .qmd file as a pdf and submit it to Brightspace. Please ensure to limit unnecessary warnings and messages that clutter the file by adjusting options in the code chunk. 
+
+## Grading
+
+Case studies are each 10% of your grade.
+
+## Submission
+Please submit this assignment to Brightspace by **March 04, 2026 at 11:59 PM**.

@@ -1,0 +1,27 @@
+---
+title: "HW 03: Bracero Case Study"
+date: "February 18, 2026"
+categories: "Homework"
+---
+
+## Overview 
+This case study focuses on using metadata scraped from the [Bracero History Archive](https://braceroarchive.org/) in R, and connecting it back to foundational theoretical aspects of procedural justice.
+
+## Learning Outcomes
+- Understand data structure
+- Transform  and tidy data for necessary questions
+- Explore and summarize patterns
+- Connect it to theoretical understandings of procedural justice
+
+
+## Instructions
+Download the project file [here]() to your computer and complete the assignment in Rstudio.
+
+Render your .qmd file as a pdf and submit it to Brightspace. Please ensure to limit unnecessary warnings and messages that clutter the file by adjusting options in the code chunk. 
+
+## Grading
+
+Case studies are each 10% of your grade.
+
+## Submission
+Please submit this assignment to Brightspace by **Wednesday, February 18, 2026 at 11:59 PM**.

@@ -1,6 +1,6 @@
 ---
-title: "[Theory] Procedural Justice & Water"
-subtitle: "📍 xx, MA"
+title: "Dr. Disney's Slides"
+subtitle: "📍 Bar Harbor, ME"
 date: "November 11, 2025"
 format: 
   revealjs:
@@ -16,4 +16,4 @@ execute:
   freeze: auto
 ---
 
-# Slide content
+# Slides will be posted 24 hours in advance of class.

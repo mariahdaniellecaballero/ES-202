@@ -69,7 +69,7 @@ If you feel that generative AI can be used to improve your knowledge on a topic,
     - *Tuesdays* will focus on small and large-group discussions on key theoretical concepts related to that week’s community case study. Please come prepared to discuss the readings.
     - *Fridays* will mainly focus on an in-class data visualization exercise (each worth 10%) related to the weekly case study. Please read the assigned case study and review the exercise before class. Be prepared to work in rotating pairs on the assignment, then submit it individually by the following Thursday at 11:59 PM. 
 
-- **Community Case Study Final Project (25%)**: End of semester group project on a community case study of your choice. Note that final project score is cumulative, including a project proposal (5%), project plan (10%), and final submission (10%). Please see the [Final Project Description](final_project/-desc.qmd) for more information.
+- **Community Case Study Final Project (25%)**: End of semester group project on a community case study of your choice. Note that final project score is cumulative, including a project plan (10%), data manipulation checkpoint (5%), and final submission (10%). Please see the [Final Project Description](final_project/-desc.qmd) for more information.
 
 
 ### Assessment
@@ -125,15 +125,15 @@ I sincerely care about your experience in this course, and am always interested 
 - I'll also collect anonymous feedback about the course at the mid-semester point.
 
 ## Important Dates
-
--   **Sep 02:** Classes begin
--   **Sep 26**: Credit/Noncredit grading option and Drop Deadline (4PM)
--   **Oct 13-14**: Indigenous Peoples' Day; Fall break
--   **Oct 28**: Tanner Conference
--   **Nov 26-28:** Thanksgiving Break
--   **Dec 10**: Classes end
--   **Dec 11-14**: Reading period
--   **Dec 15-18**: Final exams
+-   **Jan 20**: First Day of Classes
+-   **Feb 16**: No Class, Presidents' Day
+-   **Feb 17**: Substitute Day [Monday Classes]
+-   **Mar 16-22**: Spring Break
+-   **Apr 8:** No Class, Dr. Caballero at a Workshop
+-   **Apr 20**: No Class, Patriots' Day
+-   **Apr 30**: Substitute Day [Monday Classes]; Last Day of Classes
+-   **May 01- 04**: Reading Period
+-   **May 05- 08**: Final Exams
 
 ## Acknowledgments
 This course was created using [templates](https://github.com/rstudio-conf-2022/teach-ds-course-website) created by Maria Tackett & Mine Cetinkaya-Rundel. I'm also very grateful for tips and resources from [Dr. Yaniv Yacoby](https://yanivyacoby.github.io/), [Accessible Syllabus](https://accessiblesyllabus.com/), and faculty feedback from the [Wellesley Environmental Studies Department](https://www.wellesley.edu/academics/department/environmental-studies).

@@ -15,4 +15,52 @@ execute:
   freeze: auto
 ---
 
-# Slide content
+## Overview
+- Centering Activity
+- Reviewing Logic Models (mini-lecture)
+- Paired Work
+- Few Logistics
+
+## Centering Activity {.smaller}
+- Tell me the highlight of your day (or week)!
+
+## Reviewing Logic Models {.smaller}
+- Logic models are helpful for *designing, implementing, and evaluating* program activities. 
+  - Process is intended to be iterative, especially as goals/contexts/priorities change.
+  - Specific outcomes are important-- rather than "less asthma": 
+    - 25% reduction in childhood asthma hospitalizations
+    - Improved air quality in 300 public schools
+    - State and local policies passed to reduce environmental triggers such as anti-idling regulations for school buses
+
+## Basic Program Components {.smaller}
+![](images/program_comp.png)
+
+## Basic Model {.smaller}
+![](images/basic_model.png)
+
+## Shall we Create a Wellesley Program? {.smaller}
+- We're creating a student-led program focused on Wellesley-level change. 
+  - What's the most pressing issue on campus your student-led program wants change in the next 7-10 years (access to off-campus transportation, increased affordability, curriculum changes)? 
+
+## Drafting a Basic Logic Model {.smaller}
+- In two teams, brainstorm these categories:
+- **Team One**
+  - Factors
+  - Resources
+  - Activities
+- **Team Two**
+  - Outputs
+  - Outcomes
+  - Impacts
+
+## As a Group
+![](images/basic_model.png)
+
+## Logistics! {.smaller}
+- Tuesday: 
+  - Cat McCandless '14 is joining us!
+  - One reading + project tracker
+  - June is leading our centering activity :-) 
+  - Reena + Kat to prepare questions, Anya to send thank you email
+- Friday: 
+  - Dr. Caballero to shift office hours to Thursday (11/20), any preference for time?

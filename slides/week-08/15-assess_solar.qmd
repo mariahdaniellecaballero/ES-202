@@ -1,0 +1,19 @@
+---
+title: "[Assess] Solar Energy Case Study"
+subtitle: "📍 Navajo Nation, U.S."
+date: "March 12, 2026"
+format: 
+  revealjs:
+    theme:
+      - default
+    css: custom.scss
+    transition: fade
+    slide-number: true
+    incremental: false 
+    chalkboard: true
+    center: true
+execute:
+  freeze: auto
+---
+
+## Slides will be made available 24 hours in advance of class. 

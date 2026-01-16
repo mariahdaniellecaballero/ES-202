@@ -271,21 +271,12 @@ ggplot(aes(x = reorder(do_you_have_any_experience_using_r_studio, Count), y = Co
 - Are we into this?
 
 ## Course Website
+bookmark: https://mariahdaniellecaballero.github.io/ES-202/ 
 
 ## Schedule
 You can access the weekly schedule on the course website. 
 
 ![](images/schedule.png)
-
-## Setting Shared Expectations{.smaller} 
-- How do we want to be accountable to one another? 
-- This could mean agreeing to...
-  - Not use phones within a course session
-  - Assuming best intentions from peers
-  - Engaging in class conversation
-  - Listening to and respecting others' perspectives  
-
-<span style="color:red;">Take 5 minutes with a partner to discuss, be ready to share at least one! </span>
 
 ## For Friday
 - Check course website for readings 

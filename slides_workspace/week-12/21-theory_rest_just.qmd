@@ -1,6 +1,6 @@
 ---
-title: "[Theory] Restorative Justice & Food"
-subtitle: "📍 Philadelphia, PA"
+title: "Ms. McCandless' Slides"
+subtitle: "📍 Boston, MA"
 date: "November 18, 2025"
 format: 
   revealjs:
@@ -16,4 +16,4 @@ execute:
   freeze: auto
 ---
 
-# Slide content
+# Slides will be posted 24 hours in advance of class.

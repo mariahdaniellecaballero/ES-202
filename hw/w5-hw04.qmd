@@ -1,0 +1,26 @@
+---
+title: "HW 04: Rural Electrification Case Study"
+date: "February 25, 2026"
+categories: "Homework"
+---
+
+## Overview 
+This case study focuses on using rural electrification surveys collected in 1934 in R, and connecting it back to foundational theoretical aspects of restorative justice.
+
+## Learning Outcomes
+- Understand coding style best practices
+- Read accompanying data documentation and understand data summaries
+- New skills in data tidying (i.e., lengthening and widening data)
+- Connect findings to theoretical understandings of restorative justice
+
+## Instructions
+Download the project file [here]() to your computer and complete the assignment in Rstudio.
+
+Render your .qmd file as a pdf and submit it to Brightspace. Please ensure to limit unnecessary warnings and messages that clutter the file by adjusting options in the code chunk. 
+
+## Grading
+
+Case studies are each 10% of your grade.
+
+## Submission
+Please submit this assignment to Brightspace by **Wednesday, February 25, 2026 at 11:59 PM**.

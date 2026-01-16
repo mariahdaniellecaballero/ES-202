@@ -1,6 +1,6 @@
 ---
-title: "[Theory] Cosmopolitan Justice & Water"
-subtitle: "📍 San Joaquin Valley, CA"
+title: "Ms. Morillo-Suarez's Slides"
+subtitle: "Greater Boston, MA"
 date: "December 02, 2025"
 format: 
   revealjs:
@@ -16,4 +16,4 @@ execute:
   freeze: auto
 ---
 
-# Slide content
+# Slides will be posted 24 hours in advance of class.

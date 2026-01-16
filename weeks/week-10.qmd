@@ -1,7 +1,7 @@
 ---
 title: "Week 10"
-subtitle: "Distributional Justice in Apopka, FL"
-description: "Nov 04 - Nov 07"
+subtitle: "Community-Level Change"
+description: "Mar 23-26"
 author: ""
 date: ""
 listing:
@@ -34,8 +34,6 @@ listing:
 tbl-colwidths: [10,50,40]
 ---
 
-# Guest Lecturer 
-Dr. Nezahualcoyotl Xiuhtecutli [she-wa-teh-KWA-tlee] is Senior Grassroots Advocacy Coordinator at the [National Sustainable Agriculture Coalition (NSAC)](https://sustainableagriculture.net/) where he works on the Local and Regional Food systems and the Climate campaigns. He has 20 years of experience working in rural communities and farmworkers in Mexico and Central America and in the US South. He holds a Ph.D. in anthropology from Tulane University and his training in the discipline sparked his interest in a time-depth perspective of the diversity of agricultural practices and their social implications including social organization around land tenure and labor relations across cultural and geographic realms. Raised in an immigrant and working class family, he has been in community and solidarity with working people throughout his life. 
 
 # Lectures
 
@@ -48,7 +46,7 @@ Dr. Nezahualcoyotl Xiuhtecutli [she-wa-teh-KWA-tlee] is Senior Grassroots Advoca
 :::
 
 # Readings
-|                                                                                                           |
-|-----------------------------------------------------------------------------------------------------------|
-|**Tuesday:** Horton, S. B. (2016). [Introduction](https://drive.google.com/drive/folders/1xaMtmxPy-NIf_1adXJbywn6OT_jH6fd7) in *They Leave Their Kidneys in the Fields: Illness, Injury, and Illegality among U.S. Farmworkers* (1st ed.). University of California Press.|
-|**Tuesday:** Davis, D. G., Chavez-Deremer, L., De La Cruz, M., Lamalfa, D., Langworthy, N. A., Rouzer, D., ... & Scott, D. (2023). [Introduction and First Roundtable](https://drive.google.com/drive/folders/1xaMtmxPy-NIf_1adXJbywn6OT_jH6fd7) in *Agricultural Labor Working Group Interim Report*.|
+| | |
+|---------|-------------------------------------------------------------------------|  
+|**Monday**| Kellogg, W. K. (2004). [Chapters One and Two](https://drive.google.com/drive/folders/1F_2-X_JVeQLgaMxbjR0bdntatLOK9uxE) in Logic Model Development Guide. Kellogg Foundation.|
+|**Monday** | Kreger, M., Sargent, K., Arons, A., Standish, M., & Brindis, C. D. (2011). [Creating an environmental justice framework for policy change in childhood asthma: a grassroots to treetops approach](https://drive.google.com/drive/folders/1F_2-X_JVeQLgaMxbjR0bdntatLOK9uxE). American journal of public health, 101(S1), S208-S216.|

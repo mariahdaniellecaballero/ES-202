@@ -16,4 +16,153 @@ execute:
   freeze: auto
 ---
 
-# Slide content
+##  Class Overview 
+
+- Centering activity
+- Recalling Recognition Justice
+- Intro to community case study (Solar in Navajo Nation)
+- Group Discussion + Debrief
+
+## Centering Activity
+
+- Gwen :-) 
+
+## Quick Logistics
+- Group partners were assigned Friday
+- Speaker engagement list added to website
+
+## What We Read {.smaller}
+- Powell, D.E., (2018). Interlude 3: Off-Grid in the Chuskas (pp.230-235). In Landscapes of Power: Politics of Energy in the Navajo Nation (pp. 187–235). Duke University Press. https://doi.org/10.2307/j.ctv1220jnq.11
+- Pasqualetti, M. J., Jones, T. E., Necefer, L., Scott, C. A., & Colombi, B. J. (2016). A paradox of plenty: Renewable energy on Navajo Nation Lands. Society & Natural Resources, 29(8), 885-899.
+
+## Recalling Recognition Justice{.smaller}
+- Misrecognition can occur via three processes:
+ ![alt](images/recognition.png)
+ - Figueroa (2006) defines misrecognition as rooted in environmental identity + heritage.
+
+## Whyte's Recognition Paradigm{.smaller}
+::: {.columns}
+::: {.column width=60%}
+- "Paradigm" refers to a criterion that can be used to identify whether an unjust process is occurring. 
+  - Distributional paradigm
+  - Procedural paradigm
+  - Recognition paradigm
+- Examples of each? 
+:::
+::: {.column width=40%}
+![](images/tenets.png)
+:::
+:::
+
+## Intro to Community Case Study {.smaller}
+- Example of all five EJ tenets
+- Pasqualetti, et al. (2016) asks, **why hasn't more RE been developed on Tribal lands, specifically in Navajo Nation**? 
+  - Relationship to extractive energy development 
+  - Spiritual and social values
+  - Energy governance
+
+## Navajo Nation {.smaller}
+- Diné translates to "the people"
+- Located in three corners: Utah, Arizona, and New Mexico
+- Biggest Tribe in terms of: 
+  - Area: Size of Ireland (2.5x state of Massachusetts)
+  - Population: 300,000+ members
+- Young population, high unemployment rates (48.5%, 11x national average), and low household income ($8,250 annually, 10% of national average).
+- Complex history of coal and uranium mining
+
+## 
+![](images/Navajo_Nation_Map.png){height="100%"}
+
+## Energy Extractivism on Navajo Lands {.smaller}
+::: {.columns}
+::: {.column width=50%}
+- Highest value of economic activity for decades has been fossil fuel/mining.
+- Long history of Navajo Nation fighting for control of their land's mineral resources. 
+  - Coal slurry (mix of coal + water shipped to NV, hugely depleting groundwater)
+  - Subbituminous coal mining (Significant air pollution)
+  - Uranium mining and milling (environmental health risks)
+:::
+::: {.column width=50%}
+![Pember, 2014](images/navajo_mine.png)
+:::
+:::
+
+##
+![](images/solar_potential.png){width="98%"}
+
+## Solar Paradox of Plenty {.smaller}
+::: {.columns}
+::: {.column width=50%}
+- Navajo Nation solar potential is **100x the installed capacity of California**.
+  - Navajo Nation wasn't included in REA of 1935.
+  - Roughly 1/3 of Navajo Nation homes don't have electricity today. 
+  - Matrilineal spiritual + ancestral grazing lands are very remote.
+:::
+::: {.column width=50%}
+![Traditional Hogan; Krol, 2018](images/hogan.png)
+:::
+:::
+
+## Spiritual Ties {.smaller}
+::: {.columns}
+::: {.column width=50%}
+- *K'é* is Navajo word for kinship, applies to human and non-human relationships.
+- *Hózhó* focuses on environmental preservation. 
+  - Navajo people are likely to place more importance on future costs to the environment than promise of employment/economic benefit. 
+:::
+::: {.column width=50%}
+![Generating the Winds, ink and acrylic on muslin; Thomas Haukaas](images/Windfall.pg)
+:::
+:::
+
+## Energy Governance {.smaller}
+::: {.columns}
+::: {.column width=50%}
+- Tribal Lands are a mix of *Public, Tribal Trust, Tribal Fee, Bureau of Land Management (BLM), Private, State (3 states), and BIA Indian Allotments*
+  - This makes governance very challenging. 
+  - Some Federal processes and policies apply to Tribal lands
+  - States have little authority over Tribal lands
+  - Navajo Nation Codes regulate RE development, 110 chapter governments often have final say via approval rights
+:::
+::: {.column width=50%}
+![NNLD, 2020](images/NN_chapters.png)
+:::
+:::
+
+## Solar in Navajo Nation {.smaller}
+- Do any forms of **misrecognition** (cultural domination, non-recognition, disrespect) apply to Pasqualetti's piece? 
+- Do any of the other four tenets apply to this case study?
+- How does scale factor in to EJ implications of solar (i.e., distributed, community, utility-scale)? 
+
+ ![Beshilas et al., 2023](images/solar_Scale.jpeg)
+
+## Off-Grid in the Chuskas{.smaller}
+::: {.columns}
+::: {.column width=60%}
+- Short piece in "Landscapes of Power"
+  - Powell stays off-grid in Hogan with Adella Begaye
+  - Details Angie + Jay's experience as seasonal sheep + goat herders
+- Describes heterogeneity in NN lives; energy preferences for independence, environmental heritages and livelihoods, modernity versus tradition
+:::
+::: {.column width=40%}
+![](images/LOP.webp)
+:::
+:::
+
+
+## Processes for Solar + Recognition Justice? {.smaller}
+- What aspects of decisionmaking should be prioritized for the Navajo Nation's energy transition? 
+  - Energy legacies
+  - Environmental heritage
+  - Governance
+  - Self-Determination
+- If we were part of a community organization to increase solar uptake among NN households, what might our logic model look like (inputs, activities, outcomes)? 
+
+
+## Friday Logistics
+- Mid-semester evaluation due Wednesday (Oct 22)
+- Project Proposal is Due Friday (Oct 24)
+- Last Community Case Study on Solar Potential and energy burden
+- Simmie leading centering activity :-) 
+
+

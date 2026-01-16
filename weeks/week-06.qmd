@@ -1,7 +1,7 @@
 ---
 title: "Week 06"
-subtitle: "Cosmopolitan (in)Justice in Sharm el Sheikh, Egypt"
-description: "Oct 07 - Oct 10"
+subtitle: "Recognition (in)Justice in Isle de Jean Charles, LA"
+description: "Feb 23 - Feb 26"
 author: ""
 date: ""
 listing:
@@ -44,8 +44,21 @@ tbl-colwidths: [10,50,40]
 :::
 
 # Readings
-|                                                                                                           |
-|-----------------------------------------------------------------------------------------------------------|
-|**Tuesday:** Skillington, T. (2023). [Cosmopolitan Theories of Justice](https://drive.google.com/drive/folders/15WAmBBXQ1bChRIue7CYk15j1XO6fNbyM). In J. Ohlsson & S. Przybylinski (Eds.), Theorising Justice: A Primer for Social Scientists (1st ed., pp. 45–59). Bristol University Press. |
-|**Tuesday:** Klöck, C., Castro, P., Chin-Yee, S., B. Gurresø, C., Desmasures, C., Bouly, E., ... & De Pryck, K. (2024). [Beyond AOSIS: small island states’ presence and participation at COP27](https://drive.google.com/drive/folders/15WAmBBXQ1bChRIue7CYk15j1XO6fNbyM). Climate and Development, 1-12.|
-*[Optional Friday:]* Wickham, H., Çetinkaya-Rundel, M., & Grolemund, G. (2023). [R for Data Science (2e): Chapters 10 and 11](https://r4ds.hadley.nz/EDA.html). Sebastopol: O'Reilly.   |   
+| | |
+|---------|-------------------------------------------------------------------------|    
+|**Monday** | Whyte, K. (2017). [The recognition paradigm of environmental injustice](https://drive.google.com/drive/folders/1bLgzLarcAIlVXbshvUHGHCzDVk57yhuL). In The Routledge handbook of environmental justice (pp. 113- 123). Routledge.                        |
+|**Monday**| Maldonado, J. K., Shearer, C., Bronen, R., Peterson, K., & Lazrus, H. (2013). [The impact of climate change on tribal communities in the US: displacement, relocation, and human rights](https://drive.google.com/drive/folders/1bLgzLarcAIlVXbshvUHGHCzDVk57yhuL). In *Climate Change and Indigenous Peoples in the United States: Impacts, Experiences and Actions (pp. 93-106)*. Cham: Springer International Publishing.|
+|**Monday**| *Watch* Vaughan-Lee, E. (2015). [Isle de Jean Charles](https://mass.pbslearningmedia.org/resource/gop-4/isle-de-jean-charles-global-oneness-project/). Global Oneness Project. |
+|*Optional Thursday* | Wickham, H., Çetinkaya-Rundel, M., & Grolemund, G. (2023). [R for Data Science (2e): Chapter 9](https://r4ds.hadley.nz/layers.html). Sebastopol: O'Reilly.   |  
+
+## Additional Reading on Isle de Jean Charles Resettlement
+
+::: {.callout-note}
+If you're interested in aditional reading on how the Isle de Jean Charles Resettlement is going (and how the Brunet kids are growing up), I recommend: 
+
+- Jones, T., L., & Simon, E. (2025). [As millions face climate relocation, the nation’s first attempt sparks warnings and regret](https://floodlightnews.org/isle-de-jean-charles-climate-relocation-broken-promises/). Floodlight.
+
+- Jessee, Nathan. (2020). [Community Resettlement in Louisiana: Learning from Histories of Horror and Hope](https://www.researchgate.net/publication/337225835_Community_Resettlement_in_Louisiana_Learning_from_Histories_of_Horror_and_Hope).
+
+- Winther (2020). [Lowland Kids](https://www.youtube.com/watch?v=tHV0F3-72Eo)
+:::

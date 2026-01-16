@@ -1,6 +1,6 @@
 ---
-title: "[Theory] Distributional Justice & Food"
-subtitle: "📍 Springfield, MA"
+title: "Dr. Xiuhtecutli's Slides"
+subtitle: "📍 Apopka, FL"
 date: "November 4, 2025"
 format: 
   revealjs:
@@ -16,4 +16,4 @@ execute:
   freeze: auto
 ---
 
-# Slide content
+Dr. Xiuhtecutli's slides can be accessed [here](guest_lecture/H-2A%20and%20EJ.pdf)

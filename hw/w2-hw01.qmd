@@ -1,0 +1,46 @@
+---
+title: "HW 01: Positionality Statement"
+date: "February 02, 2026"
+categories: "Homework"
+---
+
+## Overview 
+The 16th Principal of Environmental Justice [^1] calls for "the education of present and future generations which emphasizes social and environmental issues, based on our experience and an appreciation of our diverse cultural perspectives". 
+
+Our classroom presents an opportunity to envision and create our own community that recognizes and values diverse perspectives. In other words, we are "forging a learning community that values wholeness over division, dissociation, [and] splitting". [^2] Additionally, in academia, it is common to share your positionality as part of the research process. In doing so, you're  acknowledging that you exist within a larger social fabric, and that you can reflexively analyze your own work. 
+
+## Learning Outcomes
+- **Demonstrate an understanding of the nuances of an intersectional approach** (i.e., how systems of power can reinforce oppression of land and people) and their applications to environmental injustice.
+- **Reflect on how your positionality and lived experiences** shape your approach to environmental justice. 
+
+## Relevant Course Reading 
+Holmes, A. G. D. (2020). [Researcher Positionality- A Consideration of Its Influence and Place in Qualitative Research - A New Researcher Guide](https://www.ulethbridge.ca/sites/default/files/2024/09/holmes_2020.pdf).8(4) 1-10. 
+
+Di Chiro, G. (2020). [Mobilizing 'intersectionality' in environmental justice research and action in a time of crisis](https://ebookcentral.proquest.com/lib/well/reader.action?docID=6228917&ppg=463&c=RVBVQg). Environmental justice, 316-333     
+
+## Instructions
+For this assignment, you are invited to write your own positionality statement [^3]. The statement should include: 
+
+ 1.  Details such as your heritage, culture, family, education, and any other aspects that shape how you view the world. 
+ 2.  Reflexive analysis of how your background and worldview might influence how you engage with course materials and the classroom community. Include at least one theme from this week's course readings in your analysis. 
+
+Statements should be 250 to 300 words long. Please use double-spaced formats, with 1 inch margins and a 12-point font. Include your name, date, course number, and the assignment title (i.e., HW 01: Positionality Statement). Please submit the assignment as a pdf.
+
+::: {.callout-note}
+If you're interested in reading my positionality statement, you can read it [here](cab_ps.qmd).
+:::
+   
+
+## Grading
+
+This assignment is worth 5% of your grade.
+
+
+## Submission 
+Please submit this assignment to Brightspace by **Monday, February 2, 2026 at 11:59 PM**.
+
+[^1]: People of Color Environmental Justice Leadership Summit. [Principles of Environmental Justice](https://ejnet.org/ej/principles.pdf). Washington, D.C: People of Color Environmental Justice Leadership Summit, 1991.
+
+[^2]: Hooks, B. (2003). Teaching Community: A Pedagogy of Hope. Routledge.
+
+[^3]: This assignment was inspired by [Dr. Tara Million's Assignment](https://www.ulethbridge.ca/sites/default/files/2024/09/positionalityassignment_sample_million_2024.pdf), for her INDG 3605/ENGL 3605 Course.

@@ -1,0 +1,26 @@
+---
+title: "HW 06: COP Delegate Case Study"
+date: "March 11, 2026"
+categories: "Homework"
+---
+
+## Overview 
+This case study uses delegate data from over 30 years of international climate change conferences published open source in a [Nature Scientific Dataset](https://www.nature.com/articles/s41597-024-03978-7), and connecting it back to foundational theoretical aspects of cosmopolitan justice.
+
+## Learning Outcomes
+- Apply thematic components to ggplot figures 
+- Conduct Exploratory Data Analysis (EDA)
+- Understand data visualization options for different data relationships
+- Connect findings to theoretical understandings of cosmopolitan justice
+
+## Instructions
+Download the project file [here]() to your computer and complete the assignment in Rstudio.
+
+Render your .qmd file as a pdf and submit it to Brightspace. Please ensure to limit unnecessary warnings and messages that clutter the file by adjusting options in the code chunk. 
+
+## Grading
+
+Case studies are each 10% of your grade.
+
+## Submission
+Please submit this assignment to Brightspace by **March 11, 2026 at 11:59 PM**.

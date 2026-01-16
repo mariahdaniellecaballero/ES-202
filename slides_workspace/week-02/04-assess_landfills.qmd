@@ -297,7 +297,7 @@ ggplot(sites, aes(x = type, fill = predom_eth_1979)) +
 
 ## Exercise 3: Reading a Vignette (collaborative)
 - Often, we get a bit mixed up when we're first starting. 
-- One helpful way to troubleshoot, can be typing "?" followed by the function into your environment (i.e., `?scale_fill_manual()`)
+- One helpful way to troubleshoot, can be typing "?" followed by the function into your console (i.e., `?scale_fill_manual()`)
 - Read the vignette for the `scale_fill_manual()` package. What package does it recommend for color blindness?
 
 ## Exercise 04 (individual)

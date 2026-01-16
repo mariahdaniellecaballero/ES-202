@@ -1,7 +1,7 @@
 ---
 title: "Week 02"
-subtitle: "Distributional (in)Justice in Houston, TX"
-description: "Sep 09 - Sep 12"
+subtitle: "Getting Started"
+description: "Jan 26 - Jan 29"
 author: ""
 date: ""
 listing:
@@ -44,10 +44,9 @@ tbl-colwidths: [10,50,40]
 :::
 
 # Readings
-
-|                                                                                                           |
-|-----------------------------------------------------------------------------------------------------------|
-|**Tuesday:** Murdock, E. G. (2020). [A history of environmental justice: Foundations, narratives, and perspectives](https://drive.google.com/drive/folders/1OXcR1KtOVPV__eWM2Pv-zQI9_gFl37eL). In *Environmental justice* (pp. 6-17). Routledge.|
-|**Tuesday:** Kaswan, A. (2020). [Distributive environmental justice](https://drive.google.com/drive/folders/1OXcR1KtOVPV__eWM2Pv-zQI9_gFl37eL). In *Environmental justice* (pp. 21-36). Routledge.                          |
-|**Friday:** Bullard, R. D. (1983). [Solid Waste Sites and the Black Houston Community](https://drive.google.com/drive/folders/1OXcR1KtOVPV__eWM2Pv-zQI9_gFl37eL), Sociological inquiry, 53(2‐3), 273-288. |
-*[Optional Friday:]* Wickham, H., Çetinkaya-Rundel, M., & Grolemund, G. (2023). [R for Data Science (2e): Introduction](https://r4ds.hadley.nz/data-visualize.html). Sebastopol: O'Reilly.   |              
+| | |
+|---------|-------------------------------------------------------------------------|
+| **Monday** | Murdock, E. G. (2020). [A history of environmental justice: Foundations, narratives, and perspectives](https://drive.google.com/drive/folders/1OXcR1KtOVPV__eWM2Pv-zQI9_gFl37eL). In *Environmental justice* (pp. 6-17). Routledge.|
+| **Monday** | Di Chiro, G. (2020). [Mobilizing 'intersectionality' in environmental justice research and action in a time of crisis](https://drive.google.com/drive/folders/1Rh3roCYigTKkSGtQEma19-Ks9Id_dSxP). Environmental justice, 316-333 |
+| **Thursday** | Murdock, E. G. (2020). [A history of environmental justice: Foundations, narratives, and perspectives](https://drive.google.com/drive/folders/1OXcR1KtOVPV__eWM2Pv-zQI9_gFl37eL). In *Environmental justice* (pp. 6-17). Routledge. | 
+| **Thursday** | Follow instructions for [installing RStudio](https://rstudio-education.github.io/hopr/starting.html) on your personal device. |

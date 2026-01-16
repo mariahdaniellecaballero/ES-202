@@ -63,7 +63,6 @@ execute:
 :::
 :::
 
-
 ## EJ + Intersectionality
 - Value of multiplicative over additive approach? 
 - Can we begin to see how an intersectional approach can help build more meaningful movements?
