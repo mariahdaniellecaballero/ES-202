@@ -26,17 +26,17 @@ library(mapview)
 library(tigris)
 library(wesanderson)
 
-brkln_rats <- read_sf("/Users/mc152/Documents/GitHub/ES-202/slides/week-12/data/brooklyn_rats/rats.shp")
+brkln_rats <- read_sf("/Users/mc152/Documents/GitHub/ES-202/slides_workspace/week-12/data/brooklyn_rats/rats.shp")
 
-nta <- read_sf("/Users/mc152/Documents/GitHub/ES-202/slides/week-12/data/nta/nta.shp") |>
+nta <- read_sf("/Users/mc152/Documents/GitHub/ES-202/slides_workspace/week-12/data/nta/nta.shp") |>
   filter(BoroName == "Brooklyn")
 
-nash_holc <- st_read("/Users/mc152/Documents/GitHub/ES-202/slides/week-12/data/nashville_redlining.json")
+nash_holc <- st_read("/Users/mc152/Documents/GitHub/ES-202/slides_workspace/week-12/data/nashville_redlining.json")
 
-nash_ct <- st_read("/Users/mc152/Documents/GitHub/ES-202/slides/week-12/data/2020_redline_tracts.geojson") |>
+nash_ct <- st_read("/Users/mc152/Documents/GitHub/ES-202/slides_workspace/week-12/data/2020_redline_tracts.geojson") |>
   filter(city == "Nashville")
 
-nash_ej_ct <- read_sf("/Users/mc152/Documents/GitHub/ES-202/slides/week-12/data/nash_ej/nash_ej.shp")
+nash_ej_ct <- read_sf("/Users/mc152/Documents/GitHub/ES-202/slides_workspace/week-12/data/nash_ej/nash_ej.shp")
 ``` 
 
 ## Overview

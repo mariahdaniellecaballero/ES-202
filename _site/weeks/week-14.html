@@ -205,7 +205,6 @@ window.Quarto = {
    
   <ul>
   <li><a href="#lectures" id="toc-lectures" class="nav-link active" data-scroll-target="#lectures">Lectures</a></li>
-  <li><a href="#readings" id="toc-readings" class="nav-link" data-scroll-target="#readings">Readings</a></li>
   </ul>
 </nav>
     </div>
@@ -283,9 +282,6 @@ Date
 </table>
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
-</section>
-<section id="readings" class="level1">
-<h1>Readings</h1>
 
 
 
@@ -364,7 +360,7 @@ Date
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/mariahdaniellecaballero\.github\.io\/ES-202\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

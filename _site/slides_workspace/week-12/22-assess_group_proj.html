@@ -28,6 +28,72 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-f563837468303362081e247dddd440d0.css">
   <link rel="stylesheet" href="custom.scss">
@@ -137,8 +203,218 @@
 
   <p class="date">2025-11-21</p>
 </section>
-<section id="slide-content" class="title-slide slide level1 center">
-<h1>Slide content</h1>
+<section id="overview" class="slide level2 center">
+<h2>Overview</h2>
+<ul>
+<li>Centering Activity</li>
+<li>Spatial data in R (mini-lecture)</li>
+<li>Paired Work</li>
+<li>Few Logistics</li>
+</ul>
+</section>
+<section id="centering-activity" class="slide level2 smaller center">
+<h2>Centering Activity</h2>
+<ul>
+<li>Write something you’re most proud of this semester on the white board
+<ul>
+<li>Can be non-academic, in fact I suggest it!</li>
+</ul></li>
+<li>Take a few minutes to read how far we’ve come!</li>
+</ul>
+</section>
+<section id="spatial-data-in-r" class="slide level2 smaller center">
+<h2>Spatial Data in R</h2>
+<ul>
+<li>Spatial Operations</li>
+<li>Working with Redlining Data</li>
+</ul>
+</section>
+<section id="loading-packages-data" class="slide level2 smaller center">
+<h2>Loading Packages + Data</h2>
+<ul>
+<li>Load sf, tidyverse, mapview, tigris, and wesanderson packages</li>
+<li>Dataset from NYC Open Data Portal on <a href="https://data.cityofnewyork.us/Health/Rodent-Inspection/p937-wjvj/about_data">Rat Inspections</a>
+<ul>
+<li><a href="https://data.cityofnewyork.us/Health/Rodent-Inspection/p937-wjvj/about_data">Neighborhood Tabulation Areas</a> Dataset (NTAs) from NYC Open Data Portal</li>
+</ul></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a><span class="fu">library</span>(sf)</span>
+<span id="cb1-2"><a></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-3"><a></a><span class="fu">library</span>(tigris)</span>
+<span id="cb1-4"><a></a><span class="fu">library</span>(wesanderson)</span>
+<span id="cb1-5"><a></a></span>
+<span id="cb1-6"><a></a>brkln_rats <span class="ot">&lt;-</span> <span class="fu">read_sf</span>(<span class="st">"data/brooklyn_rats/rats.shp"</span>)</span>
+<span id="cb1-7"><a></a>nta <span class="ot">&lt;-</span> <span class="fu">read_sf</span>(<span class="st">"data/nta/nta.shp"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb1-8"><a></a>  <span class="fu">filter</span>(BoroName <span class="sc">==</span> <span class="st">"Brooklyn"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="quick-look-at-our-data" class="slide level2 smaller center">
+<h2>Quick look at our data</h2>
+<ul>
+<li>Here’s all of the Rat Activity Sightings since my friends moved into Brooklyn (08/01/2025).</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a><span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb2-2"><a></a>  <span class="fu">geom_sf</span>(<span class="at">data =</span> nta) <span class="sc">+</span></span>
+<span id="cb2-3"><a></a>  <span class="fu">geom_sf</span>(<span class="at">data =</span> brkln_rats)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="22-assess_group_proj_files/figure-revealjs/unnamed-chunk-3-1.png" width="960" class="r-stretch"></section>
+<section id="spatial-operations" class="slide level2 smaller center">
+<h2>Spatial Operations</h2>
+<ul>
+<li>Sometimes, we want to select data based on its spatial attributes, rather than numeric/character attributes.</li>
+<li>Spatial operations are lovely for this reason!</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a>brkln_rats</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Simple feature collection with 5169 features and 5 fields
+Geometry type: POINT
+Dimension:     XY
+Bounding box:  xmin: -74.03695 ymin: 40.5721 xmax: -73.85655 ymax: 40.73692
+Geodetic CRS:  WGS 84
+# A tibble: 5,169 × 6
+    jb_____ inspctn_t  inspctn_d        jb_prgr result             geometry
+      &lt;dbl&gt; &lt;chr&gt;      &lt;chr&gt;              &lt;dbl&gt; &lt;chr&gt;           &lt;POINT [°]&gt;
+ 1 14137326 Initial    08/01/2025 08:1…       1 Rat A…  (-73.9383 40.68687)
+ 2 14137670 Initial    08/01/2025 08:5…       1 Rat A… (-73.92992 40.70549)
+ 3 14137481 Compliance 08/01/2025 09:0…       4 Rat A… (-73.94362 40.68193)
+ 4 14137661 Compliance 08/01/2025 09:0…       2 Rat A… (-73.94177 40.70747)
+ 5 14137115 Initial    08/01/2025 09:1…       1 Rat A…  (-73.94126 40.6991)
+ 6 14137116 Initial    08/01/2025 09:1…       1 Rat A… (-73.94124 40.69902)
+ 7 14137484 Initial    08/01/2025 09:2…       1 Rat A… (-73.94307 40.68184)
+ 8 14137747 Initial    08/01/2025 09:2…       1 Rat A… (-73.96871 40.64889)
+ 9 14137485 Compliance 08/01/2025 09:2…      14 Rat A…  (-73.9429 40.68186)
+10 14137662 Compliance 08/01/2025 09:3…       2 Rat A… (-73.94399 40.70872)
+# ℹ 5,159 more rows</code></pre>
+</div>
+</div>
+</section>
+<section id="spatial-subsetting" class="slide level2 center">
+<h2>Spatial Subsetting</h2>
+<ul>
+<li>Perhaps we’re interested in selecting only the activity in their neighborhood?</li>
+<li>Spatial Subsetting allows you to select</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a>plgw <span class="ot">&lt;-</span> nta <span class="sc">|&gt;</span></span>
+<span id="cb5-2"><a></a>  <span class="fu">filter</span>(NTAName <span class="sc">==</span> <span class="st">"Prospect Lefferts Gardens-Wingate"</span>)</span>
+<span id="cb5-3"><a></a></span>
+<span id="cb5-4"><a></a>plgw_rats <span class="ot">&lt;-</span> brkln_rats[plgw, ]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="my-friends-rats" class="slide level2 center">
+<h2>My Friends’ Rats</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a></a><span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb6-2"><a></a>  <span class="fu">geom_sf</span>(<span class="at">data =</span> plgw) <span class="sc">+</span></span>
+<span id="cb6-3"><a></a>  <span class="fu">geom_sf</span>(<span class="at">data =</span> plgw_rats)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="22-assess_group_proj_files/figure-revealjs/unnamed-chunk-6-1.png" width="960" class="r-stretch"></section>
+<section id="working-with-redlining-data" class="slide level2 center">
+<h2>Working with Redlining Data</h2>
+<ul>
+<li>Downloaded spatial data as a GEOJson file for Nashville, TN from the <a href="https://dsl.richmond.edu/panorama/redlining/data/TN-Nashville#cityData">Mapping Inequality</a> website.</li>
+<li>geoJSON is a text-based spatial files that is easy to use and lightweight.</li>
+<li>We can also use the <code>rm()</code> function to remove objects in our environment we no longer need.</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a>nash_holc <span class="ot">&lt;-</span> <span class="fu">st_read</span>(<span class="st">"data/nashville_redlining.json"</span>)</span>
+<span id="cb7-2"><a></a></span>
+<span id="cb7-3"><a></a><span class="fu">rm</span>(brkln_rats, nta, plgw, plgw_rats)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="nashville-holc-map" class="slide level2 center">
+<h2>Nashville HOLC map</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a></a><span class="fu">ggplot</span>(<span class="at">data =</span> nash_holc) <span class="sc">+</span></span>
+<span id="cb8-2"><a></a>  <span class="fu">geom_sf</span>(<span class="fu">aes</span>(<span class="at">fill =</span> grade)) <span class="sc">+</span></span>
+<span id="cb8-3"><a></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> <span class="fu">unique</span>(nash_holc<span class="sc">$</span>fill))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="22-assess_group_proj_files/figure-revealjs/unnamed-chunk-8-1.png" width="960" class="r-stretch"></section>
+<section id="crosswalked-census-tracts" class="slide level2 center">
+<h2>Crosswalked Census Tracts</h2>
+<ul>
+<li>There’s also data available from the mapping inequality project that “crosswalks” the original shapefile to census 2010 and 2020 census tracts.</li>
+<li>This is useful because you can much more easily join your CT data and visualize both sociodemographics and historic disinvestment.</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a>nash_ct <span class="ot">&lt;-</span> <span class="fu">st_read</span>(<span class="st">"data/2020_redline_tracts.geojson"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb9-2"><a></a>  <span class="fu">filter</span>(city <span class="sc">==</span> <span class="st">"Nashville"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="holc-cts" class="slide level2 center">
+<h2>HOLC CTs</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a></a><span class="fu">ggplot</span>(<span class="at">data =</span> nash_ct) <span class="sc">+</span></span>
+<span id="cb10-2"><a></a>  <span class="fu">geom_sf</span>(<span class="fu">aes</span>(<span class="at">fill =</span> grade)) <span class="sc">+</span></span>
+<span id="cb10-3"><a></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> <span class="fu">unique</span>(nash_ct<span class="sc">$</span>fill))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="22-assess_group_proj_files/figure-revealjs/unnamed-chunk-10-1.png" width="960" class="r-stretch"></section>
+<section id="adding-a-continuous-ej-variable" class="slide level2 center">
+<h2>Adding a Continuous EJ Variable</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a>nash_ej_ct <span class="ot">&lt;-</span> <span class="fu">read_sf</span>(<span class="st">"data/nash_ej/nash_ej.shp"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="preparing-data-for-mapping" class="slide level2 smaller center">
+<h2>Preparing data for Mapping</h2>
+<ul>
+<li>I was inspired by this <a href="https://www.nytimes.com/interactive/2020/08/24/climate/racism-redlining-cities-global-warming.html">NYTimes Data piece</a></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a></a><span class="co"># turning off this pesky option</span></span>
+<span id="cb12-2"><a></a><span class="fu">sf_use_s2</span>(<span class="cn">FALSE</span>)</span>
+<span id="cb12-3"><a></a></span>
+<span id="cb12-4"><a></a><span class="co"># ensure projection is the same</span></span>
+<span id="cb12-5"><a></a>nash_holc <span class="ot">&lt;-</span> nash_holc <span class="sc">|&gt;</span> <span class="fu">st_transform</span>(<span class="fu">st_crs</span>(nash_ej_ct))</span>
+<span id="cb12-6"><a></a></span>
+<span id="cb12-7"><a></a><span class="co"># select cts in HOLC area</span></span>
+<span id="cb12-8"><a></a>holc_ej <span class="ot">&lt;-</span> nash_ej_ct[nash_holc, ]</span>
+<span id="cb12-9"><a></a></span>
+<span id="cb12-10"><a></a><span class="co"># filter HOLC regions for D grade</span></span>
+<span id="cb12-11"><a></a>nash_holc_d <span class="ot">&lt;-</span> nash_holc <span class="sc">|&gt;</span></span>
+<span id="cb12-12"><a></a>  <span class="fu">filter</span>(grade <span class="sc">==</span> <span class="st">"D"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="map" class="slide level2 smaller center">
+<h2>Map!</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a></a><span class="fu">ggplot</span>() <span class="sc">+</span></span>
+<span id="cb13-2"><a></a>  <span class="fu">geom_sf</span>(<span class="at">data =</span> holc_ej, <span class="fu">aes</span>(<span class="at">fill =</span> lfxppct)) <span class="sc">+</span></span>
+<span id="cb13-3"><a></a>  <span class="fu">scale_fill_gradientn</span>(</span>
+<span id="cb13-4"><a></a>    <span class="at">colors =</span> <span class="fu">wes_palette</span>(<span class="st">"Zissou1"</span>, <span class="dv">100</span>, <span class="at">type =</span> <span class="st">"continuous"</span>),</span>
+<span id="cb13-5"><a></a>    <span class="at">name =</span> <span class="st">"% Low Life Expectancy"</span></span>
+<span id="cb13-6"><a></a>  ) <span class="sc">+</span></span>
+<span id="cb13-7"><a></a>  <span class="fu">geom_sf</span>(</span>
+<span id="cb13-8"><a></a>    <span class="at">data =</span> nash_holc_d,</span>
+<span id="cb13-9"><a></a>    <span class="at">color =</span> <span class="st">"black"</span>,</span>
+<span id="cb13-10"><a></a>    <span class="at">fill =</span> <span class="cn">NA</span>,</span>
+<span id="cb13-11"><a></a>    <span class="at">linewidth =</span> <span class="fl">0.8</span></span>
+<span id="cb13-12"><a></a>  ) <span class="sc">+</span></span>
+<span id="cb13-13"><a></a>  <span class="fu">theme_void</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="22-assess_group_proj_files/figure-revealjs/unnamed-chunk-13-1.png" width="960" class="r-stretch"></section>
+<section id="paired-work" class="slide level2 center">
+<h2>Paired Work</h2>
+</section>
+<section id="few-logistics" class="slide level2 center">
+<h2>Few Logistics</h2>
+<ul>
+<li>HEET joining us on Tuesday!
+<ul>
+<li>One reading and one video to watch (pay attention to assigned chapters)</li>
+<li>Class will be <strong>hybrid</strong>, use link on Week 13 to join!</li>
+</ul></li>
+<li>Reyna + Clara to prepare questions, Simmie to send thank you email.</li>
+<li>Office Hours Wednesday, October 26, 2025 will be <strong>virtual</strong></li>
+</ul>
 
 
 </section>
@@ -359,6 +635,44 @@
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
         const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
