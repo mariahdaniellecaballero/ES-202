@@ -5,7 +5,7 @@ categories: "Homework"
 ---
 
 ## Overview 
-I'm so pleased to have you joining ES-206! In preparation for our first class, please fill out [this short pre-class survey](https://docs.google.com/forms/d/e/1FAIpQLSdmpOQ2lAdYS_mwJnZGf1LSN7sSFkoWX8mWDLjQam2Z0Wd27w/viewform?usp=header) to tell me more about you and how I can best support you!
+I'm so pleased to have you joining ES-202! In preparation for our first class, please fill out [this short pre-class survey](https://docs.google.com/forms/d/e/1FAIpQLSdmpOQ2lAdYS_mwJnZGf1LSN7sSFkoWX8mWDLjQam2Z0Wd27w/viewform?usp=header) to tell me more about you and how I can best support you!
 
 ## Submission 
 Please submit your answers by **Monday, January 19, 2026 at 11:59 PM**. 
