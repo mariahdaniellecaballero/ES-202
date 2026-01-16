@@ -20,88 +20,16 @@
     ]
   },
   {
-    "listing": "/weeks/week-15.html",
+    "listing": "/weeks/week-14.html",
     "items": [
-      "/slides/week-15/24-assess_group_proj.html",
-      "/slides/week-15/25-reflect_last_day.html",
-      "/final_project/w15-final_project.html"
+      "/slides/week-14/23-assess_group_proj.html"
     ]
   },
   {
-    "listing": "/weeks/week-03.html",
+    "listing": "/weeks/week-01.html",
     "items": [
-      "/slides/week-03/04-theory_dist_just.html",
-      "/slides/week-03/05-assess_landfills.html",
-      "/hw/w3-hw02.html"
-    ]
-  },
-  {
-    "listing": "/weeks/week-12.html",
-    "items": [
-      "/slides/week-12/20-guest_lecture.html",
-      "/final_project/w12-data_manip.html"
-    ]
-  },
-  {
-    "listing": "/weeks/week-07.html",
-    "items": [
-      "/slides/week-07/12-theory_cosmo_just.html",
-      "/slides/week-07/13-assess_COP.html",
-      "/hw/w7-hw06.html"
-    ]
-  },
-  {
-    "listing": "/weeks/week-05.html",
-    "items": [
-      "/slides/week-05/08-theory_rest_just.html",
-      "/slides/week-05/09-assess_electrification.html",
-      "/hw/w5-hw04.html"
-    ]
-  },
-  {
-    "listing": "/weeks/week-10.html",
-    "items": [
-      "/slides/week-10/16-theory_intrvntmn.html",
-      "/slides/week-10/17-project_plan.html",
-      "/final_project/w10-project_plan.html"
-    ]
-  },
-  {
-    "listing": "/weeks/week-08.html",
-    "items": [
-      "/slides/week-08/14-multi-tenet_just.html",
-      "/slides/week-08/15-assess_solar.html",
-      "/hw/w8-hw07.html"
-    ]
-  },
-  {
-    "listing": "/weeks/week-04.html",
-    "items": [
-      "/slides/week-04/06-theory_proc_just.html",
-      "/slides/week-04/07-assess_braceros.html",
-      "/hw/w4-hw03.html"
-    ]
-  },
-  {
-    "listing": "/weeks/week-11.html",
-    "items": [
-      "/slides/week-11/18-assess_group_project.html",
-      "/slides/week-11/19-guest_lecture.html"
-    ]
-  },
-  {
-    "listing": "/weeks/week-13.html",
-    "items": [
-      "/slides/week-13/21-guest_lecture.html",
-      "/slides/week-13/22-assess_group_proj.html"
-    ]
-  },
-  {
-    "listing": "/weeks/week-06.html",
-    "items": [
-      "/slides/week-06/10-theory_rec_just.html",
-      "/slides/week-06/11-assess_water.html",
-      "/hw/w6-hw05.html"
+      "/slides/week-01/01-Welcome.html",
+      "/hw/w1-survey.html"
     ]
   },
   {
@@ -113,15 +41,88 @@
     ]
   },
   {
-    "listing": "/weeks/week-01.html",
+    "listing": "/weeks/week-06.html",
     "items": [
-      "/slides/week-01/01-Welcome.html"
+      "/slides/week-06/10-theory_rec_just.html",
+      "/slides/week-06/11-assess_water.html",
+      "/hw/w6-hw05.html"
     ]
   },
   {
-    "listing": "/weeks/week-14.html",
+    "listing": "/weeks/week-13.html",
     "items": [
-      "/slides/week-14/23-assess_group_proj.html"
+      "/slides/week-13/21-guest_lecture.html",
+      "/slides/week-13/22-assess_group_proj.html"
+    ]
+  },
+  {
+    "listing": "/weeks/week-11.html",
+    "items": [
+      "/slides/week-11/18-assess_group_project.html",
+      "/slides/week-11/19-guest_lecture.html"
+    ]
+  },
+  {
+    "listing": "/weeks/week-04.html",
+    "items": [
+      "/slides/week-04/06-theory_proc_just.html",
+      "/slides/week-04/07-assess_braceros.html",
+      "/hw/w4-hw03.html"
+    ]
+  },
+  {
+    "listing": "/weeks/week-08.html",
+    "items": [
+      "/slides/week-08/14-multi-tenet_just.html",
+      "/slides/week-08/15-assess_solar.html",
+      "/hw/w8-hw07.html"
+    ]
+  },
+  {
+    "listing": "/weeks/week-10.html",
+    "items": [
+      "/slides/week-10/16-theory_intrvntmn.html",
+      "/slides/week-10/17-project_plan.html",
+      "/final_project/w10-project_plan.html"
+    ]
+  },
+  {
+    "listing": "/weeks/week-05.html",
+    "items": [
+      "/slides/week-05/08-theory_rest_just.html",
+      "/slides/week-05/09-assess_electrification.html",
+      "/hw/w5-hw04.html"
+    ]
+  },
+  {
+    "listing": "/weeks/week-07.html",
+    "items": [
+      "/slides/week-07/12-theory_cosmo_just.html",
+      "/slides/week-07/13-assess_COP.html",
+      "/hw/w7-hw06.html"
+    ]
+  },
+  {
+    "listing": "/weeks/week-12.html",
+    "items": [
+      "/slides/week-12/20-guest_lecture.html",
+      "/final_project/w12-data_manip.html"
+    ]
+  },
+  {
+    "listing": "/weeks/week-03.html",
+    "items": [
+      "/slides/week-03/04-theory_dist_just.html",
+      "/slides/week-03/05-assess_landfills.html",
+      "/hw/w3-hw02.html"
+    ]
+  },
+  {
+    "listing": "/weeks/week-15.html",
+    "items": [
+      "/slides/week-15/24-assess_group_proj.html",
+      "/slides/week-15/25-reflect_last_day.html",
+      "/final_project/w15-final_project.html"
     ]
   }
 ]

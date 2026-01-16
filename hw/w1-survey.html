@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2026-01-19">
 
-<title>Schedule – ES-202 Course Website</title>
+<title>Pre-Class Survey – ES-202 Course Website</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +24,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-79da42d4e9332a072a08d0ee5d72051a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-79da42d4e9332a072a08d0ee5d72051a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -68,65 +67,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-schedule .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-description','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-schedule'] = new List('listing-schedule', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -139,7 +80,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./schedule.html">Schedule</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Pre-Class Survey</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -153,8 +94,8 @@ window.Quarto = {
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header">
-      <a href="./index.html" class="sidebar-logo-link">
-      <img src="./images/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      <a href="../index.html" class="sidebar-logo-link">
+      <img src="../images/logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
       <div class="sidebar-tools-main">
     <a href="https://github.com/mariahdaniellecaballero/ES-202" title="GitHub" class="quarto-navigation-tool px-1" aria-label="GitHub"><i class="bi bi-github"></i></a>
@@ -170,19 +111,19 @@ window.Quarto = {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Home</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./syllabus.html" class="sidebar-item-text sidebar-link">
+  <a href="../syllabus.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Syllabus</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./schedule.html" class="sidebar-item-text sidebar-link active">
+  <a href="../schedule.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Schedule</span></a>
   </div>
 </li>
@@ -202,12 +143,8 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#weekly-schedule" id="toc-weekly-schedule" class="nav-link active" data-scroll-target="#weekly-schedule">Weekly schedule</a></li>
-  <li><a href="#assignments" id="toc-assignments" class="nav-link" data-scroll-target="#assignments">Assignments</a>
-  <ul class="collapse">
-  <li><a href="#homework" id="toc-homework" class="nav-link" data-scroll-target="#homework">Homework</a></li>
-  <li><a href="#group-final-project" id="toc-group-final-project" class="nav-link" data-scroll-target="#group-final-project">Group Final Project</a></li>
-  </ul></li>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#submission" id="toc-submission" class="nav-link" data-scroll-target="#submission">Submission</a></li>
   </ul>
 </nav>
     </div>
@@ -216,14 +153,23 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Schedule</h1>
-</div>
+<h1 class="title">Pre-Class Survey</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Homework</div>
+  </div>
+  </div>
 
 
 
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 19, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -233,249 +179,15 @@ window.Quarto = {
 </header>
 
 
-<section id="weekly-schedule" class="level2">
-<h2 class="anchored" data-anchor-id="weekly-schedule">Weekly schedule</h2>
-<div id="listing-schedule" class="quarto-listing quarto-listing-container-table">
-<table class="quarto-listing-table table">
-<thead>
-<tr>
-
-<th>
-Week
-</th>
-
-<th>
-Dates
-</th>
-
-<th>
-Topic
-</th>
-
-</tr>
-</thead>
-<tbody class="list">
-
-<tr data-index="0" data-listing-file-modified-sort="1768603016361" data-listing-reading-time-sort="1" data-listing-word-count-sort="11" data-listing-title-sort="Week 01" data-listing-filename-sort="week-01.qmd">
-<td>
-<a href="./weeks/week-01.html" class="title listing-title">Week 01</a>
-</td>
-<td>
-<span class="listing-description">Jan 22</span>
-</td>
-<td>
-<span class="listing-subtitle">Welcome</span>
-</td>
-
-</tr>
-
-<tr data-index="1" data-listing-file-modified-sort="1768580904033" data-listing-reading-time-sort="1" data-listing-word-count-sort="86" data-listing-title-sort="Week 02" data-listing-filename-sort="week-02.qmd">
-<td>
-<a href="./weeks/week-02.html" class="title listing-title">Week 02</a>
-</td>
-<td>
-<span class="listing-description">Jan 26 - Jan 29</span>
-</td>
-<td>
-<span class="listing-subtitle">Getting Started</span>
-</td>
-
-</tr>
-
-<tr data-index="2" data-listing-file-modified-sort="1768580971251" data-listing-reading-time-sort="1" data-listing-word-count-sort="122" data-listing-title-sort="Week 03" data-listing-filename-sort="week-03.qmd">
-<td>
-<a href="./weeks/week-03.html" class="title listing-title">Week 03</a>
-</td>
-<td>
-<span class="listing-description">Feb 2 - Feb 5</span>
-</td>
-<td>
-<span class="listing-subtitle">Distributional (in)Justice in Houston, TX</span>
-</td>
-
-</tr>
-
-<tr data-index="3" data-listing-file-modified-sort="1768581269562" data-listing-reading-time-sort="1" data-listing-word-count-sort="93" data-listing-title-sort="Week 04" data-listing-filename-sort="week-04.qmd">
-<td>
-<a href="./weeks/week-04.html" class="title listing-title">Week 04</a>
-</td>
-<td>
-<span class="listing-description">Feb 9 - Feb 12</span>
-</td>
-<td>
-<span class="listing-subtitle">Procedural (in)Justice in Yakima Valley, WA</span>
-</td>
-
-</tr>
-
-<tr data-index="4" data-listing-file-modified-sort="1768592281467" data-listing-reading-time-sort="1" data-listing-word-count-sort="165" data-listing-title-sort="Week 05" data-listing-filename-sort="week-05.qmd">
-<td>
-<a href="./weeks/week-05.html" class="title listing-title">Week 05</a>
-</td>
-<td>
-<span class="listing-description">Feb 17 - Feb 19</span>
-</td>
-<td>
-<span class="listing-subtitle">Restorative (in)Justice in Edgecombe County, NC</span>
-</td>
-
-</tr>
-
-<tr data-index="5" data-listing-file-modified-sort="1768582072967" data-listing-reading-time-sort="2" data-listing-word-count-sort="215" data-listing-title-sort="Week 06" data-listing-filename-sort="week-06.qmd">
-<td>
-<a href="./weeks/week-06.html" class="title listing-title">Week 06</a>
-</td>
-<td>
-<span class="listing-description">Feb 23 - Feb 26</span>
-</td>
-<td>
-<span class="listing-subtitle">Recognition (in)Justice in Isle de Jean Charles, LA</span>
-</td>
-
-</tr>
-
-<tr data-index="6" data-listing-file-modified-sort="1768582441596" data-listing-reading-time-sort="1" data-listing-word-count-sort="99" data-listing-title-sort="Week 07" data-listing-filename-sort="week-07.qmd">
-<td>
-<a href="./weeks/week-07.html" class="title listing-title">Week 07</a>
-</td>
-<td>
-<span class="listing-description">Mar 2 - Mar 5</span>
-</td>
-<td>
-<span class="listing-subtitle">Cosmopolitan (in)Justice in Sharm el Sheikh, Egypt</span>
-</td>
-
-</tr>
-
-<tr data-index="7" data-listing-file-modified-sort="1768582870183" data-listing-reading-time-sort="1" data-listing-word-count-sort="93" data-listing-title-sort="Week 08" data-listing-filename-sort="week-08.qmd">
-<td>
-<a href="./weeks/week-08.html" class="title listing-title">Week 08</a>
-</td>
-<td>
-<span class="listing-description">Mar 9 - Mar 12</span>
-</td>
-<td>
-<span class="listing-subtitle">Multi-Tenet Justice in Navajo Nation, U.S.</span>
-</td>
-
-</tr>
-
-<tr data-index="8" data-listing-file-modified-sort="1768582288199" data-listing-reading-time-sort="1" data-listing-word-count-sort="16" data-listing-title-sort="Week 09" data-listing-filename-sort="week-09.qmd">
-<td>
-<a href="./weeks/week-09.html" class="title listing-title">Week 09</a>
-</td>
-<td>
-<span class="listing-description">Mar 16 - Mar 22</span>
-</td>
-<td>
-<span class="listing-subtitle">Spring Break</span>
-</td>
-
-</tr>
-
-<tr data-index="9" data-listing-file-modified-sort="1768584099030" data-listing-reading-time-sort="1" data-listing-word-count-sort="61" data-listing-title-sort="Week 10" data-listing-filename-sort="week-10.qmd">
-<td>
-<a href="./weeks/week-10.html" class="title listing-title">Week 10</a>
-</td>
-<td>
-<span class="listing-description">Mar 23-26</span>
-</td>
-<td>
-<span class="listing-subtitle">Community-Level Change</span>
-</td>
-
-</tr>
-
-<tr data-index="10" data-listing-file-modified-sort="1768584555410" data-listing-reading-time-sort="1" data-listing-word-count-sort="2" data-listing-title-sort="Week 11" data-listing-filename-sort="week-11.qmd">
-<td>
-<a href="./weeks/week-11.html" class="title listing-title">Week 11</a>
-</td>
-<td>
-<span class="listing-description">Mar 30 - Apr 02</span>
-</td>
-<td>
-<span class="listing-subtitle">Energy Justice in Framingham, MA</span>
-</td>
-
-</tr>
-
-<tr data-index="11" data-listing-file-modified-sort="1768584893034" data-listing-reading-time-sort="1" data-listing-word-count-sort="25" data-listing-title-sort="Week 12" data-listing-filename-sort="week-12.qmd">
-<td>
-<a href="./weeks/week-12.html" class="title listing-title">Week 12</a>
-</td>
-<td>
-<span class="listing-description">Apr 6 - Apr 9</span>
-</td>
-<td>
-<span class="listing-subtitle">Food Justice in Springfield, MA</span>
-</td>
-
-</tr>
-
-<tr data-index="12" data-listing-file-modified-sort="1768592559790" data-listing-reading-time-sort="1" data-listing-word-count-sort="2" data-listing-title-sort="Week 13" data-listing-filename-sort="week-13.qmd">
-<td>
-<a href="./weeks/week-13.html" class="title listing-title">Week 13</a>
-</td>
-<td>
-<span class="listing-description">Apr 13 - Apr 16</span>
-</td>
-<td>
-<span class="listing-subtitle">Water Justice in Nashville, TN</span>
-</td>
-
-</tr>
-
-<tr data-index="13" data-listing-file-modified-sort="1768585115604" data-listing-reading-time-sort="1" data-listing-word-count-sort="18" data-listing-title-sort="Week 14" data-listing-filename-sort="week-14.qmd">
-<td>
-<a href="./weeks/week-14.html" class="title listing-title">Week 14</a>
-</td>
-<td>
-<span class="listing-description">Apr 20 - Apr 23</span>
-</td>
-<td>
-<span class="listing-subtitle">Project Strategizing</span>
-</td>
-
-</tr>
-
-<tr data-index="14" data-listing-file-modified-sort="1768585162806" data-listing-reading-time-sort="1" data-listing-word-count-sort="4" data-listing-title-sort="Week 15" data-listing-filename-sort="week-15.qmd">
-<td>
-<a href="./weeks/week-15.html" class="title listing-title">Week 15</a>
-</td>
-<td>
-<span class="listing-description">Apr 27- Apr 30</span>
-</td>
-<td>
-<span class="listing-subtitle">Reflecting and Sharing</span>
-</td>
-
-</tr>
-
-</tbody>
-</table>
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>I’m so pleased to have you joining ES-206! In preparation for our first class, please fill out <a href="https://docs.google.com/forms/d/e/1FAIpQLSfc2EFKW-J1nKfZZUZYO8xD01U21D0GK3VlYrGPDEvVqnq7Yg/viewform?usp=sharing&amp;ouid=102576151535349337042">this short pre-class survey</a> to tell me more about you and how I can best support you!</p>
 </section>
-<section id="assignments" class="level2">
-<h2 class="anchored" data-anchor-id="assignments">Assignments</h2>
-<p>You can find details and assignment instructions in the relevant week on the schedule.</p>
-<section id="homework" class="level3">
-<h3 class="anchored" data-anchor-id="homework">Homework</h3>
-<p>Homework will be submitted to Brightspace. Please see the schedule for due dates and detailed instructions.</p>
-</section>
-<section id="group-final-project" class="level3">
-<h3 class="anchored" data-anchor-id="group-final-project">Group Final Project</h3>
-<p>The final project is a cumulative reflection of your theoretical and methodological skills. Please see the <a href="./final_project/-desc.html">description</a> for detailed instructions.</p>
-<p><strong>Important Dates</strong></p>
-<ul>
-<li><a href="./final_project/w10-project_plan.html"><strong>Project Plan:</strong></a> Thursday, April 02, 2026 at 11:59 PM</li>
-<li><a href="w12-data_manip.qmd"><strong>Data Manipulation Checkpoint:</strong></a> Thursday, April 16, 2026 at 11:59 PM</li>
-<li><a href="./final_project/w15-final_project.html"><strong>Final Project:</strong></a> Thursday, April 30, 2026 at 11:59</li>
-</ul>
+<section id="submission" class="level2">
+<h2 class="anchored" data-anchor-id="submission">Submission</h2>
+<p>Please submit your answers by <strong>Monday, January 19, 2026 at 11:59 PM</strong>.</p>
 
 
-
-</section>
 </section>
 
 </main> <!-- /main -->
