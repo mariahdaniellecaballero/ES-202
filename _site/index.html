@@ -177,6 +177,7 @@ ul.task-list li input[type="checkbox"] {
 <strong>Location:</strong> Science Center Hub 103 Classroom<br>
 <strong>Instructor:</strong> Mariah D. Caballero<br>
 <strong>Office Hours:</strong> <a href="https://calendar.app.google/89TPfdnpV1eCqw5E9">By Appointment</a><br>
+<strong>Office Location:</strong> E152<br>
 <strong>Email:</strong> <a href="emailto:mc152@wellesley.edu">mc152@wellesley.edu</a></div>
 </section>
 <section id="course-description" class="level2">
@@ -269,7 +270,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/mariahdaniellecaballero\.github\.io\/ES-202\/");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
