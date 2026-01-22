@@ -15,4 +15,268 @@ execute:
   freeze: auto
   echo: true
 ---
-## Slides will be posted 24 hours in advance of class. 
+## About Me {.smaller}
+-   Mariah Caballero
+  - Call me Dr./Professor Caballero, or Dr./Professor Cab
+-   She/her pronouns
+-   Second semester at Wellesley! 
+- PhD in Community Research and Action from Vanderbilt University, concentration in Climate and Energy Policy
+- Use GIS/data science, policy analysis, and EJ theory to conduct research
+
+## Name Placard {.smaller}
+::: columns
+
+::: {.column style="width: 60%;"}
+- I'll bring these to our class meetings to learn names faster (I'm a visual learner!) and take attendance
+- Write...
+  - Name
+  - Pronouns
+- Add...
+  - Stickers !! 
+:::
+
+::: {.column width="40%"}
+![](images/doggy_sticker.png)
+:::
+:::
+
+## Now You
+- Name
+- Pronouns
+- Class Year
+- Major
+- Favorite sticker and why
+
+## Note on placards
+- Identity evolves on a non-academic schedule
+- If you ever want to change any aspect of your placard throughout the course, let me know! 
+
+## About this Course {.smaller}
+::: columns
+
+::: {.column style="width: 70%;"}
+- Environmental Justice tends to focus on *Distributional* and *Procedural* Justice
+- My take on Environmental Justice: 
+  - Expansive movement that welcomes everyone into belonging
+  - Community-based
+  - Solutions-focused
+  - Expands ideas of justice to include both theory and methods
+:::
+
+::: {.column width="30%"}
+![](images/forms_justice.png){.absolute bottom=0 right=0}
+:::
+:::
+
+## How my own path inspired this course {.smaller}
+- Vassar College (undergrad)
+  - First conceptions of EJ + interdisciplinarity
+- USEPA Drinking Water Management Branch 
+  - Data to support lived experiences
+  - Community engagement
+- Vanderbilt CRA
+  - Community engaged research
+  - Interdisciplinary research for advocacy
+  ![](images/grad.JPG){.absolute bottom=-60 right=0}
+
+## Course Design
+::: columns
+
+:::{.column style="width: 60%; font-size: 60%;"}
+- **Tuesdays:** Group and paired discussions on foundational EJ theory
+- **Fridays:** Community case study data visualization activity (in-class pairs, submitted individually)  
+
+  - **First 9 weeks:** Community case studies centered on past and present; introduction to R
+  - **Last 5 weeks:** Present and future-looking community case studies; final project prep; guest lectures from EJ practitioners
+:::
+
+:::{.column style="width: 40%; font-size: 60%;"}
+| Course Components                  | % of Grade  |
+|------------------------------------|-------------|
+| Participation + Attendance         | 10%         |
+| Weekly Assignments                 | 65%         |
+| Community Case Study Final Project | 25%         |
+
+:::
+
+:::
+
+## My Pedogogical Goals{.smaller}
+- **Reflect on your own identity** and how it relates to EJ-related research and action.
+- Build a course community that **recognizes and values** one another's strengths.
+- Learn applicable **interdisciplinary skills to research and advocate for** EJ-related challenges
+  - Individual homework and group final project
+  - All assignments are <= 10% 
+  - I want our classroom to be a safe, kind, and generative space!
+
+## Check-in
+- What interests you about this course?
+- Anything you're excited/unsure about?
+
+## Mixed Bag of Learners
+```{r}
+#| echo: false
+#| eval: true
+#| output: false
+library(readxl)
+library(tidyverse)
+library(wesanderson)
+library(janitor)
+df <- read_excel("/Users/mc152/Documents/GitHub/ES-202/slides/week-01/data/ES-202_fdoc.xlsx") %>% clean_names() %>% select(what_kind_of_learner_are_you:do_you_have_any_experience_using_r_studio)
+```
+
+```{r}
+#| echo: false
+#| eval: true
+#| output: true
+df %>% 
+  group_by(what_kind_of_learner_are_you) %>% 
+  summarise(Count = n()) %>% 
+ggplot(aes(x = what_kind_of_learner_are_you, y = Count, 
+               fill = what_kind_of_learner_are_you)) +
+  geom_bar(stat = "identity") +
+  coord_flip() +
+  scale_fill_manual(values = wes_palette("Darjeeling1", 4)) +
+  theme_minimal(base_family = "raleway") +
+  theme(
+    legend.position = "none",
+    plot.title = element_text(size = 16, face = "bold"),
+    axis.title = element_text(size = 14)
+  ) +
+  scale_y_continuous(breaks = seq(0, 5, by = 1)) + 
+  labs(
+    x = "Preferred Learning Type",
+    y = "Number of Students"
+  )
+```
+
+## Variety of Interests
+```{r}
+#| echo: false
+#| eval: true
+#| output: true
+df %>% 
+  group_by(which_environmental_justice_topic_excites_you_most) %>% 
+  summarise(Count = n()) %>% 
+ggplot(aes(x = reorder(which_environmental_justice_topic_excites_you_most, Count), y = Count, 
+               fill = which_environmental_justice_topic_excites_you_most)) +
+  geom_bar(stat = "identity") +
+  coord_flip() +
+  scale_fill_manual(values = wes_palette("Darjeeling1", 4)) +
+  theme_minimal(base_family = "raleway") +
+  theme(
+    legend.position = "none",
+    plot.title = element_text(size = 16, face = "bold"),
+    axis.title = element_text(size = 14)
+  ) +
+  scale_y_continuous(breaks = seq(0, 5, by = 1))+
+  labs(
+    x = "EJ Topic",
+    y = "Number of Students"
+  )
+```
+
+## Primed for Interdisciplinary Thinking
+```{r}
+#| echo: false
+#| eval: true
+#| output: true
+df %>% 
+  group_by(do_you_feel_more_comfortable_with_qualitative_or_quantitative_courses) %>% 
+  summarise(Count = n()) %>% 
+ggplot(aes(x = reorder(do_you_feel_more_comfortable_with_qualitative_or_quantitative_courses, Count), y = Count, 
+               fill = do_you_feel_more_comfortable_with_qualitative_or_quantitative_courses)) +
+  geom_bar(stat = "identity") +
+  coord_flip() +
+  scale_fill_manual(values = wes_palette("Darjeeling1", 2)) +
+  theme_minimal(base_family = "raleway") +
+  theme(
+    legend.position = "none",
+    plot.title = element_text(size = 16, face = "bold"),
+    axis.title = element_text(size = 14)
+  ) +
+  scale_y_continuous(breaks = seq(0, 5, by = 1))+
+  labs(
+    x = "Qual/Quant Preference",
+    y = "Number of Students"
+  )
+```
+
+## Ready to Learn R!
+```{r}
+#| echo: false
+#| eval: true
+#| output: true
+df %>% 
+  group_by(do_you_have_any_experience_using_r_studio) %>% 
+  summarise(Count = n()) %>% 
+ggplot(aes(x = reorder(do_you_have_any_experience_using_r_studio, Count), y = Count, 
+               fill = do_you_have_any_experience_using_r_studio)) +
+  geom_bar(stat = "identity") +
+  coord_flip() +
+  scale_fill_manual(values = wes_palette("Darjeeling1", 2)) +
+  theme_minimal(base_family = "raleway") +
+  theme(
+    legend.position = "none",
+    plot.title = element_text(size = 16, face = "bold"),
+    axis.title = element_text(size = 14)
+  ) +
+  labs(
+    x = "Experience with R",
+    y = "Number of Students"
+  )
+``` 
+
+## Housekeeping
+
+## Office Hours 
+- Optimized based on ES 202/206 student schedules, every student should be available for at least one of the following slots:
+- Currently: 
+  - Mon, 12-2 PM
+  - Wed, 2-3:30 PM
+  - Thurs, 4-5:15 PM
+
+## Centering Activity (optional){.smaller}
+- Life is busy, and we often have millions of things on our minds
+- Centering activities are brief activities (< 5 minutes) meant to bring everyone into the present
+- A student would be in charge of leading before each class 
+- This could be...
+  - A breathing exercise
+  - A silly doodle
+  - A journaling activity
+  - Reading your favorite poem
+  - Sharing your favorite new song
+- Are we into this?
+
+## Course Website
+bookmark: https://mariahdaniellecaballero.github.io/ES-202/ 
+
+## Generative AI Policy{.smaller}
+::: columns
+::: {.column width="40%"}
+- Data centers use *overwhelming* amounts of energy and water to answer queries.
+- It also poses significant threats to the learning outcomes of this class.
+- Therefore, **I ask that you do not use it** for the following:
+  - Summarizing or annoting readings
+  - Generating code of any kind
+  - Answering any questions on assignments
+:::
+
+::: {.column width="60%"}
+![](images/data_centers.jpg){}
+:::
+:::
+
+## Late Policy{.smaller}
+- Each student has **3 24-hour late passes**
+- Can use multiple passes on one assignment deadline. 
+- Work is not accepted after final exam period. 
+- Passes are not transferable, resuable, or divisible. 
+- After your late pass budget is exhausted, each additional 24-hour delay in assignment results in a 10% grade deduction.
+- To use a late day, fill out the Google form in the Syllabus *before* the assignment deadline.
+
+
+## For Monday
+- Check course website for readings 
+- Note on snow: 
+  - Class may be via Zoom, depending on conditions. Will let everyone know likely by Sunday evening.
