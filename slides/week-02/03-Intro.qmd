@@ -15,4 +15,213 @@ execute:
   freeze: auto
   echo: true
 ---
-## Slides will be posted 24 hours in advance of class. 
+
+## Class Overview 
+- Centering 
+- Announcements
+- Last Class
+- EJ over time
+  - EJ timeline
+  - Tenet-based approach
+- Intro to R
+
+## Centering
+- Lydia :-)
+
+## Come do Summer Research with me or Dr. Selden! 
+
+## My Project: {.smaller}
+| **Title:** Residential Decarbonization for Rural United States Communities: Opportunities for Energy Justice
+| **Description:** Transitioning United States (U.S.) households to be more efficient and use renewable energy sources is a critical component of the energy transition. Residential decarbonization also provides an opportunity for energy justice, where communities that have been previously disinvested in can be prioritized-- promoting healthier homes and more affordable energy bills. While significant research has been dedicated to decarbonizing homes in urban locations, very little research has been conducted on the challenges and opportunities for decarbonizing rural housing stock. This project will oversee three students on one interdisciplinary research project with multiple collaborators (Dr. Dan Sambor at Olin College and the Clean Energy Transition Institute in Seattle, WA) and research outcomes
+
+## Dr. Selden's Project: {.smaller}
+| **Title:** Mapping Fishing Communities' Economic and Cultural Ties to Offshore Locations to Enhance Participation in Management and Decision-making
+| **Description:** The seascape is an increasingly crowded place, and effective ocean management requires an understanding of the importance of ocean areas for fisheries, conservation, marine transportation, and marine-based renewable energy. We seek to make visible the relationship of fishing communities to offshore locations to enhance their participation in ecosystem-based management and marine spatial planning. To do so, this project will integrate quantitative spatial information from a thirty-year database of vessel trip records of Northeast US fishing communities with qualitiative analysis of existing oral histories.
+
+## Application 
+- Deadline: February 6, 2026, at 11 PM EST
+- [Link to Application](https://intranet.wellesley.edu/administrative/science-center/for-students/research-and-funding-opportunities/summer-research-program)
+
+## Last Class 
+![](./images/mind_map.png)
+
+# 
+![](./images/intersectional_Ej_fig.png)
+
+## What we Read {.smaller}
+- Murdock, E. G. (2020). [A history of environmental justice: Foundations, narratives, and perspectives](https://ebookcentral.proquest.com/lib/well/reader.action?docID=6228917&ppg=40&c=RVBVQg). In *Environmental justice* (pp. 6-17). Routledge.
+
+# EJ over Time
+
+## Origins of EJ {.smaller}
+::: columns
+::: {.column width="50%"}
+- Term "environmental justice" was popularized in 1980s
+- **1982:** Began as a social movement
+  - Communities of color organizing and resisting unfair siting activities (toxic waste, landfills, and oil refineries)
+  - Protests in Warren County, NC are especially salient to origins of EJ
+- **1987:** United Church of Christ (UCC) Commission for Racial Justice published report on Black and Latine exposure to toxic sites. 
+- **1991:** UCC hosted the First National People of Color Environmental Leadership Summit, where the 17 Principles of Environmental Justice were created.
+:::
+::: {.column width="50%"}
+![LaBalme, 1982](./images/warren_county.png)
+:::
+:::
+
+## 17 Principles of EJ {.smaller}
+::: columns
+::: {.column width="40%"}
+- Include principles such as: 
+  - Sustainable use of resources
+  - Public policy 
+  - Toxic hazard protection
+  - Right to participation
+  - Human rights
+  - Military occupation
+  - Education
+  - Individual choices
+:::
+::: {.column width="60%"}
+![NRDC, 1991](./images/poc_env_summit.png)
+:::
+:::
+
+## 17 Principles Excerpt{.smaller}
+![POC Env. Leadership Summit, 1991](./images/principles.png)
+
+
+
+## EJ as Policy {.smaller}
+::: columns
+::: {.column width="50%"}
+- 1994: EO 12898 passed by Clinton Administration
+  -  Requires federal agencies to integrate EJ initiatives into their work
+- 2021: EO 14008 passed by Biden Administration
+  - Justice40
+  - CEJST
+- 2022: Inflation Reduction Act 
+  - Defines environmental justice and has several EJ-related measures + incentives 
+- 2023: EO 14096 passed by Biden Administration
+  - Calls for whole-government approach to EJ
+- 2025: Massive repeal by Trump Administration
+  - EO 14173 revokes EO 12898
+  - EO 14148 revokes EOs 14008 + 14096
+:::
+::: {.column width="50%"}
+![NRDC, 2014](./images/Clinton_admin.jpg)
+:::
+:::
+
+## 17 Principles of EJ + Tenet-Based Approach
+- 17 Principles are still highly regarded
+-  Today, a lot of academic conversations around what EJ means to whom, and how to classify it.
+- I chose a five tenet approach (currently used a lot in Energy Justice scholarship), because it provides a nice framework for theorizing different aspects of justice, *while still staying true to the EJ imaginaries of POC Env. Leadership summit*
+
+
+## Tenet-Based Approach
+![](./images/tenets.png)
+
+## Defining and Implementing EJ?
+- What are the strengths and challenges associated with a principles versus a tenet approach?
+- How might the ongoing evolution of EJ as a social movement, policy, and academic conversation make implementation tricky? 
+
+# Intro to R
+## Checking R Installation
+- Was everyone able to install RStudio on their device? 
+
+## File Management{.smaller}
+::: columns
+::: {.column width="40%"}
+- File management is a critical component of coding.
+  - Important to start off on the right foot! 
+  - This is my suggested file structure.
+:::
+
+::: {.column width="60%"}
+![](images/file_structure.png)
+:::
+::: 
+
+## Integrated Development Environment {.smaller}
+::: columns
+::: {.column width="1%"}
+
+:::
+::: {.column width="99%"}
+![](images/ide.png)
+:::
+:::
+
+## Installing Packages
+- **Packages** are comprised of functions, data, and additional documentation to load, clean, and analyze your data. 
+- **You only need to install packages once, so do so in your console**
+  - Installing a package needs only one line of code: 
+- We'll also need to make a one-time change by running an install function. 
+```{r}
+#| eval: false
+#| echo: true
+install.packages("tinytex")
+tinytex::install_tinytex()
+```
+
+## Creating and Saving a New Quarto Document
+- Click the green plus in the upper left corner of the source pane.
+  - Select "Quarto Document" 
+  - Provide a title
+  - Select "PDF"
+- Save by clicking the "floppy disk" in the upper left corner. 
+  - **Make sure you select the right folder!**
+
+## Outline
+- Can be incredibly useful for organizing your document. 
+- Markdown style headers
+  - #: Heading one
+  - ##: Heading two
+  - and so on!
+
+## Code Chunks
+- Code chunks *always* start with [&#96;&#96;&#96;{r}]{style="color: #D00000;"} and end with [&#96;&#96;&#96;]{style="color: #D00000;"}
+- Chunk will be light gray, with three commands in the upper right corner.
+  - Mac: command + option + i 
+  - Windows: Ctrl + Alt + i
+```{r}
+#| eval: true
+#| echo: true
+
+2+ 2
+```
+
+## Code Block Options {.smaller}
+- Special comment at the top of the block 
+- Always start with "#|"
+
+| Option | Description |
+|--------|-------------|
+| label   | label code chunk |
+| eval   | Evaluate the code chunk (if false, just echos the code into the output). |
+| warning   | display warning (if false, it will remove warnings from the output) |
+| message | display message (if false, will remove messages from the output).
+
+
+
+## Annotations 
+- Two types of annotations:
+  - Inline text (type as normal, outside of a code chunk)
+  - Code Annotations (in code chunk, start with "#")
+
+```{r}
+#| eval: true
+#| echo: true
+
+# this is an annotation
+2 + 2
+```
+
+## Rendering Files
+- Click the blue arrow in the upper part of the source pane. 
+  - pdf file will automatically open in your web browser
+  - file is now available in your environment
+
+## For Monday 
+- Two readings on distributional justice 
+- Positionality Statement due Monday

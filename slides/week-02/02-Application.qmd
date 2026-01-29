@@ -15,4 +15,95 @@ execute:
   freeze: auto
   echo: true
 ---
-## Slides will be posted 24 hours in advance of class. 
+## Overview 
+- Centering activity
+- Reading Discussion
+  - Defining terms
+  - Mapping it out
+  - Intersectionality + positionality
+- Positionality Assignment
+- Setting Class Expectations
+
+## A Note on the Current Moment
+- I've been less productive than I'd intended recently.
+  - It can feel really difficult to hold so much pain and continue life normally. 
+- Now more than ever, we need to show up for and be accountable to one another. 
+  - If you want to stop in for a cup of tea, feel free to, and bring a friend! 
+  - Wellesley has services I can help navigate, too. 
+
+# Centering Activity
+- Ash :-)
+
+# Reading Discussion
+
+## What we Read {.smaller}
+- Holmes, A. G. D. (2020). [Researcher Positionality- A Consideration of Its Influence and Place in Qualitative Research - A New Researcher Guide](https://www.ulethbridge.ca/sites/default/files/2024/09/holmes_2020.pdf). 8(4) 1-10. 
+
+- Di Chiro, G. (2020). [Mobilizing 'intersectionality' in environmental justice research and action in a time of crisis](https://ebookcentral.proquest.com/lib/well/reader.action?docID=6228917&ppg=463&c=RVBVQg). Environmental justice, 316-333    
+
+## Warm-up
+- In what contexts have your heard the term intersectional used?
+
+## Terms to Define {.smaller}
+- Using the Di Chiro (2020) article, each team will define two clusters of terms...
+
+- [Team one](https://www.canva.com/design/DAG_eiwJkyU/pF3s2RMAJTfXF2iMhHI0tw/edit?utm_content=DAG_eiwJkyU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+  - Intersectionality 
+    - systems of oppression
+    - matrix of domination
+  - Environmental Justice
+    - Decolonial
+    - Multi-species
+- [Team two](https://www.canva.com/design/DAG_elypZaM/71o_jJ8DIHSJNBsMqoO_aw/edit?utm_content=DAG_elypZaM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+  - Commoning
+    - Collective care
+    - multi-scalar
+  - Multiplicity
+    - Additive Categories
+
+## Mapping it out
+
+- As Teams (~15 minutes)
+- One teammate- draw connections/words/doodles as needed
+- Another teammate- explain your system to the class
+- [As a class](https://www.canva.com/design/DAG_e_8PKl8/JxyuQtbhLGFYnN6pOG4SLg/edit?utm_content=DAG_e_8PKl8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) (~10 minutes): draw connections between all the terms
+
+## EJ + Intersectionality
+- What is the value of framing intersectionality as multiplicative rather than additive? 
+- Can we think of any current environmental challenges that might benefit from an intersectional, multi-scalar environmental justice analytical approach? 
+  - What kinds of questions might we pose? 
+- What are some commong threads in the Philadelphia examples DeChiro gives (Serenity Soular, Philly Thrive, Sanctuary Movement)?
+- What are the tensions between the university and the undercommons? 
+
+## Intersectionality + Positionality
+- Fixed versus fluid aspects of positionality? 
+- How might positionality change how we experience/understand EJ?
+- How will this impact how we approach this course? 
+
+## Positionality Statement Components
+- Your Lenses
+  - Philisophical, personal, theoretical beliefs, perspective
+- Potential influences on research 
+  - Age, political beliefs, race, ethnicity, gender, religious beliefs, class, sexuality, previous experiences
+- Insider/outsider positionality
+- Project context
+  - How your positionality might influence your work
+
+## Positionality Assignment
+- Value of the Reflexivity
+  - Research is very rarely objective
+  - Positionality acknowledges our place in the larger social fabric. 
+- HW 01 Questions?
+
+## Creating Shared Expectations
+- How do we want to be accountable to one another? 
+- This could mean agreeing to...
+  - Not use devices on Mondays 
+  - Assuming best intentions from peers
+  - Engaging in class conversation
+  - Listening to and respecting others' perspectives  
+
+## For Next Class
+- Reading on history of EJ, download RStudio
+- Lydia leading centering activity :-)
+- Positionality Statement due Monday (February 02, 2026) at 11:59 PM on Brightspace. 
