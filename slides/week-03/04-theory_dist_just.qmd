@@ -15,4 +15,114 @@ format:
 execute:
   freeze: auto
 ---
-## Slides will be posted 24 hours in advance of class. 
+## Class Overview 
+- Centering 
+- Five minute free write
+- Setting Class Expectations
+- Introduction to Theory and Case Study
+  - Discussion
+
+## Centering 
+- Dr. Caballero :-)
+
+## Five minute free write 
+- Biggest takeaways from the readings 
+  - Questions you still have 
+  - Things you disagree with 
+  - Newer ways of looking at things
+  - Chosen case study
+
+## Setting Shared Expectations
+- How do we want to be accountable to one another? 
+- This could mean agreeing to...
+  - Not use devices on Mondays 
+  - Assuming best intentions from peers
+  - Engaging in class conversation
+  - Listening to and respecting others' perspectives  
+
+## What we Read
+- Kaswan, A. (2020). [Distributive environmental justice](https://drive.google.com/drive/folders/1OXcR1KtOVPV__eWM2Pv-zQI9_gFl37eL). In *Environmental justice* (pp. 21-36). Routledge.                          
+- Bullard, R. D. (1983). [Solid Waste Sites and the Black Houston Community](https://drive.google.com/drive/folders/1OXcR1KtOVPV__eWM2Pv-zQI9_gFl37eL), Sociological inquiry, 53(2‐3), 273-288. 
+
+# Distributional Justice
+- Three dominant theories:
+  - utilitarianism
+  - equality
+  - capabilities
+
+# Utilitarianism
+- "Most good for the most people"
+- Can justify poor conditions for few, if it means much better conditions for many. 
+- Utilitarians do not ignore that inequality is relative.
+  - Providing resources to low-income families more impactful than rich ones -> greater impact on overall social welfare. 
+
+# Equality
+- Based in Rawl's concept, "Veil of Ignorance"
+  - If we didn't know our own identity, and asked what kind of distribution would be most fair, we would choose equality as a foundation. 
+  - "No one should be subject to more harm than others"
+
+## But what if the world is unequal?{.smaller}
+- Bases for deviating from strict equality
+![](./images/deviating_from_equality.png)
+
+## Minimum Capabilities
+- Rather than comparing the burden that people bear, maybe we focus on what people need to lead a meaningful life (Sen, 2009). 
+- Includes physical wellbeing and ability to make choices.
+- Can align well with legal approach to environmental protection (right to basic free will and wellbeing).
+
+## Discussion
+- What do we gain (and lose) by comparing experiences of distributional burden? 
+- Preference for comparative versus minimum capabilities framing? 
+- Who is involved in creating distributional injustice, and how to we measure/avoid/repair distributionally unjust outcomes? 
+
+# Intro to Community Case Study
+- Fantastic case of distributional justice. 
+- Uses data to legitimize lived experience.
+- Seminal study that influenced national SOE report, POC summit, and Environmental Justice Executive Order. 
+
+## Dr. Bullard {.smaller}
+::: {.columns }
+::: {.column .column width="60%"}
+- "Father of Environmental Justice"
+ - Distinguished professor of urban planning and environmental policy at Texas Southern University
+ - Director of the Bullard Center for Environmental and Climate Justice at TSU
+:::
+::: {.column .column width="40%"}
+![](images/Bullard.jpeg)
+:::
+:::
+
+## Solid Waste Siting in 1983, Houston, TX
+- USEPA created in 1970 
+- Love Canal discovered in 1977
+- Resource Conservation and Recovery Act passed in 1976
+  - Bullard's study considers different types of incinerators and landfill sites sited between 1920 to present. 
+    - Considers neighborhood composition and proximity to schools. 
+
+## Methods
+- Interviews with personnel from Houston's Solid Waste Management Division
+- Active permits 
+- US Census Statistics 
+
+## Findings 
+- Black residents more likely to live near solid waste sites than white counterparts. 
+  - Unjust process took place over 50+ years
+  - Local government paved the way for private industries to continue unjust patterns. 
+  - Disproportionate percentage of sites located near students with predominantly Black students. 
+
+## Why it Matters Today
+![](images/Houston_waste.png)
+
+## Discussion 
+- Are there aspects of Bullard's work that still feel pertinent to today's EJ challenges? 
+  - What's changed? 
+- What can we learn from Bullard's work, and how might we improve on it? 
+
+## Tying it Together 
+- How does distributional justice apply to this case? 
+  - Who are key stakeholders in Houston, and how are they operationalizing decisions that lead to unjust outcomes? 
+- Would Dr. Bullard consider his findings as ditributional injustice? 
+- Are we missing anything by only considering distributional injustice? 
+
+## For Thursday: 
+  - Case study coding using Bullard's data :-)

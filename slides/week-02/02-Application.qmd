@@ -95,14 +95,6 @@ execute:
   - Positionality acknowledges our place in the larger social fabric. 
 - HW 01 Questions?
 
-## Creating Shared Expectations
-- How do we want to be accountable to one another? 
-- This could mean agreeing to...
-  - Not use devices on Mondays 
-  - Assuming best intentions from peers
-  - Engaging in class conversation
-  - Listening to and respecting others' perspectives  
-
 ## For Next Class
 - Reading on history of EJ, download RStudio
 - Lydia leading centering activity :-)

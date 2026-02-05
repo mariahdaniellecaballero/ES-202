@@ -16,4 +16,271 @@ execute:
   freeze: auto
 ---
 
-## Slides will be posted 24 hours in advance of class. 
+```{r}
+#| echo: false
+#| eval: true
+
+library(tidyverse)
+library(gt)
+library(gtsummary)
+library(readr)
+
+sites <- read_csv("/Users/mc152/Documents/GitHub/ES-202/slides/week-03/data/bullard_1979_waste_sites.csv")
+```
+
+# Class Overview 
+- Centering activity
+- Setting the stage
+- Paired coding
+
+# Centering Activity
+- Dr. Caballero
+
+# Mappy Valentine's Day! {.smaller}
+![](images/mappy_valentines.jpg)
+
+# Setting the Stage
+## My Approach to Teaching Data Science for Environmental Justice
+- Assumes no background in data science
+- Focuses on the use of data for communicating environmental injustices and working toward more just solutions
+- Intended to connect to theoretical lessons
+
+## General Data Science Process {.smaller}
+![](./images/tidy_approach.png)
+
+## Course Organization
+- Bigger Picture Case Study (HW 02-- lots of wins)
+- Skills that build on one another (HW 03-07)
+  - Data Tidying
+  - Data Transforming 
+  - Data Visualization
+  - Intro to Spatial Data
+- Apply it! Use weeks 10 - 15 to show me your theoretical and methodological skills
+
+## Homework Approach
+- Assignments will be started in class on Thursdays in pairs and submitted the following Wednesday individually. 
+- I'll lecture a bit throughout the class to introduce new skills or topics, then let pairs work through sections of the assignment. 
+
+
+# Group Coding
+## Learning Outcomes
+- Basic usage of R
+- Recreate tables 1-3 in Bullard's Study 
+- Visualize Distributional Justice
+- Connect it to theoretical understandings of distributional justice
+
+## Let's Get Started
+- Find your pair
+- Navigate to the [google folder](https://drive.google.com/drive/folders/12UpHYNcs2aEt4zmJxByd8ft2K932CS5r?usp=sharing) linked in the homework description. 
+
+# Basic uses of R (collaborative)
+
+## Importing Data
+- This assignment is comprised of one dataset: 
+  - Robert Bullard's original data
+- Note on how I got this data
+
+## Getting Started
+- I've pre-installed packages in the project, so you should just need to run this line of code
+```{r}
+#| warning: false
+#| message: false
+#| echo: true
+#| eval: false 
+
+renv::restore()
+```
+
+
+## Loading Data
+- Now we load our data. Navigate to lower left corner and click on the "data" folder. 
+  -  Note the dataset entitled "bullard_1979_waste_sites.csv"
+- Load our first dataset, which includes the 13 landfill and incinerator sites in Bullard's first case study.
+
+```{r}
+#| warning: false
+#| message: false
+#| echo: true
+#| eval: false
+sites <- read_csv("data/bullard_1979_waste_sites.csv")
+```
+
+
+## Understanding data {.smaller}
+- the `sites` data that we've loaded is a `dataframe`, meaning it is a rectangular collection of variables (or columns) and observations (rows). In each cell, is a `value`. 
+![](./images/data_structure.png)
+- Examples of each?
+
+## Rules of Tidy Data
+- This dataset is `tabular`, meaning that the data is organized into a table with rows and columns. 
+  - `tidy` data has five rules: 
+    1. Every `variable` has its own column. 
+    2. Every `observation` is stored in its own row. 
+    3. Each `value` is stored in the cell of a corresponding variable.
+    4. Values don't contain units (this should be in a codebook).
+    5. No extraneous information (footnotes, extra titles, etc.)
+
+## Sites Data {.smaller}
+```{r}
+#| warning: false
+#| message: false
+#| echo: true
+sites
+```
+
+
+# Recreating Tables 1 through 3 (collaborative)
+
+## Pipes 
+- Pipe functions allow us to connect multiple functions together 
+  - They **always** are placed at the end of a line
+- In this case, we could call the `sites` dataframe, and then `count()` the different types of sites (`type`). 
+```{r}
+#| echo: true
+#| eval: true
+sites |> 
+  count(type)
+```
+
+## filter() function
+- Allows us to select rows that meet certain criteria. 
+  - Filter for sites located in the Sunnyside neighborhood
+```{r}
+#| echo: true
+#| eval: true
+
+sites |> 
+  filter(neighborhood == "SUNNYSIDE")
+```
+
+## filter() function {.smaller}
+| Operator | Meaning | Example |
+|----------|-------------------|------------------------|
+| `==` | Equal to | `filter(type == "Incinerator")` |
+| `!=` | Not equal to | `filter(type != "Landfill")` |
+| `>`, `>=` | Greater than (or equal) | `filter(value > 10)` |
+| `<`, `<=` | Less than (or equal) | `filter(value <= 10)` |
+| `&` | AND | `filter(type == "Incinerator" & value > 10)` |
+| `|` | OR | `filter(type == "Landfill" | state == "TX")` |
+| `!` | NOT | `filter(!is.na(type))` |
+| `%in%` | In a set | `filter(type %in% c("Landfill", "Mini-Landfill"))` |
+| `between()` | Between range | `filter(between(value, 5, 15))` |
+| `is.na()` | Is missing | `filter(is.na(type))` |
+
+
+## Selecting variables
+- We can transform our dataframes by: 
+  - using the `filter()` function to select for values we want
+  - using the `select()` function to select the columns we want
+- Assigning the results to a new dataframe 
+```{r}
+#| warning: false
+#| message: false
+#| echo: true
+
+table_one <- sites |>
+  filter(type == "Incinerator") |>
+  dplyr::select(facility, neighborhood, predom_eth_1979, location)
+
+table_one
+```
+
+## Formatting Tables {.smaller}
+- The `gt()` function makes publication-ready tables!
+  - `cols_label()` will label your columns
+  - `tab_header()` will add a title + subtitle
+  - `tab_source_note()` will add a footer
+
+```{r}
+#| warning: false
+#| message: false
+#| echo: true
+#| code-line-numbers: "1|2|3|9|13"
+
+table_one |>
+  gt() |>
+  cols_label(
+    facility = "Site of Incinerator",
+    neighborhood = "Neighborhood",
+    predom_eth_1979 = "Ethnicity",
+    location = "Location"
+  ) |>
+  tab_header(
+    title = ("Table 1"),
+    subtitle = "City of Houston Garbage Incinerators"
+  ) |>
+  tab_source_note("The above Houston-owned garbage incinerators were in operation between the 1920's and 1975")
+```
+
+## Exercise One: Rinse, Wash, Repeat for Tables 2 and 3
+- Recreate tables 2 and 3 using the same approaches
+- Pay close attention to the information shared in each table (i.e., site type, column headers + footers)
+
+# Visualizing Distributional Injustice
+- First, let's recreate table 4
+  - Summarizes the type of landfill disposal site by % of black and non-black communities.
+  - Thoughts on process getting from `sites` dataframe to table 4?
+
+## Transforming Data
+- Bullard summarizes by both facility type and ethnicity (black versus non-black). 
+  - can use an `if_else` function nested in a `mutate` function.
+    - `mutate` function can add or modify a variable
+    - `if_else` creates a test and defines what to do with variables that meet (or do not) meet the test. 
+
+## if_else()
+!![](images/if_else.png)
+
+## Creating Summary Table {.smaller}
+- To summarize by two groups, Bullard creates a `crosstabs` table
+- Can be done using the `gtsummary` package
+```{r}
+#| warning: false
+#| message: false
+#| echo: true
+#| code-line-numbers: "|3|4|5|6"
+
+sites |>
+  mutate(eth_binary = if_else(predom_eth_1979 == "Black", "Black", "Nonblack")) |>
+  tbl_cross(
+    row = type,
+    col = eth_binary,
+    percent = "row"
+  )
+```
+
+## Formatting Table {.smaller}
+- We can format some additional things like labels for `type` and `eth_binary`. 
+```{r}
+#| warning: false
+#| message: false
+#| echo: true
+#| code-line-numbers: "|7|9"
+
+sites |>
+  mutate(eth_binary = if_else(predom_eth_1979 == "Black", "Black", "Nonblack")) |>
+  tbl_cross(
+    row = type,
+    col = eth_binary,
+    percent = "row",
+    label = list(type ~ "Waste Disposal Sites", eth_binary ~ "Ethnicity")
+  ) |>
+  bold_labels()
+```
+
+## Exercise 2: One more summary table 
+- Suppose you lived in a Southwest neighborhood and were interested in the distribution of facility types by Southwest versus non-southwest neighborhoods.
+- Create a cross tabs summary table (make sure it's formatted nicely!) 
+
+
+
+## Exercise 3: Reading a Vignette (collaborative)
+- Often, we get a bit mixed up when we're first starting. 
+- One helpful way to troubleshoot, can be typing "?" followed by the function into your console (i.e., `?scale_fill_manual()`)
+- Read the vignette for the `scale_fill_manual()` package. What package does it recommend for color blindness?
+
+## Exercise 04 (individual)
+Connect to theory, see assignment for details. 
+
+## Next Week
+- For Monday: articles on procedural justice + the Bracero Program 
+- Sara leading centering :-) 

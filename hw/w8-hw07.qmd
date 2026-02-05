@@ -13,7 +13,7 @@ This case study uses data on solar development  data from the National Renewable
 - Connect findings to theoretical understandings of the five tenets of Environmental Justice
 
 ## Instructions
-Download the project file [here]() to your computer and complete the assignment in Rstudio.
+Download the project file [here](https://drive.google.com/drive/folders/12UpHYNcs2aEt4zmJxByd8ft2K932CS5r?usp=sharing) to your computer and complete the assignment in Rstudio.
 
 Render your .qmd file as a pdf and submit it to Brightspace. Please ensure to limit unnecessary warnings and messages that clutter the file by adjusting options in the code chunk. 
 
