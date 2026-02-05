@@ -54,7 +54,7 @@
     "href": "syllabus.html#course-community",
     "title": "Syllabus",
     "section": "Course Community",
-    "text": "Course Community\n\nTeaching, Learning, and Being in Community\nI hope that students not only take away the skills associated with the course’s measurable outcomes, but also learn more about themselves, their peers, and the environment around them. This requires a certain level of vulnerability and trust, which I hope that we can establish together.\nI also designed this course to help students foster community beyond the classroom, so that they too can go on to build expansive, solution-oriented movements that welcome everyone into a collective vision of what the world could be. I share some of adrienne marie brown’s 1 points on social justice and community, that may be useful to ask of yourself and others throughout this course:\n\nHow can we invite our peers into belonging?\nHow can we create conditions that ensure dignity for each person?\nHow can we challenge regressive beliefs meant to divide us, and remind one another that we belong to this planet, and each other?\nHow can we forge communities that not only survive, but can imagine more equitable realities?\n\n\n\nShared Expectations\nIn this course, we intend to be accountable to one another by… - Assuming best intentions from peers - Asking for clarification if you disagree with a statement - Not having phones on the desk - Using devices for class material only - Collaborating with peers",
+    "text": "Course Community\n\nTeaching, Learning, and Being in Community\nI hope that students not only take away the skills associated with the course’s measurable outcomes, but also learn more about themselves, their peers, and the environment around them. This requires a certain level of vulnerability and trust, which I hope that we can establish together.\nI also designed this course to help students foster community beyond the classroom, so that they too can go on to build expansive, solution-oriented movements that welcome everyone into a collective vision of what the world could be. I share some of adrienne marie brown’s 1 points on social justice and community, that may be useful to ask of yourself and others throughout this course:\n\nHow can we invite our peers into belonging?\nHow can we create conditions that ensure dignity for each person?\nHow can we challenge regressive beliefs meant to divide us, and remind one another that we belong to this planet, and each other?\nHow can we forge communities that not only survive, but can imagine more equitable realities?\n\n\n\nShared Expectations\nIn this course, we intend to be accountable to one another by… - Stories stay, lessons leave - Take space, leave space - Prepare & Engage - Bring the classroom community out - Apply work to ongoing life/events - Centering Humanity",
     "crumbs": [
       "Syllabus"
     ]
@@ -1766,11 +1766,186 @@
     "text": "For Monday\n\nTwo readings on distributional justice\nPositionality Statement due Monday"
   },
   {
-    "objectID": "slides/week-03/05-assess_landfills.html#slides-will-be-posted-24-hours-in-advance-of-class.",
-    "href": "slides/week-03/05-assess_landfills.html#slides-will-be-posted-24-hours-in-advance-of-class.",
+    "objectID": "slides/week-03/05-assess_landfills.html#my-approach-to-teaching-data-science-for-environmental-justice",
+    "href": "slides/week-03/05-assess_landfills.html#my-approach-to-teaching-data-science-for-environmental-justice",
     "title": "[Assess] Solid Waste Landfill Siting",
-    "section": "Slides will be posted 24 hours in advance of class.",
-    "text": "Slides will be posted 24 hours in advance of class."
+    "section": "My Approach to Teaching Data Science for Environmental Justice",
+    "text": "My Approach to Teaching Data Science for Environmental Justice\n\nAssumes no background in data science\nFocuses on the use of data for communicating environmental injustices and working toward more just solutions\nIntended to connect to theoretical lessons"
+  },
+  {
+    "objectID": "slides/week-03/05-assess_landfills.html#general-data-science-process",
+    "href": "slides/week-03/05-assess_landfills.html#general-data-science-process",
+    "title": "[Assess] Solid Waste Landfill Siting",
+    "section": "General Data Science Process",
+    "text": "General Data Science Process"
+  },
+  {
+    "objectID": "slides/week-03/05-assess_landfills.html#course-organization",
+    "href": "slides/week-03/05-assess_landfills.html#course-organization",
+    "title": "[Assess] Solid Waste Landfill Siting",
+    "section": "Course Organization",
+    "text": "Course Organization\n\nBigger Picture Case Study (HW 02– lots of wins)\nSkills that build on one another (HW 03-07)\n\nData Tidying\nData Transforming\nData Visualization\nIntro to Spatial Data\n\nApply it! Use weeks 10 - 15 to show me your theoretical and methodological skills"
+  },
+  {
+    "objectID": "slides/week-03/05-assess_landfills.html#homework-approach",
+    "href": "slides/week-03/05-assess_landfills.html#homework-approach",
+    "title": "[Assess] Solid Waste Landfill Siting",
+    "section": "Homework Approach",
+    "text": "Homework Approach\n\nAssignments will be started in class on Thursdays in pairs and submitted the following Wednesday individually.\nI’ll lecture a bit throughout the class to introduce new skills or topics, then let pairs work through sections of the assignment."
+  },
+  {
+    "objectID": "slides/week-03/05-assess_landfills.html#learning-outcomes",
+    "href": "slides/week-03/05-assess_landfills.html#learning-outcomes",
+    "title": "[Assess] Solid Waste Landfill Siting",
+    "section": "Learning Outcomes",
+    "text": "Learning Outcomes\n\nBasic usage of R\nRecreate tables 1-3 in Bullard’s Study\nVisualize Distributional Justice\nConnect it to theoretical understandings of distributional justice"
+  },
+  {
+    "objectID": "slides/week-03/05-assess_landfills.html#lets-get-started",
+    "href": "slides/week-03/05-assess_landfills.html#lets-get-started",
+    "title": "[Assess] Solid Waste Landfill Siting",
+    "section": "Let’s Get Started",
+    "text": "Let’s Get Started\n\nFind your pair\nNavigate to the google folder linked in the homework description."
+  },
+  {
+    "objectID": "slides/week-03/05-assess_landfills.html#importing-data",
+    "href": "slides/week-03/05-assess_landfills.html#importing-data",
+    "title": "[Assess] Solid Waste Landfill Siting",
+    "section": "Importing Data",
+    "text": "Importing Data\n\nThis assignment is comprised of one dataset:\n\nRobert Bullard’s original data\n\nNote on how I got this data"
+  },
+  {
+    "objectID": "slides/week-03/05-assess_landfills.html#getting-started",
+    "href": "slides/week-03/05-assess_landfills.html#getting-started",
+    "title": "[Assess] Solid Waste Landfill Siting",
+    "section": "Getting Started",
+    "text": "Getting Started\n\nI’ve pre-installed packages in the project, so you should just need to run this line of code\n\n\nrenv::restore()"
+  },
+  {
+    "objectID": "slides/week-03/05-assess_landfills.html#loading-data",
+    "href": "slides/week-03/05-assess_landfills.html#loading-data",
+    "title": "[Assess] Solid Waste Landfill Siting",
+    "section": "Loading Data",
+    "text": "Loading Data\n\nNow we load our data. Navigate to lower left corner and click on the “data” folder.\n\nNote the dataset entitled “bullard_1979_waste_sites.csv”\n\nLoad our first dataset, which includes the 13 landfill and incinerator sites in Bullard’s first case study.\n\n\nsites &lt;- read_csv(\"data/bullard_1979_waste_sites.csv\")"
+  },
+  {
+    "objectID": "slides/week-03/05-assess_landfills.html#understanding-data",
+    "href": "slides/week-03/05-assess_landfills.html#understanding-data",
+    "title": "[Assess] Solid Waste Landfill Siting",
+    "section": "Understanding data",
+    "text": "Understanding data\n\nthe sites data that we’ve loaded is a dataframe, meaning it is a rectangular collection of variables (or columns) and observations (rows). In each cell, is a value. \nExamples of each?"
+  },
+  {
+    "objectID": "slides/week-03/05-assess_landfills.html#rules-of-tidy-data",
+    "href": "slides/week-03/05-assess_landfills.html#rules-of-tidy-data",
+    "title": "[Assess] Solid Waste Landfill Siting",
+    "section": "Rules of Tidy Data",
+    "text": "Rules of Tidy Data\n\nThis dataset is tabular, meaning that the data is organized into a table with rows and columns.\n\ntidy data has five rules:\n\nEvery variable has its own column.\nEvery observation is stored in its own row.\nEach value is stored in the cell of a corresponding variable.\nValues don’t contain units (this should be in a codebook).\nNo extraneous information (footnotes, extra titles, etc.)"
+  },
+  {
+    "objectID": "slides/week-03/05-assess_landfills.html#sites-data",
+    "href": "slides/week-03/05-assess_landfills.html#sites-data",
+    "title": "[Assess] Solid Waste Landfill Siting",
+    "section": "Sites Data",
+    "text": "Sites Data\n\nsites\n\n# A tibble: 13 × 5\n   facility                 neighborhood          type  predom_eth_1979 location\n   &lt;chr&gt;                    &lt;chr&gt;                 &lt;chr&gt; &lt;chr&gt;           &lt;chr&gt;   \n 1 Fourth Ward              FOURTH WARD           Inci… Black           Southwe…\n 2 Patterson Street         WEST END/COTTAGE GRO… Inci… Black           Northwe…\n 3 Kelly Street             KASHMERE GARDENS      Inci… Black           Northea…\n 4 Holmes Road              SUNNYSIDE             Inci… Black           Southea…\n 5 Velasco                  SECOND WARD           Inci… Hispanic        Southea…\n 6 Westpark                 LARCHMONT             Mini… White           Sothwest\n 7 Kelly Street             KASHMERE GARDENS      Mini… Black           Northea…\n 8 Northwest Service Center CARVERDALE            Mini… Black           Northwe…\n 9 Fourth Ward              FOURTH WARD           Land… Black           Southwe…\n10 Sunnyside                SUNNYSIDE             Land… Black           Southea…\n11 Reed Road                SUNNYSIDE             Land… Black           Southea…\n12 Kirkpatrick              TRINITY GARDENS       Land… Black           Northea…\n13 West Donnovan            ACRES HOMES           Land… Black           Northwe…"
+  },
+  {
+    "objectID": "slides/week-03/05-assess_landfills.html#pipes",
+    "href": "slides/week-03/05-assess_landfills.html#pipes",
+    "title": "[Assess] Solid Waste Landfill Siting",
+    "section": "Pipes",
+    "text": "Pipes\n\nPipe functions allow us to connect multiple functions together\n\nThey always are placed at the end of a line\n\nIn this case, we could call the sites dataframe, and then count() the different types of sites (type).\n\n\nsites |&gt; \n  count(type)\n\n# A tibble: 3 × 2\n  type                 n\n  &lt;chr&gt;            &lt;int&gt;\n1 Incinerator          5\n2 Landfill             5\n3 Mini-incinerator     3"
+  },
+  {
+    "objectID": "slides/week-03/05-assess_landfills.html#filter-function",
+    "href": "slides/week-03/05-assess_landfills.html#filter-function",
+    "title": "[Assess] Solid Waste Landfill Siting",
+    "section": "filter() function",
+    "text": "filter() function\n\nAllows us to select rows that meet certain criteria.\n\nFilter for sites located in the Sunnyside neighborhood\n\n\n\nsites |&gt; \n  filter(neighborhood == \"SUNNYSIDE\")\n\n# A tibble: 3 × 5\n  facility    neighborhood type        predom_eth_1979 location \n  &lt;chr&gt;       &lt;chr&gt;        &lt;chr&gt;       &lt;chr&gt;           &lt;chr&gt;    \n1 Holmes Road SUNNYSIDE    Incinerator Black           Southeast\n2 Sunnyside   SUNNYSIDE    Landfill    Black           Southeast\n3 Reed Road   SUNNYSIDE    Landfill    Black           Southeast"
+  },
+  {
+    "objectID": "slides/week-03/05-assess_landfills.html#filter-function-1",
+    "href": "slides/week-03/05-assess_landfills.html#filter-function-1",
+    "title": "[Assess] Solid Waste Landfill Siting",
+    "section": "filter() function",
+    "text": "filter() function\n\n\n\n\n\n\n\n\nOperator\nMeaning\nExample\n\n\n\n\n==\nEqual to\nfilter(type == \"Incinerator\")\n\n\n!=\nNot equal to\nfilter(type != \"Landfill\")\n\n\n&gt;, &gt;=\nGreater than (or equal)\nfilter(value &gt; 10)\n\n\n&lt;, &lt;=\nLess than (or equal)\nfilter(value &lt;= 10)\n\n\n&\nAND\nfilter(type == \"Incinerator\" & value &gt; 10)\n\n\n|\nOR\nfilter(type == \"Landfill\" | state == \"TX\")\n\n\n!\nNOT\nfilter(!is.na(type))\n\n\n%in%\nIn a set\nfilter(type %in% c(\"Landfill\", \"Mini-Landfill\"))\n\n\nbetween()\nBetween range\nfilter(between(value, 5, 15))\n\n\nis.na()\nIs missing\nfilter(is.na(type))"
+  },
+  {
+    "objectID": "slides/week-03/05-assess_landfills.html#selecting-variables",
+    "href": "slides/week-03/05-assess_landfills.html#selecting-variables",
+    "title": "[Assess] Solid Waste Landfill Siting",
+    "section": "Selecting variables",
+    "text": "Selecting variables\n\nWe can transform our dataframes by:\n\nusing the filter() function to select for values we want\nusing the select() function to select the columns we want\n\nAssigning the results to a new dataframe\n\n\ntable_one &lt;- sites |&gt;\n  filter(type == \"Incinerator\") |&gt;\n  dplyr::select(facility, neighborhood, predom_eth_1979, location)\n\ntable_one\n\n# A tibble: 5 × 4\n  facility         neighborhood           predom_eth_1979 location \n  &lt;chr&gt;            &lt;chr&gt;                  &lt;chr&gt;           &lt;chr&gt;    \n1 Fourth Ward      FOURTH WARD            Black           Southwest\n2 Patterson Street WEST END/COTTAGE GROVE Black           Northwest\n3 Kelly Street     KASHMERE GARDENS       Black           Northeast\n4 Holmes Road      SUNNYSIDE              Black           Southeast\n5 Velasco          SECOND WARD            Hispanic        Southeast"
+  },
+  {
+    "objectID": "slides/week-03/05-assess_landfills.html#formatting-tables",
+    "href": "slides/week-03/05-assess_landfills.html#formatting-tables",
+    "title": "[Assess] Solid Waste Landfill Siting",
+    "section": "Formatting Tables",
+    "text": "Formatting Tables\n\nThe gt() function makes publication-ready tables!\n\ncols_label() will label your columns\ntab_header() will add a title + subtitle\ntab_source_note() will add a footer\n\n\n\ntable_one |&gt;\n  gt() |&gt;\n  cols_label(\n    facility = \"Site of Incinerator\",\n    neighborhood = \"Neighborhood\",\n    predom_eth_1979 = \"Ethnicity\",\n    location = \"Location\"\n  ) |&gt;\n  tab_header(\n    title = (\"Table 1\"),\n    subtitle = \"City of Houston Garbage Incinerators\"\n  ) |&gt;\n  tab_source_note(\"The above Houston-owned garbage incinerators were in operation between the 1920's and 1975\")\n\n\n\n\n\n\n\nTable 1\n\n\nCity of Houston Garbage Incinerators\n\n\nSite of Incinerator\nNeighborhood\nEthnicity\nLocation\n\n\n\n\nFourth Ward\nFOURTH WARD\nBlack\nSouthwest\n\n\nPatterson Street\nWEST END/COTTAGE GROVE\nBlack\nNorthwest\n\n\nKelly Street\nKASHMERE GARDENS\nBlack\nNortheast\n\n\nHolmes Road\nSUNNYSIDE\nBlack\nSoutheast\n\n\nVelasco\nSECOND WARD\nHispanic\nSoutheast\n\n\n\nThe above Houston-owned garbage incinerators were in operation between the 1920's and 1975"
+  },
+  {
+    "objectID": "slides/week-03/05-assess_landfills.html#exercise-one-rinse-wash-repeat-for-tables-2-and-3",
+    "href": "slides/week-03/05-assess_landfills.html#exercise-one-rinse-wash-repeat-for-tables-2-and-3",
+    "title": "[Assess] Solid Waste Landfill Siting",
+    "section": "Exercise One: Rinse, Wash, Repeat for Tables 2 and 3",
+    "text": "Exercise One: Rinse, Wash, Repeat for Tables 2 and 3\n\nRecreate tables 2 and 3 using the same approaches\nPay close attention to the information shared in each table (i.e., site type, column headers + footers)"
+  },
+  {
+    "objectID": "slides/week-03/05-assess_landfills.html#transforming-data",
+    "href": "slides/week-03/05-assess_landfills.html#transforming-data",
+    "title": "[Assess] Solid Waste Landfill Siting",
+    "section": "Transforming Data",
+    "text": "Transforming Data\n\nBullard summarizes by both facility type and ethnicity (black versus non-black).\n\ncan use an if_else function nested in a mutate function.\n\nmutate function can add or modify a variable\nif_else creates a test and defines what to do with variables that meet (or do not) meet the test."
+  },
+  {
+    "objectID": "slides/week-03/05-assess_landfills.html#if_else",
+    "href": "slides/week-03/05-assess_landfills.html#if_else",
+    "title": "[Assess] Solid Waste Landfill Siting",
+    "section": "if_else()",
+    "text": "if_else()\n!"
+  },
+  {
+    "objectID": "slides/week-03/05-assess_landfills.html#creating-summary-table",
+    "href": "slides/week-03/05-assess_landfills.html#creating-summary-table",
+    "title": "[Assess] Solid Waste Landfill Siting",
+    "section": "Creating Summary Table",
+    "text": "Creating Summary Table\n\nTo summarize by two groups, Bullard creates a crosstabs table\nCan be done using the gtsummary package\n\n\nsites |&gt;\n  mutate(eth_binary = if_else(predom_eth_1979 == \"Black\", \"Black\", \"Nonblack\")) |&gt;\n  tbl_cross(\n    row = type,\n    col = eth_binary,\n    percent = \"row\"\n  )\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\neth_binary\n\nTotal\n\n\nBlack\nNonblack\n\n\n\n\ntype\n\n\n\n\n\n\n\n\n    Incinerator\n4 (80%)\n1 (20%)\n5 (100%)\n\n\n    Landfill\n5 (100%)\n0 (0%)\n5 (100%)\n\n\n    Mini-incinerator\n2 (67%)\n1 (33%)\n3 (100%)\n\n\nTotal\n11 (85%)\n2 (15%)\n13 (100%)"
+  },
+  {
+    "objectID": "slides/week-03/05-assess_landfills.html#formatting-table",
+    "href": "slides/week-03/05-assess_landfills.html#formatting-table",
+    "title": "[Assess] Solid Waste Landfill Siting",
+    "section": "Formatting Table",
+    "text": "Formatting Table\n\nWe can format some additional things like labels for type and eth_binary.\n\n\nsites |&gt;\n  mutate(eth_binary = if_else(predom_eth_1979 == \"Black\", \"Black\", \"Nonblack\")) |&gt;\n  tbl_cross(\n    row = type,\n    col = eth_binary,\n    percent = \"row\",\n    label = list(type ~ \"Waste Disposal Sites\", eth_binary ~ \"Ethnicity\")\n  ) |&gt;\n  bold_labels()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEthnicity\n\nTotal\n\n\nBlack\nNonblack\n\n\n\n\nWaste Disposal Sites\n\n\n\n\n\n\n\n\n    Incinerator\n4 (80%)\n1 (20%)\n5 (100%)\n\n\n    Landfill\n5 (100%)\n0 (0%)\n5 (100%)\n\n\n    Mini-incinerator\n2 (67%)\n1 (33%)\n3 (100%)\n\n\nTotal\n11 (85%)\n2 (15%)\n13 (100%)"
+  },
+  {
+    "objectID": "slides/week-03/05-assess_landfills.html#exercise-2-one-more-summary-table",
+    "href": "slides/week-03/05-assess_landfills.html#exercise-2-one-more-summary-table",
+    "title": "[Assess] Solid Waste Landfill Siting",
+    "section": "Exercise 2: One more summary table",
+    "text": "Exercise 2: One more summary table\n\nSuppose you lived in a Southwest neighborhood and were interested in the distribution of facility types by Southwest versus non-southwest neighborhoods.\nCreate a cross tabs summary table (make sure it’s formatted nicely!)"
+  },
+  {
+    "objectID": "slides/week-03/05-assess_landfills.html#exercise-3-reading-a-vignette-collaborative",
+    "href": "slides/week-03/05-assess_landfills.html#exercise-3-reading-a-vignette-collaborative",
+    "title": "[Assess] Solid Waste Landfill Siting",
+    "section": "Exercise 3: Reading a Vignette (collaborative)",
+    "text": "Exercise 3: Reading a Vignette (collaborative)\n\nOften, we get a bit mixed up when we’re first starting.\nOne helpful way to troubleshoot, can be typing “?” followed by the function into your console (i.e., ?scale_fill_manual())\nRead the vignette for the scale_fill_manual() package. What package does it recommend for color blindness?"
+  },
+  {
+    "objectID": "slides/week-03/05-assess_landfills.html#exercise-04-individual",
+    "href": "slides/week-03/05-assess_landfills.html#exercise-04-individual",
+    "title": "[Assess] Solid Waste Landfill Siting",
+    "section": "Exercise 04 (individual)",
+    "text": "Exercise 04 (individual)\nConnect to theory, see assignment for details."
+  },
+  {
+    "objectID": "slides/week-03/05-assess_landfills.html#next-week",
+    "href": "slides/week-03/05-assess_landfills.html#next-week",
+    "title": "[Assess] Solid Waste Landfill Siting",
+    "section": "Next Week",
+    "text": "Next Week\n\nFor Monday: articles on procedural justice + the Bracero Program\nSara leading centering :-)"
   },
   {
     "objectID": "slides/week-04/07-assess_braceros.html#slides-will-be-posted-24-hours-in-advance-of-class.",
