@@ -15,4 +15,152 @@ format:
 execute:
   freeze: auto
 ---
-## Slides will be posted 24 hours in advance of class. 
+
+##  Class Overview 
+- Centering activity
+- Procedural Justice
+- Bracero Program
+- Closing
+
+## Centering Activity
+- Sara :-) 
+
+## 5-minute Free Write
+  - Biggest takeaways from the readings 
+  - Questions you still have 
+  - Things you disagree with 
+  - Newer ways of looking at things
+  - Chosen case study
+
+## What we Read {.smaller}
+- Bell, D., & Carrick, J. (2017). Procedural environmental justice. In The Routledge handbook of environmental justice (pp. 101-112). Routledge.
+- Gamboa, E. (1981). Mexican migration into Washington state: A History, 1940-1950. The Pacific Northwest Quarterly, 72(3), 121-131.
+
+## Evolution of Procedural Justice
+- 1960s to early 2000s: Focus on distributional justice
+- Early 2000s: Growing focus on procedural justice 
+ - *"procedural justice is a key condition for distributive environmental justice"* (Schlosburg, 2007, ppp 51)
+
+## Interconnectedness of Procedural Justice{.smaller}
+![](./images/interconnectedness.png)
+
+## Conceptions of Procedural Environmental Justice {.smaller}
+- **Equality:** Power is shared equally among potential participants in decision-making process
+  - **Proportionality:** power in environmental decisionmaking should be distributed *in proportion* to their stake in the outcome. 
+  - **Plurality:** Everyone potentially affected by the outcome should be included in decision-making process *as an equal*.
+
+## Hunold and Young's Forms of Procedural Justice {.smaller}
+![](./images/five_proc_just.png)
+
+## Five Principles in Praxis 
+- **Continuum**
+  - Inclusiveness
+  - Consultation over time
+  - Design of Decision-making Procedures
+- **All or nothing**
+  - Shared decision-making authority
+  - Authoritative decision-making
+
+## Studying Procedural Justice
+- Ethnography/participant observation
+- Power-mapping
+- Comparison to theoretical framework
+
+## Scale + Procedural Justice
+- What are the challenges of each form of procedural environmental justice at different scales? 
+- Which of the five principles are likely most difficult to uphold in practice?
+- Are there examples of institutions making strides toward procedural environmental justice? 
+
+## Overview of Bracero Program
+
+::: columns
+::: {.column width="60%" style="font-size: 70%;"}
+- **Bracero** translates to "strong arm"
+- **1942: Public Law 45** EO establishes a bi-lateral agreement between Mexico and the U.S. for short-term farm labor
+    - Mexican Revolution destabilized Mexico’s economy, WWII created a labor shortage in the U.S.
+- **1951: Public Law 78** passed to extend, formalize, and decentralize the Bracero Program, and include additional protections.
+  - Agreement promised fair wages, steady employment, free housing, insurance, and transportation home.
+- **Program ended in 1964**, after admitting over **5 million** temporary workers across **24 states**
+:::
+
+::: {.column width="40%"}
+![](images/bracero.png)
+:::
+
+:::
+
+## Procedural Injustices of the Bracero Program 
+
+::: columns
+::: {.column width="50%" style="font-size: 70%;"}
+- Federally-sanctioned process that created temporary contracts for Mexican nationals 
+  - YVFVFLC acts as a middleman for acquiring laborers, overseeing housing conditions and contracts. 
+  - Nearest consolate is in Portland, OR (180 miles)
+  - Crops in the Yakima Valley tend to be labor-intensive, created a **strong** dependence on short-term laborers for decades. 
+  - Reinforces power imbalances for generations. 
+:::
+
+::: {.column width="50%"}
+![](images/Yakima_Valley.png)
+:::
+:::
+
+## Applying Five Principles of Procedural Justice {.smaller}
+- In pairs, apply Hunold & Young's principles of Procedural Justice to Gamboa's Reading
+![](./images/five_proc_just.png)
+
+## Why this Matters Today
+::: columns
+::: {.column width="50%" style="font-size: 70%;"}
+- This program lives on with a different name.
+  - H-2A program offers short-term visas for workers to travel to the US for agricultural labor. 
+  - Created in 1986, H-2A visas have increased over 7000-fold -- 315,328 in 2024. 
+  - Provisions for housing, travel, and prevailing wages.
+:::
+
+::: {.column width=50%"}
+![](images/h2a_visas.png)
+:::
+:::
+
+## Health-related Distributional Outcomes
+::: columns
+::: {.column width="50%" style="font-size: 70%;"}
+- Community-Level 
+  - COVID-19 crisis 
+  - Temporality of H-2A workers
+  - Transfer of Wages
+- Individual-Level
+  - piece-rate wages 
+  - long-term health impacts
+  - insurance
+:::
+
+::: {.column width="50%"}
+![](images/WA_env_health.png)
+:::
+:::
+
+## Procedurally Unjust Food Systems{.smaller}
+
+![](images/SNAP_ag.png)
+
+
+## Safety + Racial profiling 
+::: columns
+::: {.column width="50%" style="font-size: 70%;"}
+- "Deportability" continues to be a tactic for control
+  - Upholds power imbalances
+- Communities in Eastern and Central WA continue to be targets of Immigration Customs Enforcement (ICE). 
+:::
+
+::: {.column width="50%"}
+![](images/ice_protests.png)
+:::
+:::
+
+
+## Discussion
+- How do we consider time as it relates to procedural environmental justice? 
+- What sorts of processes exist to make these programs more procedurally just? 
+- What methods might we use to reveal procedural/distributional/recognitional injustice? 
