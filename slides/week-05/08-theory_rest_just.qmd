@@ -24,7 +24,7 @@ execute:
 - Group Discussion + Debrief
 
 ## Centering Activity
-- Kat :-) 
+- Ash :-) 
 
 ## Restorative Justice + Energy
 What we read: 
@@ -34,15 +34,21 @@ What we read:
 - Oral history of Rural Electrification
 
 ## Origins of Restorative Justice
-- Rooted in criminal justice
-  - Focus on repairing harm by addressing needs of victims, and holding offenders responsible for repairing damages 
-- Ultimate goal is to restore victim/community to a place before harm was inflicted.
+- Created as an alternative to criminal justice
+  - Focus on repairing harm by addressing needs of victims, and holding offenders accountable for repairing damages 
+- Ultimate goal is to restore victim/community to a place *before* harm was inflicted.
 
 ## Restorative Justice + Energy {.smaller}
 - How injustice can be repaired and/or returned to its previous state
   - For energy: Prioritizing communities that have born disproportionate burden due to historic policies and practices.
 
 ![Ibrahim, 2020](images/restorative_just.png)
+
+## Restorative Justice in Praxis 
+- What are we restoring to, and for whom?
+  - What if the original state isn't necessarily the better alternative?
+- **Transformative** versus **Restorative** Justice? 
+  - Transform systems of oppression to change rooted inequalities of racism and capitalism?
 
 ## Intro to Community Case Study{.smaller}
 ::: {.columns}
@@ -93,7 +99,7 @@ What we read:
 - How is Edgecombe County a prime example of restorative injustice?
   - In the 1930s, how did marginalized electricity access impact daily life?
   - What lasting impacts/harm can be understood through uneven energy development proposed in Edgecombe?
-  - What might restorative justice look like for rural communities of color in the South today?
+  - What might restorative justice look like for rural communities of color in the South today? 
 :::
 ::: {.column width=50%}
 ![Harrison, 2016](images/Survey_map.png)
@@ -116,14 +122,13 @@ What we read:
 
 ## Alvin Morrison's Oral History
 - Black farmer in Iredell County, born in 1910
-  - Wealthy farmers in his community wer originally approached by Duke electric to power certain homes, and they refused. 
+  - Wealthy farmers in his community were originally approached by Duke electric to power certain homes, and they refused. 
   - After a cooperative was formed, Alvin + another Black farmer worked to sign up other members. 
   - Describes how electricity changed his home and farm for the better. 
 
 ## Rural cooperatives 
 - How does Alvin's oral history contrast the goals of the rural electrification survey? 
 - Are rural cooperatives an example of collective care? 
-- How does collective care connect to the three forms of justice we've discussed thus far?
 - What discriminatory policies of the past could be reimagined with collective care in mind? 
   - Redlining + housing? Farmworker policies + food? 
 
@@ -131,8 +136,6 @@ What we read:
 "Take a plant, a flower or anything. Your water, your light, the elements in the soil...*they have to work cooperatively to produce them*. That's just a basic concept that I have tried to follow throughout my life... And this rural cooperative movement I think confirms what I have believeed personally for a long, long time-- that, to succeed, *if you can get a group of people working together cooperatively, you can almost achieve whatever you desire*." -- Alvin Morrison, 1984
 
 # Logistics
-For Friday: 
-
-- Emily leading centering activity :-)
-- Read R chapter if you want to preview material!
-- Case study using 1934 Rural Electrification Survey, Dr. Harrison to join us at the beginning of class
+For Thursday: 
+- Lydia leading centering activity :-)
+- Case study using 1934 Rural Electrification Surveys from Dr. Harrison!
