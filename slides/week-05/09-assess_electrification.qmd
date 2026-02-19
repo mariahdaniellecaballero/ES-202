@@ -18,21 +18,15 @@ execute:
 # Class Overview 
 - Centering activity
 - Setting the stage
-- Zoom with Dr. Harrison
 - Paired coding
 - Group Debrief
 
 # Centering Activity
-Emily :-)
+- Lydia :-)
 
 # Setting the Stage
 - This week's focus is on coding style and data tidying
 - Using data from the 1934 Rural Electrification Surveys provided by Dr. Conor Harrison
-
-## Zoom with Dr. Harrison
-- Join using [link](https://wellesley.zoom.us/j/94645455904?jst=2) in slides, or in week 04 of schedule. 
-- Please mute yourself, so there's no echoing. 
-- Feel free to ask questions (unmute then)!
 
 ## Learning Outcomes
 - Understand coding style best practices
@@ -56,9 +50,9 @@ library(readxl)
 ```{r}
 # | eval: true
 # | echo: false
-survey <- read_excel("/Users/mc152/Library/CloudStorage/GoogleDrive-mc152@wellesley.edu/My Drive/Teaching/ES-202/Case Study Code/data/week-04/survey_edgecombe.xlsx", sheet = "Survey")
+survey <- read_excel("/Users/mc152/Documents/GitHub/ES-202/slides/week-05/data/survey_edgecombe.xlsx", sheet = "Survey")
 
-dictionary <- read_excel("/Users/mc152/Library/CloudStorage/GoogleDrive-mc152@wellesley.edu/My Drive/Teaching/ES-202/Case Study Code/data/week-04/survey_edgecombe.xlsx", sheet = "Dictionary")
+dictionary <- read_excel("/Users/mc152/Documents/GitHub/ES-202/slides/week-05/data/survey_edgecombe.xlsx", sheet = "Dictionary")
 ```
 
 # Coding Style Best Practices
@@ -125,12 +119,13 @@ survey|>filter(TENURE == "Tenant")|>count(WAFFLE_IRON)
 ```
 
 ## ggplot{.smaller}
-- ggplot functions just like pipes (i.e., each new layer should end with a +)
+- ggplot is a package used to create really nice graphics. Plots work in layers, and each new layer should end with a + (similar to pipe)
 ```{r}
 #| warning: false
 #| message: false
 #| echo: true
 #| eval: true
+
 survey |>
   filter(RACE != "Unknown") |>
   ggplot(aes(KWH_YEAR, BILL_ANNUAL, color = RACE)) +
@@ -166,7 +161,7 @@ glimpse(dictionary)
 
 
 ## Data Summaries 
-- The `summary` function provides a great opportunity to view and understand important aspects of your data. 
+- The `summary()` function is incredibly useful for viewing and understanding important aspects of your data. 
 ```{r}
 #| echo: true
 #| eval: true
@@ -212,6 +207,7 @@ animals_long
 ## Lengthening Data (cont.) {.smaller}
 ![](images/lengthen.png)
 
+
 ## Widening Data {.smaller}
 - Suppose we were interested in reshaping the long dataframe we created called `animals_long` into our original dataframe called `animals`. We would use the `pivot_wider()` function and supply the following arguments: 
   - `names_from` is the column with *values* that we want now be column *names*. In this case, it's the `animal` column. 
@@ -233,15 +229,30 @@ animals
 ## Widening Data (cont.) {.smaller}
 ![](images/widen.png)
 
-## Exercise Three (collaborative){.smaller}
+## All Together Now{.smaller}
+```{r}
+#| eval: true
+#| echo: true
+survey |>
+  select(RACE, TENURE, DAIRY_COW:HOGS) |>
+  pivot_longer(
+    cols = DAIRY_COW:HOGS,
+    names_to = "animal",
+    values_to = "count"
+  ) |> 
+  filter(RACE != "Unknown" & TENURE != "Unknown") |> 
+  ggplot() + 
+  geom_boxplot(aes(x = RACE, y = count, fill = TENURE)) + 
+  scale_fill_manual(values = c("lightblue", "darkblue")) + 
+  facet_wrap(~animal, scales = "free") + 
+  theme_bw()
+```
+
+## Exercise 3 + 4 (collaborative){.smaller}
 
 See Posit assignment!
 
-
-## Exercise Four (individual) {.smaller}
-
-See Posit assignment!
 
 ## Logistics
 - Two pieces on recognitional justice and short documentary for Tuesday
-- Navya leading centering activity :-)
+- Greta leading centering :-)
