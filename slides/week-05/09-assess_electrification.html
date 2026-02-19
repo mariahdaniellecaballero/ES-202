@@ -209,7 +209,6 @@
 <ul>
 <li>Centering activity</li>
 <li>Setting the stage</li>
-<li>Zoom with Dr.&nbsp;Harrison</li>
 <li>Paired coding</li>
 <li>Group Debrief</li>
 </ul>
@@ -217,7 +216,9 @@
 
 <section id="centering-activity" class="title-slide slide level1 center">
 <h1>Centering Activity</h1>
-<p>Emily :-)</p>
+<ul>
+<li>Lydia :-)</li>
+</ul>
 </section>
 
 <section>
@@ -226,14 +227,6 @@
 <ul>
 <li>This week’s focus is on coding style and data tidying</li>
 <li>Using data from the 1934 Rural Electrification Surveys provided by Dr.&nbsp;Conor Harrison</li>
-</ul>
-</section>
-<section id="zoom-with-dr.-harrison" class="slide level2 center">
-<h2>Zoom with Dr.&nbsp;Harrison</h2>
-<ul>
-<li>Join using <a href="https://wellesley.zoom.us/j/94645455904?jst=2">link</a> in slides, or in week 04 of schedule.</li>
-<li>Please mute yourself, so there’s no echoing.</li>
-<li>Feel free to ask questions (unmute then)!</li>
 </ul>
 </section>
 <section id="learning-outcomes" class="slide level2 center">
@@ -322,7 +315,7 @@
 <section id="ggplot" class="slide level2 smaller center">
 <h2>ggplot</h2>
 <ul>
-<li>ggplot functions just like pipes (i.e., each new layer should end with a +)</li>
+<li>ggplot is a package used to create really nice graphics. Plots work in layers, and each new layer should end with a + (similar to pipe)</li>
 </ul>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a>survey <span class="sc">|&gt;</span></span>
@@ -366,7 +359,7 @@ $ Origin        &lt;chr&gt; "Original Data", "Original Data", "Created", "Create
 <section id="data-summaries" class="slide level2 center">
 <h2>Data Summaries</h2>
 <ul>
-<li>The <code>summary</code> function provides a great opportunity to view and understand important aspects of your data.</li>
+<li>The <code>summary()</code> function is incredibly useful for viewing and understanding important aspects of your data.</li>
 </ul>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a><span class="fu">summary</span>(survey)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -588,19 +581,34 @@ $ Origin        &lt;chr&gt; "Original Data", "Original Data", "Created", "Create
 <h2>Widening Data (cont.)</h2>
 
 <img data-src="images/widen.png" class="r-stretch"></section>
-<section id="exercise-three-collaborative" class="slide level2 smaller center">
-<h2>Exercise Three (collaborative)</h2>
-<p>See Posit assignment!</p>
-</section>
-<section id="exercise-four-individual" class="slide level2 smaller center">
-<h2>Exercise Four (individual)</h2>
+<section id="all-together-now" class="slide level2 smaller center">
+<h2>All Together Now</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a></a>survey <span class="sc">|&gt;</span></span>
+<span id="cb13-2"><a></a>  <span class="fu">select</span>(RACE, TENURE, DAIRY_COW<span class="sc">:</span>HOGS) <span class="sc">|&gt;</span></span>
+<span id="cb13-3"><a></a>  <span class="fu">pivot_longer</span>(</span>
+<span id="cb13-4"><a></a>    <span class="at">cols =</span> DAIRY_COW<span class="sc">:</span>HOGS,</span>
+<span id="cb13-5"><a></a>    <span class="at">names_to =</span> <span class="st">"animal"</span>,</span>
+<span id="cb13-6"><a></a>    <span class="at">values_to =</span> <span class="st">"count"</span></span>
+<span id="cb13-7"><a></a>  ) <span class="sc">|&gt;</span> </span>
+<span id="cb13-8"><a></a>  <span class="fu">filter</span>(RACE <span class="sc">!=</span> <span class="st">"Unknown"</span> <span class="sc">&amp;</span> TENURE <span class="sc">!=</span> <span class="st">"Unknown"</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb13-9"><a></a>  <span class="fu">ggplot</span>() <span class="sc">+</span> </span>
+<span id="cb13-10"><a></a>  <span class="fu">geom_boxplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> RACE, <span class="at">y =</span> count, <span class="at">fill =</span> TENURE)) <span class="sc">+</span> </span>
+<span id="cb13-11"><a></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"lightblue"</span>, <span class="st">"darkblue"</span>)) <span class="sc">+</span> </span>
+<span id="cb13-12"><a></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>animal, <span class="at">scales =</span> <span class="st">"free"</span>) <span class="sc">+</span> </span>
+<span id="cb13-13"><a></a>  <span class="fu">theme_bw</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="09-assess_electrification_files/figure-revealjs/unnamed-chunk-12-1.png" width="960" class="r-stretch"></section>
+<section id="exercise-3-4-collaborative" class="slide level2 smaller center">
+<h2>Exercise 3 + 4 (collaborative)</h2>
 <p>See Posit assignment!</p>
 </section>
 <section id="logistics" class="slide level2 center">
 <h2>Logistics</h2>
 <ul>
 <li>Two pieces on recognitional justice and short documentary for Tuesday</li>
-<li>Navya leading centering activity :-)</li>
+<li>Greta leading centering :-)</li>
 </ul>
 
 
