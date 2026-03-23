@@ -5,15 +5,15 @@ categories: "Final Project"
 ---
 
 # Overview 
-The final project is a cumulation of the theory and methods skills your team has acquired througout the semester to identify and assess environmental injustice, apply theory, and propose an intervention. 
+The final project is a cumulation of the theory and methodologic skills you have acquired througout the semester to identify and assess environmental injustice, apply theory, and propose an intervention. 
 
-**There are three files due at 11:59 PM on Thursday, April 30, 2026:**
+**There are three files due at 11:59 PM on Monday, May 04, 2026:**
 
- 1. Written report (~2,000 words) comprising four sections.
+ 1. Written report (~1,500 words) comprising four sections.
  2. Accompanying R code analysis document for data visualizations. 
  3. PDF of presentation for 7-minute presentation on final day of class. 
 
-**Additionally, please be prepared to present your team's final project in class on Thursday, April 30, 2026**  
+**Additionally, please be prepared to present your final project in class on Thursday, April 30, 2026**  
 
 
 # Report Outline
@@ -26,7 +26,7 @@ This sub-section provides foundational context related to your community case st
 - The historical context of your community (i.e., important connections to land, immigration patterns, economic development, or inequitable policies that have shaped injustice).
 - Demographic information of your community (i.e., racial/ethnic makeup, education, and economic patterns). 
 - Multi-scalar patterns related to your community (i.e., state or federal policies, global impacts of climate change)
-This section should be ~500 words and cite at least 7 sources. 
+This section should be ~400 words and cite at least 7 peer-reviewed sources. 
 
 ### Theoretical Connections
 This sub-section is focused on the theoretical applications to your community case study. In this section you should: 
@@ -34,13 +34,13 @@ This sub-section is focused on the theoretical applications to your community ca
 - Describe the EJ injustice your community is facing
 - Define at least two theoretical EJ tenets and describe how they apply to your community's EJ injustice 
 
-This section should be ~300 words and should cite at least 3 sources (do feel free to cite course readings). 
+This section should be ~300 words and should cite at least 3 peer-reviewed sources (do feel free to cite course readings). 
 
 ## Section Two: Data Analysis 
 This section provides empirical support for your community case study and its EJ challenge, using open-source data and replicable data analysis. 
 
 ### Methodology 
-In this sub-section, describe the data sources your team used in your analysis and any methods used to tidy, transform, and visualize the data including: 
+In this sub-section, describe the data sources you used in your analysis and any methods used to tidy, transform, and visualize the data including: 
 
 - The organization the dataset originated from 
 - The year(s) that the dataset represents 
@@ -48,40 +48,27 @@ In this sub-section, describe the data sources your team used in your analysis a
 - Any tidying or data transformations conducted
 - Visualization approach
 
-This sub-section should be ~250 words and should cite both your open-source datasets, and the programming language used.
+This sub-section should be ~100 words and should cite both your open-source datasets, and the programming language used.
 
 ### Results 
 This sub-section details the results from your data analysis. It should include: 
 
 - Narrative description of your results 
-- The three visuals you created, labeled and referenced in your narrative description
+- The two visuals you created, labeled and referenced in your narrative description
 
-This sub-section should be ~250 words. 
+This sub-section should be ~200 words. 
 
 ## Section Three: Proposed Intervention
 This section details your proposed intervention and accompanying logic model. 
 
 ### Description
-This sub-section details your proposed intervention, including potential community organization partnerships, inputs, activities, and intended outcomes. In other words, if your team lived in this community, what outcomes would you like to see, and what steps will you need to take to realize sustainable, equitable change? Feel free to learn from other community organizing, research, and policy organizations to inspire your intervention. This section should be ~500 words. 
+This sub-section details your proposed intervention, including potential community organization partnerships, inputs, activities, and intended outcomes. In other words, if you lived in this community, what outcomes would you like to see, and what steps will you need to take to realize sustainable, equitable change? Feel free to learn from other community organizing, research, and policy organizations to inspire your intervention. This section should be ~500 words. 
 
 ### Logic Model
 This sub-section should include a graphical representation of your proposed intervention in the form of a basic logic model. It should include the main components of a logic model such as proposed inputs, activities, outputs, outcomes, and impact. 
 
 Note that you can create this in whichever software you prefer, including Microsoft Powerpoint, Canva, or Goodnotes. 
 
-## Section Four: Team Contribution Statements
-Lastly, this section should include team contribution statements from each team member on the components that each person contributed including: 
-
-- Drafting the report
-- Editing the report
-- Creating the logic model
-- Analyzing the data 
-- Visualizing the data 
-- Reference support 
-- Formatting and citations 
-- Any other forms of support 
-
-This section should be ~200 words. 
 
 # Formatting Instructions
 ## Document Details
@@ -108,7 +95,7 @@ library(readxl)
 library(tidyverse)
 
 rubric <- read_excel("/Users/mc152/Library/CloudStorage/GoogleDrive-mc152@wellesley.edu/My Drive/Teaching/ES-202/ES-202 Final Project Rubric.xlsx", 
-sheet = "Final_Project")
+sheet = "Final_Project_Ind")
 ```
 
 ```{r}

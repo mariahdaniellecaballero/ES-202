@@ -3,7 +3,46 @@ title: "Data Manipulation Checkpoint"
 date: "April 16, 2026"
 categories: "Final Project"
 ---
+# Overview
+The data manipulation checkpoint is intended to ensure things are progressing toward your final project. By this point, you should be able to demonstrate that your workflow is functional (i.e., you can load, tidy, and summarize your data), and that your visualization plans are headed in a good direction. 
 
-::: {.callout-note}
-This section is currently under development, check back soon please!
-:::
+## Submission Components
+Submit a rendered `.qmd` file containing the following **three components**:
+
+### Part I: Updated Research Question & Reflection
+
+In 1-2 sentences, restate your current community case study topic. Following, answer the following in 3–5 sentences:
+
+- Has your case study topic changed since your project plan submission? If so, how and why?
+- Does your study area remain the same, or have you refined/changed it?
+- Are you still planning to use the same datasets? If you have changed or added any, describe why.
+
+### Part II: Data Workflow
+Include one code chunk for each of the following steps (importing, tidying, and summarizing). Each chunk should include a short description (1-2 sentences) explaining what the chunk does and why. 
+
+**1. Data Import**
+
+- Load all datasets into R
+
+**2. Tidying**
+
+- Address any issues you discovered during the exploratory data analysis process. This could include removing missing values, changing data types, renaming or selecting columns,  or removing duplicate records. 
+
+
+**3. Summarizing**
+- Use the `summary()` function to show the results for your tidied datasets. 
+
+### Part III: Progress Reflection
+Answer the following questions with 1-2 sentences each: 
+
+- **What is working well?** Describe one aspect of your data workflow was easier than expected.
+
+- **What has been the biggest challenge so far?** Describe the problem you encountered, how you diagnosed it, and how you resolved it (or perhaps how I can help you get unstuck).
+
+- **Has your analysis plan changed?** Describe the visualizations you intend to run between now and the final presentation/report. Have your plans changed since your proposal? 
+
+## Grading
+This assignment is worth 5% of your grade. 
+
+## Submission 
+Please submit this assignment to Brightspace by **Thursday, April 16, at 11:59 PM**. 

@@ -1,6 +1,6 @@
 ---
 title: "Week 13"
-subtitle: "Water Justice in Nashville, TN"
+subtitle: "Environmental Advocacy in Rural New England"
 description: "Apr 13 - Apr 16"
 author: ""
 date: ""
@@ -19,6 +19,10 @@ listing:
     filter-ui: false
 tbl-colwidths: [10,50,40]
 ---
+
+# Speaker Bio
+Julia Tilton reports on climate and energy for the Daily Yonder and is a multimedia producer for the Center for Rural Strategies. Julia previously worked on NASA’s Curious Universe podcast, and her reporting has been featured in a host of local, regional and national news outlets from Alaska to Mexico. Julia graduated from Vanderbilt with a degree in Earth & Environmental Sciences. She grew up in southern New Hampshire and is partial to the mountains and forests of the Northeast.
+
 
 # Lectures
 

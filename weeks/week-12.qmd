@@ -1,6 +1,6 @@
 ---
 title: "Week 12"
-subtitle: "Food Justice in Springfield, MA"
+subtitle: "Water Justice in Nashville, TN"
 description: "Apr 6 - Apr 9"
 author: ""
 date: ""
@@ -36,6 +36,9 @@ tbl-colwidths: [10,50,40]
 ::: {.callout-important}
 Note that there will be no class on April 9, 2026. Dr. Caballero will be at a workshop in South Carolina. 
 :::
+
+# Guest Lecture Bio
+Ferna Alvarez-Carrascal holds a Ph.D. in Earth and Environmental Sciences from Vanderbilt University. Since Fall 2022, Ferna has been a graduate research assistant for Dr. Jonathan Gilligan. In the Fall of 2023, she joined the Drinking Water Justice Lab. Her research interest lies in the interface of climate variability and change, environmental degradation, natural resources, water availability and quality, its influence on social systems, and the related decision-making processes to guarantee the well-being of human societies. She couples environmental knowledge with social behavior systems to study how these can mitigate or adapt to the effects of the current environmental emergency. She utilizes different statistical methodologies, machine learning algorithms, and agent-based modeling to achieve this.
 
 # Lectures
 

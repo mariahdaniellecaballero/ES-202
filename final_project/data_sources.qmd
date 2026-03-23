@@ -1,6 +1,6 @@
 ---
 title: "Data Sources"
-date: "December 09, 2025"
+date: "March 23, 2026"
 categories: "Final Project"
 ---
 ## Variable Overview 
@@ -34,7 +34,7 @@ vars %>%
 
 
 ## Data Download
-The dataset can be downloaded [here](https://drive.google.com/drive/folders/1hZWFZCzqoeWvpHIh0ZIbBVR8hKqKJBfA). 
+The dataset can be downloaded [here](https://drive.google.com/drive/folders/17QpX1h3GPIJqL9vF25_WZJeyvuT3fFbt?usp=drive_link). The Dictionary can be downloaded [here](https://docs.google.com/spreadsheets/d/1qyIFYDDDIII4Wbjd7rFan4aatMP7BmZB/edit?usp=drive_link&ouid=102576151535349337042&rtpof=true&sd=true). 
 
 It can also be viewed as an interactive map [here](https://arcg.is/0CKCDb0). To view different variables: 
 
