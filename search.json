@@ -24,7 +24,7 @@
     "href": "schedule.html#assignments",
     "title": "Schedule",
     "section": "Assignments",
-    "text": "Assignments\nYou can find details and assignment instructions in the relevant week on the schedule.\n\nHomework\nHomework will be submitted to Brightspace. Please see the schedule for due dates and detailed instructions.\n\n\nFinal Project\nThe final project is a cumulative reflection of your theoretical and methodological skills. Please see the description for detailed instructions.\nImportant Dates\n\nProject Plan: Thursday, April 02, 2026 at 11:59 PM\nData Manipulation Checkpoint: Thursday, April 16, 2026 at 11:59 PM\nFinal Project: Thursday, April 30, 2026 at 11:59",
+    "text": "Assignments\nYou can find details and assignment instructions in the relevant week on the schedule.\n\nHomework\nHomework will be submitted to Brightspace. Please see the schedule for due dates and detailed instructions.\n\n\nFinal Project\nThe final project is a cumulative reflection of your theoretical and methodological skills. Please see the description for detailed instructions.\nImportant Dates\n\nProject Plan: Thursday, April 02, 2026 at 11:59 PM\nData Manipulation Checkpoint: Thursday, April 16, 2026 at 11:59 PM\nFinal Project: Presentations on Thursday, April 30, 2026 during class; Report due Monday, May 04, at 11:59 PM",
     "crumbs": [
       "Schedule"
     ]
@@ -107,11 +107,88 @@
     "text": "Slides will be posted 24 hours in advance of class."
   },
   {
-    "objectID": "slides/week-10/17-project_plan.html#slides-will-be-posted-24-hours-in-advance-of-class.",
-    "href": "slides/week-10/17-project_plan.html#slides-will-be-posted-24-hours-in-advance-of-class.",
+    "objectID": "slides/week-10/17-project_plan.html#happy-thursday",
+    "href": "slides/week-10/17-project_plan.html#happy-thursday",
     "title": "Flex Lecture",
-    "section": "Slides will be posted 24 hours in advance of class.",
-    "text": "Slides will be posted 24 hours in advance of class."
+    "section": "Happy Thursday!",
+    "text": "Happy Thursday!\n\nCentering\nOverview of Final Project\nPrevious Examples\nWork time to discuss data options"
+  },
+  {
+    "objectID": "slides/week-10/17-project_plan.html#centering",
+    "href": "slides/week-10/17-project_plan.html#centering",
+    "title": "Flex Lecture",
+    "section": "Centering",
+    "text": "Centering\n\nAna :-)"
+  },
+  {
+    "objectID": "slides/week-10/17-project_plan.html#overview-of-final-project",
+    "href": "slides/week-10/17-project_plan.html#overview-of-final-project",
+    "title": "Flex Lecture",
+    "section": "Overview of Final Project",
+    "text": "Overview of Final Project\n\nThree cumulative components:\n\nProject Plan (10%): Due Thursday, April 02\nData Manipulation Checkpoint (5%): Due Thursday, April 16\nFinal Project (10%): Presentations on Thursday, April 30 during class, report due Monday, May 04, 2026 at 11:59 PM"
+  },
+  {
+    "objectID": "slides/week-10/17-project_plan.html#project-plan",
+    "href": "slides/week-10/17-project_plan.html#project-plan",
+    "title": "Flex Lecture",
+    "section": "Project Plan",
+    "text": "Project Plan\n\nMeant to provide get you started sooner rather than later! Tell me…\n\nBackground:\n\nEJ theme, community case study, 3 peer-reviewed citations, and EJ tenet(s)\n\nAnalysis Plan:\n\nPotential data source(s), any manipulation, intended data visuals\nPotential intervention and partner organizations for logic model development\n\nResearch Process:\n\nAnything you’re unsure about/how I can help support!"
+  },
+  {
+    "objectID": "slides/week-10/17-project_plan.html#data-manipulation-checkpoint",
+    "href": "slides/week-10/17-project_plan.html#data-manipulation-checkpoint",
+    "title": "Flex Lecture",
+    "section": "Data Manipulation Checkpoint",
+    "text": "Data Manipulation Checkpoint\n\nMeant to ensure you don’t leave the data component to the last minute :-)\n\nPart I: Updated research question + reflection:\n\nIf your topic/study area has changed, if you still plan to use the same data.\n\nPart II: Data Workflow:\n\nData importing, tidying, and summarizing\n\nPart III: Progress reflection:\n\nTell me what’s going well, big challenges, and if your analysis plan has changed."
+  },
+  {
+    "objectID": "slides/week-10/17-project_plan.html#final-project",
+    "href": "slides/week-10/17-project_plan.html#final-project",
+    "title": "Flex Lecture",
+    "section": "Final Project",
+    "text": "Final Project\n\nPresentation\n\n7 minute presentation on project findings (LDOC)\n\nFinal report\n\n~1500 words\nBackground, theoretical connections, data analysis, and proposed intervention\nTemplate and rubric included on website"
+  },
+  {
+    "objectID": "slides/week-10/17-project_plan.html#project-examples-topics-theoretical-ties",
+    "href": "slides/week-10/17-project_plan.html#project-examples-topics-theoretical-ties",
+    "title": "Flex Lecture",
+    "section": "Project Examples (Topics + Theoretical Ties)",
+    "text": "Project Examples (Topics + Theoretical Ties)\n\nEnergy resilience and climate justice in Jobos Bay, PR: Distributional, procedural, and recognition justice\nFood Justice in the Bronx, NY: Distributional, procedural, and recognition justice\nEnergy Justice in Texas: Distributional, procedural, and restorative justice\nEnvironmental health in Boston: Distributional and procedural justice"
+  },
+  {
+    "objectID": "slides/week-10/17-project_plan.html#data-visualization-examples",
+    "href": "slides/week-10/17-project_plan.html#data-visualization-examples",
+    "title": "Flex Lecture",
+    "section": "Data Visualization Examples",
+    "text": "Data Visualization Examples"
+  },
+  {
+    "objectID": "slides/week-10/17-project_plan.html#logic-model-example",
+    "href": "slides/week-10/17-project_plan.html#logic-model-example",
+    "title": "Flex Lecture",
+    "section": "Logic Model Example",
+    "text": "Logic Model Example"
+  },
+  {
+    "objectID": "slides/week-10/17-project_plan.html#data-resources",
+    "href": "slides/week-10/17-project_plan.html#data-resources",
+    "title": "Flex Lecture",
+    "section": "Data Resources",
+    "text": "Data Resources\n\nData.gov for a huge selection of data\nArcGIS Online- spatial data\nMunicipal Data hubs- city-specific data\nAgency data (USEPA, NOAA, etc)"
+  },
+  {
+    "objectID": "slides/week-10/17-project_plan.html#data-workflow-example-topic-fisheries",
+    "href": "slides/week-10/17-project_plan.html#data-workflow-example-topic-fisheries",
+    "title": "Flex Lecture",
+    "section": "Data workflow: (example topic: fisheries)",
+    "text": "Data workflow: (example topic: fisheries)\n\nIf I don’t know the specific community I’m interested in:\n\nStart with google images, search “fisheries AND US AND data visualization”\nBegin getting a sense for ways people are telling stories, and data sources used.\nLooks like NOAA is collecting a lot of national data on fisheries\nWebsite of visualization links to a national database on fisheries!\n\nCan also start the other way around (i.e., starting with a community that is particularly interesting)\n\nCalhoun et al., writes about policy for fisheries and implications for gender and household labor\nReally difficult to find data on gendered dynamics of fisheries, but some google searches led me to 1) fisherman wives groups all over New England (could be a good map); and 2) NOAA Crew survey data from commercial fisheries all over the US Eastern Seaboard."
+  },
+  {
+    "objectID": "slides/week-10/17-project_plan.html#logistics",
+    "href": "slides/week-10/17-project_plan.html#logistics",
+    "title": "Flex Lecture",
+    "section": "Logistics",
+    "text": "Logistics\n\nAngie Alberto joining us virtually on Monday!\n\nTwo readings on geothermal, Ana to prepare question, Lydia to send thank you email!"
   },
   {
     "objectID": "slides/week-04/06-theory_proc_just.html#class-overview",
@@ -989,28 +1066,28 @@
   {
     "objectID": "final_project/w10-project_plan.html",
     "href": "final_project/w10-project_plan.html",
-    "title": "Group Project Plan",
+    "title": "Project Plan",
     "section": "",
     "text": "Submit a project plan that outlines the project deliverables, comprising three main sections:\n\n\nProvide an overview of your community case study, including:\n\nEnvironmental justice theme (e.g., water, climate, food, etc.)\nCommunity case study– which community have you chosen, and why might it be a good representation of this EJ theme?\nAt least three peer-reviewed citations related to your community case study’s background and EJ challenge, to ensure your background section provides enough context for your case study.\nWhich theoretical concepts are likely to apply to this case study?\n\n\n\n\nProvide an overview of your anticipated analysis plan, including:\n\nData analysis plan:\n\nWhat data source(s) will you use?\nWill your data need to be manipulated at all in preparation for your data visualizations?\nTwo intended data visuals\n\nLogic model development:\n\nWhat potential intervention might you propose?\nWhat potential partner organizations might you propose?\n\n\n\n\n\nProvide an overview of how you will realize your interdisciplinary research plan:\n\nIs there anything you’re currently unsure about, that might cause your project plan to change?\nHow can I support you to realize your plan?"
   },
   {
     "objectID": "final_project/w10-project_plan.html#overview",
     "href": "final_project/w10-project_plan.html#overview",
-    "title": "Group Project Plan",
+    "title": "Project Plan",
     "section": "",
     "text": "Submit a project plan that outlines the project deliverables, comprising three main sections:\n\n\nProvide an overview of your community case study, including:\n\nEnvironmental justice theme (e.g., water, climate, food, etc.)\nCommunity case study– which community have you chosen, and why might it be a good representation of this EJ theme?\nAt least three peer-reviewed citations related to your community case study’s background and EJ challenge, to ensure your background section provides enough context for your case study.\nWhich theoretical concepts are likely to apply to this case study?\n\n\n\n\nProvide an overview of your anticipated analysis plan, including:\n\nData analysis plan:\n\nWhat data source(s) will you use?\nWill your data need to be manipulated at all in preparation for your data visualizations?\nTwo intended data visuals\n\nLogic model development:\n\nWhat potential intervention might you propose?\nWhat potential partner organizations might you propose?\n\n\n\n\n\nProvide an overview of how you will realize your interdisciplinary research plan:\n\nIs there anything you’re currently unsure about, that might cause your project plan to change?\nHow can I support you to realize your plan?"
   },
   {
     "objectID": "final_project/w10-project_plan.html#grading",
     "href": "final_project/w10-project_plan.html#grading",
-    "title": "Group Project Plan",
+    "title": "Project Plan",
     "section": "Grading",
     "text": "Grading\nThe project plan is worth 10% of your grade."
   },
   {
     "objectID": "final_project/w10-project_plan.html#submission",
     "href": "final_project/w10-project_plan.html#submission",
-    "title": "Group Project Plan",
+    "title": "Project Plan",
     "section": "Submission",
     "text": "Submission\nPlease submit your project plan to Brightspace by Thursday, April 02, 2026 at 11:59 PM."
   },
@@ -1369,7 +1446,7 @@
     "href": "weeks/week-10.html",
     "title": "Week 10",
     "section": "",
-    "text": "Lectures\n\n\n\n\n\n\nTopic\n\n\n\nDate\n\n\n\n\n\n\n\n\n[Theory] Community-Based Interventions & Theories of Change\n\n\nMon, Mar 23\n\n\n\n\n\n\nFlex Lecture\n\n\nThu, Mar 26\n\n\n\n\n\n\nNo matching items\n\n\n\nAssignments\n\n\n\n\n\n\nAssignment\n\n\n\nTitle\n\n\n\nDue\n\n\n\n\n\n\n\n\nFinal Project\n\n\nGroup Project Plan\n\n\nThu, Apr 02\n\n\n\n\n\n\nNo matching items\n\n\n\nReadings\n\n\n\n\n\n\n\nMonday\nKellogg, W. K. (2004). Chapters One and Two in Logic Model Development Guide. Kellogg Foundation.\n\n\nMonday\nKreger, M., Sargent, K., Arons, A., Standish, M., & Brindis, C. D. (2011). Creating an environmental justice framework for policy change in childhood asthma: a grassroots to treetops approach. American journal of public health, 101(S1), S208-S216."
+    "text": "Lectures\n\n\n\n\n\n\nTopic\n\n\n\nDate\n\n\n\n\n\n\n\n\n[Theory] Community-Based Interventions & Theories of Change\n\n\nMon, Mar 23\n\n\n\n\n\n\nFlex Lecture\n\n\nThu, Mar 26\n\n\n\n\n\n\nNo matching items\n\n\n\nAssignments\n\n\n\n\n\n\nAssignment\n\n\n\nTitle\n\n\n\nDue\n\n\n\n\n\n\n\n\nFinal Project\n\n\nProject Plan\n\n\nThu, Apr 02\n\n\n\n\n\n\nNo matching items\n\n\n\nReadings\n\n\n\n\n\n\n\nMonday\nKellogg, W. K. (2004). Chapters One and Two in Logic Model Development Guide. Kellogg Foundation.\n\n\nMonday\nKreger, M., Sargent, K., Arons, A., Standish, M., & Brindis, C. D. (2011). Creating an environmental justice framework for policy change in childhood asthma: a grassroots to treetops approach. American journal of public health, 101(S1), S208-S216."
   },
   {
     "objectID": "weeks/week-05.html",
