@@ -352,7 +352,7 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: left;">Data Visuals</td>
 <td style="text-align: left;">Data visuals do not provide empirical evidence for your community case study.</td>
 <td style="text-align: left;">Most data visuals provide empirical evidence for case study, but some are not clear (i.e., poor formatting, poor graph chosen).</td>
-<td style="text-align: left;">All three visuals offer empirical evidence for the case study and are accessible to an interdisciplinary audience.</td>
+<td style="text-align: left;">Both visuals offer empirical evidence for the case study and are accessible to an interdisciplinary audience.</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"></td>
@@ -470,7 +470,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/mariahdaniellecaballero\.github\.io\/ES-202\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

@@ -38,5 +38,5 @@ The final project is a cumulative reflection of your theoretical and methodologi
 **Important Dates**
 
 -   [**Project Plan:**](final_project/w10-project_plan.qmd) Thursday, April 02, 2026 at 11:59 PM
--   [**Data Manipulation Checkpoint:**](w12-data_manip.qmd) Thursday, April 16, 2026 at 11:59 PM
--   [**Final Project:**](final_project/w15-final_project.qmd) Thursday, April 30, 2026 at 11:59
+-   [**Data Manipulation Checkpoint:**](final_project/w12-data_manip.qmd) Thursday, April 16, 2026 at 11:59 PM
+-   [**Final Project:**](final_project/w15-final_project.qmd) Presentations on Thursday, April 30, 2026 during class; Report due Monday, May 04, at 11:59 PM
